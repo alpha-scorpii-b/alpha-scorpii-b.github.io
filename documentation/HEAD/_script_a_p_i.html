@@ -5725,6 +5725,7 @@ Classes</h2>
 <li>void ApplyAttributes()</li>
 <li>void DrawDebugGeometry(<a class="el" href="class_urho3_d_1_1_debug_renderer.html" title="Debug geometry rendering component. Should be added only to the root scene node.">DebugRenderer</a>@, bool)</li>
 <li>void DrawDebugGeometry(bool) const</li>
+<li><a class="el" href="class_urho3_d_1_1_drawable.html" title="Base class for visible components.">Drawable</a>@[]@ GetAllDrawables(uint8 = DRAWABLE_ANY, uint = DEFAULT_VIEWMASK)</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetAttribute(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_value_animation.html" title="Value animation class.">ValueAnimation</a>@ GetAttributeAnimation(const String&amp;) const</li>
 <li>float GetAttributeAnimationSpeed(const String&amp;) const</li>
@@ -11164,7 +11165,8 @@ Global functions</h2>
 <li>void UnsubscribeFromAllEventsExcept(<a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@)</li>
 <li>void UnsubscribeFromEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>void UnsubscribeFromEvent(const String&amp;)</li>
-<li>void UnsubscribeFromEvents(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@) </li>
+<li>void UnsubscribeFromEvents(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@)</li>
+<li>bool WriteDrawablesToOBJ(<a class="el" href="class_urho3_d_1_1_drawable.html" title="Base class for visible components.">Drawable</a>@[]@, <a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@, bool = false) </li>
 </ul>
 <h2><a class="anchor" id="ScriptAPI_GlobalProperties"></a>
 Global properties</h2>
