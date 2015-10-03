@@ -119,7 +119,7 @@ uint       Number of tracks
     Vector3    Scale (if included in data)
 </pre><p>Note: animations are stored using absolute bone transformations. Therefore only lerp-blending between animations is supported; additive pose modification is not.</p>
 <h2><a class="anchor" id="FileFormats_Shader"></a>
-Direct3D11 binary shader format (.vs4, .ps4)</h2>
+Direct3D9 binary shader format (.vs3, .ps3)</h2>
 <pre class="fragment">byte[4]    Identifier "USHD"
 
 short      Shader type (0 = vertex, 1 = pixel)
@@ -140,7 +140,7 @@ uint       Number of texture units
 
 uint       Bytecode size
 byte[]     Bytecode
-</pre><h2><a class="anchor" id="FileFormats_Shader"></a>
+</pre><h2><a class="anchor" id="FileFormats_Shader4"></a>
 Direct3D11 binary shader format (.vs4, .ps4)</h2>
 <pre class="fragment">byte[4]    Identifier "USHD"
 
