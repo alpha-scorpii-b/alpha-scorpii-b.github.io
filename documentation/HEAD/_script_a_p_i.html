@@ -10086,6 +10086,8 @@ Classes</h2>
 <li>void SetFixedHeight(int)</li>
 <li>void SetFixedSize(int, int)</li>
 <li>void SetFixedWidth(int)</li>
+<li>void SetFullImageRect()</li>
+<li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
 <li>void SetMaxSize(int, int)</li>
@@ -10108,6 +10110,8 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>[] attributes</li>
 <li>bool autoUpdate</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> baseType // readonly</li>
+<li>BlendMode blendMode</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> border</li>
 <li>bool bringToBack</li>
 <li>bool bringToFront</li>
 <li><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a>@ cameraNode // readonly</li>
@@ -10140,7 +10144,10 @@ Classes</h2>
 <li>uint format</li>
 <li>int height</li>
 <li>HorizontalAlignment horizontalAlignment</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> hoverOffset</li>
 <li>bool hovering // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> imageBorder</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> imageRect</li>
 <li>int indent</li>
 <li>int indentSpacing</li>
 <li>int indentWidth // readonly</li>
@@ -10182,6 +10189,8 @@ Classes</h2>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
 <li>bool temporary</li>
+<li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
+<li>bool tiled</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
@@ -10290,6 +10299,8 @@ Classes</h2>
 <li>void SetFixedHeight(int)</li>
 <li>void SetFixedSize(int, int)</li>
 <li>void SetFixedWidth(int)</li>
+<li>void SetFullImageRect()</li>
+<li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
 <li>void SetMaxSize(int, int)</li>
@@ -10310,6 +10321,8 @@ Classes</h2>
 <li><a class="el" href="struct_urho3_d_1_1_attribute_info.html" title="Description of an automatically serializable variable.">AttributeInfo</a>[] attributeInfos // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>[] attributes</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> baseType // readonly</li>
+<li>BlendMode blendMode</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> border</li>
 <li>bool bringToBack</li>
 <li>bool bringToFront</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> category // readonly</li>
@@ -10339,7 +10352,10 @@ Classes</h2>
 <li>FocusMode focusMode</li>
 <li>int height</li>
 <li>HorizontalAlignment horizontalAlignment</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> hoverOffset</li>
 <li>bool hovering // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> imageBorder</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> imageRect</li>
 <li>int indent</li>
 <li>int indentSpacing</li>
 <li>int indentWidth // readonly</li>
@@ -10379,6 +10395,8 @@ Classes</h2>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
 <li>bool temporary</li>
+<li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
+<li>bool tiled</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
