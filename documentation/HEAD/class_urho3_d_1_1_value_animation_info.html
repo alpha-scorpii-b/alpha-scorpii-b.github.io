@@ -71,8 +71,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ae9cda1c4ba56457e2fe3e67a784f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ffdc6d200bba0eeef7949e48a4fb80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7ffdc6d200bba0eeef7949e48a4fb80"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#aa7ffdc6d200bba0eeef7949e48a4fb80">Update</a> (float timeStep)</td></tr>
-<tr class="memdesc:aa7ffdc6d200bba0eeef7949e48a4fb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update. Return true when the animation is finished. No-op when the target object is not defined. <br/></td></tr>
+<tr class="memdesc:aa7ffdc6d200bba0eeef7949e48a4fb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance time position and apply. Return true when the animation is finished. No-op when the target object is not defined. <br/></td></tr>
 <tr class="separator:aa7ffdc6d200bba0eeef7949e48a4fb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad1a89faaaf4bf79dd30b25224ffa15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ad1a89faaaf4bf79dd30b25224ffa15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#a4ad1a89faaaf4bf79dd30b25224ffa15">SetTime</a> (float time)</td></tr>
+<tr class="memdesc:a4ad1a89faaaf4bf79dd30b25224ffa15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time position and apply. Return true when the animation is finished. No-op when the target object is not defined. <br/></td></tr>
+<tr class="separator:a4ad1a89faaaf4bf79dd30b25224ffa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35217023984ff6073326cae7a7405e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af35217023984ff6073326cae7a7405e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#af35217023984ff6073326cae7a7405e6">SetWrapMode</a> (WrapMode wrapMode)</td></tr>
 <tr class="memdesc:af35217023984ff6073326cae7a7405e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set wrap mode. <br/></td></tr>
@@ -93,6 +97,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 WrapMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#a8d14541dae6a74a26c73b55bbafcc942">GetWrapMode</a> () const </td></tr>
 <tr class="memdesc:a8d14541dae6a74a26c73b55bbafcc942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wrap mode. <br/></td></tr>
 <tr class="separator:a8d14541dae6a74a26c73b55bbafcc942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8fe5940f321a503910d86f545a7f32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab8fe5940f321a503910d86f545a7f32"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#aab8fe5940f321a503910d86f545a7f32">GetTime</a> () const </td></tr>
+<tr class="memdesc:aab8fe5940f321a503910d86f545a7f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return time position. <br/></td></tr>
+<tr class="separator:aab8fe5940f321a503910d86f545a7f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb78d77efb68efda90d2847a145a616b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb78d77efb68efda90d2847a145a616b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#acb78d77efb68efda90d2847a145a616b">GetSpeed</a> () const </td></tr>
 <tr class="memdesc:acb78d77efb68efda90d2847a145a616b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return speed. <br/></td></tr>
@@ -131,7 +139,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2cdea0464232009129f6ddaf8ffe6fda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cdea0464232009129f6ddaf8ffe6fda"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#a2cdea0464232009129f6ddaf8ffe6fda">ApplyValue</a> (const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;newValue)</td></tr>
-<tr class="memdesc:a2cdea0464232009129f6ddaf8ffe6fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply new animation value to the target object. Called by <a class="el" href="class_urho3_d_1_1_value_animation_info.html#aa7ffdc6d200bba0eeef7949e48a4fb80" title="Update. Return true when the animation is finished. No-op when the target object is not defined...">Update()</a>. <br/></td></tr>
+<tr class="memdesc:a2cdea0464232009129f6ddaf8ffe6fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply new animation value to the target object. Called by <a class="el" href="class_urho3_d_1_1_value_animation_info.html#aa7ffdc6d200bba0eeef7949e48a4fb80" title="Advance time position and apply. Return true when the animation is finished. No-op when the target ob...">Update()</a>. <br/></td></tr>
 <tr class="separator:a2cdea0464232009129f6ddaf8ffe6fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad24dd7a231bab9f5c3cc4b416762a148"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad24dd7a231bab9f5c3cc4b416762a148"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_value_animation_info.html#ad24dd7a231bab9f5c3cc4b416762a148">CalculateScaledTime</a> (float currentTime, bool &amp;finished) const </td></tr>
