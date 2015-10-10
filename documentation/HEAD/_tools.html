@@ -45,6 +45,7 @@ Options:
 -ns         Do not create subdirectories for resources
 -nz         Do not create a zone and a directional light (scene mode only)
 -nf         Do not fix infacing normals
+-ne         Do not save empty nodes (scene mode only)
 -mb &lt;x&gt;     Maximum number of bones per submesh. Default 64
 -p &lt;path&gt;   Set path for scene resources. Default is output file path
 -r &lt;name&gt;   Use the named scene node as root node\n"
@@ -61,6 +62,7 @@ Options:
 -ct         Check and do not overwrite if texture exists
 -ctn        Check and do not overwrite if texture has newer timestamp
 -am         Export all meshes even if identical (scene mode only)
+-bp         Move bones to bind pose before saving model
 </pre><p>The material list is a text file, one material per line, saved alongside the Urho3D model. It is used by the scene editor to automatically apply the imported default materials when setting a new model for a <a class="el" href="class_urho3_d_1_1_static_model.html" title="Static model component.">StaticModel</a>, <a class="el" href="class_urho3_d_1_1_static_model_group.html" title="Renders several object instances while culling and receiving light as one unit. Can be used as a CPU-...">StaticModelGroup</a>, <a class="el" href="class_urho3_d_1_1_animated_model.html" title="Animated model component.">AnimatedModel</a> or <a class="el" href="class_urho3_d_1_1_skybox.html" title="Static model component with fixed position in relation to the camera.">Skybox</a> component, and can also be manually invoked by calling <a class="el" href="class_urho3_d_1_1_static_model.html#abacb48c866a3bf2f6ec386cb59461803">ApplyMaterialList()</a>. The list files can safely be deleted if not needed.</p>
 <p>In model or scene mode, the AssetImporter utility will also automatically save non-skeletal node animations into the output file directory.</p>
 <h2><a class="anchor" id="Tools_OgreImporter"></a>
