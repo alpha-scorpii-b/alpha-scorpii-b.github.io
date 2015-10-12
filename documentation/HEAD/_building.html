@@ -58,10 +58,10 @@ Building prerequisites</h2>
 </ul>
 <p>To run Urho3D, the minimum system requirements are:</p>
 <ul>
-<li>Windows: CPU with SSE instructions support, Windows XP or newer, DirectX 9.0c, GPU with Shader Model 3 support.</li>
+<li>Windows: CPU with SSE2 instructions support, Windows XP or newer, DirectX 9.0c, GPU with Shader Model 3 support.</li>
 </ul>
 <ul>
-<li>Linux &amp; Mac OS X: CPU with SSE instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
+<li>Linux &amp; Mac OS X: CPU with SSE2 instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
 </ul>
 <ul>
 <li>Raspberry Pi: Model B revision 2.0 with at least 128 MB of 512 MB SDRAM allocated for GPU.</li>
@@ -75,7 +75,7 @@ Building prerequisites</h2>
 <ul>
 <li>Emscripten: modern browsers with fast JavaScript engine and HTML5 and WebGL support.</li>
 </ul>
-<p>SSE requirement can be eliminated by disabling the use of SSE instruction set, see URHO3D_SSE build option below.</p>
+<p>SSE2 requirement can be eliminated by disabling the use of SSE instruction set, see URHO3D_SSE build option below.</p>
 <p>CMake (<a href="http://www.cmake.org">http://www.cmake.org</a>) is required to configure and generate the Urho3D project build tree. The minimum required version is 2.8.6. However, it is recommended to use the latest CMake version available out there, especially when targeting Mac OS X and iOS platforms using the latest Xcode version available. This is because Apple is known to change the internal working of Xcode with little regards to other third party build tools, such as CMake.</p>
 <h2><a class="anchor" id="Build_Scripts"></a>
 Build scripts</h2>
@@ -142,7 +142,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_DATABASE_SQLITE</td><td>0</td><td>Enable <a class="el" href="class_urho3_d_1_1_database.html" title="Database subsystem. Manage database connections.">Database</a> support with SQLite embedded </td></tr>
 <tr>
-<td>URHO3D_SSE </td><td>1</td><td>Enable SSE instruction set (Intel platform only including Android on Intel Atom) </td></tr>
+<td>URHO3D_SSE </td><td>1</td><td>Enable SSE2 instruction set (Intel platform only including Android on Intel Atom) </td></tr>
 <tr>
 <td>URHO3D_MINIDUMPS </td><td>1</td><td>Enable minidumps on crash (VS only) </td></tr>
 <tr>
