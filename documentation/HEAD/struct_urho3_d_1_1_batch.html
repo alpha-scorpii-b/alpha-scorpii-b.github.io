@@ -64,14 +64,14 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#a03e6c90ef0f19b20114e096ca71f3484">CalculateSortKey</a> ()</td></tr>
 <tr class="memdesc:a03e6c90ef0f19b20114e096ca71f3484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate state sorting key, which consists of base pass flag, light, pass and geometry. <br/></td></tr>
 <tr class="separator:a03e6c90ef0f19b20114e096ca71f3484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16da122dc9ea3734a06cbc961c9e2959"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16da122dc9ea3734a06cbc961c9e2959"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#a16da122dc9ea3734a06cbc961c9e2959">Prepare</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, bool setModelTransform, bool allowDepthWrite) const </td></tr>
-<tr class="memdesc:a16da122dc9ea3734a06cbc961c9e2959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for rendering. <br/></td></tr>
-<tr class="separator:a16da122dc9ea3734a06cbc961c9e2959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229a795dd9852167869b93e3fce702e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a229a795dd9852167869b93e3fce702e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#a229a795dd9852167869b93e3fce702e4">Draw</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, bool allowDepthWrite) const </td></tr>
-<tr class="memdesc:a229a795dd9852167869b93e3fce702e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare and draw. <br/></td></tr>
-<tr class="separator:a229a795dd9852167869b93e3fce702e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cd95b974cd75d3c86e5219c7826ab5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9cd95b974cd75d3c86e5219c7826ab5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#af9cd95b974cd75d3c86e5219c7826ab5">Prepare</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, bool setModelTransform, bool allowDepthWrite) const </td></tr>
+<tr class="memdesc:af9cd95b974cd75d3c86e5219c7826ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for rendering. <br/></td></tr>
+<tr class="separator:af9cd95b974cd75d3c86e5219c7826ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ad5e654aeb995e749370a08867faf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1ad5e654aeb995e749370a08867faf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#ab1ad5e654aeb995e749370a08867faf4">Draw</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, bool allowDepthWrite) const </td></tr>
+<tr class="memdesc:ab1ad5e654aeb995e749370a08867faf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare and draw. <br/></td></tr>
+<tr class="separator:ab1ad5e654aeb995e749370a08867faf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -111,10 +111,6 @@ const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> *&#160
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#a10fef31fefa9d8ed7128457804a74ae4">numWorldTransforms_</a></td></tr>
 <tr class="memdesc:a10fef31fefa9d8ed7128457804a74ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of world transforms. <br/></td></tr>
 <tr class="separator:a10fef31fefa9d8ed7128457804a74ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b52a8716a49ae7b82e7ef59200ed0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06b52a8716a49ae7b82e7ef59200ed0d"></a>
-<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#a06b52a8716a49ae7b82e7ef59200ed0d">camera_</a></td></tr>
-<tr class="memdesc:a06b52a8716a49ae7b82e7ef59200ed0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a>. <br/></td></tr>
-<tr class="separator:a06b52a8716a49ae7b82e7ef59200ed0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0e368ed367f3e69deb02ed356401d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd0e368ed367f3e69deb02ed356401d9"></a>
 <a class="el" href="class_urho3_d_1_1_zone.html">Zone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_batch.html#afd0e368ed367f3e69deb02ed356401d9">zone_</a></td></tr>
 <tr class="memdesc:afd0e368ed367f3e69deb02ed356401d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_zone.html" title="Component that describes global rendering properties.">Zone</a>. <br/></td></tr>

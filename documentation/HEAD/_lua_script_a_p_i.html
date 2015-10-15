@@ -6451,12 +6451,14 @@ Classes</h2>
 <li>void delete()</li>
 <li>void SetScene(Scene* scene)</li>
 <li>void SetCamera(Camera* camera)</li>
+<li>void SetCullCamera(Camera* camera)</li>
 <li>void SetRect(const IntRect&amp; rect)</li>
 <li>void SetRenderPath(RenderPath* path)</li>
 <li>void SetRenderPath(XMLFile* file)</li>
 <li>void SetDrawDebug(bool enable)</li>
 <li>Scene* GetScene() const</li>
 <li>Camera* GetCamera() const</li>
+<li>Camera* GetCullCamera() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; GetRect() const</li>
 <li>RenderPath* GetRenderPath() const</li>
 <li>bool GetDrawDebug() const</li>
@@ -6468,6 +6470,7 @@ Classes</h2>
 <ul>
 <li>Scene* scene</li>
 <li>Camera* camera</li>
+<li>Camera* cullCamera</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; rect</li>
 <li>RenderPath* renderPath</li>
 <li>bool drawDebug</li>

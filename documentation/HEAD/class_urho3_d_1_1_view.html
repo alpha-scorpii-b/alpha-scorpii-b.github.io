@@ -92,8 +92,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a7b478736e114bd3ba804a81db83c0779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ce6454bb222ef41b78d7dd7211958f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0ce6454bb222ef41b78d7dd7211958f"></a>
 <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#aa0ce6454bb222ef41b78d7dd7211958f">GetCamera</a> () const </td></tr>
-<tr class="memdesc:aa0ce6454bb222ef41b78d7dd7211958f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return camera. <br/></td></tr>
+<tr class="memdesc:aa0ce6454bb222ef41b78d7dd7211958f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return viewport camera. <br/></td></tr>
 <tr class="separator:aa0ce6454bb222ef41b78d7dd7211958f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac941c31b4a44914eca835b5f881df280"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac941c31b4a44914eca835b5f881df280"></a>
+<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ac941c31b4a44914eca835b5f881df280">GetCullCamera</a> () const </td></tr>
+<tr class="memdesc:ac941c31b4a44914eca835b5f881df280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return culling camera. Normally same as the viewport camera. <br/></td></tr>
+<tr class="separator:ac941c31b4a44914eca835b5f881df280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f9f0bfac1af5453006e7979b5ec19b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2f9f0bfac1af5453006e7979b5ec19b"></a>
 const <a class="el" href="struct_urho3_d_1_1_frame_info.html">FrameInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ab2f9f0bfac1af5453006e7979b5ec19b">GetFrameInfo</a> () const </td></tr>
 <tr class="memdesc:ab2f9f0bfac1af5453006e7979b5ec19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return information of the frame being rendered. <br/></td></tr>
@@ -126,6 +130,10 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html">OcclusionBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#af5c9e4aab2d168b7dff3d02741517040">GetOcclusionBuffer</a> () const </td></tr>
 <tr class="memdesc:af5c9e4aab2d168b7dff3d02741517040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last used software occlusion buffer. <br/></td></tr>
 <tr class="separator:af5c9e4aab2d168b7dff3d02741517040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905584d035b1a168383f3aaee7d90a68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a905584d035b1a168383f3aaee7d90a68"></a>
+<a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a905584d035b1a168383f3aaee7d90a68">GetSourceView</a> () const </td></tr>
+<tr class="memdesc:a905584d035b1a168383f3aaee7d90a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the source view that was already prepared. Used when viewports specify the same culling camera. <br/></td></tr>
+<tr class="separator:a905584d035b1a168383f3aaee7d90a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5121071c672db6986aa3fba4e116be0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5121071c672db6986aa3fba4e116be0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ab5121071c672db6986aa3fba4e116be0">SetGlobalShaderParameters</a> ()</td></tr>
 <tr class="memdesc:ab5121071c672db6986aa3fba4e116be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global (per-frame) shader parameters. Called by <a class="el" href="struct_urho3_d_1_1_batch.html" title="Queued 3D geometry draw call.">Batch</a> and internally by <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport...">View</a>. <br/></td></tr>
@@ -415,9 +423,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a8fbba9482b7dde51c24fa49b383d8aac">AddBatchToQueue</a> (<a class="el" href="struct_urho3_d_1_1_batch_queue.html">BatchQueue</a> &amp;queue, <a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch, <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> *tech, bool allowInstancing=true, bool allowShadows=true)</td></tr>
 <tr class="memdesc:a8fbba9482b7dde51c24fa49b383d8aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose shaders for a batch and add it to queue. <br/></td></tr>
 <tr class="separator:a8fbba9482b7dde51c24fa49b383d8aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86bf38944a0a074d4cb8c550d54a200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab86bf38944a0a074d4cb8c550d54a200"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ab86bf38944a0a074d4cb8c550d54a200">PrepareInstancingBuffer</a> ()</td></tr>
-<tr class="memdesc:ab86bf38944a0a074d4cb8c550d54a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare instancing buffer by filling it with all instance transforms. <br/></td></tr>
+<tr class="memitem:ab86bf38944a0a074d4cb8c550d54a200"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ab86bf38944a0a074d4cb8c550d54a200">PrepareInstancingBuffer</a> ()</td></tr>
+<tr class="memdesc:ab86bf38944a0a074d4cb8c550d54a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare instancing buffer by filling it with all instance transforms.  <a href="#ab86bf38944a0a074d4cb8c550d54a200">More...</a><br/></td></tr>
 <tr class="separator:ab86bf38944a0a074d4cb8c550d54a200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3ec16bf264ae329528b17f79db267d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad3ec16bf264ae329528b17f79db267d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#aad3ec16bf264ae329528b17f79db267d">SetupLightVolumeBatch</a> (<a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch)</td></tr>
@@ -476,12 +483,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac4257ca88cdd1ffe685f7e4760057d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f1b59d9e142350cfee27a2547a598b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8f1b59d9e142350cfee27a2547a598b"></a>
 <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ab8f1b59d9e142350cfee27a2547a598b">camera_</a></td></tr>
-<tr class="memdesc:ab8f1b59d9e142350cfee27a2547a598b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a> to use. <br/></td></tr>
+<tr class="memdesc:ab8f1b59d9e142350cfee27a2547a598b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_viewport.html" title="Viewport definition either for a render surface or the backbuffer.">Viewport</a> (rendering) camera. <br/></td></tr>
 <tr class="separator:ab8f1b59d9e142350cfee27a2547a598b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa38169516bcc25fb1468afc514a22d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa38169516bcc25fb1468afc514a22d5"></a>
-<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#aaa38169516bcc25fb1468afc514a22d5">cameraNode_</a></td></tr>
-<tr class="memdesc:aaa38169516bcc25fb1468afc514a22d5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a>'s scene node. <br/></td></tr>
-<tr class="separator:aaa38169516bcc25fb1468afc514a22d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e224d31801fee72b8b5a31be30904a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e224d31801fee72b8b5a31be30904a"></a>
+<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a61e224d31801fee72b8b5a31be30904a">cullCamera_</a></td></tr>
+<tr class="memdesc:a61e224d31801fee72b8b5a31be30904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Culling camera. Usually same as the viewport camera. <br/></td></tr>
+<tr class="separator:a61e224d31801fee72b8b5a31be30904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39900c747cf2a455df8d7de17baf73d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39900c747cf2a455df8d7de17baf73d9"></a>
+<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_view.html">View</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a39900c747cf2a455df8d7de17baf73d9">sourceView_</a></td></tr>
+<tr class="memdesc:a39900c747cf2a455df8d7de17baf73d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared source view. Null if this view is using its own culling. <br/></td></tr>
+<tr class="separator:a39900c747cf2a455df8d7de17baf73d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11788e88163365d02fd4db7f6585fdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac11788e88163365d02fd4db7f6585fdb"></a>
 <a class="el" href="class_urho3_d_1_1_zone.html">Zone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ac11788e88163365d02fd4db7f6585fdb">cameraZone_</a></td></tr>
 <tr class="memdesc:ac11788e88163365d02fd4db7f6585fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_zone.html" title="Component that describes global rendering properties.">Zone</a> the camera is inside, or default zone if not assigned. <br/></td></tr>
@@ -534,6 +545,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="struct_urho3_d_1_1_frame_info.html">FrameInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a890941632aa201778e64e09c22fb227e">frame_</a></td></tr>
 <tr class="memdesc:a890941632aa201778e64e09c22fb227e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information of the frame being rendered. <br/></td></tr>
 <tr class="separator:a890941632aa201778e64e09c22fb227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdb770e977e653c96116c555e5f35af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fdb770e977e653c96116c555e5f35af"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a9fdb770e977e653c96116c555e5f35af">aspectRatio_</a></td></tr>
+<tr class="memdesc:a9fdb770e977e653c96116c555e5f35af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport...">View</a> aspect ratio. <br/></td></tr>
+<tr class="separator:a9fdb770e977e653c96116c555e5f35af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18eb18c49b602b53cd3fc3f47d9d90b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18eb18c49b602b53cd3fc3f47d9d90b1"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a18eb18c49b602b53cd3fc3f47d9d90b1">minZ_</a></td></tr>
 <tr class="memdesc:a18eb18c49b602b53cd3fc3f47d9d90b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum Z value of the visible scene. <br/></td></tr>
@@ -558,6 +573,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a4876e7e1ae07d15a60769ecc1d75768c">highestZonePriority_</a></td></tr>
 <tr class="memdesc:a4876e7e1ae07d15a60769ecc1d75768c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest zone priority currently visible. <br/></td></tr>
 <tr class="separator:a4876e7e1ae07d15a60769ecc1d75768c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccce2e1af35028d53fad9472e67a969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acccce2e1af35028d53fad9472e67a969"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#acccce2e1af35028d53fad9472e67a969">geometriesUpdated_</a></td></tr>
+<tr class="memdesc:acccce2e1af35028d53fad9472e67a969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometries updated flag. <br/></td></tr>
+<tr class="separator:acccce2e1af35028d53fad9472e67a969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7364772b3928fdc3328c46cecbc2939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7364772b3928fdc3328c46cecbc2939"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ac7364772b3928fdc3328c46cecbc2939">cameraZoneOverride_</a></td></tr>
 <tr class="memdesc:ac7364772b3928fdc3328c46cecbc2939"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a> zone's override flag. <br/></td></tr>
@@ -725,7 +744,50 @@ template&lt;typename T &gt; </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal structure for 3D rendering work. Created for each backbuffer and texture viewport, but not for shadow cameras. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab86bf38944a0a074d4cb8c550d54a200"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::View::PrepareInstancingBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prepare instancing buffer by filling it with all instance transforms. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>If rendering the same view several times back-to-back, would not need to refill the buffer </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_view_ab86bf38944a0a074d4cb8c550d54a200_cgraph.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_view_ab86bf38944a0a074d4cb8c550d54a200_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/Graphics/View.h</li>
 <li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/Graphics/View.cpp</li>
 </ul>

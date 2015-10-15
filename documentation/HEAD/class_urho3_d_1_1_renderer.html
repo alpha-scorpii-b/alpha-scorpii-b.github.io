@@ -26,6 +26,7 @@ group: HEAD
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_urho3_d_1_1_renderer-members.html">List of all members</a>  </div>
@@ -350,14 +351,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a5c0831e08bf00013bbc106da1dd6a8c5">GetShadowCamera</a> ()</td></tr>
 <tr class="memdesc:a5c0831e08bf00013bbc106da1dd6a8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a temporary shadow camera and a scene node for it. Is thread-safe. <br/></td></tr>
 <tr class="separator:a5c0831e08bf00013bbc106da1dd6a8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e9775074919d571d661c8c01df0ef3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87e9775074919d571d661c8c01df0ef3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a87e9775074919d571d661c8c01df0ef3">StorePreparedView</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *cullCamera)</td></tr>
+<tr class="memdesc:a87e9775074919d571d661c8c01df0ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a view as prepared by the specified culling camera. <br/></td></tr>
+<tr class="separator:a87e9775074919d571d661c8c01df0ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1027c0decf3643ef8798daeea9292c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1027c0decf3643ef8798daeea9292c4"></a>
+<a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ac1027c0decf3643ef8798daeea9292c4">GetPreparedView</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *cullCamera)</td></tr>
+<tr class="memdesc:ac1027c0decf3643ef8798daeea9292c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a prepared view if exists for the specified camera. Used to avoid duplicate view preparation CPU work. <br/></td></tr>
+<tr class="separator:ac1027c0decf3643ef8798daeea9292c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa42e1606ad0740a23ae30f64ca079ddb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa42e1606ad0740a23ae30f64ca079ddb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aa42e1606ad0740a23ae30f64ca079ddb">SetBatchShaders</a> (<a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch, <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> *tech, bool allowShadows=true)</td></tr>
 <tr class="memdesc:aa42e1606ad0740a23ae30f64ca079ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose shaders for a forward rendering batch. <br/></td></tr>
 <tr class="separator:aa42e1606ad0740a23ae30f64ca079ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d367cced001785f720b749545e7945b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d367cced001785f720b749545e7945b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a7d367cced001785f720b749545e7945b">SetLightVolumeBatchShaders</a> (<a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;vsName, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;psName, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;vsDefines, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;psDefines)</td></tr>
-<tr class="memdesc:a7d367cced001785f720b749545e7945b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose shaders for a deferred light volume batch. <br/></td></tr>
-<tr class="separator:a7d367cced001785f720b749545e7945b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082229608bb0f466ac48885bb4055a48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a082229608bb0f466ac48885bb4055a48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a082229608bb0f466ac48885bb4055a48">SetLightVolumeBatchShaders</a> (<a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;vsName, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;psName, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;vsDefines, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;psDefines)</td></tr>
+<tr class="memdesc:a082229608bb0f466ac48885bb4055a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose shaders for a deferred light volume batch. <br/></td></tr>
+<tr class="separator:a082229608bb0f466ac48885bb4055a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf64510e7fdd35d5387413a242e2e52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cf64510e7fdd35d5387413a242e2e52"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a3cf64510e7fdd35d5387413a242e2e52">SetCullMode</a> (CullMode mode, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
 <tr class="memdesc:a3cf64510e7fdd35d5387413a242e2e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cull mode while taking possible projection flipping into account. <br/></td></tr>
@@ -529,6 +538,31 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0eb5281d7e6cfd7e729ae0d07ca0da92">RefCountPtr</a> ()</td></tr>
 <tr class="memdesc:a0eb5281d7e6cfd7e729ae0d07ca0da92 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pointer to the reference count structure. <br/></td></tr>
 <tr class="separator:a0eb5281d7e6cfd7e729ae0d07ca0da92 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac5cf9622733d9268d4ce4584cd63fd22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5cf9622733d9268d4ce4584cd63fd22"></a>
+static <a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ac5cf9622733d9268d4ce4584cd63fd22">GetActualView</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view)</td></tr>
+<tr class="memdesc:ac5cf9622733d9268d4ce4584cd63fd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a view or its source view if it uses one. Used internally for render statistics. <br/></td></tr>
+<tr class="separator:ac5cf9622733d9268d4ce4584cd63fd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
+<tr class="memitem:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf5a648d6c449dd14b273c10fdd498a9"></a>
+static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aaf5a648d6c449dd14b273c10fdd498a9">GetTypeInfoStatic</a> ()</td></tr>
+<tr class="memdesc:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type info static. <br/></td></tr>
+<tr class="separator:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23f5ad6df187b57caf5f5423f6d34a1e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a23f5ad6df187b57caf5f5423f6d34a1e">IsTypeOf</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type)</td></tr>
+<tr class="memdesc:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified type. <br/></td></tr>
+<tr class="separator:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c59261c984c199b986fa634014b8fed"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a8c59261c984c199b986fa634014b8fed">IsTypeOf</a> (const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *typeInfo)</td></tr>
+<tr class="memdesc:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified type. <br/></td></tr>
+<tr class="separator:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1611e4f1b3d64d480b3b40588c451326"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a1611e4f1b3d64d480b3b40588c451326">IsTypeOf</a> ()</td></tr>
+<tr class="memdesc:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified class. <br/></td></tr>
+<tr class="separator:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -705,6 +739,11 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_view.html">View</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#add69f17f4dd8573a70efe3090e986b80">views_</a></td></tr>
 <tr class="memdesc:add69f17f4dd8573a70efe3090e986b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Views that have been processed this frame. <br/></td></tr>
 <tr class="separator:add69f17f4dd8573a70efe3090e986b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fc4616a1c4116d3748d95e825dbfbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47fc4616a1c4116d3748d95e825dbfbe"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *, <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_view.html">View</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a47fc4616a1c4116d3748d95e825dbfbe">preparedViews_</a></td></tr>
+<tr class="memdesc:a47fc4616a1c4116d3748d95e825dbfbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared views by culling camera. <br/></td></tr>
+<tr class="separator:a47fc4616a1c4116d3748d95e825dbfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09f920841fa03c4d62fac5a40abb4af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab09f920841fa03c4d62fac5a40abb4af"></a>
 <a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; <a class="el" href="class_urho3_d_1_1_octree.html">Octree</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ab09f920841fa03c4d62fac5a40abb4af">updatedOctrees_</a></td></tr>
 <tr class="memdesc:ab09f920841fa03c4d62fac5a40abb4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Octrees that have been updated during the frame. <br/></td></tr>
@@ -840,24 +879,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
-<tr class="memitem:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf5a648d6c449dd14b273c10fdd498a9"></a>
-static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aaf5a648d6c449dd14b273c10fdd498a9">GetTypeInfoStatic</a> ()</td></tr>
-<tr class="memdesc:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type info static. <br/></td></tr>
-<tr class="separator:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23f5ad6df187b57caf5f5423f6d34a1e"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a23f5ad6df187b57caf5f5423f6d34a1e">IsTypeOf</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type)</td></tr>
-<tr class="memdesc:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified type. <br/></td></tr>
-<tr class="separator:a23f5ad6df187b57caf5f5423f6d34a1e inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c59261c984c199b986fa634014b8fed"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a8c59261c984c199b986fa634014b8fed">IsTypeOf</a> (const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *typeInfo)</td></tr>
-<tr class="memdesc:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified type. <br/></td></tr>
-<tr class="separator:a8c59261c984c199b986fa634014b8fed inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1611e4f1b3d64d480b3b40588c451326"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a1611e4f1b3d64d480b3b40588c451326">IsTypeOf</a> ()</td></tr>
-<tr class="memdesc:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current type is type of specified class. <br/></td></tr>
-<tr class="separator:a1611e4f1b3d64d480b3b40588c451326 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7df857ddaa8c3e218c3645152dc23d"></a>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a3a7df857ddaa8c3e218c3645152dc23d">context_</a></td></tr>
