@@ -75,7 +75,7 @@ Building prerequisites</h2>
 <ul>
 <li>Emscripten: modern browsers with fast JavaScript engine and HTML5 and WebGL support.</li>
 </ul>
-<p>SSE2 requirement can be eliminated by disabling the use of SSE instruction set, see URHO3D_SSE build option below.</p>
+<p>SSE2/NEON requirement can be eliminated by disabling the use of SSE2/NEON instruction set, see URHO3D_SSE and URHO3D_NEON build options below.</p>
 <p>CMake (<a href="http://www.cmake.org">http://www.cmake.org</a>) is required to configure and generate the Urho3D project build tree. The minimum required version is 2.8.6. However, it is recommended to use the latest CMake version available out there, especially when targeting Mac OS X and iOS platforms using the latest Xcode version available. This is because Apple is known to change the internal working of Xcode with little regards to other third party build tools, such as CMake.</p>
 <h2><a class="anchor" id="Build_Scripts"></a>
 Build scripts</h2>
@@ -142,7 +142,9 @@ Build options</h2>
 <tr>
 <td>URHO3D_DATABASE_SQLITE</td><td>0</td><td>Enable <a class="el" href="class_urho3_d_1_1_database.html" title="Database subsystem. Manage database connections.">Database</a> support with SQLite embedded </td></tr>
 <tr>
-<td>URHO3D_SSE </td><td>1</td><td>Enable SSE2 instruction set (HTML5 and Intel platforms only including Android on Intel Atom) </td></tr>
+<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (HTML5 and Intel platforms only including Android on Intel Atom); default to true on Intel and false on HTML5; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET build option </td></tr>
+<tr>
+<td>URHO3D_NEON </td><td>1</td><td>Enable NEON instruction set (ARM platforms with NEON only) </td></tr>
 <tr>
 <td>URHO3D_MINIDUMPS </td><td>1</td><td>Enable minidumps on crash (VS only) </td></tr>
 <tr>
@@ -181,6 +183,8 @@ Build options</h2>
 <td>URHO3D_USE_LIB_DEB </td><td>0</td><td>Enable 64-bit DEB CPack generator using /usr/lib and disable all other generators (Redhat-based host only, which uses /usr/lib64 by default) </td></tr>
 <tr>
 <td>URHO3D_HOME </td><td>-</td><td>Path to Urho3D build tree or SDK installation location (external project only) </td></tr>
+<tr>
+<td>URHO3D_DEPLOYMENT_TARGET</td><td>native</td><td>Specify the minimum CPU type on which the target binaries are to be deployed, see GCC/Clang's -march option for possible values (GCC/Clang desktop platform only) </td></tr>
 <tr>
 <td>CMAKE_BUILD_TYPE </td><td>Release</td><td>Specify CMake build configuration (single-configuration generator only), possible values are Release (default), RelWithDebInfo, and Debug </td></tr>
 <tr>
