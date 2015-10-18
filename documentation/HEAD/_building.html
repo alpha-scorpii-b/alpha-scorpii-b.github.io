@@ -142,7 +142,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_DATABASE_SQLITE</td><td>0</td><td>Enable <a class="el" href="class_urho3_d_1_1_database.html" title="Database subsystem. Manage database connections.">Database</a> support with SQLite embedded </td></tr>
 <tr>
-<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (HTML5 and Intel platforms only including Android on Intel Atom); default to true on Intel and false on HTML5; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET build option </td></tr>
+<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (HTML5 and Intel platforms only including Android on Intel Atom); default to true on Intel and false on HTML5; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET and CMAKE_OSX_DEPLOYMENT_TARGET build options </td></tr>
 <tr>
 <td>URHO3D_NEON </td><td>1</td><td>Enable NEON instruction set (ARM platforms with NEON only) </td></tr>
 <tr>
@@ -184,7 +184,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_HOME </td><td>-</td><td>Path to Urho3D build tree or SDK installation location (external project only) </td></tr>
 <tr>
-<td>URHO3D_DEPLOYMENT_TARGET</td><td>native</td><td>Specify the minimum CPU type on which the target binaries are to be deployed, see GCC/Clang's -march option for possible values (GCC/Clang desktop platform only) </td></tr>
+<td>URHO3D_DEPLOYMENT_TARGET</td><td>native</td><td>Specify the minimum CPU type on which the target binaries are to be deployed (Linux and non-Xcode OSX desktop build only), see GCC/Clang's -march option for possible values </td></tr>
 <tr>
 <td>CMAKE_BUILD_TYPE </td><td>Release</td><td>Specify CMake build configuration (single-configuration generator only), possible values are Release (default), RelWithDebInfo, and Debug </td></tr>
 <tr>
