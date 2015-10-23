@@ -50,7 +50,7 @@ Using</h2>
 <div class="fragment"><div class="line">Localization* l10n = GetSubsystem&lt;Localization&gt;();</div>
 <div class="line">l10n-&gt;SetLanguage(<span class="stringliteral">&quot;language 2&quot;</span>);</div>
 </div><!-- fragment --><p>When the language is changed, the E_CHANGELANGUAGE event will be sent. Subscribe to it to perform the necessary relocalization of your user interface (texts, sprites etc.)</p>
-<div class="fragment"><div class="line">SubscribeToEvent(E_CHANGELANGUAGE, HANDLER(Game, HandleChangeLanguage));</div>
+<div class="fragment"><div class="line">SubscribeToEvent(E_CHANGELANGUAGE, URHO3D_HANDLER(Game, HandleChangeLanguage));</div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">void</span> Game::HandleChangeLanguage(StringHash eventType, VariantMap&amp; eventData)</div>
 <div class="line">{</div>

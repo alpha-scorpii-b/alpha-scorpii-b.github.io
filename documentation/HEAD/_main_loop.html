@@ -126,7 +126,7 @@ Application framework</h2>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Start()</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Called after engine initialization. Setup application &amp; subscribe to events here</span></div>
-<div class="line">        SubscribeToEvent(E_KEYDOWN, HANDLER(MyApp, HandleKeyDown));</div>
+<div class="line">        SubscribeToEvent(E_KEYDOWN, URHO3D_HANDLER(MyApp, HandleKeyDown));</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Stop()</div>
@@ -145,5 +145,5 @@ Application framework</h2>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"></div>
-<div class="line">DEFINE_APPLICATION_MAIN(MyApp)</div>
+<div class="line">URHO3D_DEFINE_APPLICATION_MAIN(MyApp)</div>
 </div><!-- fragment --> </div></div><!-- contents -->
