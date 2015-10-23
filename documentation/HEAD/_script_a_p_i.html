@@ -3211,6 +3211,7 @@ Classes</h2>
 <ul>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> category // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ defaultStyle</li>
+<li><a class="el" href="class_urho3_d_1_1_text.html" title="Text UI element.">Text</a>@ memoryText // readonly</li>
 <li>uint mode</li>
 <li><a class="el" href="class_urho3_d_1_1_text.html" title="Text UI element.">Text</a>@ modeText // readonly</li>
 <li>float profilerInterval</li>
@@ -6820,8 +6821,8 @@ Classes</h2>
 <li>bool autoReloadResources</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> category // readonly</li>
 <li>int finishBackgroundResourcesMs</li>
-<li>uint[] memoryBudget</li>
-<li>uint[] memoryUse // readonly</li>
+<li>uint64[] memoryBudget</li>
+<li>uint64[] memoryUse // readonly</li>
 <li>uint numBackgroundLoadResources // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_package_file.html" title="Stores files of a directory tree sequentially for convenient access.">PackageFile</a>@[]@ packageFiles // readonly</li>
 <li>int refs // readonly</li>
@@ -6829,7 +6830,7 @@ Classes</h2>
 <li>bool returnFailedResources</li>
 <li>bool seachPackagesFirst // readonly</li>
 <li>bool searchPackagesFirst // writeonly</li>
-<li>uint totalMemoryUse // readonly</li>
+<li>uint64 totalMemoryUse // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
 <li>int weakRefs // readonly</li>
@@ -11396,6 +11397,7 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetExtension(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = true)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetFileName(const String&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetFileNameAndExtension(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false)</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetFileSizeString(uint64)</li>
 <li>uint GetFloat16Format()</li>
 <li>uint GetFloat32Format()</li>
 <li>uint GetFormat(const String&amp;)</li>
@@ -11552,6 +11554,8 @@ Global constants</h2>
 <li>uint DD_SOURCE_AND_TARGET</li>
 <li>uint DD_TARGET</li>
 <li>uint DEBUGHUD_SHOW_ALL</li>
+<li>uint DEBUGHUD_SHOW_ALL_MEMORY</li>
+<li>uint DEBUGHUD_SHOW_MEMORY</li>
 <li>uint DEBUGHUD_SHOW_MODE</li>
 <li>uint DEBUGHUD_SHOW_NONE</li>
 <li>uint DEBUGHUD_SHOW_PROFILER</li>
