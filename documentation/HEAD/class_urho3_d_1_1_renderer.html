@@ -146,6 +146,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a3fcccde75cf5c79fcc05180a60eb44d8">SetOccluderSizeThreshold</a> (float screenSize)</td></tr>
 <tr class="memdesc:a3fcccde75cf5c79fcc05180a60eb44d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set required screen size (1.0 = full screen) for occluders. <br/></td></tr>
 <tr class="separator:a3fcccde75cf5c79fcc05180a60eb44d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49da632fd775c568d98894674caebd39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49da632fd775c568d98894674caebd39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a49da632fd775c568d98894674caebd39">SetThreadedOcclusion</a> (bool enable)</td></tr>
+<tr class="memdesc:a49da632fd775c568d98894674caebd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to thread occluder rendering. Default false. <br/></td></tr>
+<tr class="separator:a49da632fd775c568d98894674caebd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fd3f9815f6b05f92be26e45269f093"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26fd3f9815f6b05f92be26e45269f093"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a26fd3f9815f6b05f92be26e45269f093">SetMobileShadowBiasMul</a> (float mul)</td></tr>
 <tr class="memdesc:a26fd3f9815f6b05f92be26e45269f093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow depth bias multiplier for mobile platforms (OpenGL ES.) No effect on desktops. Default 2. <br/></td></tr>
@@ -238,6 +242,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a46d1232b9fc1d6d138e7e93d0b8355b9">GetOccluderSizeThreshold</a> () const </td></tr>
 <tr class="memdesc:a46d1232b9fc1d6d138e7e93d0b8355b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return occluder screen size threshold. <br/></td></tr>
 <tr class="separator:a46d1232b9fc1d6d138e7e93d0b8355b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2781b0e2de3311f4a947ef6f697a1a6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2781b0e2de3311f4a947ef6f697a1a6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a2781b0e2de3311f4a947ef6f697a1a6c">GetThreadedOcclusion</a> () const </td></tr>
+<tr class="memdesc:a2781b0e2de3311f4a947ef6f697a1a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether occlusion rendering is threaded. <br/></td></tr>
+<tr class="separator:a2781b0e2de3311f4a947ef6f697a1a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8cd0266aa397abf7c9d96b05d748f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b8cd0266aa397abf7c9d96b05d748f0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a4b8cd0266aa397abf7c9d96b05d748f0">GetMobileShadowBiasMul</a> () const </td></tr>
 <tr class="memdesc:a4b8cd0266aa397abf7c9d96b05d748f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow depth bias multiplier for mobile platforms. <br/></td></tr>
@@ -864,6 +872,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ae39627e4cb9059d27df4c00ae872f3e5">dynamicInstancing_</a></td></tr>
 <tr class="memdesc:ae39627e4cb9059d27df4c00ae872f3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic instancing flag. <br/></td></tr>
 <tr class="separator:ae39627e4cb9059d27df4c00ae872f3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9b4ee6336045b840c4bb2bf8b53b76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9b4ee6336045b840c4bb2bf8b53b76"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a2d9b4ee6336045b840c4bb2bf8b53b76">threadedOcclusion_</a></td></tr>
+<tr class="memdesc:a2d9b4ee6336045b840c4bb2bf8b53b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threaded occlusion rendering flag. <br/></td></tr>
+<tr class="separator:a2d9b4ee6336045b840c4bb2bf8b53b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87b33b1aa1fd46a404210ad1adbae26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af87b33b1aa1fd46a404210ad1adbae26"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#af87b33b1aa1fd46a404210ad1adbae26">shadersDirty_</a></td></tr>
 <tr class="memdesc:af87b33b1aa1fd46a404210ad1adbae26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shaders need reloading flag. <br/></td></tr>

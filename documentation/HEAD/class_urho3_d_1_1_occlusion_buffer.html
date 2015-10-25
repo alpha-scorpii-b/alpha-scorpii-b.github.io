@@ -61,10 +61,10 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#afd2ae24827a10db0e64b7ce31b53355a">~OcclusionBuffer</a> ()</td></tr>
 <tr class="memdesc:afd2ae24827a10db0e64b7ce31b53355a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:afd2ae24827a10db0e64b7ce31b53355a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b7cef3663680ff671b0f0f671cc930"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92b7cef3663680ff671b0f0f671cc930"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a92b7cef3663680ff671b0f0f671cc930">SetSize</a> (int width, int height)</td></tr>
-<tr class="memdesc:a92b7cef3663680ff671b0f0f671cc930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set occlusion buffer size. <br/></td></tr>
-<tr class="separator:a92b7cef3663680ff671b0f0f671cc930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6eea532ca2f8c396fd29c291a00f3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb6eea532ca2f8c396fd29c291a00f3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#afb6eea532ca2f8c396fd29c291a00f3e">SetSize</a> (int width, int height, bool threaded)</td></tr>
+<tr class="memdesc:afb6eea532ca2f8c396fd29c291a00f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set occlusion buffer size and whether to reserve multiple buffers for threading optimization. <br/></td></tr>
+<tr class="separator:afb6eea532ca2f8c396fd29c291a00f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2540b689f2451b6358fd99717151fff6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2540b689f2451b6358fd99717151fff6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a2540b689f2451b6358fd99717151fff6">SetView</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
 <tr class="memdesc:a2540b689f2451b6358fd99717151fff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set camera view to render from. <br/></td></tr>
@@ -85,14 +85,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a6e7f4686a38036fce215dc67d3ea43a7">Clear</a> ()</td></tr>
 <tr class="memdesc:a6e7f4686a38036fce215dc67d3ea43a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the buffer. <br/></td></tr>
 <tr class="separator:a6e7f4686a38036fce215dc67d3ea43a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade75352aa267968dd9d5c5022dc98346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade75352aa267968dd9d5c5022dc98346"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ade75352aa267968dd9d5c5022dc98346">Draw</a> (const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;model, const void *vertexData, unsigned vertexSize, unsigned vertexStart, unsigned vertexCount)</td></tr>
-<tr class="memdesc:ade75352aa267968dd9d5c5022dc98346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a triangle mesh to the buffer using non-indexed geometry. <br/></td></tr>
-<tr class="separator:ade75352aa267968dd9d5c5022dc98346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5eaaaca4a53d2d3ff353bc8887ebcc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5eaaaca4a53d2d3ff353bc8887ebcc5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ad5eaaaca4a53d2d3ff353bc8887ebcc5">Draw</a> (const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;model, const void *vertexData, unsigned vertexSize, const void *indexData, unsigned indexSize, unsigned indexStart, unsigned indexCount)</td></tr>
-<tr class="memdesc:ad5eaaaca4a53d2d3ff353bc8887ebcc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a triangle mesh to the buffer using indexed geometry. <br/></td></tr>
-<tr class="separator:ad5eaaaca4a53d2d3ff353bc8887ebcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a292e64edc586d8d03b1494e2aa46d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62a292e64edc586d8d03b1494e2aa46d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a62a292e64edc586d8d03b1494e2aa46d">AddTriangles</a> (const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;model, const void *vertexData, unsigned vertexSize, unsigned vertexStart, unsigned vertexCount)</td></tr>
+<tr class="memdesc:a62a292e64edc586d8d03b1494e2aa46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a triangle mesh to the buffer using non-indexed geometry. Return true if did not overflow the allowed triangle count. <br/></td></tr>
+<tr class="separator:a62a292e64edc586d8d03b1494e2aa46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e94bdaae8ce72fd240fcbab021e275"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4e94bdaae8ce72fd240fcbab021e275"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ae4e94bdaae8ce72fd240fcbab021e275">AddTriangles</a> (const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;model, const void *vertexData, unsigned vertexSize, const void *indexData, unsigned indexSize, unsigned indexStart, unsigned indexCount)</td></tr>
+<tr class="memdesc:ae4e94bdaae8ce72fd240fcbab021e275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a triangle mesh to the buffer using indexed geometry. Return true if did not overflow the allowed triangle count. <br/></td></tr>
+<tr class="separator:ae4e94bdaae8ce72fd240fcbab021e275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959d9e7ad060ebab9769b866ac66e94b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a959d9e7ad060ebab9769b866ac66e94b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a959d9e7ad060ebab9769b866ac66e94b">DrawTriangles</a> ()</td></tr>
+<tr class="memdesc:a959d9e7ad060ebab9769b866ac66e94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw submitted batches. Uses worker threads if enabled during <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#afb6eea532ca2f8c396fd29c291a00f3e" title="Set occlusion buffer size and whether to reserve multiple buffers for threading optimization.">SetSize()</a>. <br/></td></tr>
+<tr class="separator:a959d9e7ad060ebab9769b866ac66e94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa697cf5ddca365cf1025520db938f0f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa697cf5ddca365cf1025520db938f0f3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#aa697cf5ddca365cf1025520db938f0f3">BuildDepthHierarchy</a> ()</td></tr>
 <tr class="memdesc:aa697cf5ddca365cf1025520db938f0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build reduced size mip levels. <br/></td></tr>
@@ -133,6 +137,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 CullMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#abc96a18ada570537444975d48d1166d3">GetCullMode</a> () const </td></tr>
 <tr class="memdesc:abc96a18ada570537444975d48d1166d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return culling mode. <br/></td></tr>
 <tr class="separator:abc96a18ada570537444975d48d1166d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a75d8445a0a906820ec638b3e6e380"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2a75d8445a0a906820ec638b3e6e380"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ae2a75d8445a0a906820ec638b3e6e380">IsThreaded</a> () const </td></tr>
+<tr class="memdesc:ae2a75d8445a0a906820ec638b3e6e380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is using threads to speed up rendering. <br/></td></tr>
+<tr class="separator:ae2a75d8445a0a906820ec638b3e6e380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca6bd200d73bc21883e712f81a047f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca6bd200d73bc21883e712f81a047f2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a6ca6bd200d73bc21883e712f81a047f2">IsVisible</a> (const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;worldSpaceBox) const </td></tr>
 <tr class="memdesc:a6ca6bd200d73bc21883e712f81a047f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a bounding box for visibility. For best performance, build depth hierarchy first. <br/></td></tr>
@@ -141,6 +149,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a39327012d55ce413bf2fa277b97f3107">GetUseTimer</a> ()</td></tr>
 <tr class="memdesc:a39327012d55ce413bf2fa277b97f3107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return time since last use in milliseconds. <br/></td></tr>
 <tr class="separator:a39327012d55ce413bf2fa277b97f3107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6655cb8209e629fdeb23a7c45818cab3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6655cb8209e629fdeb23a7c45818cab3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a6655cb8209e629fdeb23a7c45818cab3">DrawBatch</a> (const <a class="el" href="struct_urho3_d_1_1_occlusion_batch.html">OcclusionBatch</a> &amp;batch, unsigned threadIndex)</td></tr>
+<tr class="memdesc:a6655cb8209e629fdeb23a7c45818cab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a batch. Called internally. <br/></td></tr>
+<tr class="separator:a6655cb8209e629fdeb23a7c45818cab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95a6cd1c5c12a458fda4b38f873a334d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a95a6cd1c5c12a458fda4b38f873a334d">Object</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -310,25 +322,42 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#afabce4deed9f3a953f9d12af6dde9a19">CalculateViewport</a> ()</td></tr>
 <tr class="memdesc:afabce4deed9f3a953f9d12af6dde9a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate viewport transform. <br/></td></tr>
 <tr class="separator:afabce4deed9f3a953f9d12af6dde9a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300c11fd5abdbf20bbc96d84b5cf3a46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a300c11fd5abdbf20bbc96d84b5cf3a46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a300c11fd5abdbf20bbc96d84b5cf3a46">DrawTriangle</a> (<a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a> *vertices)</td></tr>
-<tr class="memdesc:a300c11fd5abdbf20bbc96d84b5cf3a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a triangle. <br/></td></tr>
-<tr class="separator:a300c11fd5abdbf20bbc96d84b5cf3a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b616dc185935c8d401ea3f8208d38a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b616dc185935c8d401ea3f8208d38a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a2b616dc185935c8d401ea3f8208d38a6">DrawTriangle</a> (<a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a> *vertices, unsigned threadIndex)</td></tr>
+<tr class="memdesc:a2b616dc185935c8d401ea3f8208d38a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a triangle. <br/></td></tr>
+<tr class="separator:a2b616dc185935c8d401ea3f8208d38a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a3fa095ddc419fa0f51a42b7537560"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29a3fa095ddc419fa0f51a42b7537560"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a29a3fa095ddc419fa0f51a42b7537560">ClipVertices</a> (const <a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a> &amp;plane, <a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a> *vertices, bool *triangles, unsigned &amp;numTriangles)</td></tr>
 <tr class="memdesc:a29a3fa095ddc419fa0f51a42b7537560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clip vertices against a plane. <br/></td></tr>
 <tr class="separator:a29a3fa095ddc419fa0f51a42b7537560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b8e406e0d86687b99d5c3364603bea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08b8e406e0d86687b99d5c3364603bea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a08b8e406e0d86687b99d5c3364603bea">DrawTriangle2D</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> *vertices, bool clockwise)</td></tr>
-<tr class="memdesc:a08b8e406e0d86687b99d5c3364603bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a clipped triangle. <br/></td></tr>
-<tr class="separator:a08b8e406e0d86687b99d5c3364603bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3b28454264d832db67116570ec613d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3b28454264d832db67116570ec613d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a9d3b28454264d832db67116570ec613d">DrawTriangle2D</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> *vertices, bool clockwise, unsigned threadIndex)</td></tr>
+<tr class="memdesc:a9d3b28454264d832db67116570ec613d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a clipped triangle. <br/></td></tr>
+<tr class="separator:a9d3b28454264d832db67116570ec613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7bbdce8ae8719462f5674e0211170f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e7bbdce8ae8719462f5674e0211170f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a8e7bbdce8ae8719462f5674e0211170f">ClearBuffer</a> (unsigned threadIndex)</td></tr>
+<tr class="memdesc:a8e7bbdce8ae8719462f5674e0211170f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a thread work buffer. <br/></td></tr>
+<tr class="separator:a8e7bbdce8ae8719462f5674e0211170f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dceb0396853b9b72b21453dc8e6f7f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dceb0396853b9b72b21453dc8e6f7f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a2dceb0396853b9b72b21453dc8e6f7f7">MergeBuffers</a> ()</td></tr>
+<tr class="memdesc:a2dceb0396853b9b72b21453dc8e6f7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge thread work buffers into the first buffer. <br/></td></tr>
+<tr class="separator:a2dceb0396853b9b72b21453dc8e6f7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa793c14c2344ac1f75b6de9b079620b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa793c14c2344ac1f75b6de9b079620b0"></a>
-int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#aa793c14c2344ac1f75b6de9b079620b0">buffer_</a></td></tr>
-<tr class="memdesc:aa793c14c2344ac1f75b6de9b079620b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest level depth buffer. <br/></td></tr>
-<tr class="separator:aa793c14c2344ac1f75b6de9b079620b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a0c0f57404f138abd4e7a2fbd326db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50a0c0f57404f138abd4e7a2fbd326db"></a>
+<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_occlusion_buffer_data.html">OcclusionBufferData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a50a0c0f57404f138abd4e7a2fbd326db">buffers_</a></td></tr>
+<tr class="memdesc:a50a0c0f57404f138abd4e7a2fbd326db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest-level buffer data per thread. <br/></td></tr>
+<tr class="separator:a50a0c0f57404f138abd4e7a2fbd326db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae113003592b620de366c5a612dff293e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae113003592b620de366c5a612dff293e"></a>
+<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_array_ptr.html">SharedArrayPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="struct_urho3_d_1_1_depth_value.html">DepthValue</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ae113003592b620de366c5a612dff293e">mipBuffers_</a></td></tr>
+<tr class="memdesc:ae113003592b620de366c5a612dff293e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduced size depth buffers. <br/></td></tr>
+<tr class="separator:ae113003592b620de366c5a612dff293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1971107e7d6da3458b039a8636ed64eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1971107e7d6da3458b039a8636ed64eb"></a>
+<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="struct_urho3_d_1_1_occlusion_batch.html">OcclusionBatch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a1971107e7d6da3458b039a8636ed64eb">batches_</a></td></tr>
+<tr class="memdesc:a1971107e7d6da3458b039a8636ed64eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submitted render jobs. <br/></td></tr>
+<tr class="separator:a1971107e7d6da3458b039a8636ed64eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3614b52aec7b3fd6ea0aae00d1c5ac9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3614b52aec7b3fd6ea0aae00d1c5ac9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#aa3614b52aec7b3fd6ea0aae00d1c5ac9">width_</a></td></tr>
 <tr class="memdesc:aa3614b52aec7b3fd6ea0aae00d1c5ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer width. <br/></td></tr>
@@ -405,15 +434,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a56912f1a2929978035df28992415b5e0">projOffsetScaleY_</a></td></tr>
 <tr class="memdesc:a56912f1a2929978035df28992415b5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combined Y projection and viewport transform. <br/></td></tr>
 <tr class="separator:a56912f1a2929978035df28992415b5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee4a36205771ffafaeaf9a8611169edc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee4a36205771ffafaeaf9a8611169edc"></a>
-<a class="el" href="class_urho3_d_1_1_shared_array_ptr.html">SharedArrayPtr</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#aee4a36205771ffafaeaf9a8611169edc">fullBuffer_</a></td></tr>
-<tr class="memdesc:aee4a36205771ffafaeaf9a8611169edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest level buffer with safety padding. <br/></td></tr>
-<tr class="separator:aee4a36205771ffafaeaf9a8611169edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae113003592b620de366c5a612dff293e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae113003592b620de366c5a612dff293e"></a>
-<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_array_ptr.html">SharedArrayPtr</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_urho3_d_1_1_depth_value.html">DepthValue</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ae113003592b620de366c5a612dff293e">mipBuffers_</a></td></tr>
-<tr class="memdesc:ae113003592b620de366c5a612dff293e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduced size depth buffers. <br/></td></tr>
-<tr class="separator:ae113003592b620de366c5a612dff293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

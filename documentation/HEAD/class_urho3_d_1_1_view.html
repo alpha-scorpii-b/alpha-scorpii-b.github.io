@@ -130,6 +130,10 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html">OcclusionBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#af5c9e4aab2d168b7dff3d02741517040">GetOcclusionBuffer</a> () const </td></tr>
 <tr class="memdesc:af5c9e4aab2d168b7dff3d02741517040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last used software occlusion buffer. <br/></td></tr>
 <tr class="separator:af5c9e4aab2d168b7dff3d02741517040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ae0959f1f9ef4f15073145e299c0b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49ae0959f1f9ef4f15073145e299c0b6"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a49ae0959f1f9ef4f15073145e299c0b6">GetNumActiveOccluders</a> () const </td></tr>
+<tr class="memdesc:a49ae0959f1f9ef4f15073145e299c0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of occluders that were actually rendered. Occluders may be rejected if running out of triangles or if behind other occluders. <br/></td></tr>
+<tr class="separator:a49ae0959f1f9ef4f15073145e299c0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905584d035b1a168383f3aaee7d90a68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a905584d035b1a168383f3aaee7d90a68"></a>
 <a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a905584d035b1a168383f3aaee7d90a68">GetSourceView</a> () const </td></tr>
 <tr class="memdesc:a905584d035b1a168383f3aaee7d90a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the source view that was already prepared. Used when viewports specify the same culling camera. <br/></td></tr>
@@ -645,6 +649,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_light.html">Light</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ad3bfe625e493e0d1d5599d4752c10964">lights_</a></td></tr>
 <tr class="memdesc:ad3bfe625e493e0d1d5599d4752c10964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lights. <br/></td></tr>
 <tr class="separator:ad3bfe625e493e0d1d5599d4752c10964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eca0eb0938487bc11cec10dd575751a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eca0eb0938487bc11cec10dd575751a"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a2eca0eb0938487bc11cec10dd575751a">activeOccluders_</a></td></tr>
+<tr class="memdesc:a2eca0eb0938487bc11cec10dd575751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active occluders. <br/></td></tr>
+<tr class="separator:a2eca0eb0938487bc11cec10dd575751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521eaea9db4c5d30ebb72010860b1180"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a521eaea9db4c5d30ebb72010860b1180"></a>
 <a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a521eaea9db4c5d30ebb72010860b1180">maxLightsDrawables_</a></td></tr>
 <tr class="memdesc:a521eaea9db4c5d30ebb72010860b1180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawables that limit their maximum light count. <br/></td></tr>
