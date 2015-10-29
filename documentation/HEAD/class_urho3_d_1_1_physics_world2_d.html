@@ -114,6 +114,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac6f5c9be53b0abef22546dd83421c27a">DrawDebugGeometry</a> ()</td></tr>
 <tr class="memdesc:ac6f5c9be53b0abef22546dd83421c27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add debug geometry to the debug renderer. <br/></td></tr>
 <tr class="separator:ac6f5c9be53b0abef22546dd83421c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099798977f4a34cc91b41d01cbcdd8ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a099798977f4a34cc91b41d01cbcdd8ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a099798977f4a34cc91b41d01cbcdd8ee">SetUpdateEnabled</a> (bool enable)</td></tr>
+<tr class="memdesc:a099798977f4a34cc91b41d01cbcdd8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable automatic physics simulation during scene update. Enabled by default. <br/></td></tr>
+<tr class="separator:a099798977f4a34cc91b41d01cbcdd8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd5a326a820daa8e81d9c45595fd340"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dd5a326a820daa8e81d9c45595fd340"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a2dd5a326a820daa8e81d9c45595fd340">SetDrawShape</a> (bool drawShape)</td></tr>
 <tr class="memdesc:a2dd5a326a820daa8e81d9c45595fd340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set draw shape. <br/></td></tr>
@@ -194,6 +198,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a8391d9b8e0e5abfec95fb5281ae920fd">GetRigidBodies</a> (<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html">RigidBody2D</a> * &gt; &amp;result, const <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a> &amp;aabb, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
 <tr class="memdesc:a8391d9b8e0e5abfec95fb5281ae920fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rigid bodies by a box query. <br/></td></tr>
 <tr class="separator:a8391d9b8e0e5abfec95fb5281ae920fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0f8399072fd9ae1896a6538d864fd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e0f8399072fd9ae1896a6538d864fd8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a3e0f8399072fd9ae1896a6538d864fd8">IsUpdateEnabled</a> () const </td></tr>
+<tr class="memdesc:a3e0f8399072fd9ae1896a6538d864fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether physics world will automatically simulate during scene update. <br/></td></tr>
+<tr class="separator:a3e0f8399072fd9ae1896a6538d864fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6099411343bfa1850efcead1e7af42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf6099411343bfa1850efcead1e7af42"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#aaf6099411343bfa1850efcead1e7af42">GetDrawShape</a> () const </td></tr>
 <tr class="memdesc:aaf6099411343bfa1850efcead1e7af42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return draw shape. <br/></td></tr>
@@ -825,10 +833,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#abed2f8cf51ff9fe3f4bdecc0a56efc7e">debugDepthTest_</a></td></tr>
 <tr class="memdesc:abed2f8cf51ff9fe3f4bdecc0a56efc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug draw depth test mode. <br/></td></tr>
 <tr class="separator:abed2f8cf51ff9fe3f4bdecc0a56efc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a8ae86669d8c3addba52549028493b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84a8ae86669d8c3addba52549028493b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a84a8ae86669d8c3addba52549028493b">physicsSteping_</a></td></tr>
-<tr class="memdesc:a84a8ae86669d8c3addba52549028493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physics steping. <br/></td></tr>
-<tr class="separator:a84a8ae86669d8c3addba52549028493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37ffd1f4f0441242059dce75e22d374"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac37ffd1f4f0441242059dce75e22d374"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac37ffd1f4f0441242059dce75e22d374">updateEnabled_</a></td></tr>
+<tr class="memdesc:ac37ffd1f4f0441242059dce75e22d374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic simulation update enabled flag. <br/></td></tr>
+<tr class="separator:ac37ffd1f4f0441242059dce75e22d374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e36eaa5aac2e10b520ed9201f1db5e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e36eaa5aac2e10b520ed9201f1db5e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a9e36eaa5aac2e10b520ed9201f1db5e6">physicsStepping_</a></td></tr>
+<tr class="memdesc:a9e36eaa5aac2e10b520ed9201f1db5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether is currently stepping the world. Used internally. <br/></td></tr>
+<tr class="separator:a9e36eaa5aac2e10b520ed9201f1db5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc33675704ad7e514ba6579e8754c87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcc33675704ad7e514ba6579e8754c87"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#abcc33675704ad7e514ba6579e8754c87">applyingTransforms_</a></td></tr>
 <tr class="memdesc:abcc33675704ad7e514ba6579e8754c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying transforms. <br/></td></tr>

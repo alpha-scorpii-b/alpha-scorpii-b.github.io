@@ -3861,6 +3861,7 @@ Classes</h2>
 <li>void SetGravity(const Vector3&amp; gravity)</li>
 <li>void SetMaxSubSteps(int num)</li>
 <li>void SetNumIterations(int num)</li>
+<li>void SetUpdateEnabled(bool enable)</li>
 <li>void SetInterpolation(bool enable)</li>
 <li>void SetInternalEdge(bool enable)</li>
 <li>void SetSplitImpulse(bool enable)</li>
@@ -3877,6 +3878,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> GetGravity() const</li>
 <li>int GetMaxSubSteps() const</li>
 <li>int GetNumIterations() const</li>
+<li>bool IsUpdateEnabled() const</li>
 <li>bool GetInterpolation() const</li>
 <li>bool GetInternalEdge() const</li>
 <li>bool GetSplitImpulse() const</li>
@@ -3888,6 +3890,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> gravity</li>
 <li>int maxSubSteps</li>
 <li>int numIterations</li>
+<li>bool updateEnabled</li>
 <li>bool interpolation</li>
 <li>bool internalEdge</li>
 <li>bool splitImpulse</li>
@@ -3900,6 +3903,7 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void DrawDebugGeometry()</li>
+<li>void SetUpdateEnabled(bool enable)</li>
 <li>void SetDrawShape(bool drawShape)</li>
 <li>void SetDrawJoint(bool drawJoint)</li>
 <li>void SetDrawAabb(bool drawAabb)</li>
@@ -3918,6 +3922,7 @@ Classes</h2>
 <li>RigidBody2D* GetRigidBody(const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; point, unsigned collisionMask = M_MAX_UNSIGNED)</li>
 <li>RigidBody2D* GetRigidBody(int screenX, int screenY, unsigned collisionMask = M_MAX_UNSIGNED)</li>
 <li>const PODVector&lt;RigidBody2D*&gt;&amp; GetRigidBodies(const <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>&amp; aabb, unsigned collisionMask = M_MAX_UNSIGNED)</li>
+<li>bool IsUpdateEnabled() const</li>
 <li>bool GetDrawShape() const</li>
 <li>bool GetDrawJoint() const</li>
 <li>bool GetDrawAabb() const</li>
@@ -3934,6 +3939,7 @@ Classes</h2>
 </ul>
 <p>Properties:</p>
 <ul>
+<li>bool updateEnabled</li>
 <li>bool drawShape</li>
 <li>bool drawJoint</li>
 <li>bool drawAabb</li>

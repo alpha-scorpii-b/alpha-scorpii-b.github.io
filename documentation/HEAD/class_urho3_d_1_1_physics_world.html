@@ -120,6 +120,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a1db39ea4c68531cec61b44ee5d7c460d">SetNumIterations</a> (int num)</td></tr>
 <tr class="memdesc:a1db39ea4c68531cec61b44ee5d7c460d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of constraint solver iterations. <br/></td></tr>
 <tr class="separator:a1db39ea4c68531cec61b44ee5d7c460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfd8cd956bd2eb82d9777221ae9ab1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a6dfd8cd956bd2eb82d9777221ae9ab1b">SetUpdateEnabled</a> (bool enable)</td></tr>
+<tr class="memdesc:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable automatic physics simulation during scene update. Enabled by default. <br/></td></tr>
+<tr class="separator:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfe054879fc8c7f80394b75f08004cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cfe054879fc8c7f80394b75f08004cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a5cfe054879fc8c7f80394b75f08004cb">SetInterpolation</a> (bool enable)</td></tr>
 <tr class="memdesc:a5cfe054879fc8c7f80394b75f08004cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to interpolate between simulation steps. <br/></td></tr>
@@ -184,6 +188,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#af86ad0f5ca1df06c7eb80ddca55d49c7">GetNumIterations</a> () const </td></tr>
 <tr class="memdesc:af86ad0f5ca1df06c7eb80ddca55d49c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of constraint solver iterations. <br/></td></tr>
 <tr class="separator:af86ad0f5ca1df06c7eb80ddca55d49c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7e3a09e9cf957a2ca2c7da311c081d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a7e3a09e9cf957a2ca2c7da311c081d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a6a7e3a09e9cf957a2ca2c7da311c081d">IsUpdateEnabled</a> () const </td></tr>
+<tr class="memdesc:a6a7e3a09e9cf957a2ca2c7da311c081d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether physics world will automatically simulate during scene update. <br/></td></tr>
+<tr class="separator:a6a7e3a09e9cf957a2ca2c7da311c081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc0f2e90dcdf1796e224c9b82f5fa739"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc0f2e90dcdf1796e224c9b82f5fa739"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#acc0f2e90dcdf1796e224c9b82f5fa739">GetInterpolation</a> () const </td></tr>
 <tr class="memdesc:acc0f2e90dcdf1796e224c9b82f5fa739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether interpolation between simulation steps is enabled. <br/></td></tr>
@@ -910,6 +918,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a5bbcb368cf9479eb9f2c8cc3966acc97">maxNetworkAngularVelocity_</a></td></tr>
 <tr class="memdesc:a5bbcb368cf9479eb9f2c8cc3966acc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum angular velocity for network replication. <br/></td></tr>
 <tr class="separator:a5bbcb368cf9479eb9f2c8cc3966acc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51733f509e0e7d6654d1aac5284c7797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51733f509e0e7d6654d1aac5284c7797"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a51733f509e0e7d6654d1aac5284c7797">updateEnabled_</a></td></tr>
+<tr class="memdesc:a51733f509e0e7d6654d1aac5284c7797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic simulation update enabled flag. <br/></td></tr>
+<tr class="separator:a51733f509e0e7d6654d1aac5284c7797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6571b6695dc67736750d49a125b6fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c6571b6695dc67736750d49a125b6fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a0c6571b6695dc67736750d49a125b6fa">interpolation_</a></td></tr>
 <tr class="memdesc:a0c6571b6695dc67736750d49a125b6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation flag. <br/></td></tr>
