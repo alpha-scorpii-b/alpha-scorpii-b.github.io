@@ -71,6 +71,7 @@ group: HEAD
 <li>globalVars VariantMap for AngelScript to allow easy cross-ScriptFile parameter passing.</li>
 <li>Improve ConvexCast() to return distance using the hit fraction.</li>
 <li>Ensure normalized vertex weights in AssetImporter, and clamp to 4 weights maximum instead of error, by dropping the smallest weights.</li>
+<li>Configurable layer count in DynamicNavigationMesh to control memory usage.</li>
 <li>Emscripten ETC1 &amp; PVRTC extension support detection.</li>
 <li>Emscripten hardware instancing support.</li>
 <li>emscripten_get_now() for better timer precision and less CPU use.</li>
@@ -173,6 +174,8 @@ group: HEAD
 <li>Fix Spine animation playback thread safety.</li>
 <li>Fix mouse button release while cursor hidden not releasing drag elements.</li>
 <li>Fix too heavy-handed skybox shader Z adjustment on GLES, which caused objects to be obscured by the skybox.</li>
+<li>Fix protected AngelScript class variables showing up as serializable/editable.</li>
+<li>Fix ResourceRefList serialization bug caused by String::Split() not returning empty strings.</li>
 </ul>
 <p>V1.4</p>
 <ul>

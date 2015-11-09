@@ -87,10 +87,18 @@ virtual <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&l
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a01da5dcdcbc63145ddc80dc82f37158f">SetMaxObstacles</a> (unsigned maxObstacles)</td></tr>
 <tr class="memdesc:a01da5dcdcbc63145ddc80dc82f37158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum number of obstacles allowed. <br/></td></tr>
 <tr class="separator:a01da5dcdcbc63145ddc80dc82f37158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bbeb9c5dd5ee0c4a92440d64f5950c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04bbeb9c5dd5ee0c4a92440d64f5950c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a04bbeb9c5dd5ee0c4a92440d64f5950c">SetMaxLayers</a> (unsigned maxLayers)</td></tr>
+<tr class="memdesc:a04bbeb9c5dd5ee0c4a92440d64f5950c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum number of layers that navigation construction can create. <br/></td></tr>
+<tr class="separator:a04bbeb9c5dd5ee0c4a92440d64f5950c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d411c714cef500f9fd95f5ef5a591ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d411c714cef500f9fd95f5ef5a591ba"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a6d411c714cef500f9fd95f5ef5a591ba">GetMaxObstacles</a> () const </td></tr>
 <tr class="memdesc:a6d411c714cef500f9fd95f5ef5a591ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum number of obstacles allowed. <br/></td></tr>
 <tr class="separator:a6d411c714cef500f9fd95f5ef5a591ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22611f5fae90730f3ca6ddd9aad64b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22611f5fae90730f3ca6ddd9aad64b5f"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a22611f5fae90730f3ca6ddd9aad64b5f">GetMaxLayers</a> () const </td></tr>
+<tr class="memdesc:a22611f5fae90730f3ca6ddd9aad64b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum number of layers permitted to build. <br/></td></tr>
+<tr class="separator:a22611f5fae90730f3ca6ddd9aad64b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af709b394abeb21b6320dbaeb2d9361e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af709b394abeb21b6320dbaeb2d9361e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#af709b394abeb21b6320dbaeb2d9361e0">SetDrawObstacles</a> (bool enable)</td></tr>
 <tr class="memdesc:af709b394abeb21b6320dbaeb2d9361e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw debug geometry for Obstacles. <br/></td></tr>
@@ -912,6 +920,10 @@ dtTileCacheMeshProcess *&#160;</td><td class="memItemRight" valign="bottom"><a c
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#ab5ebb00c545001b859fb183137e22236">maxObstacles_</a></td></tr>
 <tr class="memdesc:ab5ebb00c545001b859fb183137e22236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of obstacle objects allowed. <br/></td></tr>
 <tr class="separator:ab5ebb00c545001b859fb183137e22236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15551338e6bd0c1470b1dccb4cf0d77a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15551338e6bd0c1470b1dccb4cf0d77a"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a15551338e6bd0c1470b1dccb4cf0d77a">maxLayers_</a></td></tr>
+<tr class="memdesc:a15551338e6bd0c1470b1dccb4cf0d77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of layers that are allowed to be constructed. <br/></td></tr>
+<tr class="separator:a15551338e6bd0c1470b1dccb4cf0d77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239dba2b24c97a4b64cbdd6645ef80a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a239dba2b24c97a4b64cbdd6645ef80a8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#a239dba2b24c97a4b64cbdd6645ef80a8">drawObstacles_</a></td></tr>
 <tr class="memdesc:a239dba2b24c97a4b64cbdd6645ef80a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug draw Obstacles. <br/></td></tr>
