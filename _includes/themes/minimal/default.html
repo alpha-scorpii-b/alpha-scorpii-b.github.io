@@ -103,7 +103,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
               <table>
                 {% for build_status in site.data.footer_info.build_statuses %}
                 <tr>
-                    <td><img src="https://api.travis-ci.org/{{ site.organization.name }}/{{ site.organization.project }}.png?branch={{ build_status.branch }}" title="{{ build_status.platform }}" alt="{{ build_status.platform }}" /></td>
+                  <td><img src="https://api.travis-ci.org/{{ site.organization.name }}/{{ site.organization.project }}.svg?branch={{ build_status.branch }}" title="{{ build_status.platform }}" alt="{{ build_status.platform }}" /></td>
                   <td>{% for icon in build_status.icons %}&nbsp;<i class="{{ icon }}"></i>{% endfor %}</td>
                 </tr>
                 {% endfor %}
