@@ -281,6 +281,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a818935d611e0f6b9f84b0e32c30bdffa">IsApplyingTransforms</a> () const </td></tr>
 <tr class="memdesc:a818935d611e0f6b9f84b0e32c30bdffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether node dirtying should be disregarded. <br/></td></tr>
 <tr class="separator:a818935d611e0f6b9f84b0e32c30bdffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd94c6d3603f000737589b62e01572a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd94c6d3603f000737589b62e01572a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#abd94c6d3603f000737589b62e01572a2">IsSimulating</a> () const </td></tr>
+<tr class="memdesc:abd94c6d3603f000737589b62e01572a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is currently inside the Bullet substep loop. <br/></td></tr>
+<tr class="separator:abd94c6d3603f000737589b62e01572a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a8fcb1334e846b73e7825777e0ffbd2d5 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcb1334e846b73e7825777e0ffbd2d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a8fcb1334e846b73e7825777e0ffbd2d5">Component</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -935,6 +939,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a700e0420314b626bf467eb2cd59cc8c0">applyingTransforms_</a></td></tr>
 <tr class="memdesc:a700e0420314b626bf467eb2cd59cc8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying transforms flag. <br/></td></tr>
 <tr class="separator:a700e0420314b626bf467eb2cd59cc8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ef98ad53fb6cdf22cbf5d90e56b54d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61ef98ad53fb6cdf22cbf5d90e56b54d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a61ef98ad53fb6cdf22cbf5d90e56b54d">simulating_</a></td></tr>
+<tr class="memdesc:a61ef98ad53fb6cdf22cbf5d90e56b54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulating flag. <br/></td></tr>
+<tr class="separator:a61ef98ad53fb6cdf22cbf5d90e56b54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90971d786d89ba5eddb10c60b03d682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90971d786d89ba5eddb10c60b03d682"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#ad90971d786d89ba5eddb10c60b03d682">debugDepthTest_</a></td></tr>
+<tr class="memdesc:ad90971d786d89ba5eddb10c60b03d682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug draw depth test mode. <br/></td></tr>
+<tr class="separator:ad90971d786d89ba5eddb10c60b03d682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c5dc8a3fed728ffcf83a797ec4ffb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97c5dc8a3fed728ffcf83a797ec4ffb3"></a>
 <a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a97c5dc8a3fed728ffcf83a797ec4ffb3">debugRenderer_</a></td></tr>
 <tr class="memdesc:a97c5dc8a3fed728ffcf83a797ec4ffb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug renderer. <br/></td></tr>
@@ -943,10 +955,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a2f2a072ed2c98f6babeaa1a494a5c833">debugMode_</a></td></tr>
 <tr class="memdesc:a2f2a072ed2c98f6babeaa1a494a5c833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug draw flags. <br/></td></tr>
 <tr class="separator:a2f2a072ed2c98f6babeaa1a494a5c833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90971d786d89ba5eddb10c60b03d682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90971d786d89ba5eddb10c60b03d682"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#ad90971d786d89ba5eddb10c60b03d682">debugDepthTest_</a></td></tr>
-<tr class="memdesc:ad90971d786d89ba5eddb10c60b03d682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug draw depth test mode. <br/></td></tr>
-<tr class="separator:ad90971d786d89ba5eddb10c60b03d682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
