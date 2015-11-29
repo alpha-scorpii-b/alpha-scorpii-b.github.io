@@ -49,12 +49,16 @@ $(document).ready(function() {
     if (icon) $(elem).prepend(icon).find('span').addClass('hidden-xxs');
   });
 
-  // Inject responsive behaviour to tables and embedded SVGs
+  // Inject responsive behaviour to tables
   $('.contents table').wrap('<div class="table-responsive"></div>');
   // Use medium version for build options
   if (/_building\.html$/.test(window.location.href)) $('.table-responsive').removeClass('table-responsive').addClass('table-responsive-md');
   // Use large version for class index, graphical class hierarchy list, and class member list
   if (/(classes|inherits|-members)\.html$/.test(window.location.href)) $('.table-responsive').removeClass('table-responsive').addClass('table-responsive-lg');
+  // Cancel out table-responsive class for the nested tables in the class index page
+  if (/classes\.html$/.test(window.location.href)) $('.table-responsive-lg .table-responsive-lg > table').unwrap();
+
+  // Inject responsive behaviour to embedded SVGs
   $('.zoom').addClass('embed-responsive embed-responsive-16by9');
 
   // Inject dropdown class to summary links

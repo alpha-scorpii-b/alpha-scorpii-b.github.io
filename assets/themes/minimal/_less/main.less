@@ -399,8 +399,22 @@ h4.platform {
   margin-top: 20px;
 }
 
+// Undo border-bottom from orderedlist/minimal theme for class index and graphical class hierarchy list
+.qindex {
+  & + table,
+  & + .table-responsive-lg {
+    td {
+      border-bottom: none;
+      & > table {
+        margin: 0;
+      }
+      td {
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+}
 .textblock {
-  // Undo border-bottom from orderedlist/minimal theme for graphical class hierarchy list
   & + table,
   & + .table-responsive-lg {
     td {
