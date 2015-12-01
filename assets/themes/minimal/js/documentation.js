@@ -57,6 +57,18 @@ $(document).ready(function() {
   if (/(classes|inherits|-members)\.html$/.test(window.location.href)) $('.table-responsive').removeClass('table-responsive').addClass('table-responsive-lg');
   // Cancel out table-responsive class for the nested tables in the class index page
   if (/classes\.html$/.test(window.location.href)) $('.table-responsive-lg .table-responsive-lg > table').unwrap();
+  // Ensure the index anchor is in view
+  $('div.qindex [href^=#]').click(function(e) {
+    e.preventDefault();
+    this.blur();
+    var href = $(this).attr('href');
+    var anchor = $('a[name="' + href.substring(1) + '"]');
+    var table = $('.table-responsive-lg');
+    var top = anchor.position().top;
+    var left = table.scrollLeft() + anchor.position().left - $('div.contents').position().left - 21;    // 21 is constant precomputed from anchor's parent margin/border/padding
+    $('html, body').animate({scrollTop: top}, 'slow');
+    table.animate({scrollLeft: left}, 'slow');
+  });
 
   // Inject responsive behaviour to embedded SVGs
   $('.zoom').addClass('embed-responsive embed-responsive-16by9');
