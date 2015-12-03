@@ -111,7 +111,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3f3ab3f8d465e9f3feac6c4c75f74445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d32ac352d63102b654b869bceb9af45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d32ac352d63102b654b869bceb9af45"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drop_down_list.html#a4d32ac352d63102b654b869bceb9af45">SetPlaceholderText</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;text)</td></tr>
-<tr class="memdesc:a4d32ac352d63102b654b869bceb9af45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set place holder text. This is the text shown when there is no selection in drop down list. <br/></td></tr>
+<tr class="memdesc:a4d32ac352d63102b654b869bceb9af45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set place holder text. This is the text shown when there is no selection (-1) in drop down list. Note that if the list has items, the default is to show the first item, so the "no selection" state has to be set explicitly. <br/></td></tr>
 <tr class="separator:a4d32ac352d63102b654b869bceb9af45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c237dde196cf2ad281d59960f40886"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c237dde196cf2ad281d59960f40886"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drop_down_list.html#a34c237dde196cf2ad281d59960f40886">SetResizePopup</a> (bool enable)</td></tr>
@@ -1719,6 +1719,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drop_down_list.html#a08725a9905a00fbcef08966a480aa135">HandleListViewKey</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:a08725a9905a00fbcef08966a480aa135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a key press from the listview. <br/></td></tr>
 <tr class="separator:a08725a9905a00fbcef08966a480aa135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad174aa1b669904775a3bdd5642ef4f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad174aa1b669904775a3bdd5642ef4f2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drop_down_list.html#ad174aa1b669904775a3bdd5642ef4f2c">HandleSelectionChanged</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
+<tr class="memdesc:ad174aa1b669904775a3bdd5642ef4f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the listview selection change. Set placeholder text hidden/visible as necessary. <br/></td></tr>
+<tr class="separator:ad174aa1b669904775a3bdd5642ef4f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
