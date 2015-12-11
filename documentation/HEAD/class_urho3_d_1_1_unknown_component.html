@@ -79,6 +79,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a0e9d798604b9526fd51083c491e10214">LoadXML</a> (const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;source, bool setInstanceDefault=false)</td></tr>
 <tr class="memdesc:a0e9d798604b9526fd51083c491e10214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from XML data. Return true if successful. <br/></td></tr>
 <tr class="separator:a0e9d798604b9526fd51083c491e10214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65682603e2c34f8ed98dddd3c7ac8cfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65682603e2c34f8ed98dddd3c7ac8cfa"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a65682603e2c34f8ed98dddd3c7ac8cfa">LoadJSON</a> (const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;source, bool setInstanceDefault=false)</td></tr>
+<tr class="memdesc:a65682603e2c34f8ed98dddd3c7ac8cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from JSON data. Return true if successful. <br/></td></tr>
+<tr class="separator:a65682603e2c34f8ed98dddd3c7ac8cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f9631f74417a3475661e16a2c9462e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14f9631f74417a3475661e16a2c9462e"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a14f9631f74417a3475661e16a2c9462e">Save</a> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a14f9631f74417a3475661e16a2c9462e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as binary data. Return true if successful. <br/></td></tr>
@@ -87,6 +91,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a4f907dc57e46bf48d2e52340064b0ab3">SaveXML</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a4f907dc57e46bf48d2e52340064b0ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as XML data. Return true if successful. <br/></td></tr>
 <tr class="separator:a4f907dc57e46bf48d2e52340064b0ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c33e9fa5acdc3634c2f00d61568f5d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c33e9fa5acdc3634c2f00d61568f5d2"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a4c33e9fa5acdc3634c2f00d61568f5d2">SaveJSON</a> (<a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;dest) const </td></tr>
+<tr class="memdesc:a4c33e9fa5acdc3634c2f00d61568f5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as JSON data. Return true if successful. <br/></td></tr>
+<tr class="separator:a4c33e9fa5acdc3634c2f00d61568f5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed90e7f713cdba8b21f912030d45a77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ed90e7f713cdba8b21f912030d45a77"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a5ed90e7f713cdba8b21f912030d45a77">SetTypeName</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;typeName)</td></tr>
 <tr class="memdesc:a5ed90e7f713cdba8b21f912030d45a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the type name. Called by <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> when loading. <br/></td></tr>
@@ -556,7 +564,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afc2c330fd6c0cfe365bdfdd313d26ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a42841b3ef9b2ea7fa2afcc5724500"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43a42841b3ef9b2ea7fa2afcc5724500"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_unknown_component.html#a43a42841b3ef9b2ea7fa2afcc5724500">useXML_</a></td></tr>
-<tr class="memdesc:a43a42841b3ef9b2ea7fa2afcc5724500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag of whether was loaded using XML data. <br/></td></tr>
+<tr class="memdesc:a43a42841b3ef9b2ea7fa2afcc5724500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag of whether was loaded using XML/JSON data. <br/></td></tr>
 <tr class="separator:a43a42841b3ef9b2ea7fa2afcc5724500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>

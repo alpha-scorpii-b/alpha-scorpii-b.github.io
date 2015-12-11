@@ -63,8 +63,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a078f3da119b172105474fb1e57592270">~Material</a> ()</td></tr>
 <tr class="memdesc:a078f3da119b172105474fb1e57592270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a078f3da119b172105474fb1e57592270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc1ab6ee46f5d47ebf8080fb47871c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a0bc1ab6ee46f5d47ebf8080fb47871c4">BeginLoad</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
-<tr class="memdesc:a0bc1ab6ee46f5d47ebf8080fb47871c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load resource from stream. May be called from a worker thread. Return true if successful.  <a href="#a0bc1ab6ee46f5d47ebf8080fb47871c4">More...</a><br/></td></tr>
+<tr class="memitem:a0bc1ab6ee46f5d47ebf8080fb47871c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bc1ab6ee46f5d47ebf8080fb47871c4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a0bc1ab6ee46f5d47ebf8080fb47871c4">BeginLoad</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
+<tr class="memdesc:a0bc1ab6ee46f5d47ebf8080fb47871c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load resource from stream. May be called from a worker thread. Return true if successful. <br/></td></tr>
 <tr class="separator:a0bc1ab6ee46f5d47ebf8080fb47871c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f3fb1ae2adebfb887583f639e07f3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07f3fb1ae2adebfb887583f639e07f3b"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a07f3fb1ae2adebfb887583f639e07f3b">EndLoad</a> ()</td></tr>
@@ -81,6 +82,13 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a86476fc310486fd477944186f8b8aa1f">Save</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a86476fc310486fd477944186f8b8aa1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save to an XML element. Return true if successful. <br/></td></tr>
 <tr class="separator:a86476fc310486fd477944186f8b8aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f610bf80fad592119370c0682d9c324"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a2f610bf80fad592119370c0682d9c324">Load</a> (const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;source)</td></tr>
+<tr class="memdesc:a2f610bf80fad592119370c0682d9c324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a JSON value. Return true if successful.  <a href="#a2f610bf80fad592119370c0682d9c324">More...</a><br/></td></tr>
+<tr class="separator:a2f610bf80fad592119370c0682d9c324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7af9b45af7d25985224c6659e66bf11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7af9b45af7d25985224c6659e66bf11"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ae7af9b45af7d25985224c6659e66bf11">Save</a> (<a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;dest) const </td></tr>
+<tr class="memdesc:ae7af9b45af7d25985224c6659e66bf11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save to a JSON value. Return true if successful. <br/></td></tr>
+<tr class="separator:ae7af9b45af7d25985224c6659e66bf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59dc96684e9d317ad4913880dd22bd9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59dc96684e9d317ad4913880dd22bd9f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a59dc96684e9d317ad4913880dd22bd9f">SetNumTechniques</a> (unsigned num)</td></tr>
 <tr class="memdesc:a59dc96684e9d317ad4913880dd22bd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of techniques. <br/></td></tr>
@@ -460,6 +468,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ad353fdfe2db56415daf4e6c8c7afa17f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad353fdfe2db56415daf4e6c8c7afa17f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_material.html">Material</a>, <a class="el" href="class_urho3_d_1_1_resource.html">Resource</a>)</td></tr>
 <tr class="separator:ad353fdfe2db56415daf4e6c8c7afa17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4395cdd6b565b52783713ea1712ec0c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a4395cdd6b565b52783713ea1712ec0c1">BeginLoadJSON</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
+<tr class="memdesc:a4395cdd6b565b52783713ea1712ec0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for loading JSON files.  <a href="#a4395cdd6b565b52783713ea1712ec0c1">More...</a><br/></td></tr>
+<tr class="separator:a4395cdd6b565b52783713ea1712ec0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c505680ced124298f079470392a3bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a34c505680ced124298f079470392a3bb">BeginLoadXML</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
+<tr class="memdesc:a34c505680ced124298f079470392a3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for loading XML files.  <a href="#a34c505680ced124298f079470392a3bb">More...</a><br/></td></tr>
+<tr class="separator:a34c505680ced124298f079470392a3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0ba9351397f7db0c5ca24ca1452ba7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ba9351397f7db0c5ca24ca1452ba7b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#af0ba9351397f7db0c5ca24ca1452ba7b">CheckOcclusion</a> ()</td></tr>
 <tr class="memdesc:af0ba9351397f7db0c5ca24ca1452ba7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-evaluate occlusion rendering. <br/></td></tr>
@@ -558,6 +572,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a0822f9ebed0696de903d6284bb2c9ab5">loadXMLFile_</a></td></tr>
 <tr class="memdesc:a0822f9ebed0696de903d6284bb2c9ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML file used while loading. <br/></td></tr>
 <tr class="separator:a0822f9ebed0696de903d6284bb2c9ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b3d8ebfd1987d83304a91771bb2a3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72b3d8ebfd1987d83304a91771bb2a3f"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_j_s_o_n_file.html">JSONFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a72b3d8ebfd1987d83304a91771bb2a3f">loadJSONFile_</a></td></tr>
+<tr class="memdesc:a72b3d8ebfd1987d83304a91771bb2a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON file used while loading. <br/></td></tr>
+<tr class="separator:a72b3d8ebfd1987d83304a91771bb2a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82d0b6722d55cdb2c519bb81314d20c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac82d0b6722d55cdb2c519bb81314d20c"></a>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac82d0b6722d55cdb2c519bb81314d20c">scene_</a></td></tr>
 <tr class="memdesc:ac82d0b6722d55cdb2c519bb81314d20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associated scene for shader parameter animation updates. <br/></td></tr>
@@ -574,7 +592,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes how to render 3D geometries. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0bc1ab6ee46f5d47ebf8080fb47871c4"></a>
+<a class="anchor" id="a4395cdd6b565b52783713ea1712ec0c1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -582,7 +600,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Urho3D::Material::BeginLoad </td>
+          <td class="memname">bool Urho3D::Material::BeginLoadJSON </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em></td><td>)</td>
@@ -591,20 +609,69 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Load resource from stream. May be called from a worker thread. Return true if successful. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
-
-<p>Reimplemented from <a class="el" href="class_urho3_d_1_1_resource.html#a0300ecba56eb1a6b92863053c2a8c038">Urho3D::Resource</a>.</p>
+<p>Helper function for loading JSON files. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_material_a0bc1ab6ee46f5d47ebf8080fb47871c4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_material_a4395cdd6b565b52783713ea1712ec0c1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_material_a4395cdd6b565b52783713ea1712ec0c1_icgraph.svg" width="502" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34c505680ced124298f079470392a3bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Urho3D::Material::BeginLoadXML </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function for loading XML files. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_material_a34c505680ced124298f079470392a3bb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_material_a34c505680ced124298f079470392a3bb_icgraph.svg" width="496" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -626,7 +693,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Load from an XML element. Return true if successful. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -643,6 +710,25 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2f610bf80fad592119370c0682d9c324"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Urho3D::Material::Load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load from a JSON value. Return true if successful. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Differentiate with 3D textures by actually reading the XML content </dd></dl>
 
 </div>
 </div>
