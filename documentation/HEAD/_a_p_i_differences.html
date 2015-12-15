@@ -14,7 +14,7 @@ group: HEAD
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Differences between Direct3D and OpenGL </div>  </div>
+<div class="title">Differences between rendering APIs </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>These differences need to be observed when using the low-level rendering functionality directly. The high-level rendering architecture, including the <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a> and <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> subsystems and the <a class="el" href="class_urho3_d_1_1_drawable.html" title="Base class for visible components.">Drawable</a> subclasses already handle most of them transparently to the user.</p>
@@ -41,6 +41,9 @@ group: HEAD
 </ul>
 <ul>
 <li>To ensure similar UV addressing for render-to-texture viewports on both APIs, on OpenGL texture viewports will be rendered upside down.</li>
+</ul>
+<ul>
+<li>Direct3D11 is strict about vertex attributes referenced by shaders. A model will not render (input layout fails to create) if the shader for example asks for UV coordinates and the model does not have them. For this particular case, see the NOUV define in LitSolid shader, which is defined in the NoTexture family of techniques to prevent the attempted reading of UV coords.</li>
 </ul>
 <p>OpenGL ES 2.0 has further limitations:</p>
 <ul>
