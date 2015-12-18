@@ -36,7 +36,7 @@ Inbuilt compilation defines</h2>
 <li>CUBEMASK: the point light has a cube map mask</li>
 <li>SPEC: the per-pixel forward light has specular calculations</li>
 <li>SHADOW: the per-pixel forward light has shadowing</li>
-<li>LQSHADOW: use low-quality shadowing (1 hardware PCF sample instead of 4)</li>
+<li>SIMPLE_SHADOW, PCF_SHADOW, VSM_SHADOW: the shadow sampling quality that is to be used</li>
 <li>SHADOWCMP: use manual shadow depth compare, Direct3D9 only for DF16 &amp; DF24 shadow map formats</li>
 <li>HEIGHTFOG: object's zone has height fog mode</li>
 </ul>
@@ -118,5 +118,5 @@ API differences</h2>
 <h2><a class="anchor" id="Shaders_Precaching"></a>
 Shader precaching</h2>
 <p>The shader variations that are potentially used by a material technique in different lighting conditions and rendering passes are enumerated at material load time, but because of their large amount, they are not actually compiled or loaded from bytecode before being used in rendering. Especially on OpenGL the compiling of shaders just before rendering can cause hitches in the framerate. To avoid this, used shader combinations can be dumped out to an XML file, then preloaded. See <a class="el" href="class_urho3_d_1_1_graphics.html#a2664f84fe14e6cc7ccd750470427af32">BeginDumpShaders()</a>, <a class="el" href="class_urho3_d_1_1_graphics.html#a8bc0261c882ff0c3bc8fc5f2871eb54c">EndDumpShaders()</a> and <a class="el" href="class_urho3_d_1_1_graphics.html#ab7a91acbf613629e3b95f600b10e6c2a">PrecacheShaders()</a> in the <a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a> subsystem. The command line parameters -ds &lt;file&gt; can be used to instruct the <a class="el" href="class_urho3_d_1_1_engine.html" title="Urho3D engine. Creates the other subsystems.">Engine</a> to begin dumping shaders automatically on startup.</p>
-<p>Note that the used shader variations will vary with graphics settings, for example shadow quality high/low or instancing on/off. </p>
+<p>Note that the used shader variations will vary with graphics settings, for example shadow quality simple/PCF/VSM or instancing on/off. </p>
 </div></div><!-- contents -->

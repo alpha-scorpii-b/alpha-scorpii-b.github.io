@@ -4338,7 +4338,9 @@ Classes</h2>
 <li>void SetMaterialQuality(int quality)</li>
 <li>void SetDrawShadows(bool enable)</li>
 <li>void SetShadowMapSize(int size)</li>
-<li>void SetShadowQuality(int quality)</li>
+<li>void SetShadowQuality(ShadowQuality quality)</li>
+<li>void SetShadowSoftness(float shadowSoftness)</li>
+<li>void SetVSMShadowParameters(float minVariance, float lightBleedingReduction)</li>
 <li>void SetReuseShadowMaps(bool enable)</li>
 <li>void SetMaxShadowMaps(int shadowMaps)</li>
 <li>void SetDynamicInstancing(bool enable)</li>
@@ -4362,7 +4364,9 @@ Classes</h2>
 <li>int GetTextureQuality() const</li>
 <li>int GetMaterialQuality() const</li>
 <li>int GetShadowMapSize() const</li>
-<li>int GetShadowQuality() const</li>
+<li>ShadowQuality GetShadowQuality() const</li>
+<li>float GetShadowSoftness() const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> GetVSMShadowParameters() const</li>
 <li>bool GetReuseShadowMaps() const</li>
 <li>int GetMaxShadowMaps() const</li>
 <li>bool GetDynamicInstancing() const</li>
@@ -4399,7 +4403,8 @@ Classes</h2>
 <li>int textureQuality</li>
 <li>int materialQuality</li>
 <li>int shadowMapSize</li>
-<li>int shadowQuality</li>
+<li>ShadowQuality shadowQuality</li>
+<li>float shadowSoftness</li>
 <li>bool reuseShadowMaps</li>
 <li>int maxShadowMaps</li>
 <li>bool dynamicInstancing</li>
@@ -7052,6 +7057,15 @@ Enumerations</h2>
 <li>int VS</li>
 <li>int PS</li>
 </ul>
+<h4>ShadowQuality</h4>
+<ul>
+<li>int SHADOWQUALITY_SIMPLE_16BIT</li>
+<li>int SHADOWQUALITY_SIMPLE_24BIT</li>
+<li>int SHADOWQUALITY_PCF_16BIT</li>
+<li>int SHADOWQUALITY_PCF_24BIT</li>
+<li>int SHADOWQUALITY_VSM</li>
+<li>int SHADOWQUALITY_BLUR_VSM</li>
+</ul>
 <h4>ShapeType</h4>
 <ul>
 <li>int SHAPE_BOX</li>
@@ -7828,10 +7842,6 @@ Global constants</h2>
 <li>unsigned SCAN_DIRS</li>
 <li>unsigned SCAN_FILES</li>
 <li>unsigned SCAN_HIDDEN</li>
-<li>int SHADOWQUALITY_HIGH_16BIT</li>
-<li>int SHADOWQUALITY_HIGH_24BIT</li>
-<li>int SHADOWQUALITY_LOW_16BIT</li>
-<li>int SHADOWQUALITY_LOW_24BIT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_AMBIENT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_EFFECT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_MASTER</li>

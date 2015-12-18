@@ -6844,6 +6844,7 @@ Classes</h2>
 <li>void ReloadShaders() const</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, VariantMap&amp; = VariantMap ( ))</li>
 <li>void SetDefaultRenderPath(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@)</li>
+<li>void SetVSMShadowParameters(float, float)</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -6876,7 +6877,8 @@ Classes</h2>
 <li>int refs // readonly</li>
 <li>bool reuseShadowMaps</li>
 <li>int shadowMapSize</li>
-<li>int shadowQuality</li>
+<li>ShadowQuality shadowQuality</li>
+<li>float shadowSoftness</li>
 <li>bool specularLighting</li>
 <li>int textureAnisotropy</li>
 <li>TextureFilterMode textureFilterMode</li>
@@ -6885,6 +6887,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_viewport.html" title="Viewport definition either for a render surface or the backbuffer.">Viewport</a>@[] viewports</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> vsmShadowParameters</li>
 <li>int weakRefs // readonly</li>
 </ul>
 <p><a class="anchor" id="Class_Resource"></a></p>
@@ -11429,6 +11432,15 @@ Enumerations</h2>
 <li>SIZE_VIEWPORTDIVISOR</li>
 <li>SIZE_VIEWPORTMULTIPLIER</li>
 </ul>
+<h4>ShadowQuality</h4>
+<ul>
+<li>SHADOWQUALITY_SIMPLE_16BIT</li>
+<li>SHADOWQUALITY_SIMPLE_24BIT</li>
+<li>SHADOWQUALITY_PCF_16BIT</li>
+<li>SHADOWQUALITY_PCF_24BIT</li>
+<li>SHADOWQUALITY_VSM</li>
+<li>SHADOWQUALITY_BLUR_VSM</li>
+</ul>
 <h4>ShapeType</h4>
 <ul>
 <li>SHAPE_BOX</li>
@@ -12180,10 +12192,6 @@ Global constants</h2>
 <li>uint SCAN_DIRS</li>
 <li>uint SCAN_FILES</li>
 <li>uint SCAN_HIDDEN</li>
-<li>int SHADOWQUALITY_HIGH_16BIT</li>
-<li>int SHADOWQUALITY_HIGH_24BIT</li>
-<li>int SHADOWQUALITY_LOW_16BIT</li>
-<li>int SHADOWQUALITY_LOW_24BIT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_AMBIENT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_EFFECT</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> SOUND_MASTER</li>
