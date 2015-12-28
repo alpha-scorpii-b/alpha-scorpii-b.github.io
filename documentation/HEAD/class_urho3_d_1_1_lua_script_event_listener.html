@@ -86,6 +86,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#a97ff2767b425264e57a422889fc1906f">RemoveEventHandlersExcept</a> (const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a> &gt; &amp;exceptionNames)=0</td></tr>
 <tr class="memdesc:a97ff2767b425264e57a422889fc1906f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all scripted event handlers, except those listed. <br/></td></tr>
 <tr class="separator:a97ff2767b425264e57a422889fc1906f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2830e81a631afeee7ff7e3e9d17e5faa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2830e81a631afeee7ff7e3e9d17e5faa"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#a2830e81a631afeee7ff7e3e9d17e5faa">HasEventHandler</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;eventName) const =0</td></tr>
+<tr class="memdesc:a2830e81a631afeee7ff7e3e9d17e5faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has subscribed to an event. <br/></td></tr>
+<tr class="separator:a2830e81a631afeee7ff7e3e9d17e5faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381ef3105b56a0dcb5a7d70ab1dd97fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a381ef3105b56a0dcb5a7d70ab1dd97fa"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#a381ef3105b56a0dcb5a7d70ab1dd97fa">HasEventHandler</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *sender, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;eventName) const =0</td></tr>
+<tr class="memdesc:a381ef3105b56a0dcb5a7d70ab1dd97fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has subscribed to a specific sender's event. <br/></td></tr>
+<tr class="separator:a381ef3105b56a0dcb5a7d70ab1dd97fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Lua script event listener. </p>

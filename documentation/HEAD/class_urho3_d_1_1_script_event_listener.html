@@ -78,6 +78,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_script_event_listener.html#aaa93506f06089edaf44256921e6c5797">RemoveEventHandlersExcept</a> (const <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt; &amp;exceptions)=0</td></tr>
 <tr class="memdesc:aaa93506f06089edaf44256921e6c5797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all scripted event handlers, except those listed. <br/></td></tr>
 <tr class="separator:aaa93506f06089edaf44256921e6c5797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400979c12705241f75d1228d9e907973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a400979c12705241f75d1228d9e907973"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_script_event_listener.html#a400979c12705241f75d1228d9e907973">HasEventHandler</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType) const =0</td></tr>
+<tr class="memdesc:a400979c12705241f75d1228d9e907973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has subscribed to an event. <br/></td></tr>
+<tr class="separator:a400979c12705241f75d1228d9e907973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd08e3e7d27ed1098ceeca9c05dca4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bd08e3e7d27ed1098ceeca9c05dca4e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_script_event_listener.html#a1bd08e3e7d27ed1098ceeca9c05dca4e">HasEventHandler</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *sender, <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType) const =0</td></tr>
+<tr class="memdesc:a1bd08e3e7d27ed1098ceeca9c05dca4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has subscribed to a specific sender's event. <br/></td></tr>
+<tr class="separator:a1bd08e3e7d27ed1098ceeca9c05dca4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface class for allowing script objects or functions to subscribe to events. </p>

@@ -2847,6 +2847,8 @@ Classes</h2>
 <li>void UnsubscribeFromEvents(Object* sender)</li>
 <li>void UnsubscribeFromAllEvents()</li>
 <li>void UnsubscribeFromAllEventsExcept(const Vector&lt;String&gt;&amp; exceptionNames)</li>
+<li>bool HasSubscribedToEvent(const String eventName)</li>
+<li>bool HasSubscribedToEvent(Object* sender, const String eventName)</li>
 <li>LuaFile* GetScriptFile() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetScriptObjectType() const</li>
 </ul>
@@ -3521,6 +3523,8 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetTypeName() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetCategory() const</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> eventName, VariantMap* eventData = 0)</li>
+<li>bool HasSubscribedToEvent(const String eventName) const</li>
+<li>bool HasSubscribedToEvent(Object* sender, const String eventName) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -7306,6 +7310,8 @@ Global functions</h2>
 <li>Renderer* GetRenderer()</li>
 <li>Time* GetTime()</li>
 <li>UI* GetUI()</li>
+<li>bool HasSubscribedToEvent(const String eventName)</li>
+<li>bool HasSubscribedToEvent(Object* sender, const String eventName)</li>
 <li>bool IsAbsolutePath(const String pathName)</li>
 <li>bool IsAlpha(unsigned ch)</li>
 <li>bool IsDigit(unsigned ch)</li>
@@ -7336,8 +7342,8 @@ Global functions</h2>
 <li>float Sign(float value)</li>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
-<li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
+<li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
 <li>bool ToBool(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ToColor(const String source)</li>
@@ -7360,8 +7366,8 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> ToVector4(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, bool allowMissingCoords = false)</li>
 <li>void UnsubscribeFromAllEvents()</li>
 <li>void UnsubscribeFromAllEventsExcept(const Vector&lt;String&gt;&amp; exceptionNames)</li>
-<li>void UnsubscribeFromEvent(const String eventName)</li>
 <li>void UnsubscribeFromEvent(Object* sender, const String eventName)</li>
+<li>void UnsubscribeFromEvent(const String eventName)</li>
 <li>void UnsubscribeFromEvents(Object* sender)</li>
 </ul>
 <h2><a class="anchor" id="LuaScriptAPI_GlobalProperties"></a>
