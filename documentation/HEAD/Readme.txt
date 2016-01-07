@@ -1,1 +1,1 @@
-If URHO3D_DOCS build option is not set then use 'make doc' command to re-generate Urho3D documentation before calling 'make install', alternatively use the 'doc' and 'install' built-in targets in an IDE, respectively
+If the URHO3D_DOCS build option is set then the Urho3D documentation will be built automatically as part of the Urho3D library build. If build option is not set, however, then use 'doc' built-in target to generate the documentation manually (must do this before installing the SDK).

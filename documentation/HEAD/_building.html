@@ -73,7 +73,7 @@ Building prerequisites</h2>
 <li>iOS: OpenGL ES 2.0 capable GPU.</li>
 </ul>
 <ul>
-<li>Emscripten: modern browsers with fast JavaScript engine and HTML5 and WebGL support.</li>
+<li>Web: modern browsers with fast JavaScript engine and HTML5 and WebGL support.</li>
 </ul>
 <p>SSE2/NEON requirement can be eliminated by disabling the use of SSE2/NEON instruction set, see URHO3D_SSE and URHO3D_NEON build options below.</p>
 <p>CMake (<a href="http://www.cmake.org">http://www.cmake.org</a>) is required to configure and generate the Urho3D project build tree. The minimum required version is 2.8.6. However, it is recommended to use the latest CMake version available out there, especially when targeting Mac OS X and iOS platforms using the latest Xcode version available. This is because Apple is known to change the internal working of Xcode with little regards to other third party build tools, such as CMake.</p>
@@ -100,7 +100,7 @@ Build options</h2>
 <tr>
 <td>WIN32 </td><td>0</td><td>Configure project using MinGW (32-bit or 64-bit) cross-compiler toolchain (cmake_generic.sh only), cmake-gui users need to specify MinGW toolchain file for cross-compiling explicitly </td></tr>
 <tr>
-<td>EMSCRIPTEN </td><td>0</td><td>Configure project using Emscripten cross-compiler toolchain (cmake_generic.bat and cmake_generic.sh only), cmake-gui users need to specify Emscripten toolchain file for cross-compiling explicitly </td></tr>
+<td>WEB </td><td>0</td><td>Configure project using Emscripten cross-compiler toolchain (cmake_generic.bat and cmake_generic.sh only), cmake-gui users need to specify Emscripten toolchain file for cross-compiling explicitly </td></tr>
 <tr>
 <td>IOS </td><td>0</td><td>Configure project for targeting iOS platform (cmake_generic.sh and cmake-gui only) </td></tr>
 <tr>
@@ -142,7 +142,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_DATABASE_SQLITE</td><td>0</td><td>Enable <a class="el" href="class_urho3_d_1_1_database.html" title="Database subsystem. Manage database connections.">Database</a> support with SQLite embedded </td></tr>
 <tr>
-<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (HTML5 and Intel platforms only including Android on Intel Atom); default to true on Intel and false on HTML5; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET and CMAKE_OSX_DEPLOYMENT_TARGET build options </td></tr>
+<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (Web and Intel platforms only including Android on Intel Atom); default to true on Intel and false on Web platform; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET and CMAKE_OSX_DEPLOYMENT_TARGET build options </td></tr>
 <tr>
 <td>URHO3D_NEON </td><td>1</td><td>Enable NEON instruction set (ARM platforms with NEON only) </td></tr>
 <tr>
@@ -150,17 +150,17 @@ Build options</h2>
 <tr>
 <td>URHO3D_FILEWATCHER </td><td>1</td><td>Enable filewatcher support </td></tr>
 <tr>
-<td>URHO3D_PACKAGING </td><td>*</td><td>Enable resources packaging support, on Emscripten default to 1, on other platforms default to 0 </td></tr>
+<td>URHO3D_PACKAGING </td><td>*</td><td>Enable resources packaging support, on Web platform default to 1, on other platforms default to 0 </td></tr>
 <tr>
 <td>URHO3D_PROFILING </td><td>1</td><td>Enable profiling support </td></tr>
 <tr>
 <td>URHO3D_LOGGING </td><td>1</td><td>Enable logging support </td></tr>
 <tr>
-<td>URHO3D_THREADING </td><td>*</td><td>Enable thread support, on Emscripten default to 0, on other platforms default to 1 </td></tr>
+<td>URHO3D_THREADING </td><td>*</td><td>Enable thread support, on Web platform default to 0, on other platforms default to 1 </td></tr>
 <tr>
 <td>URHO3D_TESTING </td><td>0</td><td>Enable testing support </td></tr>
 <tr>
-<td>URHO3D_TEST_TIMEOUT </td><td>*</td><td>Number of seconds to test run the executables (when testing support is enabled only), default to 10 on Emscripten platform and 5 on other platforms </td></tr>
+<td>URHO3D_TEST_TIMEOUT </td><td>*</td><td>Number of seconds to test run the executables (when testing support is enabled only), default to 10 on Web platform and 5 on other platforms </td></tr>
 <tr>
 <td>URHO3D_OPENGL </td><td>0</td><td>Use OpenGL instead of Direct3D (Windows platform only) </td></tr>
 <tr>
@@ -231,7 +231,7 @@ Native build process</h2>
 <ul>
 <li>Windows: cmake_vs20xx.bat, cmake_mingw.bat, cmake_codeblock.bat, cmake_ninja.bat, or cmake_generic.bat<br/>
 </li>
-<li>Mac OS X: cmake_macosx.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
+<li>Mac OS X: cmake_xcode.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
 </li>
 <li>Linux: cmake_eclipse.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
 </li>
