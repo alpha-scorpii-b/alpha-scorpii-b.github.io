@@ -7299,6 +7299,7 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetInternalPath(const String pathName)</li>
 <li>Localization* GetLocalization()</li>
 <li>Log* GetLog()</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetMiniDumpDir()</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetNativePath(const String pathName)</li>
 <li>Network* GetNetwork()</li>
 <li>unsigned GetNumLogicalCPUs()</li>
@@ -7328,22 +7329,23 @@ Global functions</h2>
 <li>int Rand()</li>
 <li>float RandStandardNormal()</li>
 <li>float Random()</li>
-<li>float Random(float range)</li>
 <li>float Random(float min, float max)</li>
-<li>int RandomInt(int range)</li>
+<li>float Random(float range)</li>
 <li>int RandomInt(int min, int max)</li>
+<li>int RandomInt(int range)</li>
 <li>float RandomNormal(float meanValue, float variance)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> RemoveTrailingSlash(const String pathName)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReplaceExtension(const String fullPath, const String newExtension)</li>
 <li>unsigned SDBMHash(unsigned hash, char c)</li>
 <li>void SendEvent(const String eventName, VariantMap&amp; eventData)</li>
 <li>void SetExecuteConsoleCommands(bool enable)</li>
+<li>void SetMiniDumpDir(const String pathName)</li>
 <li>void SetRandomSeed(unsigned seed)</li>
 <li>float Sign(float value)</li>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
-<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
+<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
 <li>bool ToBool(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ToColor(const String source)</li>
