@@ -199,6 +199,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#af9934991495f41e5a34b3df400d732d5">SetSizeMul</a> (float sizeMul)</td></tr>
 <tr class="memdesc:af9934991495f41e5a34b3df400d732d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set particle size multiplicative modifier. <br/></td></tr>
 <tr class="separator:af9934991495f41e5a34b3df400d732d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e289d22dc455df9c1d300a1ff29d6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77e289d22dc455df9c1d300a1ff29d6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a77e289d22dc455df9c1d300a1ff29d6b">SetFaceCameraMode</a> (FaceCameraMode mode)</td></tr>
+<tr class="memdesc:a77e289d22dc455df9c1d300a1ff29d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set how the particles should rotate in relation to the camera. Default is to follow camera rotation on all axes (FC_ROTATE_XYZ.) <br/></td></tr>
+<tr class="separator:a77e289d22dc455df9c1d300a1ff29d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c73fe50534d3775e686834be4af316"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83c73fe50534d3775e686834be4af316"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a83c73fe50534d3775e686834be4af316">AddColorTime</a> (const <a class="el" href="class_urho3_d_1_1_color.html">Color</a> &amp;color, const float time)</td></tr>
 <tr class="memdesc:a83c73fe50534d3775e686834be4af316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a color frame sorted in the correct position based on time. <br/></td></tr>
@@ -395,6 +399,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 const <a class="el" href="struct_urho3_d_1_1_texture_frame.html">TextureFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#ad550da6ea71b9eb41b0ab88421d9f6ef">GetTextureFrame</a> (unsigned index) const </td></tr>
 <tr class="memdesc:ad550da6ea71b9eb41b0ab88421d9f6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a texture animation frame, or null if outside range. <br/></td></tr>
 <tr class="separator:ad550da6ea71b9eb41b0ab88421d9f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdb0458d9de34f61e02290bcca2bbf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfdb0458d9de34f61e02290bcca2bbf6"></a>
+FaceCameraMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#acfdb0458d9de34f61e02290bcca2bbf6">GetFaceCameraMode</a> () const </td></tr>
+<tr class="memdesc:acfdb0458d9de34f61e02290bcca2bbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how the particles rotate in relation to the camera. <br/></td></tr>
+<tr class="separator:acfdb0458d9de34f61e02290bcca2bbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a388857bbf41e80794376afe99d1901a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a388857bbf41e80794376afe99d1901a6"></a>
 <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a388857bbf41e80794376afe99d1901a6">GetRandomDirection</a> () const </td></tr>
 <tr class="memdesc:a388857bbf41e80794376afe99d1901a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return random direction. <br/></td></tr>
@@ -763,6 +771,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#aa76339c1efa2d85fa9055941bd3c19b3">loadMaterialName_</a></td></tr>
 <tr class="memdesc:aa76339c1efa2d85fa9055941bd3c19b3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries.">Material</a> name acquired during <a class="el" href="class_urho3_d_1_1_particle_effect.html#aa2070c1a4fb52e85caefa43c34c5d073" title="Load resource from stream. May be called from a worker thread. Return true if successful.">BeginLoad()</a>. <br/></td></tr>
 <tr class="separator:aa76339c1efa2d85fa9055941bd3c19b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a21f65907778b1199a1ead8daff693c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a21f65907778b1199a1ead8daff693c"></a>
+FaceCameraMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a4a21f65907778b1199a1ead8daff693c">faceCameraMode_</a></td></tr>
+<tr class="memdesc:a4a21f65907778b1199a1ead8daff693c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_urho3_d_1_1_particle.html" title="One particle in the particle system.">Particle</a> rotation mode in relation to the camera. <br/></td></tr>
+<tr class="separator:a4a21f65907778b1199a1ead8daff693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
