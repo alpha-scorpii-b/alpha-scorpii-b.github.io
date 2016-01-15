@@ -31,10 +31,10 @@ statcounter:
 
 build_statuses:
   - branch: master
-    platform: Windows/Linux
+    platform: Windows (MinGW) and Linux
     icons: [fa fa-windows fa-lg, fa fa-linux fa-lg]
   - branch: OSX-CI
-    platform: OSX/iOS
+    platform: OSX and iOS
     icons: [fa fa-apple fa-lg, icon-mobile-device fm-lg]
   - branch: Android-CI
     platform: Android
@@ -42,6 +42,6 @@ build_statuses:
   - branch: RPI-CI
     platform: Raspberry-Pi
     icons: icon-raspberrypi fm-lg
-  - branch: Emscripten-CI
+  - branch: Web-CI
     platform: Web
     icons: fa fa-html5 fa-lg
