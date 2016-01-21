@@ -666,8 +666,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -682,11 +684,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -708,6 +712,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -814,6 +819,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -872,8 +878,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -888,11 +896,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -914,6 +924,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -1028,6 +1039,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -1145,8 +1157,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -1161,11 +1175,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -1187,6 +1203,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -1296,6 +1313,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -3030,8 +3048,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DefineShape(CursorShape, <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp;, const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp;)</li>
 <li>void DefineShape(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp;, const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp;)</li>
@@ -3048,11 +3068,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -3074,6 +3096,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -3183,6 +3206,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -3747,8 +3771,10 @@ Classes</h2>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void AddItem(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -3763,12 +3789,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetItems() const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void InsertItem(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
@@ -3794,6 +3822,7 @@ Classes</h2>
 <li>void RemoveItem(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void RemoveItem(uint)</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -3921,6 +3950,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -4771,8 +4801,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -4787,11 +4819,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -4813,6 +4847,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -4925,6 +4960,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> text</li>
 <li>bool textCopyable</li>
@@ -4950,10 +4986,12 @@ Classes</h2>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void AddItem(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void AddSelection(uint)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
 <li>void ChangeSelection(int, bool)</li>
 <li>void ClearSelection()</li>
+<li>void ClearTags()</li>
 <li>void CopySelectedItemsToClipboard()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
@@ -4971,12 +5009,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetItems() const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>void InsertItem(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ = null)</li>
 <li>bool IsExpanded(uint) const</li>
@@ -5005,6 +5045,7 @@ Classes</h2>
 <li>void RemoveItem(uint)</li>
 <li>void RemoveObjectAnimation()</li>
 <li>void RemoveSelection(uint)</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -5131,6 +5172,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -5354,8 +5396,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -5370,11 +5414,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -5396,6 +5442,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -5517,6 +5564,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -7648,9 +7696,11 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
 <li>void ChangeValue(float)</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -7665,11 +7715,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -7691,6 +7743,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -7800,6 +7853,7 @@ Classes</h2>
 <li>bool sortChildren</li>
 <li>float stepFactor</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -7818,8 +7872,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -7834,11 +7890,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -7860,6 +7918,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -7971,6 +8030,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -8156,9 +8216,11 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
 <li>void ChangeValue(float)</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -8173,11 +8235,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -8199,6 +8263,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -8309,6 +8374,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -8742,8 +8808,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>uint FindChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@) const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetAttribute(const String&amp;) const</li>
@@ -8755,11 +8823,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@, bool = false)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a>&amp;, bool = false)</li>
@@ -8779,6 +8849,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
 <li>bool Save(VectorBuffer&amp;) const</li>
@@ -8851,6 +8922,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -9432,9 +9504,11 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
 <li>void ClearSelection()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -9449,11 +9523,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -9475,6 +9551,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -9592,6 +9669,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> text</li>
 <li>HorizontalAlignment textAlignment</li>
@@ -10123,8 +10201,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -10139,11 +10219,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -10165,6 +10247,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -10265,6 +10348,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -10345,8 +10429,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -10361,11 +10447,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -10387,6 +10475,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -10486,6 +10575,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
@@ -10761,8 +10851,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -10777,11 +10869,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -10804,6 +10898,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -10927,6 +11022,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
@@ -10985,8 +11081,10 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>void AddTag(const String&amp;)</li>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
+<li>void ClearTags()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
 <li>void DisableLayoutUpdate()</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
@@ -11001,11 +11099,13 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetChild(const <a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>&amp;, const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; = <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ( ), bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildren(bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[]@ GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, bool = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ GetElementEventSender() const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>uint GetNumChildren(bool) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
@@ -11027,6 +11127,7 @@ Classes</h2>
 <li>void RemoveChild(uint)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>bool RemoveTag(const String&amp;)</li>
 <li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
@@ -11143,6 +11244,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
 <li>bool tiled</li>
