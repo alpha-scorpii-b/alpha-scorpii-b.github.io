@@ -195,6 +195,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#ab881efcd27fe757cf1885633c959c36c">GetComponent</a> (unsigned id) const </td></tr>
 <tr class="memdesc:ab881efcd27fe757cf1885633c959c36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return component from the whole scene by ID, or null if not found. <br/></td></tr>
 <tr class="separator:ab881efcd27fe757cf1885633c959c36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae570ea8abfa468f9286d5a60413386fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae570ea8abfa468f9286d5a60413386fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#ae570ea8abfa468f9286d5a60413386fb">GetNodesWithTag</a> (<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_node.html">Node</a> * &gt; &amp;dest, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag) const </td></tr>
+<tr class="memdesc:ae570ea8abfa468f9286d5a60413386fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get nodes with specific tag from the whole scene, return false if empty. <br/></td></tr>
+<tr class="separator:ae570ea8abfa468f9286d5a60413386fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f8347766fb848bf2d5f1348b6714ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f8347766fb848bf2d5f1348b6714ad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a78f8347766fb848bf2d5f1348b6714ad">IsUpdateEnabled</a> () const </td></tr>
 <tr class="memdesc:a78f8347766fb848bf2d5f1348b6714ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether updates are enabled. <br/></td></tr>
@@ -276,6 +280,14 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a1011fadd1f7da49e3eb59b34d0d5f3de">GetFreeComponentID</a> (CreateMode mode)</td></tr>
 <tr class="memdesc:a1011fadd1f7da49e3eb59b34d0d5f3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get free component ID, either non-local or local. <br/></td></tr>
 <tr class="separator:a1011fadd1f7da49e3eb59b34d0d5f3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cdc37dfa0f4d34961be75247c5c991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33cdc37dfa0f4d34961be75247c5c991"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a33cdc37dfa0f4d34961be75247c5c991">NodeTagAdded</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag)</td></tr>
+<tr class="memdesc:a33cdc37dfa0f4d34961be75247c5c991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache node by tag if tag not zero, no checking if already added. Used internaly in <a class="el" href="class_urho3_d_1_1_node.html#af02551fed0c1b325fd48332936062742" title="Add a tag.">Node::AddTag</a>. <br/></td></tr>
+<tr class="separator:a33cdc37dfa0f4d34961be75247c5c991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9a5cc5b133c9f25c67e9d03de4c28a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b9a5cc5b133c9f25c67e9d03de4c28a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a1b9a5cc5b133c9f25c67e9d03de4c28a">NodeTagRemoved</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag)</td></tr>
+<tr class="memdesc:a1b9a5cc5b133c9f25c67e9d03de4c28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache node by tag if tag not zero. <br/></td></tr>
+<tr class="separator:a1b9a5cc5b133c9f25c67e9d03de4c28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c4ba456a0fdbd205c063761126b02e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7c4ba456a0fdbd205c063761126b02e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#af7c4ba456a0fdbd205c063761126b02e">NodeAdded</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="memdesc:af7c4ba456a0fdbd205c063761126b02e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> added. Assign scene pointer and add to ID map. <br/></td></tr>
@@ -357,6 +369,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a4fe38a2be941c8ca1fa59b9639775c09">SetName</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
 <tr class="memdesc:a4fe38a2be941c8ca1fa59b9639775c09 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set name of the scene node. Names are not required to be unique. <br/></td></tr>
 <tr class="separator:a4fe38a2be941c8ca1fa59b9639775c09 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439a78f3d890caaa6dd33680bb5e493a inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a439a78f3d890caaa6dd33680bb5e493a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a439a78f3d890caaa6dd33680bb5e493a">SetTags</a> (const <a class="el" href="class_urho3_d_1_1_vector.html">StringVector</a> &amp;tags)</td></tr>
+<tr class="memdesc:a439a78f3d890caaa6dd33680bb5e493a inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tags. Old tags are overwritten. <br/></td></tr>
+<tr class="separator:a439a78f3d890caaa6dd33680bb5e493a inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02551fed0c1b325fd48332936062742 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af02551fed0c1b325fd48332936062742"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#af02551fed0c1b325fd48332936062742">AddTag</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag)</td></tr>
+<tr class="memdesc:af02551fed0c1b325fd48332936062742 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a tag. <br/></td></tr>
+<tr class="separator:af02551fed0c1b325fd48332936062742 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e642a687d67df1e93674dab18519f56 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e642a687d67df1e93674dab18519f56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a6e642a687d67df1e93674dab18519f56">AddTags</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tags, char separator= ';')</td></tr>
+<tr class="memdesc:a6e642a687d67df1e93674dab18519f56 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tags with the specified separator, by default ;. <br/></td></tr>
+<tr class="separator:a6e642a687d67df1e93674dab18519f56 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9629ef32d32424c031e40adae5454115 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9629ef32d32424c031e40adae5454115"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a9629ef32d32424c031e40adae5454115">AddTags</a> (const <a class="el" href="class_urho3_d_1_1_vector.html">StringVector</a> &amp;tags)</td></tr>
+<tr class="memdesc:a9629ef32d32424c031e40adae5454115 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tags. <br/></td></tr>
+<tr class="separator:a9629ef32d32424c031e40adae5454115 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad325f3f7bc7b89b57bb8624b8c052e90 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad325f3f7bc7b89b57bb8624b8c052e90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ad325f3f7bc7b89b57bb8624b8c052e90">RemoveTag</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag)</td></tr>
+<tr class="memdesc:ad325f3f7bc7b89b57bb8624b8c052e90 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove tag. Return true if existed. <br/></td></tr>
+<tr class="separator:ad325f3f7bc7b89b57bb8624b8c052e90 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d20c591eb136f06b302edbe42fd674b inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d20c591eb136f06b302edbe42fd674b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a7d20c591eb136f06b302edbe42fd674b">RemoveAllTags</a> ()</td></tr>
+<tr class="memdesc:a7d20c591eb136f06b302edbe42fd674b inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all tags. <br/></td></tr>
+<tr class="separator:a7d20c591eb136f06b302edbe42fd674b inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2fd960b4c5641cd38771280a6b84fb8 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2fd960b4c5641cd38771280a6b84fb8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#aa2fd960b4c5641cd38771280a6b84fb8">SetPosition</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position)</td></tr>
 <tr class="memdesc:aa2fd960b4c5641cd38771280a6b84fb8 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in parent space. If the scene node is on the root level (is child of the scene itself), this is same as world space. <br/></td></tr>
@@ -673,6 +709,14 @@ const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;<
 <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0a2c3e2236fa14af014a7038d9ac3841">GetNameHash</a> () const </td></tr>
 <tr class="memdesc:a0a2c3e2236fa14af014a7038d9ac3841 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name hash. <br/></td></tr>
 <tr class="separator:a0a2c3e2236fa14af014a7038d9ac3841 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9232a38799d1532c19c9bc5388dc204c inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9232a38799d1532c19c9bc5388dc204c"></a>
+const <a class="el" href="class_urho3_d_1_1_vector.html">StringVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a9232a38799d1532c19c9bc5388dc204c">GetTags</a> () const </td></tr>
+<tr class="memdesc:a9232a38799d1532c19c9bc5388dc204c inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all tags. <br/></td></tr>
+<tr class="separator:a9232a38799d1532c19c9bc5388dc204c inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271ceaf9f434dba8b553576629fc7b8b inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a271ceaf9f434dba8b553576629fc7b8b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a271ceaf9f434dba8b553576629fc7b8b">HasTag</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag) const </td></tr>
+<tr class="memdesc:a271ceaf9f434dba8b553576629fc7b8b inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has a specific tag. <br/></td></tr>
+<tr class="separator:a271ceaf9f434dba8b553576629fc7b8b inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f6e5318815bc21dd93febb3dc5b95e inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2f6e5318815bc21dd93febb3dc5b95e"></a>
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ae2f6e5318815bc21dd93febb3dc5b95e">GetParent</a> () const </td></tr>
 <tr class="memdesc:ae2f6e5318815bc21dd93febb3dc5b95e inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent scene node. <br/></td></tr>
@@ -817,6 +861,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0d27882b2393d44d5af5db56d86e0b4f">GetChildrenWithComponent</a> (<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_node.html">Node</a> * &gt; &amp;dest, <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type, bool recursive=false) const </td></tr>
 <tr class="memdesc:a0d27882b2393d44d5af5db56d86e0b4f inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return child scene nodes with a specific component. <br/></td></tr>
 <tr class="separator:a0d27882b2393d44d5af5db56d86e0b4f inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da84dac4917f14caf4a65add678ab38 inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6da84dac4917f14caf4a65add678ab38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a6da84dac4917f14caf4a65add678ab38">GetChildrenWithTag</a> (<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_node.html">Node</a> * &gt; &amp;dest, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag, bool recursive=false) const </td></tr>
+<tr class="memdesc:a6da84dac4917f14caf4a65add678ab38 inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return child scene nodes with a specific tag. <br/></td></tr>
+<tr class="separator:a6da84dac4917f14caf4a65add678ab38 inherit pub_methods_class_urho3_d_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897635c3ae7842fcd8dee6d4b47c7b0d inherit pub_methods_class_urho3_d_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a897635c3ae7842fcd8dee6d4b47c7b0d"></a>
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a897635c3ae7842fcd8dee6d4b47c7b0d">GetChild</a> (unsigned index) const </td></tr>
 <tr class="memdesc:a897635c3ae7842fcd8dee6d4b47c7b0d inherit pub_methods_class_urho3_d_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return child scene node by index. <br/></td></tr>
@@ -1419,6 +1467,11 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; unsigned, <a class="el" href="class_urho3_d_1_1_component.html">Component</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a14be6f71a9a6f9fbd06ff00901b92dbb">localComponents_</a></td></tr>
 <tr class="memdesc:a14be6f71a9a6f9fbd06ff00901b92dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local components by ID. <br/></td></tr>
 <tr class="separator:a14be6f71a9a6f9fbd06ff00901b92dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c55cc22f69e87643ef0e383980fd36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16c55cc22f69e87643ef0e383980fd36"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_node.html">Node</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#a16c55cc22f69e87643ef0e383980fd36">taggedNodes_</a></td></tr>
+<tr class="memdesc:a16c55cc22f69e87643ef0e383980fd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached tagged nodes by tag. <br/></td></tr>
+<tr class="separator:a16c55cc22f69e87643ef0e383980fd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c95999e6efd93a722ea7b225ad1313"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7c95999e6efd93a722ea7b225ad1313"></a>
 <a class="el" href="struct_urho3_d_1_1_async_progress.html">AsyncProgress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_scene.html#ac7c95999e6efd93a722ea7b225ad1313">asyncProgress_</a></td></tr>
 <tr class="memdesc:ac7c95999e6efd93a722ea7b225ad1313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous loading progress. <br/></td></tr>

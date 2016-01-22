@@ -3348,6 +3348,10 @@ Classes</h2>
 <li>bool SaveXML(File* dest, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> indentation = "\t") const</li>
 <li>bool SaveJSON(File* dest, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> indentation = "\t") const</li>
 <li>void SetName(const String name)</li>
+<li>void AddTag(const String tag)</li>
+<li>void AddTags(const String tags, char separator)</li>
+<li>bool RemoveTag(const String tag)</li>
+<li>void RemoveAllTags()</li>
 <li>void SetPosition(const Vector3&amp; position)</li>
 <li>void SetPosition2D(const Vector2&amp; position)</li>
 <li>void SetPosition2D(float x, float y)</li>
@@ -3480,6 +3484,9 @@ Classes</h2>
 <li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class.">JSONValue</a>&amp; source, <a class="el" href="class_urho3_d_1_1_scene_resolver.html" title="Utility class that resolves node &amp; component IDs after a scene or partial scene load.">SceneResolver</a>&amp; resolver, bool loadChildren = true, bool rewriteIDs = false, CreateMode mode = REPLICATED)</li>
 <li>Node* CreateChild(unsigned id, CreateMode mode)</li>
 <li>void AddComponent(Component* component, unsigned id, CreateMode mode)</li>
+<li>bool HasTag(const String tag) const</li>
+<li>const StringVector&amp; GetTags() const</li>
+<li>const PODVector&lt;Node*&gt;&amp; GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> tag, bool recursive = false) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -4748,6 +4755,7 @@ Classes</h2>
 <li>void MarkNetworkUpdate(Node* node)</li>
 <li>void MarkNetworkUpdate(Component* component)</li>
 <li>void MarkReplicationDirty(Node* node)</li>
+<li>const PODVector&lt;Node*&gt;&amp; GetNodesWithTag(const String tag) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -5979,6 +5987,10 @@ Classes</h2>
 <li>void SetInternal(bool enable)</li>
 <li>void SetTraversalMode(TraversalMode traversalMode)</li>
 <li>void SetElementEventSender(bool flag)</li>
+<li>void AddTag(const String tag)</li>
+<li>void AddTags(const String tags, char separator)</li>
+<li>bool RemoveTag(const String tag)</li>
+<li>void RemoveAllTags()</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetName() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetPosition() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetSize() const</li>
@@ -6034,6 +6046,9 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; GetDerivedColor() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; GetVar(StringHash key) const</li>
 <li>const VariantMap&amp; GetVars() const</li>
+<li>bool HasTag(const String tag) const</li>
+<li>const StringVector&amp; GetTags() const</li>
+<li>const PODVector&lt;UIElement*&gt;&amp; GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> tag, bool recursive = false) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ScreenToElement(const IntVector2&amp; screenPosition)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp; position)</li>
 <li>bool IsInside(IntVector2 position, bool isScreen)</li>
@@ -6049,12 +6064,6 @@ Classes</h2>
 <li>TraversalMode GetTraversalMode() const</li>
 <li>bool IsElementEventSender() const</li>
 <li>UIElement* GetElementEventSender() const</li>
-<li>void AddTag(const String tag)</li>
-<li>void ClearTags()</li>
-<li>bool RemoveTag(const String tag)</li>
-<li>bool HasTag(const String tag) const</li>
-<li>const StringVector&amp; GetTags() const</li>
-<li>const PODVector&lt;UIElement*&gt;&amp; GetChildrenWithTag(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> tag, bool recursive = false) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
