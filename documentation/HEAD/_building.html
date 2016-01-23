@@ -229,13 +229,13 @@ Native build process</h2>
 <ol type="1">
 <li>Run CMake in the root directory (which is also CMake's source tree) with your preferred generator and toolchain specified to generate the build tree. You can use cmake-gui or the provided batch files or shell scripts on the respective host system. All the batch files and shell scripts expect the build tree location to be passed as the first argument, or to execute them in the build tree itself when reconfiguring the existing build tree.<br/>
 <ul>
-<li>Windows: cmake_vs20xx.bat, cmake_mingw.bat, cmake_codeblock.bat, cmake_ninja.bat, or cmake_generic.bat<br/>
+<li>Windows: cmake_vs20xx.bat, cmake_mingw.bat, cmake_codeblock.bat, cmake_codelite.bat cmake_ninja.bat, or cmake_generic.bat<br/>
 </li>
-<li>Mac OS X: cmake_xcode.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
+<li>Mac OS X: cmake_xcode.sh, cmake_codeblocks.sh, cmake_codelite.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
 </li>
-<li>Linux: cmake_eclipse.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
+<li>Linux: cmake_eclipse.sh, cmake_codeblocks.sh, cmake_codelite.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
 </li>
-<li>Raspberry Pi: cmake_rpi.sh, cmake_eclipse.sh, cmake_codeblocks.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
+<li>Raspberry Pi: cmake_rpi.sh, cmake_eclipse.sh, cmake_codeblocks.sh, cmake_codelite.sh, cmake_ninja.sh, or cmake_generic.sh<br/>
 </li>
 </ul>
 </li>
@@ -256,13 +256,7 @@ Native build process</h2>
 <p>Note that Eclipse requires CDT plugin to build a C/C++ project.</p>
 <p>On Windows platform Urho3D can use either Direct3D 9 (default), Direct3D 11 or OpenGL rendering. Other platforms always use OpenGL. Use the CMake options "-DURHO3D_D3D11=1" or "-DURHO3D_OPENGL=1" to choose the non-default APIs.</p>
 <p>If using MinGW to compile, DirectX headers may need to be acquired separately. They can be copied to the MinGW installation eg. from the following package: <a href="http://www.libsdl.org/extras/win32/common/directx-devel.tar.gz">http://www.libsdl.org/extras/win32/common/directx-devel.tar.gz</a> These will be missing some of the headers related to shader compilation, so a MinGW build will use OpenGL by default. To build in Direct3D mode, the MinGW-w64 port is necessary: <a href="http://mingw-w64.sourceforge.net/">http://mingw-w64.sourceforge.net/</a>. Using it, Direct3D can be enabled with the "-DURHO3D_OPENGL=0" build option.</p>
-<p>After the build is complete, the programs can be run from the bin subdirectory in the build tree. These include the Urho3D player application, which can run application scripts, the tools, and C++ sample applications if they have been enabled. Unless your build tree location is also the same as the Urho3D project source tree, in order to run the Urho3D executables successfully, you must do one of the following first:</p>
-<ul>
-<li>Copy both the bin/Data and bin/CoreData directories in the source tree to the bin subdirectory in the build tree.</li>
-<li>Instead of copying, just create symbolic links in the build tree pointing to the above two directories.</li>
-<li>Or even better, use the 'resource prefix path' <a class="el" href="_running.html#Running_Commandline">engine parameter</a> by setting URHO3D_PREFIX_PATH variable in your host environment. The prefix variable must be set to an absolute path which contains the resource directories.</li>
-<li>Or use the URHO3D_PACKAGING build option which would package the resource directories as *.pak files in the bin subdirectory in the build tree.</li>
-</ul>
+<p>After the build is complete, the programs can be run from the bin subdirectory in the build tree. These include the Urho3D player application, which can run application scripts, the tools, and C++ sample applications if they have been enabled.</p>
 <p>The Mac OS X executables can be built with all the resources bundled into a single app directory. In order to enable this, set the URHO3D_MACOSX_BUNDLE build option when configuring the build tree for the Mac OS X platform. The bundled app can be launched just by double-clicking from the Finder without worrying about setting the 'resource prefix path'. This is because the URHO3D_PREFIX_PATH environment variable has been set internally to point to the resources directory that is already bundled in the app. Note, however, if you do not launch the app via the Apple "Launch Services" (such as when you are debugging or by calling the executable directly inside the bundled app directory via CLI) then you still need to set the 'resource prefix path' manually as described in the previous paragraph. Note that the Mach-O universal binary targets can only be built when Xcode generator is used. All the other generators only build single-arch binary targets.</p>
 <p>The Windows executables are by default built as Windows application instead of console application. You can set the URHO3D_WIN32_CONSOLE build option to override this. As console application, the standard output and standard error streams of the executable are redirected to console.</p>
 <p>To run the Urho3D player application from the Visual Studio debugger, set the Urho3DPlayer project as the startup project and enter its relative path and filename into Properties -&gt; Debugging -&gt; Command: ../../../bin/Urho3DPlayer.exe. Additionally, entering -w into Debugging -&gt; Command Arguments is highly recommended. This enables startup in windowed mode: without it running into an exception or breakpoint will be obnoxious as the mouse cursor will likely be hidden. To actually make the Urho3DPlayer application do something useful, it must be supplied with the name of the script file it should load and run. You can try for example the following arguments:</p>
