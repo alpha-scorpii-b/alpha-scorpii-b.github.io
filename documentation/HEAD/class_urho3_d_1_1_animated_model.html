@@ -269,6 +269,9 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 &lt; <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a55da12ca131f1a1cf6295e76c0f4f0d1">GetGeometrySkinMatrices</a> () const </td></tr>
 <tr class="memdesc:a55da12ca131f1a1cf6295e76c0f4f0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return per-geometry skin matrices. If empty, uses global skinning. <br/></td></tr>
 <tr class="separator:a55da12ca131f1a1cf6295e76c0f4f0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6505918614fd80f5621e2a36abd2cf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#ab6505918614fd80f5621e2a36abd2cf2">UpdateBoneBoundingBox</a> ()</td></tr>
+<tr class="memdesc:ab6505918614fd80f5621e2a36abd2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate the bone bounding box. Normally called internally, but can also be manually called if up-to-date information before rendering is necessary.  <a href="#ab6505918614fd80f5621e2a36abd2cf2">More...</a><br/></td></tr>
+<tr class="separator:ab6505918614fd80f5621e2a36abd2cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_static_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_static_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_static_model.html">Urho3D::StaticModel</a></td></tr>
 <tr class="memitem:a86628548ad3f9d600346023e2fe7d5a5 inherit pub_methods_class_urho3_d_1_1_static_model"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86628548ad3f9d600346023e2fe7d5a5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model.html#a86628548ad3f9d600346023e2fe7d5a5">StaticModel</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -1172,9 +1175,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a4490aea6f65d9c5c617f8f6a4f762401">UpdateAnimation</a> (const <a class="el" href="struct_urho3_d_1_1_frame_info.html">FrameInfo</a> &amp;frame)</td></tr>
 <tr class="memdesc:a4490aea6f65d9c5c617f8f6a4f762401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate animations. Called from <a class="el" href="class_urho3_d_1_1_animated_model.html#a9ea4b851811b37bb2ef96a0f91b360a3" title="Update before octree reinsertion. Is called from a worker thread.">Update()</a>. <br/></td></tr>
 <tr class="separator:a4490aea6f65d9c5c617f8f6a4f762401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6505918614fd80f5621e2a36abd2cf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#ab6505918614fd80f5621e2a36abd2cf2">UpdateBoneBoundingBox</a> ()</td></tr>
-<tr class="memdesc:ab6505918614fd80f5621e2a36abd2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate the bone bounding box.  <a href="#ab6505918614fd80f5621e2a36abd2cf2">More...</a><br/></td></tr>
-<tr class="separator:ab6505918614fd80f5621e2a36abd2cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16cde01fa942869f445895186bf691bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16cde01fa942869f445895186bf691bf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a16cde01fa942869f445895186bf691bf">UpdateSkinning</a> ()</td></tr>
 <tr class="memdesc:a16cde01fa942869f445895186bf691bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate skinning. <br/></td></tr>
@@ -1353,7 +1353,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Recalculate the world-space bounding box. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>If it's a skinned attachment that does not cover the whole body, it will have unnecessarily large bounds </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>If it's a skinned attachment that does not cover the whole body, it will have unnecessarily large bounds </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_urho3_d_1_1_static_model.html#ae8bece1972ad71aeb6f423d435946f01">Urho3D::StaticModel</a>.</p>
 
@@ -1370,9 +1370,6 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="ab6505918614fd80f5621e2a36abd2cf2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Urho3D::AnimatedModel::UpdateBoneBoundingBox </td>
@@ -1381,15 +1378,10 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Recalculate the bone bounding box. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>The sphere radius should be multiplied with bone scale </dd></dl>
+<p>Recalculate the bone bounding box. Normally called internally, but can also be manually called if up-to-date information before rendering is necessary. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>The sphere radius should be multiplied with bone scale </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
