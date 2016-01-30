@@ -6887,15 +6887,18 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a></h4>
 <p>Methods:</p>
 <ul>
+<li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> Conjugate() const</li>
 <li>float DotProduct(const Quaternion&amp;) const</li>
 <li>bool Equals(const Quaternion&amp;) const</li>
 <li>void FromAngleAxis(float, const Vector3&amp;)</li>
 <li>void FromAxes(const Vector3&amp;, const Vector3&amp;, const Vector3&amp;)</li>
 <li>void FromEulerAngles(float, float, float)</li>
-<li>bool FromLookRotation(const Vector3&amp;, const Vector3&amp;)</li>
+<li>bool FromLookRotation(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> ( 0.0 , 1.0 , 0.0 ))</li>
+<li>void FromRotationMatrix(const Matrix3&amp;)</li>
 <li>void FromRotationTo(const Vector3&amp;, const Vector3&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> Inverse() const</li>
 <li>bool IsNaN() const</li>
+<li>float LengthSquared() const</li>
 <li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> Nlerp(Quaternion, float, bool) const</li>
 <li>void Normalize()</li>
 <li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> Normalized() const</li>
@@ -6907,6 +6910,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> eulerAngles // readonly</li>
 <li>float pitch // readonly</li>
 <li>float roll // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix3.html" title="3x3 matrix for rotation and scaling.">Matrix3</a> rotationMatrix // readonly</li>
 <li>float w</li>
 <li>float x</li>
 <li>float y</li>
