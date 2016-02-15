@@ -18,6 +18,9 @@ Copyright (c) 2014-2015 Yao Wei Tjong
 {% if site.safe %}
   {% include JB/comments %}
 {% else %}
+<script type="text/javascript">
+    function disqusReset() {};
+</script>
   This is a place holder for Disqus comment service which will only be shown here when the site is deployed in production.
 {% endif %}
 </div>

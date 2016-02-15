@@ -25,7 +25,7 @@ bindkey -k F1 windowlist -b
 bindkey -k F2 other
 
 # Workspaces
-screen -t Jekyll bash -c 'echo "Starting Jekyll in quiet mode but monitoring its error stream" && jekyll serve --watch >/dev/null'
+screen -t Jekyll bash -c 'echo "Starting Jekyll in quiet mode but monitoring its error stream" && jekyll serve --watch --incremental >/dev/null'
 monitor
 activity "Activity in window %n"
 screen
