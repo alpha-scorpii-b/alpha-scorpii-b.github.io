@@ -29,6 +29,7 @@ group: HEAD
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_urho3_d_1_1_weak_ptr-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::WeakPtr&lt; T &gt; Class Template Reference</div>  </div>
@@ -56,6 +57,11 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a8f7dff2a69b1f69a9597878e4da2ccb8">WeakPtr</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a8f7dff2a69b1f69a9597878e4da2ccb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construct from another weak pointer. <br/></td></tr>
 <tr class="separator:a8f7dff2a69b1f69a9597878e4da2ccb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cee3d3f039775829ea2d4b4e2fc6f9"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac4cee3d3f039775829ea2d4b4e2fc6f9"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:ac4cee3d3f039775829ea2d4b4e2fc6f9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ac4cee3d3f039775829ea2d4b4e2fc6f9">WeakPtr</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ac4cee3d3f039775829ea2d4b4e2fc6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construct from another weak pointer allowing implicit upcasting. <br/></td></tr>
+<tr class="separator:ac4cee3d3f039775829ea2d4b4e2fc6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10686c17c02a93a3a25ab04b2e3542d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab10686c17c02a93a3a25ab04b2e3542d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ab10686c17c02a93a3a25ab04b2e3542d">WeakPtr</a> (const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ab10686c17c02a93a3a25ab04b2e3542d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a shared pointer. <br/></td></tr>
@@ -76,6 +82,11 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a2a135f817306e4ed6364d90f5552c910">operator=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a2a135f817306e4ed6364d90f5552c910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a weak pointer. <br/></td></tr>
 <tr class="separator:a2a135f817306e4ed6364d90f5552c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplParams" colspan="2"><a class="anchor" id="acaad39ba18563702df9850035f78c3f0"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#acaad39ba18563702df9850035f78c3f0">operator=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:acaad39ba18563702df9850035f78c3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from another weak pointer allowing implicit upcasting. <br/></td></tr>
+<tr class="separator:acaad39ba18563702df9850035f78c3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1fc769184923acb6ad80040f5888da6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1fc769184923acb6ad80040f5888da6"></a>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ab1fc769184923acb6ad80040f5888da6">operator=</a> (T *ptr)</td></tr>
 <tr class="memdesc:ab1fc769184923acb6ad80040f5888da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a raw pointer. <br/></td></tr>
@@ -100,18 +111,21 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#aa3015641982da67ef5450315cfdf9d06">operator[]</a> (const int index)</td></tr>
 <tr class="memdesc:aa3015641982da67ef5450315cfdf9d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscript the object if applicable. <br/></td></tr>
 <tr class="separator:aa3015641982da67ef5450315cfdf9d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a820ae5baca56dc0131b2b0dea1e8d7b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a820ae5baca56dc0131b2b0dea1e8d7b7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a820ae5baca56dc0131b2b0dea1e8d7b7">operator==</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs) const </td></tr>
-<tr class="memdesc:a820ae5baca56dc0131b2b0dea1e8d7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for equality with another weak pointer. <br/></td></tr>
-<tr class="separator:a820ae5baca56dc0131b2b0dea1e8d7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f920aea740b86906dc05cc3b0f8751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4f920aea740b86906dc05cc3b0f8751"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ad4f920aea740b86906dc05cc3b0f8751">operator!=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs) const </td></tr>
-<tr class="memdesc:ad4f920aea740b86906dc05cc3b0f8751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for inequality with another weak pointer. <br/></td></tr>
-<tr class="separator:ad4f920aea740b86906dc05cc3b0f8751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac64b50a2d353590b7690314c148fba59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac64b50a2d353590b7690314c148fba59"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ac64b50a2d353590b7690314c148fba59">operator&lt;</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs) const </td></tr>
-<tr class="memdesc:ac64b50a2d353590b7690314c148fba59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for less than with another weak pointer. <br/></td></tr>
-<tr class="separator:ac64b50a2d353590b7690314c148fba59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef57b9e44ecae7529f59100570e917d"><td class="memTemplParams" colspan="2"><a class="anchor" id="abef57b9e44ecae7529f59100570e917d"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:abef57b9e44ecae7529f59100570e917d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#abef57b9e44ecae7529f59100570e917d">operator==</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs) const </td></tr>
+<tr class="memdesc:abef57b9e44ecae7529f59100570e917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for equality with another weak pointer. <br/></td></tr>
+<tr class="separator:abef57b9e44ecae7529f59100570e917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd01117bfbeb93f3ddcc6247a8c0d0f"><td class="memTemplParams" colspan="2"><a class="anchor" id="abcd01117bfbeb93f3ddcc6247a8c0d0f"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:abcd01117bfbeb93f3ddcc6247a8c0d0f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#abcd01117bfbeb93f3ddcc6247a8c0d0f">operator!=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs) const </td></tr>
+<tr class="memdesc:abcd01117bfbeb93f3ddcc6247a8c0d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for inequality with another weak pointer. <br/></td></tr>
+<tr class="separator:abcd01117bfbeb93f3ddcc6247a8c0d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc4e7f1c5541a34079f175b3fb1d27e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5cc4e7f1c5541a34079f175b3fb1d27e"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a5cc4e7f1c5541a34079f175b3fb1d27e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a5cc4e7f1c5541a34079f175b3fb1d27e">operator&lt;</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs) const </td></tr>
+<tr class="memdesc:a5cc4e7f1c5541a34079f175b3fb1d27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for less than with another weak pointer. <br/></td></tr>
+<tr class="separator:a5cc4e7f1c5541a34079f175b3fb1d27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8402e3505f3e6efa3733761ecbecd285"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8402e3505f3e6efa3733761ecbecd285"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a8402e3505f3e6efa3733761ecbecd285">operator T *</a> () const </td></tr>
 <tr class="memdesc:a8402e3505f3e6efa3733761ecbecd285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to a raw pointer, null if the object is expired. <br/></td></tr>
@@ -161,11 +175,6 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplParams" colspan="2"><a class="anchor" id="acaad39ba18563702df9850035f78c3f0"></a>
-template&lt;class U &gt; </td></tr>
-<tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#acaad39ba18563702df9850035f78c3f0">operator=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:acaad39ba18563702df9850035f78c3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent direct assignment from a weak pointer of different type. <br/></td></tr>
-<tr class="separator:acaad39ba18563702df9850035f78c3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac7ae27059f4903e4dc62b9ff13cd0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ac7ae27059f4903e4dc62b9ff13cd0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a9ac7ae27059f4903e4dc62b9ff13cd0c">AddRef</a> ()</td></tr>
 <tr class="memdesc:a9ac7ae27059f4903e4dc62b9ff13cd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a weak reference to the object pointed to. <br/></td></tr>
@@ -185,6 +194,13 @@ T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a961b86acbc605648a9b05927770c2dfb">refCount_</a></td></tr>
 <tr class="memdesc:a961b86acbc605648a9b05927770c2dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the <a class="el" href="struct_urho3_d_1_1_ref_count.html" title="Reference count structure.">RefCount</a> structure. <br/></td></tr>
 <tr class="separator:a961b86acbc605648a9b05927770c2dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2df746dc8f5450b6f1eb70897d8d5c8b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2df746dc8f5450b6f1eb70897d8d5c8b"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a2df746dc8f5450b6f1eb70897d8d5c8b"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WeakPtr</b></td></tr>
+<tr class="separator:a2df746dc8f5450b6f1eb70897d8d5c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br/>
