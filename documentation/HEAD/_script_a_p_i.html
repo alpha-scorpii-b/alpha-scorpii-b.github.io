@@ -323,6 +323,7 @@ Classes</h2>
 <li>WrapMode GetAttributeAnimationWrapMode(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetAttributeDefault(const String&amp;) const</li>
 <li>float GetAutoFade(const String&amp;) const</li>
+<li>AnimationBlendMode GetBlendMode(const String&amp;) const</li>
 <li>float GetFadeTarget(const String&amp;) const</li>
 <li>float GetFadeTime(const String&amp;) const</li>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
@@ -363,6 +364,7 @@ Classes</h2>
 <li>void SetAttributeAnimationTime(const String&amp;, float)</li>
 <li>void SetAttributeAnimationWrapMode(const String&amp;, WrapMode)</li>
 <li>bool SetAutoFade(const String&amp;, float)</li>
+<li>bool SetBlendMode(const String&amp;, AnimationBlendMode)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>bool SetLayer(const String&amp;, uint8)</li>
 <li>bool SetLooped(const String&amp;, bool)</li>
@@ -447,6 +449,7 @@ Classes</h2>
 <p>Properties:</p>
 <ul>
 <li><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a>@ animation // readonly</li>
+<li>AnimationBlendMode blendMode</li>
 <li>float[] boneWeights</li>
 <li>bool enabled // readonly</li>
 <li>uint8 layer</li>
@@ -11547,6 +11550,11 @@ Classes</h2>
 </ul>
 <h2><a class="anchor" id="ScriptAPI_Enums"></a>
 Enumerations</h2>
+<h4>AnimationBlendMode</h4>
+<ul>
+<li>ABM_LERP</li>
+<li>ABM_ADDITIVE</li>
+</ul>
 <h4>BlendMode</h4>
 <ul>
 <li>BLEND_REPLACE</li>

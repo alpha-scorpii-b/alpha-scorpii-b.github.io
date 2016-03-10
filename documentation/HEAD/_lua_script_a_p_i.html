@@ -190,6 +190,7 @@ Classes</h2>
 <li>bool SetTime(const String name, float time)</li>
 <li>bool SetWeight(const String name, float weight)</li>
 <li>bool SetLooped(const String name, bool enable)</li>
+<li>bool SetBlendMode(const String name, AnimationBlendMode mode)</li>
 <li>bool SetSpeed(const String name, float speed)</li>
 <li>bool SetAutoFade(const String name, float fadeOutTime)</li>
 <li>bool SetRemoveOnCompletion(const String name, bool removeOnCompletion)</li>
@@ -203,6 +204,7 @@ Classes</h2>
 <li>float GetTime(const String name) const</li>
 <li>float GetWeight(const String name) const</li>
 <li>bool IsLooped(const String name) const</li>
+<li>AnimationBlendMode GetBlendMode(const String name) const</li>
 <li>float GetLength(const String name) const</li>
 <li>float GetSpeed(const String name) const</li>
 <li>float GetFadeTarget(const String name) const</li>
@@ -251,6 +253,7 @@ Classes</h2>
 <li>void AddWeight(float delta)</li>
 <li>void AddTime(float delta)</li>
 <li>void SetLayer(char layer)</li>
+<li>void SetBlendMode(AnimationBlendMode mode)</li>
 <li>Animation* GetAnimation() const</li>
 <li>Bone* GetStartBone() const</li>
 <li>float GetBoneWeight(const String name) const</li>
@@ -264,6 +267,7 @@ Classes</h2>
 <li>float GetTime() const</li>
 <li>float GetLength() const</li>
 <li>char GetLayer() const</li>
+<li>AnimationBlendMode GetBlendMode() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -275,6 +279,7 @@ Classes</h2>
 <li>float time</li>
 <li>float length (readonly)</li>
 <li>char layer</li>
+<li>AnimationBlendMode blendMode</li>
 </ul>
 <p><a class="anchor" id="Class_AnimationTrack"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_animation_track.html" title="Skeletal animation track, stores keyframes of a single bone.">AnimationTrack</a></h4>
@@ -6770,6 +6775,11 @@ Classes</h2>
 </ul>
 <h2><a class="anchor" id="LuaScriptAPI_Enums"></a>
 Enumerations</h2>
+<h4>AnimationBlendMode</h4>
+<ul>
+<li>int ABM_LERP</li>
+<li>int ABM_ADDITIVE</li>
+</ul>
 <h4>BlendMode</h4>
 <ul>
 <li>int BLEND_REPLACE</li>
@@ -6916,6 +6926,7 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
+<li>int FC_DIRECTION</li>
 </ul>
 <h4>FaceCameraMode</h4>
 <ul>
@@ -6924,7 +6935,6 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
-<li>int FC_DIRECTION</li>
 </ul>
 <h4>FileMode</h4>
 <ul>

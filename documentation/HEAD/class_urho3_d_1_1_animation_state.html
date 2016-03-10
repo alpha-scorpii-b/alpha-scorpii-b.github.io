@@ -78,6 +78,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a249563003fdad42c1333c702c456fb7a">SetWeight</a> (float weight)</td></tr>
 <tr class="memdesc:a249563003fdad42c1333c702c456fb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blending weight. <br/></td></tr>
 <tr class="separator:a249563003fdad42c1333c702c456fb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd96350691fd4daa46a57363b2c57561"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd96350691fd4daa46a57363b2c57561"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#acd96350691fd4daa46a57363b2c57561">SetBlendMode</a> (AnimationBlendMode mode)</td></tr>
+<tr class="memdesc:acd96350691fd4daa46a57363b2c57561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blending mode. <br/></td></tr>
+<tr class="separator:acd96350691fd4daa46a57363b2c57561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a515279183f29b838f906e87620336ab4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a515279183f29b838f906e87620336ab4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a515279183f29b838f906e87620336ab4">SetTime</a> (float time)</td></tr>
 <tr class="memdesc:a515279183f29b838f906e87620336ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time position. Does not fire animation triggers. <br/></td></tr>
@@ -158,6 +162,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#ac3b4f280fdcb0599a788462a08c99b6b">GetWeight</a> () const </td></tr>
 <tr class="memdesc:ac3b4f280fdcb0599a788462a08c99b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return blending weight. <br/></td></tr>
 <tr class="separator:ac3b4f280fdcb0599a788462a08c99b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9f3f300c0a54ab3f43ac041e9f3457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade9f3f300c0a54ab3f43ac041e9f3457"></a>
+AnimationBlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#ade9f3f300c0a54ab3f43ac041e9f3457">GetBlendMode</a> () const </td></tr>
+<tr class="memdesc:ade9f3f300c0a54ab3f43ac041e9f3457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return blending mode. <br/></td></tr>
+<tr class="separator:ade9f3f300c0a54ab3f43ac041e9f3457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882ec92c1a9051ce16c3784b8d47ef8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a882ec92c1a9051ce16c3784b8d47ef8d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a882ec92c1a9051ce16c3784b8d47ef8d">GetTime</a> () const </td></tr>
 <tr class="memdesc:a882ec92c1a9051ce16c3784b8d47ef8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return time position. <br/></td></tr>
@@ -214,18 +222,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a4ebbb3962edd5a28f17fc54151a341e4">ApplyToNodes</a> ()</td></tr>
 <tr class="memdesc:a4ebbb3962edd5a28f17fc54151a341e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply animation to a scene node hierarchy. <br/></td></tr>
 <tr class="separator:a4ebbb3962edd5a28f17fc54151a341e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb63565a750213182ab2260e5ad28e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eb63565a750213182ab2260e5ad28e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a0eb63565a750213182ab2260e5ad28e9">ApplyTrackFullWeight</a> (<a class="el" href="struct_urho3_d_1_1_animation_state_track.html">AnimationStateTrack</a> &amp;stateTrack)</td></tr>
-<tr class="memdesc:a0eb63565a750213182ab2260e5ad28e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply animation track to a scene node, full weight. <br/></td></tr>
-<tr class="separator:a0eb63565a750213182ab2260e5ad28e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc518982c716f540bd5360973c15371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dc518982c716f540bd5360973c15371"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a2dc518982c716f540bd5360973c15371">ApplyTrackFullWeightSilent</a> (<a class="el" href="struct_urho3_d_1_1_animation_state_track.html">AnimationStateTrack</a> &amp;stateTrack)</td></tr>
-<tr class="memdesc:a2dc518982c716f540bd5360973c15371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply animation track to a scene node, full weight. Apply transform changes silently without marking the node dirty. <br/></td></tr>
-<tr class="separator:a2dc518982c716f540bd5360973c15371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41fc9d97b3526ed4bda10e3bcfd86c6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41fc9d97b3526ed4bda10e3bcfd86c6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a41fc9d97b3526ed4bda10e3bcfd86c6d">ApplyTrackBlendedSilent</a> (<a class="el" href="struct_urho3_d_1_1_animation_state_track.html">AnimationStateTrack</a> &amp;stateTrack, float weight)</td></tr>
-<tr class="memdesc:a41fc9d97b3526ed4bda10e3bcfd86c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply animation track to a scene node, blended with current node transform. Apply transform changes silently without marking the node dirty. <br/></td></tr>
-<tr class="separator:a41fc9d97b3526ed4bda10e3bcfd86c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2618e6f947c1a9be664b370cfaf27c09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2618e6f947c1a9be664b370cfaf27c09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a2618e6f947c1a9be664b370cfaf27c09">ApplyTrack</a> (<a class="el" href="struct_urho3_d_1_1_animation_state_track.html">AnimationStateTrack</a> &amp;stateTrack, float weight, bool silent)</td></tr>
+<tr class="memdesc:a2618e6f947c1a9be664b370cfaf27c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply track. <br/></td></tr>
+<tr class="separator:a2618e6f947c1a9be664b370cfaf27c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -265,6 +265,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#a2b0386eb56f2d3a67a7424805997b85a">layer_</a></td></tr>
 <tr class="memdesc:a2b0386eb56f2d3a67a7424805997b85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending layer. <br/></td></tr>
 <tr class="separator:a2b0386eb56f2d3a67a7424805997b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc74776d465a72d7b6e14c81d9ae5742"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc74776d465a72d7b6e14c81d9ae5742"></a>
+AnimationBlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_state.html#adc74776d465a72d7b6e14c81d9ae5742">blendingMode_</a></td></tr>
+<tr class="memdesc:adc74776d465a72d7b6e14c81d9ae5742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending mode. <br/></td></tr>
+<tr class="separator:adc74776d465a72d7b6e14c81d9ae5742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Animation instance. </p>
