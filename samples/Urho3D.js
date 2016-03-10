@@ -30,9 +30,9 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 11438099;
-      var PACKAGE_UUID = '0b7bad0f-0513-488a-a12d-2e64c5d77ba5';
-    
+    var REMOTE_PACKAGE_SIZE = metadata.remote_package_size;
+    var PACKAGE_UUID = metadata.package_uuid;
+  
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', packageName, true);
@@ -67,9 +67,16 @@ Module.expectedDataFileDownloads++;
           if (Module['setStatus']) Module['setStatus']('Downloading data...');
         }
       };
+      xhr.onerror = function(event) {
+        throw new Error("NetworkError for: " + packageName);
+      }
       xhr.onload = function(event) {
-        var packageData = xhr.response;
-        callback(packageData);
+        if (xhr.status == 200 || xhr.status == 304 || xhr.status == 206 || (xhr.status == 0 && xhr.response)) { // file URLs can return 0
+          var packageData = xhr.response;
+          callback(packageData);
+        } else {
+          throw new Error(xhr.statusText + " : " + xhr.responseURL);
+        }
       };
       xhr.send(null);
     };
@@ -106,22 +113,20 @@ Module.expectedDataFileDownloads++;
       },
       finish: function(byteArray) {
         var that = this;
-        Module['FS_createPreloadedFile'](this.name, null, byteArray, true, true, function() {
-          Module['removeRunDependency']('fp ' + that.name);
-        }, function() {
-          if (that.audio) {
-            Module['removeRunDependency']('fp ' + that.name); // workaround for chromium bug 124926 (still no audio with this, but at least we don't hang)
-          } else {
-            Module.printErr('Preloading file ' + that.name + ' failed');
-          }
-        }, false, true); // canOwn this data in the filesystem, it is a slide into the heap that will never change
+
+        Module['FS_createDataFile'](this.name, null, byteArray, true, true, true); // canOwn this data in the filesystem, it is a slide into the heap that will never change
+        Module['removeRunDependency']('fp ' + that.name);
+
         this.requests[this.name] = null;
       },
     };
 
-      new DataRequest(0, 128099, 0, 0).open('GET', '/CoreData.pak');
-    new DataRequest(128099, 11438099, 0, 0).open('GET', '/Data.pak');
+        var files = metadata.files;
+        for (i = 0; i < files.length; ++i) {
+          new DataRequest(files[i].start, files[i].end, files[i].crunched, files[i].audio).open('GET', files[i].filename);
+        }
 
+  
       var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
       var IDB_RO = "readonly";
       var IDB_RW = "readwrite";
@@ -213,17 +218,22 @@ Module.expectedDataFileDownloads++;
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
       assert(arrayBuffer, 'Loading data file failed.');
+      assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
       var byteArray = new Uint8Array(arrayBuffer);
       var curr;
       
-      // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
-      // (we may be allocating before malloc is ready, during startup).
-      var ptr = Module['getMemory'](byteArray.length);
-      Module['HEAPU8'].set(byteArray, ptr);
-      DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
-          DataRequest.prototype.requests["/CoreData.pak"].onload();
-          DataRequest.prototype.requests["/Data.pak"].onload();
-          Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
+        // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
+        // (we may be allocating before malloc is ready, during startup).
+        if (Module['SPLIT_MEMORY']) Module.printErr('warning: you should run the file packager with --no-heap-copy when SPLIT_MEMORY is used, otherwise copying into the heap may fail due to the splitting');
+        var ptr = Module['getMemory'](byteArray.length);
+        Module['HEAPU8'].set(byteArray, ptr);
+        DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
+  
+          var files = metadata.files;
+          for (i = 0; i < files.length; ++i) {
+            DataRequest.prototype.requests[files[i].filename].onload();
+          }
+              Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
 
     };
     Module['addRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
@@ -272,6 +282,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage();
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 128099, "filename": "/CoreData.pak"}, {"audio": 0, "start": 128099, "crunched": 0, "end": 11438149, "filename": "/Data.pak"}], "remote_package_size": 11438149, "package_uuid": "15e786b3-713b-4917-9cbe-74ceb1cee75a"});
 
 })();
