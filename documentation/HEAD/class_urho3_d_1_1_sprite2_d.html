@@ -87,6 +87,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a5fc752baa71ef14f2175a19f05f25bc4">SetOffset</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;offset)</td></tr>
 <tr class="memdesc:a5fc752baa71ef14f2175a19f05f25bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set offset. <br/></td></tr>
 <tr class="separator:a5fc752baa71ef14f2175a19f05f25bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca8807860c4aba887e97c6eedad532d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaca8807860c4aba887e97c6eedad532d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aaca8807860c4aba887e97c6eedad532d">SetTextureEdgeOffset</a> (float offset)</td></tr>
+<tr class="memdesc:aaca8807860c4aba887e97c6eedad532d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture edge offset in pixels. This affects the left/right and top/bottom edges equally to prevent edge sampling artifacts. Default 0. <br/></td></tr>
+<tr class="separator:aaca8807860c4aba887e97c6eedad532d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23698bdc0f09a12b4f409caf1667a85d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23698bdc0f09a12b4f409caf1667a85d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a23698bdc0f09a12b4f409caf1667a85d">SetSpriteSheet</a> (<a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html">SpriteSheet2D</a> *spriteSheet)</td></tr>
 <tr class="memdesc:a23698bdc0f09a12b4f409caf1667a85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sprite sheet. <br/></td></tr>
@@ -107,6 +111,10 @@ const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160
 const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a4b1acfe6924e63bd8e0907e895235dd8">GetOffset</a> () const </td></tr>
 <tr class="memdesc:a4b1acfe6924e63bd8e0907e895235dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return offset. <br/></td></tr>
 <tr class="separator:a4b1acfe6924e63bd8e0907e895235dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbd33c60099186694617b6fdc6007f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bbd33c60099186694617b6fdc6007f0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a4bbd33c60099186694617b6fdc6007f0">GetTextureEdgeOffset</a> () const </td></tr>
+<tr class="memdesc:a4bbd33c60099186694617b6fdc6007f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return texture edge offset. <br/></td></tr>
+<tr class="separator:a4bbd33c60099186694617b6fdc6007f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16fff1df05ef22876695ca31a4acaa4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa16fff1df05ef22876695ca31a4acaa4"></a>
 <a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html">SpriteSheet2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aa16fff1df05ef22876695ca31a4acaa4">GetSpriteSheet</a> () const </td></tr>
 <tr class="memdesc:aa16fff1df05ef22876695ca31a4acaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return sprite sheet. <br/></td></tr>
@@ -363,6 +371,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a47e20711aef84bb27c5c5d198e425f8e">loadTexture_</a></td></tr>
 <tr class="memdesc:a47e20711aef84bb27c5c5d198e425f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> used while loading. <br/></td></tr>
 <tr class="separator:a47e20711aef84bb27c5c5d198e425f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba08647226d96e044d8269cb4e31d39b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba08647226d96e044d8269cb4e31d39b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aba08647226d96e044d8269cb4e31d39b">edgeOffset_</a></td></tr>
+<tr class="memdesc:aba08647226d96e044d8269cb4e31d39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset to fix texture edge bleeding. <br/></td></tr>
+<tr class="separator:aba08647226d96e044d8269cb4e31d39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
