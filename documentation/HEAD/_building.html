@@ -42,16 +42,44 @@ Building prerequisites</h2>
 <li>For Windows, the June 2010 DirectX SDK needs to be installed. This is not necessary if building on Visual Studio 2012 or newer, which install the Windows SDK with the necessary DirectX files.</li>
 </ul>
 <ul>
-<li>For Linux, the following development packages need to be installed: libx11-dev, libxrandr-dev, libasound2-dev on Debian-based distros; libX11-devel, libXrandr-devel, alsa-lib-devel on RedHat-based distros. Optionally install libpulse-dev (Deb) or pulseaudio-libs-devel (RH) to enable SDL support for PulseAudio. Building as 32-bit on a 64-bit system requires installing also the 32-bit versions of the development libraries.</li>
+<li>For Linux, install one or more of the development packages from each software component category below. Building as 32-bit on a 64-bit system requires installing also the 32-bit versions of the development libraries.<ul>
+<li>Database server (disabled by default even when installed, use URHO3D_DATABASE_ODBC build option to enable):<ul>
+<li>libiodbc2-dev (Debian-based) or libiodbc-devel (RedHat-based) for iODBC driver manager. Mutually exclusive with ODBC driver manager.</li>
+<li>unixodbc-dev (Debian-based) or unixODBC-devel (RedHat-based) for ODBC driver manager. Mutually exclusive with iODBC driver manager. <em>Recommended but optional</em></li>
+</ul>
+</li>
+<li>Display server:<ul>
+<li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use SDL_OPT_VIDEO_DIRECTFB build option to enable.</li>
+<li>mir-client-platform-mesa-dev and mircommon-dev (Ubuntu only) for Mir.</li>
+<li>libwayland-client-devel, libwayland-cursor-devel, and mesa-libwayland-egl-devel (RedHat-based only, pre-installed on Fedora 22+) for Wayland.</li>
+<li>libx11-dev and libxrandr-dev (Debian-based) or libX11-devel and libXrandr-devel (RedHat-based) for X11. <em>Recommended</em></li>
+</ul>
+</li>
+<li>Sound server:<ul>
+<li>libasound2-dev (Debian-based) or alsa-lib-devel (RedHat-based) for Advanced Linux <a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource.">Sound</a> Architecture (ALSA).</li>
+<li>arts-devel (RedHat-based only) for Analog Real <a class="el" href="class_urho3_d_1_1_time.html" title="Time and frame counter subsystem.">Time</a> Synthesizer (aRts).</li>
+<li>libaudio-dev (Debian-based only) for <a class="el" href="class_urho3_d_1_1_network.html" title="Network subsystem. Manages client-server communications using the UDP protocol.">Network</a> <a class="el" href="class_urho3_d_1_1_audio.html" title="Audio subsystem.">Audio</a> System (NAS).</li>
+<li>libesd0-dev (Debian-based) or esound-devel (RedHat-based) for Enlightened <a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource.">Sound</a> Daemon (ESounD).</li>
+<li>libfusionsound-dev (Debian-based only, not available on Ubuntu) for FusionSound. Disabled by default even when installed, use SDL_OPT_FUSIONSOUND build option to enable.</li>
+<li>libpulse-dev (Debian-based) or pulseaudio-libs-devel (RedHat-based) for PulseAudio. <em>Recommended</em></li>
+<li>libroar-dev (Debian-based only) for RoarAudio (SNDIO).</li>
+</ul>
+</li>
+<li>Misc.:<ul>
+<li>libts-dev (Debian-based) or tslib-devel (RedHat-based) for touchscreen input. <em>Optional</em></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <ul>
-<li>For Raspberry Pi, the following development packages need to be installed. On Raspbian: libasound2-dev, libudev-dev. On Pidora: alsa-lib-devel, systemd-devel.</li>
+<li>For Raspberry Pi, the following development packages need to be installed. On Raspbian: libevdev2 and libudev-dev. On Pidora: libevdev and systemd-devel. The same list of optional development libraries listed above for Linux can also be installed on Raspberry Pi system to enable support for the corresponding software components. However, for display server the recommendation is to use Broadcom Video Core that comes preinstalled with Raspbian or Pidora.</li>
 </ul>
 <ul>
 <li>For Mac OS X, the Xcode developer tools package should include everything necessary. Make sure that the Xcode command line tools are also installed.</li>
 </ul>
 <ul>
-<li>For Android, the Android SDK and Android NDK (minimum API level 12) need to be installed.</li>
+<li>For Android, the Android SDK (version 12 or later) and Android NDK (r7 or later) need to be installed.</li>
 </ul>
 <ul>
 <li>For Emscripten, the Emscripten SDK need to be installed (on Windows also MinGW-W64 compiler toolchain is required).</li>
@@ -61,7 +89,10 @@ Building prerequisites</h2>
 <li>Windows: CPU with SSE2 instructions support, Windows XP or newer, DirectX 9.0c, GPU with Shader Model 3 support.</li>
 </ul>
 <ul>
-<li>Linux &amp; Mac OS X: CPU with SSE2 instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
+<li>Mac OS X: CPU with SSE2 instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
+</ul>
+<ul>
+<li>Linux: any CPU (MMX, 3DNow!, and SSE/SSE2 instructions will be used if supported), GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
 </ul>
 <ul>
 <li>Raspberry Pi: Model B revision 2.0 with at least 128 MB of 512 MB SDRAM allocated for GPU.</li>
@@ -75,7 +106,7 @@ Building prerequisites</h2>
 <ul>
 <li>Web: modern browsers with fast JavaScript engine and HTML5 and WebGL support.</li>
 </ul>
-<p>SSE2/NEON requirement can be eliminated by disabling the use of SSE2/NEON instruction set, see URHO3D_SSE and URHO3D_NEON build options below.</p>
+<p>SSE2/NEON requirement can be eliminated by disabling the use of SSE2/NEON instruction set, see URHO3D_SSE and URHO3D_NEON build options below. For Linux platform using GCC/Clang compiler toolchain, the MMX and 3DNow! extensions can be enabled for older CPUs by using URHO3D_MMX and URHO3D_3DNOW build options when the option is available. The MMX and SSE/SSE2 extensions on x86_64 ABI are always enabled, so the URHO3D_MMX and URHO3D_SSE build option do not exist on x86_64 ABI. Also note that MMX extension is effectively enabled when 3DNow! or SSE/SSE2 extension is enabled, so disabling URHO3D_MMX build option in this case has no effect. The URHO3D_MMX and URHO3D_3DNOW build options are disabled by default. They should only be enabled when targeting older CPU with MMX and 3DNow! support, respectively.</p>
 <p>CMake (<a href="http://www.cmake.org">http://www.cmake.org</a>) is required to configure and generate the Urho3D project build tree. The minimum required version is 2.8.6. However, it is recommended to use the latest CMake version available out there, especially when targeting Mac OS X and iOS platforms using the latest Xcode version available. This is because Apple is known to change the internal working of Xcode with little regards to other third party build tools, such as CMake.</p>
 <h2><a class="anchor" id="Build_Scripts"></a>
 Build scripts</h2>
@@ -142,7 +173,11 @@ Build options</h2>
 <tr>
 <td>URHO3D_DATABASE_SQLITE</td><td>0</td><td>Enable <a class="el" href="class_urho3_d_1_1_database.html" title="Database subsystem. Manage database connections.">Database</a> support with SQLite embedded </td></tr>
 <tr>
-<td>URHO3D_SSE </td><td>*</td><td>Enable SSE2 instruction set (Web and Intel platforms only including Android on Intel Atom); default to true on Intel and false on Web platform; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET and CMAKE_OSX_DEPLOYMENT_TARGET build options </td></tr>
+<td>URHO3D_MMX </td><td>0</td><td>Enable MMX instruction set (32-bit Linux platform only); the MMX is effectively enabled when 3DNow! or SSE is enabled; should only be used for older CPU with MMX support </td></tr>
+<tr>
+<td>URHO3D_3DNOW </td><td>0</td><td>Enable 3DNow! instruction set (Linux platform only); should only be used for older CPU with (legacy) 3DNow! support </td></tr>
+<tr>
+<td>URHO3D_SSE </td><td>*</td><td>Enable SSE/SSE2 instruction set (Web and Intel platforms only including Android on Intel Atom); default to true on Intel and false on Web platform; the effective SSE level could be higher, see also URHO3D_DEPLOYMENT_TARGET and CMAKE_OSX_DEPLOYMENT_TARGET build options </td></tr>
 <tr>
 <td>URHO3D_NEON </td><td>1</td><td>Enable NEON instruction set (ARM platforms with NEON only) </td></tr>
 <tr>
@@ -196,7 +231,7 @@ Build options</h2>
 <tr>
 <td>ANDROID_ABI </td><td>armeabi-v7a</td><td>Specify target ABI (Android build only), possible values are arm64-v8a, armeabi, armeabi-v6 with VFP, armeabi-v7a (default), armeabi-v7a with NEON, armeabi-v7a with VFPV3, mips, mips64, x86, and x86_64 </td></tr>
 <tr>
-<td>ANDROID_NATIVE_API_LEVEL</td><td>*</td><td>Specify target API level (Android build only), possible values depends on installed NDK version, default to API level 12 on 32-bit ABIs, default to API level 21 on 64-bit ABIs </td></tr>
+<td>ANDROID_NATIVE_API_LEVEL</td><td>*</td><td>Specify target API level (Android build only), possible values depends on installed NDK version, default to API level 9 on 32-bit ABIs, default to API level 21 on 64-bit ABIs </td></tr>
 <tr>
 <td>ANDROID_NDK_GDB </td><td>0</td><td>Enable ndk-gdb support (Android Debug build only) </td></tr>
 <tr>
@@ -221,6 +256,8 @@ Build options</h2>
 <td>EMSCRIPTEN_SHARE_DATA</td><td>0</td><td>Enable sharing data file support (Emscripten cross-compiling build only) </td></tr>
 <tr>
 <td>EMSCRIPTEN_EMRUN_BROWSER</td><td>firefox</td><td>Specify the particular browser to be spawned by emrun during testing (Emscripten cross-compiling build only), use 'emrun &ndash;list_browsers' command to get the list of possible values </td></tr>
+<tr>
+<td>EMSCRIPTEN_SYSTEM_LIBS</td><td>-</td><td>Specify a semicolon-separated list of additional system libraries that should be pre-built using embuilder.py, by default 'dlmalloc', 'libc', 'libcxxabi', and 'gl' will be pre-built, so they should not be listed again (Emscripten cross-compiling build only); when using CMake CLI on Unix-like host systems, the semicolon may need to be properly escaped; see usage of embuilder.py to get the full list of supported system libraries </td></tr>
 </table>
 <p>Note that the specified build option values are cached by CMake after the initial configuration step. The cached values will be used by CMake in the subsequent configuration. The same build options are not required to be specified again and again. But once a non-default build option value is being cached, it can only be reverted back to its default value by explicitly resetting it. That is, simply by not passing the corresponding build option would not revert it back to its default. One way to revert all the build options to their default values is by clearing the CMake cache by executing cmake_clean.bat or cmake_clean.sh with the location of the build tree as the first argument or by executing it in the build tree itself.</p>
 <h2><a class="anchor" id="Building_Native"></a>
@@ -271,7 +308,7 @@ Android build process</h2>
 <pre class="fragment">- android update project -p . -t &lt;target-id&gt;
 - make -j &lt;num_jobs&gt;
 - ant debug
-</pre><p>Where the &lt;target-id&gt; is one of the target id returned by "android list target" command. The &lt;num-jobs&gt; is the number of concurrent compiler jobs to be spawned by make command.</p>
+</pre><p>You only need to update the Android project once in each new build tree, use the -t &lt;target-id&gt; option when you want to modify the target SDK version. The &lt;target-id&gt; is one of the target id returned by "android list target" command (or "android list target |grep android-" when you are on *nix host system). The &lt;num-jobs&gt; is the number of concurrent compiler jobs to be spawned by make command.</p>
 <p>After the commands finish successfully, the APK should have been generated in the build tree's "bin" subdirectory, from where it can be installed on a device or an emulator. The command "ant installd" can be used for this. Optionally when you have Rake installed, after the debug APK has been installed then you can use "rake android" command to automate the test running of the APK on an attached Android (virtual) device.</p>
 <p>For a release build, use the "ant release" command instead of "ant debug" and follow the Android SDK instructions on how to sign your APK properly.</p>
 <p>By default the Android package for Urho3D is com.googlecode.urho3d. For a real application you must replace this with your own package name. The Urho3D activity subclasses the SDLActivity from org.libsdl.app package, whose name (or the JNI code from SDL library) does not have to be changed.</p>
@@ -286,7 +323,7 @@ iOS build process</h2>
 <h2><a class="anchor" id="Building_RaspberryPi"></a>
 Raspberry Pi build process</h2>
 <p>For native build on Raspberry Pi itself, use the similar process for <a class="el" href="_building.html#Building_Native">Native build process</a> described above.</p>
-<p>For cross-compiling build on an Linux host system, firstly set the RPI_PREFIX environment variable or build option to point to your Raspberry Pi Cross-Compiling tool are located. You can setup the tool using <a href="http://crosstool-ng.org/">crosstool-NG</a> or just download one from <a href="https://github.com/raspberrypi/tools">https://github.com/raspberrypi/tools</a>. Secondly, set the RPI_SYSROOT environment variable or build option to point to your Raspbian or Pidora system root. You must install the Urho3D prerequisites software development packages for Raspberry Pi (see <a class="el" href="_building.html#Building_Prerequisites">Building prerequisites</a>) in the system root before attempting to do the Urho3D cross-compiling build. You are recommended to download the Raspbian system root with Urho3D prerequisite software installed from <a href="https://github.com/urho3d/rpi-sysroot">https://github.com/urho3d/rpi-sysroot</a>. You can just download from the "strip" branch to cut down the download time and size. Alternatively, if you have a fast LAN connection then you can also opt to mount the system root on your actual Raspberry Pi device to your host system via SSHFS and set the RPI_SYSROOT to use the mount point.</p>
+<p>For cross-compiling build on an Linux host system, firstly set the RPI_PREFIX environment variable or build option to point to your Raspberry Pi Cross-Compiling tool are located. You can setup the tool using <a href="http://crosstool-ng.org/">crosstool-NG</a> or just download one from <a href="https://github.com/raspberrypi/tools">https://github.com/raspberrypi/tools</a>. Secondly, set the RPI_SYSROOT environment variable or build option to point to your Raspbian or Pidora system root. You must install the Urho3D prerequisites software development packages for Raspberry Pi (see <a class="el" href="_building.html#Building_Prerequisites">Building prerequisites</a>) in the system root before attempting to do the Urho3D cross-compiling build. You are recommended to download the Raspbian system root with Urho3D prerequisite software installed from <a href="https://github.com/urho3d/rpi-sysroot">https://github.com/urho3d/rpi-sysroot</a>. Alternatively, if you have a fast LAN connection then you can also opt to mount the system root on your actual Raspberry Pi device to your host system via SSHFS and set the RPI_SYSROOT to use the mount point.</p>
 <p>Execute cmake_raspi.sh then go to the build tree to execute make command. You may pass the optional RPI_ABI build option to specifically target for the Raspberry Pi 2. After the build is complete, the ARM executables can be found in the build tree's "bin" subdirectory.</p>
 <p>You can also build, deploy, run/debug (as C/C++ Remote Application) using Eclipse IDE. To do that, execute cmake_eclipse.sh with "-DRPI=1" build option set. Import the CMake generated Eclipse project in the build tree into Eclipse's workspace. Build the project as usual. Optionally, use the "URHO3D_SCP_TO_TARGET" build option to automatically deploy the ARM executables to target Raspberry Pi device as part of build process; or configure Eclipse to perform a "download to target path" in the Run/Debug configuration for C/C++ Remote Application. Either way, you have to configure the Run/Debug configuration to let it know how to reach your target Raspberry Pi device.</p>
 <h2><a class="anchor" id="Building_MinGW"></a>
