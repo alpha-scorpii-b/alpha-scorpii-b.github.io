@@ -141,6 +141,18 @@ template&lt;class T &gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#a28d36a3de87de2fff3bb2300b8d5899e">GetSubsystem</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const </td></tr>
 <tr class="memdesc:a28d36a3de87de2fff3bb2300b8d5899e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return subsystem by type. <br/></td></tr>
 <tr class="separator:a28d36a3de87de2fff3bb2300b8d5899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3009f5da51a5217f549b443e2ef556a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3009f5da51a5217f549b443e2ef556a8"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#a3009f5da51a5217f549b443e2ef556a8">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const </td></tr>
+<tr class="memdesc:a3009f5da51a5217f549b443e2ef556a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br/></td></tr>
+<tr class="separator:a3009f5da51a5217f549b443e2ef556a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21aea421e78d9010bf67e7153f29777f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21aea421e78d9010bf67e7153f29777f"></a>
+const <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#a21aea421e78d9010bf67e7153f29777f">GetGlobalVars</a> () const </td></tr>
+<tr class="memdesc:a21aea421e78d9010bf67e7153f29777f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br/></td></tr>
+<tr class="separator:a21aea421e78d9010bf67e7153f29777f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f1f1e7c6f680d890a595b91c054dc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4f1f1e7c6f680d890a595b91c054dc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#ac4f1f1e7c6f680d890a595b91c054dc4">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:ac4f1f1e7c6f680d890a595b91c054dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br/></td></tr>
+<tr class="separator:ac4f1f1e7c6f680d890a595b91c054dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1cb1ad1de03af2d48f369deca268cbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1cb1ad1de03af2d48f369deca268cbe"></a>
 const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <br class="typebreak"/>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_object.html">Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#ad1cb1ad1de03af2d48f369deca268cbe">GetSubsystems</a> () const </td></tr>
@@ -317,6 +329,10 @@ Private Attributes</h2></td></tr>
 &lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#a15bb476c59b55d9576947c0a22f6ff33">objectCategories_</a></td></tr>
 <tr class="memdesc:a15bb476c59b55d9576947c0a22f6ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> categories. <br/></td></tr>
 <tr class="separator:a15bb476c59b55d9576947c0a22f6ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a5415ff1bee93b50d6841fa88b3800"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54a5415ff1bee93b50d6841fa88b3800"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_context.html#a54a5415ff1bee93b50d6841fa88b3800">globalVars_</a></td></tr>
+<tr class="memdesc:a54a5415ff1bee93b50d6841fa88b3800"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> map for global variables that can persist throughout application execution. <br/></td></tr>
+<tr class="separator:a54a5415ff1bee93b50d6841fa88b3800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>

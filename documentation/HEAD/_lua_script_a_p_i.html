@@ -7364,6 +7364,8 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetFileNameAndExtension(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> fullPath, bool lowercaseExtension = false)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetFileSizeString(long memorySize)</li>
 <li>FileSystem* GetFileSystem()</li>
+<li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetGlobalVar(const String key)</li>
+<li>VariantMap&amp; GetGlobalVars()</li>
 <li>Graphics* GetGraphics()</li>
 <li>Input* GetInput()</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetInternalPath(const String pathName)</li>
@@ -7399,8 +7401,8 @@ Global functions</h2>
 <li>int Rand()</li>
 <li>float RandStandardNormal()</li>
 <li>float Random()</li>
-<li>float Random(float min, float max)</li>
 <li>float Random(float range)</li>
+<li>float Random(float min, float max)</li>
 <li>int RandomInt(int min, int max)</li>
 <li>int RandomInt(int range)</li>
 <li>float RandomNormal(float meanValue, float variance)</li>
@@ -7409,13 +7411,14 @@ Global functions</h2>
 <li>unsigned SDBMHash(unsigned hash, char c)</li>
 <li>void SendEvent(const String eventName, VariantMap&amp; eventData)</li>
 <li>void SetExecuteConsoleCommands(bool enable)</li>
+<li>void SetGlobalVar(const String key, Variant value)</li>
 <li>void SetMiniDumpDir(const String pathName)</li>
 <li>void SetRandomSeed(unsigned seed)</li>
 <li>float Sign(float value)</li>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
-<li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
+<li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
 <li>bool ToBool(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ToColor(const String source)</li>
