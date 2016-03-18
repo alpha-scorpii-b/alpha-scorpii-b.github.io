@@ -83,6 +83,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a2b47694ead30275f9351de2669dd2bfb">SetMasterGain</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type, float gain)</td></tr>
 <tr class="memdesc:a2b47694ead30275f9351de2669dd2bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set master gain on a specific sound type such as sound effects, music or voice. <br/></td></tr>
 <tr class="separator:a2b47694ead30275f9351de2669dd2bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe8ef5add17ebe19211f0a8aee1f4e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fe8ef5add17ebe19211f0a8aee1f4e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a2fe8ef5add17ebe19211f0a8aee1f4e9">PauseSoundType</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type)</td></tr>
+<tr class="memdesc:a2fe8ef5add17ebe19211f0a8aee1f4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause playback of specific sound type. This allows to suspend e.g. sound effects or voice when the game is paused. By default all sound types are unpaused. <br/></td></tr>
+<tr class="separator:a2fe8ef5add17ebe19211f0a8aee1f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79935c51456e54b1d97a22d73a84be7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79935c51456e54b1d97a22d73a84be7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a79935c51456e54b1d97a22d73a84be7c">ResumeSoundType</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type)</td></tr>
+<tr class="memdesc:a79935c51456e54b1d97a22d73a84be7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume playback of specific sound type. <br/></td></tr>
+<tr class="separator:a79935c51456e54b1d97a22d73a84be7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433ee54bdc8ac9f891166888dbc0647b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a433ee54bdc8ac9f891166888dbc0647b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a433ee54bdc8ac9f891166888dbc0647b">ResumeAll</a> ()</td></tr>
+<tr class="memdesc:a433ee54bdc8ac9f891166888dbc0647b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume playback of all sound types. <br/></td></tr>
+<tr class="separator:a433ee54bdc8ac9f891166888dbc0647b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cace304281aa90eadd825ab161db25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87cace304281aa90eadd825ab161db25"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a87cace304281aa90eadd825ab161db25">SetListener</a> (<a class="el" href="class_urho3_d_1_1_sound_listener.html">SoundListener</a> *listener)</td></tr>
 <tr class="memdesc:a87cace304281aa90eadd825ab161db25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set active sound listener for 3D sounds. <br/></td></tr>
@@ -119,6 +131,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#abf23f700eed1e8fae07a673f0b2327f1">GetMasterGain</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type) const </td></tr>
 <tr class="memdesc:abf23f700eed1e8fae07a673f0b2327f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return master gain for a specific sound source type. Unknown sound types will return full gain (1). <br/></td></tr>
 <tr class="separator:abf23f700eed1e8fae07a673f0b2327f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a61a9897bb331f263f0fce5d3a6ad57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a61a9897bb331f263f0fce5d3a6ad57"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a6a61a9897bb331f263f0fce5d3a6ad57">IsSoundTypePaused</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type) const </td></tr>
+<tr class="memdesc:a6a61a9897bb331f263f0fce5d3a6ad57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether specific sound type has been paused. <br/></td></tr>
+<tr class="separator:a6a61a9897bb331f263f0fce5d3a6ad57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397e5d64d20d0a2dc8d9e55899c5150b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a397e5d64d20d0a2dc8d9e55899c5150b"></a>
 <a class="el" href="class_urho3_d_1_1_sound_listener.html">SoundListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a397e5d64d20d0a2dc8d9e55899c5150b">GetListener</a> () const </td></tr>
 <tr class="memdesc:a397e5d64d20d0a2dc8d9e55899c5150b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return active sound listener. <br/></td></tr>
@@ -327,6 +343,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a1f44ada73709b4539f6ab1e14c094d28">Release</a> ()</td></tr>
 <tr class="memdesc:a1f44ada73709b4539f6ab1e14c094d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop sound output and release the sound buffer. <br/></td></tr>
 <tr class="separator:a1f44ada73709b4539f6ab1e14c094d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2741a7a803a4e5fec31b7bd0ecb677"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe2741a7a803a4e5fec31b7bd0ecb677"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#afe2741a7a803a4e5fec31b7bd0ecb677">UpdateInternal</a> (float timeStep)</td></tr>
+<tr class="memdesc:afe2741a7a803a4e5fec31b7bd0ecb677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actually update sound sources with the specific timestep. Called internally. <br/></td></tr>
+<tr class="separator:afe2741a7a803a4e5fec31b7bd0ecb677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -370,6 +390,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a95f305000a3a3fca313a03bbbadf5932">masterGain_</a></td></tr>
 <tr class="memdesc:a95f305000a3a3fca313a03bbbadf5932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master gain by sound source type. <br/></td></tr>
 <tr class="separator:a95f305000a3a3fca313a03bbbadf5932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650504267de8e8b6c6ce37b5babc360c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a650504267de8e8b6c6ce37b5babc360c"></a>
+<a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a650504267de8e8b6c6ce37b5babc360c">pausedSoundTypes_</a></td></tr>
+<tr class="memdesc:a650504267de8e8b6c6ce37b5babc360c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paused sound types. <br/></td></tr>
+<tr class="separator:a650504267de8e8b6c6ce37b5babc360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160fda6347cd3ab3a2528078fa7e0b42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a160fda6347cd3ab3a2528078fa7e0b42"></a>
 <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_sound_source.html">SoundSource</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_audio.html#a160fda6347cd3ab3a2528078fa7e0b42">soundSources_</a></td></tr>
 <tr class="memdesc:a160fda6347cd3ab3a2528078fa7e0b42"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource.">Sound</a> sources. <br/></td></tr>

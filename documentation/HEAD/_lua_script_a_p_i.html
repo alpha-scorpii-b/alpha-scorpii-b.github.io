@@ -321,6 +321,9 @@ Classes</h2>
 <li>bool Play()</li>
 <li>void Stop()</li>
 <li>void SetMasterGain(const String type, float gain)</li>
+<li>void PauseSoundType(const String type)</li>
+<li>void ResumeSoundType(const String type)</li>
+<li>void ResumeAll()</li>
 <li>void SetListener(SoundListener* listener)</li>
 <li>void StopSound(Sound* sound)</li>
 <li>unsigned GetSampleSize() const</li>
@@ -331,6 +334,7 @@ Classes</h2>
 <li>bool IsInitialized() const</li>
 <li>bool HasMasterGain(const String type) const</li>
 <li>float GetMasterGain(const String type) const</li>
+<li>bool IsSoundTypePaused(const String type) const</li>
 <li>SoundListener* GetListener() const</li>
 <li>const PODVector&lt;SoundSource*&gt;&amp; GetSoundSources() const</li>
 <li>void AddSoundSource(SoundSource* soundSource)</li>
