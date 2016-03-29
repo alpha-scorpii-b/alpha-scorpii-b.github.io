@@ -4567,12 +4567,16 @@ Classes</h2>
 <li>void RemoveAllGestures()</li>
 <li>bool RemoveGesture(uint)</li>
 <li>bool RemoveScreenJoystick(int)</li>
+<li>void ResetMouseGrabbed()</li>
+<li>void ResetMouseMode()</li>
 <li>void ResetMouseVisible()</li>
 <li>bool SaveGesture(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@, uint)</li>
 <li>bool SaveGesture(VectorBuffer&amp;, uint)</li>
 <li>bool SaveGestures(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@)</li>
 <li>bool SaveGestures(VectorBuffer&amp;)</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, VariantMap&amp; = VariantMap ( ))</li>
+<li>void SetMouseGrabbed(bool, bool = false)</li>
+<li>void SetMouseMode(MouseMode, bool = false)</li>
 <li>void SetMouseVisible(bool, bool = false)</li>
 </ul>
 <p>Properties:</p>
@@ -4587,6 +4591,7 @@ Classes</h2>
 <li>bool[] mouseButtonDown // readonly</li>
 <li>bool[] mouseButtonPress // readonly</li>
 <li>bool mouseGrabbed</li>
+<li>bool mouseLocked // readonly</li>
 <li>MouseMode mouseMode</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> mouseMove // readonly</li>
 <li>int mouseMoveWheel // readonly</li>
