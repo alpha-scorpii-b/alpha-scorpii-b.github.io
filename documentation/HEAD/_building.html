@@ -66,7 +66,7 @@ Building prerequisites</h2>
 </ul>
 </li>
 <li>Misc.:<ul>
-<li>libts-dev (Debian-based) or tslib-devel (RedHat-based) for touchscreen input. <em>Optional</em></li>
+<li>libts-dev (Debian-based) or tslib-devel (RedHat-based) for resistive, single-touch touchscreen input for embedded Linux device, e.g. Pandora and Wiz. Modern multi-touch touchscreen does not need this. <em>Optional</em></li>
 </ul>
 </li>
 </ul>
@@ -239,7 +239,7 @@ Build options</h2>
 <tr>
 <td>MINGW_PREFIX </td><td>-</td><td>Prefix path to MinGW cross-compiler tools (MinGW cross-compiling build only) </td></tr>
 <tr>
-<td>MINGW_SYSROOT </td><td>-</td><td>Path to MinGW system root (MinGW cross-compiling build only) </td></tr>
+<td>MINGW_SYSROOT </td><td>-</td><td>Path to MinGW system root (MinGW build only); should only be used when the system root could not be auto-detected </td></tr>
 <tr>
 <td>RPI_PREFIX </td><td>-</td><td>Prefix path to Raspberry Pi cross-compiler tools (RPI cross-compiling build only) </td></tr>
 <tr>
