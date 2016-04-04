@@ -68,18 +68,18 @@ Material textures</h2>
 <h2><a class="anchor" id="Materials_CubeMapTextures"></a>
 Cube map textures</h2>
 <p>Using cube map textures requires an XML file to define the cube map face images, or a single image with layout. In this case the XML file <em>is</em> the texture resource name in material scripts or in LoadResource() calls.</p>
-<p>Individual face textures are defined in the XML like this: (see bin/Data/Textures/Skybox.xml for an example)</p>
+<p>Individual face images are defined in the XML like this: (see bin/Data/Textures/Skybox.xml for an example)</p>
 <div class="fragment"><div class="line">&lt;cubemap&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveX_TextureName&quot;</span> /&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeX_TextureName&quot;</span> /&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveY_TextureName&quot;</span> /&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeY_TextureName&quot;</span> /&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveZ_TextureName&quot;</span> /&gt;</div>
-<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeZ_TextureName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveX_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeX_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveY_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeY_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;PositiveZ_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;face name=<span class="stringliteral">&quot;NegativeZ_ImageName&quot;</span> /&gt;</div>
 <div class="line">&lt;/cubemap&gt;</div>
 </div><!-- fragment --><p>Using a single image texture and a layout is used like this:</p>
 <div class="fragment"><div class="line">&lt;cubemap&gt;</div>
-<div class="line">    &lt;image name=<span class="stringliteral">&quot;TextureName&quot;</span> layout=<span class="stringliteral">&quot;horizontal|horizontalnvidia|horizontalcross|verticalcross|blender&quot;</span> /&gt;</div>
+<div class="line">    &lt;image name=<span class="stringliteral">&quot;ImageName&quot;</span> layout=<span class="stringliteral">&quot;horizontal|horizontalnvidia|horizontalcross|verticalcross|blender&quot;</span> /&gt;</div>
 <div class="line">&lt;/cubemap&gt;</div>
 </div><!-- fragment --><p>For the layout definitions, see <a href="http://www.cgtextures.com/content.php?action=tutorial&name=cubemaps">http://www.cgtextures.com/content.php?action=tutorial&amp;name=cubemaps</a> and <a href="http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Build_a_skybox">http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Build_a_skybox</a></p>
 <h2><a class="anchor" id="Materials_3DTextures"></a>
@@ -89,7 +89,15 @@ Cube map textures</h2>
 <div class="line">    &lt;colorlut name=<span class="stringliteral">&quot;LUTIdentity.png&quot;</span> /&gt;</div>
 <div class="line">&lt;/texture3d&gt;</div>
 </div><!-- fragment --><p>Using a 3D texture for color correction postprocess (see bin/Data/PostProcess/ColorCorrection.xml) requires the 3D texture to be assigned to the "volume" texture unit, so that the effect knows to load the texture as the correct type. The lookup for the corrected color happens by using the original color's red channel as the X coordinate, the green channel as the Y coordinate, and blue as the Z. Therefore the identity LUT's slices (which shouldn't transform the color at all) grow red from left to right and green from top to bottom, and finally the slices themselves turn blue from left to right.</p>
-<h2><a class="anchor" id="Materials_Techniques"></a>
+<h2><a class="anchor" id="Materials_2DArrayTextures"></a>
+2D array textures</h2>
+<p>2D array textures (<a class="el" href="class_urho3_d_1_1_texture2_d_array.html" title="2D texture array resource.">Texture2DArray</a> class) are available on OpenGL and Direct3D 11. They are also defined via an XML file defining the images to use on each array layer:</p>
+<div class="fragment"><div class="line">&lt;texturearray&gt;</div>
+<div class="line">    &lt;layer name=<span class="stringliteral">&quot;Layer1_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;layer name=<span class="stringliteral">&quot;Layer2_ImageName&quot;</span> /&gt;</div>
+<div class="line">    &lt;layer name=<span class="stringliteral">&quot;Layer3_ImageName&quot;</span> /&gt;</div>
+<div class="line">&lt;/texturearray&gt;</div>
+</div><!-- fragment --><h2><a class="anchor" id="Materials_Techniques"></a>
 Techniques and passes</h2>
 <p>A technique definition looks like this:</p>
 <div class="fragment"><div class="line">&lt;technique vs=<span class="stringliteral">&quot;VertexShaderName&quot;</span> ps=<span class="stringliteral">&quot;PixelShaderName&quot;</span> vsdefines=<span class="stringliteral">&quot;DEFINE1 DEFINE2&quot;</span> psdefines=<span class="stringliteral">&quot;DEFINE3 DEFINE4&quot;</span> desktop=<span class="stringliteral">&quot;false|true&quot;</span> &gt;</div>
