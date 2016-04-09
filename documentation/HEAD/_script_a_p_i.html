@@ -441,7 +441,7 @@ Classes</h2>
 <li>void AddWeight(float)</li>
 <li>void Apply()</li>
 <li>float GetBoneWeight(StringHash) const</li>
-<li>float GetBoneWeight(uint) const</li>
+<li>float GetBoneWeight(const String&amp;) const</li>
 <li>uint GetTrackIndex(StringHash) const</li>
 <li>uint GetTrackIndex(const String&amp;) const</li>
 <li>void SetBoneWeight(<a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>, float, bool = false)</li>
@@ -452,6 +452,7 @@ Classes</h2>
 <ul>
 <li><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a>@ animation // readonly</li>
 <li>AnimationBlendMode blendMode</li>
+<li>float[] boneWeights</li>
 <li>bool enabled // readonly</li>
 <li>uint8 layer</li>
 <li>float length // readonly</li>
