@@ -277,8 +277,6 @@ Classes</h2>
 <li>void AddTrigger(const AnimationTriggerPoint&amp;)</li>
 <li>void AddTrigger(float, bool, const Variant&amp;)</li>
 <li><a class="el" href="struct_urho3_d_1_1_animation_track.html" title="Skeletal animation track, stores keyframes of a single bone.">AnimationTrack</a>@ CreateTrack(const String&amp;)</li>
-<li><a class="el" href="struct_urho3_d_1_1_animation_track.html" title="Skeletal animation track, stores keyframes of a single bone.">AnimationTrack</a>@ GetTrack(StringHash)</li>
-<li><a class="el" href="struct_urho3_d_1_1_animation_track.html" title="Skeletal animation track, stores keyframes of a single bone.">AnimationTrack</a>@ GetTrack(const String&amp;)</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@)</li>
@@ -301,7 +299,7 @@ Classes</h2>
 <li>uint numTracks // readonly</li>
 <li>uint numTriggers</li>
 <li>int refs // readonly</li>
-<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ trackNames // readonly</li>
+<li><a class="el" href="struct_urho3_d_1_1_animation_track.html" title="Skeletal animation track, stores keyframes of a single bone.">AnimationTrack</a>@[] tracks // readonly</li>
 <li><a class="el" href="struct_urho3_d_1_1_animation_trigger_point.html" title="Animation trigger point.">AnimationTriggerPoint</a>[] triggers</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
@@ -441,7 +439,7 @@ Classes</h2>
 <li>void AddWeight(float)</li>
 <li>void Apply()</li>
 <li>float GetBoneWeight(StringHash) const</li>
-<li>float GetBoneWeight(const String&amp;) const</li>
+<li>float GetBoneWeight(uint) const</li>
 <li>uint GetTrackIndex(StringHash) const</li>
 <li>uint GetTrackIndex(const String&amp;) const</li>
 <li>void SetBoneWeight(<a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a>, float, bool = false)</li>
