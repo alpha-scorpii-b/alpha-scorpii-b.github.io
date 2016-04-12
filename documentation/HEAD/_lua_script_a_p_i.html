@@ -5731,6 +5731,11 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_texture_cube.html" title="Cube texture resource.">TextureCube</a> : <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a></h4>
 <p>Methods:</p>
 <ul>
+<li>TextureCube() (GC)</li>
+<li>TextureCube* new()</li>
+<li>void delete()</li>
+<li>bool SetSize(int size, unsigned format, TextureUsage usage = TEXTURE_STATIC)</li>
+<li>bool SetData(CubeMapFace face, Image* image, bool useAlpha = false)</li>
 <li>RenderSurface* GetRenderSurface(CubeMapFace face) const</li>
 </ul>
 <p><a class="anchor" id="Class_TextureFrame"></a> </p>
