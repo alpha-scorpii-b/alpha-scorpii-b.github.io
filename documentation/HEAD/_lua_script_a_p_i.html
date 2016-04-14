@@ -4384,6 +4384,7 @@ Classes</h2>
 <li>void SetViewport(unsigned index, Viewport* viewport)</li>
 <li>void SetDefaultRenderPath(RenderPath* renderPath)</li>
 <li>void SetDefaultRenderPath(XMLFile* file)</li>
+<li>void SetDefaultTechnique(Technique* technique)</li>
 <li>void SetHDRRendering(bool enable)</li>
 <li>void SetSpecularLighting(bool enable)</li>
 <li>void SetTextureAnisotropy(int level)</li>
@@ -4410,6 +4411,7 @@ Classes</h2>
 <li>unsigned GetNumViewports() const</li>
 <li>Viewport* GetViewport(unsigned index) const</li>
 <li>RenderPath* GetDefaultRenderPath() const</li>
+<li>Technique* GetDefaultTechnique() const</li>
 <li>bool GetHDRRendering() const</li>
 <li>bool GetSpecularLighting() const</li>
 <li>bool GetDrawShadows() const</li>
@@ -4449,6 +4451,7 @@ Classes</h2>
 <ul>
 <li>unsigned numViewports</li>
 <li>RenderPath* defaultRenderPath</li>
+<li>Technique* defaultTechnique</li>
 <li>bool HDRRendering</li>
 <li>bool specularLighting</li>
 <li>bool drawShadows</li>

@@ -86,6 +86,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a2921d9e840f2efc60c6ad044da78e249">SetDefaultRenderPath</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *file)</td></tr>
 <tr class="memdesc:a2921d9e840f2efc60c6ad044da78e249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default renderpath from an XML file. <br/></td></tr>
 <tr class="separator:a2921d9e840f2efc60c6ad044da78e249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e524c0d537864d451df2461183f971"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57e524c0d537864d451df2461183f971"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a57e524c0d537864d451df2461183f971">SetDefaultTechnique</a> (<a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> *tech)</td></tr>
+<tr class="memdesc:a57e524c0d537864d451df2461183f971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default non-textured material technique. <br/></td></tr>
+<tr class="separator:a57e524c0d537864d451df2461183f971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac701b0041a1932397f71f9775aacb536"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac701b0041a1932397f71f9775aacb536"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ac701b0041a1932397f71f9775aacb536">SetHDRRendering</a> (bool enable)</td></tr>
 <tr class="memdesc:ac701b0041a1932397f71f9775aacb536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set HDR rendering on/off. <br/></td></tr>
@@ -198,6 +202,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a572a2cd0bc67cf0c0d7348debb655e5c">GetDefaultRenderPath</a> () const </td></tr>
 <tr class="memdesc:a572a2cd0bc67cf0c0d7348debb655e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default renderpath. <br/></td></tr>
 <tr class="separator:a572a2cd0bc67cf0c0d7348debb655e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c85a570817c91ff6d1ff636d3247ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c85a570817c91ff6d1ff636d3247ec"></a>
+<a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a28c85a570817c91ff6d1ff636d3247ec">GetDefaultTechnique</a> () const </td></tr>
+<tr class="memdesc:a28c85a570817c91ff6d1ff636d3247ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default non-textured material technique. <br/></td></tr>
+<tr class="separator:a28c85a570817c91ff6d1ff636d3247ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a0d061e891bbff33bcb4434613b3b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42a0d061e891bbff33bcb4434613b3b1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a42a0d061e891bbff33bcb4434613b3b1">GetHDRRendering</a> () const </td></tr>
 <tr class="memdesc:a42a0d061e891bbff33bcb4434613b3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether HDR rendering is enabled. <br/></td></tr>
@@ -704,6 +712,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a93b168441232f752b6ad7330d80c63d1">defaultRenderPath_</a></td></tr>
 <tr class="memdesc:a93b168441232f752b6ad7330d80c63d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default renderpath. <br/></td></tr>
 <tr class="separator:a93b168441232f752b6ad7330d80c63d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2dead67543415113109ffde49e4073"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae2dead67543415113109ffde49e4073"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aae2dead67543415113109ffde49e4073">defaultTechnique_</a></td></tr>
+<tr class="memdesc:aae2dead67543415113109ffde49e4073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default non-textured material technique. <br/></td></tr>
+<tr class="separator:aae2dead67543415113109ffde49e4073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088f440d5b8412ff8f02f2a3d9531404"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a088f440d5b8412ff8f02f2a3d9531404"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_zone.html">Zone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a088f440d5b8412ff8f02f2a3d9531404">defaultZone_</a></td></tr>
 <tr class="memdesc:a088f440d5b8412ff8f02f2a3d9531404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default zone. <br/></td></tr>
