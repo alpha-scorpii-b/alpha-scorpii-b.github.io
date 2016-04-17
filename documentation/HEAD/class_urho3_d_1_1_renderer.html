@@ -354,8 +354,9 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 const <a class="el" href="struct_urho3_d_1_1_frame_info.html">FrameInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a42737b57d756b9656b22930be34b9a19">GetFrameInfo</a> () const </td></tr>
 <tr class="memdesc:a42737b57d756b9656b22930be34b9a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the frame update parameters. <br/></td></tr>
 <tr class="separator:a42737b57d756b9656b22930be34b9a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a993f63f35d27a9ea6df861962018f354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a993f63f35d27a9ea6df861962018f354">Update</a> (float timeStep)</td></tr>
-<tr class="memdesc:a993f63f35d27a9ea6df861962018f354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update for rendering. Called by <a class="el" href="class_urho3_d_1_1_renderer.html#adf594e7a524f6e003e8370cf23dbee13" title="Handle render update event.">HandleRenderUpdate()</a>.  <a href="#a993f63f35d27a9ea6df861962018f354">More...</a><br/></td></tr>
+<tr class="memitem:a993f63f35d27a9ea6df861962018f354"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a993f63f35d27a9ea6df861962018f354"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a993f63f35d27a9ea6df861962018f354">Update</a> (float timeStep)</td></tr>
+<tr class="memdesc:a993f63f35d27a9ea6df861962018f354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update for rendering. Called by <a class="el" href="class_urho3_d_1_1_renderer.html#adf594e7a524f6e003e8370cf23dbee13" title="Handle render update event.">HandleRenderUpdate()</a>. <br/></td></tr>
 <tr class="separator:a993f63f35d27a9ea6df861962018f354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab246b6b23f39f3cdff9c279782b48993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab246b6b23f39f3cdff9c279782b48993"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ab246b6b23f39f3cdff9c279782b48993">Render</a> ()</td></tr>
@@ -661,6 +662,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a572d9c18b1b2c5c0db85d3f1c310e48e">SetIndirectionTextureData</a> ()</td></tr>
 <tr class="memdesc:a572d9c18b1b2c5c0db85d3f1c310e48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create point light shadow indirection texture data. <br/></td></tr>
 <tr class="separator:a572d9c18b1b2c5c0db85d3f1c310e48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa71f5839321a9d68def7a2978f452a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a0fa71f5839321a9d68def7a2978f452a">UpdateQueuedViewport</a> (unsigned index)</td></tr>
+<tr class="memdesc:a0fa71f5839321a9d68def7a2978f452a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a queued viewport for rendering.  <a href="#a0fa71f5839321a9d68def7a2978f452a">More...</a><br/></td></tr>
+<tr class="separator:a0fa71f5839321a9d68def7a2978f452a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b6d8f978872348f1c4ab32b88072c26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b6d8f978872348f1c4ab32b88072c26"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a1b6d8f978872348f1c4ab32b88072c26">PrepareViewRender</a> ()</td></tr>
 <tr class="memdesc:a1b6d8f978872348f1c4ab32b88072c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for rendering of a new view. <br/></td></tr>
@@ -995,7 +999,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add debug geometry to the debug renderer. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Because debug geometry is per-scene, if two cameras show views of the same area, occlusion is not shown correctly </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Because debug geometry is per-scene, if two cameras show views of the same area, occlusion is not shown correctly </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1044,7 +1048,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Allocate a shadow map. If shadow map reuse is disabled, a different map is returned each time. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Allow to specify maximum shadow maps per resolution, as smaller shadow maps take less memory </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Allow to specify maximum shadow maps per resolution, as smaller shadow maps take less memory </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1056,27 +1060,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a993f63f35d27a9ea6df861962018f354"></a>
+<a class="anchor" id="a0fa71f5839321a9d68def7a2978f452a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Urho3D::Renderer::Update </td>
+          <td class="memname">void Urho3D::Renderer::UpdateQueuedViewport </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>timeStep</em></td><td>)</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Update for rendering. Called by <a class="el" href="class_urho3_d_1_1_renderer.html#adf594e7a524f6e003e8370cf23dbee13" title="Handle render update event.">HandleRenderUpdate()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>May result in incorrect debug geometry culling if the same scene is drawn from multiple viewports </dd></dl>
+<p>Update a queued viewport for rendering. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>May result in incorrect debug geometry culling if the same scene is drawn from multiple viewports </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a993f63f35d27a9ea6df861962018f354_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a0fa71f5839321a9d68def7a2978f452a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1084,7 +1096,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a993f63f35d27a9ea6df861962018f354_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a0fa71f5839321a9d68def7a2978f452a_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
