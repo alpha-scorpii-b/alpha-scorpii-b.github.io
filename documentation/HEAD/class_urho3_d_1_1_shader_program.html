@@ -99,6 +99,16 @@ const <a class="el" href="struct_urho3_d_1_1_shader_parameter.html">ShaderParame
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#ab33feb48090871804549fa6416a30a45">GetLinkerOutput</a> () const </td></tr>
 <tr class="memdesc:ab33feb48090871804549fa6416a30a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linker output. <br/></td></tr>
 <tr class="separator:ab33feb48090871804549fa6416a30a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82de955f7e0390526e062f43f1ac588f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82de955f7e0390526e062f43f1ac588f"></a>
+const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; unsigned <br class="typebreak"/>
+char, unsigned char &gt;<br class="typebreak"/>
+, unsigned &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a82de955f7e0390526e062f43f1ac588f">GetVertexAttributes</a> () const </td></tr>
+<tr class="memdesc:a82de955f7e0390526e062f43f1ac588f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return semantic to vertex attributes location mappings used by the shader. <br/></td></tr>
+<tr class="separator:a82de955f7e0390526e062f43f1ac588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b0fe6c10c6d08d7338a2baf2c7aaa1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4b0fe6c10c6d08d7338a2baf2c7aaa1"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#ab4b0fe6c10c6d08d7338a2baf2c7aaa1">GetUsedVertexAttributes</a> () const </td></tr>
+<tr class="memdesc:ab4b0fe6c10c6d08d7338a2baf2c7aaa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute location use bitmask. <br/></td></tr>
+<tr class="separator:ab4b0fe6c10c6d08d7338a2baf2c7aaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1a4fee437c5281120b72db274fa62a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b1a4fee437c5281120b72db274fa62a"></a>
 const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_constant_buffer.html">ConstantBuffer</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a4b1a4fee437c5281120b72db274fa62a">GetConstantBuffers</a> () const </td></tr>
 <tr class="memdesc:a4b1a4fee437c5281120b72db274fa62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all constant buffers. <br/></td></tr>
@@ -204,6 +214,15 @@ Private Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a9b00470c8ddd4d2ad8193bcf1ff2be40">useTextureUnit_</a> [MAX_TEXTURE_UNITS]</td></tr>
 <tr class="memdesc:a9b00470c8ddd4d2ad8193bcf1ff2be40"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> unit use. <br/></td></tr>
 <tr class="separator:a9b00470c8ddd4d2ad8193bcf1ff2be40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80855f63b2de46c45950e5d21fd8bf24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80855f63b2de46c45950e5d21fd8bf24"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; unsigned char, <br class="typebreak"/>
+unsigned char &gt;, unsigned &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a80855f63b2de46c45950e5d21fd8bf24">vertexAttributes_</a></td></tr>
+<tr class="memdesc:a80855f63b2de46c45950e5d21fd8bf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex attributes. <br/></td></tr>
+<tr class="separator:a80855f63b2de46c45950e5d21fd8bf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b92949423f4e359828c6ac05bcdfc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97b92949423f4e359828c6ac05bcdfc7"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a97b92949423f4e359828c6ac05bcdfc7">usedVertexAttributes_</a></td></tr>
+<tr class="memdesc:a97b92949423f4e359828c6ac05bcdfc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used vertex attribute location bitmask. <br/></td></tr>
+<tr class="separator:a97b92949423f4e359828c6ac05bcdfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72effe344053281f6d7b1406f1a64e1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72effe344053281f6d7b1406f1a64e1d"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_constant_buffer.html">ConstantBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shader_program.html#a72effe344053281f6d7b1406f1a64e1d">constantBuffers_</a> [MAX_SHADER_PARAMETER_GROUPS *2]</td></tr>
 <tr class="memdesc:a72effe344053281f6d7b1406f1a64e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant buffers by binding index. <br/></td></tr>

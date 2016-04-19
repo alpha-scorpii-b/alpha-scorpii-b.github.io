@@ -84,7 +84,8 @@ Writing shaders</h2>
 <div class="line">vec3 worldPos = GetWorldPos(modelMatrix);</div>
 <div class="line">gl_Position = GetClipPos(worldPos);</div>
 </div><!-- fragment --><p>On both Direct3D and OpenGL the vertex and pixel shaders are written into the same file, and the entrypoint functions must be called VS() and PS(). In OpenGL mode one of these is transformed behind the scenes to the main() function required by GLSL. When compiling a vertex shader, the compilation define "COMPILEVS" is always present, and likewise "COMPILEPS" when compiling a pixel shader. These are heavily used in the shader include files to prevent constructs that are illegal for the "wrong" type of shader, and to reduce compilation time.</p>
-<p>The uniforms must be prefixed in a certain way so that the engine understands them:</p>
+<p>Vertex shader inputs need to be matched to vertex element semantics to render properly.. In HLSL semantics for inputs are defined in each shader with uppercase words (POSITION, NORMAL, TEXCOORD0 etc.) while in GLSL the default attributes are defined in Transform.glsl and are matched to the vertex element semantics with a case-insensitive string "contains" operation, with an optional number postfix to define the semantic index. For example iTexCoord is the first (semantic index 0) texture coordinate, and iTexCoord1 is the second (semantic index 1).</p>
+<p>Uniforms must be prefixed in a certain way so that the engine understands them:</p>
 <ul>
 <li>c for uniform constants, for example cMatDiffColor. The c is stripped when referred to inside the engine, so it would be called "MatDiffColor" in eg. <a class="el" href="class_urho3_d_1_1_material.html#a27f2b7dd5a1ab57e0be7f9a30be657ed">SetShaderParameter()</a></li>
 <li>s for texture samplers, for example sDiffMap.</li>

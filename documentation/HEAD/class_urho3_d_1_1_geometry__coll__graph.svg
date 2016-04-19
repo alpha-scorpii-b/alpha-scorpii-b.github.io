@@ -194,15 +194,15 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node25 -->
 <g id="node58" class="node"><title>Node25</title>
-<a xlink:href="class_urho3_d_1_1_p_o_d_vector.html" target="_top" xlink:title="Urho3D::PODVector\&lt;\l unsigned \&gt;">
-<polygon fill="none" stroke="black" points="845.5,-47 845.5,-81 964.5,-81 964.5,-47 845.5,-47"/>
-<text text-anchor="start" x="853.5" y="-68" font-family="FreeSans" font-size="10.00">Urho3D::PODVector&lt;</text>
-<text text-anchor="middle" x="905" y="-55" font-family="FreeSans" font-size="10.00"> unsigned &gt;</text>
+<a xlink:href="class_urho3_d_1_1_p_o_d_vector.html" target="_top" xlink:title="Urho3D::PODVector\&lt;\l Urho3D::VertexElement \&gt;">
+<polygon fill="none" stroke="black" points="833,-47 833,-81 977,-81 977,-47 833,-47"/>
+<text text-anchor="start" x="841" y="-68" font-family="FreeSans" font-size="10.00">Urho3D::PODVector&lt;</text>
+<text text-anchor="middle" x="905" y="-55" font-family="FreeSans" font-size="10.00"> Urho3D::VertexElement &gt;</text>
 </a>
 </g>
 <!-- Node7&#45;&gt;Node25 -->
 <g id="edge70" class="edge"><title>Node7&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M437.138,-118.094C470.604,-102.414 526.688,-78.6934 578,-69 670.055,-51.61 779.288,-54.5597 845.314,-58.8541"/>
+<path fill="none" stroke="midnightblue" d="M437.138,-118.094C470.604,-102.414 526.688,-78.6934 578,-69 664.476,-52.6639 766.11,-54.2768 832.846,-58.0923"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="435.441,-115.025 427.915,-122.482 438.448,-121.346 435.441,-115.025"/>
 </g>
 <!-- Node8&#45;&gt;Node5 -->
@@ -433,9 +433,9 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node25&#45;&gt;Node1 -->
 <g id="edge68" class="edge"><title>Node25&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M973.973,-80.0248C986.203,-85.0237 998.157,-91.536 1008,-100 1252.7,-310.422 1315.75,-744.418 1324.78,-817.457"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="975.189,-76.7429 964.597,-76.4898 972.719,-83.2928 975.189,-76.7429"/>
-<text text-anchor="middle" x="1099" y="-309" font-family="FreeSans" font-size="10.00"> elementMasks_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M985.621,-85.3297C993.671,-89.4125 1001.32,-94.257 1008,-100 1252.7,-310.422 1315.75,-744.418 1324.78,-817.457"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="986.938,-82.0819 976.394,-81.0363 983.984,-88.4284 986.938,-82.0819"/>
+<text text-anchor="middle" x="1099" y="-309" font-family="FreeSans" font-size="10.00"> rawElements_</text>
 </g>
 </g>
 </svg>

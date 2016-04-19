@@ -22,15 +22,20 @@ group: HEAD
 binary model format (.mdl)</h2>
 <pre class="fragment">Model geometry and vertex morph data
 
-byte[4]    Identifier "UMDL"
+byte[4]    Identifier "UMDL" or "UMD2"
 uint       Number of vertex buffers
 
   For each vertex buffer:
   uint       Vertex count
-  uint       Vertex element mask (determines vertex size)
+  uint       Legacy vertex element mask (determines vertex size)
   uint       Morphable vertex range start index
   uint       Morphable vertex count
   byte[]     Vertex data (vertex count * vertex size)
+
+  In "UMD2" format, the legacy vertex element mask is replaced with the following:
+  uint       Vertex element count
+  uint[]     Descriptions for each vertex element, where
+             bits 0-7 = element data type, bits 8-15 = semantic, bits 16-23 = semantic index
 
 uint    Number of index buffers
 
@@ -146,7 +151,7 @@ Direct3D11 binary shader format (.vs4, .ps4)</h2>
 
 short      Shader type (0 = vertex, 1 = pixel)
 short      Shader model (4)
-uint       Vertex element mask (0 for pixel shaders)
+uint       Vertex element hash code (0 for pixel shaders)
 
 uint       Number of constant parameters
 
