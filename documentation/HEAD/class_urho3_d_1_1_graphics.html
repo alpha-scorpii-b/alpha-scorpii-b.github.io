@@ -84,10 +84,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a9f1be1b0665ae339705c5e6e2c074e31">SetWindowPosition</a> (int x, int y)</td></tr>
 <tr class="memdesc:a9f1be1b0665ae339705c5e6e2c074e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set window position. <br/></td></tr>
 <tr class="separator:a9f1be1b0665ae339705c5e6e2c074e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc16c8a19af1584c902fe29e3d21d6eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc16c8a19af1584c902fe29e3d21d6eb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#adc16c8a19af1584c902fe29e3d21d6eb">SetMode</a> (int width, int height, bool fullscreen, bool borderless, bool resizable, bool vsync, bool tripleBuffer, int multiSample)</td></tr>
-<tr class="memdesc:adc16c8a19af1584c902fe29e3d21d6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen mode. Return true if successful. <br/></td></tr>
-<tr class="separator:adc16c8a19af1584c902fe29e3d21d6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee76aad0cd1ca9c8793f7b99aafe229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acee76aad0cd1ca9c8793f7b99aafe229"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#acee76aad0cd1ca9c8793f7b99aafe229">SetMode</a> (int width, int height, bool fullscreen, bool borderless, bool resizable, bool highDPI, bool vsync, bool tripleBuffer, int multiSample)</td></tr>
+<tr class="memdesc:acee76aad0cd1ca9c8793f7b99aafe229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen mode. Return true if successful. <br/></td></tr>
+<tr class="separator:acee76aad0cd1ca9c8793f7b99aafe229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb1ce37325a5ef2f7ba0e3f847b425f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bb1ce37325a5ef2f7ba0e3f847b425f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a6bb1ce37325a5ef2f7ba0e3f847b425f">SetMode</a> (int width, int height)</td></tr>
 <tr class="memdesc:a6bb1ce37325a5ef2f7ba0e3f847b425f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen resolution only. Return true if successful. <br/></td></tr>
@@ -395,6 +395,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a3e95f5b8e349247eb59a396950f714c2">GetResizable</a> () const </td></tr>
 <tr class="memdesc:a3e95f5b8e349247eb59a396950f714c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether window is resizable. <br/></td></tr>
 <tr class="separator:a3e95f5b8e349247eb59a396950f714c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25356cacc61cdbc8aa2b4f767fe6b33f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25356cacc61cdbc8aa2b4f767fe6b33f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a25356cacc61cdbc8aa2b4f767fe6b33f">GetHighDPI</a> () const </td></tr>
+<tr class="memdesc:a25356cacc61cdbc8aa2b4f767fe6b33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether window is high DPI. <br/></td></tr>
+<tr class="separator:a25356cacc61cdbc8aa2b4f767fe6b33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a7ebd34a76cd41c931a7806b087196a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a7ebd34a76cd41c931a7806b087196a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a2a7ebd34a76cd41c931a7806b087196a">GetVSync</a> () const </td></tr>
 <tr class="memdesc:a2a7ebd34a76cd41c931a7806b087196a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether vertical sync is on. <br/></td></tr>
@@ -1071,6 +1075,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aab630e67334b66e3c27831ecf2160ae4">resizable_</a></td></tr>
 <tr class="memdesc:aab630e67334b66e3c27831ecf2160ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizable flag. <br/></td></tr>
 <tr class="separator:aab630e67334b66e3c27831ecf2160ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d13502cbd3056a1d7f84415dbe289cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d13502cbd3056a1d7f84415dbe289cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a8d13502cbd3056a1d7f84415dbe289cc">highDPI_</a></td></tr>
+<tr class="memdesc:a8d13502cbd3056a1d7f84415dbe289cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">High DPI flag. <br/></td></tr>
+<tr class="separator:a8d13502cbd3056a1d7f84415dbe289cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa8f7d078dad9db579cde45f27af05e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aa8f7d078dad9db579cde45f27af05e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a1aa8f7d078dad9db579cde45f27af05e">vsync_</a></td></tr>
 <tr class="memdesc:a1aa8f7d078dad9db579cde45f27af05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical sync flag. <br/></td></tr>
