@@ -127,6 +127,9 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a> : <a class="el" href="class_urho3_d_1_1_resource.html" title="Base class for resources.">Resource</a></h4>
 <p>Methods:</p>
 <ul>
+<li>Animation() (GC)</li>
+<li>Animation* new()</li>
+<li>void delete()</li>
 <li>void SetAnimationName(const String name)</li>
 <li>void SetLength(float length)</li>
 <li>AnimationTrack* CreateTrack(const String name)</li>
@@ -137,6 +140,7 @@ Classes</h2>
 <li>void AddTrigger(float time, bool timeIsNormalized, const Variant&amp; data)</li>
 <li>void RemoveTrigger(unsigned index)</li>
 <li>void RemoveAllTriggers()</li>
+<li>Animation* Clone(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> cloneName = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string.">String::EMPTY</a>) const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetAnimationName() const</li>
 <li>float GetLength() const</li>
 <li>unsigned GetNumTracks() const</li>
