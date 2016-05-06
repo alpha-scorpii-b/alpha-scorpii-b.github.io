@@ -8878,6 +8878,9 @@ Classes</h2>
 <li>void ApplyAttributes()</li>
 <li>void BringToFront()</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ( ), uint = M_MAX_UNSIGNED)</li>
+<li>void DisableLayoutUpdate()</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ElementToScreen(const IntVector2&amp;)</li>
+<li>void EnableLayoutUpdate()</li>
 <li>uint FindChild(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@) const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetAttribute(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_value_animation.html" title="Value animation class.">ValueAnimation</a>@ GetAttributeAnimation(const String&amp;) const</li>
@@ -8896,6 +8899,8 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool HasTag(const String&amp;) const</li>
 <li>void InsertChild(uint, <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@)</li>
+<li>bool IsInside(IntVector2, bool)</li>
+<li>bool IsInsideCombined(IntVector2, bool)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@, bool = false)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a>&amp;, bool = false)</li>
 <li>bool LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -8916,6 +8921,7 @@ Classes</h2>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
 <li>bool RemoveTag(const String&amp;)</li>
+<li>void ResetDeepEnabled()</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@) const</li>
 <li>bool Save(VectorBuffer&amp;) const</li>
@@ -8923,6 +8929,7 @@ Classes</h2>
 <li>bool SaveXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = "\t")</li>
 <li>bool SaveXML(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; = "\t")</li>
 <li>bool SaveXML(XMLElement&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ScreenToElement(const IntVector2&amp;)</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, VariantMap&amp; = VariantMap ( ))</li>
 <li>void SetAlignment(HorizontalAlignment, VerticalAlignment)</li>
 <li>void SetAnimationTime(float)</li>
@@ -8931,12 +8938,15 @@ Classes</h2>
 <li>void SetAttributeAnimationSpeed(const String&amp;, float)</li>
 <li>void SetAttributeAnimationTime(const String&amp;, float)</li>
 <li>void SetAttributeAnimationWrapMode(const String&amp;, WrapMode)</li>
+<li>void SetDeepEnabled(bool)</li>
+<li>void SetEnabledRecursive(bool)</li>
 <li>void SetFixedHeight(int)</li>
 <li>void SetFixedSize(int, int)</li>
 <li>void SetFixedWidth(int)</li>
 <li>void SetFullImageRect()</li>
 <li>void SetHotSpot(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
+<li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
 <li>void SetMaxSize(int, int)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
@@ -8947,6 +8957,7 @@ Classes</h2>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
 <li>bool SetStyle(const XMLElement&amp;)</li>
 <li>bool SetStyleAuto(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
+<li>void UpdateLayout()</li>
 <li>const <a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>&amp; GetVar(const StringHash&amp;)</li>
 </ul>
 <p>Properties:</p>
@@ -8959,19 +8970,47 @@ Classes</h2>
 <li>bool bringToBack</li>
 <li>bool bringToFront</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> category // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> childOffset // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@[] children // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> clipBorder</li>
+<li>bool clipChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> color // writeonly</li>
 <li>bool colorGradient // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>[] colors</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> combinedScreenRect // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ defaultStyle</li>
 <li>float derivedOpacity // readonly</li>
 <li>uint dragButtonCombo // readonly</li>
 <li>int dragButtonCount // readonly</li>
+<li>uint dragDropMode</li>
+<li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enabled</li>
+<li>bool enabledSelf // readonly</li>
+<li>bool fixedHeight // readonly</li>
+<li>bool fixedSize // readonly</li>
+<li>bool fixedWidth // readonly</li>
+<li>bool focus</li>
+<li>FocusMode focusMode</li>
 <li>int height</li>
 <li>HorizontalAlignment horizontalAlignment</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> hotSpot</li>
+<li>bool hovering // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> imageRect</li>
+<li>int indent</li>
+<li>int indentSpacing</li>
+<li>int indentWidth // readonly</li>
+<li>bool internal</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> layoutBorder</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
+<li>LayoutMode layoutMode</li>
+<li>int layoutSpacing</li>
+<li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
+<li>int maxWidth</li>
+<li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
+<li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
 <li>uint numAllChildren // readonly</li>
 <li>uint numAttributes // readonly</li>
@@ -8985,12 +9024,15 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ root // readonly</li>
 <li>float rotation</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> scale</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> screenPosition // readonly</li>
+<li>bool selected</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> size</li>
 <li>bool sortChildren</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> style</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ tags // readonly</li>
 <li>bool temporary</li>
 <li><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>@ texture</li>
+<li>TraversalMode traversalMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
 <li>bool useDerivedOpacity</li>
