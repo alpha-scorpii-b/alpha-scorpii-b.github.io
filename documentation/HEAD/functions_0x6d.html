@@ -416,9 +416,9 @@ group: HEAD
 : <a class="el" href="struct_urho3_d_1_1_focus_parameters.html#a791c15072f3ec1ee1f7de496e7aff8a2">Urho3D::FocusParameters</a>
 </li>
 <li>minZ_
-: <a class="el" href="struct_urho3_d_1_1_per_thread_scene_result.html#aa9aff827eddb60fbfe4247211e3bda73">Urho3D::PerThreadSceneResult</a>
-, <a class="el" href="class_urho3_d_1_1_view.html#a18eb18c49b602b53cd3fc3f47d9d90b1">Urho3D::View</a>
+: <a class="el" href="class_urho3_d_1_1_view.html#a18eb18c49b602b53cd3fc3f47d9d90b1">Urho3D::View</a>
 , <a class="el" href="class_urho3_d_1_1_drawable.html#a426fbc769c215162857ab0aaf1d3bfbb">Urho3D::Drawable</a>
+, <a class="el" href="struct_urho3_d_1_1_per_thread_scene_result.html#aa9aff827eddb60fbfe4247211e3bda73">Urho3D::PerThreadSceneResult</a>
 </li>
 <li>mipBuffers_
 : <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#ae113003592b620de366c5a612dff293e">Urho3D::OcclusionBuffer</a>
@@ -465,6 +465,9 @@ group: HEAD
 <li>MixZeroVolume()
 : <a class="el" href="class_urho3_d_1_1_sound_source.html#a97a3af04d91f345aa38911e910ef2317">Urho3D::SoundSource</a>
 </li>
+<li>mobileNormalOffsetMul_
+: <a class="el" href="class_urho3_d_1_1_renderer.html#a9f28a6f10a8ad65e1d7c168cef21f7a1">Urho3D::Renderer</a>
+</li>
 <li>mobileShadowBiasAdd_
 : <a class="el" href="class_urho3_d_1_1_renderer.html#a58442c973568bbefbd9b4d98cbe07488">Urho3D::Renderer</a>
 </li>
@@ -488,17 +491,17 @@ group: HEAD
 </li>
 <li>mode_
 : <a class="el" href="class_urho3_d_1_1_file.html#a4a49ec5f446393372091c828ebffaf8f">Urho3D::File</a>
-, <a class="el" href="struct_urho3_d_1_1_async_progress.html#a18248334617ad7d1975869836f20d425">Urho3D::AsyncProgress</a>
 , <a class="el" href="class_urho3_d_1_1_debug_hud.html#a0aa88cd174ce43ffea8aa8b35a665152">Urho3D::DebugHud</a>
 , <a class="el" href="struct_urho3_d_1_1_attribute_info.html#a7008072701a906f6db5442ceecf8eb52">Urho3D::AttributeInfo</a>
+, <a class="el" href="struct_urho3_d_1_1_async_progress.html#a18248334617ad7d1975869836f20d425">Urho3D::AsyncProgress</a>
 </li>
 <li>Model()
 : <a class="el" href="class_urho3_d_1_1_model.html#a26bd3aa59c37dc31fa51b52e0dd1ba3b">Urho3D::Model</a>
 </li>
 <li>model_
-: <a class="el" href="class_urho3_d_1_1_animation_state.html#a3469a253972fbd386d34296906a1dc3d">Urho3D::AnimationState</a>
+: <a class="el" href="class_urho3_d_1_1_collision_shape.html#a37d42f78c13cdbc4a103ff3ecc2f7697">Urho3D::CollisionShape</a>
+, <a class="el" href="class_urho3_d_1_1_animation_state.html#a3469a253972fbd386d34296906a1dc3d">Urho3D::AnimationState</a>
 , <a class="el" href="struct_urho3_d_1_1_occlusion_batch.html#a46fb0a4ddcd88299d35cda012051f804">Urho3D::OcclusionBatch</a>
-, <a class="el" href="class_urho3_d_1_1_collision_shape.html#a37d42f78c13cdbc4a103ff3ecc2f7697">Urho3D::CollisionShape</a>
 , <a class="el" href="class_urho3_d_1_1_static_model.html#a50a3a2becdcb76c1ecb846480e77aa14">Urho3D::StaticModel</a>
 </li>
 <li>ModelTransform()
@@ -567,8 +570,8 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_crowd_manager.html#ada943d313c32013e05b71ce5aed99c83">Urho3D::CrowdManager</a>
 </li>
 <li>MoveRange()
-: <a class="el" href="class_urho3_d_1_1_string.html#a537ae31ab4fd07be1d5329a78222b5b5">Urho3D::String</a>
-, <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html#a6ea320cf619d0086ab16053b2e112fa2">Urho3D::PODVector&lt; T &gt;</a>
+: <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html#a6ea320cf619d0086ab16053b2e112fa2">Urho3D::PODVector&lt; T &gt;</a>
+, <a class="el" href="class_urho3_d_1_1_string.html#a537ae31ab4fd07be1d5329a78222b5b5">Urho3D::String</a>
 , <a class="el" href="class_urho3_d_1_1_vector.html#a16513c59c4f36471f988f4564ee71c6e">Urho3D::Vector&lt; T &gt;</a>
 </li>
 <li>msg_
@@ -584,8 +587,8 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_mutex.html#a1b15abcdf99f6c2c0055234e04fdce97">Urho3D::Mutex</a>
 </li>
 <li>mutex_
-: <a class="el" href="class_urho3_d_1_1_condition.html#af9128ee9ad30c6250874c6397969de16">Urho3D::Condition</a>
-, <a class="el" href="class_urho3_d_1_1_mutex_lock.html#a7531c13f2f3185e9978d0a1a99eeeeb3">Urho3D::MutexLock</a>
+: <a class="el" href="class_urho3_d_1_1_mutex_lock.html#a7531c13f2f3185e9978d0a1a99eeeeb3">Urho3D::MutexLock</a>
+, <a class="el" href="class_urho3_d_1_1_condition.html#af9128ee9ad30c6250874c6397969de16">Urho3D::Condition</a>
 , <a class="el" href="class_urho3_d_1_1_http_request.html#acc88b3b718a4e58da74ad92a7b2ac2da">Urho3D::HttpRequest</a>
 </li>
 <li>MutexLock()

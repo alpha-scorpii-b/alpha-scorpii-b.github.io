@@ -361,9 +361,15 @@ Classes</h2>
 <ul>
 <li>BiasParameters() (GC)</li>
 <li>BiasParameters* new()</li>
-<li>BiasParameters(float constantBias, float slopeScaledBias) (GC)</li>
-<li>BiasParameters* new(float constantBias, float slopeScaledBias)</li>
+<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a>(float constantBias, float slopeScaledBias, float normalOffset = 0.0f) (GC)</li>
+<li>BiasParameters* new(float constantBias, float slopeScaledBias, float normalOffset = 0.0f)</li>
 <li>void delete()</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li>float constantBias</li>
+<li>float slopeScaledBias</li>
+<li>float normalOffset</li>
 </ul>
 <p><a class="anchor" id="Class_Billboard"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_billboard.html" title="One billboard in the billboard set.">Billboard</a></h4>
@@ -646,6 +652,11 @@ Classes</h2>
 <li><a class="el" href="struct_urho3_d_1_1_cascade_parameters.html" title="Cascaded shadow map parameters.">CascadeParameters</a>(float split1, float split2, float split3, float split4, float fadeStart, float biasAutoAdjust = 1.0f) (GC)</li>
 <li>CascadeParameters* new(float split1, float split2, float split3, float split4, float fadeStart, float biasAutoAdjust = 1.0f)</li>
 <li>void delete()</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li>float fadeStart</li>
+<li>float biasAutoAdjust</li>
 </ul>
 <p><a class="anchor" id="Class_CheckBox"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_check_box.html" title="UI element that can be toggled between unchecked and checked state.">CheckBox</a> : <a class="el" href="class_urho3_d_1_1_border_image.html" title="Image UI element with optional border.">BorderImage</a></h4>
@@ -2123,6 +2134,14 @@ Classes</h2>
 <li>FocusParameters(bool focus, bool nonUniform, bool autoSize, float quantize, float minView) (GC)</li>
 <li>FocusParameters* new(bool focus, bool nonUniform, bool autoSize, float quantize, float minView)</li>
 <li>void delete()</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li>bool focus</li>
+<li>bool nonUniform</li>
+<li>bool autoSize</li>
+<li>float quantize</li>
+<li>float minView</li>
 </ul>
 <p><a class="anchor" id="Class_Font"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_font.html" title="Font resource.">Font</a> : <a class="el" href="class_urho3_d_1_1_resource.html" title="Base class for resources.">Resource</a></h4>
@@ -4412,6 +4431,7 @@ Classes</h2>
 <li>void SetThreadedOcclusion(bool enable)</li>
 <li>void SetMobileShadowBiasMul(float mul)</li>
 <li>void SetMobileShadowBiasAdd(float add)</li>
+<li>void SetMobileNormalOffsetMul(float mul)</li>
 <li>void ReloadShaders()</li>
 <li>unsigned GetNumViewports() const</li>
 <li>Viewport* GetViewport(unsigned index) const</li>
@@ -4439,6 +4459,7 @@ Classes</h2>
 <li>bool GetThreadedOcclusion() const</li>
 <li>float GetMobileShadowBiasMul() const</li>
 <li>float GetMobileShadowBiasAdd() const</li>
+<li>float GetMobileNormalOffsetMul() const</li>
 <li>unsigned GetNumViews() const</li>
 <li>unsigned GetNumPrimitives() const</li>
 <li>unsigned GetNumBatches() const</li>
@@ -4478,6 +4499,7 @@ Classes</h2>
 <li>bool threadedOcclusion</li>
 <li>float mobileShadowBiasMul</li>
 <li>float mobileShadowBiasAdd</li>
+<li>float mobileNormalOffsetMul</li>
 <li>unsigned numViews (readonly)</li>
 <li>unsigned numPrimitives (readonly)</li>
 <li>unsigned numBatches (readonly)</li>
