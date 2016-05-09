@@ -69,7 +69,7 @@ group: HEAD
 </div><!-- fragment --><p>Object animations can also be loaded from file, like: </p>
 <div class="fragment"><div class="line">ObjectAnimation * lightAnimation = cache-&gt;GetResource&lt;ObjectAnimation&gt;(<span class="stringliteral">&quot;Scene/LightAnimation.xml&quot;</span>);</div>
 <div class="line">lightNode-&gt;SetObjectAnimation (lightAnimation);</div>
-</div><!-- fragment --><p>Attribute animation uses either linear or spline interpolation for floating point types (like float, <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>, <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> etc), and no interpolation for integer and non-numeric types (like int, bool).</p>
+</div><!-- fragment --><p>Attribute animation uses either linear or spline interpolation for floating point types (like float, <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>, <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> etc), and no interpolation for integer and non-numeric types (like int, bool). Alternatively interpolation can be turned off for any data type by setting the interpolation method IM_NONE (see <a class="el" href="class_urho3_d_1_1_value_animation.html#a156ee4642cfd1d02083dab6f3ca99414">SetInterpolationMethod()</a>). This allows e.g. animating UI elements by modifying the element's image rect to cover a series of animation frames.</p>
 <h2><a class="anchor" id="AttributeAnimation_Classes"></a>
 Attribute animation classes</h2>
 <ul>
