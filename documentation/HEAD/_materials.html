@@ -43,7 +43,7 @@ group: HEAD
 </ul>
 <p>Material shader parameters can be floats or vectors up to 4 components, or matrices.</p>
 <p>Default culling mode is counterclockwise. The shadowcull element specifies the culling mode to use in the shadow pass. Note that material's depth bias settings do not apply in the shadow pass; during shadow rendering the light's depth bias is used instead.</p>
-<p>Render order is a 8-bit unsigned value that can be used to affect rendering order within a pass, overriding the state or distance sorting. The default value is 128; smaller values will render earlier, and larger values later.</p>
+<p>Render order is a 8-bit unsigned value that can be used to affect rendering order within a pass, overriding the state or distance sorting. The default value is 128; smaller values will render earlier, and larger values later. Read below for caveats regarding it.</p>
 <h2><a class="anchor" id="Materials_Textures"></a>
 Material textures</h2>
 <p>Diffuse maps specify the surface color in the RGB channels. Optionally they can use the alpha channel for blending and alpha testing. They should preferably be compressed to DXT1 (no alpha or 1-bit alpha) or DXT5 (smooth alpha) format.</p>
@@ -134,5 +134,10 @@ Techniques and passes</h2>
 <p>More custom passes can be defined and referred to in the <a class="el" href="_render_paths.html">render path definition</a>. For the built-in passes listed above, the lighting shader permutations to load (unlit, per-vertex or per-pixel) are recognized automatically, but for custom passes they need to be explicitly specified. The default is unlit.</p>
 <p>The optional "litbase" pass reduces draw call count by combining ambient lighting with the first per-pixel light affecting an object. However, it has intentional limitations to not require too many shader permutations: there must be no vertex lights affecting the object, and the ambient lighting can not have a gradient. In case of excessive overdraw, it is possibly better not to define it, but instead allow the base pass (which is computationally very lightweight) to run first, initializing the Z buffer for later passes.</p>
 <p>"Alphamask" is not an actual rendering state, but a hint which tells that the pixel shader will use discard based on alpha. Because this may interfere with the early-Z culling, materials without the alpha masking hint will be drawn first.</p>
-<p>The refract pass requires pingponging the scene rendertarget to a texture, but this will not be performed if there is no refractive geometry to render, so there is no unnecessary cost to it. </p>
-</div></div><!-- contents -->
+<p>The refract pass requires pingponging the scene rendertarget to a texture, but this will not be performed if there is no refractive geometry to render, so there is no unnecessary cost to it.</p>
+<h2><a class="anchor" id="Materials_RenderOrder"></a>
+Render order caveats</h2>
+<p>Render order works well when you know a material is going to render only a single pass, for example a deferred G-buffer pass. However when forward rendering and per-pixel lights are used, rendering of typical lit geometry can be split over the "base", "litbase" and "light" passes. If you use render order combined with depth test manipulation to force some object to render in front of others, the pass order may not be obvious. "Base" pass would be rendered first, but objects often don't use it, rather they render later as part of the forward light loop using the "litbase" pass. This may throw off the depth test manipulation and cause a different result than expected.</p>
+<p>An easy fix is to simply disable the "litbase" optimization pass altogether, though this costs performance. This can be done globally from the forward renderpath (Bin/CoreData/RenderPaths/Forward.xml) by modifying the forwardlights command to read:</p>
+<div class="fragment"><div class="line">&lt;command type=<span class="stringliteral">&quot;forwardlights&quot;</span> pass=<span class="stringliteral">&quot;light&quot;</span> uselitbase=<span class="stringliteral">&quot;false&quot;</span> /&gt;</div>
+</div><!-- fragment --> </div></div><!-- contents -->
