@@ -65,6 +65,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a653f75abd5e2aa50e90db33dbe24f3ed">SetBlendMode</a> (BlendMode mode)</td></tr>
 <tr class="memdesc:a653f75abd5e2aa50e90db33dbe24f3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blend mode. <br/></td></tr>
 <tr class="separator:a653f75abd5e2aa50e90db33dbe24f3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc70e5e80c98248f1f0d9cbd1758c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fc70e5e80c98248f1f0d9cbd1758c98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a7fc70e5e80c98248f1f0d9cbd1758c98">SetCullMode</a> (CullMode mode)</td></tr>
+<tr class="memdesc:a7fc70e5e80c98248f1f0d9cbd1758c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set culling mode override. By default culling mode is read from the material instead. Set the illegal culling mode MAX_CULLMODES to disable override again. <br/></td></tr>
+<tr class="separator:a7fc70e5e80c98248f1f0d9cbd1758c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8282bea0388aae89ca9c3690fc0d749b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8282bea0388aae89ca9c3690fc0d749b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a8282bea0388aae89ca9c3690fc0d749b">SetDepthTestMode</a> (CompareMode mode)</td></tr>
 <tr class="memdesc:a8282bea0388aae89ca9c3690fc0d749b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set depth compare mode. <br/></td></tr>
@@ -121,6 +125,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 BlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#ad877443eb29b7adff62a5e54cf2d8067">GetBlendMode</a> () const </td></tr>
 <tr class="memdesc:ad877443eb29b7adff62a5e54cf2d8067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return blend mode. <br/></td></tr>
 <tr class="separator:ad877443eb29b7adff62a5e54cf2d8067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9504f4c3ec312158b2e7aa8c1cdd6d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9504f4c3ec312158b2e7aa8c1cdd6d6"></a>
+CullMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#aa9504f4c3ec312158b2e7aa8c1cdd6d6">GetCullMode</a> () const </td></tr>
+<tr class="memdesc:aa9504f4c3ec312158b2e7aa8c1cdd6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return culling mode override. If pass is not overriding culling mode (default), the illegal mode MAX_CULLMODES is returned. <br/></td></tr>
+<tr class="separator:aa9504f4c3ec312158b2e7aa8c1cdd6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac763bd78311d8c8ae1b9fbc3d1231649"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac763bd78311d8c8ae1b9fbc3d1231649"></a>
 CompareMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#ac763bd78311d8c8ae1b9fbc3d1231649">GetDepthTestMode</a> () const </td></tr>
 <tr class="memdesc:ac763bd78311d8c8ae1b9fbc3d1231649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return depth compare mode. <br/></td></tr>
@@ -211,6 +219,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 BlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#aae007ae431a684e92345c9093aa1b7b9">blendMode_</a></td></tr>
 <tr class="memdesc:aae007ae431a684e92345c9093aa1b7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend mode. <br/></td></tr>
 <tr class="separator:aae007ae431a684e92345c9093aa1b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf278342f207fb5b0dbb96cd0d0d70c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf278342f207fb5b0dbb96cd0d0d70c6"></a>
+CullMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#adf278342f207fb5b0dbb96cd0d0d70c6">cullMode_</a></td></tr>
+<tr class="memdesc:adf278342f207fb5b0dbb96cd0d0d70c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Culling mode. <br/></td></tr>
+<tr class="separator:adf278342f207fb5b0dbb96cd0d0d70c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e462ed9ae2e08a3ec9debf3ea04682e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e462ed9ae2e08a3ec9debf3ea04682e"></a>
 CompareMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a5e462ed9ae2e08a3ec9debf3ea04682e">depthTestMode_</a></td></tr>
 <tr class="memdesc:a5e462ed9ae2e08a3ec9debf3ea04682e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth compare mode. <br/></td></tr>
