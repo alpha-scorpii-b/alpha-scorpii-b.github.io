@@ -32,7 +32,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1706;
+var viewWidth = 1724;
 var viewHeight = 790;
 var sectionId = 'dynsection-1';
 </script>
@@ -42,8 +42,8 @@ var sectionId = 'dynsection-1';
 <title>Urho3D::DebugHud</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="1588,-189.069 1588,-210.069 1698,-210.069 1698,-189.069 1588,-189.069"/>
-<text text-anchor="middle" x="1643" y="-197.069" font-family="FreeSans" font-size="10.00">Urho3D::DebugHud</text>
+<polygon fill="#bfbfbf" stroke="black" points="1606,-188.069 1606,-209.069 1716,-209.069 1716,-188.069 1606,-188.069"/>
+<text text-anchor="middle" x="1661" y="-196.069" font-family="FreeSans" font-size="10.00">Urho3D::DebugHud</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M483.945,-710.35C497.721,-720.247 516.195,-732.393 534,-740.569 602.671,-772.099 623.437,-781.569 699,-781.569 699,-781.569 699,-781.569 1424,-781.569 1551.12,-781.569 1629.69,-289.047 1641.46,-210.167"/>
+<path fill="none" stroke="midnightblue" d="M483.945,-710.35C497.721,-720.247 516.195,-732.393 534,-740.569 602.671,-772.099 623.437,-781.569 699,-781.569 699,-781.569 699,-781.569 1424,-781.569 1552.65,-781.569 1645.17,-288.201 1659.16,-209.185"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="485.755,-707.336 475.624,-704.235 481.61,-712.977 485.755,-707.336"/>
 </g>
 <!-- Node7 -->
@@ -74,14 +74,14 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
 <a xlink:href="class_urho3_d_1_1_ref_counted.html" target="_top" xlink:title="Base class for intrusively reference&#45;counted objects. These are noncopyable and non&#45;assignable.">
-<polygon fill="none" stroke="black" points="198,-639.069 198,-660.069 312,-660.069 312,-639.069 198,-639.069"/>
-<text text-anchor="middle" x="255" y="-647.069" font-family="FreeSans" font-size="10.00">Urho3D::RefCounted</text>
+<polygon fill="none" stroke="black" points="198,-623.069 198,-644.069 312,-644.069 312,-623.069 198,-623.069"/>
+<text text-anchor="middle" x="255" y="-631.069" font-family="FreeSans" font-size="10.00">Urho3D::RefCounted</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M314.436,-662.202C346.988,-669.121 386.69,-677.561 416.71,-683.942"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="315.091,-658.763 304.582,-660.108 313.635,-665.61 315.091,-658.763"/>
+<path fill="none" stroke="midnightblue" d="M301.211,-646.963C338.713,-657.833 390.866,-672.95 425.487,-682.985"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="302.11,-643.58 291.531,-644.157 300.161,-650.303 302.11,-643.58"/>
 </g>
 <!-- Node5 -->
 <g id="node8" class="node"><title>Node5</title>
@@ -92,21 +92,21 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge10" class="edge"><title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M322.266,-649.982C479.768,-649.732 867.082,-641.694 972,-570.569 1030.46,-530.941 1054.24,-441.259 1060.9,-410.309"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="322.227,-646.482 312.23,-649.988 322.232,-653.482 322.227,-646.482"/>
+<path fill="none" stroke="midnightblue" d="M322.223,-635.66C479.629,-639.313 866.75,-640.704 972,-570.569 1030.77,-531.407 1054.36,-441.427 1060.93,-410.355"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="322.274,-632.161 312.192,-635.417 322.104,-639.159 322.274,-632.161"/>
 </g>
 <!-- Node4 -->
 <g id="node6" class="node"><title>Node4</title>
 <a xlink:href="struct_urho3_d_1_1_ref_count.html" target="_top" xlink:title="Reference count structure.">
-<polygon fill="none" stroke="black" points="0,-639.069 0,-660.069 102,-660.069 102,-639.069 0,-639.069"/>
-<text text-anchor="middle" x="51" y="-647.069" font-family="FreeSans" font-size="10.00">Urho3D::RefCount</text>
+<polygon fill="none" stroke="black" points="0,-623.069 0,-644.069 102,-644.069 102,-623.069 0,-623.069"/>
+<text text-anchor="middle" x="51" y="-631.069" font-family="FreeSans" font-size="10.00">Urho3D::RefCount</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge6" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M112.345,-649.569C139.414,-649.569 171.051,-649.569 197.643,-649.569"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="112.215,-646.069 102.214,-649.569 112.214,-653.069 112.215,-646.069"/>
-<text text-anchor="middle" x="145" y="-653.569" font-family="FreeSans" font-size="10.00"> refCount_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M112.345,-633.569C139.414,-633.569 171.051,-633.569 197.643,-633.569"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="112.215,-630.069 102.214,-633.569 112.214,-637.069 112.215,-630.069"/>
+<text text-anchor="middle" x="145" y="-637.569" font-family="FreeSans" font-size="10.00"> refCount_</text>
 </g>
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge8" class="edge"><title>Node5&#45;&gt;Node2</title>
@@ -316,7 +316,7 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node12&#45;&gt;Node5 -->
 <g id="edge30" class="edge"><title>Node12&#45;&gt;Node5</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M793.904,-200.509C796.739,-202.357 799.449,-204.373 802,-206.569 817.701,-220.086 803.499,-237.041 820,-249.569 874.225,-290.735 913.747,-233.332 972,-268.569 1020.1,-297.664 1049.14,-362.988 1059.1,-388.79"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M793.904,-200.509C796.739,-202.357 799.449,-204.373 802,-206.569 817.701,-220.086 803.499,-237.041 820,-249.569 874.225,-290.735 913.747,-233.332 972,-268.569 996.642,-283.474 1041.32,-360.639 1057.2,-389.051"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="795.481,-197.379 785.064,-195.447 792.003,-203.453 795.481,-197.379"/>
 <text text-anchor="middle" x="896" y="-272.569" font-family="FreeSans" font-size="10.00"> globalVars_</text>
 </g>
@@ -361,13 +361,13 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node16&#45;&gt;Node5 -->
 <g id="edge44" class="edge"><title>Node16&#45;&gt;Node5</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M798.682,-151.416C799.822,-152.432 800.929,-153.482 802,-154.569 821.25,-174.089 799.023,-195.917 820,-213.569 872.093,-257.403 915.738,-194.233 972,-232.569 1001.06,-252.369 1044.76,-354.83 1058.62,-388.692"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M798.682,-151.416C799.822,-152.432 800.929,-153.482 802,-154.569 821.25,-174.089 799.023,-195.917 820,-213.569 872.093,-257.403 915.738,-194.233 972,-232.569 986.666,-242.562 1040.88,-353.561 1057.87,-388.859"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="800.762,-148.599 790.727,-145.199 796.451,-154.114 800.762,-148.599"/>
 <text text-anchor="middle" x="896" y="-236.569" font-family="FreeSans" font-size="10.00"> factories_</text>
 </g>
 <!-- Node17&#45;&gt;Node5 -->
 <g id="edge48" class="edge"><title>Node17&#45;&gt;Node5</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M784.436,-74.3879C790.966,-78.2684 796.963,-82.9417 802,-88.5685 828.917,-118.637 790.411,-150.125 820,-177.569 869.916,-223.866 918.973,-153.869 972,-196.569 990.722,-211.644 980.783,-225.369 990,-247.569 1012.56,-301.913 1044.7,-364.623 1057.46,-389.06"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M784.436,-74.3879C790.966,-78.2684 796.963,-82.9417 802,-88.5685 828.917,-118.637 790.411,-150.125 820,-177.569 869.916,-223.866 919.583,-153.123 972,-196.569 992.128,-213.251 980.158,-228.349 990,-252.569 1011.35,-305.101 1043.62,-364.789 1056.93,-388.764"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="785.723,-71.1109 775.24,-69.5725 782.476,-77.3121 785.723,-71.1109"/>
 <text text-anchor="middle" x="896" y="-200.569" font-family="FreeSans" font-size="10.00"> objectCategories_</text>
 </g>
@@ -386,26 +386,27 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node20&#45;&gt;Node1 -->
 <g id="edge60" class="edge"><title>Node20&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M920.553,-88.5183C937.054,-106.458 958.222,-131.916 972,-157.569 984.571,-180.973 969.368,-197.832 990,-214.569 1056.94,-268.868 1096.81,-233.569 1183,-233.569 1183,-233.569 1183,-233.569 1424,-233.569 1489.19,-233.569 1505.88,-231.335 1570,-219.569 1582.92,-217.197 1596.89,-213.626 1609.11,-210.155"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M920.553,-88.5183C937.054,-106.458 958.222,-131.916 972,-157.569 984.571,-180.973 969.584,-197.57 990,-214.569 1056.43,-269.877 1096.56,-238.569 1183,-238.569 1183,-238.569 1183,-238.569 1424,-238.569 1497.15,-238.569 1516.51,-240.08 1588,-224.569 1604.57,-220.974 1622.51,-214.62 1636.46,-209.093"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="922.738,-85.731 913.344,-80.8313 917.632,-90.5196 922.738,-85.731"/>
-<text text-anchor="middle" x="1269" y="-237.569" font-family="FreeSans" font-size="10.00"> appStats_</text>
+<text text-anchor="middle" x="1269" y="-242.569" font-family="FreeSans" font-size="10.00"> appStats_</text>
 </g>
 <!-- Node21 -->
 <g id="node52" class="node"><title>Node21</title>
 <a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Text \&gt;">
-<polygon fill="none" stroke="black" points="1366,-149.569 1366,-183.569 1482,-183.569 1482,-149.569 1366,-149.569"/>
-<text text-anchor="start" x="1374" y="-170.569" font-family="FreeSans" font-size="10.00">Urho3D::SharedPtr&lt;</text>
-<text text-anchor="middle" x="1424" y="-157.569" font-family="FreeSans" font-size="10.00"> Urho3D::Text &gt;</text>
+<polygon fill="none" stroke="black" points="1366,-146.569 1366,-180.569 1482,-180.569 1482,-146.569 1366,-146.569"/>
+<text text-anchor="start" x="1374" y="-167.569" font-family="FreeSans" font-size="10.00">Urho3D::SharedPtr&lt;</text>
+<text text-anchor="middle" x="1424" y="-154.569" font-family="FreeSans" font-size="10.00"> Urho3D::Text &gt;</text>
 </a>
 </g>
 <!-- Node21&#45;&gt;Node1 -->
 <g id="edge64" class="edge"><title>Node21&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1492.16,-161.356C1516.91,-160.949 1544.94,-162.228 1570,-167.569 1589.49,-171.722 1610.15,-181.328 1624.5,-188.938"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1492.04,-157.858 1482.14,-161.615 1492.22,-164.856 1492.04,-157.858"/>
-<text text-anchor="middle" x="1535" y="-210.569" font-family="FreeSans" font-size="10.00"> memoryText_</text>
-<text text-anchor="middle" x="1535" y="-197.569" font-family="FreeSans" font-size="10.00">profilerText_</text>
-<text text-anchor="middle" x="1535" y="-184.569" font-family="FreeSans" font-size="10.00">statsText_</text>
-<text text-anchor="middle" x="1535" y="-171.569" font-family="FreeSans" font-size="10.00">modeText_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1492.43,-153.804C1522.2,-151.621 1557.23,-151.865 1588,-159.569 1609.88,-165.048 1632.38,-178.475 1646.51,-188.04"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1491.81,-150.344 1482.13,-154.669 1492.39,-157.319 1491.81,-150.344"/>
+<text text-anchor="middle" x="1544" y="-215.569" font-family="FreeSans" font-size="10.00"> eventProfilerText_</text>
+<text text-anchor="middle" x="1544" y="-202.569" font-family="FreeSans" font-size="10.00">memoryText_</text>
+<text text-anchor="middle" x="1544" y="-189.569" font-family="FreeSans" font-size="10.00">profilerText_</text>
+<text text-anchor="middle" x="1544" y="-176.569" font-family="FreeSans" font-size="10.00">statsText_</text>
+<text text-anchor="middle" x="1544" y="-163.569" font-family="FreeSans" font-size="10.00">modeText_</text>
 </g>
 <!-- Node22 -->
 <g id="node54" class="node"><title>Node22</title>
@@ -416,9 +417,9 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node22&#45;&gt;Node21 -->
 <g id="edge66" class="edge"><title>Node22&#45;&gt;Node21</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1318.28,-164.522C1333.41,-164.815 1350.19,-165.14 1365.85,-165.443"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1318.18,-161.02 1308.11,-164.326 1318.04,-168.019 1318.18,-161.02"/>
-<text text-anchor="middle" x="1337" y="-169.569" font-family="FreeSans" font-size="10.00"> ptr_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1318.28,-163.569C1333.41,-163.569 1350.19,-163.569 1365.85,-163.569"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1318.11,-160.069 1308.11,-163.569 1318.11,-167.069 1318.11,-160.069"/>
+<text text-anchor="middle" x="1337" y="-167.569" font-family="FreeSans" font-size="10.00"> ptr_</text>
 </g>
 <!-- Node23&#45;&gt;Node22 -->
 <g id="edge68" class="edge"><title>Node23&#45;&gt;Node22</title>
@@ -448,15 +449,15 @@ var sectionId = 'dynsection-1';
 <!-- Node25 -->
 <g id="node62" class="node"><title>Node25</title>
 <a xlink:href="class_urho3_d_1_1_timer.html" target="_top" xlink:title="Low&#45;resolution operating system timer.">
-<polygon fill="none" stroke="black" points="1381,-110.069 1381,-131.069 1467,-131.069 1467,-110.069 1381,-110.069"/>
-<text text-anchor="middle" x="1424" y="-118.069" font-family="FreeSans" font-size="10.00">Urho3D::Timer</text>
+<polygon fill="none" stroke="black" points="1381,-107.069 1381,-128.069 1467,-128.069 1467,-107.069 1381,-107.069"/>
+<text text-anchor="middle" x="1424" y="-115.069" font-family="FreeSans" font-size="10.00">Urho3D::Timer</text>
 </a>
 </g>
 <!-- Node25&#45;&gt;Node1 -->
 <g id="edge76" class="edge"><title>Node25&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1477.2,-123.151C1505.66,-126.036 1540.76,-132.059 1570,-144.569 1594.8,-155.18 1618.85,-175.952 1632.22,-188.711"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1477.32,-119.647 1467.04,-122.224 1476.68,-126.618 1477.32,-119.647"/>
-<text text-anchor="middle" x="1535" y="-148.569" font-family="FreeSans" font-size="10.00"> profilerTimer_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1477.59,-116.011C1510.65,-116.903 1553.25,-121.475 1588,-136.569 1614.84,-148.226 1639.28,-173.159 1651.93,-187.604"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1477.26,-112.506 1467.21,-115.842 1477.15,-119.505 1477.26,-112.506"/>
+<text text-anchor="middle" x="1544" y="-140.569" font-family="FreeSans" font-size="10.00"> profilerTimer_</text>
 </g>
 </g>
 </svg>
