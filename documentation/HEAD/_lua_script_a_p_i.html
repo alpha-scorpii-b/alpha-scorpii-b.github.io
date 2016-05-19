@@ -7498,8 +7498,8 @@ Global functions</h2>
 <li>Renderer* GetRenderer()</li>
 <li>Time* GetTime()</li>
 <li>UI* GetUI()</li>
-<li>bool HasSubscribedToEvent(const String eventName)</li>
 <li>bool HasSubscribedToEvent(Object* sender, const String eventName)</li>
+<li>bool HasSubscribedToEvent(const String eventName)</li>
 <li>bool IsAbsolutePath(const String pathName)</li>
 <li>bool IsAlpha(unsigned ch)</li>
 <li>bool IsDigit(unsigned ch)</li>
@@ -7518,9 +7518,10 @@ Global functions</h2>
 <li>float Random()</li>
 <li>float Random(float range)</li>
 <li>float Random(float min, float max)</li>
-<li>int RandomInt(int min, int max)</li>
 <li>int RandomInt(int range)</li>
+<li>int RandomInt(int min, int max)</li>
 <li>float RandomNormal(float meanValue, float variance)</li>
+<li>void RegisterEventName(const String eventName)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> RemoveTrailingSlash(const String pathName)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReplaceExtension(const String fullPath, const String newExtension)</li>
 <li>unsigned SDBMHash(unsigned hash, char c)</li>
@@ -7532,8 +7533,8 @@ Global functions</h2>
 <li>float Sign(float value)</li>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
-<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
+<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
 <li>bool ToBool(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ToColor(const String source)</li>
