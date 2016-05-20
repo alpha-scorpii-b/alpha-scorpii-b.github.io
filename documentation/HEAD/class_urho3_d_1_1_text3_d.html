@@ -29,8 +29,8 @@ group: HEAD
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_urho3_d_1_1_text3_d-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::Text3D Class Reference</div>  </div>
@@ -972,6 +972,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a5ba7c0a95a3eb3d25d4dcbd890cd3afb">OnWorldBoundingBoxUpdate</a> ()</td></tr>
 <tr class="memdesc:a5ba7c0a95a3eb3d25d4dcbd890cd3afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate the world-space bounding box. <br/></td></tr>
 <tr class="separator:a5ba7c0a95a3eb3d25d4dcbd890cd3afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44e2ab1dccca583ae229245729a5d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad44e2ab1dccca583ae229245729a5d19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#ad44e2ab1dccca583ae229245729a5d19">MarkTextDirty</a> ()</td></tr>
+<tr class="memdesc:ad44e2ab1dccca583ae229245729a5d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark text &amp; geometry dirty. <br/></td></tr>
+<tr class="separator:ad44e2ab1dccca583ae229245729a5d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f643feab9477ca50a084501df1a8e3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f643feab9477ca50a084501df1a8e3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a1f643feab9477ca50a084501df1a8e3b">UpdateTextBatches</a> ()</td></tr>
+<tr class="memdesc:a1f643feab9477ca50a084501df1a8e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update text UI batches. <br/></td></tr>
+<tr class="separator:a1f643feab9477ca50a084501df1a8e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bf86fc02caa281fb5fc8a54356abfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63bf86fc02caa281fb5fc8a54356abfb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a63bf86fc02caa281fb5fc8a54356abfb">UpdateTextMaterials</a> (bool forceUpdate=false)</td></tr>
+<tr class="memdesc:a63bf86fc02caa281fb5fc8a54356abfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create materials for text rendering. May only be called from the main thread. <a class="el" href="class_urho3_d_1_1_text.html" title="Text UI element.">Text</a> UI batches must be up-to-date. <br/></td></tr>
+<tr class="separator:a63bf86fc02caa281fb5fc8a54356abfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_drawable.html">Urho3D::Drawable</a></td></tr>
 <tr class="memitem:a078a2f10f6db892ead4179492604809e inherit pro_methods_class_urho3_d_1_1_drawable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a078a2f10f6db892ead4179492604809e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drawable.html#a078a2f10f6db892ead4179492604809e">OnSceneSet</a> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
@@ -1064,26 +1076,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:afa4ade46a2db8254e613c5bd8e80c875 inherit pro_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute animation removed. <br/></td></tr>
 <tr class="separator:afa4ade46a2db8254e613c5bd8e80c875 inherit pro_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab7177f5465a77452b1cbc8363d28d8ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7177f5465a77452b1cbc8363d28d8ae"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_text3_d.html">Text3D</a>, <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a>)</td></tr>
-<tr class="separator:ab7177f5465a77452b1cbc8363d28d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44e2ab1dccca583ae229245729a5d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad44e2ab1dccca583ae229245729a5d19"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#ad44e2ab1dccca583ae229245729a5d19">MarkTextDirty</a> ()</td></tr>
-<tr class="memdesc:ad44e2ab1dccca583ae229245729a5d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark text &amp; geometry dirty. <br/></td></tr>
-<tr class="separator:ad44e2ab1dccca583ae229245729a5d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f643feab9477ca50a084501df1a8e3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f643feab9477ca50a084501df1a8e3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a1f643feab9477ca50a084501df1a8e3b">UpdateTextBatches</a> ()</td></tr>
-<tr class="memdesc:a1f643feab9477ca50a084501df1a8e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update text UI batches. <br/></td></tr>
-<tr class="separator:a1f643feab9477ca50a084501df1a8e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63bf86fc02caa281fb5fc8a54356abfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63bf86fc02caa281fb5fc8a54356abfb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a63bf86fc02caa281fb5fc8a54356abfb">UpdateTextMaterials</a> (bool forceUpdate=false)</td></tr>
-<tr class="memdesc:a63bf86fc02caa281fb5fc8a54356abfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create materials for text rendering. May only be called from the main thread. <a class="el" href="class_urho3_d_1_1_text.html" title="Text UI element.">Text</a> UI batches must be up-to-date. <br/></td></tr>
-<tr class="separator:a63bf86fc02caa281fb5fc8a54356abfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:ae7c3d03d34c8d534e7fc0426cfce6ec0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7c3d03d34c8d534e7fc0426cfce6ec0"></a>
 <a class="el" href="class_urho3_d_1_1_text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#ae7c3d03d34c8d534e7fc0426cfce6ec0">text_</a></td></tr>
 <tr class="memdesc:ae7c3d03d34c8d534e7fc0426cfce6ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally used text element. <br/></td></tr>
@@ -1132,9 +1126,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text3_d.html#a96316242758313eba5cf74f7e65ee2c1">fontDataLost_</a></td></tr>
 <tr class="memdesc:a96316242758313eba5cf74f7e65ee2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_font.html" title="Font resource.">Font</a> texture data lost flag. <br/></td></tr>
 <tr class="separator:a96316242758313eba5cf74f7e65ee2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_urho3_d_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_drawable.html">Urho3D::Drawable</a></td></tr>
 <tr class="memitem:a10f4a0419fadd10735448f7a5b639099 inherit pro_attribs_class_urho3_d_1_1_drawable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10f4a0419fadd10735448f7a5b639099"></a>
 <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drawable.html#a10f4a0419fadd10735448f7a5b639099">worldBoundingBox_</a></td></tr>
@@ -1260,6 +1251,57 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_light.html">Light</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drawable.html#a7effc9e891517efb4a85104e8e49c9d3">vertexLights_</a></td></tr>
 <tr class="memdesc:a7effc9e891517efb4a85104e8e49c9d3 inherit pro_attribs_class_urho3_d_1_1_drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-vertex lights affecting this drawable. <br/></td></tr>
 <tr class="separator:a7effc9e891517efb4a85104e8e49c9d3 inherit pro_attribs_class_urho3_d_1_1_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
+<tr class="memitem:a1e35dfd6ec760ebafd81fabcec2ad86b inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e35dfd6ec760ebafd81fabcec2ad86b"></a>
+<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a1e35dfd6ec760ebafd81fabcec2ad86b">node_</a></td></tr>
+<tr class="memdesc:a1e35dfd6ec760ebafd81fabcec2ad86b inherit pro_attribs_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene.">Scene</a> node. <br/></td></tr>
+<tr class="separator:a1e35dfd6ec760ebafd81fabcec2ad86b inherit pro_attribs_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6192723cff1edc0cc7a96902e35f701 inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6192723cff1edc0cc7a96902e35f701"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ad6192723cff1edc0cc7a96902e35f701">id_</a></td></tr>
+<tr class="memdesc:ad6192723cff1edc0cc7a96902e35f701 inherit pro_attribs_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID within the scene. <br/></td></tr>
+<tr class="separator:ad6192723cff1edc0cc7a96902e35f701 inherit pro_attribs_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47628d705616dd6b54ec22defd638265 inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47628d705616dd6b54ec22defd638265"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a47628d705616dd6b54ec22defd638265">networkUpdate_</a></td></tr>
+<tr class="memdesc:a47628d705616dd6b54ec22defd638265 inherit pro_attribs_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_network.html" title="Network subsystem. Manages client-server communications using the UDP protocol.">Network</a> update queued flag. <br/></td></tr>
+<tr class="separator:a47628d705616dd6b54ec22defd638265 inherit pro_attribs_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52f352027bee0fa8d538591364b554a inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae52f352027bee0fa8d538591364b554a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ae52f352027bee0fa8d538591364b554a">enabled_</a></td></tr>
+<tr class="memdesc:ae52f352027bee0fa8d538591364b554a inherit pro_attribs_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabled flag. <br/></td></tr>
+<tr class="separator:ae52f352027bee0fa8d538591364b554a inherit pro_attribs_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
+<tr class="memitem:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0bcd5941cf1a915f9379bb0b1a28fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a6c0bcd5941cf1a915f9379bb0b1a28fa">animationEnabled_</a></td></tr>
+<tr class="memdesc:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a> enabled. <br/></td></tr>
+<tr class="separator:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd68e049302374d4e1031bb4f1d92bda"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#abd68e049302374d4e1031bb4f1d92bda">objectAnimation_</a></td></tr>
+<tr class="memdesc:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a>. <br/></td></tr>
+<tr class="separator:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38659a2b55a20d17cb0b086e6152a630"></a>
+<a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a38659a2b55a20d17cb0b086e6152a630">animatedNetworkAttributes_</a></td></tr>
+<tr class="memdesc:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animated network attribute set. <br/></td></tr>
+<tr class="separator:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e85bc4f9402746604ad2a63d58c0cc7"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a>, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_attribute_animation_info.html">AttributeAnimationInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a7e85bc4f9402746604ad2a63d58c0cc7">attributeAnimationInfos_</a></td></tr>
+<tr class="memdesc:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute animation infos. <br/></td></tr>
+<tr class="separator:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_serializable.html">Urho3D::Serializable</a></td></tr>
+<tr class="memitem:ac13d006e602441468e056a30e70dbb6d inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13d006e602441468e056a30e70dbb6d"></a>
+<a class="el" href="struct_urho3_d_1_1_network_state.html">NetworkState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#ac13d006e602441468e056a30e70dbb6d">networkState_</a></td></tr>
+<tr class="memdesc:ac13d006e602441468e056a30e70dbb6d inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_network.html" title="Network subsystem. Manages client-server communications using the UDP protocol.">Network</a> attribute state. <br/></td></tr>
+<tr class="separator:ac13d006e602441468e056a30e70dbb6d inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
+<tr class="memitem:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7df857ddaa8c3e218c3645152dc23d"></a>
+<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a3a7df857ddaa8c3e218c3645152dc23d">context_</a></td></tr>
+<tr class="memdesc:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution context. <br/></td></tr>
+<tr class="separator:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab7177f5465a77452b1cbc8363d28d8ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7177f5465a77452b1cbc8363d28d8ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_text3_d.html">Text3D</a>, <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a>)</td></tr>
+<tr class="separator:ab7177f5465a77452b1cbc8363d28d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>3D text component. </p>
