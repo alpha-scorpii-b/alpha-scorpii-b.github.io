@@ -56,9 +56,9 @@ Collaboration diagram for Urho3D::Renderer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a91286ffa80da901abf85d0dff9c81799"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91286ffa80da901abf85d0dff9c81799"></a>
-typedef void(Object::*&#160;</td><td class="memItemRight" valign="bottom"><b>ShadowMapFilter</b> )(<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap)</td></tr>
-<tr class="separator:a91286ffa80da901abf85d0dff9c81799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a21b13dd0f9ec9dc7fbb3370d1daba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9a21b13dd0f9ec9dc7fbb3370d1daba"></a>
+typedef void(Object::*&#160;</td><td class="memItemRight" valign="bottom"><b>ShadowMapFilter</b> )(<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap, float blurScale)</td></tr>
+<tr class="separator:ac9a21b13dd0f9ec9dc7fbb3370d1daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -190,10 +190,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a97029f9ce4cb7b52240e97cc5b7f2861">ReloadShaders</a> ()</td></tr>
 <tr class="memdesc:a97029f9ce4cb7b52240e97cc5b7f2861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force reload of shaders. <br/></td></tr>
 <tr class="separator:a97029f9ce4cb7b52240e97cc5b7f2861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc35a7732f13a3e65bc0b1369011d7cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc35a7732f13a3e65bc0b1369011d7cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#acc35a7732f13a3e65bc0b1369011d7cb">ApplyShadowMapFilter</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap)</td></tr>
-<tr class="memdesc:acc35a7732f13a3e65bc0b1369011d7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply post processing filter to the shadow map. Called by <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport...">View</a>. <br/></td></tr>
-<tr class="separator:acc35a7732f13a3e65bc0b1369011d7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eee11f59a5dd3c7e958209ea616a317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8eee11f59a5dd3c7e958209ea616a317"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a8eee11f59a5dd3c7e958209ea616a317">ApplyShadowMapFilter</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap, float blurScale)</td></tr>
+<tr class="memdesc:a8eee11f59a5dd3c7e958209ea616a317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply post processing filter to the shadow map. Called by <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport...">View</a>. <br/></td></tr>
+<tr class="separator:a8eee11f59a5dd3c7e958209ea616a317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244fce2ef8fd7d672400f2d7de603798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a244fce2ef8fd7d672400f2d7de603798"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a244fce2ef8fd7d672400f2d7de603798">GetNumViewports</a> () const </td></tr>
 <tr class="memdesc:a244fce2ef8fd7d672400f2d7de603798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of backbuffer viewports. <br/></td></tr>
@@ -709,10 +709,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#adf594e7a524f6e003e8370cf23dbee13">HandleRenderUpdate</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:adf594e7a524f6e003e8370cf23dbee13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle render update event. <br/></td></tr>
 <tr class="separator:adf594e7a524f6e003e8370cf23dbee13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876ea7e59bc255f16d5b6e5734c7d947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a876ea7e59bc255f16d5b6e5734c7d947"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a876ea7e59bc255f16d5b6e5734c7d947">BlurShadowMap</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap)</td></tr>
-<tr class="memdesc:a876ea7e59bc255f16d5b6e5734c7d947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blur the shadow map. <br/></td></tr>
-<tr class="separator:a876ea7e59bc255f16d5b6e5734c7d947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e44255580c9a9665ae72d4a4f77c705"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e44255580c9a9665ae72d4a4f77c705"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a4e44255580c9a9665ae72d4a4f77c705">BlurShadowMap</a> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap, float blurScale)</td></tr>
+<tr class="memdesc:a4e44255580c9a9665ae72d4a4f77c705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blur the shadow map. <br/></td></tr>
+<tr class="separator:a4e44255580c9a9665ae72d4a4f77c705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
