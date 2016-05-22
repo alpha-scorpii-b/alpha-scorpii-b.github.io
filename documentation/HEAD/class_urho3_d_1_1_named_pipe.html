@@ -21,7 +21,7 @@ group: HEAD
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>Urho3D</b></li><li class="navelem"><a class="el" href="class_urho3_d_1_1_file.html">File</a></li>  </ul>
+<li class="navelem"><b>Urho3D</b></li><li class="navelem"><a class="el" href="class_urho3_d_1_1_named_pipe.html">NamedPipe</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -29,102 +29,79 @@ group: HEAD
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="class_urho3_d_1_1_file-members.html">List of all members</a>  </div>
+<a href="class_urho3_d_1_1_named_pipe-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Urho3D::File Class Reference</div>  </div>
+<div class="title">Urho3D::NamedPipe Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>File opened either through the filesystem or from within a package file.  
- <a href="class_urho3_d_1_1_file.html#details">More...</a></p>
+<p>Named pipe for interprocess communication.  
+ <a href="class_urho3_d_1_1_named_pipe.html#details">More...</a></p>
 
-<p><code>#include &lt;File.h&gt;</code></p>
+<p><code>#include &lt;NamedPipe.h&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Urho3D::File:</div>
+Inheritance diagram for Urho3D::NamedPipe:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_file__inherit__graph.svg" width="488" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_named_pipe__inherit__graph.svg" width="488" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Urho3D::File:</div>
+Collaboration diagram for Urho3D::NamedPipe:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_file__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_named_pipe__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace614fb36bc687df831b1bbba1418d88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace614fb36bc687df831b1bbba1418d88"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ace614fb36bc687df831b1bbba1418d88">File</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
-<tr class="memdesc:ace614fb36bc687df831b1bbba1418d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
-<tr class="separator:ace614fb36bc687df831b1bbba1418d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f92405e5cbe18a29cbc2ae9f8a998f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14f92405e5cbe18a29cbc2ae9f8a998f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a14f92405e5cbe18a29cbc2ae9f8a998f">File</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName, FileMode mode=FILE_READ)</td></tr>
-<tr class="memdesc:a14f92405e5cbe18a29cbc2ae9f8a998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and open a filesystem file. <br/></td></tr>
-<tr class="separator:a14f92405e5cbe18a29cbc2ae9f8a998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe88c1d78f62b917e821eb93c8a7ad64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe88c1d78f62b917e821eb93c8a7ad64"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#afe88c1d78f62b917e821eb93c8a7ad64">File</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context, <a class="el" href="class_urho3_d_1_1_package_file.html">PackageFile</a> *package, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName)</td></tr>
-<tr class="memdesc:afe88c1d78f62b917e821eb93c8a7ad64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and open from a package file. <br/></td></tr>
-<tr class="separator:afe88c1d78f62b917e821eb93c8a7ad64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9de77bd1290d45385644e5d63d6a39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a9de77bd1290d45385644e5d63d6a39"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a0a9de77bd1290d45385644e5d63d6a39">~File</a> ()</td></tr>
-<tr class="memdesc:a0a9de77bd1290d45385644e5d63d6a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Close the file if open. <br/></td></tr>
-<tr class="separator:a0a9de77bd1290d45385644e5d63d6a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9ad6d7a55a6f03848f3bb77b8e6890c"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ac9ad6d7a55a6f03848f3bb77b8e6890c">Read</a> (void *dest, unsigned size)</td></tr>
-<tr class="memdesc:ac9ad6d7a55a6f03848f3bb77b8e6890c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from the file. Return number of bytes actually read.  <a href="#ac9ad6d7a55a6f03848f3bb77b8e6890c">More...</a><br/></td></tr>
-<tr class="separator:ac9ad6d7a55a6f03848f3bb77b8e6890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e6334a36cb7ad8e4677513f8085cf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76e6334a36cb7ad8e4677513f8085cf9"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a76e6334a36cb7ad8e4677513f8085cf9">Seek</a> (unsigned position)</td></tr>
-<tr class="memdesc:a76e6334a36cb7ad8e4677513f8085cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the file. <br/></td></tr>
-<tr class="separator:a76e6334a36cb7ad8e4677513f8085cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0755c7cbebaa3de7504d5b2770fc5370"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0755c7cbebaa3de7504d5b2770fc5370"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a0755c7cbebaa3de7504d5b2770fc5370">Write</a> (const void *data, unsigned size)</td></tr>
-<tr class="memdesc:a0755c7cbebaa3de7504d5b2770fc5370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to the file. Return number of bytes actually written. <br/></td></tr>
-<tr class="separator:a0755c7cbebaa3de7504d5b2770fc5370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978a7d787f3d4946ef28a7d54c1adf4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a978a7d787f3d4946ef28a7d54c1adf4c"></a>
-virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a978a7d787f3d4946ef28a7d54c1adf4c">GetName</a> () const </td></tr>
-<tr class="memdesc:a978a7d787f3d4946ef28a7d54c1adf4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file name. <br/></td></tr>
-<tr class="separator:a978a7d787f3d4946ef28a7d54c1adf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab109773be7ff91556341733123ca3be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab109773be7ff91556341733123ca3be"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#aab109773be7ff91556341733123ca3be">GetChecksum</a> ()</td></tr>
-<tr class="memdesc:aab109773be7ff91556341733123ca3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a checksum of the file contents using the SDBM hash algorithm. <br/></td></tr>
-<tr class="separator:aab109773be7ff91556341733123ca3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac541c06977cdebc925147603f7793689"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac541c06977cdebc925147603f7793689"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ac541c06977cdebc925147603f7793689">Open</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName, FileMode mode=FILE_READ)</td></tr>
-<tr class="memdesc:ac541c06977cdebc925147603f7793689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a filesystem file. Return true if successful. <br/></td></tr>
-<tr class="separator:ac541c06977cdebc925147603f7793689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602e0ef54455f993d4b78fc26c643df8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a602e0ef54455f993d4b78fc26c643df8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a602e0ef54455f993d4b78fc26c643df8">Open</a> (<a class="el" href="class_urho3_d_1_1_package_file.html">PackageFile</a> *package, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName)</td></tr>
-<tr class="memdesc:a602e0ef54455f993d4b78fc26c643df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open from within a package file. Return true if successful. <br/></td></tr>
-<tr class="separator:a602e0ef54455f993d4b78fc26c643df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf2a6360ca11626bc39f35b2da97a7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcf2a6360ca11626bc39f35b2da97a7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#adcf2a6360ca11626bc39f35b2da97a7c">Close</a> ()</td></tr>
-<tr class="memdesc:adcf2a6360ca11626bc39f35b2da97a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file. <br/></td></tr>
-<tr class="separator:adcf2a6360ca11626bc39f35b2da97a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9c394a1143b70f11ee6c2ce8345c9d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9c394a1143b70f11ee6c2ce8345c9d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ae9c394a1143b70f11ee6c2ce8345c9d0">Flush</a> ()</td></tr>
-<tr class="memdesc:ae9c394a1143b70f11ee6c2ce8345c9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush any buffered output to the file. <br/></td></tr>
-<tr class="separator:ae9c394a1143b70f11ee6c2ce8345c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dec986a16de170636be9fa938cd2c84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dec986a16de170636be9fa938cd2c84"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a0dec986a16de170636be9fa938cd2c84">SetName</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
-<tr class="memdesc:a0dec986a16de170636be9fa938cd2c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the file name. Used by the resource system. <br/></td></tr>
-<tr class="separator:a0dec986a16de170636be9fa938cd2c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59fa624d94fd9c3906a9e7c039c0bbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac59fa624d94fd9c3906a9e7c039c0bbf"></a>
-FileMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ac59fa624d94fd9c3906a9e7c039c0bbf">GetMode</a> () const </td></tr>
-<tr class="memdesc:ac59fa624d94fd9c3906a9e7c039c0bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the open mode. <br/></td></tr>
-<tr class="separator:ac59fa624d94fd9c3906a9e7c039c0bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37060188eea1011ad41143101e00d970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37060188eea1011ad41143101e00d970"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a37060188eea1011ad41143101e00d970">IsOpen</a> () const </td></tr>
-<tr class="memdesc:a37060188eea1011ad41143101e00d970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is open. <br/></td></tr>
-<tr class="separator:a37060188eea1011ad41143101e00d970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6993bb5bc766d9d5a092539802eb4f07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6993bb5bc766d9d5a092539802eb4f07"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a6993bb5bc766d9d5a092539802eb4f07">GetHandle</a> () const </td></tr>
-<tr class="memdesc:a6993bb5bc766d9d5a092539802eb4f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file handle. <br/></td></tr>
-<tr class="separator:a6993bb5bc766d9d5a092539802eb4f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae048001bf2738ceb73e842d75926fe8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae048001bf2738ceb73e842d75926fe8b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ae048001bf2738ceb73e842d75926fe8b">IsPackaged</a> () const </td></tr>
-<tr class="memdesc:ae048001bf2738ceb73e842d75926fe8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the file originates from a package. <br/></td></tr>
-<tr class="separator:ae048001bf2738ceb73e842d75926fe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07f34ad6c71a60c6bd4f19d22243d69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac07f34ad6c71a60c6bd4f19d22243d69"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#ac07f34ad6c71a60c6bd4f19d22243d69">NamedPipe</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memdesc:ac07f34ad6c71a60c6bd4f19d22243d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
+<tr class="separator:ac07f34ad6c71a60c6bd4f19d22243d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6f129a4111dd6fac2a0f239dafb207"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6f129a4111dd6fac2a0f239dafb207"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a0e6f129a4111dd6fac2a0f239dafb207">NamedPipe</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;pipeName, bool isServer)</td></tr>
+<tr class="memdesc:a0e6f129a4111dd6fac2a0f239dafb207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and open in either server or client mode. <br/></td></tr>
+<tr class="separator:a0e6f129a4111dd6fac2a0f239dafb207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3159a8779f07b4afb17ff47a4e8a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e3159a8779f07b4afb17ff47a4e8a10"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a5e3159a8779f07b4afb17ff47a4e8a10">~NamedPipe</a> ()</td></tr>
+<tr class="memdesc:a5e3159a8779f07b4afb17ff47a4e8a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct and close. <br/></td></tr>
+<tr class="separator:a5e3159a8779f07b4afb17ff47a4e8a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a33559843d2ae9af697b1545ed7f10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2a33559843d2ae9af697b1545ed7f10"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#ab2a33559843d2ae9af697b1545ed7f10">Read</a> (void *dest, unsigned size)</td></tr>
+<tr class="memdesc:ab2a33559843d2ae9af697b1545ed7f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from the pipe without blocking if there is less data available. Return number of bytes actually read. <br/></td></tr>
+<tr class="separator:ab2a33559843d2ae9af697b1545ed7f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b173837c044f3f17de28ea4e91e2bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b173837c044f3f17de28ea4e91e2bc5"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a1b173837c044f3f17de28ea4e91e2bc5">Seek</a> (unsigned position)</td></tr>
+<tr class="memdesc:a1b173837c044f3f17de28ea4e91e2bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position. No-op for pipes. <br/></td></tr>
+<tr class="separator:a1b173837c044f3f17de28ea4e91e2bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd7870f6495924333310553e3273fbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bd7870f6495924333310553e3273fbd"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a0bd7870f6495924333310553e3273fbd">Write</a> (const void *data, unsigned size)</td></tr>
+<tr class="memdesc:a0bd7870f6495924333310553e3273fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to the pipe. Return number of bytes actually written. <br/></td></tr>
+<tr class="separator:a0bd7870f6495924333310553e3273fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af707f104db9deb7d62c99b214b036b19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af707f104db9deb7d62c99b214b036b19"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#af707f104db9deb7d62c99b214b036b19">IsEof</a> () const </td></tr>
+<tr class="memdesc:af707f104db9deb7d62c99b214b036b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether pipe has no data available. <br/></td></tr>
+<tr class="separator:af707f104db9deb7d62c99b214b036b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9681f82b260f78b953400db9c4496a9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9681f82b260f78b953400db9c4496a9f"></a>
+virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a9681f82b260f78b953400db9c4496a9f">GetName</a> () const </td></tr>
+<tr class="memdesc:a9681f82b260f78b953400db9c4496a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pipe name. <br/></td></tr>
+<tr class="separator:a9681f82b260f78b953400db9c4496a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8263fec1dc8b7eb7fcfa2142d9718083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8263fec1dc8b7eb7fcfa2142d9718083"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a8263fec1dc8b7eb7fcfa2142d9718083">Open</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;pipeName, bool isServer)</td></tr>
+<tr class="memdesc:a8263fec1dc8b7eb7fcfa2142d9718083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the pipe in either server or client mode. If already open, the existing pipe is closed. For a client end to open successfully the server end must already to be open. Return true if successful. <br/></td></tr>
+<tr class="separator:a8263fec1dc8b7eb7fcfa2142d9718083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af520ec1c45c06b29856228d3a030778f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af520ec1c45c06b29856228d3a030778f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#af520ec1c45c06b29856228d3a030778f">Close</a> ()</td></tr>
+<tr class="memdesc:af520ec1c45c06b29856228d3a030778f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the pipe. Note that once a client has disconnected, the server needs to close and reopen the pipe so that another client can connect. At least on Windows this is not possible to detect automatically, so the communication protocol should include a "bye" message to handle this situation. <br/></td></tr>
+<tr class="separator:af520ec1c45c06b29856228d3a030778f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb74d31a478193646724c431105c59bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb74d31a478193646724c431105c59bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#abb74d31a478193646724c431105c59bd">IsOpen</a> () const </td></tr>
+<tr class="memdesc:abb74d31a478193646724c431105c59bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is open. <br/></td></tr>
+<tr class="separator:abb74d31a478193646724c431105c59bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace16dde48872bd3d30823ae3d499b101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace16dde48872bd3d30823ae3d499b101"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#ace16dde48872bd3d30823ae3d499b101">IsServer</a> () const </td></tr>
+<tr class="memdesc:ace16dde48872bd3d30823ae3d499b101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is in server mode. <br/></td></tr>
+<tr class="separator:ace16dde48872bd3d30823ae3d499b101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95a6cd1c5c12a458fda4b38f873a334d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a95a6cd1c5c12a458fda4b38f873a334d">Object</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -293,10 +270,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a4f77ce0ce6c56ad7eeb494ff943a8d03">~Deserializer</a> ()</td></tr>
 <tr class="memdesc:a4f77ce0ce6c56ad7eeb494ff943a8d03 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a4f77ce0ce6c56ad7eeb494ff943a8d03 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08651dae845ec5a8211f8a479f31ac6e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08651dae845ec5a8211f8a479f31ac6e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a08651dae845ec5a8211f8a479f31ac6e">IsEof</a> () const </td></tr>
-<tr class="memdesc:a08651dae845ec5a8211f8a479f31ac6e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the end of stream has been reached. <br/></td></tr>
-<tr class="separator:a08651dae845ec5a8211f8a479f31ac6e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34bb25ff9cde90db1e0614b078a2eaae"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae">GetChecksum</a> ()</td></tr>
+<tr class="memdesc:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a checksum if applicable. <br/></td></tr>
+<tr class="separator:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b957f6cddecb559123fcba0afeb89e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b957f6cddecb559123fcba0afeb89e"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a24b957f6cddecb559123fcba0afeb89e">GetPosition</a> () const </td></tr>
 <tr class="memdesc:a24b957f6cddecb559123fcba0afeb89e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br/></td></tr>
@@ -609,60 +586,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a68d1c9c775e1ff02358de20091f759ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68d1c9c775e1ff02358de20091f759ab"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_file.html">File</a>, <a class="el" href="class_urho3_d_1_1_object.html">Object</a>)</td></tr>
-<tr class="separator:a68d1c9c775e1ff02358de20091f759ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32fbd3f457248a8d63026ffa03b8109"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae32fbd3f457248a8d63026ffa03b8109"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_named_pipe.html">NamedPipe</a>, <a class="el" href="class_urho3_d_1_1_object.html">Object</a>)</td></tr>
+<tr class="separator:ae32fbd3f457248a8d63026ffa03b8109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a530b805309dc66574add463ac40e83a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a530b805309dc66574add463ac40e83a1"></a>
-<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a530b805309dc66574add463ac40e83a1">fileName_</a></td></tr>
-<tr class="memdesc:a530b805309dc66574add463ac40e83a1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a> name. <br/></td></tr>
-<tr class="separator:a530b805309dc66574add463ac40e83a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a49ec5f446393372091c828ebffaf8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a49ec5f446393372091c828ebffaf8f"></a>
-FileMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a4a49ec5f446393372091c828ebffaf8f">mode_</a></td></tr>
-<tr class="memdesc:a4a49ec5f446393372091c828ebffaf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open mode. <br/></td></tr>
-<tr class="separator:a4a49ec5f446393372091c828ebffaf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1891fec8e174772ae50e671ba9e03a55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1891fec8e174772ae50e671ba9e03a55"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a1891fec8e174772ae50e671ba9e03a55">handle_</a></td></tr>
-<tr class="memdesc:a1891fec8e174772ae50e671ba9e03a55"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a> handle. <br/></td></tr>
-<tr class="separator:a1891fec8e174772ae50e671ba9e03a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302794bfecba4644c68c1b4b7f4cb2cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a302794bfecba4644c68c1b4b7f4cb2cf"></a>
-<a class="el" href="class_urho3_d_1_1_shared_array_ptr.html">SharedArrayPtr</a>&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a302794bfecba4644c68c1b4b7f4cb2cf">readBuffer_</a></td></tr>
-<tr class="memdesc:a302794bfecba4644c68c1b4b7f4cb2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read buffer for Android asset or compressed file loading. <br/></td></tr>
-<tr class="separator:a302794bfecba4644c68c1b4b7f4cb2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171e53b21e1219eaab4bb7834fa2a4d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a171e53b21e1219eaab4bb7834fa2a4d3"></a>
-<a class="el" href="class_urho3_d_1_1_shared_array_ptr.html">SharedArrayPtr</a>&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a171e53b21e1219eaab4bb7834fa2a4d3">inputBuffer_</a></td></tr>
-<tr class="memdesc:a171e53b21e1219eaab4bb7834fa2a4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompression input buffer for compressed file loading. <br/></td></tr>
-<tr class="separator:a171e53b21e1219eaab4bb7834fa2a4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af616a00da1b771e5ed1ffb81b5bb19aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af616a00da1b771e5ed1ffb81b5bb19aa"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#af616a00da1b771e5ed1ffb81b5bb19aa">readBufferOffset_</a></td></tr>
-<tr class="memdesc:af616a00da1b771e5ed1ffb81b5bb19aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read buffer position. <br/></td></tr>
-<tr class="separator:af616a00da1b771e5ed1ffb81b5bb19aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade03e8fbf851117e43f00c3114b55cae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade03e8fbf851117e43f00c3114b55cae"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ade03e8fbf851117e43f00c3114b55cae">readBufferSize_</a></td></tr>
-<tr class="memdesc:ade03e8fbf851117e43f00c3114b55cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes in the current read buffer. <br/></td></tr>
-<tr class="separator:ade03e8fbf851117e43f00c3114b55cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a1a76948f14a10866320e29a24d046"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34a1a76948f14a10866320e29a24d046"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a34a1a76948f14a10866320e29a24d046">offset_</a></td></tr>
-<tr class="memdesc:a34a1a76948f14a10866320e29a24d046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start position within a package file, 0 for regular files. <br/></td></tr>
-<tr class="separator:a34a1a76948f14a10866320e29a24d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa283e41f982c8ccb00ed757345a81453"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa283e41f982c8ccb00ed757345a81453"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#aa283e41f982c8ccb00ed757345a81453">checksum_</a></td></tr>
-<tr class="memdesc:aa283e41f982c8ccb00ed757345a81453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content checksum. <br/></td></tr>
-<tr class="separator:aa283e41f982c8ccb00ed757345a81453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34e5dfaf2dfe6cd7c304b1a981f92f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad34e5dfaf2dfe6cd7c304b1a981f92f0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ad34e5dfaf2dfe6cd7c304b1a981f92f0">compressed_</a></td></tr>
-<tr class="memdesc:ad34e5dfaf2dfe6cd7c304b1a981f92f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compression flag. <br/></td></tr>
-<tr class="separator:ad34e5dfaf2dfe6cd7c304b1a981f92f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5184eceb8be643c3505509b9cfa6d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5184eceb8be643c3505509b9cfa6d4b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#ad5184eceb8be643c3505509b9cfa6d4b">readSyncNeeded_</a></td></tr>
-<tr class="memdesc:ad5184eceb8be643c3505509b9cfa6d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronization needed before read -flag. <br/></td></tr>
-<tr class="separator:ad5184eceb8be643c3505509b9cfa6d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac255879e4ea901c77c9255a81e8755"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ac255879e4ea901c77c9255a81e8755"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_file.html#a2ac255879e4ea901c77c9255a81e8755">writeSyncNeeded_</a></td></tr>
-<tr class="memdesc:a2ac255879e4ea901c77c9255a81e8755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronization needed before write -flag. <br/></td></tr>
-<tr class="separator:a2ac255879e4ea901c77c9255a81e8755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563b76adfec37219c15c6e36cf288df3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a563b76adfec37219c15c6e36cf288df3"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a563b76adfec37219c15c6e36cf288df3">pipeName_</a></td></tr>
+<tr class="memdesc:a563b76adfec37219c15c6e36cf288df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipe name. <br/></td></tr>
+<tr class="separator:a563b76adfec37219c15c6e36cf288df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336f90eda53afda980cc4254fa7d4338"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a336f90eda53afda980cc4254fa7d4338"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a336f90eda53afda980cc4254fa7d4338">isServer_</a></td></tr>
+<tr class="memdesc:a336f90eda53afda980cc4254fa7d4338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server mode flag. <br/></td></tr>
+<tr class="separator:a336f90eda53afda980cc4254fa7d4338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a1a098b8987fcb0668dc6452a89ef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0a1a098b8987fcb0668dc6452a89ef1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#ac0a1a098b8987fcb0668dc6452a89ef1">readHandle_</a></td></tr>
+<tr class="memdesc:ac0a1a098b8987fcb0668dc6452a89ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipe handle. <br/></td></tr>
+<tr class="separator:ac0a1a098b8987fcb0668dc6452a89ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423e9d38eeedb016b845f92f6327cd19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a423e9d38eeedb016b845f92f6327cd19"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>writeHandle_</b></td></tr>
+<tr class="separator:a423e9d38eeedb016b845f92f6327cd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -700,65 +644,9 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:a9d781873581e4227b44778d4d157405b inherit pro_attribs_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>File opened either through the filesystem or from within a package file. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9ad6d7a55a6f03848f3bb77b8e6890c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned Urho3D::File::Read </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read bytes from the file. Return number of bytes actually read. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Handle errors </dd></dl>
-
-<p>Implements <a class="el" href="class_urho3_d_1_1_deserializer.html#ae82036f72896194adc1cd02f3b03509b">Urho3D::Deserializer</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_file_ac9ad6d7a55a6f03848f3bb77b8e6890c_cgraph.svg" width="608" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_file_ac9ad6d7a55a6f03848f3bb77b8e6890c_icgraph.svg" width="582" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/IO/File.h</li>
-<li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/IO/File.cpp</li>
+<div class="textblock"><p>Named pipe for interprocess communication. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/IO/NamedPipe.h</li>
+<li>/home/travis/build/urho3d/Urho3D/Source/Urho3D/IO/NamedPipe.cpp</li>
 </ul>
 </div><!-- contents -->

@@ -73,6 +73,10 @@ virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a13d60f4d590e5f542fe75a74bb87137b">Seek</a> (unsigned position)</td></tr>
 <tr class="memdesc:a13d60f4d590e5f542fe75a74bb87137b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the stream. Not supported. <br/></td></tr>
 <tr class="separator:a13d60f4d590e5f542fe75a74bb87137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bbfec563c705bb577f4ae4ddbbf8f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bbfec563c705bb577f4ae4ddbbf8f56"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a8bbfec563c705bb577f4ae4ddbbf8f56">IsEof</a> () const </td></tr>
+<tr class="memdesc:a8bbfec563c705bb577f4ae4ddbbf8f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether all response data has been read. <br/></td></tr>
+<tr class="separator:a8bbfec563c705bb577f4ae4ddbbf8f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5383bfa517976389c03d0e48178c3f37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5383bfa517976389c03d0e48178c3f37"></a>
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a5383bfa517976389c03d0e48178c3f37">GetURL</a> () const </td></tr>
 <tr class="memdesc:a5383bfa517976389c03d0e48178c3f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return URL used in the request. <br/></td></tr>
@@ -155,10 +159,6 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ae086a6bf43e795a73ca26e03c4f8db6d">GetSize</a> () const </td></tr>
 <tr class="memdesc:ae086a6bf43e795a73ca26e03c4f8db6d inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br/></td></tr>
 <tr class="separator:ae086a6bf43e795a73ca26e03c4f8db6d inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa3fd03312e90fa1c2a98699af06cd4 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfa3fd03312e90fa1c2a98699af06cd4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#acfa3fd03312e90fa1c2a98699af06cd4">IsEof</a> () const </td></tr>
-<tr class="memdesc:acfa3fd03312e90fa1c2a98699af06cd4 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the end of stream has been reached. <br/></td></tr>
-<tr class="separator:acfa3fd03312e90fa1c2a98699af06cd4 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac237484f24d551dd8ccd812b181b500b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac237484f24d551dd8ccd812b181b500b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ac237484f24d551dd8ccd812b181b500b">ReadInt</a> ()</td></tr>
 <tr class="memdesc:ac237484f24d551dd8ccd812b181b500b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a 32-bit integer. <br/></td></tr>
@@ -335,10 +335,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a5fe5d05f66102957f628da25a2842547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fe5d05f66102957f628da25a2842547"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a5fe5d05f66102957f628da25a2842547">CheckEofAndAvailableSize</a> ()</td></tr>
-<tr class="memdesc:a5fe5d05f66102957f628da25a2842547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for end of the data stream and return available size in buffer. Must only be called when the mutex is held by the main thread. <br/></td></tr>
-<tr class="separator:a5fe5d05f66102957f628da25a2842547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858464047e49526904335e194a73e450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a858464047e49526904335e194a73e450"></a>
+<a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; unsigned, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a858464047e49526904335e194a73e450">CheckAvailableSizeAndEof</a> () const </td></tr>
+<tr class="memdesc:a858464047e49526904335e194a73e450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for available read data in buffer and whether end has been reached. Must only be called when the mutex is held by the main thread. <br/></td></tr>
+<tr class="separator:a858464047e49526904335e194a73e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
