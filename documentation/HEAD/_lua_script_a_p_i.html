@@ -2331,7 +2331,7 @@ Classes</h2>
 <p><a class="anchor" id="Class_HierarchyContainer"></a> </p>
 <h4>HierarchyContainer : <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a></h4>
 <p><a class="anchor" id="Class_HttpRequest"></a> </p>
-<h4><a class="el" href="class_urho3_d_1_1_http_request.html" title="An HTTP connection with response data stream.">HttpRequest</a> : <a class="el" href="class_urho3_d_1_1_deserializer.html" title="Abstract stream for reading.">Deserializer</a></h4>
+<h4><a class="el" href="class_urho3_d_1_1_http_request.html" title="An HTTP connection with response data stream.">HttpRequest</a></h4>
 <p>Methods:</p>
 <ul>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetURL() const</li>
@@ -2340,6 +2340,44 @@ Classes</h2>
 <li>HttpRequestState GetState() const</li>
 <li>unsigned GetAvailableSize() const</li>
 <li>bool IsOpen() const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a> Read(unsigned size)</li>
+<li>bool IsEof() const</li>
+<li>int ReadInt()</li>
+<li>short ReadShort()</li>
+<li>char ReadByte()</li>
+<li>unsigned ReadUInt()</li>
+<li>short ReadUShort()</li>
+<li>char ReadUByte()</li>
+<li>bool ReadBool()</li>
+<li>float ReadFloat()</li>
+<li>double ReadDouble()</li>
+<li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ReadIntRect()</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ReadIntVector2()</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> ReadRect()</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> ReadVector2()</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> ReadVector3()</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> ReadPackedVector3(float maxAbsCoord)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> ReadVector4()</li>
+<li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> ReadQuaternion()</li>
+<li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> ReadPackedQuaternion()</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix3.html" title="3x3 matrix for rotation and scaling.">Matrix3</a> ReadMatrix3()</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a> ReadMatrix3x4()</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> ReadMatrix4()</li>
+<li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ReadColor()</li>
+<li><a class="el" href="class_urho3_d_1_1_bounding_box.html" title="Three-dimensional axis-aligned bounding box.">BoundingBox</a> ReadBoundingBox()</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReadString()</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReadFileID()</li>
+<li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> ReadStringHash()</li>
+<li><a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a> ReadBuffer()</li>
+<li><a class="el" href="struct_urho3_d_1_1_resource_ref.html" title="Typed resource reference.">ResourceRef</a> ReadResourceRef()</li>
+<li><a class="el" href="struct_urho3_d_1_1_resource_ref_list.html" title="List of typed resource references.">ResourceRefList</a> ReadResourceRefList()</li>
+<li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ReadVariant()</li>
+<li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> ReadVariant(VariantType type)</li>
+<li>VariantVector ReadVariantVector()</li>
+<li>VariantMap ReadVariantMap()</li>
+<li>unsigned ReadVLE()</li>
+<li>unsigned ReadNetID()</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReadLine()</li>
 </ul>
 <p>Properties:</p>
 <ul>
