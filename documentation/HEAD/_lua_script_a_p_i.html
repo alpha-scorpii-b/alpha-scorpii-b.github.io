@@ -381,7 +381,6 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> color</li>
 <li>float rotation</li>
 <li>bool enabled</li>
-<li>float sortDistance</li>
 </ul>
 <p><a class="anchor" id="Class_BillboardSet"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_billboard_set.html" title="Billboard component.">BillboardSet</a> : <a class="el" href="class_urho3_d_1_1_drawable.html" title="Base class for visible components.">Drawable</a></h4>
@@ -392,6 +391,7 @@ Classes</h2>
 <li>void SetRelative(bool enable)</li>
 <li>void SetScaled(bool enable)</li>
 <li>void SetSorted(bool enable)</li>
+<li>void SetFixedScreenSize(bool enable)</li>
 <li>void SetFaceCameraMode(FaceCameraMode mode)</li>
 <li>void SetAnimationLodBias(float bias)</li>
 <li>void Commit()</li>
@@ -401,6 +401,7 @@ Classes</h2>
 <li>bool IsRelative() const</li>
 <li>bool IsScaled() const</li>
 <li>bool IsSorted() const</li>
+<li>bool IsFixedScreenSize() const</li>
 <li>FaceCameraMode GetFaceCameraMode() const</li>
 <li>float GetAnimationLodBias() const</li>
 </ul>
@@ -411,6 +412,7 @@ Classes</h2>
 <li>bool relative</li>
 <li>bool scaled</li>
 <li>bool sorted</li>
+<li>bool fixedScreenSize</li>
 <li>FaceCameraMode faceCameraMode</li>
 <li>float animationLodBias</li>
 </ul>
@@ -3850,6 +3852,7 @@ Classes</h2>
 <li>void SetRelative(bool enable)</li>
 <li>void SetScaled(bool enable)</li>
 <li>void SetSorted(bool enable)</li>
+<li>void SetFixedScreenSize(bool enable)</li>
 <li>void SetAnimationLodBias(float lodBias)</li>
 <li>void SetEmitterType(EmitterType type)</li>
 <li>void SetEmitterSize(const Vector3&amp; size)</li>
@@ -3891,6 +3894,7 @@ Classes</h2>
 <li>bool IsRelative() const</li>
 <li>bool IsScaled() const</li>
 <li>bool IsSorted() const</li>
+<li>bool IsFixedScreenSize() const</li>
 <li>float GetAnimationLodBias() const</li>
 <li>EmitterType GetEmitterType() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; GetEmitterSize() const</li>
@@ -3927,6 +3931,7 @@ Classes</h2>
 <li>bool relative</li>
 <li>bool scaled</li>
 <li>bool sorted</li>
+<li>bool fixedScreenSize</li>
 <li>float animationLodBias</li>
 <li>EmitterType emitterType</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; emitterSize</li>

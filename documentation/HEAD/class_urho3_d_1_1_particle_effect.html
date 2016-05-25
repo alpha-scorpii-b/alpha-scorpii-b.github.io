@@ -97,16 +97,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a8acb74a9c0e94066a3787bdf4cc8835e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a2a51c494a4529f923579f60c77336"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a2a51c494a4529f923579f60c77336"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#ad8a2a51c494a4529f923579f60c77336">SetRelative</a> (bool enable)</td></tr>
-<tr class="memdesc:ad8a2a51c494a4529f923579f60c77336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether billboards are relative to the scene node. Default true. <br/></td></tr>
+<tr class="memdesc:ad8a2a51c494a4529f923579f60c77336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether billboards are relative to the scene node. <br/></td></tr>
 <tr class="separator:ad8a2a51c494a4529f923579f60c77336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d4deed97a94ab0722f47cd23b4af04c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d4deed97a94ab0722f47cd23b4af04c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a4d4deed97a94ab0722f47cd23b4af04c">SetScaled</a> (bool enable)</td></tr>
-<tr class="memdesc:a4d4deed97a94ab0722f47cd23b4af04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scaled. <br/></td></tr>
+<tr class="memdesc:a4d4deed97a94ab0722f47cd23b4af04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether scene node scale affects billboards' size. <br/></td></tr>
 <tr class="separator:a4d4deed97a94ab0722f47cd23b4af04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543c5756f39a8cdc2fdaffb95084a662"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a543c5756f39a8cdc2fdaffb95084a662"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a543c5756f39a8cdc2fdaffb95084a662">SetSorted</a> (bool enable)</td></tr>
-<tr class="memdesc:a543c5756f39a8cdc2fdaffb95084a662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sorted. <br/></td></tr>
+<tr class="memdesc:a543c5756f39a8cdc2fdaffb95084a662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether billboards are sorted by distance. <br/></td></tr>
 <tr class="separator:a543c5756f39a8cdc2fdaffb95084a662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a4c4d99879577bc11876836c82acb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34a4c4d99879577bc11876836c82acb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a34a4c4d99879577bc11876836c82acb2">SetFixedScreenSize</a> (bool enable)</td></tr>
+<tr class="memdesc:a34a4c4d99879577bc11876836c82acb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether billboards have fixed size on screen (measured in pixels) regardless of distance to camera. <br/></td></tr>
+<tr class="separator:a34a4c4d99879577bc11876836c82acb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e14884fabcdce65662c5a93dc8f01eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e14884fabcdce65662c5a93dc8f01eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a3e14884fabcdce65662c5a93dc8f01eb">SetAnimationLodBias</a> (float lodBias)</td></tr>
 <tr class="memdesc:a3e14884fabcdce65662c5a93dc8f01eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set animation LOD bias. <br/></td></tr>
@@ -283,6 +287,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a28f8636e5051746ff44d5f20b10061c4">IsSorted</a> () const </td></tr>
 <tr class="memdesc:a28f8636e5051746ff44d5f20b10061c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether billboards are sorted. <br/></td></tr>
 <tr class="separator:a28f8636e5051746ff44d5f20b10061c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a6f8ade0d5831ac5becfd4d288803e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3a6f8ade0d5831ac5becfd4d288803e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#ac3a6f8ade0d5831ac5becfd4d288803e">IsFixedScreenSize</a> () const </td></tr>
+<tr class="memdesc:ac3a6f8ade0d5831ac5becfd4d288803e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether billboards are fixed screen size. <br/></td></tr>
+<tr class="separator:ac3a6f8ade0d5831ac5becfd4d288803e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dc8b8fbfc024cedc3ba4cb705027e7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dc8b8fbfc024cedc3ba4cb705027e7c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a5dc8b8fbfc024cedc3ba4cb705027e7c">GetAnimationLodBias</a> () const </td></tr>
 <tr class="memdesc:a5dc8b8fbfc024cedc3ba4cb705027e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return animation Lod bias. <br/></td></tr>
@@ -679,6 +687,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a679acc3acfc067b5186cbd1bc59f7e6d">sorted_</a></td></tr>
 <tr class="memdesc:a679acc3acfc067b5186cbd1bc59f7e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Billboards sorted flag. <br/></td></tr>
 <tr class="separator:a679acc3acfc067b5186cbd1bc59f7e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2af1a7e9507228fbc800db16a9a6cdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2af1a7e9507228fbc800db16a9a6cdd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#af2af1a7e9507228fbc800db16a9a6cdd">fixedScreenSize_</a></td></tr>
+<tr class="memdesc:af2af1a7e9507228fbc800db16a9a6cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Billboards fixed screen size flag. <br/></td></tr>
+<tr class="separator:af2af1a7e9507228fbc800db16a9a6cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cbce8901427ed91eee5917d2fd875b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cbce8901427ed91eee5917d2fd875b0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_effect.html#a6cbce8901427ed91eee5917d2fd875b0">animationLodBias_</a></td></tr>
 <tr class="memdesc:a6cbce8901427ed91eee5917d2fd875b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a> LOD bias. <br/></td></tr>

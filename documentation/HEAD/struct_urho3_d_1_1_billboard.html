@@ -52,7 +52,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab6349a8e25ec5026637595b07bea97d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed773c34ac26fd437766516fa70a200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ed773c34ac26fd437766516fa70a200"></a>
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_billboard.html#a4ed773c34ac26fd437766516fa70a200">size_</a></td></tr>
-<tr class="memdesc:a4ed773c34ac26fd437766516fa70a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional size. <br/></td></tr>
+<tr class="memdesc:a4ed773c34ac26fd437766516fa70a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional size. If <a class="el" href="class_urho3_d_1_1_billboard_set.html" title="Billboard component.">BillboardSet</a> has fixed screen size enabled, this is measured in pixels instead of world units. <br/></td></tr>
 <tr class="separator:a4ed773c34ac26fd437766516fa70a200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a895e24df50a5d89a8dd6650a7f29c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9a895e24df50a5d89a8dd6650a7f29c"></a>
 <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_billboard.html#ac9a895e24df50a5d89a8dd6650a7f29c">uv_</a></td></tr>
@@ -76,8 +76,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:a1df6e784e7e9f6e8c4858d311c43362f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a7d3440eaccc295f0a8de5161363691"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a7d3440eaccc295f0a8de5161363691"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_billboard.html#a5a7d3440eaccc295f0a8de5161363691">sortDistance_</a></td></tr>
-<tr class="memdesc:a5a7d3440eaccc295f0a8de5161363691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort distance. <br/></td></tr>
+<tr class="memdesc:a5a7d3440eaccc295f0a8de5161363691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort distance. Used internally. <br/></td></tr>
 <tr class="separator:a5a7d3440eaccc295f0a8de5161363691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d1a79bd71b85366657b0713d18c406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36d1a79bd71b85366657b0713d18c406"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_billboard.html#a36d1a79bd71b85366657b0713d18c406">screenScaleFactor_</a></td></tr>
+<tr class="memdesc:a36d1a79bd71b85366657b0713d18c406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale factor for fixed screen size mode. Used internally. <br/></td></tr>
+<tr class="separator:a36d1a79bd71b85366657b0713d18c406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>One billboard in the billboard set. </p>
