@@ -1,9 +1,9 @@
 ---
 layout: post
 title: (Fixed) Documentation pages generation issue
-description:
+description: It has come to our attention that all our documentation pages have not been generated correctly recently.
 category: announcements
-carousel_background:
+image:
 tags: [website]
 ---
 {% include JB/setup %}

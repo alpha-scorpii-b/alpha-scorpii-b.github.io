@@ -9,8 +9,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ site.title }} - {% if page.path == 'index.html' %}{{ site.tagline }}{% elsif page.title %}{{ page.title }}{% else %}{{ layout.title }}{% endif %}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <title>{{ site.title }} - {% if page.path == 'index.html' %}{{ site.tagline }}{% else %}{% if layout.nav_subgroup and page.title != 'Documentation' %}{{ layout.nav_subgroup }} - {% endif %}{{ page.title }}{% endif %}</title>
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
@@ -33,6 +32,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
     <script src="{{ ASSET_PATH }}/js/vendor/js.cookie.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/webkit-flicker-fix.js"></script>
 
+    {% seo title=false %}
     {% include JB/analytics %}
   </head>
   <body>

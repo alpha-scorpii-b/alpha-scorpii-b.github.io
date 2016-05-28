@@ -17,7 +17,7 @@
     {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ layout.theme.name }}{% endcapture %}
   {% endif %}
 
-  {% if layout.title == 'Documentation' %}
+  {% if layout.nav_subgroup == 'Documentation' %}
     {% capture DOXYGEN_PATH %}{{ BASE_PATH }}/documentation/{{ page.group }}{% endcapture %}
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}

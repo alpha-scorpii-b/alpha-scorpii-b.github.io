@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Urho3D website revamp
+description: We have recently revamped our website while preserving its original minimal theme as much as possible.
 category: announcements
-carousel_background:
+image:
 tags: [website]
 ---
 {% include JB/setup %}

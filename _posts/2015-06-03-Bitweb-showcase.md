@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Bitweb published on Steam
+description: "Reposted from Urho3D forum post (http://urho3d.prophpbb.com/topic1133.html)."
 category: showcases
-carousel_background:
+image:
 tags: [Steam, published game]
 ---
 {% include JB/setup %}

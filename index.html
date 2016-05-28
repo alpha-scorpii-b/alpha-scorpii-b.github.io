@@ -24,7 +24,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
   <div class="carousel-inner" role="listbox">
     {% for category in site.categories %}
     <div class="item{% if forloop.first %} active{% endif %}">
-      <img src="{{ BASE_PATH }}/assets/images/{% if category[1][0].carousel_background %}{{ category[1][0].carousel_background }}{% else %}carousel-background-{{ forloop.index }}.jpg{% endif %}" alt="slide background image">
+      <img src="{{ BASE_PATH }}/assets/images/{% if category[1][0].image %}{{ category[1][0].image }}{% else %}carousel-background-{{ forloop.index }}.jpg{% endif %}" alt="slide background image">
       <div class="carousel-caption jumbotron">
         <h1>{{ category[1][0].title }}</h1>
         <!-- There are two anchors below but only one would be displayed at any viewport size -->

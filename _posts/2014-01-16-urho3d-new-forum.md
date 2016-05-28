@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Urho3D new discussion forum opened"
+title: Urho3D new discussion forum opened
+description: "Urho3D user CarloMaker generously set up a phpbb-based forum at http://urho3d.prophpbb.com."
 category: announcements
+image:
 tags: [forum, discussion]
 ---
 {% include JB/setup %}

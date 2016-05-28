@@ -4,18 +4,25 @@ permalink: date
 
 exclude: [.rvmrc, .rbenv-version, README.md, Rakefile, changelog.md, Gemfile, Gemfile.lock]
 include: [_*.html]
+gems: [jekyll-seo-tag]
 highlighter: rouge
 markdown: kramdown
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title: Urho3D
-tagline: Cross-platform 2D and 3D game engine
 organization:
   name: urho3d
   email:
   project: Urho3D
+tagline: Cross-platform 2D and 3D game engine
+#
+# These variables are honoured by jekyll-seo-tag
+#
+title: Urho3D
+description: Urho3D is a free lightweight, cross-platform 2D and 3D game engine implemented in C++ and released under the MIT license. Greatly inspired by OGRE and Horde3D.
+url: &url http://urho3d.github.io
+logo: /assets/images/logo.png
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +32,7 @@ organization:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://urho3d.github.io
+production_url: *url
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -54,7 +61,7 @@ JB:
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH: http://urho3d.github.io
+  BASE_PATH: *url
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]

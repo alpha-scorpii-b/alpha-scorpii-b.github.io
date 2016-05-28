@@ -1,9 +1,9 @@
 ---
 layout: post
 title: New and improved class index page
-description:
+description: A few days ago one of the contributor has submitted a PR to switch on the generation of the class index page for our doxygen-generated documentation.
 category: announcements
-carousel_background:
+image:
 tags: [website]
 ---
 {% include JB/setup %}

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Terrain editor updated to use Urho3D 1.4
-description:
+description: "JTippetts has updated his terrain editor (https://github.com/JTippetts/U3DTerrainEditor) project to use the latest version (release 1.4) of Urho3D library."
 category: tool integrations
-carousel_background:
+image:
 tags: [Terrain, Editor, Lua, 1.4]
 ---
 {% include JB/setup %}

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "New Urho3D file release system"
+title: New Urho3D file release system
+description: "As Google Code no longer allows new upload of binary packages and GitHub pages or repositories are not convenient for them, all our future release of binary packages and snapshot build artifacts from Travis CI will be uploaded to https://sourceforge.net/projects/urho3d/."
 category: announcements
+image:
 tags: [SourceForge]
 ---
 {% include JB/setup %}

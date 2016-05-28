@@ -6,7 +6,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
 
 <div class="page-header">
   <h1>
-    {% if category %}{{ category |capitalize }}{% elsif page.title %}{{ page.title }}{% else %}{{ layout.title }}{% endif %}
+    {% if category %}{{ category |capitalize }}{% else %}{{ page.title }}{% endif %}
     <div class="btn-toolbar pull-right" role="toolbar" aria-label="user preferences">
       <div class="btn-group hidden" role="group" aria-label="theme switcher" id="theme-switcher" data-toggle="buttons">
         <label class="btn btn-default btn-xs"><input type="radio" name="theme" id="dark" autocomplete="off">Dark</label>

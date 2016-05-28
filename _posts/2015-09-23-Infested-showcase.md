@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Infested: a survival horror and investigation game"
+description: "Reposted from Urho3D forum post (http://urho3d.prophpbb.com/topic1430.html)."
 category: showcases
-carousel_background:
+image:
 tags: [unpublished game, shooter, action-adventure]
 ---
 {% include JB/setup %}

@@ -3,6 +3,8 @@
 
 // Urho3D
 @import (less) "../../documentation/HEAD/tabs.css";
+@import "../../assets/themes/minimal/_less/vendor/bootstrap/mixins.less";
+@import "../../assets/themes/minimal/_less/vendor/bootstrap/utilities.less";
 @import "../../assets/themes/minimal/_less/vendor/bootstrap/variables.less";
 
 /* Urho3D
@@ -935,11 +937,19 @@ div.header
 	border-bottom: 1px solid #E9E9E9;
 }
 
+// Urho3D
+div.headertitle
+{
+    // Hide the div as the title is now shown as page's title proper
+    &:extend(.hidden);
+}
+
+/* Urho3D
 div.headertitle
 {
 	padding: 5px 5px 5px 10px;
 }
-/* Urho3D
+
 dl
 {
         padding: 0 0 0 10px;

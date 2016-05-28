@@ -45,8 +45,9 @@ task :release do
     post.puts '---'
     post.puts 'layout: post'
     post.puts "title: Urho3D #{ENV['tag']} release"
+    post.puts "description: Urho3D #{ENV['tag']} release"
     post.puts "category: #{category}"
-    post.puts 'caroursel_background:'
+    post.puts 'image:'
     post.puts "tags: #{tags}"
     post.puts 'excluded_artifacts:'
     post.puts '---'

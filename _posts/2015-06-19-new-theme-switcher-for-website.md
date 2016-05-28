@@ -1,9 +1,9 @@
 ---
 layout: post
 title: New theme switcher for website
-description:
+description: We have now a dark theme for the website to ease reading our documentation pages at night!
 category: announcements
-carousel_background:
+image:
 tags: [website]
 ---
 {% include JB/setup %}

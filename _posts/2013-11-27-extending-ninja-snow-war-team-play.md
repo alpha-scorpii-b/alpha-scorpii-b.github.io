@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Extending Ninja Snow War (team play)"
-category: "showcases"
+title: Extending Ninja Snow War (team play)
+description: "Reposted from Urho3D forum post (https://groups.google.com/forum/#!topic/urho3d/h7XZnyeXtSo) made by Raster Ron."
+category: showcases
+image:
 tags: [unpublished game]
 ---
 {% include JB/setup %}
