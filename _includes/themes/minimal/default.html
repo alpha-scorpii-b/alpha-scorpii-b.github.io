@@ -9,7 +9,7 @@ Copyright (c) 2014-2015 Yao Wei Tjong
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ site.title }} - {% if page.path == 'index.html' %}{{ site.tagline }}{% else %}{{ page.title }}{% endif %}</title>
+    <title>{{ site.title }} - {% if page.path == 'index.html' %}{{ site.tagline }}{% elsif page.title %}{{ page.title }}{% else %}{{ layout.title }}{% endif %}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
     <!-- Enable responsive viewport -->
