@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2014-2015 Yao Wei Tjong
+// Copyright (c) 2014-2016 Yao Wei Tjong
 //
 
 // Avoid `console` errors in browsers that lack a console.
