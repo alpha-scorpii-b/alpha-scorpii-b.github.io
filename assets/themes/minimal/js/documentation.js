@@ -12,7 +12,7 @@ $(document).ready(function() {
     // i == 0 is /HEAD/
     // Page is new when only exists in /HEAD/
     // Page is deprecated when not exists in /HEAD/ anymore
-    $.ajax({ url: elem, type: 'HEAD', async: false, statusCode: {
+    $.ajax({ url: elem, type: 'HEAD', statusCode: {
       200: function() {
         $documentSwitcher.data('new', i == 0);
       },
