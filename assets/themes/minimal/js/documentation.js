@@ -49,6 +49,11 @@ $(document).ready(function() {
     if (icon) $(elem).prepend(icon).find('span').addClass('hidden-xxs');
   });
 
+  // Inject font-awesone "file" icon to all the non-class related pages
+  $('.el[href^=_]').each(function(i, elem) {
+    $(elem).prepend('<i class="fa fa-file"></i>&nbsp;');
+  });
+
   // Inject responsive behaviour to tables
   $('.contents table').wrap('<div class="table-responsive"></div>');
   // Use medium version for build options
