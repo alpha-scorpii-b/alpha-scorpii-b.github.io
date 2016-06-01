@@ -1,5 +1,17 @@
+---
 # www.robotstxt.org/
+---
 
 # Allow crawling of all content
 User-agent: *
 Disallow:
+
+{% comment %}<!--
+
+Copyright (c) 2014-2016 Yao Wei Tjong
+
+-->{% endcomment %}
+
+{% include JB/setup %}
+
+Sitemap: {{ site.production_url }}/sitemap.txt
