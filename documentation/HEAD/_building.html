@@ -49,14 +49,14 @@ Building prerequisites</h2>
 <li>unixodbc-dev (Debian-based) or unixODBC-devel (RedHat-based) for ODBC driver manager.</li>
 </ul>
 </li>
-<li>Display server (essential). One or more of these can be installed at the same time. When multiple display servers are available, X11 takes precedence (overridable using SDL_VIDEODRIVER environment variable).<ul>
+<li>Display server (essential). One or more of these can be installed at the same time. When multiple display servers are available, X11 takes precedence (overridable using SDL_VIDEODRIVER environment variable during application runtime).<ul>
 <li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use SDL_OPT_VIDEO_DIRECTFB build option to enable.</li>
 <li>mir-client-platform-mesa-dev and mircommon-dev (Ubuntu only) for Mir.</li>
 <li>libwayland-client-devel, libwayland-cursor-devel, and mesa-libwayland-egl-devel (RedHat-based only, pre-installed on Fedora 22+) for Wayland.</li>
 <li>libx11-dev and libxrandr-dev (Debian-based) or libX11-devel and libXrandr-devel (RedHat-based) for X11.</li>
 </ul>
 </li>
-<li>Sound server (essential). One or more of these can be installed at the same time. When multiple sound servers are available, PulseAudio takes precedence (overridable using SDL_AUDIODRIVER environment variable).<ul>
+<li>Sound server (essential). One or more of these can be installed at the same time. When multiple sound servers are available, PulseAudio takes precedence (overridable using SDL_AUDIODRIVER environment variable during application runtime).<ul>
 <li>libasound2-dev (Debian-based) or alsa-lib-devel (RedHat-based) for Advanced Linux Sound Architecture (ALSA).</li>
 <li>arts-devel (RedHat-based only) for Analog Real Time Synthesizer (aRts).</li>
 <li>libaudio-dev (Debian-based only) for Network Audio System (NAS).</li>
@@ -162,9 +162,9 @@ Build options</h2>
 <tr>
 <td>URHO3D_SAMPLES </td><td>1</td><td>Build sample applications </td></tr>
 <tr>
-<td>URHO3D_TOOLS </td><td>1</td><td>Build tools (native and RPI only) </td></tr>
+<td>URHO3D_TOOLS </td><td>1</td><td>Build tools (native, RPI, and generic ARM only) </td></tr>
 <tr>
-<td>URHO3D_EXTRAS </td><td>0</td><td>Build extras (native and RPI only) </td></tr>
+<td>URHO3D_EXTRAS </td><td>0</td><td>Build extras (native, RPI, and generic ARM only) </td></tr>
 <tr>
 <td>URHO3D_DOCS </td><td>0</td><td>Generate documentation as part of normal build (the 'doc' builtin target can be used to generate documentation regardless of this option's value) </td></tr>
 <tr>
@@ -236,6 +236,8 @@ Build options</h2>
 <tr>
 <td>ANDROID_NATIVE_API_LEVEL</td><td>*</td><td>Specify target API level (Android build only), possible values depends on installed NDK version, default to API level 9 on 32-bit ABIs, default to API level 21 on 64-bit ABIs </td></tr>
 <tr>
+<td>ANDROID_TOOLCHAIN_NAME</td><td>*</td><td>Specify the name of compiler toolchain (Android build only), possible values depends on installed NDK version, default to arm-linux-androideabi-4.9 in most recent Android NDKs </td></tr>
+<tr>
 <td>ANDROID_NDK_GDB </td><td>0</td><td>Enable ndk-gdb support (Android Debug build only) </td></tr>
 <tr>
 <td>MINGW_PREFIX </td><td>-</td><td>Prefix path to MinGW cross-compiler tools (MinGW cross-compiling build only) </td></tr>
@@ -247,6 +249,12 @@ Build options</h2>
 <td>RPI_SYSROOT </td><td>-</td><td>Path to Raspberry Pi system root (RPI cross-compiling build only) </td></tr>
 <tr>
 <td>RPI_ABI </td><td>*</td><td>Specify target ABI (RPI build only), possible values are armeabi-v6 (default for RPI 1), armeabi-v7a (default for RPI 2), armeabi-v7a with NEON, and armeabi-v7a with VFPV4 </td></tr>
+<tr>
+<td>ARM_PREFIX </td><td>-</td><td>Prefix path to ARM cross-compiler tools (Linux on ARM cross-compiling build only) </td></tr>
+<tr>
+<td>ARM_SYSROOT </td><td>-</td><td>Path to ARM system root (Linux on ARM cross-compiling build only) </td></tr>
+<tr>
+<td>ARM_ABI_FLAGS </td><td>-</td><td>Specify ABI compiler flags (Linux on ARM cross-compiling build only); e.g. Orange-Pi Mini 2 could use '-mcpu=cortex-a7 -mfpu=neon-vfpv4' </td></tr>
 <tr>
 <td>EMSCRIPTEN_ROOT_PATH </td><td>-</td><td>Root path to Emscripten cross-compiler tools (Emscripten cross-compiling build only) </td></tr>
 <tr>
