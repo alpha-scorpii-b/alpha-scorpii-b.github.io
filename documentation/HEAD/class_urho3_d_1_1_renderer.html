@@ -151,6 +151,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ab2d9abee635f8713f8ca92cf41790596">SetDynamicInstancing</a> (bool enable)</td></tr>
 <tr class="memdesc:ab2d9abee635f8713f8ca92cf41790596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set dynamic instancing on/off. When on (default), drawables using the same static-type geometry and material will be automatically combined to an instanced draw call. <br/></td></tr>
 <tr class="separator:ab2d9abee635f8713f8ca92cf41790596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2643fed4c08cc81a1fcd6ba637bcfbd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2643fed4c08cc81a1fcd6ba637bcfbd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a2643fed4c08cc81a1fcd6ba637bcfbd1">SetNumExtraInstancingBufferElements</a> (int elements)</td></tr>
+<tr class="memdesc:a2643fed4c08cc81a1fcd6ba637bcfbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of extra instancing buffer elements. Default is 0. Extra 4-vectors are available through TEXCOORD7 and further. <br/></td></tr>
+<tr class="separator:a2643fed4c08cc81a1fcd6ba637bcfbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e087b58ea5e19d4677f28b2100797e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26e087b58ea5e19d4677f28b2100797e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a26e087b58ea5e19d4677f28b2100797e">SetMinInstances</a> (int instances)</td></tr>
 <tr class="memdesc:a26e087b58ea5e19d4677f28b2100797e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set minimum number of instances required in a batch group to render as instanced. <br/></td></tr>
@@ -267,6 +271,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ae5dc1059bf75fd7d2974ca034f767541">GetDynamicInstancing</a> () const </td></tr>
 <tr class="memdesc:ae5dc1059bf75fd7d2974ca034f767541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether dynamic instancing is in use. <br/></td></tr>
 <tr class="separator:ae5dc1059bf75fd7d2974ca034f767541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bbe2b835f59c9aae5d7494fd5b123d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9bbe2b835f59c9aae5d7494fd5b123d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aa9bbe2b835f59c9aae5d7494fd5b123d">GetNumExtraInstancingBufferElements</a> () const </td></tr>
+<tr class="memdesc:aa9bbe2b835f59c9aae5d7494fd5b123d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of extra instancing buffer elements. <br/></td></tr>
+<tr class="separator:aa9bbe2b835f59c9aae5d7494fd5b123d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52743ad9e6248cc40a4bb24a09d4b6df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52743ad9e6248cc40a4bb24a09d4b6df"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a52743ad9e6248cc40a4bb24a09d4b6df">GetMinInstances</a> () const </td></tr>
 <tr class="memdesc:a52743ad9e6248cc40a4bb24a09d4b6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return minimum number of instances required in a batch group to render as instanced. <br/></td></tr>
@@ -969,6 +977,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ae39627e4cb9059d27df4c00ae872f3e5">dynamicInstancing_</a></td></tr>
 <tr class="memdesc:ae39627e4cb9059d27df4c00ae872f3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic instancing flag. <br/></td></tr>
 <tr class="separator:ae39627e4cb9059d27df4c00ae872f3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e866122261209df9baa9b7b639c7048"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e866122261209df9baa9b7b639c7048"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a1e866122261209df9baa9b7b639c7048">numExtraInstancingBufferElements_</a></td></tr>
+<tr class="memdesc:a1e866122261209df9baa9b7b639c7048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of extra instancing data elements. <br/></td></tr>
+<tr class="separator:a1e866122261209df9baa9b7b639c7048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9b4ee6336045b840c4bb2bf8b53b76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9b4ee6336045b840c4bb2bf8b53b76"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a2d9b4ee6336045b840c4bb2bf8b53b76">threadedOcclusion_</a></td></tr>
 <tr class="memdesc:a2d9b4ee6336045b840c4bb2bf8b53b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threaded occlusion rendering flag. <br/></td></tr>
