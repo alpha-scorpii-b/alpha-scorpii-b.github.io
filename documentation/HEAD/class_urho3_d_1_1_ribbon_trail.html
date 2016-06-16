@@ -138,6 +138,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#aa37badc78a38078c66c6316afaeb86c6">SetEmitting</a> (bool emitting)</td></tr>
 <tr class="memdesc:aa37badc78a38078c66c6316afaeb86c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether trail should be emitting. <br/></td></tr>
 <tr class="separator:aa37badc78a38078c66c6316afaeb86c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f3f057ddd562e3914fe7ad08b1fdaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95f3f057ddd562e3914fe7ad08b1fdaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#a95f3f057ddd562e3914fe7ad08b1fdaa">SetUpdateInvisible</a> (bool enable)</td></tr>
+<tr class="memdesc:a95f3f057ddd562e3914fe7ad08b1fdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to update when trail emiiter are not visible. <br/></td></tr>
+<tr class="separator:a95f3f057ddd562e3914fe7ad08b1fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeebad28013b214bd028ef0f591faec7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeebad28013b214bd028ef0f591faec7c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#aeebad28013b214bd028ef0f591faec7c">SetTailColumn</a> (unsigned tailColumn)</td></tr>
 <tr class="memdesc:aeebad28013b214bd028ef0f591faec7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of column for every tails. Can be useful for fixing distortion at high angle. <br/></td></tr>
@@ -206,6 +210,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#aaf1d9fc278a659fbc78cd079bef189a1">IsEmitting</a> () const </td></tr>
 <tr class="memdesc:aaf1d9fc278a659fbc78cd079bef189a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is currently emitting. <br/></td></tr>
 <tr class="separator:aaf1d9fc278a659fbc78cd079bef189a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdd48e8e2bfddc64602eec4dd4048c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cdd48e8e2bfddc64602eec4dd4048c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#a6cdd48e8e2bfddc64602eec4dd4048c2">GetUpdateInvisible</a> () const </td></tr>
+<tr class="memdesc:a6cdd48e8e2bfddc64602eec4dd4048c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether to update when trail emitter are not visible. <br/></td></tr>
+<tr class="separator:a6cdd48e8e2bfddc64602eec4dd4048c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_drawable.html">Urho3D::Drawable</a></td></tr>
 <tr class="memitem:a5a9391dafb2151dde0a717d59413caab inherit pub_methods_class_urho3_d_1_1_drawable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a9391dafb2151dde0a717d59413caab"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drawable.html#a5a9391dafb2151dde0a717d59413caab">Drawable</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context, unsigned char drawableFlags)</td></tr>
@@ -1314,6 +1322,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#ad5e373b34bb654567c68e9f667a5225a">emitting_</a></td></tr>
 <tr class="memdesc:ad5e373b34bb654567c68e9f667a5225a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently emitting flag. <br/></td></tr>
 <tr class="separator:ad5e373b34bb654567c68e9f667a5225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4056efb1c5104e86c3f8c0c660c3fac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4056efb1c5104e86c3f8c0c660c3fac1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#a4056efb1c5104e86c3f8c0c660c3fac1">updateInvisible_</a></td></tr>
+<tr class="memdesc:a4056efb1c5104e86c3f8c0c660c3fac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update when invisible flag. <br/></td></tr>
+<tr class="separator:a4056efb1c5104e86c3f8c0c660c3fac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d6b3ed11b9ffb4456e8721a06cfcca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0d6b3ed11b9ffb4456e8721a06cfcca"></a>
 <a class="el" href="struct_urho3_d_1_1_trail_point.html">TrailPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ribbon_trail.html#ae0d6b3ed11b9ffb4456e8721a06cfcca">endTail_</a></td></tr>
 <tr class="memdesc:ae0d6b3ed11b9ffb4456e8721a06cfcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of trail point for smoother tail disappearance. <br/></td></tr>
