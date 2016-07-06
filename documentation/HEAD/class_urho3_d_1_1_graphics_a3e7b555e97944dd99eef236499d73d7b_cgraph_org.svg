@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a3dd369dc58e2db876d8d001ba24762a5" target="_top" xlink:title="Prepare for draw call. Update constant buffers and setup the FBO.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a3dd369dc58e2db876d8d001ba24762a5" target="_top" xlink:title="Process dirtied state before draw.">
 <polygon fill="none" stroke="red" points="172.5,-473.359 172.5,-494.359 341.5,-494.359 341.5,-473.359 172.5,-473.359"/>
 <text text-anchor="middle" x="257" y="-481.359" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::PrepareDraw</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a016c9d34850452e2e97a51f520d15443" target="_top" xlink:title="Return rendertarget width and height.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a016c9d34850452e2e97a51f520d15443" target="_top" xlink:title="Return current rendertarget width and height.">
 <polygon fill="none" stroke="red" points="396,-790.859 396,-824.859 554,-824.859 554,-790.859 396,-790.859"/>
 <text text-anchor="start" x="404" y="-811.859" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::GetRender</text>
 <text text-anchor="middle" x="475" y="-798.859" font-family="FreeSans" font-size="10.00">TargetDimensions</text>
@@ -102,7 +102,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#aecd0066098f01560de4784346ace7a2f" target="_top" xlink:title="Bind a framebuffer using either extension or core functionality.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#aecd0066098f01560de4784346ace7a2f" target="_top" xlink:title="Bind a framebuffer using either extension or core functionality. Used only on OpenGL.">
 <polygon fill="none" stroke="black" points="382,-191.359 382,-212.359 568,-212.359 568,-191.359 382,-191.359"/>
 <text text-anchor="middle" x="475" y="-199.359" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::BindFramebuffer</text>
 </a>
@@ -132,7 +132,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_urho3_d_1_1_texture.html#a2f053f59f1001c8c85c9382d07900211" target="_top" xlink:title="Return texture format.">
+<a xlink:href="class_urho3_d_1_1_texture.html#a2f053f59f1001c8c85c9382d07900211" target="_top" xlink:title="Return API&#45;specific texture format.">
 <polygon fill="none" stroke="black" points="399,-99.3591 399,-120.359 551,-120.359 551,-99.3591 399,-99.3591"/>
 <text text-anchor="middle" x="475" y="-107.359" font-family="FreeSans" font-size="10.00">Urho3D::Texture::GetFormat</text>
 </a>
@@ -144,7 +144,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a36e7c254c8eb1a1f977d150b0d7f6f6c" target="_top" xlink:title="Create a framebuffer using either extension or core functionality.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a36e7c254c8eb1a1f977d150b0d7f6f6c" target="_top" xlink:title="Create a framebuffer using either extension or core functionality. Used only on OpenGL.">
 <polygon fill="none" stroke="black" points="405,-46.8591 405,-80.8591 545,-80.8591 545,-46.8591 405,-46.8591"/>
 <text text-anchor="start" x="413" y="-67.8591" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::Create</text>
 <text text-anchor="middle" x="475" y="-54.8591" font-family="FreeSans" font-size="10.00">Framebuffer</text>
@@ -157,7 +157,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_urho3_d_1_1_texture.html#a0c6760bb91c25cb9b5387eb9cae27a50" target="_top" xlink:title="Return whether parameters are dirty.">
+<a xlink:href="class_urho3_d_1_1_texture.html#a0c6760bb91c25cb9b5387eb9cae27a50" target="_top" xlink:title="Return whether the parameters are dirty.">
 <polygon fill="none" stroke="black" points="613.5,-295.859 613.5,-329.859 786.5,-329.859 786.5,-295.859 613.5,-295.859"/>
 <text text-anchor="start" x="621.5" y="-316.859" font-family="FreeSans" font-size="10.00">Urho3D::Texture::GetParameters</text>
 <text text-anchor="middle" x="700" y="-303.859" font-family="FreeSans" font-size="10.00">Dirty</text>
@@ -170,7 +170,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a8b325a50b867fe7866389f94e8a8575a" target="_top" xlink:title="Bind texture unit 0 for update. Called by Texture.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a8b325a50b867fe7866389f94e8a8575a" target="_top" xlink:title="Bind texture unit 0 for update. Called by Texture. Used only on OpenGL.">
 <polygon fill="none" stroke="red" points="396,-700.859 396,-734.859 554,-734.859 554,-700.859 396,-700.859"/>
 <text text-anchor="start" x="404" y="-721.859" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::SetTexture</text>
 <text text-anchor="middle" x="475" y="-708.859" font-family="FreeSans" font-size="10.00">ForUpdate</text>
@@ -183,10 +183,10 @@
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="class_urho3_d_1_1_g_p_u_object.html#acc3aa11294b3d788965f299ca9bfb81c" target="_top" xlink:title="Return the object&#39;s OpenGL handle.">
+<a xlink:href="class_urho3_d_1_1_g_p_u_object.html#aead9180b607d1e02a2f94c54e6b275c1" target="_top" xlink:title="Return the object name. Applicable only on OpenGL.">
 <polygon fill="none" stroke="black" points="641.5,-700.859 641.5,-734.859 758.5,-734.859 758.5,-700.859 641.5,-700.859"/>
 <text text-anchor="start" x="649.5" y="-721.859" font-family="FreeSans" font-size="10.00">Urho3D::GPUObject::</text>
-<text text-anchor="middle" x="700" y="-708.859" font-family="FreeSans" font-size="10.00">GetGPUObject</text>
+<text text-anchor="middle" x="700" y="-708.859" font-family="FreeSans" font-size="10.00">GetGPUObjectName</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node10 -->
@@ -196,7 +196,7 @@
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="class_urho3_d_1_1_texture.html#a7eaf51cf81ac775bdc87e00ec1a47979" target="_top" xlink:title="Update changed parameters to OpenGL. Called by Graphics when binding the texture.">
+<a xlink:href="class_urho3_d_1_1_texture.html#a7eaf51cf81ac775bdc87e00ec1a47979" target="_top" xlink:title="Update dirty parameters to the texture object. Called by Graphics when assigning the texture...">
 <polygon fill="none" stroke="red" points="604.5,-642.359 604.5,-663.359 795.5,-663.359 795.5,-642.359 604.5,-642.359"/>
 <text text-anchor="middle" x="700" y="-650.359" font-family="FreeSans" font-size="10.00">Urho3D::Texture::UpdateParameters</text>
 </a>
@@ -220,7 +220,7 @@
 </g>
 <!-- Node13 -->
 <g id="node28" class="node"><title>Node13</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a28b21a66b16b34b87b453bae0205a0c6" target="_top" xlink:title="Bind a framebuffer color attachment using either extension or core functionality.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a28b21a66b16b34b87b453bae0205a0c6" target="_top" xlink:title="Bind a framebuffer color attachment using either extension or core functionality. Used only on OpenGL...">
 <polygon fill="none" stroke="black" points="398.5,-570.859 398.5,-604.859 551.5,-604.859 551.5,-570.859 398.5,-570.859"/>
 <text text-anchor="start" x="406.5" y="-591.859" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::BindColor</text>
 <text text-anchor="middle" x="475" y="-578.859" font-family="FreeSans" font-size="10.00">Attachment</text>
@@ -233,7 +233,7 @@
 </g>
 <!-- Node14 -->
 <g id="node31" class="node"><title>Node14</title>
-<a xlink:href="class_urho3_d_1_1_render_surface.html#a5c60fb09e5a2dd4545148d5a06d57d4b" target="_top" xlink:title="Return renderbuffer if created.">
+<a xlink:href="class_urho3_d_1_1_render_surface.html#a5c60fb09e5a2dd4545148d5a06d57d4b" target="_top" xlink:title="Return OpenGL renderbuffer if created.">
 <polygon fill="none" stroke="black" points="410.5,-518.859 410.5,-552.859 539.5,-552.859 539.5,-518.859 410.5,-518.859"/>
 <text text-anchor="start" x="418.5" y="-539.859" font-family="FreeSans" font-size="10.00">Urho3D::RenderSurface</text>
 <text text-anchor="middle" x="475" y="-526.859" font-family="FreeSans" font-size="10.00">::GetRenderBuffer</text>
@@ -246,7 +246,7 @@
 </g>
 <!-- Node15 -->
 <g id="node33" class="node"><title>Node15</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#ae19c4b22ebcbf2242f462b2e330ad166" target="_top" xlink:title="Bind a framebuffer depth attachment using either extension or core functionality.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#ae19c4b22ebcbf2242f462b2e330ad166" target="_top" xlink:title="Bind a framebuffer depth attachment using either extension or core functionality. Used only on OpenGL...">
 <polygon fill="none" stroke="black" points="396,-466.859 396,-500.859 554,-500.859 554,-466.859 396,-466.859"/>
 <text text-anchor="start" x="404" y="-487.859" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::BindDepth</text>
 <text text-anchor="middle" x="475" y="-474.859" font-family="FreeSans" font-size="10.00">Attachment</text>
@@ -259,7 +259,7 @@
 </g>
 <!-- Node16 -->
 <g id="node35" class="node"><title>Node16</title>
-<a xlink:href="class_urho3_d_1_1_graphics.html#a620884eac01f008636eda07edd907aa5" target="_top" xlink:title="Bind a framebuffer stencil attachment using either extension or core functionality.">
+<a xlink:href="class_urho3_d_1_1_graphics.html#a620884eac01f008636eda07edd907aa5" target="_top" xlink:title="Bind a framebuffer stencil attachment using either extension or core functionality. Used only on OpenGL.">
 <polygon fill="none" stroke="black" points="394.5,-414.859 394.5,-448.859 555.5,-448.859 555.5,-414.859 394.5,-414.859"/>
 <text text-anchor="start" x="402.5" y="-435.859" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::BindStencil</text>
 <text text-anchor="middle" x="475" y="-422.859" font-family="FreeSans" font-size="10.00">Attachment</text>

@@ -38,7 +38,7 @@ group: HEAD
 <p>Shader parameter definition.  
  <a href="struct_urho3_d_1_1_shader_parameter.html#details">More...</a></p>
 
-<p><code>#include &lt;Urho3D/Graphics/OpenGL/OGLShaderProgram.h&gt;</code></p>
+<p><code>#include &lt;Urho3D/Graphics/ShaderVariation.h&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Urho3D::ShaderParameter:</div>
 <div class="dyncontent">
@@ -55,22 +55,52 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9cfdf82462f857a12616fadcc69dca35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cfdf82462f857a12616fadcc69dca35"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a9cfdf82462f857a12616fadcc69dca35">location_</a></td></tr>
-<tr class="memdesc:a9cfdf82462f857a12616fadcc69dca35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform location or byte offset in constant buffer. <br/></td></tr>
-<tr class="separator:a9cfdf82462f857a12616fadcc69dca35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d763d3a80377dd228a28a35c1fdf9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7d763d3a80377dd228a28a35c1fdf9a"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#aa7d763d3a80377dd228a28a35c1fdf9a">type_</a></td></tr>
-<tr class="memdesc:aa7d763d3a80377dd228a28a35c1fdf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element type. <br/></td></tr>
-<tr class="separator:aa7d763d3a80377dd228a28a35c1fdf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fbc3b22095a254211795767f828382"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03fbc3b22095a254211795767f828382"></a>
+ShaderType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a03fbc3b22095a254211795767f828382">type_</a></td></tr>
+<tr class="memdesc:a03fbc3b22095a254211795767f828382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader type. <br/></td></tr>
+<tr class="separator:a03fbc3b22095a254211795767f828382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea68defa79916339dbd7dbdec138fc41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea68defa79916339dbd7dbdec138fc41"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#aea68defa79916339dbd7dbdec138fc41">name_</a></td></tr>
+<tr class="memdesc:aea68defa79916339dbd7dbdec138fc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the parameter. <br/></td></tr>
+<tr class="separator:aea68defa79916339dbd7dbdec138fc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b72a98f79d26ad47688a68341f9794"><td class="memItemLeft" ><a class="anchor" id="af2b72a98f79d26ad47688a68341f9794"></a>
+union {</td></tr>
+<tr class="memitem:a9752ffba4468f9cb5553648b8d8c7578"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a8570015f2e30a727156ffe3afce9d2f0">offset_</a></td></tr>
+<tr class="memdesc:a9752ffba4468f9cb5553648b8d8c7578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset in constant buffer. <br/></td></tr>
+<tr class="separator:a9752ffba4468f9cb5553648b8d8c7578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae128d943f0a70f659e6140c9bc48e088"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a9cfdf82462f857a12616fadcc69dca35">location_</a></td></tr>
+<tr class="memdesc:ae128d943f0a70f659e6140c9bc48e088"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL uniform location. <br/></td></tr>
+<tr class="separator:ae128d943f0a70f659e6140c9bc48e088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bfb6df07d94603b09b8b024b883077"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a79b8ce5cb31d56f714c997d3bfbc0a7b">register_</a></td></tr>
+<tr class="memdesc:a51bfb6df07d94603b09b8b024b883077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct3D9 register index. <br/></td></tr>
+<tr class="separator:a51bfb6df07d94603b09b8b024b883077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b72a98f79d26ad47688a68341f9794"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af2b72a98f79d26ad47688a68341f9794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffbe7800d6d546ce99bdd3c1dbe2f81"><td class="memItemLeft" ><a class="anchor" id="afffbe7800d6d546ce99bdd3c1dbe2f81"></a>
+union {</td></tr>
+<tr class="memitem:adb610a0daa3d0460e671e5412a3a2abc"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a9a5ecc1b95daa0f26c7bb4e57cd7ecd3">size_</a></td></tr>
+<tr class="memdesc:adb610a0daa3d0460e671e5412a3a2abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter size. Used only on Direct3D11 to calculate constant buffer size. <br/></td></tr>
+<tr class="separator:adb610a0daa3d0460e671e5412a3a2abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef29d683d2ed728805db926b509e9aa"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a7b98ca1011053aec26dd13e447a8c234">glType_</a></td></tr>
+<tr class="memdesc:a3ef29d683d2ed728805db926b509e9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter OpenGL type. <br/></td></tr>
+<tr class="separator:a3ef29d683d2ed728805db926b509e9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b5d96b5bd3bce356b41bc37259dfeb"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="struct_urho3_d_1_1_shader_parameter.html#aeef921a16077df777b1cfc1901a7bf54">regCount_</a></td></tr>
+<tr class="memdesc:a40b5d96b5bd3bce356b41bc37259dfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of registers on Direct3D9. <br/></td></tr>
+<tr class="separator:a40b5d96b5bd3bce356b41bc37259dfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffbe7800d6d546ce99bdd3c1dbe2f81"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:afffbe7800d6d546ce99bdd3c1dbe2f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf924c93efcc845daaf0e669aaddc3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf924c93efcc845daaf0e669aaddc3a"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#acbf924c93efcc845daaf0e669aaddc3a">buffer_</a></td></tr>
+<tr class="memdesc:acbf924c93efcc845daaf0e669aaddc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant buffer index. Only used on Direct3D11. <br/></td></tr>
+<tr class="separator:acbf924c93efcc845daaf0e669aaddc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a4ec1b397aa2319956dd739eb482fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a4ec1b397aa2319956dd739eb482fa"></a>
 <a class="el" href="class_urho3_d_1_1_constant_buffer.html">ConstantBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_shader_parameter.html#ac2a4ec1b397aa2319956dd739eb482fa">bufferPtr_</a></td></tr>
-<tr class="memdesc:ac2a4ec1b397aa2319956dd739eb482fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant buffer pointer. <br/></td></tr>
+<tr class="memdesc:ac2a4ec1b397aa2319956dd739eb482fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant buffer pointer. Defined only in shader programs. <br/></td></tr>
 <tr class="separator:ac2a4ec1b397aa2319956dd739eb482fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shader parameter definition. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Source/Urho3D/Graphics/OpenGL/OGLShaderProgram.h</li>
+<li>Source/Urho3D/Graphics/ShaderVariation.h</li>
 </ul>
 </div><!-- contents -->

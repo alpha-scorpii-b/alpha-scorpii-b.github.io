@@ -1,26 +1,26 @@
 <map id="Urho3D::Graphics" name="Urho3D::Graphics">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="" coords="43,105,163,134"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_constant_buffer.html" title="Hardware constant buffer." alt="" coords="387,105,560,134"/>
-<area shape="rect" id="node39" href="$class_urho3_d_1_1_vertex_buffer.html" title="Hardware vertex buffer." alt="" coords="395,158,552,188"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_int_rect.html" title="Two&#45;dimensional bounding rectangle with integer values." alt="" coords="412,253,535,282"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::ScratchBuffer \&gt;" alt="" coords="381,306,565,352"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::ConstantBuffer * \&gt;" alt="" coords="371,375,576,422"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_image.html" title="Image resource." alt="" coords="415,445,532,474"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_render_surface.html" title="Color or depth&#45;stencil surface that can be rendered into." alt="" coords="388,564,559,593"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_texture.html" title="Base class for texture resources." alt="" coords="40,526,165,556"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::SharedPtr\&lt; Urho3D\l::ConstantBuffer \&gt; \&gt;" alt="" coords="365,617,581,681"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::Texture2D \&gt; \&gt;" alt="" coords="368,705,579,769"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, TextureUnit \&gt;" alt="" coords="372,792,575,839"/>
-<area shape="rect" id="node26" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Pair\l\&lt; ShaderVariation *,\l ShaderVariation * \&gt;,\l SharedPtr\&lt; ShaderProgram \&gt; \&gt;" alt="" coords="356,862,591,943"/>
-<area shape="rect" id="node28" href="$class_urho3_d_1_1_vector2.html" title="Two&#45;dimensional vector." alt="" coords="409,1094,537,1124"/>
-<area shape="rect" id="node31" href="$class_urho3_d_1_1_shader_program.html" title="Linked shader program on the GPU." alt="" coords="384,1300,563,1329"/>
-<area shape="rect" id="node33" href="$class_urho3_d_1_1_string.html" title="String class." alt="" coords="44,1270,161,1300"/>
-<area shape="rect" id="node55" href="$class_urho3_d_1_1_shader_variation.html" title="Vertex or pixel shader on the GPU." alt="" coords="383,1353,564,1382"/>
-<area shape="rect" id="node36" href="$class_urho3_d_1_1_vector4.html" title="Four&#45;dimensional vector." alt="" coords="409,1530,537,1560"/>
-<area shape="rect" id="node42" href="$class_urho3_d_1_1_weak_ptr.html" title="Urho3D::WeakPtr\&lt; Urho3D\l::Shader \&gt;" alt="" coords="5,1414,200,1460"/>
-<area shape="rect" id="node45" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::GPUObject * \&gt;" alt="" coords="384,1583,563,1630"/>
-<area shape="rect" id="node48" href="$class_urho3_d_1_1_shared_ptr.html" title="Urho3D::SharedPtr\&lt;\l Urho3D::ShaderPrecache \&gt;" alt="" coords="372,1652,575,1699"/>
-<area shape="rect" id="node50" href="$class_urho3_d_1_1_int_vector2.html" title="Two&#45;dimensional vector with integer values." alt="" coords="401,1764,545,1793"/>
-<area shape="rect" id="node53" href="$class_urho3_d_1_1_graphics_impl.html" title="Graphics subsystem implementation. Holds API&#45;specific objects." alt="" coords="392,1817,555,1846"/>
-<area shape="rect" id="node59" href="$class_urho3_d_1_1_mutex.html" title="Operating system mutual exclusion primitive." alt="" coords="415,1870,532,1900"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="" coords="595,296,715,325"/>
+<area shape="rect" id="node36" href="$class_urho3_d_1_1_vertex_buffer.html" title="Hardware vertex buffer." alt="" coords="929,455,1087,484"/>
+<area shape="rect" id="node62" href="$class_urho3_d_1_1_index_buffer.html" title="Hardware index buffer." alt="" coords="933,244,1083,273"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference&#45;counted objects. These are noncopyable and non&#45;assignable." alt="" coords="5,317,157,347"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers." alt="" coords="241,348,369,377"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_render_surface.html" title="Color or depth&#45;stencil surface that can be rendered into." alt="" coords="923,100,1093,129"/>
+<area shape="rect" id="node55" href="$class_urho3_d_1_1_shader_variation.html" title="Vertex or pixel shader on the GPU." alt="" coords="917,573,1099,603"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_linked_list.html" title="Urho3D::LinkedList\l\&lt; Urho3D::EventHandler \&gt;" alt="" coords="208,227,403,274"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_int_rect.html" title="Two&#45;dimensional bounding rectangle with integer values." alt="" coords="947,820,1069,849"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::ScratchBuffer \&gt;" alt="" coords="916,942,1100,989"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_vector_base.html" title="Vector base class." alt="" coords="579,920,731,949"/>
+<area shape="rect" id="node42" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::GPUObject * \&gt;" alt="" coords="919,873,1097,919"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_weak_ptr.html" title="Urho3D::WeakPtr\&lt; Urho3D\l::RenderSurface \&gt;" alt="" coords="1285,39,1480,86"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_texture.html" title="Base class for texture resources." alt="" coords="592,167,717,196"/>
+<area shape="rect" id="node26" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, TextureUnit \&gt;" alt="" coords="907,1011,1109,1058"/>
+<area shape="rect" id="node28" href="$class_urho3_d_1_1_vector2.html" title="Two&#45;dimensional vector." alt="" coords="944,1209,1072,1239"/>
+<area shape="rect" id="node31" href="$class_urho3_d_1_1_weak_ptr.html" title="Urho3D::WeakPtr\&lt; Urho3D\l::Image \&gt;" alt="" coords="911,1262,1105,1309"/>
+<area shape="rect" id="node33" href="$class_urho3_d_1_1_vector4.html" title="Four&#45;dimensional vector." alt="" coords="944,1391,1072,1420"/>
+<area shape="rect" id="node39" href="$class_urho3_d_1_1_weak_ptr.html" title="Urho3D::WeakPtr\&lt; Urho3D\l::Shader \&gt;" alt="" coords="557,490,752,537"/>
+<area shape="rect" id="node45" href="$class_urho3_d_1_1_string.html" title="String class." alt="" coords="596,697,713,727"/>
+<area shape="rect" id="node48" href="$class_urho3_d_1_1_shared_ptr.html" title="Urho3D::SharedPtr\&lt;\l Urho3D::ShaderPrecache \&gt;" alt="" coords="907,1443,1109,1490"/>
+<area shape="rect" id="node50" href="$class_urho3_d_1_1_int_vector2.html" title="Two&#45;dimensional vector with integer values." alt="" coords="936,1555,1080,1584"/>
+<area shape="rect" id="node53" href="$class_urho3_d_1_1_graphics_impl.html" title="Graphics subsystem implementation. Holds API&#45;specific objects." alt="" coords="927,348,1089,377"/>
+<area shape="rect" id="node60" href="$class_urho3_d_1_1_mutex.html" title="Operating system mutual exclusion primitive." alt="" coords="949,401,1067,431"/>
 </map>

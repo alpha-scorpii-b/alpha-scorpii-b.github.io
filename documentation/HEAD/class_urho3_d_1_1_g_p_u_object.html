@@ -38,7 +38,7 @@ group: HEAD
 <p>Base class for GPU resources.  
  <a href="class_urho3_d_1_1_g_p_u_object.html#details">More...</a></p>
 
-<p><code>#include &lt;Urho3D/Graphics/OpenGL/OGLGPUObject.h&gt;</code></p>
+<p><code>#include &lt;Urho3D/Graphics/GPUObject.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::GPUObject:</div>
 <div class="dyncontent">
@@ -64,35 +64,39 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a818ceaf4f9debc5f4233f2e265d0cf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054b2b9d1ac58c3dc81866bb7db6761a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a054b2b9d1ac58c3dc81866bb7db6761a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a054b2b9d1ac58c3dc81866bb7db6761a">OnDeviceLost</a> ()</td></tr>
-<tr class="memdesc:a054b2b9d1ac58c3dc81866bb7db6761a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the GPU resource destroyed on context destruction. <br/></td></tr>
+<tr class="memdesc:a054b2b9d1ac58c3dc81866bb7db6761a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the GPU resource destroyed on graphics context destruction. <br/></td></tr>
 <tr class="separator:a054b2b9d1ac58c3dc81866bb7db6761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ab28f33620594506eeb2c5fe168106"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18ab28f33620594506eeb2c5fe168106"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a18ab28f33620594506eeb2c5fe168106">OnDeviceReset</a> ()</td></tr>
-<tr class="memdesc:a18ab28f33620594506eeb2c5fe168106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the GPU resource and restore data if applicable. <br/></td></tr>
-<tr class="separator:a18ab28f33620594506eeb2c5fe168106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d97d51d21841b9c057baee19a17a30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86d97d51d21841b9c057baee19a17a30"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a86d97d51d21841b9c057baee19a17a30">Release</a> ()</td></tr>
-<tr class="memdesc:a86d97d51d21841b9c057baee19a17a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unconditionally release the GPU resource. <br/></td></tr>
-<tr class="separator:a86d97d51d21841b9c057baee19a17a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3ecf94ce006770c7bc8cbc86640108"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3ecf94ce006770c7bc8cbc86640108"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#afe3ecf94ce006770c7bc8cbc86640108">OnDeviceReset</a> ()</td></tr>
+<tr class="memdesc:afe3ecf94ce006770c7bc8cbc86640108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the GPU resource and restore data if applicable. <br/></td></tr>
+<tr class="separator:afe3ecf94ce006770c7bc8cbc86640108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac26bb2931a08613cccf6038e87e055"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ac26bb2931a08613cccf6038e87e055"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a3ac26bb2931a08613cccf6038e87e055">Release</a> ()</td></tr>
+<tr class="memdesc:a3ac26bb2931a08613cccf6038e87e055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unconditionally release the GPU resource. <br/></td></tr>
+<tr class="separator:a3ac26bb2931a08613cccf6038e87e055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90de5fa07e164d6b5e95f832a0741088"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90de5fa07e164d6b5e95f832a0741088"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a90de5fa07e164d6b5e95f832a0741088">ClearDataLost</a> ()</td></tr>
 <tr class="memdesc:a90de5fa07e164d6b5e95f832a0741088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the data lost flag. <br/></td></tr>
 <tr class="separator:a90de5fa07e164d6b5e95f832a0741088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada0cc0adf6cc06940102d64be88b9d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada0cc0adf6cc06940102d64be88b9d4b"></a>
 <a class="el" href="class_urho3_d_1_1_graphics.html">Graphics</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#ada0cc0adf6cc06940102d64be88b9d4b">GetGraphics</a> () const </td></tr>
-<tr class="memdesc:ada0cc0adf6cc06940102d64be88b9d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the graphics subsystem. <br/></td></tr>
+<tr class="memdesc:ada0cc0adf6cc06940102d64be88b9d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the graphics subsystem associated with this GPU object. <br/></td></tr>
 <tr class="separator:ada0cc0adf6cc06940102d64be88b9d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3aa11294b3d788965f299ca9bfb81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc3aa11294b3d788965f299ca9bfb81c"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#acc3aa11294b3d788965f299ca9bfb81c">GetGPUObject</a> () const </td></tr>
-<tr class="memdesc:acc3aa11294b3d788965f299ca9bfb81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object's OpenGL handle. <br/></td></tr>
-<tr class="separator:acc3aa11294b3d788965f299ca9bfb81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67142837fc5ed67f4b0bf7f97df2cb5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67142837fc5ed67f4b0bf7f97df2cb5d"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a67142837fc5ed67f4b0bf7f97df2cb5d">GetGPUObject</a> () const </td></tr>
+<tr class="memdesc:a67142837fc5ed67f4b0bf7f97df2cb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object pointer. Applicable only on Direct3D. <br/></td></tr>
+<tr class="separator:a67142837fc5ed67f4b0bf7f97df2cb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead9180b607d1e02a2f94c54e6b275c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aead9180b607d1e02a2f94c54e6b275c1"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#aead9180b607d1e02a2f94c54e6b275c1">GetGPUObjectName</a> () const </td></tr>
+<tr class="memdesc:aead9180b607d1e02a2f94c54e6b275c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object name. Applicable only on OpenGL. <br/></td></tr>
+<tr class="separator:aead9180b607d1e02a2f94c54e6b275c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcfd2ec12501214e6f78bb0ce2fee6d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcfd2ec12501214e6f78bb0ce2fee6d5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#afcfd2ec12501214e6f78bb0ce2fee6d5">IsDataLost</a> () const </td></tr>
 <tr class="memdesc:afcfd2ec12501214e6f78bb0ce2fee6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether data is lost due to context loss. <br/></td></tr>
 <tr class="separator:afcfd2ec12501214e6f78bb0ce2fee6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04fece8be486f0b627364667159d823c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04fece8be486f0b627364667159d823c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a04fece8be486f0b627364667159d823c">HasPendingData</a> () const </td></tr>
-<tr class="memdesc:a04fece8be486f0b627364667159d823c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has pending data assigned while context was lost. <br/></td></tr>
+<tr class="memdesc:a04fece8be486f0b627364667159d823c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has pending data assigned while graphics context was lost. <br/></td></tr>
 <tr class="separator:a04fece8be486f0b627364667159d823c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -101,10 +105,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_graphics.html">Graphics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#abf1a902885d2c3bac02f3f58e0e0f037">graphics_</a></td></tr>
 <tr class="memdesc:abf1a902885d2c3bac02f3f58e0e0f037"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a> subsystem. <br/></td></tr>
 <tr class="separator:abf1a902885d2c3bac02f3f58e0e0f037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601debebd01ef73fa6f40c818232330e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a601debebd01ef73fa6f40c818232330e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a601debebd01ef73fa6f40c818232330e">object_</a></td></tr>
-<tr class="memdesc:a601debebd01ef73fa6f40c818232330e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> handle. <br/></td></tr>
-<tr class="separator:a601debebd01ef73fa6f40c818232330e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02851f652df5053623c4434f2cd9a4b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02851f652df5053623c4434f2cd9a4b8"></a>
+<a class="el" href="union_urho3_d_1_1_g_p_u_object_handle.html">GPUObjectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a02851f652df5053623c4434f2cd9a4b8">object_</a></td></tr>
+<tr class="memdesc:a02851f652df5053623c4434f2cd9a4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> pointer or name. <br/></td></tr>
+<tr class="separator:a02851f652df5053623c4434f2cd9a4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c82e62ca8b1098c4157acfe517c772"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6c82e62ca8b1098c4157acfe517c772"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#ab6c82e62ca8b1098c4157acfe517c772">dataLost_</a></td></tr>
 <tr class="memdesc:ab6c82e62ca8b1098c4157acfe517c772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data lost flag. <br/></td></tr>
@@ -117,7 +121,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for GPU resources. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Source/Urho3D/Graphics/OpenGL/OGLGPUObject.h</li>
-<li>Source/Urho3D/Graphics/OpenGL/OGLGPUObject.cpp</li>
+<li>Source/Urho3D/Graphics/GPUObject.h</li>
+<li>Source/Urho3D/Graphics/GPUObject.cpp</li>
 </ul>
 </div><!-- contents -->

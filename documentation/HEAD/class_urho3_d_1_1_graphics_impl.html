@@ -43,7 +43,7 @@ group: HEAD
 <div class="dynheader">
 Collaboration diagram for Urho3D::GraphicsImpl:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_graphics_impl__coll__graph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_graphics_impl__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -53,10 +53,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a5d9ca44f230629dad1691a8f06f13e83">GraphicsImpl</a> ()</td></tr>
 <tr class="memdesc:a5d9ca44f230629dad1691a8f06f13e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a5d9ca44f230629dad1691a8f06f13e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1d076963965a3cd80c70564461e366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a1d076963965a3cd80c70564461e366"></a>
-SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a2a1d076963965a3cd80c70564461e366">GetWindow</a> () const </td></tr>
-<tr class="memdesc:a2a1d076963965a3cd80c70564461e366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SDL window. <br/></td></tr>
-<tr class="separator:a2a1d076963965a3cd80c70564461e366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bc4fa99d6e73f2840e9152322ea430"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85bc4fa99d6e73f2840e9152322ea430"></a>
 const SDL_GLContext &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a85bc4fa99d6e73f2840e9152322ea430">GetGLContext</a> ()</td></tr>
 <tr class="memdesc:a85bc4fa99d6e73f2840e9152322ea430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the GL <a class="el" href="class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers.">Context</a>. <br/></td></tr>
@@ -64,10 +60,6 @@ const SDL_GLContext &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae67ebfb1ac3c71dee287cd2672c4f2b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae67ebfb1ac3c71dee287cd2672c4f2b8"></a>
-SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#ae67ebfb1ac3c71dee287cd2672c4f2b8">window_</a></td></tr>
-<tr class="memdesc:ae67ebfb1ac3c71dee287cd2672c4f2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDL window. <br/></td></tr>
-<tr class="separator:ae67ebfb1ac3c71dee287cd2672c4f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af774063b57fa547640653734de6cdee6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af774063b57fa547640653734de6cdee6"></a>
 SDL_GLContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#af774063b57fa547640653734de6cdee6">context_</a></td></tr>
 <tr class="memdesc:af774063b57fa547640653734de6cdee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDL OpenGL context. <br/></td></tr>
@@ -119,6 +111,39 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="struct_urho3_d_1_1_frame_buffer_object.html">FrameBufferObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a94a65920103f9d6fe4c0ad2353d5be45">frameBuffers_</a></td></tr>
 <tr class="memdesc:a94a65920103f9d6fe4c0ad2353d5be45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map for FBO's per resolution and format. <br/></td></tr>
 <tr class="separator:a94a65920103f9d6fe4c0ad2353d5be45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309fff1b32cf1f502210f3a92b3bf21f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a309fff1b32cf1f502210f3a92b3bf21f"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a309fff1b32cf1f502210f3a92b3bf21f">textureTypes_</a> [MAX_TEXTURE_UNITS]</td></tr>
+<tr class="memdesc:a309fff1b32cf1f502210f3a92b3bf21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL texture types in use. <br/></td></tr>
+<tr class="separator:a309fff1b32cf1f502210f3a92b3bf21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f0fdcc4610d0df9ef65c2894c91de0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06f0fdcc4610d0df9ef65c2894c91de0"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">ConstantBufferMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a06f0fdcc4610d0df9ef65c2894c91de0">allConstantBuffers_</a></td></tr>
+<tr class="memdesc:a06f0fdcc4610d0df9ef65c2894c91de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant buffer search map. <br/></td></tr>
+<tr class="separator:a06f0fdcc4610d0df9ef65c2894c91de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e879b74774116f98e7e389caf482cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4e879b74774116f98e7e389caf482cb"></a>
+<a class="el" href="class_urho3_d_1_1_constant_buffer.html">ConstantBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#aa4e879b74774116f98e7e389caf482cb">constantBuffers_</a> [MAX_SHADER_PARAMETER_GROUPS *2]</td></tr>
+<tr class="memdesc:aa4e879b74774116f98e7e389caf482cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently bound constant buffers. <br/></td></tr>
+<tr class="separator:aa4e879b74774116f98e7e389caf482cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6727e6446f2530b0892639dfb2aa3e48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6727e6446f2530b0892639dfb2aa3e48"></a>
+<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_constant_buffer.html">ConstantBuffer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a6727e6446f2530b0892639dfb2aa3e48">dirtyConstantBuffers_</a></td></tr>
+<tr class="memdesc:a6727e6446f2530b0892639dfb2aa3e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirty constant buffers. <br/></td></tr>
+<tr class="separator:a6727e6446f2530b0892639dfb2aa3e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd3c27c9cd1dcbed4bb367e1b086a4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacd3c27c9cd1dcbed4bb367e1b086a4a"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#aacd3c27c9cd1dcbed4bb367e1b086a4a">lastInstanceOffset_</a></td></tr>
+<tr class="memdesc:aacd3c27c9cd1dcbed4bb367e1b086a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last used instance data offset. <br/></td></tr>
+<tr class="separator:aacd3c27c9cd1dcbed4bb367e1b086a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9005e952008dd633d250ec93586b06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d9005e952008dd633d250ec93586b06"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; int, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a5d9005e952008dd633d250ec93586b06">depthTextures_</a></td></tr>
+<tr class="memdesc:a5d9005e952008dd633d250ec93586b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map for additional depth textures, to emulate Direct3D9 ability to mix render texture and backbuffer rendering. <br/></td></tr>
+<tr class="separator:a5d9005e952008dd633d250ec93586b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8fc86e26e1cc178418132b0bfa3910"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b8fc86e26e1cc178418132b0bfa3910"></a>
+<a class="el" href="class_urho3_d_1_1_shader_program.html">ShaderProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#a3b8fc86e26e1cc178418132b0bfa3910">shaderProgram_</a></td></tr>
+<tr class="memdesc:a3b8fc86e26e1cc178418132b0bfa3910"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_shader.html" title="Shader resource consisting of several shader variations.">Shader</a> program in use. <br/></td></tr>
+<tr class="separator:a3b8fc86e26e1cc178418132b0bfa3910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb4a69166a0ab0e26864b47419c4e7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedb4a69166a0ab0e26864b47419c4e7b"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">ShaderProgramMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#aedb4a69166a0ab0e26864b47419c4e7b">shaderPrograms_</a></td></tr>
+<tr class="memdesc:aedb4a69166a0ab0e26864b47419c4e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linked shader programs. <br/></td></tr>
+<tr class="separator:aedb4a69166a0ab0e26864b47419c4e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fa8288faf79bbeb2b98c6299093760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8fa8288faf79bbeb2b98c6299093760"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics_impl.html#ad8fa8288faf79bbeb2b98c6299093760">fboDirty_</a></td></tr>
 <tr class="memdesc:ad8fa8288faf79bbeb2b98c6299093760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Need FBO commit flag. <br/></td></tr>

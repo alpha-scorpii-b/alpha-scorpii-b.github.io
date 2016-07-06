@@ -39,7 +39,7 @@ group: HEAD
 <p>Color or depth-stencil surface that can be rendered into.  
  <a href="class_urho3_d_1_1_render_surface.html#details">More...</a></p>
 
-<p><code>#include &lt;Urho3D/Graphics/OpenGL/OGLRenderSurface.h&gt;</code></p>
+<p><code>#include &lt;Urho3D/Graphics/RenderSurface.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::RenderSurface:</div>
 <div class="dyncontent">
@@ -87,26 +87,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#af27d07a0cf5fe7ed59d925a0c5eb3123">QueueUpdate</a> ()</td></tr>
 <tr class="memdesc:af27d07a0cf5fe7ed59d925a0c5eb3123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue manual update of the viewport(s). <br/></td></tr>
 <tr class="separator:af27d07a0cf5fe7ed59d925a0c5eb3123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7751764715995a37fa62e8ae5c3e68b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7751764715995a37fa62e8ae5c3e68b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ab7751764715995a37fa62e8ae5c3e68b">CreateRenderBuffer</a> (unsigned width, unsigned height, unsigned format)</td></tr>
-<tr class="memdesc:ab7751764715995a37fa62e8ae5c3e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderbuffer. Return true if successful. <br/></td></tr>
-<tr class="separator:ab7751764715995a37fa62e8ae5c3e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b0dbb3887f7c0f62143d4c9f71b7e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a13b0dbb3887f7c0f62143d4c9f71b7e3">OnDeviceLost</a> ()</td></tr>
-<tr class="memdesc:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle device loss. <br/></td></tr>
-<tr class="separator:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc06693e0e34733062927ac0468b263"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecc06693e0e34733062927ac0468b263"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#aecc06693e0e34733062927ac0468b263">Release</a> ()</td></tr>
-<tr class="memdesc:aecc06693e0e34733062927ac0468b263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release renderbuffer if any. <br/></td></tr>
+<tr class="memdesc:aecc06693e0e34733062927ac0468b263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release surface. <br/></td></tr>
 <tr class="separator:aecc06693e0e34733062927ac0468b263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7c4f50c5887e1d74f30b6350a2619c"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a3a7c4f50c5887e1d74f30b6350a2619c">GetParentTexture</a> () const </td></tr>
-<tr class="memdesc:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent texture. <br/></td></tr>
-<tr class="separator:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c60fb09e5a2dd4545148d5a06d57d4b"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a5c60fb09e5a2dd4545148d5a06d57d4b">GetRenderBuffer</a> () const </td></tr>
-<tr class="memdesc:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return renderbuffer if created. <br/></td></tr>
-<tr class="separator:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b0dbb3887f7c0f62143d4c9f71b7e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a13b0dbb3887f7c0f62143d4c9f71b7e3">OnDeviceLost</a> ()</td></tr>
+<tr class="memdesc:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the GPU resource destroyed on graphics context destruction. Only used on OpenGL. <br/></td></tr>
+<tr class="separator:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7751764715995a37fa62e8ae5c3e68b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7751764715995a37fa62e8ae5c3e68b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ab7751764715995a37fa62e8ae5c3e68b">CreateRenderBuffer</a> (unsigned width, unsigned height, unsigned format)</td></tr>
+<tr class="memdesc:ab7751764715995a37fa62e8ae5c3e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create renderbuffer that cannot be sampled as a texture. Only used on OpenGL. <br/></td></tr>
+<tr class="separator:ab7751764715995a37fa62e8ae5c3e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be67d97ab77b0d6f24776a3f75c5e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be67d97ab77b0d6f24776a3f75c5e6a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a1be67d97ab77b0d6f24776a3f75c5e6a">GetWidth</a> () const </td></tr>
 <tr class="memdesc:a1be67d97ab77b0d6f24776a3f75c5e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return width. <br/></td></tr>
@@ -133,20 +125,12 @@ RenderSurfaceUpdateMode&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="separator:a51e7f5db78ac319567585d6e4dc0df53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d8f8d443a46e9b020766bf14e34fca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8d8f8d443a46e9b020766bf14e34fca"></a>
 <a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ac8d8f8d443a46e9b020766bf14e34fca">GetLinkedRenderTarget</a> () const </td></tr>
-<tr class="memdesc:ac8d8f8d443a46e9b020766bf14e34fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linked color buffer. <br/></td></tr>
+<tr class="memdesc:ac8d8f8d443a46e9b020766bf14e34fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linked color rendertarget. <br/></td></tr>
 <tr class="separator:ac8d8f8d443a46e9b020766bf14e34fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4be82dd776b454f50e51f5f78c1fe7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4be82dd776b454f50e51f5f78c1fe7d"></a>
 <a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ad4be82dd776b454f50e51f5f78c1fe7d">GetLinkedDepthStencil</a> () const </td></tr>
-<tr class="memdesc:ad4be82dd776b454f50e51f5f78c1fe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linked depth buffer. <br/></td></tr>
+<tr class="memdesc:ad4be82dd776b454f50e51f5f78c1fe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linked depth-stencil surface. <br/></td></tr>
 <tr class="separator:ad4be82dd776b454f50e51f5f78c1fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceca28809ebd5b322bec30c9f70b4781"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceca28809ebd5b322bec30c9f70b4781"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#aceca28809ebd5b322bec30c9f70b4781">SetTarget</a> (unsigned target)</td></tr>
-<tr class="memdesc:aceca28809ebd5b322bec30c9f70b4781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set surface's OpenGL target. <br/></td></tr>
-<tr class="separator:aceca28809ebd5b322bec30c9f70b4781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d57d5ee0f8bd06a993465d90ad203f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d57d5ee0f8bd06a993465d90ad203f"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a06d57d5ee0f8bd06a993465d90ad203f">GetTarget</a> () const </td></tr>
-<tr class="memdesc:a06d57d5ee0f8bd06a993465d90ad203f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return surface's OpenGL target. <br/></td></tr>
-<tr class="separator:a06d57d5ee0f8bd06a993465d90ad203f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4a2b5ac5d93e70bec4fccdab1fdecf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed4a2b5ac5d93e70bec4fccdab1fdecf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#aed4a2b5ac5d93e70bec4fccdab1fdecf">IsUpdateQueued</a> () const </td></tr>
 <tr class="memdesc:aed4a2b5ac5d93e70bec4fccdab1fdecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether manual update queued. Called internally. <br/></td></tr>
@@ -155,6 +139,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a186237ebe6bd59cfc07178902b7e7142">ResetUpdateQueued</a> ()</td></tr>
 <tr class="memdesc:a186237ebe6bd59cfc07178902b7e7142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset update queued flag. Called internally. <br/></td></tr>
 <tr class="separator:a186237ebe6bd59cfc07178902b7e7142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7c4f50c5887e1d74f30b6350a2619c"></a>
+<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a3a7c4f50c5887e1d74f30b6350a2619c">GetParentTexture</a> () const </td></tr>
+<tr class="memdesc:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent texture. <br/></td></tr>
+<tr class="separator:a3a7c4f50c5887e1d74f30b6350a2619c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189a67b266a40e10fb5631c2b282f97a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a189a67b266a40e10fb5631c2b282f97a"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a189a67b266a40e10fb5631c2b282f97a">GetSurface</a> () const </td></tr>
+<tr class="memdesc:a189a67b266a40e10fb5631c2b282f97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Direct3D9 surface. <br/></td></tr>
+<tr class="separator:a189a67b266a40e10fb5631c2b282f97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c7811a5d78b66288690a59e3bdcd20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95c7811a5d78b66288690a59e3bdcd20"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a95c7811a5d78b66288690a59e3bdcd20">GetRenderTargetView</a> () const </td></tr>
+<tr class="memdesc:a95c7811a5d78b66288690a59e3bdcd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Direct3D11 rendertarget or depth-stencil view. Not valid on OpenGL. <br/></td></tr>
+<tr class="separator:a95c7811a5d78b66288690a59e3bdcd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50525cbc999ef03b3ecfa2b30187e31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae50525cbc999ef03b3ecfa2b30187e31"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ae50525cbc999ef03b3ecfa2b30187e31">GetReadOnlyView</a> () const </td></tr>
+<tr class="memdesc:ae50525cbc999ef03b3ecfa2b30187e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Direct3D11 read-only depth-stencil view. May be null if not applicable. Not valid on OpenGL. <br/></td></tr>
+<tr class="separator:ae50525cbc999ef03b3ecfa2b30187e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d57d5ee0f8bd06a993465d90ad203f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d57d5ee0f8bd06a993465d90ad203f"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a06d57d5ee0f8bd06a993465d90ad203f">GetTarget</a> () const </td></tr>
+<tr class="memdesc:a06d57d5ee0f8bd06a993465d90ad203f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return surface's OpenGL target. <br/></td></tr>
+<tr class="separator:a06d57d5ee0f8bd06a993465d90ad203f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c60fb09e5a2dd4545148d5a06d57d4b"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a5c60fb09e5a2dd4545148d5a06d57d4b">GetRenderBuffer</a> () const </td></tr>
+<tr class="memdesc:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return OpenGL renderbuffer if created. <br/></td></tr>
+<tr class="separator:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#aad6e2ac9e97ca71b28c47248a9aad9b9">RefCounted</a> ()</td></tr>
@@ -191,14 +199,29 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#aba01b45a14cfebb8826d29454bbaedfe">parentTexture_</a></td></tr>
 <tr class="memdesc:aba01b45a14cfebb8826d29454bbaedfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent texture. <br/></td></tr>
 <tr class="separator:aba01b45a14cfebb8826d29454bbaedfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab093e1517392c3f95d6a38b836e6da6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab093e1517392c3f95d6a38b836e6da6a"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ab093e1517392c3f95d6a38b836e6da6a">target_</a></td></tr>
-<tr class="memdesc:ab093e1517392c3f95d6a38b836e6da6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL target. <br/></td></tr>
-<tr class="separator:ab093e1517392c3f95d6a38b836e6da6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb4c13d469623ed215da752e6946644"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeb4c13d469623ed215da752e6946644"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#adeb4c13d469623ed215da752e6946644">renderBuffer_</a></td></tr>
-<tr class="memdesc:adeb4c13d469623ed215da752e6946644"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL renderbuffer. <br/></td></tr>
-<tr class="separator:adeb4c13d469623ed215da752e6946644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57453e4ffb137e80ffb1de19d839ee47"><td class="memItemLeft" ><a class="anchor" id="a57453e4ffb137e80ffb1de19d839ee47"></a>
+union {</td></tr>
+<tr class="memitem:a3e44cc622a7bee6341aaf6b5114295dd"><td class="memItemLeft" >&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="class_urho3_d_1_1_render_surface.html#aa4cf5a343c6b1040a2bb9a51ae9990ad">surface_</a></td></tr>
+<tr class="memdesc:a3e44cc622a7bee6341aaf6b5114295dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct3D9 surface. <br/></td></tr>
+<tr class="separator:a3e44cc622a7bee6341aaf6b5114295dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15971de2e1d17956f857b9ed8659f81d"><td class="memItemLeft" >&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="class_urho3_d_1_1_render_surface.html#a3f6420bc1e7b9eac4e6abc1544e402a5">renderTargetView_</a></td></tr>
+<tr class="memdesc:a15971de2e1d17956f857b9ed8659f81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct3D11 rendertarget or depth-stencil view. <br/></td></tr>
+<tr class="separator:a15971de2e1d17956f857b9ed8659f81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96390d60870a9fcb95fc1aef5a452d8f"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="class_urho3_d_1_1_render_surface.html#adeb4c13d469623ed215da752e6946644">renderBuffer_</a></td></tr>
+<tr class="memdesc:a96390d60870a9fcb95fc1aef5a452d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL renderbuffer name. <br/></td></tr>
+<tr class="separator:a96390d60870a9fcb95fc1aef5a452d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57453e4ffb137e80ffb1de19d839ee47"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a57453e4ffb137e80ffb1de19d839ee47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c419967f5226502230bba7446e41682"><td class="memItemLeft" ><a class="anchor" id="a8c419967f5226502230bba7446e41682"></a>
+union {</td></tr>
+<tr class="memitem:ad001bc4456ddda99088e86975e69d646"><td class="memItemLeft" >&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="class_urho3_d_1_1_render_surface.html#adaabf4cfe0db40f6107b0ae3a403babe">readOnlyView_</a></td></tr>
+<tr class="memdesc:ad001bc4456ddda99088e86975e69d646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct3D11 read-only depth-stencil view. Present only on depth-stencil surfaces. <br/></td></tr>
+<tr class="separator:ad001bc4456ddda99088e86975e69d646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9542995b40848d983533be7839d4670"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="class_urho3_d_1_1_render_surface.html#ab093e1517392c3f95d6a38b836e6da6a">target_</a></td></tr>
+<tr class="memdesc:ae9542995b40848d983533be7839d4670"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGL target. <br/></td></tr>
+<tr class="separator:ae9542995b40848d983533be7839d4670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c419967f5226502230bba7446e41682"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a8c419967f5226502230bba7446e41682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7503567fe162b06e203318979276179"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7503567fe162b06e203318979276179"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_viewport.html">Viewport</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ad7503567fe162b06e203318979276179">viewports_</a></td></tr>
 <tr class="memdesc:ad7503567fe162b06e203318979276179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewports. <br/></td></tr>
@@ -225,6 +248,9 @@ Friends</h2></td></tr>
 <tr class="memitem:aa70951a0328ba29f64176f16b3ea47d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70951a0328ba29f64176f16b3ea47d8"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Texture2D</b></td></tr>
 <tr class="separator:aa70951a0328ba29f64176f16b3ea47d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a67454ccfbb5d938d84a52e5f85f3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5a67454ccfbb5d938d84a52e5f85f3e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Texture2DArray</b></td></tr>
+<tr class="separator:af5a67454ccfbb5d938d84a52e5f85f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756d6a1c2f1beb631b3f46e73cd5e9fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a756d6a1c2f1beb631b3f46e73cd5e9fa"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>TextureCube</b></td></tr>
 <tr class="separator:a756d6a1c2f1beb631b3f46e73cd5e9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,7 +258,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TextureCube</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Color or depth-stencil surface that can be rendered into. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Source/Urho3D/Graphics/OpenGL/OGLRenderSurface.h</li>
+<li>Source/Urho3D/Graphics/RenderSurface.h</li>
 <li>Source/Urho3D/Graphics/OpenGL/OGLRenderSurface.cpp</li>
+<li>Source/Urho3D/Graphics/RenderSurface.cpp</li>
 </ul>
 </div><!-- contents -->
