@@ -88,6 +88,7 @@ Options:
 <h2><a class="anchor" id="Tools_PackageTool"></a>
 PackageTool</h2>
 <p>Examines a directory recursively for files and subdirectories and creates a <a class="el" href="class_urho3_d_1_1_package_file.html" title="Stores files of a directory tree sequentially for convenient access.">PackageFile</a>. The package file can be added to the <a class="el" href="class_urho3_d_1_1_resource_cache.html" title="Resource cache subsystem. Loads resources on demand and stores them for later access.">ResourceCache</a> and used as if the files were on a (read-only) filesystem. The file data can optionally be compressed using the LZ4 compression library.</p>
+<p>Use caution when using package files on Android, as the .apk is already a package itself, where arbitrary seeks can perform poorly due to compression already being used. Experimentally it looks that on Android it can be favorable to compress the package, because in that case the .apk packaging may skip its own compression, allowing better seek &amp; read performance.</p>
 <p>Usage:</p>
 <pre class="fragment">PackageTool &lt;directory to process&gt; &lt;package name&gt; [basepath] [options]
 
