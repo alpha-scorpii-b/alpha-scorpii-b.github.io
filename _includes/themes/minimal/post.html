@@ -6,6 +6,7 @@ Copyright (c) 2014-2016 Yao Wei Tjong
 
 {% unless post %}
   {% assign post = page %}
+  {% assign no-comment-count = true %}
 {% endunless %}
 <article>
   <div class="post-meta">
@@ -20,11 +21,11 @@ Copyright (c) 2014-2016 Yao Wei Tjong
   <div class="post">
     {% if post.layout == 'default' %}{{ content }}{% else %}{{ post.content }}{% endif %}
   </div>
-  {% if post.layout == 'post' %}
+  {% unless no-comment-count %}
   <div class="comments-count">
     <div class="pull-right">
       <a href="{{ BASE_PATH}}{{ post.url }}#comments_disqus_thread"><i class="fa fa-comment-o"></i>&nbsp;</a>{% if site.safe %}<a href="{{ BASE_PATH}}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a>{% endif %}
     </div>
   </div>
-  {% endif %}
+  {% endunless %}
 </article>
