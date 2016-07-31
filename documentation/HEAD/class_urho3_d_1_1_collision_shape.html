@@ -681,6 +681,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a6ec45c63b4441b55523b47e3ace8ac0c">OnMarkedDirty</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="memdesc:a6ec45c63b4441b55523b47e3ace8ac0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle node transform being dirtied. <br/></td></tr>
 <tr class="separator:a6ec45c63b4441b55523b47e3ace8ac0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c97935a817938bf566419da49581e7"><td class="memItemLeft" align="right" valign="top">virtual btCollisionShape *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a41c97935a817938bf566419da49581e7">UpdateDerivedShape</a> (int shapeType, const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;newWorldScale)</td></tr>
+<tr class="separator:a41c97935a817938bf566419da49581e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a0cbbf555b28aa805b164bd3591e80856 inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbbf555b28aa805b164bd3591e80856"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a0cbbf555b28aa805b164bd3591e80856">OnAttributeAnimationAdded</a> ()</td></tr>
@@ -855,7 +857,52 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physics collision shape component. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a41c97935a817938bf566419da49581e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">btCollisionShape * Urho3D::CollisionShape::UpdateDerivedShape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shapeType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>newWorldScale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when instantiating a collision shape that is not one of ShapeType (default no-op).</p>
+<p>Useful for custom shape types that subclass <a class="el" href="class_urho3_d_1_1_collision_shape.html" title="Physics collision shape component.">CollisionShape</a> and use a non-standard underlying btCollisionShape. UpdateDerivedShape can then be overridden to create the required btCollisionShape subclass. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_collision_shape_a41c97935a817938bf566419da49581e7_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Physics/CollisionShape.h</li>
 <li>Source/Urho3D/Physics/CollisionShape.cpp</li>
 </ul>
