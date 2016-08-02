@@ -51,9 +51,9 @@ Building prerequisites</h2>
 </li>
 <li>Display server (essential). One or more of these can be installed at the same time. When multiple display servers are available, X11 takes precedence (overridable using SDL_VIDEODRIVER environment variable during application runtime).<ul>
 <li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use SDL_OPT_VIDEO_DIRECTFB build option to enable.</li>
-<li>mir-client-platform-mesa-dev and mircommon-dev (Ubuntu only) for Mir.</li>
-<li>libwayland-client-devel, libwayland-cursor-devel, and mesa-libwayland-egl-devel (RedHat-based only, pre-installed on Fedora 22+) for Wayland.</li>
-<li>libx11-dev and libxrandr-dev (Debian-based) or libX11-devel and libXrandr-devel (RedHat-based) for X11.</li>
+<li>libegl1-mesa-dev and mir-client-platform-mesa-dev (Ubuntu only) for Mir.</li>
+<li>libegl1-mesa-dev and libwayland-dev (Debian-based) or libwayland-client-devel, libwayland-cursor-devel, and mesa-libwayland-egl-devel (RedHat-based) for Wayland.</li>
+<li>libx11-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libxrender-dev, and libxss-dev (Debian-based) or libX11-devel, libXcursor-devel, libXext-devel, libXi-devel, libXinerama-devel, libXrandr-devel, libXrender-devel, and libXScrnSaver-devel (RedHat-based) for X11 and its extensions. Alternatively, you can use xorg-devel meta package on Debian-based system, but it would install other unneeded packages as well.</li>
 </ul>
 </li>
 <li>Sound server (essential). One or more of these can be installed at the same time. When multiple sound servers are available, PulseAudio takes precedence (overridable using SDL_AUDIODRIVER environment variable during application runtime).<ul>
@@ -67,9 +67,10 @@ Building prerequisites</h2>
 </ul>
 </li>
 <li>Miscellaneous (optional).<ul>
-<li>libudev-dev (Debian-based) or systemd-devel (Redhat-based) for input device hot-plugging.</li>
+<li>libdbus-1-dev (Debian-based) or dbus-devel (Redhat-based) for system-wide messaging (e.g. inhibiting screen-saver).</li>
 <li>libreadline6-dev (Debian-based) or readline-devel (Redhat-based) for easy editing of command lines in interactive standalone host tools, e.g. isql and lua interpreter.</li>
 <li>libts-dev (Debian-based) or tslib-devel (RedHat-based) for resistive, single-touch touchscreen input for embedded Linux device, e.g. Pandora and Wiz. Modern multi-touch touchscreen does not need this.</li>
+<li>libudev-dev (Debian-based) or systemd-devel (Redhat-based) for input device hot-plugging.</li>
 </ul>
 </li>
 </ul>
