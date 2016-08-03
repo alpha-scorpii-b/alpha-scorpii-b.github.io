@@ -18,7 +18,212 @@ group: HEAD
 <div class="title">History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>V1.5</p>
+<div class="textblock"><p>V1.6</p>
+<ul>
+<li>Physically based rendering shaders, techniques, renderpaths and example materials / demo scene.</li>
+<li>AngelScript support on also on Emscripten and 64-bit iOS, based on generic bindings.</li>
+<li>JSON load/save option for scenes, nodes and materials.</li>
+<li>Tags added to nodes &amp; UI elements.</li>
+<li>EventProfiler subsystem.</li>
+<li>Improved mouse mode handling on Emscripten.</li>
+<li>Texture2DArray class added.</li>
+<li>RibbonTrail class added.</li>
+<li>Variance shadow mapping option.</li>
+<li>Normal offset option as an alternative to reducing self-shadowing artifacts.</li>
+<li>Arbitrary (freeform) vertex declarations. Legacy bitmask based vertex declarations emulated using them.</li>
+<li>API-independent graphics class headers. Should ensure Urho library ABI compatibility between builds made on different APIs.</li>
+<li>PackageFile support also on Android from within the .apk.</li>
+<li>Optional additive animation blending mode. Based on calculating difference from the bind pose on the fly.</li>
+<li>Directional billboard mode.</li>
+<li>Fixed screen size option for billboards &amp; Text3D.</li>
+<li>Rendering scale added to UI.</li>
+<li>Context-wide global variable implementation. Replaces the previous script-only global variables mechanism.</li>
+<li>Aggregate initializers for containers.</li>
+<li>C++11 binding to Urho events using std::bind.</li>
+<li>C++11 variadic template version of SendEvent().</li>
+<li>64-bit integer support in Serializer / Deserializer.</li>
+<li>String + number operators.</li>
+<li>Template versions of math functions.</li>
+<li>Container class API improvements.</li>
+<li>SharedPtr / WeakPtr implicit upcasting support.</li>
+<li>Matrix2 class.</li>
+<li>Rename escape key name to KEY_ESCAPE for consistency with SDL.</li>
+<li>Make keycodes lowercase for consistency with SDL.</li>
+<li>API to get joysticks by name.</li>
+<li>Detect number of CPU cores on Emscripten if possible.</li>
+<li>Utilize SDLActivity's get arguments feature.</li>
+<li>Configurable minidump write location.</li>
+<li>Engine parameter for enabling/disabling high DPI window mode.</li>
+<li>Skip using the engine frame limiter on iOS when targeting 60 fps or above, to prevent erratic frame rate from sleep calls.</li>
+<li>Text effect enhancements.</li>
+<li>TmxFile2D &amp; SpriteSheet2D improvements.</li>
+<li>Sprite2D edge offset parameter for removing bleeding artifacts.</li>
+<li>Drawable2D distance sorting.</li>
+<li>Interpolation mode IM_NONE (no interpolation) added to ValueAnimation.</li>
+<li>Segmented PhysicsWorld ray query for performance optimization.</li>
+<li>Hit fraction added to physics cast results.</li>
+<li>Allow custom collision shape subclasses &amp; custom Bullet collision configuration.</li>
+<li>Expanded data returned from NavigationMesh path queries.</li>
+<li>Clone() added to Technique, ParticleEffect &amp; ParticleEffect2D classes.</li>
+<li>SetFontSize() added to Text &amp; Text3D.</li>
+<li>IntRect / IntVector2 setters &amp; getters added to XMLElement.</li>
+<li>TryAcquire() added to Mutex class.</li>
+<li>Vector2 Angle() function added.</li>
+<li>Convenience function Context::CreateObject&lt;T&gt;.</li>
+<li>Convenience template version of ReleaseResource().</li>
+<li>Allow Vector4 to substitute for Color in Variant::GetColor().</li>
+<li>Additional Variant types can function as parameters for AngelScript function / method calls.</li>
+<li>Improve FixedUpdate event to allow it to originate from either PhysicsWorld or PhysicsWorld2D.</li>
+<li>Particle effect &amp; animation playback finish events.</li>
+<li>CrowdAgent emits events also from its node.</li>
+<li>Event sent after cloning a Node or Component is done.</li>
+<li>b2Contact pointer added to PhysicsWorld2D collision events.</li>
+<li>Execute DelayedStart() before FixedUpdate() if FixedUpdate comes sooner than the first Update.</li>
+<li>Allow updating AnimatedModel's bone bounding box manually.</li>
+<li>Texture SetData() functions modified to use raw Image ptr for consistency and script bindings simplicity.</li>
+<li>Graphics::SetDither() for controlling backbuffer dithering, relevant on mobiles with 16bit backbuffer.</li>
+<li>Graphics::Draw() &amp; DrawInstanced() overload with base vertex index.</li>
+<li>UIBatch::AddQuad() with arbitrary positions &amp; UVs.</li>
+<li>Use glReadPixels() to get pixel data from rendertargets on GLES.</li>
+<li>Highp precision used for GLES shadows.</li>
+<li>Change deferred shaders to use proper world space to be easier to understand.</li>
+<li>Send ElapsedTime uniform to UI rendering.</li>
+<li>Allow overriding culling mode in a pass.</li>
+<li>SendEvent renderpath command that can be used to interleave custom low-level rendering.</li>
+<li>TRANSLUCENT lighting option in shaders, which takes absolute value of N dot L.</li>
+<li>NOUV shader option added for D3D11 compatibility when model data does not contain UVs.</li>
+<li>Buffer variants supported as shader parameters; will be interpreted as an array of floats.</li>
+<li>View &amp; inverse view uniforms supplied to shaders. Obsolete camera rotation uniform removed.</li>
+<li>Skydome shader &amp; technique added.</li>
+<li>Optional object index vertex attribute that can be used by custom instancing schemes.</li>
+<li>Optional additional per-instance Vector4 data, supplied to the shaders as extra texcoords.</li>
+<li>Logging of D3D9 / D3D11 HRESULTs and proper failure check discipline for D3D object creation.</li>
+<li>Improved occluder sorting.</li>
+<li>Optimize to not render invisible View3Ds.</li>
+<li>Optimized Image::Clear() for RGBA case.</li>
+<li>Optimized SinCos() function added to speed up e.g. billboard calculations.</li>
+<li>Optimized IsPowerOfTwo() function.</li>
+<li>Optimization to amount of Frustum::UpdatePlanes() calls in rendering.</li>
+<li>Update to Civetweb 1.7.</li>
+<li>Update to GLEW 1.13.0.</li>
+<li>Update to libcpuid 0.2.2.</li>
+<li>Update to LuaJIT 2.1.0.</li>
+<li>Update to LZ4 r131.</li>
+<li>Update to nanodbc 2.12.4.</li>
+<li>Update to pugixml 1.7.</li>
+<li>Update to SDL 2.0.4.</li>
+<li>Update to SQLite 3.13.0.</li>
+<li>Update to stb_image 2.12, stb_image_write 1.02, stb_rect_pack 0.08 &amp; stb_vorbis 1.09.</li>
+<li>Use Readline library if available for Lua &amp; SQLite.</li>
+<li>Generic ARM platform support.</li>
+<li>Android NDK r11 &amp; r12 support.</li>
+<li>Reduce exposure to SDL headers from Urho's headers.</li>
+<li>Support for Codelite CMake invocation.</li>
+<li>Improved multiarch support in auto-detection.</li>
+<li>Scaffolding rake task improvements.</li>
+<li>Build speedup improvements.</li>
+<li>Avoid SDL when building mini Urho3D for PackageTool.</li>
+<li>Avoid hardcoding sample list in build script.</li>
+<li>Output option in PackageTool.</li>
+<li>Enhance Urho3D-CMake-common module to auto find Urho3D library.</li>
+<li>Automatical bumping of year in the source code when crossing to a new year.</li>
+<li>Move to use subtrees for some thirdparty libraries.</li>
+<li>For downstream use: auto detect Urho3D lib type from build artifact.</li>
+<li>Refactored mechanism to detect CPU instruction extensions for build.</li>
+<li>Set PCH flags at target level, not compile unit level.</li>
+<li>Perform cleanup when installing headers to the build tree.</li>
+<li>try_run logic to auto-discover build options.</li>
+<li>try_compile mechanism to verify ABI compatibility of found Urho3D library.</li>
+<li>SDL build options added: PulseAudio, EGL, Wayland, Mir.</li>
+<li>LuaJIT related build fixes.</li>
+<li>Eliminate the need for KNET_UNIX define.</li>
+<li>Enable class index in documentation.</li>
+<li>Editor: if original node selected when pasting, do not paste as its child, but rather behave similarly as if performing a Duplicate action.</li>
+<li>Editor: particle editor improvements.</li>
+<li>Editor: node &amp; UI element tag editing.</li>
+<li>Editor: use fixed size billboards for the debug icons.</li>
+<li>Editor: add gamma correction &amp; HDR rendering toggles.</li>
+<li>Editor: reorder components, nodes &amp; UI elements by holding down Ctrl when drag-dropping.</li>
+<li>Editor: fix sharp edges in UI when opacity is reduced.</li>
+<li>Editor: fix "is enabled" checkbox moving to wrong location when node is edited.</li>
+<li>AssetImporter: allow saving animations without actual skinned geometry.</li>
+<li>AssetImporter: allow saving a subset of an animation.</li>
+<li>AssetImporter: generate non-deforming skinning information when a model has non-skinned subgeometries.</li>
+<li>AssetImporter: support multiple color &amp; UV channels.</li>
+<li>Fix various missing script bindings &amp; missing export specifiers for classes.</li>
+<li>Fix various uninitialized variables.</li>
+<li>Fix wrong UV index in drawable OBJ export.</li>
+<li>Fix backbuffer not getting cleared when just UI &amp; texture viewports are being rendered.</li>
+<li>Fix DirExists() on Android.</li>
+<li>Fix potential crash when using MessageBox from C++.</li>
+<li>Fix erroneous fog shader uniform being set in some rendering cases.</li>
+<li>Fix serialization of localized Text elements.</li>
+<li>Fix use of deprecated usleep() function in favor of nanosleep().</li>
+<li>Fix UI slider knob behavior when it's fixed size.</li>
+<li>Fix toggling mouse visibility right at application start.</li>
+<li>Fix instancing in HLSL water shader.</li>
+<li>Fix Android / iOS reporting mouse as grabbed.</li>
+<li>Fix update event subscription in Material class.</li>
+<li>Fix window getting maximized after fullscreen -&gt; windowed change on Windows + SDL 2.0.4.</li>
+<li>Fix bogus SDL joystick registration on Android.</li>
+<li>Fix AngelScript ScriptInstance variable hot reload. Removes the need for a specific implementation from the editor.</li>
+<li>Fix OgreImporter animation save &amp; Jack's walk animation.</li>
+<li>Fix incorrect enemy orientation on spawn in NinjaSnowWar.</li>
+<li>Fix insertion of further drawable updates during threaded drawable update.</li>
+<li>Fix runtime DLL not being installed to tool directory.</li>
+<li>Fix Emscripten performance loss due to enabling SSE mode incorrectly.</li>
+<li>Fix ODBCConnection compile error on windows.</li>
+<li>Fix incorrect terrain index data generation.</li>
+<li>Fix AssetImporter to handle potential multiple root node situations better.</li>
+<li>Fix incorrect 2D drawable culling optimization.</li>
+<li>Fix transform applying order for parented 2D rigidbodies.</li>
+<li>Fix incorrect rendering caused by not updating shader parameter has when a material is cloned.</li>
+<li>Fix FileWatcher getting in stuck on read() on Linux.</li>
+<li>Fix WorldToHeightMap() in Terrain.</li>
+<li>Fix 2D particle emitter potentially causing memory overwrite by emitting more particles than allocated.</li>
+<li>Fix culling issues when non-master AnimatedModels are larger than the master.</li>
+<li>Fix potentially incorrect viewport update order.</li>
+<li>Fix D3D11 dynamic textures to use only 1 mip level, as more does not work.</li>
+<li>Fix SDL Windows-specific mouse move internals not working in some cases (e.g. without Aero) leading to wrong relative mouse input.</li>
+<li>Fix basepath not being applied to file entries in PackageTool.</li>
+<li>Fix initial position of kinematic rigidbodies after being loaded.</li>
+<li>Fix temporary AnimatedModel's bones to be temporary as well.</li>
+<li>Fix SSE / ABI incompatibility related crashes with Bullet.</li>
+<li>Fix HasSubscribedToEvent() missing from scripting.</li>
+<li>Fix UI scrollbar snap epsilon attribute default value.</li>
+<li>Fix error in DropDownList serialization.</li>
+<li>Fix String::DecodeUTF16().</li>
+<li>Fix deploying .pak files to Emscripten samples.</li>
+<li>Fix UI style late applying when a child element is added.</li>
+<li>Fix CustomGeometry bounding box update when committing new data.</li>
+<li>Fix sprite textures to use clamp addressing by default instead of wrap.</li>
+<li>Fix depth test potentially disabled in OpenGL by third party programs such as MSI Afterburner (re-enable every frame.)</li>
+<li>Fix writing rendertarget inverse size uniforms incorrectly (<a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> instead of <a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a>.)</li>
+<li>Fix off by one error in mipmap data size counting.</li>
+<li>Fix FindUrho3D CMake module behaving incorrectly when called more than once.</li>
+<li>Fix PhysicsWorld::GetRigidBodies() to use immediate contact test for static bodies.</li>
+<li>Fix sampling of depth buffer in read-only mode on D3D11.</li>
+<li>Fix ForwardDepth renderpath potentially missing depth clear on OpenGL.</li>
+<li>Fix DropDownList placeholder text not auto-hiding when an item is selected.</li>
+<li>Fix possible crash issue when exiting engine with background loaded resources still in queue.</li>
+<li>Fix FindDirect3D CMake code for CMake old versions.</li>
+<li>Fix issues with parented rigidbodies when moving them from code.</li>
+<li>Fix math class equality operator in SSE builds on specific Visual Studio versions.</li>
+<li>Fix ScreenToWorldPoint() to return the specified Z distance.</li>
+<li>Fix vegetation shadow shader on D3D11.</li>
+<li>Fix &amp; simplify setup of the "universal" builtin target in iOS build.</li>
+<li>Fix build system to install/package Emscripten shared js &amp; data files.</li>
+<li>Fix Application.h to be usable without other include files.</li>
+<li>Fix lighting interpolator order in D3D11 shaders.</li>
+<li>Fix node's Z coordinate not retained in 2D physics movement.</li>
+<li>Fix potential crash and performance issues in Octree raycasts by making them non-threaded; in practice the spin-up time for work items could override any threading benefits.</li>
+<li>Fix missing DelayedStart functionality in LuaScriptInstance.</li>
+<li>Fix point fill mode on D3D11.</li>
+<li>Fix input focus loss when using an external window handle.</li>
+<li>Fix missing D3D SDK search on VS2010 and earlier.</li>
+<li>Fix ABI incompatibility in BoundingBox class depending on URHO3D_SSE flag.</li>
+</ul>
+<p>V1.5</p>
 <ul>
 <li>Database subsystem with either SQLite or ODBC support.</li>
 <li>Localization subsystem.</li>
