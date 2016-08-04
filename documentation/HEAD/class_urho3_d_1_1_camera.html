@@ -237,9 +237,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ad2f4b9f4407aff131511b78e17d3377c">WorldToScreenPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;worldPos) const </td></tr>
 <tr class="memdesc:ad2f4b9f4407aff131511b78e17d3377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a world space point to normalized screen coordinates (0.0 - 1.0). <br/></td></tr>
 <tr class="separator:ad2f4b9f4407aff131511b78e17d3377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe7e6dda9b61ee392a557fe5f05fa7ad"></a>
-<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#abe7e6dda9b61ee392a557fe5f05fa7ad">ScreenToWorldPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;screenPos) const </td></tr>
-<tr class="memdesc:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert normalized screen coordinates (0.0 - 1.0) and distance (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane. <br/></td></tr>
+<tr class="memitem:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#abe7e6dda9b61ee392a557fe5f05fa7ad">ScreenToWorldPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;screenPos) const </td></tr>
+<tr class="memdesc:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert normalized screen coordinates (0.0 - 1.0) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane.  <a href="#abe7e6dda9b61ee392a557fe5f05fa7ad">More...</a><br/></td></tr>
 <tr class="separator:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad99aa4e04e38db9876aed66706b36b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad99aa4e04e38db9876aed66706b36b13"></a>
 const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ad99aa4e04e38db9876aed66706b36b13">GetProjectionOffset</a> () const </td></tr>
@@ -991,7 +990,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Camera component. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abe7e6dda9b61ee392a557fe5f05fa7ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Camera::ScreenToWorldPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>screenPos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert normalized screen coordinates (0.0 - 1.0) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane. </p>
+<p>Note that a HitDistance() from the camera screen ray is not the same as distance along the view Z axis, as under a perspective projection the ray is likely to not be Z-aligned. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_abe7e6dda9b61ee392a557fe5f05fa7ad_cgraph.svg" width="100%" height="592"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Graphics/Camera.h</li>
 <li>Source/Urho3D/Graphics/Camera.cpp</li>
 </ul>
