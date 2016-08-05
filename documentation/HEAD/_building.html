@@ -253,11 +253,11 @@ Build options</h2>
 <tr>
 <td>RPI_ABI </td><td>*</td><td>Specify target ABI (RPI build only), possible values are armeabi-v6 (default for RPI 1), armeabi-v7a (default for RPI 2), armeabi-v7a with NEON, and armeabi-v7a with VFPV4 </td></tr>
 <tr>
-<td>ARM_PREFIX </td><td>-</td><td>Prefix path to ARM cross-compiler tools (Linux on ARM cross-compiling build only) </td></tr>
+<td>ARM_PREFIX </td><td>-</td><td>Prefix path to ARM cross-compiler tools (ARM on Linux cross-compiling build only) </td></tr>
 <tr>
-<td>ARM_SYSROOT </td><td>-</td><td>Path to ARM system root (Linux on ARM cross-compiling build only) </td></tr>
+<td>ARM_SYSROOT </td><td>-</td><td>Path to ARM system root (ARM on Linux cross-compiling build only) </td></tr>
 <tr>
-<td>ARM_ABI_FLAGS </td><td>-</td><td>Specify ABI compiler flags (Linux on ARM cross-compiling build only); e.g. Orange-Pi Mini 2 could use '-mcpu=cortex-a7 -mfpu=neon-vfpv4' </td></tr>
+<td>ARM_ABI_FLAGS </td><td>-</td><td>Specify ABI compiler flags (ARM on Linux cross-compiling build only); e.g. Orange-Pi Mini 2 could use '-mcpu=cortex-a7 -mfpu=neon-vfpv4' </td></tr>
 <tr>
 <td>EMSCRIPTEN_ROOT_PATH </td><td>-</td><td>Root path to Emscripten cross-compiler tools (Emscripten cross-compiling build only) </td></tr>
 <tr>
@@ -344,7 +344,7 @@ Raspberry Pi build process</h2>
 Generic ARM build process (EXPERIMENTAL)</h2>
 <p>For native build on ARM board itself, use the similar process for <a class="el" href="_building.html#Building_Native">Native build process</a> described above for Linux platform.</p>
 <blockquote class="doxtable">
-<p>At the moment we only support Linux on generic ARM. Other OSes are not supported yet.</p>
+<p>At the moment we only support generic ARM on Linux platform. Other platforms/OSes are not supported yet.</p>
 <p></p>
 </blockquote>
 <p>For cross-compiling build on a Linux host system, firstly set the ARM_PREFIX environment variable or build option to point to your ARM cross-compiling tools are located. You can setup the tool using <a href="http://crosstool-ng.org/">crosstool-NG</a> or just download one from <a href="http://www.linaro.org/downloads/">http://www.linaro.org/downloads/</a>. You need to obtain the little-endian version of the armhf or aarch64 compiler toolchains for setting up a 32-bit or 64-bit build environment, respectively. Secondly, set the ARM_SYSROOT environment variable or build option to point to your generic ARM system root. Similarly you need to obtain the armhf (hard float) sysroot for 32-bit or arm64 (aarch64) sysroot for 64-bit. You must install the Urho3D prerequisites software development packages for Linux platform (see <a class="el" href="_building.html#Building_Prerequisites">Building prerequisites</a>) in the system root before attempting to do the Urho3D cross-compiling build. There are a few ways to obtain and prepare the sysroots yourself but the easiest way is to download the already prepared one from <a href="https://github.com/urho3d/armhf-sysroot">https://github.com/urho3d/armhf-sysroot</a> or <a href="https://github.com/urho3d/arm64-sysroot">https://github.com/urho3d/arm64-sysroot</a>. Alternatively, if you have a fast LAN connection then you can also opt to mount the system root on your actual ARM board to your host system via SSHFS and set the ARM_SYSROOT to use the mount point.</p>
