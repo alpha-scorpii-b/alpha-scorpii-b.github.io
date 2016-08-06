@@ -56,7 +56,7 @@ platforms:
         - STATIC.tar.gz
         - SHARED.tar.gz
 
-  x86 on Linux:
+  Linux:
     icon: fa fa-linux fa-2x
     archs:
       64-bit:
@@ -113,23 +113,23 @@ platforms:
         - SHARED.deb
         - SHARED-v7a.deb
 
-  ARM on Linux:
+  ARM:
     icon: fa fa-linux fa-2x
     archs:
       64-bit:
-        - STATIC.tar.gz
-        - STATIC.rpm
-        - STATIC.deb
-        - SHARED.tar.gz
-        - SHARED.rpm
-        - SHARED.deb
+        - STATIC-A53.tar.gz
+        - STATIC-A53.rpm
+        - STATIC-A53.deb
+        - SHARED-A53.tar.gz
+        - SHARED-A53.rpm
+        - SHARED-A53.deb
       32-bit:
-        - STATIC.tar.gz
-        - STATIC.rpm
-        - STATIC.deb
-        - SHARED.tar.gz
-        - SHARED.rpm
-        - SHARED.deb
+        - STATIC-A9.tar.gz
+        - STATIC-A9.rpm
+        - STATIC-A9.deb
+        - SHARED-A9.tar.gz
+        - SHARED-A9.rpm
+        - SHARED-A9.deb
 
   Web:
     icon: fa fa-html5 fa-2x
