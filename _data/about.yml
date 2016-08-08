@@ -28,7 +28,7 @@ features:
 - Skeletal (with hardware skinning), vertex morph and node animation
 - Automatic instancing on SM3 capable hardware
 - Point, spot and directional lights
-- Shadow mapping for all light types; cascaded shadow maps for directional lights
+- Shadow mapping for all light types; cascaded shadow maps for directional lights; normal offset adjustment in addition to depth bias<font color="goldenrod"><sup>new</sup></font>
 - Particle rendering
 - Geomipmapped terrain
 - Static and skinned decals
@@ -40,7 +40,7 @@ features:
 - 2D sprites and particles that integrate into the 3D scene<font color="olive"><sup>v1.31</sup></font>
 - Task-based multithreading
 - Hierarchical performance profiler
-- Scene and object load/save in binary and XML format
+- Scene and object load/save in binary, XML and JSON<font color="goldenrod"><sup>new</sup></font> formats
 - Keyframe animation of object attributes<font color="olive"><sup>v1.32</sup></font>
 - Background loading of resources<font color="olive"><sup>v1.32</sup></font>
 - Keyboard, mouse, joystick and touch input (if available)
