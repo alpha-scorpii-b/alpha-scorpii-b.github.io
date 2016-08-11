@@ -28,7 +28,7 @@ features:
 - Skeletal (with hardware skinning), vertex morph and node animation
 - Automatic instancing on SM3 capable hardware
 - Point, spot and directional lights
-- Shadow mapping for all light types; cascaded shadow maps for directional lights; normal offset adjustment in addition to depth bias<font color="goldenrod"><sup>new</sup></font>
+- Shadow mapping for all light types; cascaded shadow maps for directional lights; normal offset adjustment in addition to depth bias<font color="green"><sup>v1.6</sup></font>
 - Particle rendering
 - Geomipmapped terrain
 - Static and skinned decals
@@ -36,30 +36,30 @@ features:
 - Geometry, material & animation LOD
 - Software rasterized occlusion culling
 - Post-processing
-- HDR rendering<font color="olive"><sup>v1.31</sup></font> and PBR rendering<font color="goldenrod"><sup>new</sup></font>
+- HDR rendering<font color="olive"><sup>v1.31</sup></font> and PBR rendering<font color="green"><sup>v1.6</sup></font>
 - 2D sprites and particles that integrate into the 3D scene<font color="olive"><sup>v1.31</sup></font>
 - Task-based multithreading
 - Hierarchical performance profiler
-- Scene and object load/save in binary, XML and JSON<font color="goldenrod"><sup>new</sup></font> formats
+- Scene and object load/save in binary, XML and JSON<font color="green"><sup>v1.6</sup></font> formats
 - Keyframe animation of object attributes<font color="olive"><sup>v1.32</sup></font>
 - Background loading of resources<font color="olive"><sup>v1.32</sup></font>
 - Keyboard, mouse, joystick and touch input (if available)
-- Cross-platform support using [SDL 2.0](https://www.libsdl.org/) (currently runs on Windows, Linux, Mac OS X, Android, iOS, [Raspberry Pi](https://www.raspberrypi.org/)<font color="olive"><sup>v1.3</sup></font> including other generic ARM boards<font color="goldenrod"><sup>new</sup></font>, and Web<font color="olive"><sup>v1.4</sup></font> with [Emscripten](https://kripken.github.io/emscripten-site/) toolchain)
+- Cross-platform support using [SDL 2.0](https://www.libsdl.org/) (currently runs on Windows, Linux, Mac OS X, Android, iOS, [Raspberry Pi](https://www.raspberrypi.org/)<font color="olive"><sup>v1.3</sup></font> including other generic ARM boards<font color="green"><sup>v1.6</sup></font>, and Web<font color="olive"><sup>v1.4</sup></font> with [Emscripten](https://kripken.github.io/emscripten-site/) toolchain)
 - Physics using [Bullet](http://www.bulletphysics.org/)
 - 2D physics using [Box2D](http://box2d.org/)<font color="olive"><sup>v1.32</sup></font>
 - Scripting using [AngelScript](http://www.angelcode.com/angelscript/)
-- Alternative script interface using [Lua](https://www.lua.org/)<font color="olive"><sup>v1.3</sup></font> or [LuaJIT](http://luajit.org/)<font color="olive"><sup>v1.31</sup></font> (on Windows, Linux, Mac OS X, Android, Raspberry Pi including other generic ARM boards, and iOS<font color="goldenrod"><sup>new</sup></font>)
+- Alternative script interface using [Lua](https://www.lua.org/)<font color="olive"><sup>v1.3</sup></font> or [LuaJIT](http://luajit.org/)<font color="olive"><sup>v1.31</sup></font> (on Windows, Linux, Mac OS X, Android, Raspberry Pi including other generic ARM boards, and iOS<font color="green"><sup>v1.6</sup></font>)
 - Networking using [kNet](https://github.com/juj/kNet/) + possibility to make HTTP requests<font color="olive"><sup>v1.3</sup></font>
 - Pathfinding<font color="olive"><sup>v1.23</sup></font> and crowd simulation<font color="olive"><sup>v1.4</sup></font> using [Recast/Detour](https://github.com/memononen/recastnavigation)
 - Image loading using [stb_image](https://nothings.org/) + DDS / KTX / PVR compressed texture support
 - 2D and "3D" audio playback, Ogg Vorbis support using [stb_vorbis](https://nothings.org/) + WAV format support
 - TrueType font rendering using [FreeType](https://www.freetype.org/), [AngelCode bitmap fonts](http://www.angelcode.com/products/bmfont/) are also supported
 - Unicode string support
-- Inbuilt UI, localization<font color="green"><sup>v1.5</sup></font>, and database<font color="green"><sup>v1.5</sup></font> subsystems
+- Inbuilt UI, localization<font color="olive"><sup>v1.5</sup></font>, and database<font color="olive"><sup>v1.5</sup></font> subsystems
 - Scene editor and UI-layout editor implemented in script with undo & redo capabilities
 - Model/scene/animation/material import from formats supported by [Open Asset Import Library](http://assimp.sourceforge.net)
 - Alternative model/animation import from OGRE mesh.xml and skeleton.xml files
-- 'Supported IDEs: Visual Studio, Xcode, Eclipse, CodeBlocks, CodeLite<font color="goldenrod"><sup>new</sup></font>, QtCreator, CLion<font color="green"><sup>v1.5</sup></font>'
+- 'Supported IDEs: Visual Studio, Xcode, Eclipse, CodeBlocks, CodeLite<font color="green"><sup>v1.6</sup></font>, QtCreator, CLion<font color="olive"><sup>v1.5</sup></font>'
 - 'Supported compiler toolchains: MSVC, GCC, Clang, MinGW, and their cross-compiling derivatives'
 - Supports both 32-bit and 64-bit<font color="olive"><sup>v1.3</sup></font> build
 - Build as single external library<font color="olive"><sup>v1.3</sup></font> (can be linked against statically or dynamically)
