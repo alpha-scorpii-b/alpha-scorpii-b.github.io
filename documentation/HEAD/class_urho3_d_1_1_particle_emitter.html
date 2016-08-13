@@ -89,6 +89,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a9f10a06943f22e5ccaa4be0d74eaa162">SetSerializeParticles</a> (bool enable)</td></tr>
 <tr class="memdesc:a9f10a06943f22e5ccaa4be0d74eaa162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether particles should be serialized. Default true, set false to reduce scene file size. <br/></td></tr>
 <tr class="separator:a9f10a06943f22e5ccaa4be0d74eaa162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3667fe123752dc3ffd0d0228e4c65a81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3667fe123752dc3ffd0d0228e4c65a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoRemoveMode</b> (AutoRemoveMode mode)</td></tr>
+<tr class="separator:a3667fe123752dc3ffd0d0228e4c65a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61e2bdd8719946a586ae73f1082f2f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac61e2bdd8719946a586ae73f1082f2f2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#ac61e2bdd8719946a586ae73f1082f2f2">ResetEmissionTimer</a> ()</td></tr>
 <tr class="memdesc:ac61e2bdd8719946a586ae73f1082f2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the emission period timer. <br/></td></tr>
@@ -121,6 +124,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a395f61158125afa65314a5ed3f018940">GetSerializeParticles</a> () const </td></tr>
 <tr class="memdesc:a395f61158125afa65314a5ed3f018940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether particles are to be serialized. <br/></td></tr>
 <tr class="separator:a395f61158125afa65314a5ed3f018940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15c864b9f08eccef2bd58262c0027dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa15c864b9f08eccef2bd58262c0027dd"></a>
+AutoRemoveMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#aa15c864b9f08eccef2bd58262c0027dd">GetAutoRemoveMode</a> () const </td></tr>
+<tr class="memdesc:aa15c864b9f08eccef2bd58262c0027dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return automatic removal mode on particle effect completion. <br/></td></tr>
+<tr class="separator:aa15c864b9f08eccef2bd58262c0027dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3449faf25039d775bd73a25e1ef1614f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3449faf25039d775bd73a25e1ef1614f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a3449faf25039d775bd73a25e1ef1614f">SetEffectAttr</a> (const <a class="el" href="struct_urho3_d_1_1_resource_ref.html">ResourceRef</a> &amp;value)</td></tr>
 <tr class="memdesc:a3449faf25039d775bd73a25e1ef1614f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set particles effect attribute. <br/></td></tr>
@@ -1044,6 +1051,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a75922f91ae1ee7376aaf1b2e0c0cc84c">GetFixedUpdateSource</a> ()</td></tr>
 <tr class="memdesc:a75922f91ae1ee7376aaf1b2e0c0cc84c inherit pro_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a component from the scene root that sends out fixed update events (either <a class="el" href="class_urho3_d_1_1_physics_world.html" title="Physics simulation world component. Should be added only to the root scene node.">PhysicsWorld</a> or <a class="el" href="class_urho3_d_1_1_physics_world2_d.html" title="2D physics simulation world component. Should be added only to the root scene node.">PhysicsWorld2D</a>). Return null if neither exists. <br/></td></tr>
 <tr class="separator:a75922f91ae1ee7376aaf1b2e0c0cc84c inherit pro_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af908546af61d16a0ac497fdad2ed42f2 inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af908546af61d16a0ac497fdad2ed42f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#af908546af61d16a0ac497fdad2ed42f2">DoAutoRemove</a> (AutoRemoveMode mode)</td></tr>
+<tr class="memdesc:af908546af61d16a0ac497fdad2ed42f2 inherit pro_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform autoremove. Called by subclasses. Caller should keep a weak pointer to itself to check whether was actually removed, and return immediately without further member operations in that case. <br/></td></tr>
+<tr class="separator:af908546af61d16a0ac497fdad2ed42f2 inherit pro_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
 <tr class="memitem:a09ff54e7498d6d1d6068b68c89396577 inherit pro_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09ff54e7498d6d1d6068b68c89396577"></a>
 virtual <a class="el" href="class_urho3_d_1_1_animatable.html">Animatable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a09ff54e7498d6d1d6068b68c89396577">FindAttributeAnimationTarget</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;outName)</td></tr>
@@ -1134,10 +1145,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a497b7e1b76d81d7cfd4a09185aed6a58">serializeParticles_</a></td></tr>
 <tr class="memdesc:a497b7e1b76d81d7cfd4a09185aed6a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize particles flag. <br/></td></tr>
 <tr class="separator:a497b7e1b76d81d7cfd4a09185aed6a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b1b40e6cd2e4dd918bb43b513dd1db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42b1b40e6cd2e4dd918bb43b513dd1db"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a42b1b40e6cd2e4dd918bb43b513dd1db">sendFinishEvent_</a></td></tr>
-<tr class="memdesc:a42b1b40e6cd2e4dd918bb43b513dd1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to send effect finish event flag. <br/></td></tr>
-<tr class="separator:a42b1b40e6cd2e4dd918bb43b513dd1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b02e997b24acf0e44a0027c943556f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b02e997b24acf0e44a0027c943556f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#a9b02e997b24acf0e44a0027c943556f3">sendFinishedEvent_</a></td></tr>
+<tr class="memdesc:a9b02e997b24acf0e44a0027c943556f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready to send effect finish event flag. <br/></td></tr>
+<tr class="separator:a9b02e997b24acf0e44a0027c943556f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae679559f69c695e9aecd388862dd7ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae679559f69c695e9aecd388862dd7ea2"></a>
+AutoRemoveMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_particle_emitter.html#ae679559f69c695e9aecd388862dd7ea2">autoRemove_</a></td></tr>
+<tr class="memdesc:ae679559f69c695e9aecd388862dd7ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic removal mode. <br/></td></tr>
+<tr class="separator:ae679559f69c695e9aecd388862dd7ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

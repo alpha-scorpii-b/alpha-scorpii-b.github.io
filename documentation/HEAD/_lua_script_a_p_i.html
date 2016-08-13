@@ -3985,6 +3985,7 @@ Classes</h2>
 <li>void SetNumParticles(unsigned num)</li>
 <li>void SetEmitting(bool enable)</li>
 <li>void SetSerializeParticles(bool enable)</li>
+<li>void SetAutoRemoveMode(AutoRemoveMode mode)</li>
 <li>void ResetEmissionTimer()</li>
 <li>void RemoveAllParticles()</li>
 <li>void Reset()</li>
@@ -3993,6 +3994,7 @@ Classes</h2>
 <li>unsigned GetNumParticles() const</li>
 <li>bool IsEmitting() const</li>
 <li>bool GetSerializeParticles() const</li>
+<li>AutoRemoveMode GetAutoRemoveMode() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -4000,6 +4002,7 @@ Classes</h2>
 <li>unsigned numParticles</li>
 <li>bool emitting</li>
 <li>bool serializeParticles</li>
+<li>AutoRemoveMode autoRemoveMode</li>
 </ul>
 <p><a class="anchor" id="Class_ParticleEmitter2D"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_particle_emitter2_d.html" title="2D particle emitter component.">ParticleEmitter2D</a> : <a class="el" href="class_urho3_d_1_1_drawable2_d.html" title="Base class for 2D visible components.">Drawable2D</a></h4>
@@ -5300,7 +5303,7 @@ Classes</h2>
 <li>void SetGain(float gain)</li>
 <li>void SetAttenuation(float attenuation)</li>
 <li>void SetPanning(float panning)</li>
-<li>void SetAutoRemove(bool enable)</li>
+<li>void SetAutoRemoveMode(AutoRemoveMode mode)</li>
 <li>Sound* GetSound() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetSoundType() const</li>
 <li>float GetTimePosition() const</li>
@@ -5308,7 +5311,7 @@ Classes</h2>
 <li>float GetGain() const</li>
 <li>float GetAttenuation() const</li>
 <li>float GetPanning() const</li>
-<li>bool GetAutoRemove() const</li>
+<li>AutoRemoveMode GetAutoRemoveMode() const</li>
 <li>bool IsPlaying() const</li>
 </ul>
 <p>Properties:</p>
@@ -5320,7 +5323,7 @@ Classes</h2>
 <li>float gain</li>
 <li>float attenuation</li>
 <li>float panning</li>
-<li>bool autoRemove</li>
+<li>AutoRemoveMode autoRemoveMode</li>
 <li>bool playing (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_SoundSource3D"></a> </p>
@@ -7113,6 +7116,12 @@ Enumerations</h2>
 <li>int ABM_LERP</li>
 <li>int ABM_ADDITIVE</li>
 </ul>
+<h4>AutoRemoveMode</h4>
+<ul>
+<li>int REMOVE_DISABLED</li>
+<li>int REMOVE_COMPONENT</li>
+<li>int REMOVE_NODE</li>
+</ul>
 <h4>BlendMode</h4>
 <ul>
 <li>int BLEND_REPLACE</li>
@@ -7259,7 +7268,6 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
-<li>int FC_DIRECTION</li>
 </ul>
 <h4>FaceCameraMode</h4>
 <ul>
@@ -7268,6 +7276,7 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
+<li>int FC_DIRECTION</li>
 </ul>
 <h4>FileMode</h4>
 <ul>
