@@ -357,12 +357,12 @@ Classes</h2>
 <li>SoundListener* listener</li>
 </ul>
 <p><a class="anchor" id="Class_BiasParameters"></a> </p>
-<h4><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a></h4>
+<h4><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a></h4>
 <p>Methods:</p>
 <ul>
 <li>BiasParameters() (GC)</li>
 <li>BiasParameters* new()</li>
-<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a>(float constantBias, float slopeScaledBias, float normalOffset = 0.0f) (GC)</li>
+<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>(float constantBias, float slopeScaledBias, float normalOffset = 0.0f) (GC)</li>
 <li>BiasParameters* new(float constantBias, float slopeScaledBias, float normalOffset = 0.0f)</li>
 <li>void delete()</li>
 </ul>
@@ -2742,7 +2742,7 @@ Classes</h2>
 <li>float GetAspectRatio() const</li>
 <li>float GetFadeDistance() const</li>
 <li>float GetShadowFadeDistance() const</li>
-<li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a>&amp; GetShadowBias() const</li>
+<li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>&amp; GetShadowBias() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_cascade_parameters.html" title="Cascaded shadow map parameters.">CascadeParameters</a>&amp; GetShadowCascade() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_focus_parameters.html" title="Shadow map focusing parameters.">FocusParameters</a>&amp; GetShadowFocus() const</li>
 <li>float GetShadowIntensity() const</li>
@@ -2766,7 +2766,7 @@ Classes</h2>
 <li>float aspectRatio</li>
 <li>float fadeDistance</li>
 <li>float shadowFadeDistance</li>
-<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a>&amp; shadowBias</li>
+<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>&amp; shadowBias</li>
 <li><a class="el" href="struct_urho3_d_1_1_cascade_parameters.html" title="Cascaded shadow map parameters.">CascadeParameters</a>&amp; shadowCascade</li>
 <li><a class="el" href="struct_urho3_d_1_1_focus_parameters.html" title="Shadow map focusing parameters.">FocusParameters</a>&amp; shadowFocus</li>
 <li>float shadowIntensity</li>
@@ -2982,7 +2982,7 @@ Classes</h2>
 <li>CullMode GetCullMode() const</li>
 <li>CullMode GetShadowCullMode() const</li>
 <li>FillMode GetFillMode() const</li>
-<li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a>&amp; GetDepthBias() const</li>
+<li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>&amp; GetDepthBias() const</li>
 <li>char GetRenderOrder() const</li>
 <li>bool GetOcclusion() const</li>
 <li>bool GetSpecular() const</li>
@@ -2993,7 +2993,7 @@ Classes</h2>
 <li>CullMode cullMode</li>
 <li>CullMode shadowCullMode</li>
 <li>FillMode fillMode</li>
-<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Shadow depth bias parameters.">BiasParameters</a> depthBias</li>
+<li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a> depthBias</li>
 <li>char renderOrder</li>
 <li>bool occlusion (readonly)</li>
 <li>bool specular (readonly)</li>
