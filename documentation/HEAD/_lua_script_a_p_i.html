@@ -6209,8 +6209,10 @@ Classes</h2>
 <li>void SetUseMutableGlyphs(bool enable)</li>
 <li>void SetForceAutoHint(bool enable)</li>
 <li>void SetScale(float scale)</li>
-<li>void SetWidth(float size)</li>
-<li>void SetHeight(float size)</li>
+<li>void SetWidth(float width)</li>
+<li>void SetHeight(float height)</li>
+<li>void SetCustomSize(const IntVector2&amp; size)</li>
+<li>void SetCustomSize(int width, int height)</li>
 <li>UIElement* GetRoot() const</li>
 <li>UIElement* GetRootModalElement() const</li>
 <li>Cursor* GetCursor() const</li>
@@ -6234,6 +6236,7 @@ Classes</h2>
 <li>bool HasModalElement() const</li>
 <li>bool IsDragging() const</li>
 <li>float GetScale() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetCustomSize() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -6256,6 +6259,7 @@ Classes</h2>
 <li>bool forceAutoHint</li>
 <li>bool modalElement (readonly)</li>
 <li>float scale</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; customSize</li>
 </ul>
 <p><a class="anchor" id="Class_UIElement"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a> : <a class="el" href="class_urho3_d_1_1_animatable.html" title="Base class for animatable object, an animatable object can be set animation on it&#39;s attributes...">Animatable</a></h4>
