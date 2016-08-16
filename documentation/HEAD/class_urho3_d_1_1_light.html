@@ -93,13 +93,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a29f82ad4cd3c57a4de95a37f4e40fa11">SetColor</a> (const <a class="el" href="class_urho3_d_1_1_color.html">Color</a> &amp;color)</td></tr>
 <tr class="memdesc:a29f82ad4cd3c57a4de95a37f4e40fa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set color. <br/></td></tr>
 <tr class="separator:a29f82ad4cd3c57a4de95a37f4e40fa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56605c01df97f46d80eca58ea8e844f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56605c01df97f46d80eca58ea8e844f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a56605c01df97f46d80eca58ea8e844f0">SetTemperature</a> (float temperature)</td></tr>
+<tr class="memdesc:a56605c01df97f46d80eca58ea8e844f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature of the light in Kelvin. Modulates the light color when "use physical values" is enabled. <br/></td></tr>
+<tr class="separator:a56605c01df97f46d80eca58ea8e844f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4c17609503701ae1350f12dd070f33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc4c17609503701ae1350f12dd070f33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#abc4c17609503701ae1350f12dd070f33">SetUsePhysicalValues</a> (bool enable)</td></tr>
+<tr class="memdesc:abc4c17609503701ae1350f12dd070f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set use physical light values. <br/></td></tr>
+<tr class="separator:abc4c17609503701ae1350f12dd070f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f3f450347c3cce7e8af37320e77784"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7f3f450347c3cce7e8af37320e77784"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#af7f3f450347c3cce7e8af37320e77784">SetSpecularIntensity</a> (float intensity)</td></tr>
 <tr class="memdesc:af7f3f450347c3cce7e8af37320e77784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set specular intensity. Zero disables specular calculations. <br/></td></tr>
 <tr class="separator:af7f3f450347c3cce7e8af37320e77784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d98185b7f91333a25e3a27d74c9ac38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d98185b7f91333a25e3a27d74c9ac38"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a3d98185b7f91333a25e3a27d74c9ac38">SetBrightness</a> (float brightness)</td></tr>
-<tr class="memdesc:a3d98185b7f91333a25e3a27d74c9ac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set light brightness multiplier. Both the color and specular intensity are multiplied with this to get final values for rendering. <br/></td></tr>
+<tr class="memdesc:a3d98185b7f91333a25e3a27d74c9ac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set light brightness multiplier. Both the color and specular intensity are multiplied with this. When "use physical values" is enabled, the value is specified in lumens. <br/></td></tr>
 <tr class="separator:a3d98185b7f91333a25e3a27d74c9ac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07dc73ab91dbcbacefbf755f156e4e30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07dc73ab91dbcbacefbf755f156e4e30"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a07dc73ab91dbcbacefbf755f156e4e30">SetRange</a> (float range)</td></tr>
@@ -165,17 +173,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="class_urho3_d_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a09852bab91349db64407ad69c1ac18c8">GetColor</a> () const </td></tr>
 <tr class="memdesc:a09852bab91349db64407ad69c1ac18c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return color. <br/></td></tr>
 <tr class="separator:a09852bab91349db64407ad69c1ac18c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab494d546699b3695b407af17baf17243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab494d546699b3695b407af17baf17243"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ab494d546699b3695b407af17baf17243">GetTemperature</a> () const </td></tr>
+<tr class="memdesc:ab494d546699b3695b407af17baf17243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the temperature of the light in Kelvin. <br/></td></tr>
+<tr class="separator:ab494d546699b3695b407af17baf17243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796d7e58d742b76a3a5faa5358930ab6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a796d7e58d742b76a3a5faa5358930ab6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a796d7e58d742b76a3a5faa5358930ab6">GetUsePhysicalValues</a> () const </td></tr>
+<tr class="memdesc:a796d7e58d742b76a3a5faa5358930ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if light uses temperature and brightness in lumens. <br/></td></tr>
+<tr class="separator:a796d7e58d742b76a3a5faa5358930ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaed94638b6177d2a415780cc686bdb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaed94638b6177d2a415780cc686bdb4"></a>
+<a class="el" href="class_urho3_d_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#acaed94638b6177d2a415780cc686bdb4">GetColorFromTemperature</a> () const </td></tr>
+<tr class="memdesc:acaed94638b6177d2a415780cc686bdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the color value of the temperature in Kelvin. <br/></td></tr>
+<tr class="separator:acaed94638b6177d2a415780cc686bdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e00cf87b95f67d19193bcee2c734795"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e00cf87b95f67d19193bcee2c734795"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a7e00cf87b95f67d19193bcee2c734795">GetSpecularIntensity</a> () const </td></tr>
 <tr class="memdesc:a7e00cf87b95f67d19193bcee2c734795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return specular intensity. <br/></td></tr>
 <tr class="separator:a7e00cf87b95f67d19193bcee2c734795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05cc522a09fa03eb427f33393dcf36c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05cc522a09fa03eb427f33393dcf36c9"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a05cc522a09fa03eb427f33393dcf36c9">GetBrightness</a> () const </td></tr>
-<tr class="memdesc:a05cc522a09fa03eb427f33393dcf36c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return brightness multiplier. <br/></td></tr>
+<tr class="memdesc:a05cc522a09fa03eb427f33393dcf36c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return brightness multiplier. Specified in lumens when "use physical values" is enabled. <br/></td></tr>
 <tr class="separator:a05cc522a09fa03eb427f33393dcf36c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefdde14d9852c3e0fc3108f92720c81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefdde14d9852c3e0fc3108f92720c81c"></a>
 <a class="el" href="class_urho3_d_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aefdde14d9852c3e0fc3108f92720c81c">GetEffectiveColor</a> () const </td></tr>
-<tr class="memdesc:aefdde14d9852c3e0fc3108f92720c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return effective color, multiplied by brightness. Do not multiply the alpha so that can compare against the default black color to detect a light with no effect. <br/></td></tr>
+<tr class="memdesc:aefdde14d9852c3e0fc3108f92720c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return effective color, multiplied by brightness and affected by temperature when "use physical values" is enabled. Alpha is always 1 so that can compare against the default black color to detect a light with no effect. <br/></td></tr>
 <tr class="separator:aefdde14d9852c3e0fc3108f92720c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8654db0ba3ad7b66b85839cedd6697a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8654db0ba3ad7b66b85839cedd6697a9"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a8654db0ba3ad7b66b85839cedd6697a9">GetEffectiveSpecularIntensity</a> () const </td></tr>
@@ -1119,6 +1139,10 @@ LightType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <a class="el" href="class_urho3_d_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a6d8715fd10222f8bbd3e49e56edd038e">color_</a></td></tr>
 <tr class="memdesc:a6d8715fd10222f8bbd3e49e56edd038e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>. <br/></td></tr>
 <tr class="separator:a6d8715fd10222f8bbd3e49e56edd038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a9d72c0f06314e3134516e5b1d82e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9a9d72c0f06314e3134516e5b1d82e7"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ab9a9d72c0f06314e3134516e5b1d82e7">temperature_</a></td></tr>
+<tr class="memdesc:ab9a9d72c0f06314e3134516e5b1d82e7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_light.html" title="Light component.">Light</a> Temperature. <br/></td></tr>
+<tr class="separator:ab9a9d72c0f06314e3134516e5b1d82e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5e875a5327ca4f28380761c5d70d43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f5e875a5327ca4f28380761c5d70d43"></a>
 <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a3f5e875a5327ca4f28380761c5d70d43">shadowBias_</a></td></tr>
 <tr class="memdesc:a3f5e875a5327ca4f28380761c5d70d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow depth bias parameters. <br/></td></tr>
@@ -1191,6 +1215,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ab36fdace848b0edf71623c0c5b71f384">perVertex_</a></td></tr>
 <tr class="memdesc:ab36fdace848b0edf71623c0c5b71f384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-vertex lighting flag. <br/></td></tr>
 <tr class="separator:ab36fdace848b0edf71623c0c5b71f384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99935a2bd6ca2291c97f9bf8a4f5ac82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99935a2bd6ca2291c97f9bf8a4f5ac82"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a99935a2bd6ca2291c97f9bf8a4f5ac82">usePhysicalValues_</a></td></tr>
+<tr class="memdesc:a99935a2bd6ca2291c97f9bf8a4f5ac82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use physical light values flag. <br/></td></tr>
+<tr class="separator:a99935a2bd6ca2291c97f9bf8a4f5ac82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

@@ -2715,6 +2715,8 @@ Classes</h2>
 <li>void SetLightType(LightType type)</li>
 <li>void SetPerVertex(bool enable)</li>
 <li>void SetColor(const Color&amp; color)</li>
+<li>void SetTemperature(float temperature)</li>
+<li>void SetUsePhysicalValues(bool enable)</li>
 <li>void SetSpecularIntensity(float intensity)</li>
 <li>void SetBrightness(float brightness)</li>
 <li>void SetRange(float range)</li>
@@ -2733,9 +2735,12 @@ Classes</h2>
 <li>LightType GetLightType() const</li>
 <li>bool GetPerVertex() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; GetColor() const</li>
+<li>float GetTemperature() const</li>
 <li>float GetSpecularIntensity() const</li>
 <li>float GetBrightness() const</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> GetEffectiveColor() const</li>
+<li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> GetColorFromTemperature() const</li>
+<li>bool GetUsePhysicalValues() const</li>
 <li>float GetEffectiveSpecularIntensity() const</li>
 <li>float GetRange() const</li>
 <li>float GetFov() const</li>
@@ -2759,6 +2764,8 @@ Classes</h2>
 <li>LightType lightType</li>
 <li>bool perVertex</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; color</li>
+<li>float temperature</li>
+<li>bool usePhysicalValues</li>
 <li>float specularIntensity</li>
 <li>float brightness</li>
 <li>float range</li>
