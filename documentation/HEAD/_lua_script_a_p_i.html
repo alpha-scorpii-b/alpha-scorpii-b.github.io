@@ -5669,6 +5669,11 @@ Classes</h2>
 <li>void SetSmoothing(bool enable)</li>
 <li>bool SetHeightMap(Image* image)</li>
 <li>void SetMaterial(Material* material)</li>
+<li>void SetNorthNeighbor(Terrain* north)</li>
+<li>void SetSouthNeighbor(Terrain* south)</li>
+<li>void SetWestNeighbor(Terrain* west)</li>
+<li>void SetEastNeighbor(Terrain* east)</li>
+<li>void SetNeighbors(Terrain* north, Terrain* south, Terrain* west, Terrain* east)</li>
 <li>void SetDrawDistance(float distance)</li>
 <li>void SetShadowDistance(float distance)</li>
 <li>void SetLodBias(float bias)</li>
@@ -5690,8 +5695,13 @@ Classes</h2>
 <li>bool GetSmoothing() const</li>
 <li>Image* GetHeightMap() const</li>
 <li>Material* GetMaterial() const</li>
+<li>Terrain* GetNorthNeighbor() const</li>
+<li>Terrain* GetSouthNeighbor() const</li>
+<li>Terrain* GetWestNeighbor() const</li>
+<li>Terrain* GetEastNeighbor() const</li>
 <li>TerrainPatch* GetPatch(unsigned index) const</li>
 <li>TerrainPatch* GetPatch(int x, int z) const</li>
+<li>TerrainPatch* GetNeighborPatch(int x, int z) const</li>
 <li>float GetHeight(const Vector3&amp; worldPosition) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> GetNormal(const Vector3&amp; worldPosition) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> WorldToHeightMap(const Vector3&amp; worldPosition) const</li>
@@ -5720,6 +5730,10 @@ Classes</h2>
 <li>bool smoothing</li>
 <li>Image* heightMap</li>
 <li>Material* material</li>
+<li>Terrain* northNeighbor</li>
+<li>Terrain* southNeighbor</li>
+<li>Terrain* westNeighbor</li>
+<li>Terrain* eastNeighbor</li>
 <li>float drawDistance</li>
 <li>float shadowDistance</li>
 <li>float lodBias</li>
