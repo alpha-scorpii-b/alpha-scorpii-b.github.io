@@ -1130,6 +1130,7 @@ Classes</h2>
 <li>FillMode fillMode</li>
 <li>float fov</li>
 <li><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a> frustum // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> gpuProjection // readonly</li>
 <li>float halfViewSize // readonly</li>
 <li>uint id // readonly</li>
 <li>float lodBias</li>
@@ -1139,7 +1140,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float orthoSize</li>
 <li>bool orthographic</li>
-<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> projection // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> projection</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> projectionOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_plane.html" title="Surface in three-dimensional space.">Plane</a> reflectionPlane</li>
 <li>int refs // readonly</li>
@@ -4317,9 +4318,11 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void Define(const BoundingBox&amp;, const Matrix3x4&amp;)</li>
+<li>void Define(const Matrix4&amp;)</li>
 <li>void Define(const Vector3&amp;, const Vector3&amp;, const Matrix3x4&amp;)</li>
 <li>void Define(float, float, float, float, float, const Matrix3x4&amp;)</li>
 <li>void DefineOrtho(float, float, float, float, float, const Matrix3x4&amp;)</li>
+<li>void DefineSplit(const Matrix4&amp;, float, float)</li>
 <li>float Distance(const Vector3&amp;) const</li>
 <li>Intersection IsInside(const BoundingBox&amp;)</li>
 <li>Intersection IsInside(const Sphere&amp;)</li>

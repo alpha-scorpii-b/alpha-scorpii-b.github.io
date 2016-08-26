@@ -145,13 +145,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a45cb0bc0d42e4ad5a0ef357951f58d91">SetFlipVertical</a> (bool enable)</td></tr>
 <tr class="memdesc:a45cb0bc0d42e4ad5a0ef357951f58d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set vertical flipping mode. Called internally by <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport...">View</a> to resolve OpenGL / Direct3D9 rendertarget sampling differences. <br/></td></tr>
 <tr class="separator:a45cb0bc0d42e4ad5a0ef357951f58d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ca95f4bb7b712650f0e9a2aa8ef83e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a41ca95f4bb7b712650f0e9a2aa8ef83e">SetProjection</a> (const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;projection)</td></tr>
+<tr class="memdesc:a41ca95f4bb7b712650f0e9a2aa8ef83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom projection matrix, which should be specified in D3D convention with depth range 0 - 1. Disables auto aspect ratio.  <a href="#a41ca95f4bb7b712650f0e9a2aa8ef83e">More...</a><br/></td></tr>
+<tr class="separator:a41ca95f4bb7b712650f0e9a2aa8ef83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ce91bcd0b92b35b95ae8fe81950dab3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ce91bcd0b92b35b95ae8fe81950dab3"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a2ce91bcd0b92b35b95ae8fe81950dab3">GetFarClip</a> () const </td></tr>
-<tr class="memdesc:a2ce91bcd0b92b35b95ae8fe81950dab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return far clip distance. <br/></td></tr>
+<tr class="memdesc:a2ce91bcd0b92b35b95ae8fe81950dab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return far clip distance. If a custom projection matrix is in use, is calculated from it instead of the value assigned with <a class="el" href="class_urho3_d_1_1_camera.html#afbbbdb5dfb8aa68f72e27ea4877ea107" title="Set far clip distance.">SetFarClip()</a>. <br/></td></tr>
 <tr class="separator:a2ce91bcd0b92b35b95ae8fe81950dab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc01c6201d2489565fa9e9b4966e23ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc01c6201d2489565fa9e9b4966e23ad"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#acc01c6201d2489565fa9e9b4966e23ad">GetNearClip</a> () const </td></tr>
-<tr class="memdesc:acc01c6201d2489565fa9e9b4966e23ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return near clip distance. <br/></td></tr>
+<tr class="memdesc:acc01c6201d2489565fa9e9b4966e23ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return near clip distance. If a custom projection matrix is in use, is calculated from it instead of the value assigned with <a class="el" href="class_urho3_d_1_1_camera.html#a4ae07f2e2794c60a1a10f16931d9fca4" title="Set near clip distance.">SetNearClip()</a>. <br/></td></tr>
 <tr class="separator:acc01c6201d2489565fa9e9b4966e23ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29be93ced3e1a1f9a2bddc9c43ae59aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29be93ced3e1a1f9a2bddc9c43ae59aa"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a29be93ced3e1a1f9a2bddc9c43ae59aa">GetFov</a> () const </td></tr>
@@ -197,21 +200,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="class_urho3_d_1_1_frustum.html">Frustum</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a555495432c9292b88c197491ce0d7341">GetFrustum</a> () const </td></tr>
 <tr class="memdesc:a555495432c9292b88c197491ce0d7341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return frustum in world space. <br/></td></tr>
 <tr class="separator:a555495432c9292b88c197491ce0d7341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ec28df0c7d7d50f17eb6af6d41ccfad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ec28df0c7d7d50f17eb6af6d41ccfad"></a>
-const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a2ec28df0c7d7d50f17eb6af6d41ccfad">GetProjection</a> () const </td></tr>
-<tr class="memdesc:a2ec28df0c7d7d50f17eb6af6d41ccfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return API-specific projection matrix. <br/></td></tr>
-<tr class="separator:a2ec28df0c7d7d50f17eb6af6d41ccfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b7fc1f7abb466cef7d77d5b9a91abd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b7fc1f7abb466cef7d77d5b9a91abd"></a>
-<a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a20b7fc1f7abb466cef7d77d5b9a91abd">GetProjection</a> (bool apiSpecific) const </td></tr>
-<tr class="memdesc:a20b7fc1f7abb466cef7d77d5b9a91abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return either API-specific or API-independent (D3D convention) projection matrix. <br/></td></tr>
-<tr class="separator:a20b7fc1f7abb466cef7d77d5b9a91abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee38458687851d257e385a30114a7993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee38458687851d257e385a30114a7993"></a>
+<a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#aee38458687851d257e385a30114a7993">GetProjection</a> () const </td></tr>
+<tr class="memdesc:aee38458687851d257e385a30114a7993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return projection matrix. It's in D3D convention with depth range 0 - 1. <br/></td></tr>
+<tr class="separator:aee38458687851d257e385a30114a7993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c933b9077f9f6055504e580ab4dc38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50c933b9077f9f6055504e580ab4dc38"></a>
+<a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a50c933b9077f9f6055504e580ab4dc38">GetGPUProjection</a> () const </td></tr>
+<tr class="memdesc:a50c933b9077f9f6055504e580ab4dc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return projection matrix converted to API-specific format for use as a shader parameter. <br/></td></tr>
+<tr class="separator:a50c933b9077f9f6055504e580ab4dc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac362ac9c057c3546e19cedaf23185438"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac362ac9c057c3546e19cedaf23185438"></a>
 const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ac362ac9c057c3546e19cedaf23185438">GetView</a> () const </td></tr>
 <tr class="memdesc:ac362ac9c057c3546e19cedaf23185438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return view matrix. <br/></td></tr>
 <tr class="separator:ac362ac9c057c3546e19cedaf23185438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7112f5b622eb75c70c5a44a4a6dc4d47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7112f5b622eb75c70c5a44a4a6dc4d47"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a7112f5b622eb75c70c5a44a4a6dc4d47">GetFrustumSize</a> (<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;near, <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;far) const </td></tr>
-<tr class="memdesc:a7112f5b622eb75c70c5a44a4a6dc4d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return frustum near and far sizes. <br/></td></tr>
+<tr class="memitem:a7112f5b622eb75c70c5a44a4a6dc4d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a7112f5b622eb75c70c5a44a4a6dc4d47">GetFrustumSize</a> (<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;near, <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;far) const </td></tr>
+<tr class="memdesc:a7112f5b622eb75c70c5a44a4a6dc4d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return frustum near and far sizes.  <a href="#a7112f5b622eb75c70c5a44a4a6dc4d47">More...</a><br/></td></tr>
 <tr class="separator:a7112f5b622eb75c70c5a44a4a6dc4d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9221776d544f34be09bc52e343d4ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e9221776d544f34be09bc52e343d4ab"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a7e9221776d544f34be09bc52e343d4ab">GetHalfViewSize</a> () const </td></tr>
@@ -231,14 +233,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:ab359037a2232b4a0e505ad954c23a02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3b6c67dcbe20cd1c8f00545a9144dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d3b6c67dcbe20cd1c8f00545a9144dc"></a>
 <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a7d3b6c67dcbe20cd1c8f00545a9144dc">GetScreenRay</a> (float x, float y) const </td></tr>
-<tr class="memdesc:a7d3b6c67dcbe20cd1c8f00545a9144dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ray corresponding to normalized screen coordinates (0.0 - 1.0), with origin on the near clip plane. <br/></td></tr>
+<tr class="memdesc:a7d3b6c67dcbe20cd1c8f00545a9144dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ray corresponding to normalized screen coordinates (0 - 1), with origin on the near clip plane. <br/></td></tr>
 <tr class="separator:a7d3b6c67dcbe20cd1c8f00545a9144dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2f4b9f4407aff131511b78e17d3377c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2f4b9f4407aff131511b78e17d3377c"></a>
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ad2f4b9f4407aff131511b78e17d3377c">WorldToScreenPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;worldPos) const </td></tr>
-<tr class="memdesc:ad2f4b9f4407aff131511b78e17d3377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a world space point to normalized screen coordinates (0.0 - 1.0). <br/></td></tr>
+<tr class="memdesc:ad2f4b9f4407aff131511b78e17d3377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a world space point to normalized screen coordinates (0 - 1). <br/></td></tr>
 <tr class="separator:ad2f4b9f4407aff131511b78e17d3377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#abe7e6dda9b61ee392a557fe5f05fa7ad">ScreenToWorldPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;screenPos) const </td></tr>
-<tr class="memdesc:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert normalized screen coordinates (0.0 - 1.0) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane.  <a href="#abe7e6dda9b61ee392a557fe5f05fa7ad">More...</a><br/></td></tr>
+<tr class="memdesc:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert normalized screen coordinates (0 - 1) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane.  <a href="#abe7e6dda9b61ee392a557fe5f05fa7ad">More...</a><br/></td></tr>
 <tr class="separator:abe7e6dda9b61ee392a557fe5f05fa7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad99aa4e04e38db9876aed66706b36b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad99aa4e04e38db9876aed66706b36b13"></a>
 const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ad99aa4e04e38db9876aed66706b36b13">GetProjectionOffset</a> () const </td></tr>
@@ -868,6 +870,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac08d817306776d53a75011f01315c5e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac08d817306776d53a75011f01315c5e3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
 <tr class="separator:ac08d817306776d53a75011f01315c5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146d6fb7fea96d7a404503695f1be54b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146d6fb7fea96d7a404503695f1be54b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a146d6fb7fea96d7a404503695f1be54b">UpdateProjection</a> () const </td></tr>
+<tr class="memdesc:a146d6fb7fea96d7a404503695f1be54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate projection matrix. <br/></td></tr>
+<tr class="separator:a146d6fb7fea96d7a404503695f1be54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -881,7 +887,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a270ecd201e0a0cca5ea021f5fb2bc9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3138ffc6cfb8becc72510c474ce16a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3138ffc6cfb8becc72510c474ce16a8"></a>
 <a class="el" href="class_urho3_d_1_1_frustum.html">Frustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#ac3138ffc6cfb8becc72510c474ce16a8">frustum_</a></td></tr>
-<tr class="memdesc:ac3138ffc6cfb8becc72510c474ce16a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached frustum. <br/></td></tr>
+<tr class="memdesc:ac3138ffc6cfb8becc72510c474ce16a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached world space frustum. <br/></td></tr>
 <tr class="separator:ac3138ffc6cfb8becc72510c474ce16a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb66972c70ba4fe144a7286cea027f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb66972c70ba4fe144a7286cea027f9f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#acb66972c70ba4fe144a7286cea027f9f">viewDirty_</a></td></tr>
@@ -899,6 +905,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a5a69408fd45628c90b3fb7b54925b622">orthographic_</a></td></tr>
 <tr class="memdesc:a5a69408fd45628c90b3fb7b54925b622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orthographic mode flag. <br/></td></tr>
 <tr class="separator:a5a69408fd45628c90b3fb7b54925b622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa996b3eb9cddd24a1bf4ef2a6c89a281"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa996b3eb9cddd24a1bf4ef2a6c89a281"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#aa996b3eb9cddd24a1bf4ef2a6c89a281">projNearClip_</a></td></tr>
+<tr class="memdesc:aa996b3eb9cddd24a1bf4ef2a6c89a281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached actual near clip distance. <br/></td></tr>
+<tr class="separator:aa996b3eb9cddd24a1bf4ef2a6c89a281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf982e0d480b0de259f0b1169e9e34db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf982e0d480b0de259f0b1169e9e34db"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#aaf982e0d480b0de259f0b1169e9e34db">projFarClip_</a></td></tr>
+<tr class="memdesc:aaf982e0d480b0de259f0b1169e9e34db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached actual far clip distance. <br/></td></tr>
+<tr class="separator:aaf982e0d480b0de259f0b1169e9e34db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841253060ee1b515c4007ef14d7bcda7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a841253060ee1b515c4007ef14d7bcda7"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_camera.html#a841253060ee1b515c4007ef14d7bcda7">nearClip_</a></td></tr>
 <tr class="memdesc:a841253060ee1b515c4007ef14d7bcda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Near clip distance. <br/></td></tr>
@@ -995,6 +1009,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Camera component. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7112f5b622eb75c70c5a44a4a6dc4d47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::Camera::GetFrustumSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>far</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return frustum near and far sizes. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Necessary? Explain this </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_a7112f5b622eb75c70c5a44a4a6dc4d47_cgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_a7112f5b622eb75c70c5a44a4a6dc4d47_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="abe7e6dda9b61ee392a557fe5f05fa7ad"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1009,13 +1068,40 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Convert normalized screen coordinates (0.0 - 1.0) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane. </p>
+<p>Convert normalized screen coordinates (0 - 1) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane. </p>
 <p>Note that a HitDistance() from the camera screen ray is not the same as distance along the view Z axis, as under a perspective projection the ray is likely to not be Z-aligned. </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_abe7e6dda9b61ee392a557fe5f05fa7ad_cgraph.svg" width="100%" height="592"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_abe7e6dda9b61ee392a557fe5f05fa7ad_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a41ca95f4bb7b712650f0e9a2aa8ef83e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::Camera::SetProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;&#160;</td>
+          <td class="paramname"><em>projection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set custom projection matrix, which should be specified in D3D convention with depth range 0 - 1. Disables auto aspect ratio. </p>
+<p>Change any of the standard view parameters (FOV, far clip, zoom etc.) to revert to the standard projection. Note that the custom projection is not serialized or replicated through the network. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_camera_a41ca95f4bb7b712650f0e9a2aa8ef83e_cgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>

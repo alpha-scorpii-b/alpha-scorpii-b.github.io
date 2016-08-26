@@ -585,6 +585,7 @@ Classes</h2>
 <li>void SetReflectionPlane(const Plane&amp; reflectionPlane)</li>
 <li>void SetUseClipping(bool enable)</li>
 <li>void SetClipPlane(const Plane&amp; clipPlane)</li>
+<li>void SetProjection(const Matrix4&amp; projection)</li>
 <li>float GetFarClip() const</li>
 <li>float GetNearClip() const</li>
 <li>float GetFov() const</li>
@@ -598,7 +599,8 @@ Classes</h2>
 <li>bool IsOrthographic() const</li>
 <li>bool GetAutoAspectRatio() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a>&amp; GetFrustum() const</li>
-<li>const <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a>&amp; GetProjection() const</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> GetProjection() const</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> GetGPUProjection() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a>&amp; GetView() const</li>
 <li>void GetFrustumSize(Vector3&amp; near, Vector3&amp; far) const</li>
 <li>float GetHalfViewSize() const</li>
@@ -634,7 +636,8 @@ Classes</h2>
 <li>bool orthographic</li>
 <li>bool autoAspectRatio</li>
 <li><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a>&amp; frustum (readonly)</li>
-<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a>&amp; projection (readonly)</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> projection (readonly)</li>
+<li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> GPUProjection (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a>&amp; view (readonly)</li>
 <li>float halfViewSize (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a> viewSpaceFrustum (readonly)</li>
@@ -2183,8 +2186,10 @@ Classes</h2>
 <li>void Define(const Vector3&amp; near, const Vector3&amp; far, const Matrix3x4&amp; transform)</li>
 <li>void Define(const BoundingBox&amp; box)</li>
 <li>void Define(const BoundingBox&amp; box, const Matrix3x4&amp; transform)</li>
+<li>void Define(const Matrix4&amp; projection)</li>
 <li>void DefineOrtho(float orthoSize, float aspectRatio, float zoom, float nearZ, float farZ)</li>
 <li>void DefineOrtho(float orthoSize, float aspectRatio, float zoom, float nearZ, float farZ, const Matrix3x4&amp; transform)</li>
+<li>void DefineSplit(const Matrix4&amp; projection, float near, float far)</li>
 <li>void Transform(const Matrix3&amp; transform)</li>
 <li>void Transform(const Matrix3x4&amp; transform)</li>
 <li>Intersection IsInside(const Vector3&amp; point) const</li>
