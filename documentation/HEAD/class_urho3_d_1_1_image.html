@@ -206,11 +206,11 @@ CompressedFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="separator:a57a4d4e1056539a82bea44116b965a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a052830819a076c443504220766930314"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a052830819a076c443504220766930314"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a052830819a076c443504220766930314">GetNumCompressedLevels</a> () const </td></tr>
-<tr class="memdesc:a052830819a076c443504220766930314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of compressed mip levels. <br/></td></tr>
+<tr class="memdesc:a052830819a076c443504220766930314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of compressed mip levels. Returns 0 if the image is has not been loaded from a source file containing multiple mip levels. <br/></td></tr>
 <tr class="separator:a052830819a076c443504220766930314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c0f79ab5f89576a635ca3a5b266009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8c0f79ab5f89576a635ca3a5b266009"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#ae8c0f79ab5f89576a635ca3a5b266009">GetNextLevel</a> () const </td></tr>
-<tr class="memdesc:ae8c0f79ab5f89576a635ca3a5b266009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return next mip level by bilinear filtering. <br/></td></tr>
+<tr class="memdesc:ae8c0f79ab5f89576a635ca3a5b266009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return next mip level by bilinear filtering. Note that if the image is already 1x1x1, will keep returning an image of that size. <br/></td></tr>
 <tr class="separator:ae8c0f79ab5f89576a635ca3a5b266009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe76fb884318bf99ce7d93571f0636f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fe76fb884318bf99ce7d93571f0636f"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a0fe76fb884318bf99ce7d93571f0636f">GetNextSibling</a> () const </td></tr>
