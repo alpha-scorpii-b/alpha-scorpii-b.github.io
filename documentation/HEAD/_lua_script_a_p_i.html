@@ -2655,6 +2655,9 @@ Classes</h2>
 <li>void SetArray(const JSONArray&amp; value)</li>
 <li>void SetObject(const JSONObject&amp; value)</li>
 <li>JSONValueType GetValueType() const</li>
+<li>JSONNumberType GetNumberType() const</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetValueTypeName() const</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetNumberTypeName() const</li>
 <li>bool IsNull() const</li>
 <li>bool IsBool() const</li>
 <li>bool IsNumber() const</li>
@@ -2690,6 +2693,10 @@ Classes</h2>
 <li>const JSONArray emptyArray</li>
 <li>const JSONObject emptyObject</li>
 <li>bool null (readonly)</li>
+<li>JSONValueType valueType (readonly)</li>
+<li>JSONNumberType numberType (readonly)</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> valueTypeName (readonly)</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> numberTypeName (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_JoystickState"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_joystick_state.html" title="Input state for a joystick.">JoystickState</a></h4>
@@ -7382,6 +7389,13 @@ Enumerations</h2>
 <li>int OUTSIDE</li>
 <li>int INTERSECTS</li>
 <li>int INSIDE</li>
+</ul>
+<h4>JSONNumberType</h4>
+<ul>
+<li>int JSONNT_NAN</li>
+<li>int JSONNT_INT</li>
+<li>int JSONNT_UINT</li>
+<li>int JSONNT_FLOAT_DOUBLE</li>
 </ul>
 <h4>JSONValueType</h4>
 <ul>
