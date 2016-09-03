@@ -77,6 +77,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#aa7a064f2ba3f06c4d23da476b3c2de6a">Vector</a> (unsigned size)</td></tr>
 <tr class="memdesc:aa7a064f2ba3f06c4d23da476b3c2de6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with initial size. <br/></td></tr>
 <tr class="separator:aa7a064f2ba3f06c4d23da476b3c2de6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bffc4a7d2da87df9f29c6170201053d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bffc4a7d2da87df9f29c6170201053d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#a0bffc4a7d2da87df9f29c6170201053d">Vector</a> (unsigned size, const T &amp;value)</td></tr>
+<tr class="memdesc:a0bffc4a7d2da87df9f29c6170201053d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with initial size and default value. <br/></td></tr>
+<tr class="separator:a0bffc4a7d2da87df9f29c6170201053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a205779a62f3bb36e848a77981ac8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3a205779a62f3bb36e848a77981ac8c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#ab3a205779a62f3bb36e848a77981ac8c">Vector</a> (const T *data, unsigned size)</td></tr>
 <tr class="memdesc:ab3a205779a62f3bb36e848a77981ac8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with initial data. <br/></td></tr>
@@ -281,10 +285,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aeb7879ba532bd4c544183ea9c564990e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb7879ba532bd4c544183ea9c564990e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#aeb7879ba532bd4c544183ea9c564990e">Resize</a> (unsigned newSize, const T *src)</td></tr>
-<tr class="memdesc:aeb7879ba532bd4c544183ea9c564990e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the vector and create/remove new elements as necessary. <br/></td></tr>
-<tr class="separator:aeb7879ba532bd4c544183ea9c564990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f4cfe89a9009b5ceba23222190056f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02f4cfe89a9009b5ceba23222190056f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#a02f4cfe89a9009b5ceba23222190056f">Resize</a> (unsigned newSize, const T *src, <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; T &gt; &amp;tempBuffer)</td></tr>
+<tr class="memdesc:a02f4cfe89a9009b5ceba23222190056f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the vector and create/remove new elements as necessary. Current buffer will be stored in tempBuffer in case of reallocation. <br/></td></tr>
+<tr class="separator:a02f4cfe89a9009b5ceba23222190056f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dfaa695ced6f581ab4ff160c66ce34"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab5dfaa695ced6f581ab4ff160c66ce34"></a>
+template&lt;typename RandomIteratorT &gt; </td></tr>
+<tr class="memitem:ab5dfaa695ced6f581ab4ff160c66ce34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_urho3_d_1_1_random_access_iterator.html">Iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#ab5dfaa695ced6f581ab4ff160c66ce34">InsertElements</a> (unsigned pos, RandomIteratorT start, RandomIteratorT end)</td></tr>
+<tr class="memdesc:ab5dfaa695ced6f581ab4ff160c66ce34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert elements. <br/></td></tr>
+<tr class="separator:ab5dfaa695ced6f581ab4ff160c66ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16513c59c4f36471f988f4564ee71c6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16513c59c4f36471f988f4564ee71c6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#a16513c59c4f36471f988f4564ee71c6e">MoveRange</a> (unsigned dest, unsigned src, unsigned count)</td></tr>
 <tr class="memdesc:a16513c59c4f36471f988f4564ee71c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a range of elements within the vector. <br/></td></tr>
