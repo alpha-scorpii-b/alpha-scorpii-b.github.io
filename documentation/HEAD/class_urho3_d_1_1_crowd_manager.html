@@ -791,6 +791,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#acd1475ee2f1c1705aeb6efeed7382999">HandleNavMeshChanged</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:acd1475ee2f1c1705aeb6efeed7382999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle navigation mesh changed event. It can be navmesh being rebuilt or being removed from its node. <br/></td></tr>
 <tr class="separator:acd1475ee2f1c1705aeb6efeed7382999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403f27fff22efe998938b9165ada00a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6403f27fff22efe998938b9165ada00a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#a6403f27fff22efe998938b9165ada00a">HandleComponentAdded</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
+<tr class="memdesc:a6403f27fff22efe998938b9165ada00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle component added in the scene to check for late addition of the navmesh. <br/></td></tr>
+<tr class="separator:a6403f27fff22efe998938b9165ada00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -798,10 +802,10 @@ Private Attributes</h2></td></tr>
 dtCrowd *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#aa4a0f833a9709f2f415c0dcd2d004401">crowd_</a></td></tr>
 <tr class="memdesc:aa4a0f833a9709f2f415c0dcd2d004401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Detour crowd object. <br/></td></tr>
 <tr class="separator:aa4a0f833a9709f2f415c0dcd2d004401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cff5a354c307d78c35522c5c4fe141d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cff5a354c307d78c35522c5c4fe141d"></a>
-<a class="el" href="class_urho3_d_1_1_navigation_mesh.html">NavigationMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#a8cff5a354c307d78c35522c5c4fe141d">navigationMesh_</a></td></tr>
-<tr class="memdesc:a8cff5a354c307d78c35522c5c4fe141d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html" title="Navigation mesh component. Collects the navigation geometry from child nodes with the Navigable compo...">NavigationMesh</a> for which the crowd was created. <br/></td></tr>
-<tr class="separator:a8cff5a354c307d78c35522c5c4fe141d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890ab49ce3886405ec0506944bb3dba0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a890ab49ce3886405ec0506944bb3dba0"></a>
+<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_navigation_mesh.html">NavigationMesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#a890ab49ce3886405ec0506944bb3dba0">navigationMesh_</a></td></tr>
+<tr class="memdesc:a890ab49ce3886405ec0506944bb3dba0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html" title="Navigation mesh component. Collects the navigation geometry from child nodes with the Navigable compo...">NavigationMesh</a> for which the crowd was created. <br/></td></tr>
+<tr class="separator:a890ab49ce3886405ec0506944bb3dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad307f5cd29b9ff5c5af32b680de7b8ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad307f5cd29b9ff5c5af32b680de7b8ab"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_crowd_manager.html#ad307f5cd29b9ff5c5af32b680de7b8ab">navigationMeshId_</a></td></tr>
 <tr class="memdesc:ad307f5cd29b9ff5c5af32b680de7b8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_urho3_d_1_1_navigation_mesh.html" title="Navigation mesh component. Collects the navigation geometry from child nodes with the Navigable compo...">NavigationMesh</a> component Id for pending crowd creation. <br/></td></tr>
