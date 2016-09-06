@@ -151,8 +151,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:add6673792827a34b148eea6b9cba71fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260383afbaf4331a095fd80854cc6684"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a260383afbaf4331a095fd80854cc6684"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a260383afbaf4331a095fd80854cc6684">SetShadowNearFarRatio</a> (float nearFarRatio)</td></tr>
-<tr class="memdesc:a260383afbaf4331a095fd80854cc6684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow camera near/far clip distance ratio. <br/></td></tr>
+<tr class="memdesc:a260383afbaf4331a095fd80854cc6684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow camera near/far clip distance ratio for spot and point lights. Does not affect directional lights, since they are orthographic and have near clip 0. <br/></td></tr>
 <tr class="separator:a260383afbaf4331a095fd80854cc6684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3923fe947b9640e9c2465039ea8bb9df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3923fe947b9640e9c2465039ea8bb9df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a3923fe947b9640e9c2465039ea8bb9df">SetShadowMaxExtrusion</a> (float extrusion)</td></tr>
+<tr class="memdesc:a3923fe947b9640e9c2465039ea8bb9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum shadow extrusion for directional lights. The actual extrusion will be the smaller of this and camera far clip. Default 1000. <br/></td></tr>
+<tr class="separator:a3923fe947b9640e9c2465039ea8bb9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fc2b26765908f5be04da2957c8297ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fc2b26765908f5be04da2957c8297ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a1fc2b26765908f5be04da2957c8297ad">SetRampTexture</a> (<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *texture)</td></tr>
 <tr class="memdesc:a1fc2b26765908f5be04da2957c8297ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set range attenuation texture. <br/></td></tr>
@@ -245,6 +249,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ae13b37bfc0d4833a268f0724e5b00471">GetShadowNearFarRatio</a> () const </td></tr>
 <tr class="memdesc:ae13b37bfc0d4833a268f0724e5b00471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow camera near/far clip distance ratio. <br/></td></tr>
 <tr class="separator:ae13b37bfc0d4833a268f0724e5b00471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20223914b6946394a880903fac760be1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20223914b6946394a880903fac760be1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a20223914b6946394a880903fac760be1">GetShadowMaxExtrusion</a> () const </td></tr>
+<tr class="memdesc:a20223914b6946394a880903fac760be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return maximum shadow extrusion distance for directional lights. <br/></td></tr>
+<tr class="separator:a20223914b6946394a880903fac760be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa597753a229ac18ee00d2e4be398e1e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa597753a229ac18ee00d2e4be398e1e0"></a>
 <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aa597753a229ac18ee00d2e4be398e1e0">GetRampTexture</a> () const </td></tr>
 <tr class="memdesc:aa597753a229ac18ee00d2e4be398e1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return range attenuation texture. <br/></td></tr>
@@ -1211,6 +1219,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#adc5c86b774e8fd7ab0ac0e03d4c3a3ea">shadowNearFarRatio_</a></td></tr>
 <tr class="memdesc:adc5c86b774e8fd7ab0ac0e03d4c3a3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow camera near/far clip distance ratio. <br/></td></tr>
 <tr class="separator:adc5c86b774e8fd7ab0ac0e03d4c3a3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133cf896a4919141e356959058b778b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a133cf896a4919141e356959058b778b8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a133cf896a4919141e356959058b778b8">shadowMaxExtrusion_</a></td></tr>
+<tr class="memdesc:a133cf896a4919141e356959058b778b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directional shadow max. extrusion distance. <br/></td></tr>
+<tr class="separator:a133cf896a4919141e356959058b778b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36fdace848b0edf71623c0c5b71f384"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab36fdace848b0edf71623c0c5b71f384"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ab36fdace848b0edf71623c0c5b71f384">perVertex_</a></td></tr>
 <tr class="memdesc:ab36fdace848b0edf71623c0c5b71f384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-vertex lighting flag. <br/></td></tr>
