@@ -100,6 +100,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a1d1c26ca3f9c016b1db2e2f105a2fa04">SetTechnique</a> (unsigned index, <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> *tech, unsigned qualityLevel=0, float lodDistance=0.0f)</td></tr>
 <tr class="memdesc:a1d1c26ca3f9c016b1db2e2f105a2fa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set technique. <br/></td></tr>
 <tr class="separator:a1d1c26ca3f9c016b1db2e2f105a2fa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64449d7c99cf9c27dc9e8ae85d4994c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64449d7c99cf9c27dc9e8ae85d4994c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a64449d7c99cf9c27dc9e8ae85d4994c9">SetVertexShaderDefines</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;defines)</td></tr>
+<tr class="memdesc:a64449d7c99cf9c27dc9e8ae85d4994c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional vertex shader defines. Causes the technique(s) to be cloned in case they weren't already. <br/></td></tr>
+<tr class="separator:a64449d7c99cf9c27dc9e8ae85d4994c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110cf057d1d8eee5b2f60887fd4bd58a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a110cf057d1d8eee5b2f60887fd4bd58a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a110cf057d1d8eee5b2f60887fd4bd58a">SetPixelShaderDefines</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;defines)</td></tr>
+<tr class="memdesc:a110cf057d1d8eee5b2f60887fd4bd58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional pixel shader defines. Causes the technique(s) to be cloned in case they weren't already. <br/></td></tr>
+<tr class="separator:a110cf057d1d8eee5b2f60887fd4bd58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27f2b7dd5a1ab57e0be7f9a30be657ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27f2b7dd5a1ab57e0be7f9a30be657ed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a27f2b7dd5a1ab57e0be7f9a30be657ed">SetShaderParameter</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
 <tr class="memdesc:a27f2b7dd5a1ab57e0be7f9a30be657ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shader parameter. <br/></td></tr>
@@ -148,6 +156,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a60c107d0bc70408017c10b57fb1ce23e">SetRenderOrder</a> (unsigned char order)</td></tr>
 <tr class="memdesc:a60c107d0bc70408017c10b57fb1ce23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set 8-bit render order within pass. Default 128. Lower values will render earlier and higher values later, taking precedence over e.g. state and distance sorting. <br/></td></tr>
 <tr class="separator:a60c107d0bc70408017c10b57fb1ce23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3204225b474a7e910dde75a8a7119269"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3204225b474a7e910dde75a8a7119269"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a3204225b474a7e910dde75a8a7119269">SetOcclusion</a> (bool enable)</td></tr>
+<tr class="memdesc:a3204225b474a7e910dde75a8a7119269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to use in occlusion rendering. Default true. <br/></td></tr>
+<tr class="separator:a3204225b474a7e910dde75a8a7119269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefba652015ea89aa6d99149e33e1257"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acefba652015ea89aa6d99149e33e1257"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#acefba652015ea89aa6d99149e33e1257">SetScene</a> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
 <tr class="memdesc:acefba652015ea89aa6d99149e33e1257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate the material with a scene to ensure that shader parameter animation happens in sync with scene update, respecting the scene time scale. If no scene is set, the global update events will be used. <br/></td></tr>
@@ -201,6 +213,14 @@ const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; Textu
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a50ac2bdb1446a290ffd9d6410d9fdbd7">GetTextures</a> () const </td></tr>
 <tr class="memdesc:a50ac2bdb1446a290ffd9d6410d9fdbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all textures. <br/></td></tr>
 <tr class="separator:a50ac2bdb1446a290ffd9d6410d9fdbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31bb9845bc0a7977f178930c78c6c965"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31bb9845bc0a7977f178930c78c6c965"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a31bb9845bc0a7977f178930c78c6c965">GetVertexShaderDefines</a> () const </td></tr>
+<tr class="memdesc:a31bb9845bc0a7977f178930c78c6c965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return additional vertex shader defines. <br/></td></tr>
+<tr class="separator:a31bb9845bc0a7977f178930c78c6c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb831670f99965d99377a75a006274d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eb831670f99965d99377a75a006274d"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a3eb831670f99965d99377a75a006274d">GetPixelShaderDefines</a> () const </td></tr>
+<tr class="memdesc:a3eb831670f99965d99377a75a006274d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return additional pixel shader defines. <br/></td></tr>
+<tr class="separator:a3eb831670f99965d99377a75a006274d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd964feb776204e7710b673d28afa0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfd964feb776204e7710b673d28afa0c"></a>
 const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#acfd964feb776204e7710b673d28afa0c">GetShaderParameter</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const </td></tr>
 <tr class="memdesc:acfd964feb776204e7710b673d28afa0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shader parameter. <br/></td></tr>
@@ -491,10 +511,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a34c505680ced124298f079470392a3bb">BeginLoadXML</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
 <tr class="memdesc:a34c505680ced124298f079470392a3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for loading XML files. <br/></td></tr>
 <tr class="separator:a34c505680ced124298f079470392a3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ba9351397f7db0c5ca24ca1452ba7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ba9351397f7db0c5ca24ca1452ba7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#af0ba9351397f7db0c5ca24ca1452ba7b">CheckOcclusion</a> ()</td></tr>
-<tr class="memdesc:af0ba9351397f7db0c5ca24ca1452ba7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-evaluate occlusion rendering. <br/></td></tr>
-<tr class="separator:af0ba9351397f7db0c5ca24ca1452ba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a6e0e7eae446f7c7513090852aeac21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a6e0e7eae446f7c7513090852aeac21"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a2a6e0e7eae446f7c7513090852aeac21">ResetToDefaults</a> ()</td></tr>
 <tr class="memdesc:a2a6e0e7eae446f7c7513090852aeac21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to defaults. <br/></td></tr>
@@ -507,6 +523,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a5e79bcf19379d52c5057c8a97fdbb288">RefreshMemoryUse</a> ()</td></tr>
 <tr class="memdesc:a5e79bcf19379d52c5057c8a97fdbb288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate the memory used by the material. <br/></td></tr>
 <tr class="separator:a5e79bcf19379d52c5057c8a97fdbb288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d3ea1b8bc385776ddac8e86b136661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65d3ea1b8bc385776ddac8e86b136661"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a65d3ea1b8bc385776ddac8e86b136661">ApplyShaderDefines</a> (unsigned index=M_MAX_UNSIGNED)</td></tr>
+<tr class="memdesc:a65d3ea1b8bc385776ddac8e86b136661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reapply shader defines to technique index. By default reapply all. <br/></td></tr>
+<tr class="separator:a65d3ea1b8bc385776ddac8e86b136661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb694b2c9a7d32b4b651824d41d3397"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cb694b2c9a7d32b4b651824d41d3397"></a>
 <a class="el" href="class_urho3_d_1_1_shader_parameter_animation_info.html">ShaderParameterAnimationInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a0cb694b2c9a7d32b4b651824d41d3397">GetShaderParameterAnimationInfo</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const </td></tr>
 <tr class="memdesc:a0cb694b2c9a7d32b4b651824d41d3397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shader parameter animation info. <br/></td></tr>
@@ -541,6 +561,14 @@ Private Attributes</h2></td></tr>
 &lt; <a class="el" href="class_urho3_d_1_1_shader_parameter_animation_info.html">ShaderParameterAnimationInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac49f4e9c0fe67e594b8eb41f84225075">shaderParameterAnimationInfos_</a></td></tr>
 <tr class="memdesc:ac49f4e9c0fe67e594b8eb41f84225075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader parameters animation infos. <br/></td></tr>
 <tr class="separator:ac49f4e9c0fe67e594b8eb41f84225075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9128f385203f74cfcc7d0a57fb43ef50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9128f385203f74cfcc7d0a57fb43ef50"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a9128f385203f74cfcc7d0a57fb43ef50">vertexShaderDefines_</a></td></tr>
+<tr class="memdesc:a9128f385203f74cfcc7d0a57fb43ef50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex shader defines. <br/></td></tr>
+<tr class="separator:a9128f385203f74cfcc7d0a57fb43ef50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530ba502d0e814508c020e7a1af2b72f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a530ba502d0e814508c020e7a1af2b72f"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a530ba502d0e814508c020e7a1af2b72f">pixelShaderDefines_</a></td></tr>
+<tr class="memdesc:a530ba502d0e814508c020e7a1af2b72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel shader defines. <br/></td></tr>
+<tr class="separator:a530ba502d0e814508c020e7a1af2b72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad059b26ec1b24cc682b6edab9a4b8a5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad059b26ec1b24cc682b6edab9a4b8a5e"></a>
 CullMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ad059b26ec1b24cc682b6edab9a4b8a5e">cullMode_</a></td></tr>
 <tr class="memdesc:ad059b26ec1b24cc682b6edab9a4b8a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal culling mode. <br/></td></tr>

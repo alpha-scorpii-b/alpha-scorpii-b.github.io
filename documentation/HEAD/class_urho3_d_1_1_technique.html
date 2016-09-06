@@ -135,6 +135,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_technique.html#a22a50f5fb6c68e5857834fb10eec5287">GetPasses</a> () const </td></tr>
 <tr class="memdesc:a22a50f5fb6c68e5857834fb10eec5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all passes. <br/></td></tr>
 <tr class="separator:a22a50f5fb6c68e5857834fb10eec5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c3bc21df26728f23a7ccd81eba8765"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06c3bc21df26728f23a7ccd81eba8765"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_technique.html#a06c3bc21df26728f23a7ccd81eba8765">CloneWithDefines</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;vsDefines, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;psDefines)</td></tr>
+<tr class="memdesc:a06c3bc21df26728f23a7ccd81eba8765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a clone with added shader compilation defines. Called internally by <a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries.">Material</a>. <br/></td></tr>
+<tr class="separator:a06c3bc21df26728f23a7ccd81eba8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_resource.html">Urho3D::Resource</a></td></tr>
 <tr class="memitem:ae3e1545370dec17a283705989a1cc682 inherit pub_methods_class_urho3_d_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3e1545370dec17a283705989a1cc682"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#ae3e1545370dec17a283705989a1cc682">Resource</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -410,6 +414,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_pass.html">Pass</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_technique.html#a127aed81b662cea37b0b4a95606c0834">passes_</a></td></tr>
 <tr class="memdesc:a127aed81b662cea37b0b4a95606c0834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes. <br/></td></tr>
 <tr class="separator:a127aed81b662cea37b0b4a95606c0834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6959eeaa31acf6c3a9aadcf4cef53d1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6959eeaa31acf6c3a9aadcf4cef53d1b"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <br class="typebreak"/>
+<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt;, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_technique.html">Technique</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_technique.html#a6959eeaa31acf6c3a9aadcf4cef53d1b">cloneTechniques_</a></td></tr>
+<tr class="memdesc:a6959eeaa31acf6c3a9aadcf4cef53d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached clones with added shader compilation defines. <br/></td></tr>
+<tr class="separator:a6959eeaa31acf6c3a9aadcf4cef53d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>

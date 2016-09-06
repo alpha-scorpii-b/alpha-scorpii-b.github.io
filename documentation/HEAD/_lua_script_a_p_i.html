@@ -2973,6 +2973,8 @@ Classes</h2>
 <li>void delete()</li>
 <li>void SetNumTechniques(unsigned num)</li>
 <li>void SetTechnique(unsigned index, Technique* tech, unsigned qualityLevel = 0, float lodDistance = 0.0f)</li>
+<li>void SetVertexShaderDefines(const String defines)</li>
+<li>void SetPixelShaderDefines(const String defines)</li>
 <li>void SetShaderParameter(const String name, const Variant&amp; value)</li>
 <li>void SetShaderParameterAnimation(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name, ValueAnimation* animation, WrapMode wrapMode = WM_LOOP, float speed = 1.0f)</li>
 <li>void SetShaderParameterAnimationWrapMode(const String name, WrapMode wrapMode)</li>
@@ -2985,6 +2987,7 @@ Classes</h2>
 <li>void SetFillMode(FillMode mode)</li>
 <li>void SetDepthBias(const BiasParameters&amp; parameters)</li>
 <li>void SetRenderOrder(char renderOrder)</li>
+<li>void SetOcclusion(bool enable)</li>
 <li>void SetScene(Scene* scene)</li>
 <li>void RemoveShaderParameter(const String name)</li>
 <li>void ReleaseShaders()</li>
@@ -2995,6 +2998,8 @@ Classes</h2>
 <li>Technique* GetTechnique(unsigned index) const</li>
 <li>Pass* GetPass(unsigned index, const String passName) const</li>
 <li>Texture* GetTexture(TextureUnit unit) const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetVertexShaderDefines() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetPixelShaderDefines() const</li>
 <li>ValueAnimation* GetShaderParameterAnimation(const String name) const</li>
 <li>WrapMode GetShaderParameterAnimationWrapMode(const String name) const</li>
 <li>float GetShaderParameterAnimationSpeed(const String name) const</li>
@@ -3009,12 +3014,14 @@ Classes</h2>
 </ul>
 <p>Properties:</p>
 <ul>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> vertexShaderDefines</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> pixelShaderDefines</li>
 <li>CullMode cullMode</li>
 <li>CullMode shadowCullMode</li>
 <li>FillMode fillMode</li>
 <li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a> depthBias</li>
 <li>char renderOrder</li>
-<li>bool occlusion (readonly)</li>
+<li>bool occlusion</li>
 <li>bool specular (readonly)</li>
 <li>Scene* scene</li>
 </ul>
@@ -4049,7 +4056,6 @@ Classes</h2>
 <li>void SetDepthTestMode(CompareMode mode)</li>
 <li>void SetLightingMode(PassLightingMode mode)</li>
 <li>void SetDepthWrite(bool enable)</li>
-<li>void SetAlphaMask(bool enable)</li>
 <li>void SetIsDesktop(bool enable)</li>
 <li>void SetVertexShader(const String name)</li>
 <li>void SetPixelShader(const String name)</li>
@@ -4063,7 +4069,6 @@ Classes</h2>
 <li>CompareMode GetDepthTestMode() const</li>
 <li>PassLightingMode GetLightingMode() const</li>
 <li>bool GetDepthWrite() const</li>
-<li>bool GetAlphaMask() const</li>
 <li>bool IsDesktop() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetVertexShader() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetPixelShader() const</li>
@@ -4079,7 +4084,6 @@ Classes</h2>
 <li>CompareMode depthTestMode</li>
 <li>PassLightingMode lightingMode</li>
 <li>bool depthWrite</li>
-<li>bool alphaMask</li>
 <li>bool desktop (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> vertexShader</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> pixelShader</li>
