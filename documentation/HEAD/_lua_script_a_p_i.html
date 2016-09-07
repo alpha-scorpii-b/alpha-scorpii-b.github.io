@@ -394,6 +394,7 @@ Classes</h2>
 <li>void SetSorted(bool enable)</li>
 <li>void SetFixedScreenSize(bool enable)</li>
 <li>void SetFaceCameraMode(FaceCameraMode mode)</li>
+<li>void SetMinAngle(float angle)</li>
 <li>void SetAnimationLodBias(float bias)</li>
 <li>void Commit()</li>
 <li>Material* GetMaterial() const</li>
@@ -404,6 +405,7 @@ Classes</h2>
 <li>bool IsSorted() const</li>
 <li>bool IsFixedScreenSize() const</li>
 <li>FaceCameraMode GetFaceCameraMode() const</li>
+<li>float GetMinAngle() const</li>
 <li>float GetAnimationLodBias() const</li>
 </ul>
 <p>Properties:</p>
@@ -415,6 +417,7 @@ Classes</h2>
 <li>bool sorted</li>
 <li>bool fixedScreenSize</li>
 <li>FaceCameraMode faceCameraMode</li>
+<li>float minAngle</li>
 <li>float animationLodBias</li>
 </ul>
 <p><a class="anchor" id="Class_Bone"></a> </p>
@@ -7312,6 +7315,7 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
+<li>int FC_LOOKAT_MIXED</li>
 </ul>
 <h4>FaceCameraMode</h4>
 <ul>
@@ -7320,6 +7324,7 @@ Enumerations</h2>
 <li>int FC_ROTATE_Y</li>
 <li>int FC_LOOKAT_XYZ</li>
 <li>int FC_LOOKAT_Y</li>
+<li>int FC_LOOKAT_MIXED</li>
 <li>int FC_DIRECTION</li>
 </ul>
 <h4>FileMode</h4>
