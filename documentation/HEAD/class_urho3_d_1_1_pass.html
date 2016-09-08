@@ -48,7 +48,7 @@ Inheritance diagram for Urho3D::Pass:</div>
 <div class="dynheader">
 Collaboration diagram for Urho3D::Pass:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_pass__coll__graph.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_pass__coll__graph.svg" width="100%" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -96,12 +96,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a4e3ae893279a7b7a613a3022258b80c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a40711bea48c8aa343253aa13a7a4b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a40711bea48c8aa343253aa13a7a4b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a8a40711bea48c8aa343253aa13a7a4b7">SetVertexShaderDefines</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;defines)</td></tr>
-<tr class="memdesc:a8a40711bea48c8aa343253aa13a7a4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set vertex shader defines. <br/></td></tr>
+<tr class="memdesc:a8a40711bea48c8aa343253aa13a7a4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set vertex shader defines. Separate multiple defines with spaces. <br/></td></tr>
 <tr class="separator:a8a40711bea48c8aa343253aa13a7a4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbfd320cfa476337a116391859a0c053"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbfd320cfa476337a116391859a0c053"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#abbfd320cfa476337a116391859a0c053">SetPixelShaderDefines</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;defines)</td></tr>
-<tr class="memdesc:abbfd320cfa476337a116391859a0c053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pixel shader defines. <br/></td></tr>
+<tr class="memdesc:abbfd320cfa476337a116391859a0c053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pixel shader defines. Separate multiple defines with spaces. <br/></td></tr>
 <tr class="separator:abbfd320cfa476337a116391859a0c053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed8083cf1d9cc266eba3c45e9056dfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ed8083cf1d9cc266eba3c45e9056dfb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a7ed8083cf1d9cc266eba3c45e9056dfb">SetVertexShaderDefineExcludes</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;excludes)</td></tr>
+<tr class="memdesc:a7ed8083cf1d9cc266eba3c45e9056dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set vertex shader define excludes. Use to mark defines that the shader code will not recognize, to prevent compiling redundant shader variations. <br/></td></tr>
+<tr class="separator:a7ed8083cf1d9cc266eba3c45e9056dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f6ca5912cfc23b59c499b80efb748f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69f6ca5912cfc23b59c499b80efb748f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a69f6ca5912cfc23b59c499b80efb748f">SetPixelShaderDefineExcludes</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;excludes)</td></tr>
+<tr class="memdesc:a69f6ca5912cfc23b59c499b80efb748f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pixel shader define excludes. Use to mark defines that the shader code will not recognize, to prevent compiling redundant shader variations. <br/></td></tr>
+<tr class="separator:a69f6ca5912cfc23b59c499b80efb748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88670623f66ba1b156900449f6da9a3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88670623f66ba1b156900449f6da9a3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a88670623f66ba1b156900449f6da9a3a">ReleaseShaders</a> ()</td></tr>
 <tr class="memdesc:a88670623f66ba1b156900449f6da9a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset shader pointers. <br/></td></tr>
@@ -162,6 +170,14 @@ const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;<
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a7a1a260eeb9f21c044f415fd6abdd841">GetPixelShaderDefines</a> () const </td></tr>
 <tr class="memdesc:a7a1a260eeb9f21c044f415fd6abdd841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pixel shader defines. <br/></td></tr>
 <tr class="separator:a7a1a260eeb9f21c044f415fd6abdd841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af626f53ccc2d918ea9584fc80151b89d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af626f53ccc2d918ea9584fc80151b89d"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#af626f53ccc2d918ea9584fc80151b89d">GetVertexShaderDefineExcludes</a> () const </td></tr>
+<tr class="memdesc:af626f53ccc2d918ea9584fc80151b89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vertex shader define excludes. <br/></td></tr>
+<tr class="separator:af626f53ccc2d918ea9584fc80151b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2fc00cae55ce1664523d8a760361e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b2fc00cae55ce1664523d8a760361e9"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a3b2fc00cae55ce1664523d8a760361e9">GetPixelShaderDefineExcludes</a> () const </td></tr>
+<tr class="memdesc:a3b2fc00cae55ce1664523d8a760361e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pixel shader define excludes. <br/></td></tr>
+<tr class="separator:a3b2fc00cae55ce1664523d8a760361e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696907b04c09bd51f13cc06fc044a2d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a696907b04c09bd51f13cc06fc044a2d5"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
 &lt; <a class="el" href="class_urho3_d_1_1_shader_variation.html">ShaderVariation</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a696907b04c09bd51f13cc06fc044a2d5">GetVertexShaders</a> ()</td></tr>
@@ -172,6 +188,14 @@ const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;<
 &lt; <a class="el" href="class_urho3_d_1_1_shader_variation.html">ShaderVariation</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a4d54843f750217e5a436cc8b014a8688">GetPixelShaders</a> ()</td></tr>
 <tr class="memdesc:a4d54843f750217e5a436cc8b014a8688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pixel shaders. <br/></td></tr>
 <tr class="separator:a4d54843f750217e5a436cc8b014a8688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00facfacdeb50d246228fca05b4f12e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad00facfacdeb50d246228fca05b4f12e"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#ad00facfacdeb50d246228fca05b4f12e">GetEffectiveVertexShaderDefines</a> () const </td></tr>
+<tr class="memdesc:ad00facfacdeb50d246228fca05b4f12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the effective vertex shader defines, accounting for excludes. Called internally by <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a>. <br/></td></tr>
+<tr class="separator:ad00facfacdeb50d246228fca05b4f12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e213df2f02f88099d4cd03b2df16e4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e213df2f02f88099d4cd03b2df16e4b"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a9e213df2f02f88099d4cd03b2df16e4b">GetEffectivePixelShaderDefines</a> () const </td></tr>
+<tr class="memdesc:a9e213df2f02f88099d4cd03b2df16e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the effective pixel shader defines, accounting for excludes. Called internally by <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a>. <br/></td></tr>
+<tr class="separator:a9e213df2f02f88099d4cd03b2df16e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#aad6e2ac9e97ca71b28c47248a9aad9b9">RefCounted</a> ()</td></tr>
@@ -252,6 +276,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#aac5370b9427c17f86e6d5a8064cd4a2d">pixelShaderDefines_</a></td></tr>
 <tr class="memdesc:aac5370b9427c17f86e6d5a8064cd4a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel shader defines. <br/></td></tr>
 <tr class="separator:aac5370b9427c17f86e6d5a8064cd4a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4738e59b22290bb53de0753abf5542d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4738e59b22290bb53de0753abf5542d"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#ae4738e59b22290bb53de0753abf5542d">vertexShaderDefineExcludes_</a></td></tr>
+<tr class="memdesc:ae4738e59b22290bb53de0753abf5542d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex shader define excludes. <br/></td></tr>
+<tr class="separator:ae4738e59b22290bb53de0753abf5542d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d46513cda533d4a9738f1ad8947a945"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d46513cda533d4a9738f1ad8947a945"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a9d46513cda533d4a9738f1ad8947a945">pixelShaderDefineExcludes_</a></td></tr>
+<tr class="memdesc:a9d46513cda533d4a9738f1ad8947a945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel shader define excludes. <br/></td></tr>
+<tr class="separator:a9d46513cda533d4a9738f1ad8947a945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5642991d1823aad48971bf53bdc426d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5642991d1823aad48971bf53bdc426d1"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
 &lt; <a class="el" href="class_urho3_d_1_1_shader_variation.html">ShaderVariation</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_pass.html#a5642991d1823aad48971bf53bdc426d1">vertexShaders_</a></td></tr>
