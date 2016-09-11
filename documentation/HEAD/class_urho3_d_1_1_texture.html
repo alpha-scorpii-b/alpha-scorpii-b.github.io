@@ -76,6 +76,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a389fd0d8d0e6af16e2b91208de4ef890">SetAddressMode</a> (TextureCoordinate coord, TextureAddressMode address)</td></tr>
 <tr class="memdesc:a389fd0d8d0e6af16e2b91208de4ef890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set addressing mode by texture coordinate. <br/></td></tr>
 <tr class="separator:a389fd0d8d0e6af16e2b91208de4ef890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3faee8d80841137e19e372f7b20b28d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3faee8d80841137e19e372f7b20b28d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aa3faee8d80841137e19e372f7b20b28d">SetAnisotropy</a> (unsigned level)</td></tr>
+<tr class="memdesc:aa3faee8d80841137e19e372f7b20b28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture max. anisotropy level. No effect if not using anisotropic filtering. Value 0 (default) uses the default setting from <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a>. <br/></td></tr>
+<tr class="separator:aa3faee8d80841137e19e372f7b20b28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbb724ddd75d109c4be4adeb550db64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bbb724ddd75d109c4be4adeb550db64"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a2bbb724ddd75d109c4be4adeb550db64">SetShadowCompare</a> (bool enable)</td></tr>
 <tr class="memdesc:a2bbb724ddd75d109c4be4adeb550db64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow compare mode. Not used on Direct3D9. <br/></td></tr>
@@ -128,6 +132,10 @@ TextureFilterMode&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 TextureAddressMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a5950b6e71db69fe3d7cf02647395231e">GetAddressMode</a> (TextureCoordinate coord) const </td></tr>
 <tr class="memdesc:a5950b6e71db69fe3d7cf02647395231e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return addressing mode by texture coordinate. <br/></td></tr>
 <tr class="separator:a5950b6e71db69fe3d7cf02647395231e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa470c821e556a53326985d94ed38b087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa470c821e556a53326985d94ed38b087"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aa470c821e556a53326985d94ed38b087">GetAnisotropy</a> () const </td></tr>
+<tr class="memdesc:aa470c821e556a53326985d94ed38b087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return texture max. anisotropy level. Value 0 means to use the default value from <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a>. <br/></td></tr>
+<tr class="separator:aa470c821e556a53326985d94ed38b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab637881b2a37f15a4d5201a1e15cba1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab637881b2a37f15a4d5201a1e15cba1f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ab637881b2a37f15a4d5201a1e15cba1f">GetShadowCompare</a> () const </td></tr>
 <tr class="memdesc:ab637881b2a37f15a4d5201a1e15cba1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether shadow compare is enabled. Not used on Direct3D9. <br/></td></tr>
@@ -568,6 +576,10 @@ TextureFilterMode&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 TextureAddressMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a6bd7ebd69a037e640b16068491b834dd">addressMode_</a> [MAX_COORDS]</td></tr>
 <tr class="memdesc:a6bd7ebd69a037e640b16068491b834dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addressing mode. <br/></td></tr>
 <tr class="separator:a6bd7ebd69a037e640b16068491b834dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1fdfa83d233a5dfc341f1374ab077b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b1fdfa83d233a5dfc341f1374ab077b"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a7b1fdfa83d233a5dfc341f1374ab077b">anisotropy_</a></td></tr>
+<tr class="memdesc:a7b1fdfa83d233a5dfc341f1374ab077b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> anisotropy level. <br/></td></tr>
+<tr class="separator:a7b1fdfa83d233a5dfc341f1374ab077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99956895d6024022cbf278232539ba34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99956895d6024022cbf278232539ba34"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a99956895d6024022cbf278232539ba34">mipsToSkip_</a> [MAX_TEXTURE_QUALITY_LEVELS]</td></tr>
 <tr class="memdesc:a99956895d6024022cbf278232539ba34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mip levels to skip when loading per texture quality setting. <br/></td></tr>

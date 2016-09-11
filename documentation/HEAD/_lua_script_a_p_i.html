@@ -5973,6 +5973,7 @@ Classes</h2>
 <li>void SetNumLevels(unsigned levels)</li>
 <li>void SetFilterMode(TextureFilterMode filter)</li>
 <li>void SetAddressMode(TextureCoordinate coord, TextureAddressMode address)</li>
+<li>void SetAnisotropy(unsigned level)</li>
 <li>void SetBorderColor(const Color&amp; color)</li>
 <li>void SetSRGB(bool enable)</li>
 <li>void SetBackupTexture(Texture* texture)</li>
@@ -5984,6 +5985,7 @@ Classes</h2>
 <li>int GetHeight() const</li>
 <li>TextureFilterMode GetFilterMode() const</li>
 <li>TextureAddressMode GetAddressMode(TextureCoordinate coord) const</li>
+<li>unsigned GetAnisotropy() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; GetBorderColor() const</li>
 <li>bool GetSRGB() const</li>
 <li>Texture* GetBackupTexture() const</li>
@@ -6004,6 +6006,7 @@ Classes</h2>
 <li>int height (readonly)</li>
 <li>unsigned components (readonly)</li>
 <li>TextureFilterMode filterMode</li>
+<li>unsigned anisotropy</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; borderColor</li>
 <li>bool sRGB</li>
 <li>Texture* backupTexture</li>
@@ -7486,6 +7489,7 @@ Enumerations</h2>
 <li>int NAVIGATIONPUSHINESS_LOW</li>
 <li>int NAVIGATIONPUSHINESS_MEDIUM</li>
 <li>int NAVIGATIONPUSHINESS_HIGH</li>
+<li>int NAVIGATIONPUSHINESS_NONE</li>
 </ul>
 <h4>NavigationQuality</h4>
 <ul>
