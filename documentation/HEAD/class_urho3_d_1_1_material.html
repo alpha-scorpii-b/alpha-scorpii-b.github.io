@@ -152,6 +152,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a94e2635fff559ea248d0687505fb07a2">SetDepthBias</a> (const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a94e2635fff559ea248d0687505fb07a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set depth bias parameters for depth write and compare. Note that the normal offset parameter is not used and will not be saved, as it affects only shadow map sampling during light rendering. <br/></td></tr>
 <tr class="separator:a94e2635fff559ea248d0687505fb07a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d43c1bb96b837ce13d656960aa9aba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8d43c1bb96b837ce13d656960aa9aba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac8d43c1bb96b837ce13d656960aa9aba">SetAlphaToCoverage</a> (bool enable)</td></tr>
+<tr class="memdesc:ac8d43c1bb96b837ce13d656960aa9aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set alpha-to-coverage mode on all passes. <br/></td></tr>
+<tr class="separator:ac8d43c1bb96b837ce13d656960aa9aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c107d0bc70408017c10b57fb1ce23e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60c107d0bc70408017c10b57fb1ce23e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a60c107d0bc70408017c10b57fb1ce23e">SetRenderOrder</a> (unsigned char order)</td></tr>
 <tr class="memdesc:a60c107d0bc70408017c10b57fb1ce23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set 8-bit render order within pass. Default 128. Lower values will render earlier and higher values later, taking precedence over e.g. state and distance sorting. <br/></td></tr>
@@ -258,6 +262,10 @@ FillMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#af66138e39cc56d869d87416560f50d0a">GetDepthBias</a> () const </td></tr>
 <tr class="memdesc:af66138e39cc56d869d87416560f50d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return depth bias. <br/></td></tr>
 <tr class="separator:af66138e39cc56d869d87416560f50d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac633d4e773aaac92f4a81c1ef164b619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac633d4e773aaac92f4a81c1ef164b619"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac633d4e773aaac92f4a81c1ef164b619">GetAlphaToCoverage</a> () const </td></tr>
+<tr class="memdesc:ac633d4e773aaac92f4a81c1ef164b619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return alpha-to-coverage mode. <br/></td></tr>
+<tr class="separator:ac633d4e773aaac92f4a81c1ef164b619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf437d662099d7d8ccdf299a98795528"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf437d662099d7d8ccdf299a98795528"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#adf437d662099d7d8ccdf299a98795528">GetRenderOrder</a> () const </td></tr>
 <tr class="memdesc:adf437d662099d7d8ccdf299a98795528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return render order. <br/></td></tr>
@@ -597,6 +605,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a9c518f1c4f210ca68e8ea07d53eaab2d">shaderParameterHash_</a></td></tr>
 <tr class="memdesc:a9c518f1c4f210ca68e8ea07d53eaab2d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_shader.html" title="Shader resource consisting of several shader variations.">Shader</a> parameter hash value. <br/></td></tr>
 <tr class="separator:a9c518f1c4f210ca68e8ea07d53eaab2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a4b3b1d3a9b547774281f9e14f284b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a3a4b3b1d3a9b547774281f9e14f284b4">alphaToCoverage_</a></td></tr>
+<tr class="memdesc:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha-to-coverage mode. <br/></td></tr>
+<tr class="separator:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397b49a6cf3529d208d62d4f966d68b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a397b49a6cf3529d208d62d4f966d68b3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a397b49a6cf3529d208d62d4f966d68b3">occlusion_</a></td></tr>
 <tr class="memdesc:a397b49a6cf3529d208d62d4f966d68b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render occlusion flag. <br/></td></tr>

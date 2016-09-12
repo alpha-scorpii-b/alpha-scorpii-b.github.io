@@ -32,6 +32,7 @@ group: HEAD
 <div class="line">    &lt;shadowcull value=<span class="stringliteral">&quot;cw|ccw|none&quot;</span> /&gt;</div>
 <div class="line">    &lt;fill value=<span class="stringliteral">&quot;solid|wireframe|point&quot;</span> /&gt;</div>
 <div class="line">    &lt;depthbias constant=<span class="stringliteral">&quot;x&quot;</span> slopescaled=<span class="stringliteral">&quot;y&quot;</span> /&gt;</div>
+<div class="line">    &lt;alphatocoverage enable=<span class="stringliteral">&quot;true|false&quot;</span> /&gt;</div>
 <div class="line">    &lt;renderorder value=<span class="stringliteral">&quot;x&quot;</span> /&gt;</div>
 <div class="line">    &lt;occlusion enable=<span class="stringliteral">&quot;true|false&quot;</span> /&gt;</div>
 <div class="line">&lt;/material&gt;</div>
@@ -49,6 +50,7 @@ group: HEAD
 <p>Render order is a 8-bit unsigned value that can be used to affect rendering order within a pass, overriding state or distance sorting. The default value is 128; smaller values will render earlier, and larger values later. One example use of render order is to ensure that materials which use discard in pixel shader (ALPHAMASK define) are rendered after full opaques to ensure the hardware depth buffer will behave optimally; in this case the render order should be increased. Read below for caveats regarding it.</p>
 <p>Occlusion flag allows to disable software occlusion rendering per material, for example if parts of a model are transparent. By default occlusion is enabled.</p>
 <p>Materials can optionally set shader compilation defines (vsdefines &amp; psdefines). In this case they will be added to the techniques' own compilation defines, and the techniques are cloned as necessary to ensure uniqueness.</p>
+<p>Enabling alpha-to-coverage on the material enables it on all passes. Alternatively it can be enabled per-pass in the technique for fine-grained control.</p>
 <h2><a class="anchor" id="Materials_Textures"></a>
 Material textures</h2>
 <p>Diffuse maps specify the surface color in the RGB channels. Optionally they can use the alpha channel for blending and alpha testing. They should preferably be compressed to DXT1 (no alpha or 1-bit alpha) or DXT5 (smooth alpha) format.</p>
@@ -114,7 +116,8 @@ Techniques and passes</h2>
 <div class="line">        blend=<span class="stringliteral">&quot;replace|add|multiply|alpha|addalpha|premulalpha|invdestalpha|subtract|subtractalpha&quot;</span></div>
 <div class="line">        [cull=<span class="stringliteral">&quot;cw|ccw|none&quot;</span>]</div>
 <div class="line">        depthtest=<span class="stringliteral">&quot;always|equal|less|lessequal|greater|greaterequal&quot;</span></div>
-<div class="line">        depthwrite=<span class="stringliteral">&quot;true|false&quot;</span> /&gt;</div>
+<div class="line">        depthwrite=<span class="stringliteral">&quot;true|false&quot;</span></div>
+<div class="line">        alphatocoverage=<span class="stringliteral">&quot;true|false&quot;</span> /&gt;</div>
 <div class="line">    &lt;pass ... /&gt;</div>
 <div class="line">    &lt;pass ... /&gt;</div>
 <div class="line">&lt;/technique&gt;</div>

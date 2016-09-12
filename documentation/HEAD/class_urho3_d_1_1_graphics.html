@@ -300,10 +300,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ad417d2adc6d3fb173ec3e3d8fefd8b48">SetViewport</a> (const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;rect)</td></tr>
 <tr class="memdesc:ad417d2adc6d3fb173ec3e3d8fefd8b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set viewport. <br/></td></tr>
 <tr class="separator:ad417d2adc6d3fb173ec3e3d8fefd8b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53afa24ee38576f0bd111117678a2df1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53afa24ee38576f0bd111117678a2df1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a53afa24ee38576f0bd111117678a2df1">SetBlendMode</a> (BlendMode mode)</td></tr>
-<tr class="memdesc:a53afa24ee38576f0bd111117678a2df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blending mode. <br/></td></tr>
-<tr class="separator:a53afa24ee38576f0bd111117678a2df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d518d71a1a56b2b95ad27419b1e375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85d518d71a1a56b2b95ad27419b1e375"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a85d518d71a1a56b2b95ad27419b1e375">SetBlendMode</a> (BlendMode mode, bool alphaToCoverage=false)</td></tr>
+<tr class="memdesc:a85d518d71a1a56b2b95ad27419b1e375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blending and alpha-to-coverage modes. Alpha-to-coverage is not supported on Direct3D9. <br/></td></tr>
+<tr class="separator:a85d518d71a1a56b2b95ad27419b1e375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491fe007ce9f8dce215ba00f5c27ff0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a491fe007ce9f8dce215ba00f5c27ff0d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a491fe007ce9f8dce215ba00f5c27ff0d">SetColorWrite</a> (bool enable)</td></tr>
 <tr class="memdesc:a491fe007ce9f8dce215ba00f5c27ff0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set color write on/off. <br/></td></tr>
@@ -575,6 +575,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 BlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ac44d43f0006ea8a4038e006bf7a10beb">GetBlendMode</a> () const </td></tr>
 <tr class="memdesc:ac44d43f0006ea8a4038e006bf7a10beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return blending mode. <br/></td></tr>
 <tr class="separator:ac44d43f0006ea8a4038e006bf7a10beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28a2f40d095d9e4a7e85fc09c24373d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab28a2f40d095d9e4a7e85fc09c24373d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ab28a2f40d095d9e4a7e85fc09c24373d">GetAlphaToCoverage</a> () const </td></tr>
+<tr class="memdesc:ab28a2f40d095d9e4a7e85fc09c24373d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether alpha-to-coverage is enabled. <br/></td></tr>
+<tr class="separator:ab28a2f40d095d9e4a7e85fc09c24373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f8e2e42eae0315c4c343d053cfb37a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5f8e2e42eae0315c4c343d053cfb37a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ae5f8e2e42eae0315c4c343d053cfb37a">GetColorWrite</a> () const </td></tr>
 <tr class="memdesc:ae5f8e2e42eae0315c4c343d053cfb37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether color write is enabled. <br/></td></tr>
@@ -1292,6 +1296,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 BlendMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a00c41fc0840302efca1a4f3c8889516f">blendMode_</a></td></tr>
 <tr class="memdesc:a00c41fc0840302efca1a4f3c8889516f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending mode. <br/></td></tr>
 <tr class="separator:a00c41fc0840302efca1a4f3c8889516f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f30a31b1303a730a3f096e73049334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f30a31b1303a730a3f096e73049334"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a59f30a31b1303a730a3f096e73049334">alphaToCoverage_</a></td></tr>
+<tr class="memdesc:a59f30a31b1303a730a3f096e73049334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha-to-coverage enable. <br/></td></tr>
+<tr class="separator:a59f30a31b1303a730a3f096e73049334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c7c7ed1dc79e6c98024aded460b811"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64c7c7ed1dc79e6c98024aded460b811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a64c7c7ed1dc79e6c98024aded460b811">colorWrite_</a></td></tr>
 <tr class="memdesc:a64c7c7ed1dc79e6c98024aded460b811"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> write enable. <br/></td></tr>

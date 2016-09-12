@@ -2992,6 +2992,7 @@ Classes</h2>
 <li>void SetShadowCullMode(CullMode mode)</li>
 <li>void SetFillMode(FillMode mode)</li>
 <li>void SetDepthBias(const BiasParameters&amp; parameters)</li>
+<li>void SetAlphaToCoverage(bool enable)</li>
 <li>void SetRenderOrder(char renderOrder)</li>
 <li>void SetOcclusion(bool enable)</li>
 <li>void SetScene(Scene* scene)</li>
@@ -3013,6 +3014,7 @@ Classes</h2>
 <li>CullMode GetShadowCullMode() const</li>
 <li>FillMode GetFillMode() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>&amp; GetDepthBias() const</li>
+<li>bool GetAlphaToCoverage() const</li>
 <li>char GetRenderOrder() const</li>
 <li>bool GetOcclusion() const</li>
 <li>bool GetSpecular() const</li>
@@ -3026,6 +3028,7 @@ Classes</h2>
 <li>CullMode shadowCullMode</li>
 <li>FillMode fillMode</li>
 <li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a> depthBias</li>
+<li>bool alphaToCoverage</li>
 <li>char renderOrder</li>
 <li>bool occlusion</li>
 <li>bool specular (readonly)</li>
@@ -4062,6 +4065,7 @@ Classes</h2>
 <li>void SetDepthTestMode(CompareMode mode)</li>
 <li>void SetLightingMode(PassLightingMode mode)</li>
 <li>void SetDepthWrite(bool enable)</li>
+<li>void SetAlphaToCoverage(bool enable)</li>
 <li>void SetIsDesktop(bool enable)</li>
 <li>void SetVertexShader(const String name)</li>
 <li>void SetPixelShader(const String name)</li>
@@ -4077,6 +4081,7 @@ Classes</h2>
 <li>CompareMode GetDepthTestMode() const</li>
 <li>PassLightingMode GetLightingMode() const</li>
 <li>bool GetDepthWrite() const</li>
+<li>bool GetAlphaToCoverage() const</li>
 <li>bool IsDesktop() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetVertexShader() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetPixelShader() const</li>
@@ -4094,6 +4099,7 @@ Classes</h2>
 <li>CompareMode depthTestMode</li>
 <li>PassLightingMode lightingMode</li>
 <li>bool depthWrite</li>
+<li>bool alphaToCoverage</li>
 <li>bool desktop (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> vertexShader</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> pixelShader</li>

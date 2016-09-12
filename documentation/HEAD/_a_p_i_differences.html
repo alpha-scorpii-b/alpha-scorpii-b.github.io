@@ -46,6 +46,9 @@ group: HEAD
 <ul>
 <li>Direct3D11 is strict about vertex attributes referenced by shaders. A model will not render (input layout fails to create) if the shader for example asks for UV coordinates and the model does not have them. For this particular case, see the NOUV define in LitSolid shader, which is defined in the NoTexture family of techniques to prevent the attempted reading of UV coords.</li>
 </ul>
+<ul>
+<li>Alpha-to-coverage is not supported on Direct3D9.</li>
+</ul>
 <p>OpenGL ES 2.0 has further limitations:</p>
 <ul>
 <li>Of the DXT formats, only DXT1 compressed textures will be uploaded as compressed, and only if the EXT_texture_compression_dxt1 extension is present. Other DXT formats will be uploaded as uncompressed RGBA. ETC1 (Android) and PVRTC (iOS) compressed textures are supported through the .ktx and .pvr file formats.</li>
