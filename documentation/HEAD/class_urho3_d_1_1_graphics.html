@@ -356,6 +356,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ab7a91acbf613629e3b95f600b10e6c2a">PrecacheShaders</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
 <tr class="memdesc:ab7a91acbf613629e3b95f600b10e6c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precache shader variations from an XML file generated with <a class="el" href="class_urho3_d_1_1_graphics.html#a2664f84fe14e6cc7ccd750470427af32" title="Begin dumping shader variation names to an XML file for precaching.">BeginDumpShaders()</a>. <br/></td></tr>
 <tr class="separator:ab7a91acbf613629e3b95f600b10e6c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4eb08ce8ac2837061483158aa836874"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4eb08ce8ac2837061483158aa836874"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#af4eb08ce8ac2837061483158aa836874">SetShaderCacheDir</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:af4eb08ce8ac2837061483158aa836874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shader cache directory, Direct3D only. This can either be an absolute path or a path within the resource system. <br/></td></tr>
+<tr class="separator:af4eb08ce8ac2837061483158aa836874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758baad907187292abf52b2ba89c6723"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a758baad907187292abf52b2ba89c6723"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a758baad907187292abf52b2ba89c6723">IsInitialized</a> () const </td></tr>
 <tr class="memdesc:a758baad907187292abf52b2ba89c6723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether rendering initialized. <br/></td></tr>
@@ -651,6 +655,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a7764c8d6be3eb053a9fbadb71a0ec496">GetUseClipPlane</a> () const </td></tr>
 <tr class="memdesc:a7764c8d6be3eb053a9fbadb71a0ec496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a custom clipping plane is in use. <br/></td></tr>
 <tr class="separator:a7764c8d6be3eb053a9fbadb71a0ec496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea711b285de6a3a576bfec3c8fd51ee5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea711b285de6a3a576bfec3c8fd51ee5"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aea711b285de6a3a576bfec3c8fd51ee5">GetShaderCacheDir</a> () const </td></tr>
+<tr class="memdesc:aea711b285de6a3a576bfec3c8fd51ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shader cache directory, Direct3D only. <br/></td></tr>
+<tr class="separator:aea711b285de6a3a576bfec3c8fd51ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a016c9d34850452e2e97a51f520d15443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a016c9d34850452e2e97a51f520d15443"></a>
 <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a016c9d34850452e2e97a51f520d15443">GetRenderTargetDimensions</a> () const </td></tr>
 <tr class="memdesc:a016c9d34850452e2e97a51f520d15443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current rendertarget width and height. <br/></td></tr>
@@ -1384,6 +1392,10 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a5d43fd1d9b5e81fb0d63a4080b15b9fc">shaderPath_</a></td></tr>
 <tr class="memdesc:a5d43fd1d9b5e81fb0d63a4080b15b9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base directory for shaders. <br/></td></tr>
 <tr class="separator:a5d43fd1d9b5e81fb0d63a4080b15b9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad163c7e18207477ba4344005781c4d8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad163c7e18207477ba4344005781c4d8f"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ad163c7e18207477ba4344005781c4d8f">shaderCacheDir_</a></td></tr>
+<tr class="memdesc:ad163c7e18207477ba4344005781c4d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache directory for Direct3D binary shaders. <br/></td></tr>
+<tr class="separator:ad163c7e18207477ba4344005781c4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec1d00e1f49714c9fa3d395db44b0b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ec1d00e1f49714c9fa3d395db44b0b5"></a>
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a7ec1d00e1f49714c9fa3d395db44b0b5">shaderExtension_</a></td></tr>
 <tr class="memdesc:a7ec1d00e1f49714c9fa3d395db44b0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file.">File</a> extension for shaders. <br/></td></tr>
