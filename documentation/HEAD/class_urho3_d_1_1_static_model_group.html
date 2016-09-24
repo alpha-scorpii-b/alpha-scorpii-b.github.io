@@ -109,10 +109,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a2d31698d448df1ab1682a63c0be02031">SetNodeIDsAttr</a> (const <a class="el" href="class_urho3_d_1_1_vector.html">VariantVector</a> &amp;value)</td></tr>
 <tr class="memdesc:a2d31698d448df1ab1682a63c0be02031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set node IDs attribute. <br/></td></tr>
 <tr class="separator:a2d31698d448df1ab1682a63c0be02031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6204936b5333f054bac1c685b17ffb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6204936b5333f054bac1c685b17ffb2"></a>
-const <a class="el" href="class_urho3_d_1_1_vector.html">VariantVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#ab6204936b5333f054bac1c685b17ffb2">GetNodeIDsAttr</a> () const </td></tr>
-<tr class="memdesc:ab6204936b5333f054bac1c685b17ffb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return node IDs attribute. <br/></td></tr>
-<tr class="separator:ab6204936b5333f054bac1c685b17ffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9dabf36bc295f1aa688732941766d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e9dabf36bc295f1aa688732941766d0"></a>
+const <a class="el" href="class_urho3_d_1_1_vector.html">VariantVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a8e9dabf36bc295f1aa688732941766d0">GetNodeIDsAttr</a> () const </td></tr>
+<tr class="memdesc:a8e9dabf36bc295f1aa688732941766d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return node IDs attribute. <br/></td></tr>
+<tr class="separator:a8e9dabf36bc295f1aa688732941766d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_static_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_static_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_static_model.html">Urho3D::StaticModel</a></td></tr>
 <tr class="memitem:a86628548ad3f9d600346023e2fe7d5a5 inherit pub_methods_class_urho3_d_1_1_static_model"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86628548ad3f9d600346023e2fe7d5a5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model.html#a86628548ad3f9d600346023e2fe7d5a5">StaticModel</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -1015,10 +1015,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9c17fec77cdd7fe75e057a98cc037cf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c17fec77cdd7fe75e057a98cc037cf5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_static_model_group.html">StaticModelGroup</a>, <a class="el" href="class_urho3_d_1_1_static_model.html">StaticModel</a>)</td></tr>
 <tr class="separator:a9c17fec77cdd7fe75e057a98cc037cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c72064eee9e67935dc3f30a0badd300"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c72064eee9e67935dc3f30a0badd300"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a9c72064eee9e67935dc3f30a0badd300">UpdateNodeIDs</a> ()</td></tr>
-<tr class="memdesc:a9c72064eee9e67935dc3f30a0badd300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update node IDs attribute and ensure the transforms vector has the right size. <br/></td></tr>
-<tr class="separator:a9c72064eee9e67935dc3f30a0badd300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3973085541a4b2361df05666e0a515a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3973085541a4b2361df05666e0a515a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a3973085541a4b2361df05666e0a515a2">UpdateNumTransforms</a> ()</td></tr>
+<tr class="memdesc:a3973085541a4b2361df05666e0a515a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure proper size of world transforms when nodes are added/removed. Also mark node IDs dirty. <br/></td></tr>
+<tr class="separator:a3973085541a4b2361df05666e0a515a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4acb07195f28cf120722e455cb907a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b4acb07195f28cf120722e455cb907a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a8b4acb07195f28cf120722e455cb907a">UpdateNodeIDs</a> () const </td></tr>
+<tr class="memdesc:a8b4acb07195f28cf120722e455cb907a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update node IDs attribute from the actual nodes. <br/></td></tr>
+<tr class="separator:a8b4acb07195f28cf120722e455cb907a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -1038,9 +1042,13 @@ Private Attributes</h2></td></tr>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a0f1fce97ce38806e935cc5711306d47a">numWorldTransforms_</a></td></tr>
 <tr class="memdesc:a0f1fce97ce38806e935cc5711306d47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of valid instance node transforms. <br/></td></tr>
 <tr class="separator:a0f1fce97ce38806e935cc5711306d47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac164c7bab2fd5aff895e61c5a23456fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac164c7bab2fd5aff895e61c5a23456fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#ac164c7bab2fd5aff895e61c5a23456fb">nodesDirty_</a></td></tr>
+<tr class="memdesc:ac164c7bab2fd5aff895e61c5a23456fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether node IDs have been set and nodes should be searched for during ApplyAttributes. <br/></td></tr>
+<tr class="separator:ac164c7bab2fd5aff895e61c5a23456fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2baef0988423f309493f946ea7bae72b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2baef0988423f309493f946ea7bae72b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_static_model_group.html#a2baef0988423f309493f946ea7bae72b">nodeIDsDirty_</a></td></tr>
-<tr class="memdesc:a2baef0988423f309493f946ea7bae72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether node IDs have been set and nodes should be searched for during ApplyAttributes. <br/></td></tr>
+<tr class="memdesc:a2baef0988423f309493f946ea7bae72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether nodes have been manipulated by the API and node ID attribute should be refreshed. <br/></td></tr>
 <tr class="separator:a2baef0988423f309493f946ea7bae72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
