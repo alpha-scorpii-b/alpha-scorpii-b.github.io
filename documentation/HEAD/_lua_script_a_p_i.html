@@ -4578,6 +4578,7 @@ Classes</h2>
 <li>RenderSurfaceUpdateMode GetUpdateMode() const</li>
 <li>RenderSurface* GetLinkedRenderTarget() const</li>
 <li>RenderSurface* GetLinkedDepthStencil() const</li>
+<li>bool IsResolveDirty() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -4589,6 +4590,7 @@ Classes</h2>
 <li>RenderSurfaceUpdateMode updateMode</li>
 <li>RenderSurface* linkedRenderTarget</li>
 <li>RenderSurface* linkedDepthStencil</li>
+<li>bool resolveDirty (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_RenderTargetInfo"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_render_target_info.html" title="Rendertarget definition.">RenderTargetInfo</a></h4>
@@ -4605,6 +4607,8 @@ Classes</h2>
 <li>unsigned format</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> size</li>
 <li>RenderTargetSizeMode sizeMode</li>
+<li>int multiSample</li>
+<li>bool autoResolve</li>
 <li>bool enabled</li>
 <li>bool cubemap</li>
 <li>bool filtered</li>
@@ -4631,6 +4635,7 @@ Classes</h2>
 <li>void SetShadowQuality(ShadowQuality quality)</li>
 <li>void SetShadowSoftness(float shadowSoftness)</li>
 <li>void SetVSMShadowParameters(float minVariance, float lightBleedingReduction)</li>
+<li>void SetVSMMultiSample(int multiSample)</li>
 <li>void SetReuseShadowMaps(bool enable)</li>
 <li>void SetMaxShadowMaps(int shadowMaps)</li>
 <li>void SetDynamicInstancing(bool enable)</li>
@@ -4660,6 +4665,7 @@ Classes</h2>
 <li>ShadowQuality GetShadowQuality() const</li>
 <li>float GetShadowSoftness() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> GetVSMShadowParameters() const</li>
+<li>int GetVSMMultiSample() const</li>
 <li>bool GetReuseShadowMaps() const</li>
 <li>int GetMaxShadowMaps() const</li>
 <li>bool GetDynamicInstancing() const</li>
@@ -4701,6 +4707,7 @@ Classes</h2>
 <li>int shadowMapSize</li>
 <li>ShadowQuality shadowQuality</li>
 <li>float shadowSoftness</li>
+<li>int VSMMultiSample</li>
 <li>bool reuseShadowMaps</li>
 <li>int maxShadowMaps</li>
 <li>bool dynamicInstancing</li>
@@ -5999,6 +6006,9 @@ Classes</h2>
 <li>unsigned GetAnisotropy() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; GetBorderColor() const</li>
 <li>bool GetSRGB() const</li>
+<li>int GetMultiSample() const</li>
+<li>bool GetAutoResolve() const</li>
+<li>bool IsResolveDirty() const</li>
 <li>Texture* GetBackupTexture() const</li>
 <li>int GetMipsToSkip(int quality) const</li>
 <li>int GetLevelWidth(unsigned level) const</li>
@@ -6020,6 +6030,9 @@ Classes</h2>
 <li>unsigned anisotropy</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; borderColor</li>
 <li>bool sRGB</li>
+<li>int multiSample (readonly)</li>
+<li>bool autoResolve (readonly)</li>
+<li>bool resolveDirty (readonly)</li>
 <li>Texture* backupTexture</li>
 <li>TextureUsage usage (readonly)</li>
 </ul>
@@ -6030,7 +6043,7 @@ Classes</h2>
 <li>Texture2D() (GC)</li>
 <li>Texture2D* new()</li>
 <li>void delete()</li>
-<li>bool SetSize(int width, int height, unsigned format, TextureUsage usage = TEXTURE_STATIC)</li>
+<li>bool SetSize(int width, int height, unsigned format, TextureUsage usage = TEXTURE_STATIC, int multiSample = 1, bool autoResolve = true)</li>
 <li>bool SetData(Image* image, bool useAlpha = false)</li>
 <li>RenderSurface* GetRenderSurface() const</li>
 </ul>
@@ -6073,7 +6086,7 @@ Classes</h2>
 <li>TextureCube() (GC)</li>
 <li>TextureCube* new()</li>
 <li>void delete()</li>
-<li>bool SetSize(int size, unsigned format, TextureUsage usage = TEXTURE_STATIC)</li>
+<li>bool SetSize(int size, unsigned format, TextureUsage usage = TEXTURE_STATIC, int multiSample = 1)</li>
 <li>bool SetData(CubeMapFace face, Image* image, bool useAlpha = false)</li>
 <li>RenderSurface* GetRenderSurface(CubeMapFace face) const</li>
 </ul>

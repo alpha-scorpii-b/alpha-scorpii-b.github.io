@@ -95,10 +95,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a13b0dbb3887f7c0f62143d4c9f71b7e3">OnDeviceLost</a> ()</td></tr>
 <tr class="memdesc:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the GPU resource destroyed on graphics context destruction. Only used on OpenGL. <br/></td></tr>
 <tr class="separator:a13b0dbb3887f7c0f62143d4c9f71b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7751764715995a37fa62e8ae5c3e68b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7751764715995a37fa62e8ae5c3e68b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#ab7751764715995a37fa62e8ae5c3e68b">CreateRenderBuffer</a> (unsigned width, unsigned height, unsigned format)</td></tr>
-<tr class="memdesc:ab7751764715995a37fa62e8ae5c3e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create renderbuffer that cannot be sampled as a texture. Only used on OpenGL. <br/></td></tr>
-<tr class="separator:ab7751764715995a37fa62e8ae5c3e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746b94ecfe7be66990598000d5ce0918"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a746b94ecfe7be66990598000d5ce0918"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a746b94ecfe7be66990598000d5ce0918">CreateRenderBuffer</a> (unsigned width, unsigned height, unsigned format, int multiSample)</td></tr>
+<tr class="memdesc:a746b94ecfe7be66990598000d5ce0918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create renderbuffer that cannot be sampled as a texture. Only used on OpenGL. <br/></td></tr>
+<tr class="separator:a746b94ecfe7be66990598000d5ce0918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be67d97ab77b0d6f24776a3f75c5e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be67d97ab77b0d6f24776a3f75c5e6a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a1be67d97ab77b0d6f24776a3f75c5e6a">GetWidth</a> () const </td></tr>
 <tr class="memdesc:a1be67d97ab77b0d6f24776a3f75c5e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return width. <br/></td></tr>
@@ -111,6 +111,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 TextureUsage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a544e9ce0bc06c2451214891565e05edf">GetUsage</a> () const </td></tr>
 <tr class="memdesc:a544e9ce0bc06c2451214891565e05edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return usage. <br/></td></tr>
 <tr class="separator:a544e9ce0bc06c2451214891565e05edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af460579901ca21e01d5ce6ccee7af9fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af460579901ca21e01d5ce6ccee7af9fa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#af460579901ca21e01d5ce6ccee7af9fa">GetMultiSample</a> () const </td></tr>
+<tr class="memdesc:af460579901ca21e01d5ce6ccee7af9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return multisampling level. <br/></td></tr>
+<tr class="separator:af460579901ca21e01d5ce6ccee7af9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9905c6e0cff25847a778b6b74444cd96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9905c6e0cff25847a778b6b74444cd96"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a9905c6e0cff25847a778b6b74444cd96">GetAutoResolve</a> () const </td></tr>
+<tr class="memdesc:a9905c6e0cff25847a778b6b74444cd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return multisampling autoresolve mode. <br/></td></tr>
+<tr class="separator:a9905c6e0cff25847a778b6b74444cd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca6e6bf4a7d85b09474795a261c7e89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ca6e6bf4a7d85b09474795a261c7e89"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a9ca6e6bf4a7d85b09474795a261c7e89">GetNumViewports</a> () const </td></tr>
 <tr class="memdesc:a9ca6e6bf4a7d85b09474795a261c7e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of viewports. <br/></td></tr>
@@ -163,6 +171,14 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a5c60fb09e5a2dd4545148d5a06d57d4b">GetRenderBuffer</a> () const </td></tr>
 <tr class="memdesc:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return OpenGL renderbuffer if created. <br/></td></tr>
 <tr class="separator:a5c60fb09e5a2dd4545148d5a06d57d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced9ac4d345cb3e136580ac1f12dbd39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aced9ac4d345cb3e136580ac1f12dbd39"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#aced9ac4d345cb3e136580ac1f12dbd39">IsResolveDirty</a> () const </td></tr>
+<tr class="memdesc:aced9ac4d345cb3e136580ac1f12dbd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether multisampled rendertarget needs resolve. <br/></td></tr>
+<tr class="separator:aced9ac4d345cb3e136580ac1f12dbd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de187c53649b2e7f07bfcb7ff3e7758"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2de187c53649b2e7f07bfcb7ff3e7758"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a2de187c53649b2e7f07bfcb7ff3e7758">SetResolveDirty</a> (bool enable)</td></tr>
+<tr class="memdesc:a2de187c53649b2e7f07bfcb7ff3e7758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or clear the need resolve flag. Called internally by <a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a>. <br/></td></tr>
+<tr class="separator:a2de187c53649b2e7f07bfcb7ff3e7758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#aad6e2ac9e97ca71b28c47248a9aad9b9">RefCounted</a> ()</td></tr>
@@ -242,6 +258,10 @@ RenderSurfaceUpdateMode&#160;</td><td class="memItemRight" valign="bottom"><a cl
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a5f88ccccb1575bcf0c34ca3d4145053f">updateQueued_</a></td></tr>
 <tr class="memdesc:a5f88ccccb1575bcf0c34ca3d4145053f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update queued flag. <br/></td></tr>
 <tr class="separator:a5f88ccccb1575bcf0c34ca3d4145053f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e4369656f562acf0fd9c3cfb4863ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64e4369656f562acf0fd9c3cfb4863ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_render_surface.html#a64e4369656f562acf0fd9c3cfb4863ac">resolveDirty_</a></td></tr>
+<tr class="memdesc:a64e4369656f562acf0fd9c3cfb4863ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multisampled resolve dirty flag. <br/></td></tr>
+<tr class="separator:a64e4369656f562acf0fd9c3cfb4863ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>

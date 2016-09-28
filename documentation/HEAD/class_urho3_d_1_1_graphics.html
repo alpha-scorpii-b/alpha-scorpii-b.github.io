@@ -140,6 +140,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#abd08617bb78ea63930fed43edff8d3db">ResolveToTexture</a> (<a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *destination, const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;viewport)</td></tr>
 <tr class="memdesc:abd08617bb78ea63930fed43edff8d3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve multisampled backbuffer to a texture rendertarget. The texture's size should match the viewport size. <br/></td></tr>
 <tr class="separator:abd08617bb78ea63930fed43edff8d3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c1387404dd5ed5c9dfd373e3c3f0e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2c1387404dd5ed5c9dfd373e3c3f0e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ae2c1387404dd5ed5c9dfd373e3c3f0e9">ResolveToTexture</a> (<a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *texture)</td></tr>
+<tr class="memdesc:ae2c1387404dd5ed5c9dfd373e3c3f0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a multisampled texture on itself. <br/></td></tr>
+<tr class="separator:ae2c1387404dd5ed5c9dfd373e3c3f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7719998ec41fa9a835c233b0465a056"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7719998ec41fa9a835c233b0465a056"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ad7719998ec41fa9a835c233b0465a056">ResolveToTexture</a> (<a class="el" href="class_urho3_d_1_1_texture_cube.html">TextureCube</a> *texture)</td></tr>
+<tr class="memdesc:ad7719998ec41fa9a835c233b0465a056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a multisampled cube texture on itself. <br/></td></tr>
+<tr class="separator:ad7719998ec41fa9a835c233b0465a056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53af62ede0ca685ae4ad4e65898379a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53af62ede0ca685ae4ad4e65898379a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a53af62ede0ca685ae4ad4e65898379a0">Draw</a> (PrimitiveType type, unsigned vertexStart, unsigned vertexCount)</td></tr>
 <tr class="memdesc:a53af62ede0ca685ae4ad4e65898379a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw non-indexed geometry. <br/></td></tr>
@@ -1060,10 +1068,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aecd0066098f01560de4784346ace7a2f">BindFramebuffer</a> (unsigned fbo)</td></tr>
 <tr class="memdesc:aecd0066098f01560de4784346ace7a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a framebuffer using either extension or core functionality. Used only on OpenGL. <br/></td></tr>
 <tr class="separator:aecd0066098f01560de4784346ace7a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28b21a66b16b34b87b453bae0205a0c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28b21a66b16b34b87b453bae0205a0c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a28b21a66b16b34b87b453bae0205a0c6">BindColorAttachment</a> (unsigned index, unsigned target, unsigned object)</td></tr>
-<tr class="memdesc:a28b21a66b16b34b87b453bae0205a0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a framebuffer color attachment using either extension or core functionality. Used only on OpenGL. <br/></td></tr>
-<tr class="separator:a28b21a66b16b34b87b453bae0205a0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f50cd062d2ef3cde9fa62a708bb2acb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f50cd062d2ef3cde9fa62a708bb2acb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a5f50cd062d2ef3cde9fa62a708bb2acb">BindColorAttachment</a> (unsigned index, unsigned target, unsigned object, bool isRenderBuffer)</td></tr>
+<tr class="memdesc:a5f50cd062d2ef3cde9fa62a708bb2acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a framebuffer color attachment using either extension or core functionality. Used only on OpenGL. <br/></td></tr>
+<tr class="separator:a5f50cd062d2ef3cde9fa62a708bb2acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae19c4b22ebcbf2242f462b2e330ad166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae19c4b22ebcbf2242f462b2e330ad166"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ae19c4b22ebcbf2242f462b2e330ad166">BindDepthAttachment</a> (unsigned object, bool isRenderBuffer)</td></tr>
 <tr class="memdesc:ae19c4b22ebcbf2242f462b2e330ad166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a framebuffer depth attachment using either extension or core functionality. Used only on OpenGL. <br/></td></tr>

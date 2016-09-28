@@ -135,6 +135,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aa3ba4b664628d49e14ae43bb747894b3">SetVSMShadowParameters</a> (float minVariance, float lightBleedingReduction)</td></tr>
 <tr class="memdesc:aa3ba4b664628d49e14ae43bb747894b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow parameters when VSM is used, they help to reduce light bleeding. LightBleeding must be in [0, 1[. <br/></td></tr>
 <tr class="separator:aa3ba4b664628d49e14ae43bb747894b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efc7144132d4286d2cf4bdc64755668"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9efc7144132d4286d2cf4bdc64755668"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a9efc7144132d4286d2cf4bdc64755668">SetVSMMultiSample</a> (int multiSample)</td></tr>
+<tr class="memdesc:a9efc7144132d4286d2cf4bdc64755668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set VSM shadow map multisampling level. Default 1 (no multisampling.) <br/></td></tr>
+<tr class="separator:a9efc7144132d4286d2cf4bdc64755668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d500a70c61963017f40b2948cd27fef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d500a70c61963017f40b2948cd27fef"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a4d500a70c61963017f40b2948cd27fef">SetShadowMapFilter</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *instance, ShadowMapFilter functionPtr)</td></tr>
 <tr class="memdesc:a4d500a70c61963017f40b2948cd27fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set post processing filter to the shadow map. <br/></td></tr>
@@ -259,6 +263,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a8125168a71fae2380ec441941a52b333">GetVSMShadowParameters</a> () const </td></tr>
 <tr class="memdesc:a8125168a71fae2380ec441941a52b333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return VSM shadow parameters. <br/></td></tr>
 <tr class="separator:a8125168a71fae2380ec441941a52b333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1c3dff1775ed0b1496193524827786"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b1c3dff1775ed0b1496193524827786"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a4b1c3dff1775ed0b1496193524827786">GetVSMMultiSample</a> () const </td></tr>
+<tr class="memdesc:a4b1c3dff1775ed0b1496193524827786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return VSM shadow multisample level. <br/></td></tr>
+<tr class="separator:a4b1c3dff1775ed0b1496193524827786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac522ec9cd4e25f17a6b9dfe886c641d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac522ec9cd4e25f17a6b9dfe886c641d6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#ac522ec9cd4e25f17a6b9dfe886c641d6">GetReuseShadowMaps</a> () const </td></tr>
 <tr class="memdesc:ac522ec9cd4e25f17a6b9dfe886c641d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether shadow maps are reused. <br/></td></tr>
@@ -401,14 +409,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a7d4509e32b17bff5f3069f8fe6fd448d">GetShadowMap</a> (<a class="el" href="class_urho3_d_1_1_light.html">Light</a> *light, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, unsigned viewWidth, unsigned viewHeight)</td></tr>
 <tr class="memdesc:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a shadow map. If shadow map reuse is disabled, a different map is returned each time.  <a href="#a7d4509e32b17bff5f3069f8fe6fd448d">More...</a><br/></td></tr>
 <tr class="separator:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6974191074483f5fc3d47fb262d8e2a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6974191074483f5fc3d47fb262d8e2a7"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a6974191074483f5fc3d47fb262d8e2a7">GetScreenBuffer</a> (int width, int height, unsigned format, bool cubemap, bool filtered, bool srgb, unsigned persistentKey=0)</td></tr>
-<tr class="memdesc:a6974191074483f5fc3d47fb262d8e2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a rendertarget or depth-stencil texture for deferred rendering or postprocessing. Should only be called during actual rendering, not before. <br/></td></tr>
-<tr class="separator:a6974191074483f5fc3d47fb262d8e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa85ebfe526277a94526014e6b962e94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa85ebfe526277a94526014e6b962e94"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#afa85ebfe526277a94526014e6b962e94">GetDepthStencil</a> (int width, int height)</td></tr>
-<tr class="memdesc:afa85ebfe526277a94526014e6b962e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a depth-stencil surface that does not need to be readable. Should only be called during actual rendering, not before. <br/></td></tr>
-<tr class="separator:afa85ebfe526277a94526014e6b962e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c45f4e35cbce39ed18336ad8ff318d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44c45f4e35cbce39ed18336ad8ff318d"></a>
+<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a44c45f4e35cbce39ed18336ad8ff318d">GetScreenBuffer</a> (int width, int height, unsigned format, int multiSample, bool autoResolve, bool cubemap, bool filtered, bool srgb, unsigned persistentKey=0)</td></tr>
+<tr class="memdesc:a44c45f4e35cbce39ed18336ad8ff318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a rendertarget or depth-stencil texture for deferred rendering or postprocessing. Should only be called during actual rendering, not before. <br/></td></tr>
+<tr class="separator:a44c45f4e35cbce39ed18336ad8ff318d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8239321fb6b01bc3be5fb4df152983f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8239321fb6b01bc3be5fb4df152983f"></a>
+<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aa8239321fb6b01bc3be5fb4df152983f">GetDepthStencil</a> (int width, int height, int multiSample, bool autoResolve)</td></tr>
+<tr class="memdesc:aa8239321fb6b01bc3be5fb4df152983f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a depth-stencil surface that does not need to be readable. Should only be called during actual rendering, not before. <br/></td></tr>
+<tr class="separator:aa8239321fb6b01bc3be5fb4df152983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1019022bc7420a27a99aeac2434980ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1019022bc7420a27a99aeac2434980ba"></a>
 <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html">OcclusionBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a1019022bc7420a27a99aeac2434980ba">GetOcclusionBuffer</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
 <tr class="memdesc:a1019022bc7420a27a99aeac2434980ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an occlusion buffer. <br/></td></tr>
@@ -884,6 +892,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a40e0df7b981d629d9f01c0e9def5fdcf">vsmShadowParams_</a></td></tr>
 <tr class="memdesc:a40e0df7b981d629d9f01c0e9def5fdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow parameters when VSM is used, they help to reduce light bleeding. <br/></td></tr>
 <tr class="separator:a40e0df7b981d629d9f01c0e9def5fdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108c35c967b877f408bbfd191baa473f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a108c35c967b877f408bbfd191baa473f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a108c35c967b877f408bbfd191baa473f">vsmMultiSample_</a></td></tr>
+<tr class="memdesc:a108c35c967b877f408bbfd191baa473f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multisample level for VSM shadows. <br/></td></tr>
+<tr class="separator:a108c35c967b877f408bbfd191baa473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96eb6e090a492cb81de47d8a3bdd7d7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96eb6e090a492cb81de47d8a3bdd7d7a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a96eb6e090a492cb81de47d8a3bdd7d7a">maxShadowMaps_</a></td></tr>
 <tr class="memdesc:a96eb6e090a492cb81de47d8a3bdd7d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of shadow maps per resolution. <br/></td></tr>
