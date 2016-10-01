@@ -1704,6 +1704,7 @@ Classes</h2>
 <li>void SetMaterial(Material* material)</li>
 <li>void SetMaxVertices(unsigned num)</li>
 <li>void SetMaxIndices(unsigned num)</li>
+<li>void SetOptimizeBufferSize(bool enable)</li>
 <li>bool AddDecal(Drawable* target, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; worldPosition, const <a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a>&amp; worldRotation, float size, float aspectRatio, float depth, const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; topLeftUV, const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; bottomRightUV, float timeToLive = 0.0f, float normalCutoff = 0.1f, unsigned subGeometry = M_MAX_UNSIGNED)</li>
 <li>void RemoveDecals(unsigned num)</li>
 <li>void RemoveAllDecals()</li>
@@ -1713,6 +1714,7 @@ Classes</h2>
 <li>unsigned GetNumIndices() const</li>
 <li>unsigned GetMaxVertices() const</li>
 <li>unsigned GetMaxIndices() const</li>
+<li>bool GetOptimizeBufferSize() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -1722,6 +1724,7 @@ Classes</h2>
 <li>unsigned numIndices (readonly)</li>
 <li>unsigned maxVertices</li>
 <li>unsigned maxIndices</li>
+<li>bool optimizeBufferSize</li>
 </ul>
 <p><a class="anchor" id="Class_Deserializer"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_deserializer.html" title="Abstract stream for reading.">Deserializer</a></h4>

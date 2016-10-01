@@ -101,6 +101,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#af900f38a29c2e870e4cbf7f9548eb10b">SetMaxIndices</a> (unsigned num)</td></tr>
 <tr class="memdesc:af900f38a29c2e870e4cbf7f9548eb10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum number of decal vertex indices. <br/></td></tr>
 <tr class="separator:af900f38a29c2e870e4cbf7f9548eb10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a09d311e0bc809dde4c73ba7d186c80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a09d311e0bc809dde4c73ba7d186c80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a6a09d311e0bc809dde4c73ba7d186c80">SetOptimizeBufferSize</a> (bool enable)</td></tr>
+<tr class="memdesc:a6a09d311e0bc809dde4c73ba7d186c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to optimize GPU buffer sizes according to current amount of decals. Default false, which will size the buffers according to the maximum vertices/indices. When true, buffers will be reallocated whenever decals are added/removed, which can be worse for performance. <br/></td></tr>
+<tr class="separator:a6a09d311e0bc809dde4c73ba7d186c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a16cdcd0674837b6b2338f94f476b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a70a16cdcd0674837b6b2338f94f476b8">AddDecal</a> (<a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> *target, const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;worldPosition, const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;worldRotation, float size, float aspectRatio, float depth, const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;topLeftUV, const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;bottomRightUV, float timeToLive=0.0f, float normalCutoff=0.1f, unsigned subGeometry=M_MAX_UNSIGNED)</td></tr>
 <tr class="memdesc:a70a16cdcd0674837b6b2338f94f476b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a decal at world coordinates, using a target drawable's geometry for reference. If the decal needs to move with the target, the decal component should be created to the target's node. Return true if successful.  <a href="#a70a16cdcd0674837b6b2338f94f476b8">More...</a><br/></td></tr>
 <tr class="separator:a70a16cdcd0674837b6b2338f94f476b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +140,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a21a134d8889c3e1d49e9b518224844b6">GetMaxIndices</a> () const </td></tr>
 <tr class="memdesc:a21a134d8889c3e1d49e9b518224844b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return maximum number of decal vertex indices. <br/></td></tr>
 <tr class="separator:a21a134d8889c3e1d49e9b518224844b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59b8d11b10179c237e3e6098734cba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab59b8d11b10179c237e3e6098734cba7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#ab59b8d11b10179c237e3e6098734cba7">GetOptimizeBufferSize</a> () const </td></tr>
+<tr class="memdesc:ab59b8d11b10179c237e3e6098734cba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is optimizing GPU buffer sizes according to current amount of decals. <br/></td></tr>
+<tr class="separator:ab59b8d11b10179c237e3e6098734cba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7184b4669dbc3a8078db736ff5f450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f7184b4669dbc3a8078db736ff5f450"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a3f7184b4669dbc3a8078db736ff5f450">SetMaterialAttr</a> (const <a class="el" href="struct_urho3_d_1_1_resource_ref.html">ResourceRef</a> &amp;value)</td></tr>
 <tr class="memdesc:a3f7184b4669dbc3a8078db736ff5f450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set material attribute. <br/></td></tr>
@@ -1061,17 +1069,17 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#ab01819ab2ce0a9758b0b6766f90cb0eb">maxIndices_</a></td></tr>
 <tr class="memdesc:ab01819ab2ce0a9758b0b6766f90cb0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum indices. <br/></td></tr>
 <tr class="separator:ab01819ab2ce0a9758b0b6766f90cb0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5946b4ab02e87840e99fdfbffa046d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5946b4ab02e87840e99fdfbffa046d8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#af5946b4ab02e87840e99fdfbffa046d8">optimizeBufferSize_</a></td></tr>
+<tr class="memdesc:af5946b4ab02e87840e99fdfbffa046d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimize buffer sizes flag. <br/></td></tr>
+<tr class="separator:af5946b4ab02e87840e99fdfbffa046d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3164683c61e9f84b2ff3da8e18d83bf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3164683c61e9f84b2ff3da8e18d83bf2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a3164683c61e9f84b2ff3da8e18d83bf2">skinned_</a></td></tr>
 <tr class="memdesc:a3164683c61e9f84b2ff3da8e18d83bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skinned mode flag. <br/></td></tr>
 <tr class="separator:a3164683c61e9f84b2ff3da8e18d83bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a331d1437026f0ca061ff3c7398cbcba5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a331d1437026f0ca061ff3c7398cbcba5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a331d1437026f0ca061ff3c7398cbcba5">bufferSizeDirty_</a></td></tr>
-<tr class="memdesc:a331d1437026f0ca061ff3c7398cbcba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffer needs resize flag. <br/></td></tr>
-<tr class="separator:a331d1437026f0ca061ff3c7398cbcba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d07d350ed5213ffb2b2ad78fff0bd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01d07d350ed5213ffb2b2ad78fff0bd8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a01d07d350ed5213ffb2b2ad78fff0bd8">bufferDirty_</a></td></tr>
-<tr class="memdesc:a01d07d350ed5213ffb2b2ad78fff0bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffer needs rewrite flag. <br/></td></tr>
+<tr class="memdesc:a01d07d350ed5213ffb2b2ad78fff0bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffer needs rewrite / resizing flag. <br/></td></tr>
 <tr class="separator:a01d07d350ed5213ffb2b2ad78fff0bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1122947a1e1e1028aebfd5236c3a32af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1122947a1e1e1028aebfd5236c3a32af"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_decal_set.html#a1122947a1e1e1028aebfd5236c3a32af">boundingBoxDirty_</a></td></tr>
