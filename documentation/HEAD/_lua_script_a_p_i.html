@@ -6375,6 +6375,15 @@ Classes</h2>
 <li>void SetAlignment(HorizontalAlignment hAlign, VerticalAlignment vAlign)</li>
 <li>void SetHorizontalAlignment(HorizontalAlignment align)</li>
 <li>void SetVerticalAlignment(VerticalAlignment align)</li>
+<li>void SetEnableAnchor(bool enable)</li>
+<li>void SetMinAnchor(const Vector2&amp; anchor)</li>
+<li>void SetMinAnchor(float x, float y)</li>
+<li>void SetMaxAnchor(const Vector2&amp; anchor)</li>
+<li>void SetMaxAnchor(float x, float y)</li>
+<li>void SetMinOffset(const IntVector2&amp; offset)</li>
+<li>void SetMaxOffset(const IntVector2&amp; offset)</li>
+<li>void SetPivot(const Vector2&amp; pivot)</li>
+<li>void SetPivot(float x, float y)</li>
 <li>void SetClipBorder(const IntRect&amp; rect)</li>
 <li>void SetColor(const Color&amp; color)</li>
 <li>void SetColor(Corner corner, const Color&amp; color)</li>
@@ -6445,6 +6454,12 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetChildOffset() const</li>
 <li>HorizontalAlignment GetHorizontalAlignment() const</li>
 <li>VerticalAlignment GetVerticalAlignment() const</li>
+<li>bool GetEnableAnchor() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; GetMinAnchor() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; GetMaxAnchor() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetMinOffset() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetMaxOffset() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; GetPivot() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; GetClipBorder() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; GetColor(Corner corner) const</li>
 <li>int GetPriority() const</li>
@@ -6522,6 +6537,12 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; childOffset</li>
 <li>HorizontalAlignment horizontalAlignment</li>
 <li>VerticalAlignment verticalAlignment</li>
+<li>bool enableAnchor</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; minOffset</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; maxOffset</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; minAnchor</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; maxAnchor</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> clipBorder</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; color</li>
 <li>int priority</li>
@@ -7412,6 +7433,7 @@ Enumerations</h2>
 <li>int HA_LEFT</li>
 <li>int HA_CENTER</li>
 <li>int HA_RIGHT</li>
+<li>int HA_CUSTOM</li>
 </ul>
 <h4>HttpRequestState</h4>
 <ul>
@@ -7761,6 +7783,7 @@ Enumerations</h2>
 <li>int VA_TOP</li>
 <li>int VA_CENTER</li>
 <li>int VA_BOTTOM</li>
+<li>int VA_CUSTOM</li>
 </ul>
 <h4>WindowDragMode</h4>
 <ul>

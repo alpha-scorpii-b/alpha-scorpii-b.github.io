@@ -753,9 +753,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -790,6 +793,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -811,10 +815,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -824,6 +832,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -966,9 +975,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetPressedChildOffset(int, int)</li>
 <li>void SetPressedOffset(int, int)</li>
@@ -1006,6 +1018,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -1027,10 +1040,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -1040,6 +1057,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>bool pressed // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> pressedChildOffset</li>
@@ -1248,9 +1266,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -1287,6 +1308,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -1308,10 +1330,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -1321,6 +1347,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -3141,9 +3168,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetShape(CursorShape)</li>
 <li>void SetShape(const String&amp;)</li>
@@ -3180,6 +3210,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -3201,10 +3232,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -3214,6 +3249,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -3872,9 +3908,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetPressedChildOffset(int, int)</li>
 <li>void SetPressedOffset(int, int)</li>
@@ -3915,6 +3954,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -3938,10 +3978,14 @@ Classes</h2>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
 <li><a class="el" href="class_urho3_d_1_1_list_view.html" title="Scrollable list UI element.">ListView</a>@ listView // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -3952,6 +3996,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ placeholder // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> placeholderText</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
@@ -4921,9 +4966,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -4963,6 +5011,7 @@ Classes</h2>
 <li>uint echoCharacter</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -4984,11 +5033,15 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
 <li>uint maxLength</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -4998,6 +5051,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -5118,9 +5172,12 @@ Classes</h2>
 <li>void SetFixedWidth(int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetScrollBarsVisible(bool, bool)</li>
 <li>void SetSelections(uint[]@)</li>
@@ -5163,6 +5220,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -5185,10 +5243,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li>bool multiselect</li>
@@ -5201,6 +5263,7 @@ Classes</h2>
 <li>float opacity</li>
 <li>float pageStep</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -5542,9 +5605,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPopupOffset(int, int)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetPressedChildOffset(int, int)</li>
@@ -5585,6 +5651,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -5606,10 +5673,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -5619,6 +5690,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ popup</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> popupOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
@@ -8061,9 +8133,12 @@ Classes</h2>
 <li>void SetFixedWidth(int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -8100,6 +8175,7 @@ Classes</h2>
 <li>bool editable</li>
 <li>float effectiveScrollStep // readonly</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -8119,10 +8195,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -8133,6 +8213,7 @@ Classes</h2>
 <li>float opacity</li>
 <li>Orientation orientation</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>float range</li>
@@ -8237,9 +8318,12 @@ Classes</h2>
 <li>void SetFixedWidth(int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetScrollBarsVisible(bool, bool)</li>
 <li>void SetSize(int, int)</li>
@@ -8277,6 +8361,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -8296,10 +8381,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -8310,6 +8399,7 @@ Classes</h2>
 <li>float opacity</li>
 <li>float pageStep</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -8587,9 +8677,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -8624,6 +8717,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -8646,10 +8740,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -8660,6 +8758,7 @@ Classes</h2>
 <li>float opacity</li>
 <li>Orientation orientation</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>float range</li>
@@ -9179,9 +9278,12 @@ Classes</h2>
 <li>void SetHotSpot(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(float, float)</li>
 <li>void SetScale(float)</li>
 <li>void SetScale(float, float)</li>
@@ -9217,6 +9319,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -9237,10 +9340,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -9250,6 +9357,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -9927,9 +10035,12 @@ Classes</h2>
 <li>bool SetFont(const String&amp;, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSelection(uint, uint = M_MAX_UNSIGNED)</li>
 <li>void SetSize(int, int)</li>
@@ -9970,6 +10081,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> effectShadowOffset</li>
 <li>int effectStrokeThickness</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -9991,10 +10103,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -10006,6 +10122,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -10695,9 +10812,12 @@ Classes</h2>
 <li>void SetFixedWidth(int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -10731,6 +10851,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -10749,10 +10870,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -10762,6 +10887,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -10926,9 +11052,12 @@ Classes</h2>
 <li>void SetFixedWidth(int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -10961,6 +11090,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -10979,10 +11109,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
@@ -10992,6 +11126,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -11373,9 +11508,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -11414,6 +11552,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -11438,10 +11577,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li>bool modal</li>
@@ -11457,6 +11600,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -11603,9 +11747,12 @@ Classes</h2>
 <li>void SetHoverOffset(int, int)</li>
 <li>void SetInterceptNetworkUpdate(const String&amp;, bool)</li>
 <li>void SetLayout(LayoutMode, int = 0, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; = <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ( 0 , 0 , 0 , 0 ))</li>
+<li>void SetMaxAnchor(float, float)</li>
 <li>void SetMaxSize(int, int)</li>
+<li>void SetMinAnchor(float, float)</li>
 <li>void SetMinSize(int, int)</li>
 <li>void SetParent(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@, uint = M_MAX_UNSIGNED)</li>
+<li>void SetPivot(float, float)</li>
 <li>void SetPosition(int, int)</li>
 <li>void SetSize(int, int)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource.">XMLFile</a>@ = null)</li>
@@ -11640,6 +11787,7 @@ Classes</h2>
 <li>uint dragDropMode</li>
 <li>bool editable</li>
 <li>bool elementEventSender</li>
+<li>bool enableAnchor</li>
 <li>bool enabled</li>
 <li>bool enabledSelf // readonly</li>
 <li>bool fixedHeight // readonly</li>
@@ -11663,10 +11811,14 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> layoutFlexScale</li>
 <li>LayoutMode layoutMode</li>
 <li>int layoutSpacing</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> maxAnchor</li>
 <li>int maxHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> maxSize</li>
 <li>int maxWidth</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> minAnchor</li>
 <li>int minHeight</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> minSize</li>
 <li>int minWidth</li>
 <li>bool modal</li>
@@ -11682,6 +11834,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ...">ObjectAnimation</a>@ objectAnimation</li>
 <li>float opacity</li>
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a>@ parent</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> pivot</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> position</li>
 <li>int priority</li>
 <li>int refs // readonly</li>
@@ -12125,6 +12278,7 @@ Enumerations</h2>
 <li>HA_LEFT</li>
 <li>HA_CENTER</li>
 <li>HA_RIGHT</li>
+<li>HA_CUSTOM</li>
 </ul>
 <h4>HttpRequestState</h4>
 <ul>
@@ -12445,6 +12599,7 @@ Enumerations</h2>
 <li>VA_TOP</li>
 <li>VA_CENTER</li>
 <li>VA_BOTTOM</li>
+<li>VA_CUSTOM</li>
 </ul>
 <h4>WrapMode</h4>
 <ul>
@@ -12606,6 +12761,7 @@ Global constants</h2>
 <li>uint AM_COMPONENTID</li>
 <li>uint AM_DEFAULT</li>
 <li>uint AM_FILE</li>
+<li>uint AM_FILEREADONLY</li>
 <li>uint AM_LATESTDATA</li>
 <li>uint AM_NET</li>
 <li>uint AM_NODEID</li>
