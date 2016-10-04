@@ -64,6 +64,10 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a903c8554f3258eccc623fd3b2e170597">~DebugRenderer</a> ()</td></tr>
 <tr class="memdesc:a903c8554f3258eccc623fd3b2e170597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a903c8554f3258eccc623fd3b2e170597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c06af764a0e442062e6c4466037f6b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c06af764a0e442062e6c4466037f6b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a4c06af764a0e442062e6c4466037f6b2">SetLineAntiAlias</a> (bool enable)</td></tr>
+<tr class="memdesc:a4c06af764a0e442062e6c4466037f6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set line antialiasing on/off. Default false. <br/></td></tr>
+<tr class="separator:a4c06af764a0e442062e6c4466037f6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ddc45de33de57b41a9889fdce2363c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65ddc45de33de57b41a9889fdce2363c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a65ddc45de33de57b41a9889fdce2363c">SetView</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
 <tr class="memdesc:a65ddc45de33de57b41a9889fdce2363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera viewpoint. Call before rendering, or before adding geometry if you want to use culling. <br/></td></tr>
@@ -136,6 +140,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#aea2bb49e63d7c40a6856e44d5be7565e">Render</a> ()</td></tr>
 <tr class="memdesc:aea2bb49e63d7c40a6856e44d5be7565e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update vertex buffer and render all debug lines. The viewport and rendertarget should be set before. <br/></td></tr>
 <tr class="separator:aea2bb49e63d7c40a6856e44d5be7565e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440f6bb44154d37d817e8500d1a4865c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440f6bb44154d37d817e8500d1a4865c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a440f6bb44154d37d817e8500d1a4865c">GetLineAntiAlias</a> () const </td></tr>
+<tr class="memdesc:a440f6bb44154d37d817e8500d1a4865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether line antialiasing is enabled. <br/></td></tr>
+<tr class="separator:a440f6bb44154d37d817e8500d1a4865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa297d4fe5a432758f31c1e05ffbe0e0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa297d4fe5a432758f31c1e05ffbe0e0b"></a>
 const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#aa297d4fe5a432758f31c1e05ffbe0e0b">GetView</a> () const </td></tr>
 <tr class="memdesc:aa297d4fe5a432758f31c1e05ffbe0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the view transform. <br/></td></tr>
@@ -670,6 +678,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a3b08a7c5a1ec28fb968cae8329d9b49c">vertexBuffer_</a></td></tr>
 <tr class="memdesc:a3b08a7c5a1ec28fb968cae8329d9b49c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffer. <br/></td></tr>
 <tr class="separator:a3b08a7c5a1ec28fb968cae8329d9b49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a83bdaca705cc2a53579ff97a072e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71a83bdaca705cc2a53579ff97a072e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_debug_renderer.html#a71a83bdaca705cc2a53579ff97a072e0">lineAntiAlias_</a></td></tr>
+<tr class="memdesc:a71a83bdaca705cc2a53579ff97a072e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line antialiasing flag. <br/></td></tr>
+<tr class="separator:a71a83bdaca705cc2a53579ff97a072e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

@@ -1669,6 +1669,7 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_debug_renderer.html" title="Debug geometry rendering component. Should be added only to the root scene node.">DebugRenderer</a> : <a class="el" href="class_urho3_d_1_1_component.html" title="Base class for components. Components can be created to scene nodes.">Component</a></h4>
 <p>Methods:</p>
 <ul>
+<li>void SetLineAntiAlias(bool enable)</li>
 <li>void SetView(Camera* camera)</li>
 <li>void AddLine(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; start, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; end, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddLine(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; start, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; end, unsigned color, bool depthTest = true)</li>
@@ -1686,6 +1687,7 @@ Classes</h2>
 <li>void AddCross(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; center, float size, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddQuad(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a>&amp; center, float width, float height, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void Render()</li>
+<li>bool GetLineAntiAlias() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a>&amp; GetView() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a>&amp; GetProjection() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a>&amp; GetFrustum() const</li>
@@ -1693,6 +1695,7 @@ Classes</h2>
 </ul>
 <p>Properties:</p>
 <ul>
+<li>bool lineAntiAlias</li>
 <li><a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a>&amp; view (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a>&amp; projection (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a>&amp; frustum (readonly)</li>
@@ -3001,6 +3004,7 @@ Classes</h2>
 <li>void SetFillMode(FillMode mode)</li>
 <li>void SetDepthBias(const BiasParameters&amp; parameters)</li>
 <li>void SetAlphaToCoverage(bool enable)</li>
+<li>void SetLineAntiAlias(bool enable)</li>
 <li>void SetRenderOrder(char renderOrder)</li>
 <li>void SetOcclusion(bool enable)</li>
 <li>void SetScene(Scene* scene)</li>
@@ -3023,6 +3027,7 @@ Classes</h2>
 <li>FillMode GetFillMode() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a>&amp; GetDepthBias() const</li>
 <li>bool GetAlphaToCoverage() const</li>
+<li>bool GetLineAntiAlias() const</li>
 <li>char GetRenderOrder() const</li>
 <li>bool GetOcclusion() const</li>
 <li>bool GetSpecular() const</li>
@@ -3037,6 +3042,7 @@ Classes</h2>
 <li>FillMode fillMode</li>
 <li><a class="el" href="struct_urho3_d_1_1_bias_parameters.html" title="Depth bias parameters. Used both by lights (for shadow mapping) and materials.">BiasParameters</a> depthBias</li>
 <li>bool alphaToCoverage</li>
+<li>bool lineAntiAlias</li>
 <li>char renderOrder</li>
 <li>bool occlusion</li>
 <li>bool specular (readonly)</li>

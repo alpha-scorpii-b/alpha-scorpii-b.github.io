@@ -340,6 +340,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a616f0641be5b78abb3b4b3ef43cba042">SetFillMode</a> (FillMode mode)</td></tr>
 <tr class="memdesc:a616f0641be5b78abb3b4b3ef43cba042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set polygon fill mode. <br/></td></tr>
 <tr class="separator:a616f0641be5b78abb3b4b3ef43cba042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b031187f4c0939d10cad23e970d6e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80b031187f4c0939d10cad23e970d6e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a80b031187f4c0939d10cad23e970d6e1">SetLineAntiAlias</a> (bool enable)</td></tr>
+<tr class="memdesc:a80b031187f4c0939d10cad23e970d6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set line antialiasing on/off. <br/></td></tr>
+<tr class="separator:a80b031187f4c0939d10cad23e970d6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27670beb9e90540f69da3d24da2d07bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27670beb9e90540f69da3d24da2d07bd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a27670beb9e90540f69da3d24da2d07bd">SetScissorTest</a> (bool enable, const <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a> &amp;rect=<a class="el" href="class_urho3_d_1_1_rect.html#a37b4bef375bb80cd2386a7f1fe8ccf4c">Rect::FULL</a>, bool borderInclusive=true)</td></tr>
 <tr class="memdesc:a27670beb9e90540f69da3d24da2d07bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scissor test. <br/></td></tr>
@@ -623,6 +627,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 FillMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a96fa3f4d72e8ce8853a6e9fdd3b230d8">GetFillMode</a> () const </td></tr>
 <tr class="memdesc:a96fa3f4d72e8ce8853a6e9fdd3b230d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return polygon fill mode. <br/></td></tr>
 <tr class="separator:a96fa3f4d72e8ce8853a6e9fdd3b230d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78d852e6ae2c5a7fbf42efb79143ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b78d852e6ae2c5a7fbf42efb79143ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a8b78d852e6ae2c5a7fbf42efb79143ee">GetLineAntiAlias</a> () const </td></tr>
+<tr class="memdesc:a8b78d852e6ae2c5a7fbf42efb79143ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether line antialiasing is enabled. <br/></td></tr>
+<tr class="separator:a8b78d852e6ae2c5a7fbf42efb79143ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d00b89ac680c9efbc318aafba42815"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7d00b89ac680c9efbc318aafba42815"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ae7d00b89ac680c9efbc318aafba42815">GetStencilTest</a> () const </td></tr>
 <tr class="memdesc:ae7d00b89ac680c9efbc318aafba42815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether stencil test is enabled. <br/></td></tr>
@@ -1331,18 +1339,22 @@ CompareMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ada2aba618419923591ccc8effc2a2486">depthWrite_</a></td></tr>
 <tr class="memdesc:ada2aba618419923591ccc8effc2a2486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth write enable flag. <br/></td></tr>
 <tr class="separator:ada2aba618419923591ccc8effc2a2486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88da59433ab59dae02ed67cb4a0026f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88da59433ab59dae02ed67cb4a0026f2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a88da59433ab59dae02ed67cb4a0026f2">lineAntiAlias_</a></td></tr>
+<tr class="memdesc:a88da59433ab59dae02ed67cb4a0026f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line antialiasing enable flag. <br/></td></tr>
+<tr class="separator:a88da59433ab59dae02ed67cb4a0026f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514ea3cb3e55e41cc79633a9aa4d8ca3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a514ea3cb3e55e41cc79633a9aa4d8ca3"></a>
 FillMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a514ea3cb3e55e41cc79633a9aa4d8ca3">fillMode_</a></td></tr>
 <tr class="memdesc:a514ea3cb3e55e41cc79633a9aa4d8ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polygon fill mode. <br/></td></tr>
 <tr class="separator:a514ea3cb3e55e41cc79633a9aa4d8ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b111ef64b6215db2b59331c496f12b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b111ef64b6215db2b59331c496f12b9"></a>
-<a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a2b111ef64b6215db2b59331c496f12b9">scissorRect_</a></td></tr>
-<tr class="memdesc:a2b111ef64b6215db2b59331c496f12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scissor test rectangle. <br/></td></tr>
-<tr class="separator:a2b111ef64b6215db2b59331c496f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c47d892cab8fa79fdf276b5828372af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c47d892cab8fa79fdf276b5828372af"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a8c47d892cab8fa79fdf276b5828372af">scissorTest_</a></td></tr>
 <tr class="memdesc:a8c47d892cab8fa79fdf276b5828372af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scissor test enable flag. <br/></td></tr>
 <tr class="separator:a8c47d892cab8fa79fdf276b5828372af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b111ef64b6215db2b59331c496f12b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b111ef64b6215db2b59331c496f12b9"></a>
+<a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a2b111ef64b6215db2b59331c496f12b9">scissorRect_</a></td></tr>
+<tr class="memdesc:a2b111ef64b6215db2b59331c496f12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scissor test rectangle. <br/></td></tr>
+<tr class="separator:a2b111ef64b6215db2b59331c496f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35b0b60caa671d4673648278619335f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa35b0b60caa671d4673648278619335f"></a>
 CompareMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aa35b0b60caa671d4673648278619335f">stencilTestMode_</a></td></tr>
 <tr class="memdesc:aa35b0b60caa671d4673648278619335f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil test compare mode. <br/></td></tr>

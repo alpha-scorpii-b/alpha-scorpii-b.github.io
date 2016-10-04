@@ -156,6 +156,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac8d43c1bb96b837ce13d656960aa9aba">SetAlphaToCoverage</a> (bool enable)</td></tr>
 <tr class="memdesc:ac8d43c1bb96b837ce13d656960aa9aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set alpha-to-coverage mode on all passes. <br/></td></tr>
 <tr class="separator:ac8d43c1bb96b837ce13d656960aa9aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff5e0ef7435fc31ce52fc297cc80c34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ff5e0ef7435fc31ce52fc297cc80c34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a1ff5e0ef7435fc31ce52fc297cc80c34">SetLineAntiAlias</a> (bool enable)</td></tr>
+<tr class="memdesc:a1ff5e0ef7435fc31ce52fc297cc80c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set line antialiasing on/off. Has effect only on models that consist of line lists. <br/></td></tr>
+<tr class="separator:a1ff5e0ef7435fc31ce52fc297cc80c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c107d0bc70408017c10b57fb1ce23e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60c107d0bc70408017c10b57fb1ce23e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a60c107d0bc70408017c10b57fb1ce23e">SetRenderOrder</a> (unsigned char order)</td></tr>
 <tr class="memdesc:a60c107d0bc70408017c10b57fb1ce23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set 8-bit render order within pass. Default 128. Lower values will render earlier and higher values later, taking precedence over e.g. state and distance sorting. <br/></td></tr>
@@ -266,6 +270,10 @@ const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameter
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ac633d4e773aaac92f4a81c1ef164b619">GetAlphaToCoverage</a> () const </td></tr>
 <tr class="memdesc:ac633d4e773aaac92f4a81c1ef164b619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return alpha-to-coverage mode. <br/></td></tr>
 <tr class="separator:ac633d4e773aaac92f4a81c1ef164b619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d371202ce95707fdcb0c7a4d60be00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3d371202ce95707fdcb0c7a4d60be00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#ab3d371202ce95707fdcb0c7a4d60be00">GetLineAntiAlias</a> () const </td></tr>
+<tr class="memdesc:ab3d371202ce95707fdcb0c7a4d60be00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether line antialiasing is enabled. <br/></td></tr>
+<tr class="separator:ab3d371202ce95707fdcb0c7a4d60be00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf437d662099d7d8ccdf299a98795528"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf437d662099d7d8ccdf299a98795528"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#adf437d662099d7d8ccdf299a98795528">GetRenderOrder</a> () const </td></tr>
 <tr class="memdesc:adf437d662099d7d8ccdf299a98795528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return render order. <br/></td></tr>
@@ -607,8 +615,12 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:a9c518f1c4f210ca68e8ea07d53eaab2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a4b3b1d3a9b547774281f9e14f284b4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a3a4b3b1d3a9b547774281f9e14f284b4">alphaToCoverage_</a></td></tr>
-<tr class="memdesc:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha-to-coverage mode. <br/></td></tr>
+<tr class="memdesc:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha-to-coverage flag. <br/></td></tr>
 <tr class="separator:a3a4b3b1d3a9b547774281f9e14f284b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e598f331d005814186f6fab0c0014ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e598f331d005814186f6fab0c0014ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a1e598f331d005814186f6fab0c0014ec">lineAntiAlias_</a></td></tr>
+<tr class="memdesc:a1e598f331d005814186f6fab0c0014ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line antialiasing flag. <br/></td></tr>
+<tr class="separator:a1e598f331d005814186f6fab0c0014ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397b49a6cf3529d208d62d4f966d68b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a397b49a6cf3529d208d62d4f966d68b3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_material.html#a397b49a6cf3529d208d62d4f966d68b3">occlusion_</a></td></tr>
 <tr class="memdesc:a397b49a6cf3529d208d62d4f966d68b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render occlusion flag. <br/></td></tr>
