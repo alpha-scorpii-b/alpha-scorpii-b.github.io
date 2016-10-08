@@ -167,17 +167,13 @@ Classes</h2>
 </ul>
 <p>Properties:</p>
 <ul>
-<li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> hash_</li>
-<li>float speed_</li>
-<li>float targetWeight_</li>
-<li>float fadeTime_</li>
-<li>float autoFadeTime_</li>
-<li>float setTimeTtl_</li>
-<li>float setWeightTtl_</li>
-<li>short setTime_</li>
-<li>char setWeight_</li>
-<li>char setTimeRev_</li>
-<li>char setWeightRev_</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name</li>
+<li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> hash</li>
+<li>float speed</li>
+<li>float targetWeifht</li>
+<li>float fadeTime</li>
+<li>float autoFadeTime</li>
+<li>bool removeOnCompletion</li>
 </ul>
 <p><a class="anchor" id="Class_AnimationController"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_animation_controller.html" title="Component that drives an AnimatedModel&#39;s animations.">AnimationController</a> : <a class="el" href="class_urho3_d_1_1_component.html" title="Base class for components. Components can be created to scene nodes.">Component</a></h4>
@@ -219,6 +215,8 @@ Classes</h2>
 <li>bool GetRemoveOnCompletion(const String name) const</li>
 <li>AnimationState* GetAnimationState(const String name) const</li>
 <li>AnimationState* GetAnimationState(StringHash nameHash) const</li>
+<li>const AnimationControl* GetAnimation(unsigned index) const</li>
+<li>unsigned GetNumAnimations() const</li>
 </ul>
 <p><a class="anchor" id="Class_AnimationKeyFrame"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_animation_key_frame.html" title="Skeletal animation keyframe.">AnimationKeyFrame</a></h4>
