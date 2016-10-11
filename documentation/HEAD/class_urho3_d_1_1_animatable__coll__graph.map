@@ -1,26 +1,26 @@
 <map id="Urho3D::Animatable" name="Urho3D::Animatable">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_serializable.html" title="Base class for objects with automatic serialization through attributes." alt="" coords="1829,807,1981,836"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_serializable.html" title="Base class for objects with automatic serialization through attributes." alt="" coords="1829,823,1981,852"/>
 <area shape="rect" id="node4" href="$class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="" coords="561,252,681,281"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_event_handler.html" title="Internal helper class for invoking event handler functions." alt="" coords="841,224,1007,253"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_event_handler.html" title="Internal helper class for invoking event handler functions." alt="" coords="841,224,1007,253"/>
 <area shape="rect" id="node53" href="$class_urho3_d_1_1_resource.html" title="Base class for resources." alt="" coords="856,5,992,35"/>
 <area shape="rect" id="node6" href="$class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference&#45;counted objects. These are noncopyable and non&#45;assignable." alt="" coords="269,439,421,468"/>
 <area shape="rect" id="node10" href="$class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers." alt="" coords="1324,432,1452,461"/>
 <area shape="rect" id="node8" href="$struct_urho3_d_1_1_ref_count.html" title="Reference count structure." alt="" coords="5,439,141,468"/>
 <area shape="rect" id="node13" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::Object * \&gt;" alt="" coords="845,393,1003,439"/>
-<area shape="rect" id="node31" href="$class_urho3_d_1_1_linked_list.html" title="Urho3D::LinkedList\l\&lt; Urho3D::EventHandler \&gt;" alt="" coords="1291,113,1485,159"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lHashSet\&lt; Urho3D::Object * \&gt; \&gt;" alt="" coords="809,513,1039,577"/>
-<area shape="rect" id="node20" href="$class_urho3_d_1_1_hash_base.html" title="Hash set/map base class." alt="" coords="549,748,693,777"/>
-<area shape="rect" id="node28" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; StringHash,\l Variant \&gt;" alt="" coords="809,601,1039,647"/>
-<area shape="rect" id="node34" href="$class_urho3_d_1_1_hash_map.html" title="Hash map template class." alt="" coords="1072,869,1267,899"/>
-<area shape="rect" id="node46" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::AttributeAnimationInfo \&gt; \&gt;" alt="" coords="1511,887,1777,951"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Object *, Urho3D::HashMap\l\&lt; Urho3D::StringHash, Urho3D\l::EventReceiverGroup \&gt; \&gt;" alt="" coords="813,513,1035,594"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_hash_base.html" title="Hash set/map base class." alt="" coords="549,756,693,785"/>
+<area shape="rect" id="node28" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; StringHash,\l Variant \&gt;" alt="" coords="809,617,1039,663"/>
+<area shape="rect" id="node34" href="$class_urho3_d_1_1_hash_map.html" title="Hash map template class." alt="" coords="1072,885,1267,915"/>
+<area shape="rect" id="node46" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::AttributeAnimationInfo \&gt; \&gt;" alt="" coords="1511,903,1777,967"/>
 <area shape="rect" id="node56" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::ValueAnimationInfo \&gt; \&gt;" alt="" coords="801,136,1047,200"/>
-<area shape="rect" id="node59" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; const\l Urho3D::AttributeInfo * \&gt;" alt="" coords="1076,970,1263,1017"/>
-<area shape="rect" id="node22" href="$struct_urho3_d_1_1_hash_node_base.html" title="Hash set/map node base class." alt="" coords="256,668,435,697"/>
-<area shape="rect" id="node25" href="$struct_urho3_d_1_1_allocator_block.html" title="Allocator memory block." alt="" coords="261,763,429,792"/>
-<area shape="rect" id="node37" href="$struct_urho3_d_1_1_network_state.html" title="Per&#45;object attribute state for network replication, allocated on demand." alt="" coords="1305,748,1471,777"/>
-<area shape="rect" id="node39" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::Variant \&gt;" alt="" coords="832,670,1016,717"/>
-<area shape="rect" id="node41" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::ReplicationState * \&gt;" alt="" coords="819,739,1029,786"/>
-<area shape="rect" id="node43" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::AttributeInfo \&gt;" alt="" coords="832,809,1016,855"/>
-<area shape="rect" id="node49" href="$class_urho3_d_1_1_shared_ptr.html" title="Urho3D::SharedPtr\&lt;\l Urho3D::ObjectAnimation \&gt;" alt="" coords="1804,431,2007,478"/>
+<area shape="rect" id="node59" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; const\l Urho3D::AttributeInfo * \&gt;" alt="" coords="1076,986,1263,1033"/>
+<area shape="rect" id="node19" href="$struct_urho3_d_1_1_hash_node_base.html" title="Hash set/map node base class." alt="" coords="256,676,435,705"/>
+<area shape="rect" id="node22" href="$struct_urho3_d_1_1_allocator_block.html" title="Allocator memory block." alt="" coords="261,771,429,800"/>
+<area shape="rect" id="node31" href="$class_urho3_d_1_1_linked_list.html" title="Urho3D::LinkedList\l\&lt; Urho3D::EventHandler \&gt;" alt="" coords="1291,113,1485,159"/>
+<area shape="rect" id="node37" href="$struct_urho3_d_1_1_network_state.html" title="Per&#45;object attribute state for network replication, allocated on demand." alt="" coords="1305,764,1471,793"/>
+<area shape="rect" id="node39" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::Variant \&gt;" alt="" coords="832,686,1016,733"/>
+<area shape="rect" id="node41" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::ReplicationState * \&gt;" alt="" coords="819,755,1029,802"/>
+<area shape="rect" id="node43" href="$class_urho3_d_1_1_vector.html" title="Urho3D::Vector\&lt; Urho3D\l::AttributeInfo \&gt;" alt="" coords="832,825,1016,871"/>
+<area shape="rect" id="node49" href="$class_urho3_d_1_1_shared_ptr.html" title="Urho3D::SharedPtr\&lt;\l Urho3D::ObjectAnimation \&gt;" alt="" coords="1804,439,2007,486"/>
 <area shape="rect" id="node51" href="$class_urho3_d_1_1_object_animation.html" title="Object animation class, an object animation include one or more attribute animations and theirs wrap ..." alt="" coords="1296,36,1480,65"/>
 </map>

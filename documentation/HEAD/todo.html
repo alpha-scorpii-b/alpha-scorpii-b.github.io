@@ -37,7 +37,7 @@ group: HEAD
 <dd>On mobile devices processing this message may potentially cause a crash if it attempts to load new GPU resources while the application is minimized  </dd>
 <dt><a class="anchor" id="_todo000034"></a>Member <a class="el" href="class_urho3_d_1_1_constraint.html#a27ad73e394c74db3eafa12ca51cd6400">Urho3D::Constraint::OnMarkedDirty</a>  (Node *node)</dt>
 <dd>This does not catch the connected body node's scale changing  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_urho3_d_1_1_context.html#a68ab6cd5113c02ec67e04bbe11504090">Urho3D::Context::~Context</a>  ()</dt>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_urho3_d_1_1_context.html#a68ab6cd5113c02ec67e04bbe11504090">Urho3D::Context::~Context</a>  ()</dt>
 <dd>Context should not need to know about subsystems  </dd>
 <dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="class_urho3_d_1_1_crowd_agent.html#a039e3277d24ef2b90445f1868709713a">Urho3D::CrowdAgent::OnMarkedDirty</a>  (Node *node)</dt>
 <dd>Handle node transform being dirtied.  </dd>
@@ -45,6 +45,8 @@ group: HEAD
 <dd>target transform is not right if adding a decal to StaticModelGroup  </dd>
 <dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_urho3_d_1_1_decal_set.html#a6ad99bf1fab63be297e4104444589cfd">Urho3D::DecalSet::OnWorldBoundingBoxUpdate</a>  ()</dt>
 <dd>The sphere radius should be multiplied with bone scale  </dd>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_urho3_d_1_1_event_receiver_group.html#a6e8d795aec1eb82fb3a62ac9324d38de">Urho3D::EventReceiverGroup::EndSendEvent</a>  ()</dt>
+<dd>Could be optimized by erase-swap, but this keeps the receiver order  </dd>
 <dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="class_urho3_d_1_1_file.html#ac9ad6d7a55a6f03848f3bb77b8e6890c">Urho3D::File::Read</a>  (void *dest, unsigned size)</dt>
 <dd>Handle errors  </dd>
 <dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="class_urho3_d_1_1_file_system.html#a5d93365af462341ea8029827581854a6">Urho3D::FileSystem::GetProgramDir</a>  () const </dt>
@@ -69,8 +71,6 @@ group: HEAD
 <dd>Assignment of flags from navigation areas?  </dd>
 <dt><a class="anchor" id="_todo000028"></a>Member <a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a9975760e63efcb66d129fbaada30a5a9">Urho3D::NavigationMesh::CollectGeometries</a>  (Vector&lt; NavigationGeometryInfo &gt; &amp;geometryList, Node *node, HashSet&lt; Node * &gt; &amp;processedNodes, bool recursive)</dt>
 <dd>Evaluate whether should handle other types. Now StaticModel &amp; TerrainPatch are supported, others skipped  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_urho3_d_1_1_object.html#af8f8bd3f7e2f51ecca7199e737f53364">Urho3D::Object::SendEvent</a>  (StringHash eventType, VariantMap &amp;eventData)</dt>
-<dd>This is not entirely foolproof, as a subscriber could have been added to make up for the removed one  </dd>
 <dt><a class="anchor" id="_todo000039"></a>Member <a class="el" href="class_urho3_d_1_1_particle_effect2_d.html#a5e61cb677b1d799e4a82e9b3749644cf">Urho3D::ParticleEffect2D::Clone</a>  (const String &amp;cloneName=String::EMPTY) const </dt>
 <dd>Zero if source was created programmatically  </dd>
 <dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="class_urho3_d_1_1_particle_effect.html#a73b6c7c794858e1b830b6450d7afbc64">Urho3D::ParticleEffect::Clone</a>  (const String &amp;cloneName=String::EMPTY) const </dt>
