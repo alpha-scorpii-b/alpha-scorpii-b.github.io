@@ -109,6 +109,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#a9480267a48c316998fe0653b3343e22b">Save</a> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a9480267a48c316998fe0653b3343e22b inherit pub_methods_class_urho3_d_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save resource. Return true if successful. <br/></td></tr>
 <tr class="separator:a9480267a48c316998fe0653b3343e22b inherit pub_methods_class_urho3_d_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb93ae756b0d991f2350aea659f3a27f inherit pub_methods_class_urho3_d_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb93ae756b0d991f2350aea659f3a27f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#adb93ae756b0d991f2350aea659f3a27f">Load</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName)</td></tr>
+<tr class="memdesc:adb93ae756b0d991f2350aea659f3a27f inherit pub_methods_class_urho3_d_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load resource from file. <br/></td></tr>
+<tr class="separator:adb93ae756b0d991f2350aea659f3a27f inherit pub_methods_class_urho3_d_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b41b81e9ef11c8f7474e74a538839b2 inherit pub_methods_class_urho3_d_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b41b81e9ef11c8f7474e74a538839b2"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#a4b41b81e9ef11c8f7474e74a538839b2">Save</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fileName) const </td></tr>
+<tr class="memdesc:a4b41b81e9ef11c8f7474e74a538839b2 inherit pub_methods_class_urho3_d_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save resource to file. <br/></td></tr>
+<tr class="separator:a4b41b81e9ef11c8f7474e74a538839b2 inherit pub_methods_class_urho3_d_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b7b9d5ff3beebd961ad2ae5fe0f382 inherit pub_methods_class_urho3_d_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82b7b9d5ff3beebd961ad2ae5fe0f382"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#a82b7b9d5ff3beebd961ad2ae5fe0f382">SetName</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
 <tr class="memdesc:a82b7b9d5ff3beebd961ad2ae5fe0f382 inherit pub_methods_class_urho3_d_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set name. <br/></td></tr>
@@ -337,10 +345,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_sprite2_d.html">Sprite2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_set2_d.html#a40eedecd8a4d3c37de89a1a418d17d59">sprite_</a></td></tr>
 <tr class="memdesc:a40eedecd8a4d3c37de89a1a418d17d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spine sprite. <br/></td></tr>
 <tr class="separator:a40eedecd8a4d3c37de89a1a418d17d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1748c22ec42758261758348be9371a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d1748c22ec42758261758348be9371a"></a>
-<a class="el" href="struct_urho3_d_1_1_spriter_1_1_spriter_data.html">Spriter::SpriterData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_set2_d.html#a5d1748c22ec42758261758348be9371a">spriterData_</a></td></tr>
-<tr class="memdesc:a5d1748c22ec42758261758348be9371a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spriter data. <br/></td></tr>
-<tr class="separator:a5d1748c22ec42758261758348be9371a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba05e3163e23b36cfdc83be6986869e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ba05e3163e23b36cfdc83be6986869e"></a>
+<a class="el" href="class_urho3_d_1_1_unique_ptr.html">UniquePtr</a>&lt; <a class="el" href="struct_urho3_d_1_1_spriter_1_1_spriter_data.html">Spriter::SpriterData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_set2_d.html#a8ba05e3163e23b36cfdc83be6986869e">spriterData_</a></td></tr>
+<tr class="memdesc:a8ba05e3163e23b36cfdc83be6986869e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spriter data. <br/></td></tr>
+<tr class="separator:a8ba05e3163e23b36cfdc83be6986869e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab255c33f93c7df3f5939aa3ed12c78ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab255c33f93c7df3f5939aa3ed12c78ae"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animation_set2_d.html#ab255c33f93c7df3f5939aa3ed12c78ae">hasSpriteSheet_</a></td></tr>
 <tr class="memdesc:ab255c33f93c7df3f5939aa3ed12c78ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has sprite sheet. <br/></td></tr>

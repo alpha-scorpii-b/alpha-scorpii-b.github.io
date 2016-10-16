@@ -2440,6 +2440,7 @@ Classes</h2>
 <li>bool SavePNG(const String fileName) const</li>
 <li>bool SaveTGA(const String fileName) const</li>
 <li>bool SaveJPG(const String fileName, int quality) const</li>
+<li>bool SaveDDS(const String fileName) const</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> GetPixel(int x, int y) const</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> GetPixel(int x, int y, int z) const</li>
 <li>unsigned GetPixelInt(int x, int y) const</li>
@@ -6733,6 +6734,7 @@ Classes</h2>
 <li>float LengthSquared() const</li>
 <li>float DotProduct(const Vector2&amp; rhs) const</li>
 <li>float AbsDotProduct(const Vector2&amp; rhs) const</li>
+<li>float ProjectOntoAxis(const Vector2&amp; axis) const</li>
 <li>float Angle(const Vector2&amp; rhs) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> Abs() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> Lerp(const Vector2&amp; rhs, float t) const</li>
@@ -6782,6 +6784,7 @@ Classes</h2>
 <li>float LengthSquared() const</li>
 <li>float DotProduct(const Vector3&amp; rhs) const</li>
 <li>float AbsDotProduct(const Vector3&amp; rhs) const</li>
+<li>float ProjectOntoAxis(const Vector3&amp; axis) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> CrossProduct(const Vector3&amp; rhs) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> Abs() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> Lerp(const Vector3&amp; rhs, float t) const</li>
@@ -6829,6 +6832,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> operator/(const Vector4&amp; rhs) const</li>
 <li>float DotProduct(const Vector4&amp; rhs) const</li>
 <li>float AbsDotProduct(const Vector4&amp; rhs) const</li>
+<li>float ProjectOntoAxis(const Vector3&amp; axis) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> Abs() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> Lerp(const Vector4&amp; rhs, float t) const</li>
 <li>bool Equals(const Vector4&amp; rhs) const</li>
@@ -7864,6 +7868,8 @@ Global functions</h2>
 <li>float Asin(float x)</li>
 <li>float Atan(float x)</li>
 <li>float Atan2(float y, float x)</li>
+<li>float Ceil(float x)</li>
+<li>int CeilToInt(float x)</li>
 <li>float Clamp(float value, float min, float max)</li>
 <li>int ClampInt(int value, int min, int max)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream.">VectorBuffer</a> CompressVectorBuffer(VectorBuffer&amp; src)</li>
@@ -7873,6 +7879,9 @@ Global functions</h2>
 <li>bool Equals(float lhs, float rhs)</li>
 <li>void ErrorDialog(const String title, const String message)</li>
 <li>void ErrorExit(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> message = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string.">String::EMPTY</a>, int exitCode = EXIT_FAILURE)</li>
+<li>float Floor(float x)</li>
+<li>int FloorToInt(float x)</li>
+<li>float Fract(float x)</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector.html">Vector&lt;String&gt;</a>&amp; GetArguments()</li>
 <li>Audio* GetAudio()</li>
 <li>ResourceCache* GetCache()</li>
@@ -7912,6 +7921,7 @@ Global functions</h2>
 <li>UI* GetUI()</li>
 <li>bool HasSubscribedToEvent(Object* sender, const String eventName)</li>
 <li>bool HasSubscribedToEvent(const String eventName)</li>
+<li>float InverseLerp(float lhs, float rhs, float x)</li>
 <li>bool IsAbsolutePath(const String pathName)</li>
 <li>bool IsAlpha(unsigned ch)</li>
 <li>bool IsDigit(unsigned ch)</li>
@@ -7922,20 +7932,24 @@ Global functions</h2>
 <li>int MaxInt(int lhs, int rhs)</li>
 <li>float Min(float lhs, float rhs)</li>
 <li>int MinInt(int lhs, int rhs)</li>
+<li>float Mod(float x, float y)</li>
 <li>unsigned NextPowerOfTwo(unsigned value)</li>
 <li>void OpenConsoleWindow()</li>
+<li>float Pow(float x, float y)</li>
 <li>void PrintLine(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> str, bool error = false)</li>
 <li>int Rand()</li>
 <li>float RandStandardNormal()</li>
 <li>float Random()</li>
-<li>float Random(float range)</li>
 <li>float Random(float min, float max)</li>
+<li>float Random(float range)</li>
 <li>int RandomInt(int range)</li>
 <li>int RandomInt(int min, int max)</li>
 <li>float RandomNormal(float meanValue, float variance)</li>
 <li>void RegisterEventName(const String eventName)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> RemoveTrailingSlash(const String pathName)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ReplaceExtension(const String fullPath, const String newExtension)</li>
+<li>float Round(float x)</li>
+<li>int RoundToInt(float x)</li>
 <li>unsigned SDBMHash(unsigned hash, char c)</li>
 <li>void SendEvent(const String eventName, VariantMap&amp; eventData)</li>
 <li>void SetExecuteConsoleCommands(bool enable)</li>
@@ -7945,6 +7959,10 @@ Global functions</h2>
 <li>float Sign(float value)</li>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
+<li>float Sqrt(float x)</li>
+<li>float StableRandom(const Vector2&amp; seed)</li>
+<li>float StableRandom(const Vector3&amp; seed)</li>
+<li>float StableRandom(float seed)</li>
 <li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
@@ -7972,6 +7990,29 @@ Global functions</h2>
 <li>void UnsubscribeFromEvent(Object* sender, const String eventName)</li>
 <li>void UnsubscribeFromEvent(const String eventName)</li>
 <li>void UnsubscribeFromEvents(Object* sender)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorCeil(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorCeil(const Vector4&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorCeil(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorCeilToInt(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorFloor(const Vector4&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorFloor(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorFloor(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorFloorToInt(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorLerp(const Vector4&amp; lhs, const Vector4&amp; rhs, const Vector4&amp; t)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorLerp(const Vector2&amp; lhs, const Vector2&amp; rhs, const Vector2&amp; t)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorLerp(const Vector3&amp; lhs, const Vector3&amp; rhs, const Vector3&amp; t)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorMax(const Vector4&amp; lhs, const Vector4&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorMax(const Vector2&amp; lhs, const Vector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorMax(const Vector3&amp; lhs, const Vector3&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorMax(const IntVector2&amp; lhs, const IntVector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorMin(const Vector3&amp; lhs, const Vector3&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorMin(const Vector4&amp; lhs, const Vector4&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorMin(const IntVector2&amp; lhs, const IntVector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorMin(const Vector2&amp; lhs, const Vector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorRound(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorRound(const Vector4&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorRound(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorRoundToInt(const Vector2&amp; vec)</li>
 </ul>
 <h2><a class="anchor" id="LuaScriptAPI_GlobalProperties"></a>
 Global properties</h2>
