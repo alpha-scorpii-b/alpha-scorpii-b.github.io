@@ -409,9 +409,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a7d4509e32b17bff5f3069f8fe6fd448d">GetShadowMap</a> (<a class="el" href="class_urho3_d_1_1_light.html">Light</a> *light, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, unsigned viewWidth, unsigned viewHeight)</td></tr>
 <tr class="memdesc:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a shadow map. If shadow map reuse is disabled, a different map is returned each time.  <a href="#a7d4509e32b17bff5f3069f8fe6fd448d">More...</a><br/></td></tr>
 <tr class="separator:a7d4509e32b17bff5f3069f8fe6fd448d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c45f4e35cbce39ed18336ad8ff318d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44c45f4e35cbce39ed18336ad8ff318d"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a44c45f4e35cbce39ed18336ad8ff318d">GetScreenBuffer</a> (int width, int height, unsigned format, int multiSample, bool autoResolve, bool cubemap, bool filtered, bool srgb, unsigned persistentKey=0)</td></tr>
-<tr class="memdesc:a44c45f4e35cbce39ed18336ad8ff318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a rendertarget or depth-stencil texture for deferred rendering or postprocessing. Should only be called during actual rendering, not before. <br/></td></tr>
+<tr class="memitem:a44c45f4e35cbce39ed18336ad8ff318d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#a44c45f4e35cbce39ed18336ad8ff318d">GetScreenBuffer</a> (int width, int height, unsigned format, int multiSample, bool autoResolve, bool cubemap, bool filtered, bool srgb, unsigned persistentKey=0)</td></tr>
+<tr class="memdesc:a44c45f4e35cbce39ed18336ad8ff318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a rendertarget or depth-stencil texture for deferred rendering or postprocessing. Should only be called during actual rendering, not before.  <a href="#a44c45f4e35cbce39ed18336ad8ff318d">More...</a><br/></td></tr>
 <tr class="separator:a44c45f4e35cbce39ed18336ad8ff318d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8239321fb6b01bc3be5fb4df152983f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8239321fb6b01bc3be5fb4df152983f"></a>
 <a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_renderer.html#aa8239321fb6b01bc3be5fb4df152983f">GetDepthStencil</a> (int width, int height, int multiSample, bool autoResolve)</td></tr>
@@ -1036,6 +1035,93 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a44c45f4e35cbce39ed18336ad8ff318d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> * Urho3D::Renderer::GetScreenBuffer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>multiSample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoResolve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cubemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>filtered</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>srgb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>persistentKey</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a rendertarget or depth-stencil texture for deferred rendering or postprocessing. Should only be called during actual rendering, not before. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Mipmaps disabled for now. Allow to request mipmapped buffer? </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a44c45f4e35cbce39ed18336ad8ff318d_cgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_renderer_a44c45f4e35cbce39ed18336ad8ff318d_icgraph.svg" width="100%" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a7d4509e32b17bff5f3069f8fe6fd448d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1108,7 +1194,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Update a queued viewport for rendering. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>May result in incorrect debug geometry culling if the same scene is drawn from multiple viewports </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>May result in incorrect debug geometry culling if the same scene is drawn from multiple viewports </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

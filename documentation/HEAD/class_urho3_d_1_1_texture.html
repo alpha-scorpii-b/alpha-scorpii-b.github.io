@@ -64,9 +64,8 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ac4d4951f861900cf3e713d3f069ea107">~Texture</a> ()</td></tr>
 <tr class="memdesc:ac4d4951f861900cf3e713d3f069ea107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:ac4d4951f861900cf3e713d3f069ea107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f041595c6630ece64e123cb84fa5465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f041595c6630ece64e123cb84fa5465"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a7f041595c6630ece64e123cb84fa5465">SetNumLevels</a> (unsigned levels)</td></tr>
-<tr class="memdesc:a7f041595c6630ece64e123cb84fa5465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of requested mip levels. Needs to be called before setting size. <br/></td></tr>
+<tr class="memitem:a7f041595c6630ece64e123cb84fa5465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a7f041595c6630ece64e123cb84fa5465">SetNumLevels</a> (unsigned levels)</td></tr>
+<tr class="memdesc:a7f041595c6630ece64e123cb84fa5465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of requested mip levels. Needs to be called before setting size.  <a href="#a7f041595c6630ece64e123cb84fa5465">More...</a><br/></td></tr>
 <tr class="separator:a7f041595c6630ece64e123cb84fa5465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4296f685b88bbc52db01d0353699406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4296f685b88bbc52db01d0353699406"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ab4296f685b88bbc52db01d0353699406">SetFilterMode</a> (TextureFilterMode filter)</td></tr>
@@ -160,6 +159,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aef28bee9728cf3ad69f799757a7e80f3">IsResolveDirty</a> () const </td></tr>
 <tr class="memdesc:aef28bee9728cf3ad69f799757a7e80f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether multisampled texture needs resolve. <br/></td></tr>
 <tr class="separator:aef28bee9728cf3ad69f799757a7e80f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6ae74ed7dd5f8798cb737ee0d531a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a6ae74ed7dd5f8798cb737ee0d531a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a7a6ae74ed7dd5f8798cb737ee0d531a3">GetLevelsDirty</a> () const </td></tr>
+<tr class="memdesc:a7a6ae74ed7dd5f8798cb737ee0d531a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether rendertarget mipmap levels need regenration. <br/></td></tr>
+<tr class="separator:a7a6ae74ed7dd5f8798cb737ee0d531a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e6f15cfc20a4fc50a0947e9606f83d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4e6f15cfc20a4fc50a0947e9606f83d"></a>
 <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ae4e6f15cfc20a4fc50a0947e9606f83d">GetBackupTexture</a> () const </td></tr>
 <tr class="memdesc:ae4e6f15cfc20a4fc50a0947e9606f83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return backup texture. <br/></td></tr>
@@ -244,6 +247,14 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a040af2a0a5829e90d431f983c8456857">SetResolveDirty</a> (bool enable)</td></tr>
 <tr class="memdesc:a040af2a0a5829e90d431f983c8456857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or clear the need resolve flag. Called internally by <a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a>. <br/></td></tr>
 <tr class="separator:a040af2a0a5829e90d431f983c8456857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3f8df0378acfb9c34504ddeec5c45d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee3f8df0378acfb9c34504ddeec5c45d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aee3f8df0378acfb9c34504ddeec5c45d">SetLevelsDirty</a> ()</td></tr>
+<tr class="memdesc:aee3f8df0378acfb9c34504ddeec5c45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mipmap levels dirty flag. Called internally by <a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a>. <br/></td></tr>
+<tr class="separator:aee3f8df0378acfb9c34504ddeec5c45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8672316692e6b78cb6482cbcecfe409c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8672316692e6b78cb6482cbcecfe409c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a8672316692e6b78cb6482cbcecfe409c">RegenerateLevels</a> ()</td></tr>
+<tr class="memdesc:a8672316692e6b78cb6482cbcecfe409c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regenerate mipmap levels for a rendertarget after rendering and before sampling. Called internally by <a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a>. No-op on Direct3D9. On OpenGL the texture must have been bound to work properly. <br/></td></tr>
+<tr class="separator:a8672316692e6b78cb6482cbcecfe409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_resource.html">Urho3D::Resource</a></td></tr>
 <tr class="memitem:ae3e1545370dec17a283705989a1cc682 inherit pub_methods_class_urho3_d_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3e1545370dec17a283705989a1cc682"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource.html#ae3e1545370dec17a283705989a1cc682">Resource</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -641,6 +652,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ab3cfe0ad762b0c88a79cf9e6e423b127">resolveDirty_</a></td></tr>
 <tr class="memdesc:ab3cfe0ad762b0c88a79cf9e6e423b127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multisampling resolve needed -flag. <br/></td></tr>
 <tr class="separator:ab3cfe0ad762b0c88a79cf9e6e423b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea03ebb6a4fdaa4944901093150514a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea03ebb6a4fdaa4944901093150514a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aea03ebb6a4fdaa4944901093150514a1">levelsDirty_</a></td></tr>
+<tr class="memdesc:aea03ebb6a4fdaa4944901093150514a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mipmap levels regeneration needed -flag. <br/></td></tr>
+<tr class="separator:aea03ebb6a4fdaa4944901093150514a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871713edc0c732ee10aabe80d687a200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a871713edc0c732ee10aabe80d687a200"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a871713edc0c732ee10aabe80d687a200">backupTexture_</a></td></tr>
 <tr class="memdesc:a871713edc0c732ee10aabe80d687a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backup texture. <br/></td></tr>
@@ -665,7 +680,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for texture resources. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7f041595c6630ece64e123cb84fa5465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::Texture::SetNumLevels </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>levels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set number of requested mip levels. Needs to be called before setting size. </p>
+<p>The default value (0) allocates as many mip levels as necessary to reach 1x1 size. Set value 1 to disable mipmapping. Note that rendertargets need to regenerate mips dynamically after rendering, which may cost performance. Screen buffers and shadow maps allocated by <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a> will have mipmaps disabled. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_texture_a7f041595c6630ece64e123cb84fa5465_icgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Graphics/Texture.h</li>
 <li>Source/Urho3D/Graphics/OpenGL/OGLTexture.cpp</li>
 <li>Source/Urho3D/Graphics/Texture.cpp</li>
