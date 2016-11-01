@@ -3641,7 +3641,8 @@ Classes</h2>
 <li>void SetEnabledRecursive(bool enable)</li>
 <li>void SetOwner(Connection* owner)</li>
 <li>void MarkDirty()</li>
-<li>Node* CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string.">String::EMPTY</a>, CreateMode mode = REPLICATED, unsigned id = 0)</li>
+<li>Node* CreateChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string.">String::EMPTY</a>, CreateMode mode = REPLICATED, unsigned id = 0, bool temporary = false)</li>
+<li>Node* CreateTemporaryChild(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> name = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string.">String::EMPTY</a>, CreateMode mode = REPLICATED, unsigned id = 0)</li>
 <li>void AddChild(Node* node, unsigned index = M_MAX_UNSIGNED)</li>
 <li>void RemoveChild(Node* node)</li>
 <li>void RemoveAllChildren()</li>
@@ -3720,7 +3721,7 @@ Classes</h2>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_deserializer.html" title="Abstract stream for reading.">Deserializer</a>&amp; source, <a class="el" href="class_urho3_d_1_1_scene_resolver.html" title="Utility class that resolves node &amp; component IDs after a scene or partial scene load.">SceneResolver</a>&amp; resolver, bool loadChildren = true, bool rewriteIDs = false, CreateMode mode = REPLICATED)</li>
 <li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file.">XMLElement</a>&amp; source, <a class="el" href="class_urho3_d_1_1_scene_resolver.html" title="Utility class that resolves node &amp; component IDs after a scene or partial scene load.">SceneResolver</a>&amp; resolver, bool loadChildren = true, bool rewriteIDs = false, CreateMode mode = REPLICATED)</li>
 <li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class.">JSONValue</a>&amp; source, <a class="el" href="class_urho3_d_1_1_scene_resolver.html" title="Utility class that resolves node &amp; component IDs after a scene or partial scene load.">SceneResolver</a>&amp; resolver, bool loadChildren = true, bool rewriteIDs = false, CreateMode mode = REPLICATED)</li>
-<li>Node* CreateChild(unsigned id, CreateMode mode)</li>
+<li>Node* CreateChild(unsigned id, CreateMode mode, bool temporary = false)</li>
 <li>void AddComponent(Component* component, unsigned id, CreateMode mode)</li>
 <li>bool HasTag(const String tag) const</li>
 <li>const StringVector&amp; GetTags() const</li>
