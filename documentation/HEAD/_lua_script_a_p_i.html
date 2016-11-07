@@ -5675,6 +5675,10 @@ Classes</h2>
 <li>void SetAlpha(float alpha)</li>
 <li>void SetUseHotSpot(bool useHotSpot)</li>
 <li>void SetHotSpot(const Vector2&amp; hotspot)</li>
+<li>void SetUseDrawRect(bool useDrawRect)</li>
+<li>void SetDrawRect(const Rect&amp; rect)</li>
+<li>void SetUseTextureRect(bool useTextureRect)</li>
+<li>void SetTextureRect(const Rect&amp; rect)</li>
 <li>void SetCustomMaterial(Material* customMaterial)</li>
 <li>Sprite2D* GetSprite() const</li>
 <li>BlendMode GetBlendMode() const</li>
@@ -5684,6 +5688,10 @@ Classes</h2>
 <li>float GetAlpha() const</li>
 <li>bool GetUseHotSpot() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; GetHotSpot() const</li>
+<li>bool GetUseDrawRect() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>&amp; GetDrawRect() const</li>
+<li>bool GetUseTextureRect() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>&amp; GetTextureRect() const</li>
 <li>Material* GetCustomMaterial() const</li>
 </ul>
 <p>Properties:</p>
@@ -5697,6 +5705,10 @@ Classes</h2>
 <li>bool useHotSpot</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> hotSpot</li>
 <li>Material* customMaterial</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> drawRect</li>
+<li>bool useDrawRect</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> textureRect</li>
+<li>bool useTextureRect</li>
 </ul>
 <p><a class="anchor" id="Class_StringHash"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a></h4>
@@ -6688,6 +6700,7 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_vector.html">Vector&lt;Variant&gt;</a>&amp; GetVariantVector() const</li>
 <li>const VariantMap&amp; GetVariantMap() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector.html">Vector&lt;String&gt;</a>&amp; GetStringVector() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>&amp; GetRect() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; GetIntRect() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetIntVector2() const</li>
 <li>RefCounted* GetPtr(const char* type) const</li>
@@ -7801,6 +7814,7 @@ Enumerations</h2>
 <li>int VAR_MATRIX4</li>
 <li>int VAR_DOUBLE</li>
 <li>int VAR_STRINGVECTOR</li>
+<li>int VAR_RECT</li>
 <li>int MAX_VAR_TYPES</li>
 </ul>
 <h4>VertexElementSemantic</h4>

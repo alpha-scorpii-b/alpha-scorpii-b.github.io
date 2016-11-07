@@ -238,6 +238,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> color</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries.">Material</a>@ customMaterial</li>
 <li>float drawDistance</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> drawRect</li>
 <li>bool enabled</li>
 <li>bool enabledEffective // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> entity</li>
@@ -263,9 +264,12 @@ Classes</h2>
 <li>float speed</li>
 <li><a class="el" href="class_urho3_d_1_1_sprite2_d.html" title="Sprite.">Sprite2D</a>@ sprite</li>
 <li>bool temporary</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> textureRect</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
+<li>bool useDrawRect</li>
 <li>bool useHotSpot</li>
+<li>bool useTextureRect</li>
 <li>uint viewMask</li>
 <li>int weakRefs // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_bounding_box.html" title="Three-dimensional axis-aligned bounding box.">BoundingBox</a> worldBoundingBox // readonly</li>
@@ -9735,6 +9739,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> color</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries.">Material</a>@ customMaterial</li>
 <li>float drawDistance</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> drawRect</li>
 <li>bool enabled</li>
 <li>bool enabledEffective // readonly</li>
 <li>bool flipX</li>
@@ -9757,9 +9762,12 @@ Classes</h2>
 <li>uint shadowMask</li>
 <li><a class="el" href="class_urho3_d_1_1_sprite2_d.html" title="Sprite.">Sprite2D</a>@ sprite</li>
 <li>bool temporary</li>
+<li><a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a> textureRect</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> typeName // readonly</li>
+<li>bool useDrawRect</li>
 <li>bool useHotSpot</li>
+<li>bool useTextureRect</li>
 <li>uint viewMask</li>
 <li>int weakRefs // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_bounding_box.html" title="Three-dimensional axis-aligned bounding box.">BoundingBox</a> worldBoundingBox // readonly</li>
@@ -11303,6 +11311,7 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations.">Matrix3x4</a>&amp; GetMatrix3x4() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a>&amp; GetMatrix4() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a>&amp; GetQuaternion() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>&amp; GetRect() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_resource_ref.html" title="Typed resource reference.">ResourceRef</a>&amp; GetResourceRef() const</li>
 <li>const <a class="el" href="struct_urho3_d_1_1_resource_ref_list.html" title="List of typed resource references.">ResourceRefList</a>&amp; GetResourceRefList() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp; GetString() const</li>
@@ -12675,6 +12684,7 @@ Enumerations</h2>
 <li>VAR_MATRIX4</li>
 <li>VAR_DOUBLE</li>
 <li>VAR_STRINGVECTOR</li>
+<li>VAR_RECT</li>
 </ul>
 <h4>VertexElementSemantic</h4>
 <ul>
