@@ -53,7 +53,7 @@ Building prerequisites</h2>
 <li>Display server (essential). One or more of these can be installed at the same time. When multiple display servers are available, X11 takes precedence (overridable using SDL_VIDEODRIVER environment variable during application runtime).<ul>
 <li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use SDL_OPT_VIDEO_DIRECTFB build option to enable.</li>
 <li>libegl1-mesa-dev and mir-client-platform-mesa-dev (Ubuntu only) for Mir.</li>
-<li>libegl1-mesa-dev and libwayland-dev (Debian-based) or libwayland-client-devel, libwayland-cursor-devel, and mesa-libwayland-egl-devel (RedHat-based) for Wayland.</li>
+<li>libegl1-mesa-dev, libwayland-dev, and wayland-protocols (Debian-based) or libwayland-client-devel, libwayland-cursor-devel, mesa-libwayland-egl-devel, and wayland-protocols-devel (RedHat-based) for Wayland.</li>
 <li>libx11-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libxrender-dev, libxss-dev, and libxxf86vm-dev (Debian-based) or libX11-devel, libXcursor-devel, libXext-devel, libXi-devel, libXinerama-devel, libXrandr-devel, libXrender-devel, libXScrnSaver-devel, and libXxf86vm-devel (RedHat-based) for X11 and its extensions. Alternatively, you can use xorg-devel meta package on Debian-based system, but it would install other unneeded packages as well.</li>
 </ul>
 </li>
