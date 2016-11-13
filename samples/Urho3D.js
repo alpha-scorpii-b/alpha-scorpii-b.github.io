@@ -282,6 +282,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 153881, "filename": "/CoreData.pak"}, {"audio": 0, "start": 153881, "crunched": 0, "end": 15665461, "filename": "/Data.pak"}], "remote_package_size": 15665461, "package_uuid": "5537a0c8-36bf-4f3e-a9b5-34b843288809"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 153985, "filename": "/CoreData.pak"}, {"audio": 0, "start": 153985, "crunched": 0, "end": 15665614, "filename": "/Data.pak"}], "remote_package_size": 15665614, "package_uuid": "0adb0b0f-e5ad-43f3-a333-e5b881f04bc4"});
 
 })();
