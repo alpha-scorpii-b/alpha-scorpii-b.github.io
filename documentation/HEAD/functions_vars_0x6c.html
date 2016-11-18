@@ -224,6 +224,9 @@ group: HEAD
 <li>lightingMode_
 : <a class="el" href="class_urho3_d_1_1_pass.html#a5c2581cbb1c12363bb8e1f2f2d76640e">Urho3D::Pass</a>
 </li>
+<li>lightLength_
+: <a class="el" href="class_urho3_d_1_1_light.html#abdb0a28f5e73998631a7c58be1232473">Urho3D::Light</a>
+</li>
 <li>lightMask_
 : <a class="el" href="struct_urho3_d_1_1_batch.html#abbcddea31d881e1915c19563875b0a57">Urho3D::Batch</a>
 , <a class="el" href="class_urho3_d_1_1_drawable.html#adafccc9b0b4f1cff9c9764b618cb60b4">Urho3D::Drawable</a>
@@ -248,6 +251,9 @@ group: HEAD
 </li>
 <li>lightQueues_
 : <a class="el" href="class_urho3_d_1_1_view.html#ae8dd4b9a96e707e104ffb99ae784d62a">Urho3D::View</a>
+</li>
+<li>lightRad_
+: <a class="el" href="class_urho3_d_1_1_light.html#aa6a75cb3fb08decc5a08578afbabd592">Urho3D::Light</a>
 </li>
 <li>lights_
 : <a class="el" href="class_urho3_d_1_1_drawable.html#a2c3ef78ebb6b7f1b4fe33ca56a85d46a">Urho3D::Drawable</a>
@@ -368,10 +374,10 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_font_face_free_type.html#a48f5bd78b33677127d0f147995476d61">Urho3D::FontFaceFreeType</a>
 </li>
 <li>loadParameters_
-: <a class="el" href="class_urho3_d_1_1_texture3_d.html#ab6f7e3e15573b7c0f8db9edb7a54a5b5">Urho3D::Texture3D</a>
-, <a class="el" href="class_urho3_d_1_1_texture_cube.html#ab0bf13a0c12caeeba4b47d31744d4e4f">Urho3D::TextureCube</a>
-, <a class="el" href="class_urho3_d_1_1_texture2_d.html#a25e43e601e682162da395718cd1f6aa3">Urho3D::Texture2D</a>
+: <a class="el" href="class_urho3_d_1_1_texture2_d.html#a25e43e601e682162da395718cd1f6aa3">Urho3D::Texture2D</a>
+, <a class="el" href="class_urho3_d_1_1_texture3_d.html#ab6f7e3e15573b7c0f8db9edb7a54a5b5">Urho3D::Texture3D</a>
 , <a class="el" href="class_urho3_d_1_1_texture2_d_array.html#a61254bef1a7dc71be76bdf5b252c9bd6">Urho3D::Texture2DArray</a>
+, <a class="el" href="class_urho3_d_1_1_texture_cube.html#ab0bf13a0c12caeeba4b47d31744d4e4f">Urho3D::TextureCube</a>
 </li>
 <li>loadPListFile_
 : <a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html#ada2155828609113bbe24656e2a83600d">Urho3D::SpriteSheet2D</a>
@@ -390,8 +396,8 @@ group: HEAD
 </li>
 <li>loadXMLFile_
 : <a class="el" href="class_urho3_d_1_1_material.html#a0822f9ebed0696de903d6284bb2c9ab5">Urho3D::Material</a>
-, <a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html#a61d219c9c88e021b6f52e68829299390">Urho3D::SpriteSheet2D</a>
 , <a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a8bc03c9ae2a21696e9cf43095ec6cfd1">Urho3D::TmxFile2D</a>
+, <a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html#a61d219c9c88e021b6f52e68829299390">Urho3D::SpriteSheet2D</a>
 </li>
 <li>localComponentID_
 : <a class="el" href="class_urho3_d_1_1_scene.html#ae5e72374238df0b56b3c83de77d1f034">Urho3D::Scene</a>
@@ -409,39 +415,39 @@ group: HEAD
 : <a class="el" href="struct_urho3_d_1_1_shader_parameter.html#a9cfdf82462f857a12616fadcc69dca35">Urho3D::ShaderParameter</a>
 </li>
 <li>lockCount_
-: <a class="el" href="class_urho3_d_1_1_index_buffer.html#aa0a5eb08203a9213923b213dc1710dcf">Urho3D::IndexBuffer</a>
-, <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a7485ccc91e0f1bb92e8af8fbe3292c28">Urho3D::VertexBuffer</a>
+: <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a7485ccc91e0f1bb92e8af8fbe3292c28">Urho3D::VertexBuffer</a>
+, <a class="el" href="class_urho3_d_1_1_index_buffer.html#aa0a5eb08203a9213923b213dc1710dcf">Urho3D::IndexBuffer</a>
 </li>
 <li>lockScratchData_
 : <a class="el" href="class_urho3_d_1_1_index_buffer.html#a5724e033659363ae18fba96aa22f6c92">Urho3D::IndexBuffer</a>
 , <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a30586f9a60ed95581026e10fc9d63e58">Urho3D::VertexBuffer</a>
 </li>
 <li>lockStart_
-: <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a101cdd2b337e71d9b20f88673e912b08">Urho3D::VertexBuffer</a>
-, <a class="el" href="class_urho3_d_1_1_index_buffer.html#aa516b7e6f6320450682874661c47c081">Urho3D::IndexBuffer</a>
+: <a class="el" href="class_urho3_d_1_1_index_buffer.html#aa516b7e6f6320450682874661c47c081">Urho3D::IndexBuffer</a>
+, <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a101cdd2b337e71d9b20f88673e912b08">Urho3D::VertexBuffer</a>
 </li>
 <li>lockState_
 : <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a223ca95343465263c028265e005b92bb">Urho3D::VertexBuffer</a>
 , <a class="el" href="class_urho3_d_1_1_index_buffer.html#a50a25d9e185145253805d2325d770022">Urho3D::IndexBuffer</a>
 </li>
 <li>lodBias_
-: <a class="el" href="class_urho3_d_1_1_camera.html#a3c69b7f8dabacfea0de748af823d8868">Urho3D::Camera</a>
-, <a class="el" href="class_urho3_d_1_1_drawable.html#a3781e0be1bdacb9d915c6f2d2439efab">Urho3D::Drawable</a>
+: <a class="el" href="class_urho3_d_1_1_drawable.html#a3781e0be1bdacb9d915c6f2d2439efab">Urho3D::Drawable</a>
 , <a class="el" href="class_urho3_d_1_1_terrain.html#ac4b663157006dcc64e322a19ea33f796">Urho3D::Terrain</a>
+, <a class="el" href="class_urho3_d_1_1_camera.html#a3c69b7f8dabacfea0de748af823d8868">Urho3D::Camera</a>
 </li>
 <li>lodDistance_
-: <a class="el" href="class_urho3_d_1_1_geometry.html#aa028e4a71207b1a6f10077706a2f85ca">Urho3D::Geometry</a>
+: <a class="el" href="struct_urho3_d_1_1_technique_entry.html#a8c1549da165aa364ab348d2e0a332f8b">Urho3D::TechniqueEntry</a>
 , <a class="el" href="class_urho3_d_1_1_drawable.html#a3e1d03cadfe54e898b63b7033afa224b">Urho3D::Drawable</a>
-, <a class="el" href="struct_urho3_d_1_1_technique_entry.html#a8c1549da165aa364ab348d2e0a332f8b">Urho3D::TechniqueEntry</a>
+, <a class="el" href="class_urho3_d_1_1_geometry.html#aa028e4a71207b1a6f10077706a2f85ca">Urho3D::Geometry</a>
 </li>
 <li>lodErrors_
 : <a class="el" href="class_urho3_d_1_1_terrain_patch.html#a8e57f97d4ba65163d9bd6d398651f340">Urho3D::TerrainPatch</a>
 </li>
 <li>lodLevel_
-: <a class="el" href="struct_urho3_d_1_1_navigation_geometry_info.html#a108878cba545561bd28629267a177658">Urho3D::NavigationGeometryInfo</a>
+: <a class="el" href="class_urho3_d_1_1_collision_shape.html#abfed76f932120f805a102ba80fa86135">Urho3D::CollisionShape</a>
+, <a class="el" href="struct_urho3_d_1_1_navigation_geometry_info.html#a108878cba545561bd28629267a177658">Urho3D::NavigationGeometryInfo</a>
 , <a class="el" href="struct_urho3_d_1_1_static_model_geometry_data.html#af88b93d2fb4f5de74f6bd56382cd50b2">Urho3D::StaticModelGeometryData</a>
 , <a class="el" href="class_urho3_d_1_1_terrain_patch.html#a5a68b955b43326786016985ad23000f5">Urho3D::TerrainPatch</a>
-, <a class="el" href="class_urho3_d_1_1_collision_shape.html#abfed76f932120f805a102ba80fa86135">Urho3D::CollisionShape</a>
 </li>
 <li>logFile_
 : <a class="el" href="class_urho3_d_1_1_log.html#a9b2fa07e1c9f392233c172341814e7ea">Urho3D::Log</a>
@@ -456,8 +462,8 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_collision_chain2_d.html#adc89a0f258042aa324c04bb4f0be6304">Urho3D::CollisionChain2D</a>
 </li>
 <li>looped_
-: <a class="el" href="class_urho3_d_1_1_sound.html#a961f6a5255b2a767319c6228b8277a1a">Urho3D::Sound</a>
-, <a class="el" href="class_urho3_d_1_1_animation_state.html#a6718a0b465223e93d2781ad38ada2dcf">Urho3D::AnimationState</a>
+: <a class="el" href="class_urho3_d_1_1_animation_state.html#a6718a0b465223e93d2781ad38ada2dcf">Urho3D::AnimationState</a>
+, <a class="el" href="class_urho3_d_1_1_sound.html#a961f6a5255b2a767319c6228b8277a1a">Urho3D::Sound</a>
 </li>
 <li>looping_
 : <a class="el" href="class_urho3_d_1_1_spriter_1_1_spriter_instance.html#abd04c71e71ca33c3b1c7cd96cad1156f">Urho3D::Spriter::SpriterInstance</a>
@@ -472,8 +478,8 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#a0aaca759a09fe339652ecdab79997d92">Urho3D::LuaScriptInstance</a>
 </li>
 <li>luaState_
-: <a class="el" href="class_urho3_d_1_1_lua_script.html#abd16aa9f9a071455a9ac90c17c21c1b8">Urho3D::LuaScript</a>
-, <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#aa56f2aea4a1c8c75e010f22163889c94">Urho3D::LuaScriptInstance</a>
+: <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#aa56f2aea4a1c8c75e010f22163889c94">Urho3D::LuaScriptInstance</a>
+, <a class="el" href="class_urho3_d_1_1_lua_script.html#abd16aa9f9a071455a9ac90c17c21c1b8">Urho3D::LuaScript</a>
 , <a class="el" href="class_urho3_d_1_1_lua_function.html#a67495355cdfc9d3bae76bb0848e2d5ca">Urho3D::LuaFunction</a>
 </li>
 </ul>
