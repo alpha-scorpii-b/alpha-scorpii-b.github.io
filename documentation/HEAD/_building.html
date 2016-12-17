@@ -45,14 +45,14 @@ Building prerequisites</h2>
 </ul>
 <ul>
 <li>For Linux, install one or more of the development packages from each software component category below. Building as 32-bit on a 64-bit system requires installing also the 32-bit versions of the development libraries.<ul>
-<li>Database server (optional). Disabled by default even when the development package is installed, use URHO3D_DATABASE_ODBC build option to enable. The two packages below are mutually exclusive. The ODBC driver manager is the recommended package.<ul>
+<li>Database server (optional). Disabled by default even when the development package is installed, use URHO3D_DATABASE_ODBC=1 to enable. The two packages below are mutually exclusive. The ODBC driver manager is the recommended package.<ul>
 <li>libiodbc2-dev (Debian-based) or libiodbc-devel (RedHat-based) for iODBC driver manager.</li>
 <li>unixodbc-dev (Debian-based) or unixODBC-devel (RedHat-based) for ODBC driver manager.</li>
 </ul>
 </li>
 <li>Display server (essential). One or more of these can be installed at the same time. When multiple display servers are available, X11 takes precedence (overridable using SDL_VIDEODRIVER environment variable during application runtime).<ul>
-<li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use SDL_OPT_VIDEO_DIRECTFB build option to enable.</li>
-<li>libegl1-mesa-dev and mir-client-platform-mesa-dev (Ubuntu only) for Mir.</li>
+<li>libdirectfb-dev (Debian-based only) for Direct Frame Buffer (DirectFB). Disabled by default even when installed, use VIDEO_DIRECTFB=1 to enable.</li>
+<li>libegl1-mesa-dev and mir-client-platform-mesa-dev (Ubuntu only) for Mir. Only Mir version 0.24.0 or above is supported. Disabled by default even when installed, use VIDEO_MIR=1 to enable.</li>
 <li>libegl1-mesa-dev, libwayland-dev, and wayland-protocols (Debian-based) or libwayland-client-devel, libwayland-cursor-devel, mesa-libwayland-egl-devel, and wayland-protocols-devel (RedHat-based) for Wayland.</li>
 <li>libx11-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libxrender-dev, libxss-dev, and libxxf86vm-dev (Debian-based) or libX11-devel, libXcursor-devel, libXext-devel, libXi-devel, libXinerama-devel, libXrandr-devel, libXrender-devel, libXScrnSaver-devel, and libXxf86vm-devel (RedHat-based) for X11 and its extensions. Alternatively, you can use xorg-devel meta package on Debian-based system, but it would install other unneeded packages as well.</li>
 </ul>
@@ -62,7 +62,7 @@ Building prerequisites</h2>
 <li>arts-devel (RedHat-based only) for Analog Real Time Synthesizer (aRts).</li>
 <li>libaudio-dev (Debian-based only) for Network Audio System (NAS).</li>
 <li>libesd0-dev (Debian-based) or esound-devel (RedHat-based) for Enlightened Sound Daemon (ESounD).</li>
-<li>libfusionsound-dev (Debian-based only, not available on Ubuntu) for FusionSound. Disabled by default even when installed, use SDL_OPT_FUSIONSOUND build option to enable.</li>
+<li>libfusionsound-dev (Debian-based only, not available on Ubuntu) for FusionSound. Disabled by default even when installed, use FUSIONSOUND=1 to enable.</li>
 <li>libpulse-dev (Debian-based) or pulseaudio-libs-devel (RedHat-based) for PulseAudio.</li>
 <li>libroar-dev (Debian-based only) for RoarAudio (SNDIO).</li>
 </ul>
