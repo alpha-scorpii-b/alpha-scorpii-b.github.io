@@ -47,6 +47,9 @@ group: HEAD
 <li>Direct3D11 is strict about vertex attributes referenced by shaders. A model will not render (input layout fails to create) if the shader for example asks for UV coordinates and the model does not have them. For this particular case, see the NOUV define in LitSolid shader, which is defined in the NoTexture family of techniques to prevent the attempted reading of UV coords.</li>
 </ul>
 <ul>
+<li>Nearest texture filtering with anisotropy is not supported properly on Direct3D11. Depending on the GPU, it may also fail on Direct3D9.</li>
+</ul>
+<ul>
 <li>Alpha-to-coverage is not supported on Direct3D9.</li>
 </ul>
 <ul>
