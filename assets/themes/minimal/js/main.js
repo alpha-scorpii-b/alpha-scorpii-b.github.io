@@ -55,7 +55,7 @@ $(document).ready(function() {
     $topElem = $('body');
     filter = 'filter';
   }
-  var $mediaElem = $('img, .embed-responsive > iframe');
+  var $mediaElem = $('img:not(#logo), .embed-responsive > iframe');
   var $disqusElem = $('#comments_disqus_thread');
   $('input', $themeSwitcher).each(function(i, elem) {
     var $elem = $(elem);
