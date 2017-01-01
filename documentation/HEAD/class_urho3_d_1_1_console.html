@@ -99,6 +99,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a98b1d9382ecfe63be3e010ee6328cc93">SetFocusOnShow</a> (bool enable)</td></tr>
 <tr class="memdesc:a98b1d9382ecfe63be3e010ee6328cc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to automatically focus the line edit when showing. Default true on desktops and false on mobile devices, as on mobiles it would pop up the screen keyboard. <br/></td></tr>
 <tr class="separator:a98b1d9382ecfe63be3e010ee6328cc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561505bb839161cf2db4056807ec2ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a561505bb839161cf2db4056807ec2ab0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a561505bb839161cf2db4056807ec2ab0">AddAutoComplete</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;option)</td></tr>
+<tr class="memdesc:a561505bb839161cf2db4056807ec2ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add auto complete option. <br/></td></tr>
+<tr class="separator:a561505bb839161cf2db4056807ec2ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c21b4b3a9d5f6a13c4a8cf94934781d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c21b4b3a9d5f6a13c4a8cf94934781d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a4c21b4b3a9d5f6a13c4a8cf94934781d">RemoveAutoComplete</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;option)</td></tr>
+<tr class="memdesc:a4c21b4b3a9d5f6a13c4a8cf94934781d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove auto complete option. <br/></td></tr>
+<tr class="separator:a4c21b4b3a9d5f6a13c4a8cf94934781d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c1811446ef1218f69c6a40b8898e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c1811446ef1218f69c6a40b8898e80"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a34c1811446ef1218f69c6a40b8898e80">UpdateElements</a> ()</td></tr>
 <tr class="memdesc:a34c1811446ef1218f69c6a40b8898e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update elements to layout properly. Call this after manually adjusting the sub-elements. <br/></td></tr>
@@ -329,6 +337,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#af2c9e1cc4d88cb3913eda27424e5aab0">HandleInterpreterSelected</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:af2c9e1cc4d88cb3913eda27424e5aab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle interpreter being selected on the drop down list. <br/></td></tr>
 <tr class="separator:af2c9e1cc4d88cb3913eda27424e5aab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3698780f66dcd3f7ac32b393267a86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c3698780f66dcd3f7ac32b393267a86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a0c3698780f66dcd3f7ac32b393267a86">HandleTextChanged</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
+<tr class="memdesc:a0c3698780f66dcd3f7ac32b393267a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle text change in the line edit. <br/></td></tr>
+<tr class="separator:a0c3698780f66dcd3f7ac32b393267a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a6a59af924fde47f10ba2f702a1c9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08a6a59af924fde47f10ba2f702a1c9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a08a6a59af924fde47f10ba2f702a1c9d">HandleTextFinished</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:a08a6a59af924fde47f10ba2f702a1c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle enter pressed on the line edit. <br/></td></tr>
@@ -412,6 +424,16 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#ac4525e9aebf54294f47f28a8b5b7f0da">historyPosition_</a></td></tr>
 <tr class="memdesc:ac4525e9aebf54294f47f28a8b5b7f0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command history current position. <br/></td></tr>
 <tr class="separator:ac4525e9aebf54294f47f28a8b5b7f0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1927f606b845da943ae60afc91aa406b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a1927f606b845da943ae60afc91aa406b">autoComplete_</a></td></tr>
+<tr class="separator:a1927f606b845da943ae60afc91aa406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeec2ee48954fe397adf0b151dc96bd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeec2ee48954fe397adf0b151dc96bd7"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#abeec2ee48954fe397adf0b151dc96bd7">autoCompletePosition_</a></td></tr>
+<tr class="memdesc:abeec2ee48954fe397adf0b151dc96bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command auto complete current position. <br/></td></tr>
+<tr class="separator:abeec2ee48954fe397adf0b151dc96bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b623d6968352aab3d2110e33c21c8cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b623d6968352aab3d2110e33c21c8cd"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a9b623d6968352aab3d2110e33c21c8cd">autoCompleteLine_</a></td></tr>
+<tr class="memdesc:a9b623d6968352aab3d2110e33c21c8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the original line which is being auto-completed. <br/></td></tr>
+<tr class="separator:a9b623d6968352aab3d2110e33c21c8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56c2b4392839dfc8bf38484cedf57a0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56c2b4392839dfc8bf38484cedf57a0e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a56c2b4392839dfc8bf38484cedf57a0e">printing_</a></td></tr>
 <tr class="memdesc:a56c2b4392839dfc8bf38484cedf57a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag when printing messages to prevent endless loop. <br/></td></tr>
@@ -420,6 +442,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a778ee928402eb530a4658424301bce2a">focusOnShow_</a></td></tr>
 <tr class="memdesc:a778ee928402eb530a4658424301bce2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for automatically focusing the line edit on showing the console. <br/></td></tr>
 <tr class="separator:a778ee928402eb530a4658424301bce2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90815311f4b90a33f0d2079de8da5f49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90815311f4b90a33f0d2079de8da5f49"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a90815311f4b90a33f0d2079de8da5f49">historyOrAutoCompleteChange_</a></td></tr>
+<tr class="memdesc:a90815311f4b90a33f0d2079de8da5f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal flag whether currently in an autocomplete or history change. <br/></td></tr>
+<tr class="separator:a90815311f4b90a33f0d2079de8da5f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -436,7 +462,31 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Console window with log history and command line prompt. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1927f606b845da943ae60afc91aa406b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt;<a class="el" href="class_urho3_d_1_1_string.html">String</a>&gt; Urho3D::Console::autoComplete_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Command auto complete options.</p>
+<p>down arrow key Unless currently going through history options, will loop through next auto complete options.</p>
+<p>up arrow key Unless currently going through history options, will go through previous auto complete options. When no previous options are left will start going through history options. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Engine/Console.h</li>
 <li>Source/Urho3D/Engine/Console.cpp</li>
 </ul>
