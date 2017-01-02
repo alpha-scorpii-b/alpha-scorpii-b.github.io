@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Infested: a survival horror and investigation game"
-description: "Reposted from Urho3D forum post (https://urho3d.prophpbb.com/topic1430.html)."
+description: "Reposted from Urho3D forum post (http://discourse.urho3d.io/t/infested-a-survival-horror-and-investigation-game/1380)."
 category: showcases
 image:
 tags: [unpublished game, shooter, action-adventure]
 ---
 {% include JB/setup %}
 
-Reposted from Urho3D forum [post](https://urho3d.prophpbb.com/topic1430.html). The game is made by Dave82 single-handedly in 5-6 months of his spare time. Amazing.
+Reposted from Urho3D forum [post](http://discourse.urho3d.io/t/infested-a-survival-horror-and-investigation-game/1380). The game is made by Dave82 single-handedly in 5-6 months of his spare time. Amazing.
 
 ### Video clip
 <p class="embed-responsive embed-responsive-16by9">
