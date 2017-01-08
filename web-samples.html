@@ -9,8 +9,15 @@ Copyright (c) 2014-2017 Yao Wei Tjong
 
 -->{% endcomment %}
 
+{% for lang in site.data.web.samples %}
+<h2>{{ lang[0] }}</h2>
 <ul class="clearfix col2">
-  {% for sample in site.data.web.samples %}
+  {% for sample in lang[1] %}
+  {% if lang[0] == 'Native' %}
   <li><a href="{{ BASE_PATH }}samples/{{ sample }}">{{ sample }}</a></li>
+  {% else %}
+  <li><a href="{{ BASE_PATH }}samples/{{ site.data.web.player }}?{{ sample }}">{{ sample }}</a></li>
+  {% endif %}
   {% endfor %}
 </ul>
+{% endfor %}
