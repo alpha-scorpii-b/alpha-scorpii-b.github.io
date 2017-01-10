@@ -16,7 +16,7 @@ Copyright (c) 2014-2017 Yao Wei Tjong
   {% if lang[0] == 'Native' %}
   <li><a href="{{ BASE_PATH }}samples/{{ sample }}">{{ sample }}</a></li>
   {% else %}
-  <li><a href="{{ BASE_PATH }}samples/{{ site.data.web.player }}?{{ sample }}">{{ sample }}</a></li>
+  <li><a href="{{ BASE_PATH }}samples/{{ site.data.web.player }}?{{ sample }}">{{ sample |split:'/' |last }}</a></li>
   {% endif %}
   {% endfor %}
 </ul>
