@@ -138,7 +138,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a715326007639be2a591bfa4c8cd0a511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9cfe10463876f946380c2c4b23505a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb9cfe10463876f946380c2c4b23505a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#adb9cfe10463876f946380c2c4b23505a">SetMousePosition</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;position)</td></tr>
-<tr class="memdesc:adb9cfe10463876f946380c2c4b23505a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mouse cursor position. <br/></td></tr>
+<tr class="memdesc:adb9cfe10463876f946380c2c4b23505a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mouse cursor position. Uses the backbuffer (<a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a> width/height) coordinates. <br/></td></tr>
 <tr class="separator:adb9cfe10463876f946380c2c4b23505a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136ad9cea7501ca5d032b19c73d0dcb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a136ad9cea7501ca5d032b19c73d0dcb7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a136ad9cea7501ca5d032b19c73d0dcb7">CenterMousePosition</a> ()</td></tr>
@@ -206,12 +206,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:acecabdaba17f8aaa9477b720311dccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f70542be73799aaf80057a33d5a011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1f70542be73799aaf80057a33d5a011"></a>
 <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#af1f70542be73799aaf80057a33d5a011">GetMousePosition</a> () const </td></tr>
-<tr class="memdesc:af1f70542be73799aaf80057a33d5a011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mouse position within window. Should only be used with a visible mouse cursor. <br/></td></tr>
+<tr class="memdesc:af1f70542be73799aaf80057a33d5a011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mouse position within window. Should only be used with a visible mouse cursor. Uses the backbuffer (<a class="el" href="class_urho3_d_1_1_graphics.html" title="Graphics subsystem. Manages the application window, rendering state and GPU resources.">Graphics</a> width/height) coordinates. <br/></td></tr>
 <tr class="separator:af1f70542be73799aaf80057a33d5a011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74c2b876f56bdcd8e60e22abca27e7eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74c2b876f56bdcd8e60e22abca27e7eb"></a>
-const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a74c2b876f56bdcd8e60e22abca27e7eb">GetMouseMove</a> () const </td></tr>
-<tr class="memdesc:a74c2b876f56bdcd8e60e22abca27e7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mouse movement since last frame. <br/></td></tr>
-<tr class="separator:a74c2b876f56bdcd8e60e22abca27e7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6f4863c7502fb0052718ec5a3caf88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d6f4863c7502fb0052718ec5a3caf88"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a2d6f4863c7502fb0052718ec5a3caf88">GetMouseMove</a> () const </td></tr>
+<tr class="memdesc:a2d6f4863c7502fb0052718ec5a3caf88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mouse movement since last frame. <br/></td></tr>
+<tr class="separator:a2d6f4863c7502fb0052718ec5a3caf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af048bd38ba9f214da85f1819c9775ac4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af048bd38ba9f214da85f1819c9775ac4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#af048bd38ba9f214da85f1819c9775ac4">GetMouseMoveX</a> () const </td></tr>
 <tr class="memdesc:af048bd38ba9f214da85f1819c9775ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return horizontal mouse movement since last frame. <br/></td></tr>
@@ -613,6 +613,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a5f0e70c49c6620390193d3228b561731">mouseMoveWheel_</a></td></tr>
 <tr class="memdesc:a5f0e70c49c6620390193d3228b561731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse wheel movement since last frame. <br/></td></tr>
 <tr class="separator:a5f0e70c49c6620390193d3228b561731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6892b53b84617c2ed1c9593c19065f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f6892b53b84617c2ed1c9593c19065f"></a>
+<a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a8f6892b53b84617c2ed1c9593c19065f">inputScale_</a></td></tr>
+<tr class="memdesc:a8f6892b53b84617c2ed1c9593c19065f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_input.html" title="Input subsystem. Converts operating system window messages to input state and events.">Input</a> coordinate scaling. Non-unity when window and backbuffer have different sizes (e.g. Retina display.) <br/></td></tr>
+<tr class="separator:a8f6892b53b84617c2ed1c9593c19065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27ac3a8fe8b785e09b3e0340299dc88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad27ac3a8fe8b785e09b3e0340299dc88"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#ad27ac3a8fe8b785e09b3e0340299dc88">windowID_</a></td></tr>
 <tr class="memdesc:ad27ac3a8fe8b785e09b3e0340299dc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDL window ID. <br/></td></tr>
@@ -669,6 +673,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#ac07b8dc69b67cd7c9e7d9f83cdb475ea">suppressNextMouseMove_</a></td></tr>
 <tr class="memdesc:ac07b8dc69b67cd7c9e7d9f83cdb475ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next mouse move suppress flag. <br/></td></tr>
 <tr class="separator:ac07b8dc69b67cd7c9e7d9f83cdb475ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff433729003b493d2ce85d284c8d1773"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff433729003b493d2ce85d284c8d1773"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#aff433729003b493d2ce85d284c8d1773">mouseMoveScaled_</a></td></tr>
+<tr class="memdesc:aff433729003b493d2ce85d284c8d1773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether mouse move is accumulated in backbuffer scale or not (when using events directly). <br/></td></tr>
+<tr class="separator:aff433729003b493d2ce85d284c8d1773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ad807d1f7b3312cd0117843f519205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74ad807d1f7b3312cd0117843f519205"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_input.html#a74ad807d1f7b3312cd0117843f519205">initialized_</a></td></tr>
 <tr class="memdesc:a74ad807d1f7b3312cd0117843f519205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialized flag. <br/></td></tr>
