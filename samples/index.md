@@ -10,7 +10,7 @@ Copyright (c) 2014-2017 Yao Wei Tjong
 -->{% endcomment %}
 
 {% for lang in site.data.web.samples %}
-<h2>{{ lang[0] }}</h2>
+## {{ lang[0] }}
 <ul class="clearfix col2">
   {% for sample in lang[1] %}
   {% if lang[0] == 'Native' %}
