@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: 'Building Urho3D'
+title: 'Building Urho3D library'
 group: HEAD
 ---
 <div id="top">{% comment %}<!-- do not remove this div, it is closed by doxygen! -->{% endcomment %}
@@ -15,7 +15,7 @@ group: HEAD
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Building Urho3D </div>  </div>
+<div class="title">Building Urho3D library </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h4>Table of Contents</h4>
@@ -34,7 +34,6 @@ group: HEAD
 <li class="level1"><a href="#Building_Docs">Documentation build</a></li>
 <li class="level1"><a href="#Building_Clang_tools">Clang-tools build (EXPERIMENTAL)</a></li>
 <li class="level1"><a href="#Building_Shaders">Compiling Direct3D shaders</a></li>
-<li class="level1"><a href="#Using_ccache">Using ccache</a></li>
 </ul>
 </div>
 <div class="textblock"><h2><a class="anchor" id="Building_Prerequisites"></a>
@@ -390,7 +389,7 @@ Library build</h2>
 <pre class="fragment">cd /path/to/your/Urho3D/build-tree
 DESTDIR=$(grep SYSROOT CMakeCache.txt |cut -d'=' -f2) make install
 </pre><p>Note that SYSROOT variable is empty when the build tree is not setup for cross-compiling.</p>
-<p>Refer to <a class="el" href="_using_library.html">Using Urho3D as external library</a> on how to setup your own project to use Urho3D as external library.</p>
+<p>Refer to <a class="el" href="_using_library.html">Using Urho3D library</a> on how to setup your own project to use Urho3D library.</p>
 <p>Urho3D should be built as a shared library if your application consists of multiple modules (main executable + other shared libraries) that all link to Urho3D. The reason for this is that Urho3D contains a few sensitive static data values, such as the main thread's ID, which will not work properly if they are duplicated due to multiple static linkage.</p>
 <h2><a class="anchor" id="Building_Docs"></a>
 Documentation build</h2>
@@ -405,23 +404,5 @@ Clang-tools build (EXPERIMENTAL)</h2>
 <h2><a class="anchor" id="Building_Shaders"></a>
 Compiling Direct3D shaders</h2>
 <p>When building for Direct3D9 with the Windows 8 SDK (Visual Studio 2012+), copy d3dcompiler_46.dll from "C:\Program Files (x86)\Windows Kits\8.0\bin\x86" to build tree's "bin" directory so that Urho3D executables will run correctly. When building for Direct3D11, copy d3dcompiler_47.dll from "C:\Program Files (x86)\Windows Kits\8.1\bin\x86" to the "bin" directory. In both cases, if compiling Urho3D as 64-bit, copy from the "bin\x64" directory instead.</p>
-<p>OpenGL does not depend on a separate shader compiler DLL.</p>
-<h2><a class="anchor" id="Using_ccache"></a>
-Using ccache</h2>
-<p>ccache is a compiler cache software available on Linux and Mac OS X host systems. It speeds up the build by bypassing the actual compilation and reusing the result from previous compilation when the cache is hit. As such, this is optional in the build process. In order to enable ccache support and make it work correctly when building/using Urho3D library with GCC/Clang precompiled header enabled, the following environment variables must be set: </p>
-<pre class="fragment">USE_CCACHE=1
-CCACHE_SLOPPINESS=pch_defines,time_macros
-</pre><p>Failure to do so would cause the precompiled header cannot be used by ccache. When ccache is setup correctly and with more hits than misses then even clean build can be done as fast as incremental build. The ccache support is available for native compiler toolchains as well as all cross-compiler toolchains supported by Urho3D.</p>
-<p>You may also want to set 'CCACHE_COMPRESS' environment variable to 1 to enable the compression of the cached objects. It is a trade-off between cache size and build time.</p>
-<p>Ensure the ccache symlinks directory is being added as the first entry in the 'PATH' environment variable so the symlinks of the compiler toolchain is being found first by CMake rather than the actual compiler toolchain. This is especially important for native build. Usually the 'PATH' environment variable has been set correctly for ccache in RedHat-based host system such as Fedora, but it is not the case in Debian-based host system such as Ubuntu nor in Mac OS X host system with homebrew's ccache installation. For the latter case, use "whereis -b ccache" or "brew info ccache" to find out where your ccache symlinks directory is and adjust the 'PATH' environment variable accordingly.</p>
-<p>Note that these environment variables are used by ccache itself and not by our CMake build rules, so they must remain set in the host system not only while generating the initial project file using CMake but also while building the project later.</p>
-<p>Xcode IDE and its CLI version, xcodebuild, do not work with ccache out of the box. They probably don't need it because internally they already cache the derived build data. However, if you are performing a lot of switching between different checked out versions of the project source tree or performing a lot of clean build similar to continuous integration build then probably it is more beneficial to hack Xcode/xcodebuild to use ccache. As it is a hack, do the following at your own risk.</p>
-<p>On Xcode 5: </p>
-<pre class="fragment">cd $(dirname $(xcodebuild -find-executable clang))
-for compiler in clang clang++; do mv $compiler{,.orig} &amp;&amp; ln -sf $(which ccache) $compiler; done
-</pre><p>On Xcode 6 or above: </p>
-<pre class="fragment">cd $(dirname $(xcodebuild -find-executable clang))
-sudo cp -p $(which ccache) .
-for compiler in clang clang++; do sudo mv $compiler{,.orig} &amp;&amp; sudo ln -sf $(pwd)/clang.orig /usr/local/bin/$compiler &amp;&amp; sudo ln -sf ccache $compiler; done
-</pre><p>Starting since version 6, Xcode has done something funky internally. It won't build unless the symlink resolves to an executable within its own rooted-'/usr/bin' in Xcode.app package. The 'ccache' executable is physically copied to this location for this reason. But as the result, you have to manually keep this copy up to date when upgrading ccache and also repeat the whole process again as necessary when upgrading Xcode. </p>
+<p>OpenGL does not depend on a separate shader compiler DLL. </p>
 </div></div><!-- contents -->
