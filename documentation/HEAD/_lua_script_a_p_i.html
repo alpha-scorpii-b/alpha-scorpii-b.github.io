@@ -2176,12 +2176,14 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetAbsoluteGlyphOffset() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a>&amp; GetScaledGlyphOffset() const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> GetTotalGlyphOffset(int pointSize) const</li>
+<li>FontType GetFontType() const</li>
 <li>bool IsSDFFont() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> absoluteGlyphOffset</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> scaledGlyphOffset</li>
+<li>FontType fontType (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_Frustum"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes.">Frustum</a></h4>
@@ -7479,6 +7481,13 @@ Enumerations</h2>
 <li>int FM_RESETFOCUS</li>
 <li>int FM_FOCUSABLE</li>
 <li>int FM_FOCUSABLE_DEFOCUSABLE</li>
+</ul>
+<h4>FontType</h4>
+<ul>
+<li>int FONT_NONE</li>
+<li>int FONT_FREETYPE</li>
+<li>int FONT_BITMAP</li>
+<li>int MAX_FONT_TYPES</li>
 </ul>
 <h4>FrustumPlane</h4>
 <ul>
