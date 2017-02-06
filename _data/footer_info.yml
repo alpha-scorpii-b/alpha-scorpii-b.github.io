@@ -23,28 +23,36 @@
 coverity_scan:
   project_id: 4954
 
-appveyor:
-  project_id: qk66y4cghoh06inq
-
 statcounter:
   project_id: 9450146/0/54b7eae5/0/
 
-build_statuses:
-  - branch: master
-    platform: Windows (MinGW) and Linux
-    icons: [fa fa-windows fa-lg, fa fa-linux fa-lg]
-  - branch: OSX-CI
-    platform: OSX and iOS
-    icons: [fa fa-apple fa-lg, icon-mobile-device fm-lg]
-  - branch: Android-CI
-    platform: Android
-    icons: fa fa-android fa-lg
-  - branch: RPI-CI
-    platform: Raspberry-Pi
-    icons: icon-raspberrypi fm-lg
-  - branch: ARM-CI
-    platform: Generic ARM on Linux
-    icons: fa fa-linux fa-lg
-  - branch: Web-CI
-    platform: Web
-    icons: fa fa-html5 fa-lg
+appveyor:
+  project_id: qk66y4cghoh06inq
+  build_statuses:
+    - branch: master
+      platform: Windows (VS2015)
+      icons: fa fa-windows fa-lg
+    - branch: MinGW-CI
+      platform: Windows (MinGW)
+      icons: fa fa-rebel fa-lg
+
+travis:
+  build_statuses:
+    - branch: master
+      platform: Windows (MinGW) and Linux
+      icons: [fa fa-windows fa-lg, fa fa-linux fa-lg]
+    - branch: OSX-CI
+      platform: OSX and iOS
+      icons: [fa fa-apple fa-lg, icon-mobile-device fm-lg]
+    - branch: Android-CI
+      platform: Android
+      icons: fa fa-android fa-lg
+    - branch: RPI-CI
+      platform: Raspberry-Pi
+      icons: icon-raspberrypi fm-lg
+    - branch: ARM-CI
+      platform: Generic ARM on Linux
+      icons: fa fa-linux fa-lg
+    - branch: Web-CI
+      platform: Web
+      icons: fa fa-html5 fa-lg
