@@ -109,9 +109,10 @@ Output option:
 </pre><p>The -c option enables LZ4 compression on the files. The -q option enables the operation to be performed without sending output to the standard output stream.</p>
 <h2><a class="anchor" id="Tools_RampGenerator"></a>
 RampGenerator</h2>
-<p>Creates 1D and 2D ramp textures for use in light attenuation and spotlight spot shapes.</p>
+<p>Creates 1D and 2D ramp textures for use in light attenuation and spotlight spot shapes. Alternatively bakes the image from .ies input file.</p>
 <p>Usage:</p>
 <pre class="fragment">RampGenerator &lt;output file&gt; &lt;width&gt; &lt;power&gt; [dimensions]
+RampGenerator &lt;input file&gt; &lt;output png file&gt; &lt;width&gt; [dimensions]
 </pre><p>The output is saved in PNG format. The power parameter is fed into the pow() function to determine ramp shape; higher value gives more brightness and more abrupt fade at the edge.</p>
 <h2><a class="anchor" id="Tools_SpritePacker"></a>
 SpritePacker</h2>
