@@ -31,8 +31,8 @@ group: HEAD
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_urho3_d_1_1_physics_world2_d-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::PhysicsWorld2D Class Reference</div>  </div>
@@ -741,6 +741,18 @@ Protected Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a74fbeee0a6a9216aa3465af0ae2933fc">OnSceneSet</a> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
 <tr class="memdesc:a74fbeee0a6a9216aa3465af0ae2933fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle scene being assigned. <br/></td></tr>
 <tr class="separator:a74fbeee0a6a9216aa3465af0ae2933fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9820e775c19605f5615399ec43f5f00b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9820e775c19605f5615399ec43f5f00b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a9820e775c19605f5615399ec43f5f00b">HandleSceneSubsystemUpdate</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
+<tr class="memdesc:a9820e775c19605f5615399ec43f5f00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the scene subsystem update event, step simulation here. <br/></td></tr>
+<tr class="separator:a9820e775c19605f5615399ec43f5f00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3e613d48b2d2bec40762d90c36faeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e3e613d48b2d2bec40762d90c36faeb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a2e3e613d48b2d2bec40762d90c36faeb">SendBeginContactEvents</a> ()</td></tr>
+<tr class="memdesc:a2e3e613d48b2d2bec40762d90c36faeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send begin contact events. <br/></td></tr>
+<tr class="separator:a2e3e613d48b2d2bec40762d90c36faeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70a1a3eadea7b940b514a6eb0736a0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#aa70a1a3eadea7b940b514a6eb0736a0c">SendEndContactEvents</a> ()</td></tr>
+<tr class="memdesc:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send end contact events. <br/></td></tr>
+<tr class="separator:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a0cbbf555b28aa805b164bd3591e80856 inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbbf555b28aa805b164bd3591e80856"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a0cbbf555b28aa805b164bd3591e80856">OnAttributeAnimationAdded</a> ()</td></tr>
@@ -820,26 +832,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:afa4ade46a2db8254e613c5bd8e80c875 inherit pro_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute animation removed. <br/></td></tr>
 <tr class="separator:afa4ade46a2db8254e613c5bd8e80c875 inherit pro_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af073049fc310c71a2c9eb0f8b6eb74f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af073049fc310c71a2c9eb0f8b6eb74f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_physics_world2_d.html">PhysicsWorld2D</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
-<tr class="separator:af073049fc310c71a2c9eb0f8b6eb74f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9820e775c19605f5615399ec43f5f00b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9820e775c19605f5615399ec43f5f00b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a9820e775c19605f5615399ec43f5f00b">HandleSceneSubsystemUpdate</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
-<tr class="memdesc:a9820e775c19605f5615399ec43f5f00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the scene subsystem update event, step simulation here. <br/></td></tr>
-<tr class="separator:a9820e775c19605f5615399ec43f5f00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3e613d48b2d2bec40762d90c36faeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e3e613d48b2d2bec40762d90c36faeb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a2e3e613d48b2d2bec40762d90c36faeb">SendBeginContactEvents</a> ()</td></tr>
-<tr class="memdesc:a2e3e613d48b2d2bec40762d90c36faeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send begin contact events. <br/></td></tr>
-<tr class="separator:a2e3e613d48b2d2bec40762d90c36faeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70a1a3eadea7b940b514a6eb0736a0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#aa70a1a3eadea7b940b514a6eb0736a0c">SendEndContactEvents</a> ()</td></tr>
-<tr class="memdesc:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send end contact events. <br/></td></tr>
-<tr class="separator:aa70a1a3eadea7b940b514a6eb0736a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a7f691386818804fa70eb98ba0b653e57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f691386818804fa70eb98ba0b653e57"></a>
 <a class="el" href="class_urho3_d_1_1_unique_ptr.html">UniquePtr</a>&lt; b2World &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a7f691386818804fa70eb98ba0b653e57">world_</a></td></tr>
 <tr class="memdesc:a7f691386818804fa70eb98ba0b653e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Box2D physics world. <br/></td></tr>
@@ -897,9 +891,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_physics_world2_d_1_1_contact_info.html">ContactInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac1e051e353e74321dbf2b4e10e640e1e">endContactInfos_</a></td></tr>
 <tr class="memdesc:ac1e051e353e74321dbf2b4e10e640e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">End contact infos. <br/></td></tr>
 <tr class="separator:ac1e051e353e74321dbf2b4e10e640e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a1e35dfd6ec760ebafd81fabcec2ad86b inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e35dfd6ec760ebafd81fabcec2ad86b"></a>
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a1e35dfd6ec760ebafd81fabcec2ad86b">node_</a></td></tr>
@@ -917,6 +908,40 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ae52f352027bee0fa8d538591364b554a">enabled_</a></td></tr>
 <tr class="memdesc:ae52f352027bee0fa8d538591364b554a inherit pro_attribs_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabled flag. <br/></td></tr>
 <tr class="separator:ae52f352027bee0fa8d538591364b554a inherit pro_attribs_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
+<tr class="memitem:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0bcd5941cf1a915f9379bb0b1a28fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a6c0bcd5941cf1a915f9379bb0b1a28fa">animationEnabled_</a></td></tr>
+<tr class="memdesc:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a> enabled. <br/></td></tr>
+<tr class="separator:a6c0bcd5941cf1a915f9379bb0b1a28fa inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd68e049302374d4e1031bb4f1d92bda"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#abd68e049302374d4e1031bb4f1d92bda">objectAnimation_</a></td></tr>
+<tr class="memdesc:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_animation.html" title="Skeletal animation resource.">Animation</a>. <br/></td></tr>
+<tr class="separator:abd68e049302374d4e1031bb4f1d92bda inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38659a2b55a20d17cb0b086e6152a630"></a>
+<a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a38659a2b55a20d17cb0b086e6152a630">animatedNetworkAttributes_</a></td></tr>
+<tr class="memdesc:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animated network attribute set. <br/></td></tr>
+<tr class="separator:a38659a2b55a20d17cb0b086e6152a630 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e85bc4f9402746604ad2a63d58c0cc7"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a>, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_attribute_animation_info.html">AttributeAnimationInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a7e85bc4f9402746604ad2a63d58c0cc7">attributeAnimationInfos_</a></td></tr>
+<tr class="memdesc:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute animation infos. <br/></td></tr>
+<tr class="separator:a7e85bc4f9402746604ad2a63d58c0cc7 inherit pro_attribs_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_serializable.html">Urho3D::Serializable</a></td></tr>
+<tr class="memitem:a97d257bf92214ce90db93540485010cd inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97d257bf92214ce90db93540485010cd"></a>
+<a class="el" href="class_urho3_d_1_1_unique_ptr.html">UniquePtr</a>&lt; <a class="el" href="struct_urho3_d_1_1_network_state.html">NetworkState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a97d257bf92214ce90db93540485010cd">networkState_</a></td></tr>
+<tr class="memdesc:a97d257bf92214ce90db93540485010cd inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_network.html" title="Network subsystem. Manages client-server communications using the UDP protocol.">Network</a> attribute state. <br/></td></tr>
+<tr class="separator:a97d257bf92214ce90db93540485010cd inherit pro_attribs_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
+<tr class="memitem:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7df857ddaa8c3e218c3645152dc23d"></a>
+<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a3a7df857ddaa8c3e218c3645152dc23d">context_</a></td></tr>
+<tr class="memdesc:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution context. <br/></td></tr>
+<tr class="separator:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af073049fc310c71a2c9eb0f8b6eb74f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af073049fc310c71a2c9eb0f8b6eb74f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_physics_world2_d.html">PhysicsWorld2D</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
+<tr class="separator:af073049fc310c71a2c9eb0f8b6eb74f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2D physics simulation world component. Should be added only to the root scene node. </p>
