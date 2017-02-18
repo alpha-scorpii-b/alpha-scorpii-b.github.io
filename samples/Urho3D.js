@@ -118,7 +118,7 @@ Module.expectedDataFileDownloads++;
         Module['removeRunDependency']('fp ' + that.name);
 
         this.requests[this.name] = null;
-      },
+      }
     };
 
         var files = metadata.files;
@@ -130,7 +130,7 @@ Module.expectedDataFileDownloads++;
       var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
       var IDB_RO = "readonly";
       var IDB_RW = "readwrite";
-      var DB_NAME = 'EM_PRELOAD_CACHE';
+      var DB_NAME = "EM_PRELOAD_CACHE";
       var DB_VERSION = 1;
       var METADATA_STORE_NAME = 'METADATA';
       var PACKAGE_STORE_NAME = 'PACKAGES';
@@ -167,7 +167,7 @@ Module.expectedDataFileDownloads++;
         var transaction = db.transaction([METADATA_STORE_NAME], IDB_RO);
         var metadata = transaction.objectStore(METADATA_STORE_NAME);
 
-        var getRequest = metadata.get(packageName);
+        var getRequest = metadata.get("metadata/" + packageName);
         getRequest.onsuccess = function(event) {
           var result = event.target.result;
           if (!result) {
@@ -185,7 +185,7 @@ Module.expectedDataFileDownloads++;
         var transaction = db.transaction([PACKAGE_STORE_NAME], IDB_RO);
         var packages = transaction.objectStore(PACKAGE_STORE_NAME);
 
-        var getRequest = packages.get(packageName);
+        var getRequest = packages.get("package/" + packageName);
         getRequest.onsuccess = function(event) {
           var result = event.target.result;
           callback(result);
@@ -196,13 +196,14 @@ Module.expectedDataFileDownloads++;
       };
 
       function cacheRemotePackage(db, packageName, packageData, packageMeta, callback, errback) {
-        var transaction = db.transaction([PACKAGE_STORE_NAME, METADATA_STORE_NAME], IDB_RW);
-        var packages = transaction.objectStore(PACKAGE_STORE_NAME);
-        var metadata = transaction.objectStore(METADATA_STORE_NAME);
+        var transaction_packages = db.transaction([PACKAGE_STORE_NAME], IDB_RW);
+        var packages = transaction_packages.objectStore(PACKAGE_STORE_NAME);
 
-        var putPackageRequest = packages.put(packageData, packageName);
+        var putPackageRequest = packages.put(packageData, "package/" + packageName);
         putPackageRequest.onsuccess = function(event) {
-          var putMetadataRequest = metadata.put(packageMeta, packageName);
+          var transaction_metadata = db.transaction([METADATA_STORE_NAME], IDB_RW);
+          var metadata = transaction_metadata.objectStore(METADATA_STORE_NAME);
+          var putMetadataRequest = metadata.put(packageMeta, "metadata/" + packageName);
           putMetadataRequest.onsuccess = function(event) {
             callback(packageData);
           };
@@ -282,6 +283,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 158076, "filename": "/CoreData.pak"}, {"audio": 0, "start": 158076, "crunched": 0, "end": 16656012, "filename": "/Data.pak"}], "remote_package_size": 16656012, "package_uuid": "fb4042b3-d5ff-47f5-acfa-61a55156fa9d"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 158076, "filename": "/CoreData.pak"}, {"audio": 0, "start": 158076, "crunched": 0, "end": 16676306, "filename": "/Data.pak"}], "remote_package_size": 16676306, "package_uuid": "e4380317-3e54-46ca-b592-1fca5a1c125e"});
 
 })();
