@@ -273,6 +273,8 @@ Build options</h2>
 <tr>
 <td>EMSCRIPTEN_SHARE_DATA</td><td>0</td><td>Enable sharing data file support (Emscripten cross-compiling build only) </td></tr>
 <tr>
+<td>EMSCRIPTEN_SHARE_JS </td><td>0</td><td>Share the same JS file responsible to load the shared data file (Emscripten cross-compiling build only and when enabling sharing data file support only) </td></tr>
+<tr>
 <td>EMSCRIPTEN_EMRUN_BROWSER</td><td>firefox</td><td>Specify the particular browser to be spawned by emrun during testing (Emscripten cross-compiling build only), use 'emrun &ndash;list_browsers' command to get the list of possible values </td></tr>
 <tr>
 <td>EMSCRIPTEN_SYSTEM_LIBS</td><td>-</td><td>Specify a semicolon-separated list of additional system libraries that should be pre-built using embuilder.py, by default 'dlmalloc', 'libc', 'libcxxabi', and 'gl' will be pre-built, so they should not be listed again (Emscripten cross-compiling build only); when using CMake CLI on Unix-like host systems, the semicolon may need to be properly escaped; see usage of embuilder.py to get the full list of supported system libraries </td></tr>
