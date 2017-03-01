@@ -9834,6 +9834,7 @@ Classes</h2>
 <li>double ToDouble() const</li>
 <li>float ToFloat() const</li>
 <li>int ToInt(int = 10) const</li>
+<li>int64 ToInt64(int = 10) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ToIntRect() const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ToIntVector2() const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> ToIntVector3() const</li>
@@ -9843,6 +9844,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection.">Matrix4</a> ToMatrix4() const</li>
 <li><a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector.">Quaternion</a> ToQuaternion() const</li>
 <li>uint ToUInt(int = 10) const</li>
+<li>uint64 ToUInt64(int = 10) const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ToUpper() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> ToVector2() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> ToVector3() const</li>
@@ -11326,11 +11328,13 @@ Classes</h2>
 <li>double GetDouble() const</li>
 <li>float GetFloat() const</li>
 <li>int GetInt() const</li>
+<li>int GetInt64() const</li>
 <li><a class="el" href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable.">RefCounted</a>@ GetPtr() const</li>
 <li>ScriptObject@ GetScriptObject() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> GetStringHash() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>[]@ GetStringVector() const</li>
 <li>uint GetUInt() const</li>
+<li>uint64 GetUInt64() const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a>[]@ GetVariantVector() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a>&amp; GetIntRect() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>&amp; GetIntVector2() const</li>
@@ -12018,6 +12022,7 @@ Classes</h2>
 <li>double GetDouble(const String&amp;) const</li>
 <li>float GetFloat(const String&amp;) const</li>
 <li>int GetInt(const String&amp;) const</li>
+<li>int64 GetInt64(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> GetIntRect(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> GetIntVector2(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> GetIntVector3(const String&amp;) const</li>
@@ -12030,6 +12035,7 @@ Classes</h2>
 <li><a class="el" href="struct_urho3_d_1_1_resource_ref.html" title="Typed resource reference.">ResourceRef</a> GetResourceRef() const</li>
 <li><a class="el" href="struct_urho3_d_1_1_resource_ref_list.html" title="List of typed resource references.">ResourceRefList</a> GetResourceRefList() const</li>
 <li>uint GetUInt(const String&amp;) const</li>
+<li>uint64 GetUInt64(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetValue() const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types.">Variant</a> GetVariant() const</li>
 <li>VariantMap GetVariantMap() const</li>
@@ -12056,6 +12062,7 @@ Classes</h2>
 <li>bool SetDouble(const String&amp;, double)</li>
 <li>bool SetFloat(const String&amp;, float)</li>
 <li>bool SetInt(const String&amp;, int)</li>
+<li>bool SetInt64(const String&amp;, int64)</li>
 <li>bool SetIntRect(const String&amp;, const IntRect&amp;)</li>
 <li>bool SetIntVector2(const String&amp;, const IntVector2&amp;)</li>
 <li>bool SetIntVector3(const String&amp;, const IntVector3&amp;)</li>
@@ -12066,6 +12073,7 @@ Classes</h2>
 <li>bool SetResourceRef(const String&amp;, const ResourceRef&amp;)</li>
 <li>bool SetResourceRefList(const String&amp;, const ResourceRefList&amp;)</li>
 <li>bool SetUInt(const String&amp;, uint)</li>
+<li>bool SetUInt64(const String&amp;, uint64)</li>
 <li>bool SetValue(const String&amp;)</li>
 <li>bool SetVariant(const Variant&amp;)</li>
 <li>bool SetVariantMap(const VariantMap&amp;)</li>

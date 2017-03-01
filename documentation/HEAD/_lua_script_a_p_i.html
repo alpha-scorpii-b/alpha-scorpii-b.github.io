@@ -6744,6 +6744,8 @@ Classes</h2>
 <li>void* Get(const char* type = 0) const</li>
 <li>int GetInt() const</li>
 <li>unsigned GetUInt() const</li>
+<li>int GetInt64() const</li>
+<li>int GetUInt64() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string.">StringHash</a> GetStringHash() const</li>
 <li>bool GetBool() const</li>
 <li>float GetFloat() const</li>
@@ -7214,6 +7216,8 @@ Classes</h2>
 <li>bool SetDouble(const String name, double value)</li>
 <li>bool SetUInt(const String name, unsigned value)</li>
 <li>bool SetInt(const String name, int value)</li>
+<li>bool SetUInt64(const String name, long value)</li>
+<li>bool SetInt64(const String name, long value)</li>
 <li>bool SetIntRect(const String name, const IntRect&amp; value)</li>
 <li>bool SetIntVector2(const String name, const IntVector2&amp; value)</li>
 <li>bool SetIntVector3(const String name, const IntVector3&amp; value)</li>
@@ -7253,6 +7257,8 @@ Classes</h2>
 <li>double GetDouble(const String name) const</li>
 <li>unsigned GetUInt(const String name) const</li>
 <li>int GetInt(const String name) const</li>
+<li>long GetUInt64(const String name) const</li>
+<li>long GetInt64(const String name) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> GetIntRect(const String name) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> GetIntVector2(const String name) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> GetIntVector3(const String name) const</li>
@@ -7897,6 +7903,7 @@ Enumerations</h2>
 <li>int VAR_STRINGVECTOR</li>
 <li>int VAR_RECT</li>
 <li>int VAR_INTVECTOR3</li>
+<li>int VAR_INT64</li>
 <li>int MAX_VAR_TYPES</li>
 </ul>
 <h4>VertexElementSemantic</h4>
@@ -8042,9 +8049,9 @@ Global functions</h2>
 <li>void PrintLine(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> str, bool error = false)</li>
 <li>int Rand()</li>
 <li>float RandStandardNormal()</li>
-<li>float Random()</li>
-<li>float Random(float range)</li>
 <li>float Random(float min, float max)</li>
+<li>float Random(float range)</li>
+<li>float Random()</li>
 <li>int RandomInt(int range)</li>
 <li>int RandomInt(int min, int max)</li>
 <li>float RandomNormal(float meanValue, float variance)</li>
@@ -8063,16 +8070,17 @@ Global functions</h2>
 <li>float Sin(float angle)</li>
 <li>float SmoothStep(float lhs, float rhs, float t)</li>
 <li>float Sqrt(float x)</li>
-<li>float StableRandom(float seed)</li>
 <li>float StableRandom(const Vector3&amp; seed)</li>
+<li>float StableRandom(float seed)</li>
 <li>float StableRandom(const Vector2&amp; seed)</li>
-<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>void SubscribeToEvent(const String eventName, void* functionOrFunctionName)</li>
+<li>void SubscribeToEvent(void* sender, const String eventName, void* functionOrFunctionName)</li>
 <li>float Tan(float angle)</li>
 <li>bool ToBool(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> ToColor(const String source)</li>
 <li>float ToFloat(const String source)</li>
 <li>int ToInt(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, int base = 10)</li>
+<li>int ToInt64(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, int base = 10)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values.">IntRect</a> ToIntRect(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> ToIntVector2(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> ToIntVector3(const String source)</li>
@@ -8085,41 +8093,42 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ToString(void* value)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> ToStringHex(unsigned value)</li>
 <li>unsigned ToUInt(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, int base = 10)</li>
+<li>int ToUInt64(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, int base = 10)</li>
 <li>unsigned ToUpper(unsigned ch)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> ToVector2(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> ToVector3(const String source)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> ToVector4(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> source, bool allowMissingCoords = false)</li>
 <li>void UnsubscribeFromAllEvents()</li>
 <li>void UnsubscribeFromAllEventsExcept(const Vector&lt;String&gt;&amp; exceptionNames)</li>
-<li>void UnsubscribeFromEvent(const String eventName)</li>
 <li>void UnsubscribeFromEvent(Object* sender, const String eventName)</li>
+<li>void UnsubscribeFromEvent(const String eventName)</li>
 <li>void UnsubscribeFromEvents(Object* sender)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorCeil(const Vector2&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorCeil(const Vector4&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorCeil(const Vector3&amp; vec)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorCeilToInt(const Vector2&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorCeilToInt(const Vector3&amp; vec)</li>
-<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorFloor(const Vector4&amp; vec)</li>
-<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorFloor(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorCeilToInt(const Vector2&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorFloor(const Vector2&amp; vec)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorFloorToInt(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorFloor(const Vector3&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorFloor(const Vector4&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorFloorToInt(const Vector2&amp; vec)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorFloorToInt(const Vector3&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorLerp(const Vector2&amp; lhs, const Vector2&amp; rhs, const Vector2&amp; t)</li>
-<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorLerp(const Vector3&amp; lhs, const Vector3&amp; rhs, const Vector3&amp; t)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorLerp(const Vector4&amp; lhs, const Vector4&amp; rhs, const Vector4&amp; t)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorLerp(const Vector3&amp; lhs, const Vector3&amp; rhs, const Vector3&amp; t)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorMax(const Vector4&amp; lhs, const Vector4&amp; rhs)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorMax(const IntVector3&amp; lhs, const IntVector3&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorMax(const Vector2&amp; lhs, const Vector2&amp; rhs)</li>
-<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorMax(const Vector3&amp; lhs, const Vector3&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorMax(const IntVector2&amp; lhs, const IntVector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorMax(const IntVector3&amp; lhs, const IntVector3&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorMax(const Vector3&amp; lhs, const Vector3&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorMin(const Vector2&amp; lhs, const Vector2&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorMin(const IntVector3&amp; lhs, const IntVector3&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorMin(const Vector4&amp; lhs, const Vector4&amp; rhs)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorMin(const IntVector2&amp; lhs, const IntVector2&amp; rhs)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorMin(const Vector3&amp; lhs, const Vector3&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorMin(const IntVector2&amp; lhs, const IntVector2&amp; rhs)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorRound(const Vector4&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector.">Vector2</a> VectorRound(const Vector2&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector.">Vector3</a> VectorRound(const Vector3&amp; vec)</li>
-<li><a class="el" href="class_urho3_d_1_1_vector4.html" title="Four-dimensional vector.">Vector4</a> VectorRound(const Vector4&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a> VectorRoundToInt(const Vector3&amp; vec)</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> VectorRoundToInt(const Vector2&amp; vec)</li>
 </ul>
