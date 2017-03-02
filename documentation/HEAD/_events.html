@@ -51,12 +51,14 @@ C++11 event binding and sending</h2>
 <div class="line"></div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line">SubscribeToEvent(E_UPDATE, std::bind(&amp;MyObject::OnUpdate, <span class="keyword">this</span>)));</div>
+<div class="line">SubscribeToEvent(E_UPDATE, std::bind(&amp;MyObject::OnUpdate, <span class="keyword">this</span>, std::placeholders::_1, std::placeholders::_2)));</div>
 </div><!-- fragment --><p>std::bind() discarding unneeded parameters:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::OnUpdate(VariantMap&amp; args)</div>
 <div class="line">{</div>
 <div class="line"></div>
 <div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span>std::placeholders;</div>
 <div class="line"></div>
 <div class="line">SubscribeToEvent(E_UPDATE, std::bind(&amp;Class::OnUpdate, <span class="keyword">this</span>, _2)));</div>
 </div><!-- fragment --><p>There is a convenient method to send event using C++ variadic template which reduces the amount of boilerplate code required. Using the same example above, in C++11 standard the code can be rewritten as:</p>
