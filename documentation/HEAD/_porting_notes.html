@@ -49,6 +49,7 @@ group: HEAD
 <li><a class="el" href="class_urho3_d_1_1_u_i_element.html#a9184189cc8fc88b0f37d0542059c485f" title="Create a child by loading from XML data with style. Returns the child element if successful, null if otherwise.">UIElement::LoadChildXML()</a> now returns the created element on success, instead of a boolean.</li>
 <li>Rendertargets have gained the ability to have automatically regenerated mipmaps. Screen buffers received from the <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views.">Renderer</a> subsystem have mipmaps off, but for manually created rendertargets the default is mipmaps on, like for ordinary textures. Use SetNumLevels(1) to disable.</li>
 <li>The shader function GetWorldTangent() now returns a 4-component vector.</li>
-<li>Build system - the "Urho3D-CMake-common.cmake" file is now renamed to "UrhoCommon.cmake". </li>
+<li>Build system - the "Urho3D-CMake-common.cmake" file is now renamed to "UrhoCommon.cmake".</li>
+<li><a class="el" href="class_urho3_d_1_1_static_model.html#a9cf254e2f4535519c8ee06d42d736402" title="Set model.">StaticModel::SetModel()</a> will no longer warn and redirect to <a class="el" href="class_urho3_d_1_1_animated_model.html#a67a9794df35c334b050f689bb706847a" title="Set model.">AnimatedModel::SetModel()</a> if the wrong function is called from C++ code. The AngelScript API will instead redirect properly without producing a warning. </li>
 </ul>
 </div></div><!-- contents -->
