@@ -28,7 +28,9 @@ group: HEAD
 <li class="level1"><a href="#Building_RaspberryPi">Raspberry Pi build process</a></li>
 <li class="level1"><a href="#Building_GenericARM">Generic ARM build process (EXPERIMENTAL)</a></li>
 <li class="level1"><a href="#Building_MinGW">MinGW cross-compile build process</a></li>
-<li class="level1"><a href="#Building_Emscripten">Emscripten build process</a></li>
+<li class="level1"><a href="#Building_Emscripten">Emscripten build process</a><ul><li class="level2"><a href="#Emscripten_experimental_build_options">Experimental build options</a></li>
+</ul>
+</li>
 <li class="level1"><a href="#Building_64bit">Native 64bit build</a></li>
 <li class="level1"><a href="#Building_Library">Library build</a></li>
 <li class="level1"><a href="#Building_Docs">Documentation build</a></li>
@@ -381,6 +383,11 @@ Emscripten build process</h2>
 </pre><p>After the commands finish successfully, the HTMLs and its corresponding data files should have been generated in the build tree's "bin" subdirectory, from where it can be launched in a browser.</p>
 <p>On Windows building with Emscripten requires a MinGW toolchain. The one that can be installed through emsdk may not work correctly, but for example <a href="https://sourceforge.net/projects/mingw-w64/">https://sourceforge.net/projects/mingw-w64/</a> with the default install settings has been known to work.</p>
 <p>If CMake complains that emcc is not able to compile a test program, try reactivating your current Emscripten cross-compiler tools with 'emsdk activate &lt;sdk-version&gt;', clear all generated *.cmake files as well as the CMake cache, and retry running CMake.</p>
+<h3><a class="anchor" id="Emscripten_experimental_build_options"></a>
+Experimental build options</h3>
+<ul>
+<li>EMSCRIPTEN_WASM=1. Enabling this build option to target WebAssembly. Currently the WASM output requires Firefox Nightly or Chrome Canary to run.</li>
+</ul>
 <h2><a class="anchor" id="Building_64bit"></a>
 Native 64bit build</h2>
 <p>When using MSVC compiler, Urho3D common CMake module configures the build tree to target a 32-bit platform by default. When using other non-MSVC compilers (like GCC or Clang), the module sets the default to 32-bit or 64-bit based on the chosen toolchain in the build tree. You can, however, use the "URHO3D_64BIT" build option to override the default, i.e. by setting the option to '0' (for 32-bit) and '1' (for 64-bit) explicitly.</p>
