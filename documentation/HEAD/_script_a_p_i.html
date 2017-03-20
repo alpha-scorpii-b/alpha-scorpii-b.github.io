@@ -4462,7 +4462,7 @@ Classes</h2>
 <li>void PrecacheShaders(VectorBuffer&amp;)</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a>&amp;, VariantMap&amp; = VariantMap ( ))</li>
 <li>bool SetMode(int, int)</li>
-<li>bool SetMode(int, int, bool, bool, bool, bool, bool, bool, int)</li>
+<li>bool SetMode(int, int, bool, bool, bool, bool, bool, bool, int, int, int)</li>
 <li>void SetWindowPosition(int, int)</li>
 <li>bool TakeScreenShot(<a class="el" href="class_urho3_d_1_1_image.html" title="Image resource.">Image</a>@)</li>
 <li>bool ToggleFullscreen()</li>
@@ -4473,7 +4473,7 @@ Classes</h2>
 <li>bool borderless // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> category // readonly</li>
 <li>bool deferredSupport // readonly</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> desktopResolution // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>[] desktopResolution // readonly</li>
 <li>bool deviceLost // readonly</li>
 <li>bool dither</li>
 <li>bool flushGPU</li>
@@ -4483,6 +4483,7 @@ Classes</h2>
 <li>bool initialized // readonly</li>
 <li>bool instancingSupport // readonly</li>
 <li>bool lightPrepassSupport // readonly</li>
+<li>int monitorCount // readonly</li>
 <li>int multiSample // readonly</li>
 <li>int[]@ multiSampleLevels // readonly</li>
 <li>uint numBatches // readonly</li>
@@ -4491,7 +4492,7 @@ Classes</h2>
 <li>bool readableDepthSupport // readonly</li>
 <li>int refs // readonly</li>
 <li>bool resizable // readonly</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a>[]@ resolutions // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector3.html" title="Three-dimensional vector with integer values.">IntVector3</a>[]@[] resolutions // readonly</li>
 <li>bool sRGB</li>
 <li>bool sRGBSupport // readonly</li>
 <li>bool sRGBWriteSupport // readonly</li>

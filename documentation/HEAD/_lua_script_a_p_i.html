@@ -2267,7 +2267,7 @@ Classes</h2>
 <li>void SetWindowIcon(Image* windowIcon)</li>
 <li>void SetWindowPosition(const IntVector2&amp; position)</li>
 <li>void SetWindowPosition(int x, int y)</li>
-<li>bool SetMode(int width, int height, bool fullscreen, bool borderless, bool resizable, bool highDPI, bool vsync, bool tripleBuffer, int multiSample)</li>
+<li>bool SetMode(int width, int height, bool fullscreen, bool borderless, bool resizable, bool highDPI, bool vsync, bool tripleBuffer, int multiSample, int monitor, int refreshRate)</li>
 <li>bool SetMode(int width, int height)</li>
 <li>void SetSRGB(bool enable)</li>
 <li>void SetDither(bool enable)</li>
@@ -2296,6 +2296,8 @@ Classes</h2>
 <li>bool GetResizable() const</li>
 <li>bool GetBorderless() const</li>
 <li>bool GetVSync() const</li>
+<li>int GetMonitor() const</li>
+<li>int GetRefreshRate() const</li>
 <li>bool GetTripleBuffer() const</li>
 <li>bool GetSRGB() const</li>
 <li>bool GetDither() const</li>
@@ -2314,7 +2316,8 @@ Classes</h2>
 <li>bool GetReadableDepthSupport() const</li>
 <li>bool GetSRGBSupport() const</li>
 <li>bool GetSRGBWriteSupport() const</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> GetDesktopResolution() const</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> GetDesktopResolution(int monitor) const</li>
+<li>int GetMonitorCount() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> GetShaderCacheDir() const</li>
 <li>unsigned GetAlphaFormat()</li>
 <li>unsigned GetLuminanceFormat()</li>
@@ -2349,6 +2352,8 @@ Classes</h2>
 <li>bool resizable (readonly)</li>
 <li>bool borderless (readonly)</li>
 <li>bool vSync (readonly)</li>
+<li>int refreshRate (readonly)</li>
+<li>int monitor (readonly)</li>
 <li>bool tripleBuffer (readonly)</li>
 <li>bool sRGB</li>
 <li>bool dither</li>
@@ -2367,7 +2372,7 @@ Classes</h2>
 <li>bool readableDepthSupport (readonly)</li>
 <li>bool sRGBSupport (readonly)</li>
 <li>bool sRGBWriteSupport (readonly)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values.">IntVector2</a> desktopResolution (readonly)</li>
+<li>int monitorCount (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> shaderCacheDir</li>
 </ul>
 <p><a class="anchor" id="Class_HierarchyContainer"></a> </p>

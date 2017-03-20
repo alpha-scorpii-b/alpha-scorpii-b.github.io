@@ -85,10 +85,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a9f1be1b0665ae339705c5e6e2c074e31">SetWindowPosition</a> (int x, int y)</td></tr>
 <tr class="memdesc:a9f1be1b0665ae339705c5e6e2c074e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set window position. Sets initial position if window is not created yet. <br/></td></tr>
 <tr class="separator:a9f1be1b0665ae339705c5e6e2c074e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee76aad0cd1ca9c8793f7b99aafe229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acee76aad0cd1ca9c8793f7b99aafe229"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#acee76aad0cd1ca9c8793f7b99aafe229">SetMode</a> (int width, int height, bool fullscreen, bool borderless, bool resizable, bool highDPI, bool vsync, bool tripleBuffer, int multiSample)</td></tr>
-<tr class="memdesc:acee76aad0cd1ca9c8793f7b99aafe229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen mode. Return true if successful. <br/></td></tr>
-<tr class="separator:acee76aad0cd1ca9c8793f7b99aafe229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac131622deee0f32dffe86943d704f95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac131622deee0f32dffe86943d704f95"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aac131622deee0f32dffe86943d704f95">SetMode</a> (int width, int height, bool fullscreen, bool borderless, bool resizable, bool highDPI, bool vsync, bool tripleBuffer, int multiSample, int monitor, int refreshRate)</td></tr>
+<tr class="memdesc:aac131622deee0f32dffe86943d704f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen mode. Return true if successful. <br/></td></tr>
+<tr class="separator:aac131622deee0f32dffe86943d704f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb1ce37325a5ef2f7ba0e3f847b425f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bb1ce37325a5ef2f7ba0e3f847b425f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a6bb1ce37325a5ef2f7ba0e3f847b425f">SetMode</a> (int width, int height)</td></tr>
 <tr class="memdesc:a6bb1ce37325a5ef2f7ba0e3f847b425f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set screen resolution only. Return true if successful. <br/></td></tr>
@@ -440,6 +440,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a2a7ebd34a76cd41c931a7806b087196a">GetVSync</a> () const </td></tr>
 <tr class="memdesc:a2a7ebd34a76cd41c931a7806b087196a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether vertical sync is on. <br/></td></tr>
 <tr class="separator:a2a7ebd34a76cd41c931a7806b087196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ed207a5eca8ab567ec518ecea5b021"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9ed207a5eca8ab567ec518ecea5b021"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ad9ed207a5eca8ab567ec518ecea5b021">GetRefreshRate</a> () const </td></tr>
+<tr class="memdesc:ad9ed207a5eca8ab567ec518ecea5b021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return refresh rate when using vsync in fullscreen. <br/></td></tr>
+<tr class="separator:ad9ed207a5eca8ab567ec518ecea5b021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bcdacfbe642ab4593640bdff3e3cbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63bcdacfbe642ab4593640bdff3e3cbf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a63bcdacfbe642ab4593640bdff3e3cbf">GetMonitor</a> () const </td></tr>
+<tr class="memdesc:a63bcdacfbe642ab4593640bdff3e3cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current monitor index. Effective on in fullscreen. <br/></td></tr>
+<tr class="separator:a63bcdacfbe642ab4593640bdff3e3cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a66e6371c0581fe7c563920acbe948f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a66e6371c0581fe7c563920acbe948f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a5a66e6371c0581fe7c563920acbe948f">GetTripleBuffer</a> () const </td></tr>
 <tr class="memdesc:a5a66e6371c0581fe7c563920acbe948f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether triple buffering is enabled. <br/></td></tr>
@@ -520,18 +528,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a13491424fa0036c13b2f495823065d31">GetSRGBWriteSupport</a> () const </td></tr>
 <tr class="memdesc:a13491424fa0036c13b2f495823065d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether sRGB conversion on rendertarget writing is supported. <br/></td></tr>
 <tr class="separator:a13491424fa0036c13b2f495823065d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508974983edf6f60a260bc3c0f0977fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a508974983edf6f60a260bc3c0f0977fc"></a>
-<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a508974983edf6f60a260bc3c0f0977fc">GetResolutions</a> () const </td></tr>
-<tr class="memdesc:a508974983edf6f60a260bc3c0f0977fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return supported fullscreen resolutions. Will be empty if listing the resolutions is not supported on the platform (e.g. Web). <br/></td></tr>
-<tr class="separator:a508974983edf6f60a260bc3c0f0977fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09a1e2ebeab8033b0dd97233285f4f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09a1e2ebeab8033b0dd97233285f4f5"></a>
+<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ac09a1e2ebeab8033b0dd97233285f4f5">GetResolutions</a> (int monitor) const </td></tr>
+<tr class="memdesc:ac09a1e2ebeab8033b0dd97233285f4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return supported fullscreen resolutions (third component is refreshRate). Will be empty if listing the resolutions is not supported on the platform (e.g. Web). <br/></td></tr>
+<tr class="separator:ac09a1e2ebeab8033b0dd97233285f4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d355b3dfe8646161038c4488e79298"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90d355b3dfe8646161038c4488e79298"></a>
 <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a90d355b3dfe8646161038c4488e79298">GetMultiSampleLevels</a> () const </td></tr>
 <tr class="memdesc:a90d355b3dfe8646161038c4488e79298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return supported multisampling levels. <br/></td></tr>
 <tr class="separator:a90d355b3dfe8646161038c4488e79298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dca84d5917f34adf3c797aa9356c8e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dca84d5917f34adf3c797aa9356c8e3"></a>
-<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a1dca84d5917f34adf3c797aa9356c8e3">GetDesktopResolution</a> () const </td></tr>
-<tr class="memdesc:a1dca84d5917f34adf3c797aa9356c8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the desktop resolution. <br/></td></tr>
-<tr class="separator:a1dca84d5917f34adf3c797aa9356c8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0541dcf5db637367a7cc5efe58de0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d0541dcf5db637367a7cc5efe58de0c"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a8d0541dcf5db637367a7cc5efe58de0c">GetDesktopResolution</a> (int monitor) const </td></tr>
+<tr class="memdesc:a8d0541dcf5db637367a7cc5efe58de0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the desktop resolution. <br/></td></tr>
+<tr class="separator:a8d0541dcf5db637367a7cc5efe58de0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae7ebe111cad0946c6ef4a70a9bc678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acae7ebe111cad0946c6ef4a70a9bc678"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#acae7ebe111cad0946c6ef4a70a9bc678">GetMonitorCount</a> () const </td></tr>
+<tr class="memdesc:acae7ebe111cad0946c6ef4a70a9bc678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of currently connected monitors. <br/></td></tr>
+<tr class="separator:acae7ebe111cad0946c6ef4a70a9bc678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb63409fad57945e46f468cd4c236c85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb63409fad57945e46f468cd4c236c85"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#afb63409fad57945e46f468cd4c236c85">GetFormat</a> (CompressedFormat format) const </td></tr>
 <tr class="memdesc:afb63409fad57945e46f468cd4c236c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return hardware format for a compressed image format, or 0 if unsupported. <br/></td></tr>
@@ -1010,10 +1022,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#aa1c6f1a50e12b8b13ffb1973e8e2c0c4">CreateWindowIcon</a> ()</td></tr>
 <tr class="memdesc:aa1c6f1a50e12b8b13ffb1973e8e2c0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the application window icon. <br/></td></tr>
 <tr class="separator:aa1c6f1a50e12b8b13ffb1973e8e2c0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cfc1ccf90ba9937011d39e9573d439b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cfc1ccf90ba9937011d39e9573d439b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a6cfc1ccf90ba9937011d39e9573d439b">AdjustWindow</a> (int &amp;newWidth, int &amp;newHeight, bool &amp;newFullscreen, bool &amp;newBorderless)</td></tr>
-<tr class="memdesc:a6cfc1ccf90ba9937011d39e9573d439b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the window for new resolution and fullscreen mode. <br/></td></tr>
-<tr class="separator:a6cfc1ccf90ba9937011d39e9573d439b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d9f600a60a64790818080295e54436"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0d9f600a60a64790818080295e54436"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#ad0d9f600a60a64790818080295e54436">AdjustWindow</a> (int &amp;newWidth, int &amp;newHeight, bool &amp;newFullscreen, bool &amp;newBorderless, int &amp;monitor)</td></tr>
+<tr class="memdesc:ad0d9f600a60a64790818080295e54436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the window for new resolution and fullscreen mode. <br/></td></tr>
+<tr class="separator:ad0d9f600a60a64790818080295e54436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8754f34d91e07c2cb870387dbbfe375b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8754f34d91e07c2cb870387dbbfe375b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a8754f34d91e07c2cb870387dbbfe375b">CreateDevice</a> (int width, int height, int multiSample)</td></tr>
 <tr class="memdesc:a8754f34d91e07c2cb870387dbbfe375b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the Direct3D11 device and swap chain. Requires an open window. Can also be called again to recreate swap chain. Return true on success. <br/></td></tr>
@@ -1173,6 +1185,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a1aa8f7d078dad9db579cde45f27af05e">vsync_</a></td></tr>
 <tr class="memdesc:a1aa8f7d078dad9db579cde45f27af05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical sync flag. <br/></td></tr>
 <tr class="separator:a1aa8f7d078dad9db579cde45f27af05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1510814e039789e2cbe2c2f7b487e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b1510814e039789e2cbe2c2f7b487e5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a0b1510814e039789e2cbe2c2f7b487e5">refreshRate_</a></td></tr>
+<tr class="memdesc:a0b1510814e039789e2cbe2c2f7b487e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh rate in Hz. Only used in fullscreen, 0 when windowed. <br/></td></tr>
+<tr class="separator:a0b1510814e039789e2cbe2c2f7b487e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9deb215126e8fd93e9c049cafa62ed2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9deb215126e8fd93e9c049cafa62ed2b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a9deb215126e8fd93e9c049cafa62ed2b">monitor_</a></td></tr>
+<tr class="memdesc:a9deb215126e8fd93e9c049cafa62ed2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor index. Only used in fullscreen, 0 when windowed. <br/></td></tr>
+<tr class="separator:a9deb215126e8fd93e9c049cafa62ed2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de543c8a75313af0f222537c8cc3983"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7de543c8a75313af0f222537c8cc3983"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_graphics.html#a7de543c8a75313af0f222537c8cc3983">tripleBuffer_</a></td></tr>
 <tr class="memdesc:a7de543c8a75313af0f222537c8cc3983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triple buffering flag. <br/></td></tr>
