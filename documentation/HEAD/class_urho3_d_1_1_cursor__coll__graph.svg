@@ -379,20 +379,20 @@ var sectionId = 'dynsection-1';
 <!-- Node20 -->
 <g id="node47" class="node"><title>Node20</title>
 <a xlink:href="class_urho3_d_1_1_int_vector2.html" target="_top" xlink:title="Two&#45;dimensional vector with integer values.">
-<polygon fill="none" stroke="black" points="821,-806.211 821,-827.211 929,-827.211 929,-806.211 821,-806.211"/>
-<text text-anchor="middle" x="875" y="-814.211" font-family="FreeSans" font-size="10.00">Urho3D::IntVector2</text>
+<polygon fill="none" stroke="black" points="821,-774.211 821,-795.211 929,-795.211 929,-774.211 821,-774.211"/>
+<text text-anchor="middle" x="875" y="-782.211" font-family="FreeSans" font-size="10.00">Urho3D::IntVector2</text>
 </a>
 </g>
 <!-- Node20&#45;&gt;Node2 -->
 <g id="edge76" class="edge"><title>Node20&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M898.997,-833.047C921.78,-847.498 957.571,-867.522 992,-875.711 1062.05,-892.373 1084.64,-895.035 1154,-875.711 1275.65,-841.818 1397.23,-742.235 1435.03,-709.37"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="900.651,-829.948 890.358,-827.437 896.838,-835.819 900.651,-829.948"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M890.721,-802.734C911.361,-824.877 949.945,-861.282 992,-875.711 1060.1,-899.078 1084.64,-895.035 1154,-875.711 1275.65,-841.818 1397.23,-742.235 1435.03,-709.37"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="893.27,-800.335 883.955,-795.288 888.089,-805.042 893.27,-800.335"/>
 <text text-anchor="middle" x="1230" y="-873.711" font-family="FreeSans" font-size="10.00"> hoverOffset_</text>
 </g>
 <!-- Node20&#45;&gt;Node3 -->
 <g id="edge56" class="edge"><title>Node20&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M911.355,-801.988C931.453,-792.585 955.935,-778.922 974,-761.711 984.983,-751.247 979.835,-741.774 992,-732.711 1051.83,-688.14 1097.72,-737.695 1154,-688.711 1207.22,-642.383 1224.27,-552.284 1228.68,-521.4"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="909.852,-798.827 902.179,-806.132 912.733,-805.206 909.852,-798.827"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M939.008,-777.587C951.391,-774.141 963.701,-769.092 974,-761.711 986.331,-752.875 979.835,-741.774 992,-732.711 1051.83,-688.14 1097.72,-737.695 1154,-688.711 1207.22,-642.383 1224.27,-552.284 1228.68,-521.4"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="937.976,-774.236 929.099,-780.02 939.645,-781.034 937.976,-774.236"/>
 <text text-anchor="middle" x="1073" y="-866.711" font-family="FreeSans" font-size="10.00"> maxSize_</text>
 <text text-anchor="middle" x="1073" y="-853.711" font-family="FreeSans" font-size="10.00">childOffset_</text>
 <text text-anchor="middle" x="1073" y="-840.711" font-family="FreeSans" font-size="10.00">minOffset_</text>
@@ -407,9 +407,14 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node20&#45;&gt;Node20 -->
 <g id="edge58" class="edge"><title>Node20&#45;&gt;Node20</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M838.035,-836.01C839.554,-841.492 851.875,-845.711 875,-845.711 909.418,-845.711 919.905,-836.364 906.46,-827.419"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="841.092,-837.727 843.54,-827.419 835.198,-833.951 841.092,-837.727"/>
-<text text-anchor="middle" x="875" y="-849.711" font-family="FreeSans" font-size="10.00"> ZERO</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M838.035,-804.01C839.554,-809.492 851.875,-813.711 875,-813.711 909.418,-813.711 919.905,-804.364 906.46,-795.419"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="841.092,-805.727 843.54,-795.419 835.198,-801.951 841.092,-805.727"/>
+<text text-anchor="middle" x="875" y="-882.711" font-family="FreeSans" font-size="10.00"> ONE</text>
+<text text-anchor="middle" x="875" y="-869.711" font-family="FreeSans" font-size="10.00">DOWN</text>
+<text text-anchor="middle" x="875" y="-856.711" font-family="FreeSans" font-size="10.00">RIGHT</text>
+<text text-anchor="middle" x="875" y="-843.711" font-family="FreeSans" font-size="10.00">LEFT</text>
+<text text-anchor="middle" x="875" y="-830.711" font-family="FreeSans" font-size="10.00">ZERO</text>
+<text text-anchor="middle" x="875" y="-817.711" font-family="FreeSans" font-size="10.00">UP</text>
 </g>
 <!-- Node21 -->
 <g id="node50" class="node"><title>Node21</title>
@@ -463,8 +468,8 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node22&#45;&gt;Node24 -->
 <g id="edge74" class="edge"><title>Node22&#45;&gt;Node24</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M494.62,-532.524C560.856,-571.025 725.639,-670.444 758,-724.711 790.809,-779.729 740.124,-814.643 776,-867.711 790.866,-889.701 817.584,-903.794 839.52,-912.203"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="495.999,-529.278 485.591,-527.298 492.493,-535.337 495.999,-529.278"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M494.701,-532.477C561.116,-570.871 726.273,-670.071 758,-724.711 777.742,-758.711 749.869,-871.337 776,-900.711 788.931,-915.248 809.144,-921.334 827.943,-923.557"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="496.059,-529.22 485.646,-527.266 492.567,-535.287 496.059,-529.22"/>
 <text text-anchor="middle" x="672" y="-728.711" font-family="FreeSans" font-size="10.00"> borderColor_</text>
 </g>
 <!-- Node23 -->

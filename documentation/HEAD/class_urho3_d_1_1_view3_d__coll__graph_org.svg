@@ -78,7 +78,7 @@
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge8" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M454.517,-465.522C460.31,-462.733 465.656,-459.116 470,-454.433 497.446,-424.847 467.131,-399.975 488,-365.433 508.747,-331.093 534.588,-341.014 558,-308.433 571.296,-289.931 562.033,-278.434 576,-260.433 589.647,-242.844 611.039,-228.906 627.145,-220.077"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M454.517,-465.522C460.31,-462.733 465.656,-459.116 470,-454.433 497.446,-424.847 466.982,-399.884 488,-365.433 508.75,-331.421 534.719,-341.765 558,-309.433 571.557,-290.605 561.839,-278.811 576,-260.433 589.588,-242.798 610.987,-228.866 627.111,-220.05"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="453.124,-462.309 445.126,-469.257 455.711,-468.813 453.124,-462.309"/>
 <text text-anchor="middle" x="523" y="-382.433" font-family="FreeSans" font-size="10.00"> clipBorder_</text>
 <text text-anchor="middle" x="523" y="-369.433" font-family="FreeSans" font-size="10.00">layoutBorder_</text>
@@ -111,17 +111,17 @@
 </g>
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge30" class="edge"><title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.122,-83.9621C553.29,-75.7603 721.566,-68.9521 856,-112.433 1004.56,-160.484 1154.32,-283.893 1196.99,-320.832"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="462.677,-80.4884 453.051,-84.9138 463.336,-87.4574 462.677,-80.4884"/>
-<text text-anchor="middle" x="798" y="-155.433" font-family="FreeSans" font-size="10.00"> dragBeginPosition_</text>
-<text text-anchor="middle" x="798" y="-142.433" font-family="FreeSans" font-size="10.00">modalFrameSize_</text>
-<text text-anchor="middle" x="798" y="-129.433" font-family="FreeSans" font-size="10.00">dragBeginCursor_</text>
-<text text-anchor="middle" x="798" y="-116.433" font-family="FreeSans" font-size="10.00">dragBeginSize_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.126,-84.1591C553.299,-76.2217 721.581,-69.8609 856,-113.433 1004.34,-161.519 1154.25,-284.189 1196.98,-320.899"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="462.694,-80.6839 453.054,-85.0811 463.332,-87.6548 462.694,-80.6839"/>
+<text text-anchor="middle" x="798" y="-156.433" font-family="FreeSans" font-size="10.00"> dragBeginPosition_</text>
+<text text-anchor="middle" x="798" y="-143.433" font-family="FreeSans" font-size="10.00">modalFrameSize_</text>
+<text text-anchor="middle" x="798" y="-130.433" font-family="FreeSans" font-size="10.00">dragBeginCursor_</text>
+<text text-anchor="middle" x="798" y="-117.433" font-family="FreeSans" font-size="10.00">dragBeginSize_</text>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge26" class="edge"><title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.134,-92.6131C492.405,-94.2866 527.309,-97.8876 558,-105.433 697.305,-139.681 730.779,-159.444 856,-229.433 880.802,-243.295 907.074,-263.511 922.205,-275.772"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="463.197,-89.1118 453.032,-92.0982 462.841,-96.1027 463.197,-89.1118"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.144,-92.5726C492.417,-94.238 527.32,-97.8437 558,-105.433 697.422,-139.921 730.437,-160.707 856,-230.433 880.545,-244.063 906.685,-263.741 921.894,-275.776"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="463.205,-89.0713 453.041,-92.0611 462.851,-96.0624 463.205,-89.0713"/>
 <text text-anchor="middle" x="649" y="-162.433" font-family="FreeSans" font-size="10.00"> hoverOffset_</text>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
@@ -144,7 +144,12 @@
 <g id="edge16" class="edge"><title>Node6&#45;&gt;Node6</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M376.148,-111.86C377.911,-116.782 385.528,-120.433 399,-120.433 420.555,-120.433 427.122,-111.086 418.702,-102.141"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="379.544,-112.733 379.298,-102.141 372.885,-110.575 379.544,-112.733"/>
-<text text-anchor="middle" x="399" y="-124.433" font-family="FreeSans" font-size="10.00"> ZERO</text>
+<text text-anchor="middle" x="399" y="-189.433" font-family="FreeSans" font-size="10.00"> ONE</text>
+<text text-anchor="middle" x="399" y="-176.433" font-family="FreeSans" font-size="10.00">DOWN</text>
+<text text-anchor="middle" x="399" y="-163.433" font-family="FreeSans" font-size="10.00">RIGHT</text>
+<text text-anchor="middle" x="399" y="-150.433" font-family="FreeSans" font-size="10.00">LEFT</text>
+<text text-anchor="middle" x="399" y="-137.433" font-family="FreeSans" font-size="10.00">ZERO</text>
+<text text-anchor="middle" x="399" y="-124.433" font-family="FreeSans" font-size="10.00">UP</text>
 </g>
 <!-- Node7 -->
 <g id="node15" class="node"><title>Node7</title>
@@ -155,17 +160,17 @@
 </g>
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge32" class="edge"><title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M429.299,-288.229C446.162,-295.72 467.774,-304.121 488,-308.433 526.291,-316.597 536.876,-310.957 576,-312.433 794.636,-320.683 1055.86,-327.588 1161.35,-330.254"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="430.516,-284.937 419.967,-283.962 427.606,-291.303 430.516,-284.937"/>
-<text text-anchor="middle" x="798" y="-338.433" font-family="FreeSans" font-size="10.00"> modalShadeColor_</text>
-<text text-anchor="middle" x="798" y="-325.433" font-family="FreeSans" font-size="10.00">modalFrameColor_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M428.559,-288.438C445.497,-296.25 467.42,-305.063 488,-309.433 526.28,-317.561 536.886,-311.179 576,-312.433 794.679,-319.442 1055.88,-327.035 1161.35,-330.069"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="429.744,-285.126 419.21,-283.995 426.74,-291.449 429.744,-285.126"/>
+<text text-anchor="middle" x="798" y="-337.433" font-family="FreeSans" font-size="10.00"> modalShadeColor_</text>
+<text text-anchor="middle" x="798" y="-324.433" font-family="FreeSans" font-size="10.00">modalFrameColor_</text>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge18" class="edge"><title>Node7&#45;&gt;Node4</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M451.537,-278.776C483.099,-280.284 523.664,-279.18 558,-268.433 574.352,-263.315 613.448,-235.654 634.684,-220.09"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="451.386,-275.261 441.2,-278.175 450.98,-282.249 451.386,-275.261"/>
-<text text-anchor="middle" x="523" y="-295.433" font-family="FreeSans" font-size="10.00"> derivedColor_</text>
-<text text-anchor="middle" x="523" y="-282.433" font-family="FreeSans" font-size="10.00">color_</text>
+<text text-anchor="middle" x="523" y="-296.433" font-family="FreeSans" font-size="10.00"> derivedColor_</text>
+<text text-anchor="middle" x="523" y="-283.433" font-family="FreeSans" font-size="10.00">color_</text>
 </g>
 <!-- Node7&#45;&gt;Node7 -->
 <g id="edge20" class="edge"><title>Node7&#45;&gt;Node7</title>
