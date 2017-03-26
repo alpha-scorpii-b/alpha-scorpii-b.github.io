@@ -197,7 +197,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_FILEWATCHER </td><td>1</td><td>Enable filewatcher support </td></tr>
 <tr>
-<td>URHO3D_PACKAGING </td><td>*</td><td>Enable resources packaging support, on Web platform default to 1, on other platforms default to 0 </td></tr>
+<td>URHO3D_PACKAGING </td><td>0</td><td>Enable resources packaging support </td></tr>
 <tr>
 <td>URHO3D_PROFILING </td><td>1</td><td>Enable profiling support </td></tr>
 <tr>
@@ -219,7 +219,7 @@ Build options</h2>
 <tr>
 <td>URHO3D_MACOSX_BUNDLE </td><td>0</td><td>Use MACOSX_BUNDLE when setting up macOS executable targets (macOS platform only) </td></tr>
 <tr>
-<td>URHO3D_LIB_TYPE </td><td>STATIC</td><td>Specify Urho3D library type, possible values are STATIC (default) and SHARED </td></tr>
+<td>URHO3D_LIB_TYPE </td><td>STATIC</td><td>Specify Urho3D library type, possible values are STATIC (default), SHARED, and MODULE; the last value is available for Emscripten only </td></tr>
 <tr>
 <td>URHO3D_SCP_TO_TARGET </td><td>-</td><td>Use scp to transfer executables to target system (non-Android cross-compiling build only), SSH digital key must be setup first for this to work, typical value has a pattern of usr:remote-loc </td></tr>
 <tr>
@@ -273,7 +273,7 @@ Build options</h2>
 <tr>
 <td>EMSCRIPTEN_WASM </td><td>0</td><td>Enable Binaryen support to generate output to WASM (WebAssembly) format (Emscripten only) </td></tr>
 <tr>
-<td>EMSCRIPTEN_ALLOW_MEMORY_GROWTH</td><td>*</td><td>Enable memory growing based on application demand when targeting asm.js, it is not set by default due to performance penalty (Emscripten only) </td></tr>
+<td>EMSCRIPTEN_ALLOW_MEMORY_GROWTH</td><td>*</td><td>Enable memory growing based on application demand when targeting asm.js, it is not set by default due to performance penalty (Emscripten with STATIC or SHARED library type only) </td></tr>
 <tr>
 <td>EMSCRIPTEN_TOTAL_MEMORY</td><td>*</td><td>Specify the total size of memory to be used (Emscripten only); default to 128 MB, must be in multiple of 64 KB when targeting WebAssembly and in multiple of 16 MB when targeting asm.js </td></tr>
 <tr>
@@ -387,6 +387,7 @@ Emscripten build process</h2>
 Experimental build options</h3>
 <ul>
 <li>EMSCRIPTEN_WASM=1. Enabling this build option to target WebAssembly. Currently the WASM output requires Firefox Nightly or Chrome Canary to run.</li>
+<li>URHO3D_LIB_TYPE=MODULE. For fast iteration during development time. This build option should be avoided for for production due to reduce throughput.</li>
 </ul>
 <h2><a class="anchor" id="Building_64bit"></a>
 Native 64bit build</h2>
