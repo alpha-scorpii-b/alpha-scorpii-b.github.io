@@ -67,6 +67,9 @@ Scene replication</h2>
 <ul>
 <li>Nodes have the concept of the <a class="el" href="class_urho3_d_1_1_node.html#a46a82aa6e1c19b4c0cb532fb38b6b4c1">owner connection</a> (for example the player that is controlling a specific game object), which can be set in server code. This property is not replicated to the client. Messages or remote events can be used instead to tell the players what object they control.</li>
 </ul>
+<ul>
+<li>If you want to run the same server logic for both the locally connecting client as well as remote clients, you can use both the server &amp; client functionality in <a class="el" href="class_urho3_d_1_1_network.html" title="Network subsystem. Manages client-server communications using the UDP protocol.">Network</a> subsystem simultaneously. However in this case you need 2 copies of the scene: server and client. Only the client scene should be rendered on the local client, while the server scene is used for simulation only.</li>
+</ul>
 <h2><a class="anchor" id="Network_InterestManagement"></a>
 Interest management</h2>
 <p>Scene replication includes a simple, distance-based interest management mechanism for reducing bandwidth use. To use, create the <a class="el" href="class_urho3_d_1_1_network_priority.html" title="Network interest management settings component.">NetworkPriority</a> component to a <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> you wish to apply interest management to. The component can be created as local, as it is not important to the clients.</p>
