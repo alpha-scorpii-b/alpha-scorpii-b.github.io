@@ -239,9 +239,9 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node16 -->
 <g id="node31" class="node"><title>Node16</title>
-<a xlink:href="class_urho3_d_1_1_logic_component.html" target="_top" xlink:title="Helper base class for user&#45;defined game logic components that hooks up to update events and forwards ...">
-<polygon fill="none" stroke="black" points="736,-240.5 736,-261.5 876,-261.5 876,-240.5 736,-240.5"/>
-<text text-anchor="middle" x="806" y="-248.5" font-family="FreeSans" font-size="10.00">Urho3D::LogicComponent</text>
+<a xlink:href="class_urho3_d_1_1_i_k_constraint.html" target="_top" xlink:title="Urho3D::IKConstraint">
+<polygon fill="none" stroke="black" points="748,-240.5 748,-261.5 864,-261.5 864,-240.5 748,-240.5"/>
+<text text-anchor="middle" x="806" y="-248.5" font-family="FreeSans" font-size="10.00">Urho3D::IKConstraint</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node16 -->
@@ -251,45 +251,45 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node17 -->
 <g id="node33" class="node"><title>Node17</title>
-<a xlink:href="class_urho3_d_1_1_lua_script_instance.html" target="_top" xlink:title="Lua script object component.">
-<polygon fill="none" stroke="black" points="733.5,-200.5 733.5,-221.5 878.5,-221.5 878.5,-200.5 733.5,-200.5"/>
-<text text-anchor="middle" x="806" y="-208.5" font-family="FreeSans" font-size="10.00">Urho3D::LuaScriptInstance</text>
+<a xlink:href="class_urho3_d_1_1_i_k_effector.html" target="_top" xlink:title="Urho3D::IKEffector">
+<polygon fill="none" stroke="black" points="754,-200.5 754,-221.5 858,-221.5 858,-200.5 754,-200.5"/>
+<text text-anchor="middle" x="806" y="-208.5" font-family="FreeSans" font-size="10.00">Urho3D::IKEffector</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node17 -->
 <g id="edge32" class="edge"><title>Node5&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M686.576,-315.292C688.487,-313.974 690.306,-312.546 692,-311 720.793,-284.71 698.166,-256.102 728,-231 732.493,-227.22 737.611,-224.142 743.028,-221.637"/>
+<path fill="none" stroke="midnightblue" d="M686.576,-315.292C688.487,-313.974 690.306,-312.546 692,-311 720.793,-284.71 698.166,-256.102 728,-231 735.381,-224.79 744.45,-220.474 753.76,-217.483"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="684.628,-312.375 677.707,-320.397 688.12,-318.442 684.628,-312.375"/>
 </g>
 <!-- Node18 -->
 <g id="node35" class="node"><title>Node18</title>
-<a xlink:href="class_urho3_d_1_1_nav_area.html" target="_top" xlink:title="Urho3D::NavArea">
-<polygon fill="none" stroke="black" points="755.5,-160.5 755.5,-181.5 856.5,-181.5 856.5,-160.5 755.5,-160.5"/>
-<text text-anchor="middle" x="806" y="-168.5" font-family="FreeSans" font-size="10.00">Urho3D::NavArea</text>
+<a xlink:href="class_urho3_d_1_1_i_k_solver.html" target="_top" xlink:title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">
+<polygon fill="none" stroke="black" points="757,-160.5 757,-181.5 855,-181.5 855,-160.5 757,-160.5"/>
+<text text-anchor="middle" x="806" y="-168.5" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node18 -->
 <g id="edge34" class="edge"><title>Node5&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M687.548,-315.018C689.125,-313.777 690.617,-312.441 692,-311 730.565,-270.836 687.839,-229.568 728,-191 735.461,-183.834 745.127,-179.14 755.098,-176.088"/>
+<path fill="none" stroke="midnightblue" d="M687.548,-315.018C689.125,-313.777 690.617,-312.441 692,-311 730.565,-270.836 687.839,-229.568 728,-191 735.865,-183.447 746.178,-178.64 756.718,-175.607"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="685.595,-312.113 679.061,-320.453 689.37,-318.007 685.595,-312.113"/>
 </g>
 <!-- Node19 -->
 <g id="node37" class="node"><title>Node19</title>
-<a xlink:href="class_urho3_d_1_1_navigable.html" target="_top" xlink:title="Component which tags geometry for inclusion in the navigation mesh. Optionally auto&#45;includes geometry...">
-<polygon fill="none" stroke="black" points="752.5,-120.5 752.5,-141.5 859.5,-141.5 859.5,-120.5 752.5,-120.5"/>
-<text text-anchor="middle" x="806" y="-128.5" font-family="FreeSans" font-size="10.00">Urho3D::Navigable</text>
+<a xlink:href="class_urho3_d_1_1_logic_component.html" target="_top" xlink:title="Helper base class for user&#45;defined game logic components that hooks up to update events and forwards ...">
+<polygon fill="none" stroke="black" points="736,-120.5 736,-141.5 876,-141.5 876,-120.5 736,-120.5"/>
+<text text-anchor="middle" x="806" y="-128.5" font-family="FreeSans" font-size="10.00">Urho3D::LogicComponent</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node19 -->
 <g id="edge36" class="edge"><title>Node5&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M688.231,-314.677C689.566,-313.533 690.828,-312.31 692,-311 740.609,-256.686 677.23,-203.3 728,-151 734.621,-144.179 743.229,-139.571 752.299,-136.481"/>
+<path fill="none" stroke="midnightblue" d="M688.231,-314.677C689.566,-313.533 690.828,-312.31 692,-311 740.609,-256.686 677.23,-203.3 728,-151 731.7,-147.188 736.021,-144.068 740.695,-141.517"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="686.165,-311.85 679.895,-320.391 690.122,-317.624 686.165,-311.85"/>
 </g>
 <!-- Node20 -->
 <g id="node39" class="node"><title>Node20</title>
-<a xlink:href="class_urho3_d_1_1_navigation_mesh.html" target="_top" xlink:title="Navigation mesh component. Collects the navigation geometry from child nodes with the Navigable compo...">
-<polygon fill="none" stroke="red" points="738,-80.5 738,-101.5 874,-101.5 874,-80.5 738,-80.5"/>
-<text text-anchor="middle" x="806" y="-88.5" font-family="FreeSans" font-size="10.00">Urho3D::NavigationMesh</text>
+<a xlink:href="class_urho3_d_1_1_lua_script_instance.html" target="_top" xlink:title="Lua script object component.">
+<polygon fill="none" stroke="black" points="733.5,-80.5 733.5,-101.5 878.5,-101.5 878.5,-80.5 733.5,-80.5"/>
+<text text-anchor="middle" x="806" y="-88.5" font-family="FreeSans" font-size="10.00">Urho3D::LuaScriptInstance</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node20 -->
@@ -299,26 +299,26 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node21 -->
 <g id="node41" class="node"><title>Node21</title>
-<a xlink:href="class_urho3_d_1_1_network_priority.html" target="_top" xlink:title="Network interest management settings component.">
-<polygon fill="none" stroke="black" points="740.5,-40.5 740.5,-61.5 871.5,-61.5 871.5,-40.5 740.5,-40.5"/>
-<text text-anchor="middle" x="806" y="-48.5" font-family="FreeSans" font-size="10.00">Urho3D::NetworkPriority</text>
+<a xlink:href="class_urho3_d_1_1_nav_area.html" target="_top" xlink:title="Urho3D::NavArea">
+<polygon fill="none" stroke="black" points="755.5,-40.5 755.5,-61.5 856.5,-61.5 856.5,-40.5 755.5,-40.5"/>
+<text text-anchor="middle" x="806" y="-48.5" font-family="FreeSans" font-size="10.00">Urho3D::NavArea</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node21 -->
 <g id="edge40" class="edge"><title>Node5&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M688.782,-314.396C689.923,-313.333 691,-312.203 692,-311 760.974,-228.076 655.723,-151.061 728,-71 731.56,-67.0568 735.781,-63.8436 740.39,-61.2305"/>
+<path fill="none" stroke="midnightblue" d="M688.782,-314.396C689.923,-313.333 691,-312.203 692,-311 760.974,-228.076 655.723,-151.061 728,-71 735.12,-63.1137 744.886,-58.1471 755.101,-55.0619"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="686.47,-311.751 680.452,-320.471 690.594,-317.407 686.47,-311.751"/>
 </g>
 <!-- Node22 -->
 <g id="node43" class="node"><title>Node22</title>
-<a xlink:href="class_urho3_d_1_1_obstacle.html" target="_top" xlink:title="Obstacle for dynamic navigation mesh.">
-<polygon fill="none" stroke="black" points="755.5,-0.5 755.5,-21.5 856.5,-21.5 856.5,-0.5 755.5,-0.5"/>
-<text text-anchor="middle" x="806" y="-8.5" font-family="FreeSans" font-size="10.00">Urho3D::Obstacle</text>
+<a xlink:href="class_urho3_d_1_1_navigable.html" target="_top" xlink:title="Component which tags geometry for inclusion in the navigation mesh. Optionally auto&#45;includes geometry...">
+<polygon fill="none" stroke="black" points="752.5,-0.5 752.5,-21.5 859.5,-21.5 859.5,-0.5 752.5,-0.5"/>
+<text text-anchor="middle" x="806" y="-8.5" font-family="FreeSans" font-size="10.00">Urho3D::Navigable</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node22 -->
 <g id="edge42" class="edge"><title>Node5&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M688.888,-314.355C689.992,-313.304 691.033,-312.187 692,-311 771.216,-213.7 644.907,-125.01 728,-31 735.129,-22.9345 745.026,-17.9115 755.381,-14.8305"/>
+<path fill="none" stroke="midnightblue" d="M688.888,-314.355C689.992,-313.304 691.033,-312.187 692,-311 771.216,-213.7 644.907,-125.01 728,-31 734.388,-23.7725 742.999,-18.9881 752.171,-15.8549"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="686.737,-311.594 680.81,-320.376 690.92,-317.206 686.737,-311.594"/>
 </g>
 </g>
