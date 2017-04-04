@@ -475,6 +475,18 @@ group: HEAD
 <li>Connection : <a class="el" href="class_urho3_d_1_1_connection.html" title="Connection to a remote network host.">Connection</a> pointer</li>
 </ul>
 <h3>Physics2D events</h3>
+<h4>PhysicsUpdateContact2D</h4>
+<ul>
+<li>World : <a class="el" href="class_urho3_d_1_1_physics_world2_d.html" title="2D physics simulation world component. Should be added only to the root scene node.">PhysicsWorld2D</a> pointer</li>
+<li>BodyA : <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html" title="2D rigid body component.">RigidBody2D</a> pointer</li>
+<li>BodyB : <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html" title="2D rigid body component.">RigidBody2D</a> pointer</li>
+<li>NodeA : <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> pointer</li>
+<li>NodeB : <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> pointer</li>
+<li>Contact : b2Contact pointer</li>
+<li>ShapeA : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
+<li>ShapeB : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
+<li>Enabled : bool [in/out]</li>
+</ul>
 <h4>PhysicsBeginContact2D</h4>
 <ul>
 <li>World : <a class="el" href="class_urho3_d_1_1_physics_world2_d.html" title="2D physics simulation world component. Should be added only to the root scene node.">PhysicsWorld2D</a> pointer</li>
@@ -496,6 +508,16 @@ group: HEAD
 <li>Contact : b2Contact pointer</li>
 <li>ShapeA : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
 <li>ShapeB : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
+</ul>
+<h4>NodeUpdateContact2D</h4>
+<ul>
+<li>Body : <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html" title="2D rigid body component.">RigidBody2D</a> pointer</li>
+<li>OtherNode : <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> pointer</li>
+<li>OtherBody : <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html" title="2D rigid body component.">RigidBody2D</a> pointer</li>
+<li>Contact : b2Contact pointer</li>
+<li>Shape : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
+<li>OtherShape : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component.">CollisionShape2D</a> pointer</li>
+<li>Enabled : bool [in/out]</li>
 </ul>
 <h4>NodeBeginContact2D</h4>
 <ul>
