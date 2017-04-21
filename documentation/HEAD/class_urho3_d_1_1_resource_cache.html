@@ -77,7 +77,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a9d0bc41b3b1e568d54c3634ecaf3a333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277181563b9fd28edec13c109fc8b98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae277181563b9fd28edec13c109fc8b98"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource_cache.html#ae277181563b9fd28edec13c109fc8b98">AddManualResource</a> (<a class="el" href="class_urho3_d_1_1_resource.html">Resource</a> *resource)</td></tr>
-<tr class="memdesc:ae277181563b9fd28edec13c109fc8b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a manually created resource. Must be uniquely named. <br/></td></tr>
+<tr class="memdesc:ae277181563b9fd28edec13c109fc8b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a manually created resource. Must be uniquely named within its type. <br/></td></tr>
 <tr class="separator:ae277181563b9fd28edec13c109fc8b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89bb2543d35de4396febe6310edd7319"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89bb2543d35de4396febe6310edd7319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource_cache.html#a89bb2543d35de4396febe6310edd7319">RemoveResourceDir</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;pathName)</td></tr>
@@ -221,7 +221,7 @@ template&lt;class T &gt; </td></tr>
 <tr class="separator:a2c22b31a1dedf21ff4efbb9e5f2ea875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94659e6c04c0bb9791019913b7866252"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94659e6c04c0bb9791019913b7866252"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource_cache.html#a94659e6c04c0bb9791019913b7866252">Exists</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const </td></tr>
-<tr class="memdesc:a94659e6c04c0bb9791019913b7866252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a file exists by name. <br/></td></tr>
+<tr class="memdesc:a94659e6c04c0bb9791019913b7866252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a file exists in the resource directories or package files. Does not check manually added in-memory resources. <br/></td></tr>
 <tr class="separator:a94659e6c04c0bb9791019913b7866252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a562b9df83d247bc72a1cb76122bb5edb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a562b9df83d247bc72a1cb76122bb5edb"></a>
 unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_resource_cache.html#a562b9df83d247bc72a1cb76122bb5edb">GetMemoryBudget</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const </td></tr>
