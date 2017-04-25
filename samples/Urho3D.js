@@ -20,7 +20,7 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = '/home/travis/build/weitjong/Build/bin/Urho3D.js.data';
+    var PACKAGE_NAME = '/home/travis/build/urho3d/Build/bin/Urho3D.js.data';
     var REMOTE_PACKAGE_BASE = 'Urho3D.js.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
@@ -234,10 +234,10 @@ Module.expectedDataFileDownloads++;
           for (i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_/home/travis/build/weitjong/Build/bin/Urho3D.js.data');
+              Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
 
     };
-    Module['addRunDependency']('datafile_/home/travis/build/weitjong/Build/bin/Urho3D.js.data');
+    Module['addRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -283,6 +283,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 158016, "filename": "/CoreData.pak"}, {"audio": 0, "start": 158016, "crunched": 0, "end": 16684794, "filename": "/Data.pak"}], "remote_package_size": 16684794, "package_uuid": "7b38d254-3aae-4b0a-91ec-26cc713030c4"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 158016, "filename": "/CoreData.pak"}, {"audio": 0, "start": 158016, "crunched": 0, "end": 16684794, "filename": "/Data.pak"}], "remote_package_size": 16684794, "package_uuid": "71eea5ca-1043-48a7-a9bf-db06945c2350"});
 
 })();
