@@ -65,10 +65,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#ad8f0f699b20cf7fae917c24c7a89a083">~SoundStream</a> ()</td></tr>
 <tr class="memdesc:ad8f0f699b20cf7fae917c24c7a89a083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:ad8f0f699b20cf7fae917c24c7a89a083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5b7bb9d837631f99a6838bc0af24f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c5b7bb9d837631f99a6838bc0af24f1"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#a2c5b7bb9d837631f99a6838bc0af24f1">Seek</a> (unsigned int sample_number)</td></tr>
-<tr class="memdesc:a2c5b7bb9d837631f99a6838bc0af24f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek to sample number. <br/></td></tr>
-<tr class="separator:a2c5b7bb9d837631f99a6838bc0af24f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd6a2969826ec7a324971c62328b474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd6a2969826ec7a324971c62328b474"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#a0fd6a2969826ec7a324971c62328b474">Seek</a> (unsigned sample_number)</td></tr>
+<tr class="memdesc:a0fd6a2969826ec7a324971c62328b474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek to sample number. Return true on success. Need not be implemented by all streams. <br/></td></tr>
+<tr class="separator:a0fd6a2969826ec7a324971c62328b474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d87ae1420d6fc6f0b7d69fe3efebce2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d87ae1420d6fc6f0b7d69fe3efebce2"></a>
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#a7d87ae1420d6fc6f0b7d69fe3efebce2">GetData</a> (signed char *dest, unsigned numBytes)=0</td></tr>
 <tr class="memdesc:a7d87ae1420d6fc6f0b7d69fe3efebce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce sound data into destination. Return number of bytes produced. Called by <a class="el" href="class_urho3_d_1_1_sound_source.html" title="Sound source component with stereo position. A sound source needs to be created to a node to be consi...">SoundSource</a> from the mixing thread. <br/></td></tr>
