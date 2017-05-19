@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1058;
+var viewWidth = 1004;
 var viewHeight = 60;
 var sectionId = 'dynsection-7';
 </script>
@@ -56,81 +56,81 @@ var sectionId = 'dynsection-7';
 <title>Urho3D::Renderer::UpdateQueuedViewport</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-22 0.5,-52 143.5,-52 143.5,-22 0.5,-22"/>
-<text text-anchor="start" x="8.5" y="-40" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Update</text>
-<text text-anchor="middle" x="72" y="-29" font-family="FreeSans" font-size="10.00">QueuedViewport</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-22 0,-52 134,-52 134,-22 0,-22"/>
+<text text-anchor="start" x="8" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Update</text>
+<text text-anchor="middle" x="67" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">QueuedViewport</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_renderer.html#a993f63f35d27a9ea6df861962018f354" target="_top" xlink:title="Update for rendering. Called by HandleRenderUpdate(). ">
-<polygon fill="none" stroke="black" points="180.5,-27.5 180.5,-46.5 323.5,-46.5 323.5,-27.5 180.5,-27.5"/>
-<text text-anchor="middle" x="252" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Update</text>
+<polygon fill="none" stroke="black" points="170,-27.5 170,-46.5 304,-46.5 304,-27.5 170,-27.5"/>
+<text text-anchor="middle" x="237" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Update</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M153.646,-37C162.599,-37 171.666,-37 180.479,-37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="153.606,-33.5001 143.606,-37 153.606,-40.5001 153.606,-33.5001"/>
+<path fill="none" stroke="midnightblue" d="M144.595,-37C153.013,-37 161.532,-37 169.809,-37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="144.398,-33.5001 134.398,-37 144.398,-40.5001 144.398,-33.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_renderer.html#adf594e7a524f6e003e8370cf23dbee13" target="_top" xlink:title="Handle render update event. ">
-<polygon fill="none" stroke="black" points="360,-22 360,-52 502,-52 502,-22 360,-22"/>
-<text text-anchor="start" x="368" y="-40" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Handle</text>
-<text text-anchor="middle" x="431" y="-29" font-family="FreeSans" font-size="10.00">RenderUpdate</text>
+<polygon fill="none" stroke="black" points="340.5,-22 340.5,-52 473.5,-52 473.5,-22 340.5,-22"/>
+<text text-anchor="start" x="348.5" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Handle</text>
+<text text-anchor="middle" x="407" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">RenderUpdate</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M333.879,-37C342.591,-37 351.402,-37 359.971,-37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="333.718,-33.5001 323.718,-37 333.718,-40.5001 333.718,-33.5001"/>
+<path fill="none" stroke="midnightblue" d="M314.474,-37C323.119,-37 331.87,-37 340.359,-37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="314.398,-33.5001 304.398,-37 314.398,-40.5001 314.398,-33.5001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_renderer.html#ae0d765a240f7cf5f829ddc95cb2729c9" target="_top" xlink:title="Initialize when screen mode initially set. ">
-<polygon fill="none" stroke="black" points="538,-27.5 538,-46.5 684,-46.5 684,-27.5 538,-27.5"/>
-<text text-anchor="middle" x="611" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Initialize</text>
+<polygon fill="none" stroke="black" points="510,-27.5 510,-46.5 648,-46.5 648,-27.5 510,-27.5"/>
+<text text-anchor="middle" x="579" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Initialize</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M512.118,-37C520.716,-37 529.426,-37 537.922,-37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="512.095,-33.5001 502.095,-37 512.095,-40.5001 512.095,-33.5001"/>
+<path fill="none" stroke="midnightblue" d="M483.842,-37C492.528,-37 501.343,-37 509.919,-37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="483.726,-33.5001 473.726,-37 483.726,-40.5001 483.726,-33.5001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_renderer.html#a8e41f9dda2e33e9e208c5ccfd0d1c6ac" target="_top" xlink:title="Construct. ">
-<polygon fill="none" stroke="black" points="898.5,-27.5 898.5,-46.5 1049.5,-46.5 1049.5,-27.5 898.5,-27.5"/>
-<text text-anchor="middle" x="974" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Renderer</text>
+<polygon fill="none" stroke="black" points="854,-27.5 854,-46.5 996,-46.5 996,-27.5 854,-27.5"/>
+<text text-anchor="middle" x="925" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Renderer</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M694.22,-38.681C702.924,-38.8116 711.643,-38.9226 720,-39 783.108,-39.5843 798.891,-39.5685 862,-39 873.757,-38.8941 886.213,-38.7251 898.368,-38.5291"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="694.088,-35.1785 684.034,-38.5194 693.977,-42.1776 694.088,-35.1785"/>
+<path fill="none" stroke="midnightblue" d="M658.364,-38.6683C667.014,-38.8044 675.693,-38.9201 684,-39 743.553,-39.5726 758.447,-39.5618 818,-39 829.595,-38.8906 841.903,-38.714 853.871,-38.5097"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="658.304,-35.1669 648.247,-38.5 658.188,-42.1659 658.304,-35.1669"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_renderer.html#ade42fa3aa8f7f48620bffc61ab32c635" target="_top" xlink:title="Handle screen mode event. ">
-<polygon fill="none" stroke="black" points="720,-0 720,-30 862,-30 862,-0 720,-0"/>
-<text text-anchor="start" x="728" y="-18" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Handle</text>
-<text text-anchor="middle" x="791" y="-7" font-family="FreeSans" font-size="10.00">ScreenMode</text>
+<polygon fill="none" stroke="black" points="684.5,-0 684.5,-30 817.5,-30 817.5,-0 684.5,-0"/>
+<text text-anchor="start" x="692.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Handle</text>
+<text text-anchor="middle" x="751" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ScreenMode</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M694.14,-26.8478C702.706,-25.7891 711.358,-24.7198 719.774,-23.6796"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="693.638,-23.3832 684.143,-28.0835 694.497,-30.3303 693.638,-23.3832"/>
+<path fill="none" stroke="midnightblue" d="M658.307,-26.8661C667.002,-25.7409 675.79,-24.6036 684.306,-23.5016"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="657.634,-23.424 648.166,-28.1785 658.532,-30.3661 657.634,-23.424"/>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
 <g id="edge6" class="edge"><title>Node6&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M872.312,-24.7617C880.959,-25.8127 889.731,-26.8789 898.308,-27.9215"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="872.588,-21.2695 862.238,-23.5373 871.743,-28.2184 872.588,-21.2695"/>
+<path fill="none" stroke="midnightblue" d="M827.639,-24.6747C836.336,-25.7871 845.176,-26.9179 853.798,-28.0206"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="827.88,-21.1771 817.516,-23.38 826.992,-28.1206 827.88,-21.1771"/>
 </g>
 </g>
 </svg>

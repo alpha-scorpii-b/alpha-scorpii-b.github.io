@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 680;
+var viewWidth = 634;
 var viewHeight = 173;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,70 +56,70 @@ var sectionId = 'dynsection-1';
 <title>GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="496,-60.5 496,-101.5 672,-101.5 672,-60.5 496,-60.5"/>
-<text text-anchor="start" x="504" y="-89.5" font-family="FreeSans" font-size="10.00">GenericSchemaValidator</text>
-<text text-anchor="start" x="504" y="-78.5" font-family="FreeSans" font-size="10.00">&lt; SchemaDocumentType,</text>
-<text text-anchor="middle" x="584" y="-67.5" font-family="FreeSans" font-size="10.00"> OutputHandler, StateAllocator &gt;</text>
+<polygon fill="#bfbfbf" stroke="black" points="466.5,-60.5 466.5,-101.5 625.5,-101.5 625.5,-60.5 466.5,-60.5"/>
+<text text-anchor="start" x="474.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericSchemaValidator</text>
+<text text-anchor="start" x="474.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SchemaDocumentType,</text>
+<text text-anchor="middle" x="546" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OutputHandler, StateAllocator &gt;</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="classinternal_1_1_i_schema_state_factory.html" target="_top" xlink:title="internal::ISchemaStateFactory\l\&lt; SchemaDocumentType::SchemaType \&gt;">
-<polygon fill="none" stroke="black" points="156.5,-135 156.5,-165 373.5,-165 373.5,-135 156.5,-135"/>
-<text text-anchor="start" x="164.5" y="-153" font-family="FreeSans" font-size="10.00">internal::ISchemaStateFactory</text>
-<text text-anchor="middle" x="265" y="-142" font-family="FreeSans" font-size="10.00">&lt; SchemaDocumentType::SchemaType &gt;</text>
+<polygon fill="none" stroke="black" points="150.5,-135 150.5,-165 351.5,-165 351.5,-135 150.5,-135"/>
+<text text-anchor="start" x="158.5" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">internal::ISchemaStateFactory</text>
+<text text-anchor="middle" x="251" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SchemaDocumentType::SchemaType &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M354.25,-132.974C392.387,-125.391 437.473,-116.123 478,-107 485.603,-105.288 493.501,-103.448 501.397,-101.567"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="353.329,-129.589 344.2,-134.966 354.69,-136.455 353.329,-129.589"/>
+<path fill="none" stroke="midnightblue" d="M334.518,-132.777C369.59,-125.229 410.878,-116.042 448,-107 455.03,-105.288 462.33,-103.447 469.627,-101.565"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="333.368,-129.444 324.324,-134.962 334.836,-136.288 333.368,-129.444"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="classinternal_1_1_i_schema_validator.html" target="_top" xlink:title="internal::ISchemaValidator">
-<polygon fill="none" stroke="black" points="193.5,-96.5 193.5,-115.5 336.5,-115.5 336.5,-96.5 193.5,-96.5"/>
-<text text-anchor="middle" x="265" y="-103.5" font-family="FreeSans" font-size="10.00">internal::ISchemaValidator</text>
+<polygon fill="none" stroke="black" points="185.5,-96.5 185.5,-115.5 316.5,-115.5 316.5,-96.5 185.5,-96.5"/>
+<text text-anchor="middle" x="251" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">internal::ISchemaValidator</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M346.871,-99.6221C392.395,-96.0319 449.264,-91.547 495.784,-87.8782"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="346.44,-96.1452 336.746,-100.421 346.991,-103.124 346.44,-96.1452"/>
+<path fill="none" stroke="midnightblue" d="M326.724,-99.6242C369.473,-95.9767 423.051,-91.4052 466.426,-87.7043"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="326.329,-96.1451 316.663,-100.483 326.924,-103.12 326.329,-96.1451"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<polygon fill="none" stroke="#bfbfbf" points="0,-28.5 0,-47.5 44,-47.5 44,-28.5 0,-28.5"/>
-<text text-anchor="middle" x="22" y="-35.5" font-family="FreeSans" font-size="10.00">size_t</text>
+<polygon fill="none" stroke="#bfbfbf" points="0.5,-28.5 0.5,-47.5 43.5,-47.5 43.5,-28.5 0.5,-28.5"/>
+<text text-anchor="middle" x="22" y="-35.5" font-family="Helvetica,sans-Serif" font-size="10.00">size_t</text>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M54.1516,-41.2755C56.8054,-41.5301 59.449,-41.7752 62,-42 200.506,-54.2056 235.348,-54.5822 374,-65 414.008,-68.0061 458.32,-71.3905 495.808,-74.2698"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="54.3368,-37.7767 44.0393,-40.2693 53.6436,-44.7423 54.3368,-37.7767"/>
-<text text-anchor="middle" x="265" y="-79" font-family="FreeSans" font-size="10.00"> kDefaultDocumentStackCapacity</text>
-<text text-anchor="middle" x="265" y="-68" font-family="FreeSans" font-size="10.00">kDefaultSchemaStackCapacity</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.6768,-41.2136C56.49,-41.488 59.2971,-41.7542 62,-42 190.762,-53.7077 223.13,-54.5479 352,-65 389.533,-68.0442 431.166,-71.4872 466.128,-74.3974"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="53.9358,-37.7221 43.6364,-40.2062 53.237,-44.6871 53.9358,-37.7221"/>
+<text text-anchor="middle" x="251" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00"> kDefaultDocumentStackCapacity</text>
+<text text-anchor="middle" x="251" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">kDefaultSchemaStackCapacity</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="classinternal_1_1_stack.html" target="_top" xlink:title="internal::Stack\&lt; StateAllocator \&gt;">
-<polygon fill="none" stroke="black" points="177,-0.5 177,-19.5 353,-19.5 353,-0.5 177,-0.5"/>
-<text text-anchor="middle" x="265" y="-7.5" font-family="FreeSans" font-size="10.00">internal::Stack&lt; StateAllocator &gt;</text>
+<polygon fill="none" stroke="black" points="171.5,-0.5 171.5,-19.5 330.5,-19.5 330.5,-0.5 171.5,-0.5"/>
+<text text-anchor="middle" x="251" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">internal::Stack&lt; StateAllocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge5" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M54.126,-32.2009C56.7855,-31.77 59.4373,-31.3627 62,-31 99.5288,-25.6887 141.159,-21.135 176.828,-17.6393"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="53.2689,-28.7967 44.004,-33.9359 54.4516,-35.6961 53.2689,-28.7967"/>
-<text text-anchor="middle" x="100" y="-34" font-family="FreeSans" font-size="10.00"> initialCapacity_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.652,-32.3007C56.4705,-31.8364 59.2855,-31.3948 62,-31 97.75,-25.8008 137.488,-21.1925 171.186,-17.6271"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="52.8607,-28.8855 43.6034,-34.0384 54.0535,-35.7831 52.8607,-28.8855"/>
+<text text-anchor="middle" x="97" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00"> initialCapacity_</text>
 </g>
 <!-- Node5&#45;&gt;Node1 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M363.344,-4.94001C399.936,-5.53121 441.495,-9.23696 478,-20 506.512,-28.4066 535.469,-46.0577 555.732,-60.2198"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="363.193,-1.43868 353.163,-4.85258 363.133,-8.43842 363.193,-1.43868"/>
-<text text-anchor="middle" x="435" y="-34" font-family="FreeSans" font-size="10.00"> documentStack_</text>
-<text text-anchor="middle" x="435" y="-23" font-family="FreeSans" font-size="10.00">schemaStack_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M341.291,-5.09023C375.368,-5.65108 414.142,-9.29695 448,-20 474.745,-28.4546 501.455,-46.1009 520.055,-60.2489"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="340.904,-1.58727 330.877,-5.01082 340.85,-8.58706 340.904,-1.58727"/>
+<text text-anchor="middle" x="409" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00"> documentStack_</text>
+<text text-anchor="middle" x="409" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">schemaStack_</text>
 </g>
 </g>
 </svg>

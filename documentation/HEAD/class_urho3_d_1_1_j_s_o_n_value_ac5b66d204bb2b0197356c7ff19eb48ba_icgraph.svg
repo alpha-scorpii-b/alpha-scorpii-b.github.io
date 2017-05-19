@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 916;
+var viewWidth = 890;
 var viewHeight = 104;
 var sectionId = 'dynsection-2';
 </script>
@@ -56,118 +56,118 @@ var sectionId = 'dynsection-2';
 <title>Urho3D::JSONValue::GetVariantMap</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-24 0,-54 116,-54 116,-24 0,-24"/>
-<text text-anchor="start" x="8" y="-42" font-family="FreeSans" font-size="10.00">Urho3D::JSONValue::</text>
-<text text-anchor="middle" x="58" y="-31" font-family="FreeSans" font-size="10.00">GetVariantMap</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-24 0,-54 114,-54 114,-24 0,-24"/>
+<text text-anchor="start" x="8" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::JSONValue::</text>
+<text text-anchor="middle" x="57" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">GetVariantMap</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_j_s_o_n_value.html#ae13d6c8ae672a24770bb19d8e1252b05" target="_top" xlink:title="Return a variant with type. ">
-<polygon fill="none" stroke="black" points="161,-49 161,-79 277,-79 277,-49 161,-49"/>
-<text text-anchor="start" x="169" y="-67" font-family="FreeSans" font-size="10.00">Urho3D::JSONValue::</text>
-<text text-anchor="middle" x="219" y="-56" font-family="FreeSans" font-size="10.00">GetVariantValue</text>
+<polygon fill="none" stroke="black" points="156,-49 156,-79 270,-79 270,-49 156,-49"/>
+<text text-anchor="start" x="164" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::JSONValue::</text>
+<text text-anchor="middle" x="213" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">GetVariantValue</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M126.397,-49.597C137.899,-51.4055 149.747,-53.2685 160.948,-55.0296"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="126.825,-46.1214 116.403,-48.0256 125.738,-53.0364 126.825,-46.1214"/>
+<path fill="none" stroke="midnightblue" d="M124.045,-49.7216C134.605,-51.4359 145.446,-53.1957 155.75,-54.8686"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="124.465,-46.244 114.033,-48.0963 123.343,-53.1536 124.465,-46.244"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
 <g id="a_node9"><a xlink:href="class_urho3_d_1_1_value_animation.html#abb90d4733017bb3e85f68f344a4a9571" target="_top" xlink:title="Load from JSON data. Return true if successful. ">
-<polygon fill="none" stroke="black" points="152,-0 152,-30 286,-30 286,-0 152,-0"/>
-<text text-anchor="start" x="160" y="-18" font-family="FreeSans" font-size="10.00">Urho3D::ValueAnimation</text>
-<text text-anchor="middle" x="219" y="-7" font-family="FreeSans" font-size="10.00">::LoadJSON</text>
+<polygon fill="none" stroke="black" points="150.5,-0 150.5,-30 275.5,-30 275.5,-0 150.5,-0"/>
+<text text-anchor="start" x="158.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::ValueAnimation</text>
+<text text-anchor="middle" x="213" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::LoadJSON</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M126.495,-28.8121C134.864,-27.5488 143.414,-26.2582 151.764,-24.9979"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="125.768,-25.382 116.403,-30.3354 126.813,-32.3036 125.768,-25.382"/>
+<path fill="none" stroke="midnightblue" d="M124.115,-28.6963C132.801,-27.3427 141.675,-25.9598 150.283,-24.6182"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="123.375,-25.2694 114.033,-30.2676 124.453,-32.1859 123.375,-25.2694"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_scene.html#a96adc07853e2b6104564db2d10b22fdb" target="_top" xlink:title="Preload resources from a JSON scene or object prefab file. ">
-<polygon fill="none" stroke="black" points="322,-76.5 322,-95.5 526,-95.5 526,-76.5 322,-76.5"/>
-<text text-anchor="middle" x="424" y="-83.5" font-family="FreeSans" font-size="10.00">Urho3D::Scene::PreloadResourcesJSON</text>
+<polygon fill="none" stroke="black" points="312.5,-76.5 312.5,-95.5 509.5,-95.5 509.5,-76.5 312.5,-76.5"/>
+<text text-anchor="middle" x="411" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Scene::PreloadResourcesJSON</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M287.031,-71.2644C302.454,-72.9359 319.082,-74.7379 335.236,-76.4887"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="287.406,-67.7847 277.087,-70.1868 286.652,-74.7439 287.406,-67.7847"/>
+<path fill="none" stroke="midnightblue" d="M280.462,-71.46C294.878,-73.0781 310.313,-74.8106 325.323,-76.4954"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="280.494,-67.9417 270.166,-70.3043 279.713,-74.898 280.494,-67.9417"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_serializable.html#aeda18b3f4b5477071a3f6a7cd620417b" target="_top" xlink:title="Load from JSON data. When setInstanceDefault is set to true, after setting the attribute value...">
-<polygon fill="none" stroke="black" points="367,-27 367,-57 481,-57 481,-27 367,-27"/>
-<text text-anchor="start" x="375" y="-45" font-family="FreeSans" font-size="10.00">Urho3D::Serializable</text>
-<text text-anchor="middle" x="424" y="-34" font-family="FreeSans" font-size="10.00">::LoadJSON</text>
+<polygon fill="none" stroke="black" points="357.5,-27 357.5,-57 464.5,-57 464.5,-27 357.5,-27"/>
+<text text-anchor="start" x="365.5" y="-45" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Serializable</text>
+<text text-anchor="middle" x="411" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00">::LoadJSON</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M287.154,-56.7222C312.924,-53.9294 342.042,-50.7737 366.692,-48.1023"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="286.652,-53.2561 277.087,-57.8132 287.406,-60.2153 286.652,-53.2561"/>
+<path fill="none" stroke="midnightblue" d="M280.327,-56.5552C305.384,-53.7426 333.537,-50.5826 357.192,-47.9275"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="279.713,-53.102 270.166,-57.6957 280.494,-60.0583 279.713,-53.102"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_scene.html#aa66ba16b03bd936a00b96e18da703947" target="_top" xlink:title="Load from a JSON file asynchronously. Return true if started successfully. The LOAD_RESOURCES_ONLY mo...">
-<polygon fill="none" stroke="black" points="562.5,-76.5 562.5,-95.5 733.5,-95.5 733.5,-76.5 562.5,-76.5"/>
-<text text-anchor="middle" x="648" y="-83.5" font-family="FreeSans" font-size="10.00">Urho3D::Scene::LoadAsyncJSON</text>
+<polygon fill="none" stroke="black" points="546,-76.5 546,-95.5 712,-95.5 712,-76.5 546,-76.5"/>
+<text text-anchor="middle" x="629" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Scene::LoadAsyncJSON</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M536.41,-86C545.07,-86 553.727,-86 562.169,-86"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="536.255,-82.5001 526.255,-86 536.255,-89.5001 536.255,-82.5001"/>
+<path fill="none" stroke="midnightblue" d="M519.789,-86C528.504,-86 537.22,-86 545.711,-86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="519.573,-82.5001 509.573,-86 519.573,-89.5001 519.573,-82.5001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_animatable.html#a107ac53ba6e7d1d51d26abd4bd308294" target="_top" xlink:title="Load from JSON data. When setInstanceDefault is set to true, after setting the attribute value...">
-<polygon fill="none" stroke="black" points="591,-27 591,-57 705,-57 705,-27 591,-27"/>
-<text text-anchor="start" x="599" y="-45" font-family="FreeSans" font-size="10.00">Urho3D::Animatable</text>
-<text text-anchor="middle" x="648" y="-34" font-family="FreeSans" font-size="10.00">::LoadJSON</text>
+<polygon fill="none" stroke="black" points="576.5,-27 576.5,-57 681.5,-57 681.5,-27 576.5,-27"/>
+<text text-anchor="start" x="584.5" y="-45" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Animatable</text>
+<text text-anchor="middle" x="629" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00">::LoadJSON</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M491.121,-42C522.922,-42 560.634,-42 590.998,-42"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="491.02,-38.5001 481.02,-42 491.02,-45.5001 491.02,-38.5001"/>
+<path fill="none" stroke="midnightblue" d="M474.783,-42C507.027,-42 545.833,-42 576.323,-42"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="474.563,-38.5001 464.563,-42 474.563,-45.5001 474.563,-38.5001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_animated_model.html#a03010ad7ae8211a4306aadb907468ac1" target="_top" xlink:title="Load from JSON data. Return true if successful. ">
-<polygon fill="none" stroke="black" points="772,-49 772,-79 906,-79 906,-49 772,-49"/>
-<text text-anchor="start" x="780" y="-67" font-family="FreeSans" font-size="10.00">Urho3D::AnimatedModel</text>
-<text text-anchor="middle" x="839" y="-56" font-family="FreeSans" font-size="10.00">::LoadJSON</text>
+<polygon fill="none" stroke="black" points="753,-49 753,-79 877,-79 877,-49 753,-49"/>
+<text text-anchor="start" x="761" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::AnimatedModel</text>
+<text text-anchor="middle" x="815" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">::LoadJSON</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M715.188,-49.7044C733.502,-51.8362 753.378,-54.1498 771.698,-56.2823"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="715.532,-46.2209 705.195,-48.5412 714.723,-53.174 715.532,-46.2209"/>
+<path fill="none" stroke="midnightblue" d="M691.823,-49.3918C711.499,-51.7445 733.247,-54.3448 752.874,-56.6915"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="692.089,-45.8988 681.744,-48.1868 691.258,-52.8493 692.089,-45.8988"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
 <g id="a_node8"><a xlink:href="class_urho3_d_1_1_node.html#a5e1c150d8d013c7550537c5251bf86f7" target="_top" xlink:title="Load components from XML data and optionally load child nodes. ">
-<polygon fill="none" stroke="black" points="770,-10.5 770,-29.5 908,-29.5 908,-10.5 770,-10.5"/>
-<text text-anchor="middle" x="839" y="-17.5" font-family="FreeSans" font-size="10.00">Urho3D::Node::LoadJSON</text>
+<polygon fill="none" stroke="black" points="748,-10.5 748,-29.5 882,-29.5 882,-10.5 748,-10.5"/>
+<text text-anchor="middle" x="815" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Node::LoadJSON</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node6&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M715.419,-34.2687C733.103,-32.2103 752.23,-29.9838 769.997,-27.9157"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="714.723,-30.826 705.195,-35.4588 715.532,-37.7791 714.723,-30.826"/>
+<path fill="none" stroke="midnightblue" d="M691.834,-34.6068C709.842,-32.4537 729.583,-30.0934 747.845,-27.9098"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="691.258,-31.1507 681.744,-35.8132 692.089,-38.1012 691.258,-31.1507"/>
 </g>
 </g>
 </svg>

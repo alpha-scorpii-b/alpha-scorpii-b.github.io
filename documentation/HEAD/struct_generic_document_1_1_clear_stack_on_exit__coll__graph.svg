@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 818;
+var viewWidth = 764;
 var viewHeight = 458;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,246 +56,246 @@ var sectionId = 'dynsection-0';
 <title>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ClearStackOnExit</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="648.5,-365.5 648.5,-406.5 809.5,-406.5 809.5,-365.5 648.5,-365.5"/>
-<text text-anchor="start" x="656.5" y="-394.5" font-family="FreeSans" font-size="10.00">GenericDocument&lt; Encoding,</text>
-<text text-anchor="start" x="656.5" y="-383.5" font-family="FreeSans" font-size="10.00"> Allocator, StackAllocator</text>
-<text text-anchor="middle" x="729" y="-372.5" font-family="FreeSans" font-size="10.00"> &gt;::ClearStackOnExit</text>
+<polygon fill="#bfbfbf" stroke="black" points="608,-365.5 608,-406.5 756,-406.5 756,-365.5 608,-365.5"/>
+<text text-anchor="start" x="616" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericDocument&lt; Encoding,</text>
+<text text-anchor="start" x="616" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator, StackAllocator</text>
+<text text-anchor="middle" x="682" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt;::ClearStackOnExit</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_generic_document.html" target="_top" xlink:title="A document for parsing JSON text as DOM. ">
-<polygon fill="none" stroke="black" points="434.5,-371 434.5,-401 595.5,-401 595.5,-371 434.5,-371"/>
-<text text-anchor="start" x="442.5" y="-389" font-family="FreeSans" font-size="10.00">GenericDocument&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-378" font-family="FreeSans" font-size="10.00"> Allocator, StackAllocator &gt;</text>
+<polygon fill="none" stroke="black" points="410,-371 410,-401 558,-401 558,-371 410,-371"/>
+<text text-anchor="start" x="418" y="-389" font-family="Helvetica,sans-Serif" font-size="10.00">GenericDocument&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator, StackAllocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M605.764,-386C619.915,-386 634.462,-386 648.363,-386"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="605.544,-382.5 595.544,-386 605.544,-389.5 605.544,-382.5"/>
-<text text-anchor="middle" x="622" y="-389" font-family="FreeSans" font-size="10.00"> d_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M568.625,-386C581.662,-386 595.046,-386 607.827,-386"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="568.262,-382.5 558.262,-386 568.262,-389.5 568.262,-382.5"/>
+<text text-anchor="middle" x="583" y="-389" font-family="Helvetica,sans-Serif" font-size="10.00"> d_</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_generic_value.html" target="_top" xlink:title="Represents a JSON value. Use Value for UTF8 encoding and default allocator. ">
-<polygon fill="none" stroke="black" points="176.5,-296 176.5,-326 313.5,-326 313.5,-296 176.5,-296"/>
-<text text-anchor="start" x="184.5" y="-314" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="245" y="-303" font-family="FreeSans" font-size="10.00"> Allocator &gt;</text>
+<polygon fill="none" stroke="black" points="167,-296 167,-326 295,-326 295,-296 167,-296"/>
+<text text-anchor="start" x="175" y="-314" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="231" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M309.745,-328.839C355.603,-341.672 416.765,-358.789 460.175,-370.937"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="310.485,-325.412 299.911,-326.087 308.598,-332.153 310.485,-325.412"/>
+<path fill="none" stroke="midnightblue" d="M292.243,-329.001C335.13,-341.816 392.104,-358.84 432.589,-370.937"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="293.075,-325.597 282.492,-326.087 291.071,-332.304 293.075,-325.597"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="struct_generic_value_1_1_array_data.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::ArrayData">
-<polygon fill="none" stroke="black" points="446.5,-196 446.5,-226 583.5,-226 583.5,-196 446.5,-196"/>
-<text text-anchor="start" x="454.5" y="-214" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-203" font-family="FreeSans" font-size="10.00"> Allocator &gt;::ArrayData</text>
+<polygon fill="none" stroke="black" points="420,-196 420,-226 548,-226 548,-196 420,-196"/>
+<text text-anchor="start" x="428" y="-214" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::ArrayData</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node3&#45;&gt;Node6</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M289.83,-291.936C327.653,-275.81 383.936,-252.586 434,-235 442.756,-231.924 452.134,-228.886 461.275,-226.06"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="288.443,-288.723 280.627,-295.875 291.197,-295.158 288.443,-288.723"/>
-<text text-anchor="middle" x="384" y="-268" font-family="FreeSans" font-size="10.00"> elements</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M273.961,-291.875C309.771,-275.846 362.811,-252.794 410,-235 418.114,-231.94 426.814,-228.887 435.279,-226.035"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="272.477,-288.705 264.79,-295.995 275.346,-295.09 272.477,-288.705"/>
+<text text-anchor="middle" x="361" y="-270" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="union_generic_value_1_1_data.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Data">
-<polygon fill="none" stroke="black" points="660.5,-147 660.5,-177 797.5,-177 797.5,-147 660.5,-147"/>
-<text text-anchor="start" x="668.5" y="-165" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="729" y="-154" font-family="FreeSans" font-size="10.00"> Allocator &gt;::Data</text>
+<polygon fill="none" stroke="black" points="618,-147 618,-177 746,-177 746,-147 618,-147"/>
+<text text-anchor="start" x="626" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="682" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::Data</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M710.946,-185.383C688.331,-214.321 645.459,-262.414 596,-284 504.395,-323.98 386.519,-323.816 313.626,-318.535"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="713.744,-187.486 717.039,-177.417 708.184,-183.234 713.744,-187.486"/>
-<text text-anchor="middle" x="515" y="-323" font-family="FreeSans" font-size="10.00"> data_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M665.204,-185.696C644.441,-214.61 605.031,-262.318 558,-284 473.418,-322.993 363.416,-323.107 295.276,-318.153"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="668.163,-187.573 671.037,-177.375 662.431,-183.554 668.163,-187.573"/>
+<text text-anchor="middle" x="484" y="-322" font-family="Helvetica,sans-Serif" font-size="10.00"> data_</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="struct_generic_value_1_1_string.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::String">
-<polygon fill="none" stroke="black" points="446.5,-245 446.5,-275 583.5,-275 583.5,-245 446.5,-245"/>
-<text text-anchor="start" x="454.5" y="-263" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-252" font-family="FreeSans" font-size="10.00"> Allocator &gt;::String</text>
+<polygon fill="none" stroke="black" points="420,-245 420,-275 548,-275 548,-245 420,-245"/>
+<text text-anchor="start" x="428" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::String</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M579.167,-241.583C584.914,-239.511 590.6,-237.309 596,-235 635.249,-218.219 678.031,-193.213 703.935,-177.259"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="577.779,-238.36 569.477,-244.942 580.072,-244.973 577.779,-238.36"/>
-<text text-anchor="middle" x="622" y="-230" font-family="FreeSans" font-size="10.00"> s</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M542.821,-241.44C548.009,-239.403 553.136,-237.247 558,-235 594.744,-218.024 634.562,-193.071 658.644,-177.181"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="541.579,-238.168 533.46,-244.974 544.051,-244.717 541.579,-238.168"/>
+<text text-anchor="middle" x="583" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00"> s</text>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M590.983,-193.669C614.52,-188.229 640.295,-182.271 663.075,-177.006"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="590.003,-190.303 581.048,-195.965 591.579,-197.123 590.003,-190.303"/>
-<text text-anchor="middle" x="622" y="-191" font-family="FreeSans" font-size="10.00"> a</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M554.907,-193.523C576.51,-188.123 600.102,-182.224 620.975,-177.006"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="553.991,-190.144 545.138,-195.965 555.689,-196.935 553.991,-190.144"/>
+<text text-anchor="middle" x="583" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00"> a</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="struct_generic_value_1_1_object_data.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::ObjectData">
-<polygon fill="none" stroke="black" points="446.5,-147 446.5,-177 583.5,-177 583.5,-147 446.5,-147"/>
-<text text-anchor="start" x="454.5" y="-165" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-154" font-family="FreeSans" font-size="10.00"> Allocator &gt;::ObjectData</text>
+<polygon fill="none" stroke="black" points="420,-147 420,-177 548,-177 548,-147 420,-147"/>
+<text text-anchor="start" x="428" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::ObjectData</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M593.861,-162C615.635,-162 639.117,-162 660.255,-162"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="593.661,-158.5 583.661,-162 593.661,-165.5 593.661,-158.5"/>
-<text text-anchor="middle" x="622" y="-165" font-family="FreeSans" font-size="10.00"> o</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M558.176,-162C577.736,-162 598.709,-162 617.688,-162"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="558.095,-158.5 548.095,-162 558.094,-165.5 558.095,-158.5"/>
+<text text-anchor="middle" x="583" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00"> o</text>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
 <g id="a_node8"><a xlink:href="struct_generic_member.html" target="_top" xlink:title="Name&#45;value pair in a JSON object value. ">
-<polygon fill="none" stroke="black" points="169.5,-147 169.5,-177 320.5,-177 320.5,-147 169.5,-147"/>
-<text text-anchor="start" x="177.5" y="-165" font-family="FreeSans" font-size="10.00">GenericMember&lt; Encoding,</text>
-<text text-anchor="middle" x="245" y="-154" font-family="FreeSans" font-size="10.00"> Allocator &gt;</text>
+<polygon fill="none" stroke="black" points="162,-147 162,-177 300,-177 300,-147 162,-147"/>
+<text text-anchor="start" x="170" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00">GenericMember&lt; Encoding,</text>
+<text text-anchor="middle" x="231" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node7 -->
 <g id="edge8" class="edge"><title>Node8&#45;&gt;Node7</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M330.973,-162C368.153,-162 411.174,-162 446.161,-162"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="330.653,-158.5 320.653,-162 330.653,-165.5 330.653,-158.5"/>
-<text text-anchor="middle" x="384" y="-165" font-family="FreeSans" font-size="10.00"> members</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M310.506,-162C345.735,-162 386.738,-162 419.926,-162"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="310.255,-158.5 300.255,-162 310.255,-165.5 310.255,-158.5"/>
+<text text-anchor="middle" x="361" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00"> members</text>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
 <g id="a_node9"><a xlink:href="union_generic_value_1_1_number.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Number">
-<polygon fill="none" stroke="black" points="446.5,-98 446.5,-128 583.5,-128 583.5,-98 446.5,-98"/>
-<text text-anchor="start" x="454.5" y="-116" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-105" font-family="FreeSans" font-size="10.00"> Allocator &gt;::Number</text>
+<polygon fill="none" stroke="black" points="420,-98 420,-128 548,-128 548,-98 420,-98"/>
+<text text-anchor="start" x="428" y="-116" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::Number</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
 <g id="edge9" class="edge"><title>Node9&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M590.983,-130.331C614.52,-135.771 640.295,-141.729 663.075,-146.994"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="591.579,-126.877 581.048,-128.035 590.003,-133.697 591.579,-126.877"/>
-<text text-anchor="middle" x="622" y="-142" font-family="FreeSans" font-size="10.00"> n</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M554.907,-130.477C576.51,-135.877 600.102,-141.776 620.975,-146.994"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="555.689,-127.065 545.138,-128.035 553.991,-133.856 555.689,-127.065"/>
+<text text-anchor="middle" x="583" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00"> n</text>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
 <g id="a_node10"><a xlink:href="struct_generic_value_1_1_number_1_1_u.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Number::U">
-<polygon fill="none" stroke="black" points="176.5,-98 176.5,-128 313.5,-128 313.5,-98 176.5,-98"/>
-<text text-anchor="start" x="184.5" y="-116" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="245" y="-105" font-family="FreeSans" font-size="10.00"> Allocator &gt;::Number::U</text>
+<polygon fill="none" stroke="black" points="167,-98 167,-128 295,-128 295,-98 167,-98"/>
+<text text-anchor="start" x="175" y="-116" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="231" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::Number::U</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node9 -->
 <g id="edge10" class="edge"><title>Node10&#45;&gt;Node9</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M323.834,-113C362.633,-113 409.103,-113 446.394,-113"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="323.628,-109.5 313.628,-113 323.628,-116.5 323.628,-109.5"/>
-<text text-anchor="middle" x="384" y="-116" font-family="FreeSans" font-size="10.00"> u</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M305.077,-113C341.475,-113 385.046,-113 419.96,-113"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="305.014,-109.5 295.014,-113 305.014,-116.5 305.014,-109.5"/>
+<text text-anchor="middle" x="361" y="-116" font-family="Helvetica,sans-Serif" font-size="10.00"> u</text>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
 <g id="a_node11"><a xlink:href="struct_generic_value_1_1_number_1_1_i.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Number::I">
-<polygon fill="none" stroke="black" points="176.5,-49 176.5,-79 313.5,-79 313.5,-49 176.5,-49"/>
-<text text-anchor="start" x="184.5" y="-67" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="245" y="-56" font-family="FreeSans" font-size="10.00"> Allocator &gt;::Number::I</text>
+<polygon fill="none" stroke="black" points="167,-49 167,-79 295,-79 295,-49 167,-49"/>
+<text text-anchor="start" x="175" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="231" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::Number::I</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node9 -->
 <g id="edge11" class="edge"><title>Node11&#45;&gt;Node9</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M323.834,-78.2308C362.633,-85.3247 409.103,-93.8211 446.394,-100.639"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="324.094,-74.7205 313.628,-76.3648 322.835,-81.6063 324.094,-74.7205"/>
-<text text-anchor="middle" x="384" y="-98" font-family="FreeSans" font-size="10.00"> i</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M305.077,-78.266C341.475,-85.3717 385.046,-93.8775 419.96,-100.693"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="305.499,-74.7825 295.014,-76.3015 304.158,-81.6528 305.499,-74.7825"/>
+<text text-anchor="middle" x="361" y="-98" font-family="Helvetica,sans-Serif" font-size="10.00"> i</text>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
 <g id="a_node12"><a xlink:href="struct_generic_value_1_1_short_string.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::ShortString">
-<polygon fill="none" stroke="black" points="446.5,-49 446.5,-79 583.5,-79 583.5,-49 446.5,-49"/>
-<text text-anchor="start" x="454.5" y="-67" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-56" font-family="FreeSans" font-size="10.00"> Allocator &gt;::ShortString</text>
+<polygon fill="none" stroke="black" points="420,-49 420,-79 548,-79 548,-49 420,-49"/>
+<text text-anchor="start" x="428" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::ShortString</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node4 -->
 <g id="edge12" class="edge"><title>Node12&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M581.59,-82.3862C586.512,-84.1581 591.363,-86.0331 596,-88 635.665,-104.826 678.682,-130.464 704.478,-146.717"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="582.669,-79.0563 572.075,-79.1091 580.39,-85.6747 582.669,-79.0563"/>
-<text text-anchor="middle" x="622" y="-107" font-family="FreeSans" font-size="10.00"> ss</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M545.357,-82.6512C549.679,-84.3498 553.933,-86.1367 558,-88 595.156,-105.024 635.185,-130.605 659.157,-146.794"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="546.424,-79.3134 535.832,-79.0784 543.966,-85.8675 546.424,-79.3134"/>
+<text text-anchor="middle" x="583" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00"> ss</text>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node"><title>Node13</title>
 <g id="a_node13"><a xlink:href="struct_generic_value_1_1_flag.html" target="_top" xlink:title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Flag">
-<polygon fill="none" stroke="black" points="446.5,-0 446.5,-30 583.5,-30 583.5,-0 446.5,-0"/>
-<text text-anchor="start" x="454.5" y="-18" font-family="FreeSans" font-size="10.00">GenericValue&lt; Encoding,</text>
-<text text-anchor="middle" x="515" y="-7" font-family="FreeSans" font-size="10.00"> Allocator &gt;::Flag</text>
+<polygon fill="none" stroke="black" points="420,-0 420,-30 548,-30 548,-0 420,-0"/>
+<text text-anchor="start" x="428" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">GenericValue&lt; Encoding,</text>
+<text text-anchor="middle" x="484" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator &gt;::Flag</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node4 -->
 <g id="edge13" class="edge"><title>Node13&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M586.49,-34.0962C589.764,-35.619 592.952,-37.2515 596,-39 647.082,-68.3008 694.326,-120.901 715.82,-146.777"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="587.652,-30.7869 577.08,-30.0897 584.909,-37.2274 587.652,-30.7869"/>
-<text text-anchor="middle" x="622" y="-64" font-family="FreeSans" font-size="10.00"> f</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M549.752,-34.4117C552.594,-35.8467 555.358,-37.3747 558,-39 606.357,-68.7488 650.024,-121.139 669.811,-146.872"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="551.009,-31.1377 540.461,-30.1399 548.085,-37.4976 551.009,-31.1377"/>
+<text text-anchor="middle" x="583" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00"> f</text>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
 <g id="a_node14"><a xlink:href="struct_parse_result.html" target="_top" xlink:title="Result of parsing (wraps ParseErrorCode) ">
-<polygon fill="none" stroke="black" points="209.5,-430.5 209.5,-449.5 280.5,-449.5 280.5,-430.5 209.5,-430.5"/>
-<text text-anchor="middle" x="245" y="-437.5" font-family="FreeSans" font-size="10.00">ParseResult</text>
+<polygon fill="none" stroke="black" points="195.5,-430.5 195.5,-449.5 266.5,-449.5 266.5,-430.5 195.5,-430.5"/>
+<text text-anchor="middle" x="231" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00">ParseResult</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node2 -->
 <g id="edge14" class="edge"><title>Node14&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M290.989,-435.147C325.441,-431.006 374.022,-424.249 416,-415 433.154,-411.22 451.697,-406.027 467.989,-401.079"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="290.297,-431.704 280.774,-436.348 291.114,-438.656 290.297,-431.704"/>
-<text text-anchor="middle" x="384" y="-429" font-family="FreeSans" font-size="10.00"> parseResult_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M276.658,-434.889C308.947,-430.742 353.482,-424.09 392,-415 407.977,-411.23 425.206,-406.038 440.329,-401.089"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="276.115,-431.43 266.628,-436.148 276.986,-438.375 276.115,-431.43"/>
+<text text-anchor="middle" x="361" y="-429" font-family="Helvetica,sans-Serif" font-size="10.00"> parseResult_</text>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<polygon fill="none" stroke="#bfbfbf" points="0,-391.5 0,-410.5 44,-410.5 44,-391.5 0,-391.5"/>
-<text text-anchor="middle" x="22" y="-398.5" font-family="FreeSans" font-size="10.00">size_t</text>
+<polygon fill="none" stroke="#bfbfbf" points="0.5,-391.5 0.5,-410.5 43.5,-410.5 43.5,-391.5 0.5,-391.5"/>
+<text text-anchor="middle" x="22" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">size_t</text>
 </g>
 <!-- Node15&#45;&gt;Node2 -->
 <g id="edge18" class="edge"><title>Node15&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M54.3623,-400.042C129.922,-397.734 323.93,-391.807 434.225,-388.437"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="53.9861,-396.552 44.0977,-400.355 54.1999,-403.548 53.9861,-396.552"/>
-<text text-anchor="middle" x="245" y="-399" font-family="FreeSans" font-size="10.00"> kDefaultStackCapacity</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.8807,-399.993C126.018,-397.641 307.224,-391.732 409.601,-388.393"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="53.5395,-396.502 43.6589,-400.326 53.7677,-403.498 53.5395,-396.502"/>
+<text text-anchor="middle" x="231" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00"> kDefaultStackCapacity</text>
 </g>
 <!-- Node15&#45;&gt;Node14 -->
 <g id="edge15" class="edge"><title>Node15&#45;&gt;Node14</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.888,-412.745C56.61,-413.58 59.3407,-414.348 62,-415 112.49,-427.387 172.469,-434.135 209.384,-437.403"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="54.8045,-409.361 44.2108,-409.517 52.5896,-416.002 54.8045,-409.361"/>
-<text text-anchor="middle" x="100" y="-431" font-family="FreeSans" font-size="10.00"> offset_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.4137,-412.563C56.2935,-413.462 59.1874,-414.293 62,-415 107.329,-426.39 160.928,-433.26 195.181,-436.84"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="54.4095,-409.205 43.8153,-409.327 52.1733,-415.838 54.4095,-409.205"/>
+<text text-anchor="middle" x="97" y="-431" font-family="Helvetica,sans-Serif" font-size="10.00"> offset_</text>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
 <g id="a_node16"><a xlink:href="classinternal_1_1_stack.html" target="_top" xlink:title="internal::Stack\&lt; StackAllocator \&gt;">
-<polygon fill="none" stroke="black" points="156.5,-345.5 156.5,-364.5 333.5,-364.5 333.5,-345.5 156.5,-345.5"/>
-<text text-anchor="middle" x="245" y="-352.5" font-family="FreeSans" font-size="10.00">internal::Stack&lt; StackAllocator &gt;</text>
+<polygon fill="none" stroke="black" points="150.5,-345.5 150.5,-364.5 311.5,-364.5 311.5,-345.5 150.5,-345.5"/>
+<text text-anchor="middle" x="231" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">internal::Stack&lt; StackAllocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node15&#45;&gt;Node16 -->
 <g id="edge17" class="edge"><title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M43.2739,-385.552C49.0506,-381.849 55.5371,-378.304 62,-376 91.6603,-365.426 125.599,-359.89 156.07,-357.076"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="41.1254,-382.782 34.8859,-391.344 45.1033,-388.542 41.1254,-382.782"/>
-<text text-anchor="middle" x="100" y="-379" font-family="FreeSans" font-size="10.00"> initialCapacity_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M43.2885,-385.592C49.0652,-381.89 55.5481,-378.335 62,-376 89.7779,-365.948 121.638,-360.552 150.093,-357.706"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="41.1435,-382.82 34.8981,-391.378 45.1174,-388.583 41.1435,-382.82"/>
+<text text-anchor="middle" x="97" y="-379" font-family="Helvetica,sans-Serif" font-size="10.00"> initialCapacity_</text>
 </g>
 <!-- Node16&#45;&gt;Node2 -->
 <g id="edge16" class="edge"><title>Node16&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M338.24,-365.67C369.465,-369.281 404.051,-373.282 434.224,-376.772"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="338.566,-362.184 328.23,-364.512 337.762,-369.138 338.566,-362.184"/>
-<text text-anchor="middle" x="384" y="-377" font-family="FreeSans" font-size="10.00"> stack_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M318.95,-365.739C348.639,-369.406 381.517,-373.466 409.995,-376.983"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="319.368,-362.264 309.014,-364.512 318.51,-369.211 319.368,-362.264"/>
+<text text-anchor="middle" x="361" y="-377" font-family="Helvetica,sans-Serif" font-size="10.00"> stack_</text>
 </g>
 </g>
 </svg>

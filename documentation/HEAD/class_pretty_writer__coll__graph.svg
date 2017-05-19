@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 838;
+var viewWidth = 788;
 var viewHeight = 71;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,56 +56,56 @@ var sectionId = 'dynsection-1';
 <title>PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="650.5,-22.5 650.5,-63.5 829.5,-63.5 829.5,-22.5 650.5,-22.5"/>
-<text text-anchor="start" x="658.5" y="-51.5" font-family="FreeSans" font-size="10.00">PrettyWriter&lt; OutputStream,</text>
-<text text-anchor="start" x="658.5" y="-40.5" font-family="FreeSans" font-size="10.00"> SourceEncoding, TargetEncoding,</text>
-<text text-anchor="middle" x="740" y="-29.5" font-family="FreeSans" font-size="10.00"> StackAllocator, writeFlags &gt;</text>
+<polygon fill="#bfbfbf" stroke="black" points="612,-22.5 612,-63.5 780,-63.5 780,-22.5 612,-22.5"/>
+<text text-anchor="start" x="620" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">PrettyWriter&lt; OutputStream,</text>
+<text text-anchor="start" x="620" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SourceEncoding, TargetEncoding,</text>
+<text text-anchor="middle" x="696" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StackAllocator, writeFlags &gt;</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_writer.html" target="_top" xlink:title="JSON writer. ">
-<polygon fill="none" stroke="black" points="432.5,-22.5 432.5,-63.5 611.5,-63.5 611.5,-22.5 432.5,-22.5"/>
-<text text-anchor="start" x="440.5" y="-51.5" font-family="FreeSans" font-size="10.00">Writer&lt; OutputStream,</text>
-<text text-anchor="start" x="440.5" y="-40.5" font-family="FreeSans" font-size="10.00"> SourceEncoding, TargetEncoding,</text>
-<text text-anchor="middle" x="522" y="-29.5" font-family="FreeSans" font-size="10.00"> StackAllocator, writeFlags &gt;</text>
+<polygon fill="none" stroke="black" points="406,-22.5 406,-63.5 574,-63.5 574,-22.5 406,-22.5"/>
+<text text-anchor="start" x="414" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">Writer&lt; OutputStream,</text>
+<text text-anchor="start" x="414" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SourceEncoding, TargetEncoding,</text>
+<text text-anchor="middle" x="490" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StackAllocator, writeFlags &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M621.961,-43C631.38,-43 640.891,-43 650.205,-43"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="621.791,-39.5001 611.791,-43 621.791,-46.5001 621.791,-39.5001"/>
+<path fill="none" stroke="midnightblue" d="M584.552,-43C593.708,-43 602.956,-43 611.997,-43"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="584.269,-39.5001 574.269,-43 584.269,-46.5001 584.269,-39.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="classinternal_1_1_stack.html" target="_top" xlink:title="internal::Stack\&lt; StackAllocator \&gt;">
-<polygon fill="none" stroke="black" points="156.5,-0.5 156.5,-19.5 333.5,-19.5 333.5,-0.5 156.5,-0.5"/>
-<text text-anchor="middle" x="245" y="-7.5" font-family="FreeSans" font-size="10.00">internal::Stack&lt; StackAllocator &gt;</text>
+<polygon fill="none" stroke="black" points="150.5,-0.5 150.5,-19.5 311.5,-19.5 311.5,-0.5 150.5,-0.5"/>
+<text text-anchor="middle" x="231" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">internal::Stack&lt; StackAllocator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M335.133,-20.696C366.253,-24.4303 401.16,-28.6192 432.249,-32.3498"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="335.518,-17.2172 325.172,-19.5007 334.684,-24.1673 335.518,-17.2172"/>
-<text text-anchor="middle" x="383" y="-33" font-family="FreeSans" font-size="10.00"> level_stack_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M316.007,-20.7869C344.757,-24.4786 376.898,-28.6055 405.6,-32.291"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="316.355,-17.3029 305.99,-19.5007 315.463,-24.2459 316.355,-17.3029"/>
+<text text-anchor="middle" x="359" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00"> level_stack_</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<polygon fill="none" stroke="#bfbfbf" points="0,-28.5 0,-47.5 44,-47.5 44,-28.5 0,-28.5"/>
-<text text-anchor="middle" x="22" y="-35.5" font-family="FreeSans" font-size="10.00">size_t</text>
+<polygon fill="none" stroke="#bfbfbf" points="0.5,-28.5 0.5,-47.5 43.5,-47.5 43.5,-28.5 0.5,-28.5"/>
+<text text-anchor="middle" x="22" y="-35.5" font-family="Helvetica,sans-Serif" font-size="10.00">size_t</text>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M54.1376,-41.4745C56.7945,-41.6857 59.4426,-41.8664 62,-42 190.52,-48.7139 339.559,-47.3547 432.078,-45.4364"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="54.2983,-37.9747 44.02,-40.5451 53.6578,-44.9453 54.2983,-37.9747"/>
-<text text-anchor="middle" x="245" y="-50" font-family="FreeSans" font-size="10.00"> kDefaultLevelDepth</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.6609,-41.4359C56.4775,-41.6635 59.2897,-41.8582 62,-42 181.375,-48.2459 319.779,-47.0202 405.877,-45.2573"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="53.8961,-37.9427 43.6151,-40.5026 53.2485,-44.9127 53.8961,-37.9427"/>
+<text text-anchor="middle" x="231" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00"> kDefaultLevelDepth</text>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M54.1306,-32.2325C56.789,-31.7946 59.4394,-31.3771 62,-31 92.6807,-26.4811 126.391,-22.3582 156.373,-18.9852"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="53.2691,-28.8293 44.0103,-33.9796 54.46,-35.7273 53.2691,-28.8293"/>
-<text text-anchor="middle" x="100" y="-34" font-family="FreeSans" font-size="10.00"> initialCapacity_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.6577,-32.3387C56.475,-31.8664 59.2882,-31.4126 62,-31 90.7687,-26.6233 122.411,-22.4912 150.402,-19.0689"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="52.8618,-28.9246 43.6109,-34.0891 54.0633,-35.8207 52.8618,-28.9246"/>
+<text text-anchor="middle" x="97" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00"> initialCapacity_</text>
 </g>
 </g>
 </svg>

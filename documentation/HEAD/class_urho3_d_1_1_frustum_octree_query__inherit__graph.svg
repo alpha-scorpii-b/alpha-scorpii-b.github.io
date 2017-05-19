@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 536;
+var viewWidth = 504;
 var viewHeight = 136;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,63 +56,63 @@ var sectionId = 'dynsection-0';
 <title>Urho3D::FrustumOctreeQuery</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="156.5,-54.5 156.5,-73.5 315.5,-73.5 315.5,-54.5 156.5,-54.5"/>
-<text text-anchor="middle" x="236" y="-61.5" font-family="FreeSans" font-size="10.00">Urho3D::FrustumOctreeQuery</text>
+<polygon fill="#bfbfbf" stroke="black" points="148,-54.5 148,-73.5 296,-73.5 296,-54.5 148,-54.5"/>
+<text text-anchor="middle" x="222" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::FrustumOctreeQuery</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:title="Frustum octree query with occlusion. ">
-<polygon fill="none" stroke="#bfbfbf" points="352.5,-98 352.5,-128 527.5,-128 527.5,-98 352.5,-98"/>
-<text text-anchor="start" x="360.5" y="-116" font-family="FreeSans" font-size="10.00">Urho3D::OccludedFrustumOctree</text>
-<text text-anchor="middle" x="440" y="-105" font-family="FreeSans" font-size="10.00">Query</text>
+<polygon fill="none" stroke="#bfbfbf" points="332.5,-98 332.5,-128 495.5,-128 495.5,-98 332.5,-98"/>
+<text text-anchor="start" x="340.5" y="-116" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::OccludedFrustumOctree</text>
+<text text-anchor="middle" x="414" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">Query</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M286.168,-75.9268C313.521,-82.562 347.832,-90.8851 377.011,-97.963"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="286.97,-72.5201 276.427,-73.564 285.32,-79.3228 286.97,-72.5201"/>
+<path fill="none" stroke="midnightblue" d="M269.925,-76.1018C295.541,-82.708 327.489,-90.9471 354.693,-97.963"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="270.642,-72.6722 260.085,-73.564 268.894,-79.4504 270.642,-72.6722"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:title="Frustum octree query for shadowcasters. ">
-<polygon fill="none" stroke="#bfbfbf" points="359.5,-49 359.5,-79 520.5,-79 520.5,-49 359.5,-49"/>
-<text text-anchor="start" x="367.5" y="-67" font-family="FreeSans" font-size="10.00">Urho3D::ShadowCasterOctree</text>
-<text text-anchor="middle" x="440" y="-56" font-family="FreeSans" font-size="10.00">Query</text>
+<polygon fill="none" stroke="#bfbfbf" points="339,-49 339,-79 489,-79 489,-49 339,-49"/>
+<text text-anchor="start" x="347" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::ShadowCasterOctree</text>
+<text text-anchor="middle" x="414" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">Query</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M325.812,-64C336.927,-64 348.242,-64 359.207,-64"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="325.677,-60.5001 315.677,-64 325.677,-67.5001 325.677,-60.5001"/>
+<path fill="none" stroke="midnightblue" d="M306.464,-64C317.267,-64 328.272,-64 338.909,-64"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="306.187,-60.5001 296.187,-64 306.187,-67.5001 306.187,-60.5001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:title="Frustum octree query for zones and occluders. ">
-<polygon fill="none" stroke="#bfbfbf" points="360.5,-0 360.5,-30 519.5,-30 519.5,-0 360.5,-0"/>
-<text text-anchor="start" x="368.5" y="-18" font-family="FreeSans" font-size="10.00">Urho3D::ZoneOccluderOctree</text>
-<text text-anchor="middle" x="440" y="-7" font-family="FreeSans" font-size="10.00">Query</text>
+<polygon fill="none" stroke="#bfbfbf" points="341,-0 341,-30 487,-30 487,-0 341,-0"/>
+<text text-anchor="start" x="349" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::ZoneOccluderOctree</text>
+<text text-anchor="middle" x="414" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Query</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M286.168,-52.0732C313.521,-45.438 347.832,-37.1149 377.011,-30.037"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="285.32,-48.6772 276.427,-54.436 286.97,-55.4799 285.32,-48.6772"/>
+<path fill="none" stroke="midnightblue" d="M269.925,-51.8982C295.541,-45.292 327.489,-37.0529 354.693,-30.037"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="268.894,-48.5496 260.085,-54.436 270.642,-55.3278 268.894,-48.5496"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_octree_query.html" target="_top" xlink:title="Base class for octree queries. ">
-<polygon fill="none" stroke="black" points="0,-54.5 0,-73.5 120,-73.5 120,-54.5 0,-54.5"/>
-<text text-anchor="middle" x="60" y="-61.5" font-family="FreeSans" font-size="10.00">Urho3D::OctreeQuery</text>
+<polygon fill="none" stroke="black" points="0,-54.5 0,-73.5 112,-73.5 112,-54.5 0,-54.5"/>
+<text text-anchor="middle" x="56" y="-61.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::OctreeQuery</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M130.629,-64C139.133,-64 147.867,-64 156.489,-64"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="130.394,-60.5001 120.394,-64 130.394,-67.5001 130.394,-60.5001"/>
+<path fill="none" stroke="midnightblue" d="M122.164,-64C130.563,-64 139.208,-64 147.727,-64"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="122.066,-60.5001 112.066,-64 122.066,-67.5001 122.066,-60.5001"/>
 </g>
 </g>
 </svg>

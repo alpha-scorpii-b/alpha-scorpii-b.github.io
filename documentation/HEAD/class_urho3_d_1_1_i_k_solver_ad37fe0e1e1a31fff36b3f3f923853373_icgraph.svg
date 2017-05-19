@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 716;
+var viewWidth = 690;
 var viewHeight = 77;
 var sectionId = 'dynsection-9';
 </script>
@@ -56,63 +56,63 @@ var sectionId = 'dynsection-9';
 <title>Urho3D::IKSolver::Solve</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-22.5 0,-41.5 130,-41.5 130,-22.5 0,-22.5"/>
-<text text-anchor="middle" x="65" y="-29.5" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver::Solve</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-22.5 0.5,-41.5 125.5,-41.5 125.5,-22.5 0.5,-22.5"/>
+<text text-anchor="middle" x="63" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IKSolver::Solve</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_i_k_solver.html#a33f6db3304063adb8c43f713c5be3b7a" target="_top" xlink:title="Invokes the IK solver. ">
-<polygon fill="none" stroke="black" points="166,-17 166,-47 330,-47 330,-17 166,-17"/>
-<text text-anchor="start" x="174" y="-35" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver::Handle</text>
-<text text-anchor="middle" x="248" y="-24" font-family="FreeSans" font-size="10.00">SceneDrawableUpdateFinished</text>
+<polygon fill="none" stroke="black" points="162,-17 162,-47 316,-47 316,-17 162,-17"/>
+<text text-anchor="start" x="170" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IKSolver::Handle</text>
+<text text-anchor="middle" x="239" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">SceneDrawableUpdateFinished</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M140.26,-32C148.712,-32 157.36,-32 165.894,-32"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="140.069,-28.5001 130.069,-32 140.069,-35.5001 140.069,-28.5001"/>
+<path fill="none" stroke="midnightblue" d="M136.058,-32C144.536,-32 153.209,-32 161.742,-32"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="135.836,-28.5001 125.836,-32 135.836,-35.5001 135.836,-28.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_i_k_solver.html#ae212a50b6c837cd758ff54b99dff0b48" target="_top" xlink:title="Mostly exists because of the editor. When enabled, the solver will be invoked automatically for you...">
-<polygon fill="none" stroke="black" points="380,-39 380,-69 516,-69 516,-39 380,-39"/>
-<text text-anchor="start" x="388" y="-57" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver::Enable</text>
-<text text-anchor="middle" x="448" y="-46" font-family="FreeSans" font-size="10.00">AutoSolve</text>
+<polygon fill="none" stroke="black" points="365,-39 365,-69 495,-69 495,-39 365,-39"/>
+<text text-anchor="start" x="373" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IKSolver::Enable</text>
+<text text-anchor="middle" x="430" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">AutoSolve</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M340.262,-42.1402C353.613,-43.6237 367.153,-45.1281 379.903,-46.5447"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="340.431,-38.6375 330.105,-41.0117 339.658,-45.5947 340.431,-38.6375"/>
+<path fill="none" stroke="midnightblue" d="M326.009,-42.0116C339.101,-43.5356 352.413,-45.0851 364.928,-46.5419"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="326.394,-38.5329 316.057,-40.8531 325.585,-45.486 326.394,-38.5329"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_i_k_solver.html#abc49219593786fcc85bf7f1037e7bba2" target="_top" xlink:title="Subscribe to drawable update finished event here. ">
-<polygon fill="none" stroke="black" points="366,-0.5 366,-19.5 530,-19.5 530,-0.5 366,-0.5"/>
-<text text-anchor="middle" x="448" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver::OnSceneSet</text>
+<polygon fill="none" stroke="black" points="352.5,-0.5 352.5,-19.5 507.5,-19.5 507.5,-0.5 352.5,-0.5"/>
+<text text-anchor="middle" x="430" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IKSolver::OnSceneSet</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M340.085,-21.8795C348.63,-20.93 357.254,-19.9718 365.7,-19.0333"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="339.658,-18.4053 330.105,-22.9883 340.431,-25.3625 339.658,-18.4053"/>
+<path fill="none" stroke="midnightblue" d="M326.262,-21.9589C335.009,-20.9408 343.85,-19.9116 352.484,-18.9067"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="325.585,-18.514 316.057,-23.1469 326.394,-25.4671 325.585,-18.514"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_i_k_solver.html#ad5339a36d93aab3d3302ed48ede3157e" target="_top" xlink:title="Registers this class to the context. ">
-<polygon fill="none" stroke="black" points="566,-39 566,-69 708,-69 708,-39 566,-39"/>
-<text text-anchor="start" x="574" y="-57" font-family="FreeSans" font-size="10.00">Urho3D::IKSolver::Register</text>
-<text text-anchor="middle" x="637" y="-46" font-family="FreeSans" font-size="10.00">Object</text>
+<polygon fill="none" stroke="black" points="544.5,-39 544.5,-69 681.5,-69 681.5,-39 544.5,-39"/>
+<text text-anchor="start" x="552.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IKSolver::Register</text>
+<text text-anchor="middle" x="613" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">Object</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M526.583,-54C539.609,-54 553.059,-54 565.883,-54"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="526.247,-50.5001 516.247,-54 526.247,-57.5001 526.247,-50.5001"/>
+<path fill="none" stroke="midnightblue" d="M505.312,-54C518.232,-54 531.607,-54 544.337,-54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="505.069,-50.5001 495.069,-54 505.069,-57.5001 505.069,-50.5001"/>
 </g>
 </g>
 </svg>

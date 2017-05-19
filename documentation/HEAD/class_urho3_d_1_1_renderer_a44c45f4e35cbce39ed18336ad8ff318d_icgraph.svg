@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1328;
+var viewWidth = 1258;
 var viewHeight = 82;
 var sectionId = 'dynsection-4';
 </script>
@@ -56,100 +56,100 @@ var sectionId = 'dynsection-4';
 <title>Urho3D::Renderer::GetScreenBuffer</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-22 0.5,-52 159.5,-52 159.5,-22 0.5,-22"/>
-<text text-anchor="start" x="8.5" y="-40" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::GetScreen</text>
-<text text-anchor="middle" x="80" y="-29" font-family="FreeSans" font-size="10.00">Buffer</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-22 0.5,-52 149.5,-52 149.5,-22 0.5,-22"/>
+<text text-anchor="start" x="8.5" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::GetScreen</text>
+<text text-anchor="middle" x="75" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">Buffer</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_renderer.html#aa8239321fb6b01bc3be5fb4df152983f" target="_top" xlink:title="Allocate a depth&#45;stencil surface that does not need to be readable. Should only be called during actu...">
-<polygon fill="none" stroke="black" points="196.5,-44 196.5,-74 351.5,-74 351.5,-44 196.5,-44"/>
-<text text-anchor="start" x="204.5" y="-62" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::GetDepth</text>
-<text text-anchor="middle" x="274" y="-51" font-family="FreeSans" font-size="10.00">Stencil</text>
+<polygon fill="none" stroke="black" points="186,-44 186,-74 330,-74 330,-44 186,-44"/>
+<text text-anchor="start" x="194" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::GetDepth</text>
+<text text-anchor="middle" x="258" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">Stencil</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M169.656,-47.1585C178.568,-48.1796 187.564,-49.2104 196.335,-50.2155"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="169.981,-43.6729 159.648,-46.0117 169.184,-50.6274 169.981,-43.6729"/>
+<path fill="none" stroke="midnightblue" d="M159.771,-47.1822C168.468,-48.2393 177.249,-49.3065 185.789,-50.3445"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="159.969,-43.6805 149.62,-45.9482 159.124,-50.6293 159.969,-43.6805"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_renderer.html#a4e44255580c9a9665ae72d4a4f77c705" target="_top" xlink:title="Blur the shadow map. ">
-<polygon fill="none" stroke="black" points="388.5,-27.5 388.5,-46.5 573.5,-46.5 573.5,-27.5 388.5,-27.5"/>
-<text text-anchor="middle" x="481" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::BlurShadowMap</text>
+<polygon fill="none" stroke="black" points="366.5,-27.5 366.5,-46.5 539.5,-46.5 539.5,-27.5 366.5,-27.5"/>
+<text text-anchor="middle" x="453" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::BlurShadowMap</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M169.607,-35.3042C178.523,-35.18 187.44,-35.0744 196,-35 265.331,-34.3972 282.669,-34.4584 352,-35 363.779,-35.092 376.167,-35.2317 388.407,-35.3953"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="169.509,-31.8052 159.561,-35.4517 169.612,-38.8044 169.509,-31.8052"/>
+<path fill="none" stroke="midnightblue" d="M159.671,-35.3201C168.559,-35.189 177.466,-35.0776 186,-35 249.997,-34.4183 266.002,-34.4755 330,-35 341.756,-35.0964 354.149,-35.2449 366.35,-35.4186"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="159.608,-31.8206 149.664,-35.4757 159.717,-38.8197 159.608,-31.8206"/>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M361.756,-49.6896C371.559,-48.6375 381.56,-47.5643 391.387,-46.5097"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="361.195,-46.2296 351.626,-50.7767 361.942,-53.1896 361.195,-46.2296"/>
+<path fill="none" stroke="midnightblue" d="M340.091,-49.7564C349.438,-48.691 358.983,-47.603 368.363,-46.5338"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="339.583,-46.2916 330.044,-50.9017 340.376,-53.2466 339.583,-46.2916"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_renderer.html#ad3cd417832137ad7fca7704fb0f40af1" target="_top" xlink:title="Set shadow quality mode. See the SHADOWQUALITY enum in GraphicsDefs.h. ">
-<polygon fill="none" stroke="black" points="610,-22 610,-52 772,-52 772,-22 610,-22"/>
-<text text-anchor="start" x="618" y="-40" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::SetShadow</text>
-<text text-anchor="middle" x="691" y="-29" font-family="FreeSans" font-size="10.00">Quality</text>
+<polygon fill="none" stroke="black" points="576,-22 576,-52 728,-52 728,-22 576,-22"/>
+<text text-anchor="start" x="584" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::SetShadow</text>
+<text text-anchor="middle" x="652" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">Quality</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M583.782,-37C592.531,-37 601.302,-37 609.846,-37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="583.535,-33.5001 573.535,-37 583.534,-40.5001 583.535,-33.5001"/>
+<path fill="none" stroke="midnightblue" d="M549.757,-37C558.479,-37 567.229,-37 575.734,-37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="549.548,-33.5001 539.548,-37 549.548,-40.5001 549.548,-33.5001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_renderer.html#ae0d765a240f7cf5f829ddc95cb2729c9" target="_top" xlink:title="Initialize when screen mode initially set. ">
-<polygon fill="none" stroke="black" points="808,-27.5 808,-46.5 954,-46.5 954,-27.5 808,-27.5"/>
-<text text-anchor="middle" x="881" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Initialize</text>
+<polygon fill="none" stroke="black" points="764,-27.5 764,-46.5 902,-46.5 902,-27.5 764,-27.5"/>
+<text text-anchor="middle" x="833" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Initialize</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M782.091,-37C790.718,-37 799.389,-37 807.813,-37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="782.002,-33.5001 772.002,-37 782.001,-40.5001 782.002,-33.5001"/>
+<path fill="none" stroke="midnightblue" d="M738.207,-37C746.825,-37 755.495,-37 763.899,-37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="738.134,-33.5001 728.134,-37 738.134,-40.5001 738.134,-33.5001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_renderer.html#a8e41f9dda2e33e9e208c5ccfd0d1c6ac" target="_top" xlink:title="Construct. ">
-<polygon fill="none" stroke="black" points="1168.5,-27.5 1168.5,-46.5 1319.5,-46.5 1319.5,-27.5 1168.5,-27.5"/>
-<text text-anchor="middle" x="1244" y="-34.5" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Renderer</text>
+<polygon fill="none" stroke="black" points="1108,-27.5 1108,-46.5 1250,-46.5 1250,-27.5 1108,-27.5"/>
+<text text-anchor="middle" x="1179" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Renderer</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M964.22,-38.681C972.924,-38.8116 981.643,-38.9226 990,-39 1053.11,-39.5843 1068.89,-39.5685 1132,-39 1143.76,-38.8941 1156.21,-38.7251 1168.37,-38.5291"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="964.088,-35.1785 954.034,-38.5194 963.977,-42.1776 964.088,-35.1785"/>
+<path fill="none" stroke="midnightblue" d="M912.364,-38.6683C921.014,-38.8044 929.693,-38.9201 938,-39 997.553,-39.5726 1012.45,-39.5618 1072,-39 1083.6,-38.8906 1095.9,-38.714 1107.87,-38.5097"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="912.304,-35.1669 902.247,-38.5 912.188,-42.1659 912.304,-35.1669"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_renderer.html#ade42fa3aa8f7f48620bffc61ab32c635" target="_top" xlink:title="Handle screen mode event. ">
-<polygon fill="none" stroke="black" points="990,-0 990,-30 1132,-30 1132,-0 990,-0"/>
-<text text-anchor="start" x="998" y="-18" font-family="FreeSans" font-size="10.00">Urho3D::Renderer::Handle</text>
-<text text-anchor="middle" x="1061" y="-7" font-family="FreeSans" font-size="10.00">ScreenMode</text>
+<polygon fill="none" stroke="black" points="938.5,-0 938.5,-30 1071.5,-30 1071.5,-0 938.5,-0"/>
+<text text-anchor="start" x="946.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Renderer::Handle</text>
+<text text-anchor="middle" x="1005" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ScreenMode</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M964.14,-26.8478C972.706,-25.7891 981.358,-24.7198 989.774,-23.6796"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="963.638,-23.3832 954.143,-28.0835 964.497,-30.3303 963.638,-23.3832"/>
+<path fill="none" stroke="midnightblue" d="M912.307,-26.8661C921.002,-25.7409 929.79,-24.6036 938.306,-23.5016"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="911.634,-23.424 902.166,-28.1785 912.532,-30.3661 911.634,-23.424"/>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M1142.31,-24.7617C1150.96,-25.8127 1159.73,-26.8789 1168.31,-27.9215"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1142.59,-21.2695 1132.24,-23.5373 1141.74,-28.2184 1142.59,-21.2695"/>
+<path fill="none" stroke="midnightblue" d="M1081.64,-24.6747C1090.34,-25.7871 1099.18,-26.9179 1107.8,-28.0206"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1081.88,-21.1771 1071.52,-23.38 1080.99,-28.1206 1081.88,-21.1771"/>
 </g>
 </g>
 </svg>

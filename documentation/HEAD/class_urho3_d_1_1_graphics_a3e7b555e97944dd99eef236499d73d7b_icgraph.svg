@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 876;
+var viewWidth = 834;
 var viewHeight = 154;
 var sectionId = 'dynsection-3';
 </script>
@@ -56,100 +56,100 @@ var sectionId = 'dynsection-3';
 <title>Urho3D::Graphics::Clear</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-60.5 0,-79.5 132,-79.5 132,-60.5 0,-60.5"/>
-<text text-anchor="middle" x="66" y="-67.5" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::Clear</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-60.5 0.5,-79.5 125.5,-79.5 125.5,-60.5 0.5,-60.5"/>
+<text text-anchor="middle" x="63" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Graphics::Clear</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_graphics.html#aac131622deee0f32dffe86943d704f95" target="_top" xlink:title="Set screen mode. Return true if successful. ">
-<polygon fill="none" stroke="black" points="168,-60.5 168,-79.5 318,-79.5 318,-60.5 168,-60.5"/>
-<text text-anchor="middle" x="243" y="-67.5" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::SetMode</text>
+<polygon fill="none" stroke="black" points="162,-60.5 162,-79.5 302,-79.5 302,-60.5 162,-60.5"/>
+<text text-anchor="middle" x="232" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Graphics::SetMode</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M142.396,-70C150.866,-70 159.49,-70 167.943,-70"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="142.164,-66.5001 132.164,-70 142.164,-73.5001 142.164,-66.5001"/>
+<path fill="none" stroke="midnightblue" d="M135.792,-70C144.466,-70 153.313,-70 161.947,-70"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="135.71,-66.5001 125.71,-70 135.71,-73.5001 135.71,-66.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_engine.html#ae686bb22644561e57a4aaef3f8665c0e" target="_top" xlink:title="Initialize engine using parameters given and show the application window. Return true if successful...">
-<polygon fill="none" stroke="black" points="368,-126.5 368,-145.5 504,-145.5 504,-126.5 368,-126.5"/>
-<text text-anchor="middle" x="436" y="-133.5" font-family="FreeSans" font-size="10.00">Urho3D::Engine::Initialize</text>
+<polygon fill="none" stroke="black" points="351,-126.5 351,-145.5 479,-145.5 479,-126.5 351,-126.5"/>
+<text text-anchor="middle" x="415" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Engine::Initialize</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M273.709,-83.8918C295.579,-93.7548 326.217,-106.822 354,-116 365.828,-119.908 378.85,-123.447 390.93,-126.424"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="274.87,-80.5747 264.319,-79.6111 271.966,-86.944 274.87,-80.5747"/>
+<path fill="none" stroke="midnightblue" d="M261.613,-83.9808C282.456,-93.8065 311.553,-106.79 338,-116 349.21,-119.904 361.578,-123.464 373.022,-126.464"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="262.907,-80.7206 252.374,-79.5775 259.896,-87.0395 262.907,-80.7206"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_graphics.html#a116de4d90d4b556f408b58878bfd5654" target="_top" xlink:title="Toggle between full screen and windowed mode. Return true if successful. ">
-<polygon fill="none" stroke="black" points="367.5,-77 367.5,-107 504.5,-107 504.5,-77 367.5,-77"/>
-<text text-anchor="start" x="375.5" y="-95" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::Toggle</text>
-<text text-anchor="middle" x="436" y="-84" font-family="FreeSans" font-size="10.00">Fullscreen</text>
+<polygon fill="none" stroke="black" points="349.5,-77 349.5,-107 480.5,-107 480.5,-77 349.5,-77"/>
+<text text-anchor="start" x="357.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Graphics::Toggle</text>
+<text text-anchor="middle" x="415" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">Fullscreen</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M328.114,-79.6886C341.282,-81.2052 354.742,-82.7557 367.475,-84.2223"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="328.454,-76.2046 318.119,-78.5373 327.653,-83.1586 328.454,-76.2046"/>
+<path fill="none" stroke="midnightblue" d="M312.46,-79.6582C324.773,-81.1548 337.363,-82.685 349.299,-84.1358"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="312.552,-76.1437 302.203,-78.4114 311.708,-83.0925 312.552,-76.1437"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_graphics.html#a6bb1ce37325a5ef2f7ba0e3f847b425f" target="_top" xlink:title="Set screen resolution only. Return true if successful. ">
-<polygon fill="none" stroke="black" points="361,-38.5 361,-57.5 511,-57.5 511,-38.5 361,-38.5"/>
-<text text-anchor="middle" x="436" y="-45.5" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::SetMode</text>
+<polygon fill="none" stroke="black" points="345,-38.5 345,-57.5 485,-57.5 485,-38.5 345,-38.5"/>
+<text text-anchor="middle" x="415" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Graphics::SetMode</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M328.089,-60.3143C339.026,-59.0546 350.166,-57.7715 360.923,-56.5325"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="327.653,-56.8414 318.119,-61.4627 328.454,-63.7954 327.653,-56.8414"/>
+<path fill="none" stroke="midnightblue" d="M312.46,-60.3418C323.248,-59.0306 334.248,-57.6936 344.835,-56.4068"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="311.708,-56.9075 302.203,-61.5886 312.552,-63.8563 311.708,-56.9075"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_graphics.html#a87d6974090e42a8c0d8ec676ca4da504" target="_top" xlink:title="Begin frame rendering. Return true if device available and can render. ">
-<polygon fill="none" stroke="black" points="354,-0.5 354,-19.5 518,-19.5 518,-0.5 354,-0.5"/>
-<text text-anchor="middle" x="436" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::Graphics::BeginFrame</text>
+<polygon fill="none" stroke="black" points="338,-0.5 338,-19.5 492,-19.5 492,-0.5 338,-0.5"/>
+<text text-anchor="middle" x="415" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Graphics::BeginFrame</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M276.706,-56.57C298.392,-47.9743 327.609,-36.9788 354,-29 365.476,-25.5306 378.025,-22.3136 389.745,-19.5501"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="275.293,-53.3657 267.31,-60.3311 277.894,-59.8644 275.293,-53.3657"/>
+<path fill="none" stroke="midnightblue" d="M264.479,-56.4957C285.141,-47.9343 312.89,-37.0052 338,-29 348.885,-25.5299 360.809,-22.2913 371.919,-19.5061"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="263.108,-53.2753 255.234,-60.3641 265.81,-59.7328 263.108,-53.2753"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_engine.html#a9c582d4f4e9a7ea2b1a046dac4dea8e3" target="_top" xlink:title="Render after frame update. ">
-<polygon fill="none" stroke="black" points="554.5,-0.5 554.5,-19.5 685.5,-19.5 685.5,-0.5 554.5,-0.5"/>
-<text text-anchor="middle" x="620" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::Engine::Render</text>
+<polygon fill="none" stroke="black" points="528,-0.5 528,-19.5 652,-19.5 652,-0.5 528,-0.5"/>
+<text text-anchor="middle" x="590" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Engine::Render</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M528.427,-10C537.194,-10 545.955,-10 554.385,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="528.153,-6.5001 518.153,-10 528.153,-13.5001 528.153,-6.5001"/>
+<path fill="none" stroke="midnightblue" d="M502.271,-10C510.927,-10 519.587,-10 527.902,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="502.132,-6.5001 492.132,-10 502.132,-13.5001 502.132,-6.5001"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
 <g id="a_node8"><a xlink:href="class_urho3_d_1_1_engine.html#a7670e665e72f4efd8426ba7a9559d3b0" target="_top" xlink:title="Run one frame. ">
-<polygon fill="none" stroke="black" points="722.5,-0.5 722.5,-19.5 867.5,-19.5 867.5,-0.5 722.5,-0.5"/>
-<text text-anchor="middle" x="795" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::Engine::RunFrame</text>
+<polygon fill="none" stroke="black" points="688,-0.5 688,-19.5 826,-19.5 826,-0.5 688,-0.5"/>
+<text text-anchor="middle" x="757" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Engine::RunFrame</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M696.058,-10C704.783,-10 713.665,-10 722.342,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="695.911,-6.5001 685.911,-10 695.911,-13.5001 695.911,-6.5001"/>
+<path fill="none" stroke="midnightblue" d="M662.575,-10C670.966,-10 679.511,-10 687.854,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="662.44,-6.5001 652.44,-10 662.44,-13.5001 662.44,-6.5001"/>
 </g>
 </g>
 </svg>

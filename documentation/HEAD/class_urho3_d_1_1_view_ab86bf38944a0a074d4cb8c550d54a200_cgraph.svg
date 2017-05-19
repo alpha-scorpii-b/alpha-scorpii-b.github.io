@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 842;
+var viewWidth = 798;
 var viewHeight = 165;
 var sectionId = 'dynsection-2';
 </script>
@@ -56,107 +56,107 @@ var sectionId = 'dynsection-2';
 <title>Urho3D::View::PrepareInstancingBuffer</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-85 0.5,-115 173.5,-115 173.5,-85 0.5,-85"/>
-<text text-anchor="start" x="8.5" y="-103" font-family="FreeSans" font-size="10.00">Urho3D::View::PrepareInstancing</text>
-<text text-anchor="middle" x="87" y="-92" font-family="FreeSans" font-size="10.00">Buffer</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-85 0.5,-115 163.5,-115 163.5,-85 0.5,-85"/>
+<text text-anchor="start" x="8.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::View::PrepareInstancing</text>
+<text text-anchor="middle" x="82" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00">Buffer</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_vertex_buffer.html#a7ac86bc78fa3356eb5eb3045884319e3" target="_top" xlink:title="Lock the buffer for write&#45;only editing. Return data pointer if successful. Optionally discard data ou...">
-<polygon fill="none" stroke="black" points="366.5,-127 366.5,-157 485.5,-157 485.5,-127 366.5,-127"/>
-<text text-anchor="start" x="374.5" y="-145" font-family="FreeSans" font-size="10.00">Urho3D::VertexBuffer</text>
-<text text-anchor="middle" x="426" y="-134" font-family="FreeSans" font-size="10.00">::Lock</text>
+<polygon fill="none" stroke="black" points="348.5,-127 348.5,-157 459.5,-157 459.5,-127 348.5,-127"/>
+<text text-anchor="start" x="356.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VertexBuffer</text>
+<text text-anchor="middle" x="404" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">::Lock</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M157.453,-115.044C174.569,-118.369 192.897,-121.609 210,-124 258.664,-130.802 313.911,-135.36 356.215,-138.187"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="356.198,-141.693 366.404,-138.851 356.653,-134.708 356.198,-141.693"/>
+<path fill="none" stroke="midnightblue" d="M149.59,-115.026C166.006,-118.352 183.587,-121.597 200,-124 245.892,-130.719 298.013,-135.277 337.951,-138.125"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="337.873,-141.628 348.092,-138.83 338.358,-134.645 337.873,-141.628"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_vertex_buffer.html#a18b5f85d37c0727c78f11bf9dec8fd17" target="_top" xlink:title="Return vertex size in bytes. ">
-<polygon fill="none" stroke="black" points="210.5,-85 210.5,-115 329.5,-115 329.5,-85 210.5,-85"/>
-<text text-anchor="start" x="218.5" y="-103" font-family="FreeSans" font-size="10.00">Urho3D::VertexBuffer</text>
-<text text-anchor="middle" x="270" y="-92" font-family="FreeSans" font-size="10.00">::GetVertexSize</text>
+<polygon fill="none" stroke="black" points="200.5,-85 200.5,-115 311.5,-115 311.5,-85 200.5,-85"/>
+<text text-anchor="start" x="208.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VertexBuffer</text>
+<text text-anchor="middle" x="256" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00">::GetVertexSize</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M173.73,-100C182.661,-100 191.655,-100 200.362,-100"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="200.43,-103.5 210.43,-100 200.43,-96.5001 200.43,-103.5"/>
+<path fill="none" stroke="midnightblue" d="M163.712,-100C172.62,-100 181.604,-100 190.28,-100"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="190.3,-103.5 200.3,-100 190.3,-96.5001 190.3,-103.5"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_vertex_buffer.html#a10d352ff496e04a7d1395559d72a0b17" target="_top" xlink:title="Unlock the buffer and apply changes to the GPU buffer. ">
-<polygon fill="none" stroke="black" points="210.5,-36 210.5,-66 329.5,-66 329.5,-36 210.5,-36"/>
-<text text-anchor="start" x="218.5" y="-54" font-family="FreeSans" font-size="10.00">Urho3D::VertexBuffer</text>
-<text text-anchor="middle" x="270" y="-43" font-family="FreeSans" font-size="10.00">::Unlock</text>
+<polygon fill="none" stroke="black" points="200.5,-36 200.5,-66 311.5,-66 311.5,-36 200.5,-36"/>
+<text text-anchor="start" x="208.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VertexBuffer</text>
+<text text-anchor="middle" x="256" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00">::Unlock</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M143.783,-84.8986C162.71,-79.7747 184.025,-74.0044 203.63,-68.6968"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="204.663,-72.0432 213.401,-66.0516 202.834,-65.2864 204.663,-72.0432"/>
+<path fill="none" stroke="midnightblue" d="M136.009,-84.8986C153.831,-79.8215 173.88,-74.1098 192.37,-68.8423"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="193.508,-72.1575 202.166,-66.0516 191.59,-65.4254 193.508,-72.1575"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_shared_array_ptr.html#ac0a9f7d0728fa3ba9be5889f44f7ac46" target="_top" xlink:title="Return the raw pointer. ">
-<polygon fill="none" stroke="black" points="678,-68.5 678,-87.5 834,-87.5 834,-68.5 678,-68.5"/>
-<text text-anchor="middle" x="756" y="-75.5" font-family="FreeSans" font-size="10.00">Urho3D::SharedArrayPtr::Get</text>
+<polygon fill="none" stroke="black" points="644.5,-68.5 644.5,-87.5 789.5,-87.5 789.5,-68.5 644.5,-68.5"/>
+<text text-anchor="middle" x="717" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::SharedArrayPtr::Get</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M485.8,-135.788C529.239,-130.651 589.666,-122.355 642,-111 667.287,-105.513 695.202,-97.3819 716.959,-90.5639"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="718.019,-93.8997 726.491,-87.5379 715.901,-87.2278 718.019,-93.8997"/>
+<path fill="none" stroke="midnightblue" d="M459.685,-135.833C500.776,-130.672 558.292,-122.327 608,-111 631.984,-105.535 658.401,-97.4997 679.105,-90.7267"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="680.384,-93.99 688.774,-87.52 678.181,-87.3459 680.384,-93.99"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge9" class="edge"><title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M321.858,-66.1212C336.021,-69.7084 351.5,-73.055 366,-75 468.818,-88.7917 588.298,-87.113 667.429,-83.5636"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="668.013,-87.0402 677.838,-83.0755 667.685,-80.0478 668.013,-87.0402"/>
+<path fill="none" stroke="midnightblue" d="M305.681,-66.1175C319.248,-69.7046 334.084,-73.0522 348,-75 445.597,-88.6607 559.181,-86.9488 634.056,-83.4296"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="634.543,-86.91 644.359,-82.9225 634.199,-79.9185 634.543,-86.91"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_vertex_buffer.html#a20dd4ccb7666c5acc1abcf5034fcea00" target="_top" xlink:title="Set a data range in the buffer. Optionally discard data outside the range. ">
-<polygon fill="none" stroke="black" points="366.5,-36 366.5,-66 485.5,-66 485.5,-36 366.5,-36"/>
-<text text-anchor="start" x="374.5" y="-54" font-family="FreeSans" font-size="10.00">Urho3D::VertexBuffer</text>
-<text text-anchor="middle" x="426" y="-43" font-family="FreeSans" font-size="10.00">::SetDataRange</text>
+<polygon fill="none" stroke="black" points="348.5,-36 348.5,-66 459.5,-66 459.5,-36 348.5,-36"/>
+<text text-anchor="start" x="356.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VertexBuffer</text>
+<text text-anchor="middle" x="404" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00">::SetDataRange</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M329.66,-51C338.274,-51 347.214,-51 356.012,-51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="356.248,-54.5001 366.248,-51 356.248,-47.5001 356.248,-54.5001"/>
+<path fill="none" stroke="midnightblue" d="M311.78,-51C320.388,-51 329.356,-51 338.164,-51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="338.398,-54.5001 348.398,-51 338.398,-47.5001 338.398,-54.5001"/>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge8" class="edge"><title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M485.64,-55.8271C536.224,-59.991 610,-66.064 667.556,-70.8018"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="667.486,-74.3078 677.739,-71.6401 668.06,-67.3314 667.486,-74.3078"/>
+<path fill="none" stroke="midnightblue" d="M459.528,-55.7339C507.826,-59.927 579.019,-66.1077 634.151,-70.8941"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="633.983,-74.3927 644.249,-71.7708 634.589,-67.4189 633.983,-74.3927"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_vertex_buffer.html#accec66f6c7f4ccd71afd4c59ada200f0" target="_top" xlink:title="Set all data in the buffer. ">
-<polygon fill="none" stroke="black" points="522.5,-0 522.5,-30 641.5,-30 641.5,-0 522.5,-0"/>
-<text text-anchor="start" x="530.5" y="-18" font-family="FreeSans" font-size="10.00">Urho3D::VertexBuffer</text>
-<text text-anchor="middle" x="582" y="-7" font-family="FreeSans" font-size="10.00">::SetData</text>
+<polygon fill="none" stroke="black" points="496.5,-0 496.5,-30 607.5,-30 607.5,-0 496.5,-0"/>
+<text text-anchor="start" x="504.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VertexBuffer</text>
+<text text-anchor="middle" x="552" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::SetData</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M485.66,-37.2872C494.368,-35.2516 503.408,-33.1383 512.299,-31.06"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="513.307,-34.4187 522.248,-28.7342 511.714,-27.6025 513.307,-34.4187"/>
+<path fill="none" stroke="midnightblue" d="M459.78,-37.4925C468.481,-35.3471 477.551,-33.1107 486.451,-30.9162"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="487.527,-34.2558 496.398,-28.4635 485.851,-27.4594 487.527,-34.2558"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M624.198,-30.0901C653.142,-40.6917 691.48,-54.7339 719.16,-64.8725"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="718.244,-68.2646 728.838,-68.4175 720.652,-61.6916 718.244,-68.2646"/>
+<path fill="none" stroke="midnightblue" d="M592.043,-30.0901C619.268,-40.6129 655.264,-54.5254 681.449,-64.6458"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="680.376,-67.9833 690.965,-68.3239 682.899,-61.4541 680.376,-67.9833"/>
 </g>
 </g>
 </svg>

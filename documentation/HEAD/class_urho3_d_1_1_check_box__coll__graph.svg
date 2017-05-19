@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1384;
+var viewWidth = 1292;
 var viewHeight = 836;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,478 +56,478 @@ var sectionId = 'dynsection-1';
 <title>Urho3D::CheckBox</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="1268.5,-109.5 1268.5,-128.5 1375.5,-128.5 1375.5,-109.5 1268.5,-109.5"/>
-<text text-anchor="middle" x="1322" y="-116.5" font-family="FreeSans" font-size="10.00">Urho3D::CheckBox</text>
+<polygon fill="#bfbfbf" stroke="black" points="1182,-109.5 1182,-128.5 1284,-128.5 1284,-109.5 1182,-109.5"/>
+<text text-anchor="middle" x="1233" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::CheckBox</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_border_image.html" target="_top" xlink:title="Image UI element with optional border. ">
-<polygon fill="none" stroke="black" points="1108,-422.5 1108,-441.5 1230,-441.5 1230,-422.5 1108,-422.5"/>
-<text text-anchor="middle" x="1169" y="-429.5" font-family="FreeSans" font-size="10.00">Urho3D::BorderImage</text>
+<polygon fill="none" stroke="black" points="1032,-422.5 1032,-441.5 1144,-441.5 1144,-422.5 1032,-422.5"/>
+<text text-anchor="middle" x="1088" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::BorderImage</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M1179.2,-412.938C1207.91,-353.413 1295.26,-172.36 1316.37,-128.597"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1175.88,-411.762 1174.68,-422.289 1182.18,-414.803 1175.88,-411.762"/>
+<path fill="none" stroke="midnightblue" d="M1097.71,-412.938C1124.9,-353.413 1207.62,-172.36 1227.62,-128.597"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1094.41,-411.739 1093.44,-422.289 1100.78,-414.648 1094.41,-411.739"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_u_i_element.html" target="_top" xlink:title="Base class for UI elements. ">
-<polygon fill="none" stroke="black" points="881.5,-422.5 881.5,-441.5 990.5,-441.5 990.5,-422.5 881.5,-422.5"/>
-<text text-anchor="middle" x="936" y="-429.5" font-family="FreeSans" font-size="10.00">Urho3D::UIElement</text>
+<polygon fill="none" stroke="black" points="817.5,-422.5 817.5,-441.5 920.5,-441.5 920.5,-422.5 817.5,-422.5"/>
+<text text-anchor="middle" x="869" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::UIElement</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M1000.7,-432C1034.14,-432 1074.89,-432 1107.8,-432"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1000.58,-428.5 990.577,-432 1000.58,-435.5 1000.58,-428.5"/>
+<path fill="none" stroke="midnightblue" d="M930.639,-432C962.345,-432 1000.87,-432 1031.75,-432"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="930.603,-428.5 920.603,-432 930.603,-435.5 930.603,-428.5"/>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
 <g id="edge21" class="edge"><title>Node3&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M914.89,-451.4C916.3,-456.315 923.336,-460 936,-460 956.262,-460 962.119,-450.565 953.571,-441.757"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="918.269,-452.351 918.429,-441.757 911.698,-449.939 918.269,-452.351"/>
-<text text-anchor="middle" x="936" y="-463" font-family="FreeSans" font-size="10.00"> parent_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M849.001,-451.4C850.337,-456.315 857.003,-460 869,-460 888.195,-460 893.744,-450.565 885.646,-441.757"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="852.376,-452.352 852.354,-441.757 845.764,-450.053 852.376,-452.352"/>
+<text text-anchor="middle" x="869" y="-463" font-family="Helvetica,sans-Serif" font-size="10.00"> parent_</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_animatable.html" target="_top" xlink:title="Base class for animatable object, an animatable object can be set animation on it&#39;s attributes...">
-<polygon fill="none" stroke="black" points="598,-440.5 598,-459.5 712,-459.5 712,-440.5 598,-440.5"/>
-<text text-anchor="middle" x="655" y="-447.5" font-family="FreeSans" font-size="10.00">Urho3D::Animatable</text>
+<polygon fill="none" stroke="black" points="553.5,-440.5 553.5,-459.5 658.5,-459.5 658.5,-440.5 553.5,-440.5"/>
+<text text-anchor="middle" x="606" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Animatable</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M722.229,-445.727C770.823,-442.592 835.979,-438.388 881.334,-435.462"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="721.878,-442.242 712.124,-446.379 722.329,-449.228 721.878,-442.242"/>
+<path fill="none" stroke="midnightblue" d="M668.577,-445.753C713.945,-442.625 774.899,-438.421 817.43,-435.488"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="668.301,-442.264 658.565,-446.444 668.782,-449.247 668.301,-442.264"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_serializable.html" target="_top" xlink:title="Base class for objects with automatic serialization through attributes. ">
-<polygon fill="none" stroke="red" points="190,-429.5 190,-448.5 304,-448.5 304,-429.5 190,-429.5"/>
-<text text-anchor="middle" x="247" y="-436.5" font-family="FreeSans" font-size="10.00">Urho3D::Serializable</text>
+<polygon fill="none" stroke="red" points="176.5,-429.5 176.5,-448.5 283.5,-448.5 283.5,-429.5 176.5,-429.5"/>
+<text text-anchor="middle" x="230" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Serializable</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M314.34,-440.797C393.295,-442.937 523.745,-446.471 597.897,-448.48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="314.117,-437.29 304.026,-440.518 313.928,-444.288 314.117,-437.29"/>
+<path fill="none" stroke="midnightblue" d="M294.212,-440.859C367.159,-443.005 485.734,-446.492 553.378,-448.482"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="293.89,-437.348 283.792,-440.553 293.685,-444.345 293.89,-437.348"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_hash_map.html" target="_top" xlink:title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::AttributeAnimationInfo \&gt; \&gt;">
-<polygon fill="none" stroke="black" points="146.5,-369.5 146.5,-410.5 347.5,-410.5 347.5,-369.5 146.5,-369.5"/>
-<text text-anchor="start" x="154.5" y="-398.5" font-family="FreeSans" font-size="10.00">Urho3D::HashMap&lt; Urho3D</text>
-<text text-anchor="start" x="154.5" y="-387.5" font-family="FreeSans" font-size="10.00">::String, Urho3D::SharedPtr</text>
-<text text-anchor="middle" x="247" y="-376.5" font-family="FreeSans" font-size="10.00">&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</text>
+<polygon fill="none" stroke="black" points="140,-369.5 140,-410.5 320,-410.5 320,-369.5 140,-369.5"/>
+<text text-anchor="start" x="148" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::HashMap&lt; Urho3D</text>
+<text text-anchor="start" x="148" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">::String, Urho3D::SharedPtr</text>
+<text text-anchor="middle" x="230" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M357.532,-402.853C411.907,-409.615 478.527,-418.472 538,-428 560.77,-431.648 585.929,-436.338 606.98,-440.45"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="357.879,-399.37 347.525,-401.615 357.02,-406.317 357.879,-399.37"/>
-<text text-anchor="middle" x="452" y="-431" font-family="FreeSans" font-size="10.00"> attributeAnimationInfos_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M330.131,-402.633C380.518,-409.429 442.644,-418.379 498,-428 519.02,-431.653 542.23,-436.344 561.644,-440.455"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="330.592,-399.164 320.215,-401.304 329.661,-406.102 330.592,-399.164"/>
+<text text-anchor="middle" x="418" y="-431" font-family="Helvetica,sans-Serif" font-size="10.00"> attributeAnimationInfos_</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_hash_base.html" target="_top" xlink:title="Hash set/map base class. ">
-<polygon fill="none" stroke="red" points="0,-473.5 0,-492.5 108,-492.5 108,-473.5 0,-473.5"/>
-<text text-anchor="middle" x="54" y="-480.5" font-family="FreeSans" font-size="10.00">Urho3D::HashBase</text>
+<polygon fill="none" stroke="red" points="0,-473.5 0,-492.5 102,-492.5 102,-473.5 0,-473.5"/>
+<text text-anchor="middle" x="51" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::HashBase</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M74.1874,-467.03C91.8821,-452.978 119.365,-432.817 146,-420 153.186,-416.542 160.857,-413.386 168.632,-410.531"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="71.9106,-464.369 66.3338,-473.378 76.311,-469.813 71.9106,-464.369"/>
+<path fill="none" stroke="midnightblue" d="M71.0384,-466.818C88.1734,-452.898 114.507,-433.053 140,-420 146.676,-416.582 153.827,-413.423 161.066,-410.541"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="68.4457,-464.42 62.9696,-473.49 72.9065,-469.815 68.4457,-464.42"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
 <g id="a_node9"><a xlink:href="class_urho3_d_1_1_hash_set.html" target="_top" xlink:title="Urho3D::HashSet\&lt; const\l Urho3D::AttributeInfo * \&gt;">
-<polygon fill="none" stroke="black" points="176.5,-468 176.5,-498 317.5,-498 317.5,-468 176.5,-468"/>
-<text text-anchor="start" x="184.5" y="-486" font-family="FreeSans" font-size="10.00">Urho3D::HashSet&lt; const</text>
-<text text-anchor="middle" x="247" y="-475" font-family="FreeSans" font-size="10.00"> Urho3D::AttributeInfo * &gt;</text>
+<polygon fill="none" stroke="black" points="166,-468 166,-498 294,-498 294,-468 166,-468"/>
+<text text-anchor="start" x="174" y="-486" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::HashSet&lt; const</text>
+<text text-anchor="middle" x="230" y="-475" font-family="Helvetica,sans-Serif" font-size="10.00"> Urho3D::AttributeInfo * &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node9 -->
 <g id="edge9" class="edge"><title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M118.318,-483C136.902,-483 157.327,-483 176.287,-483"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="118.204,-479.5 108.204,-483 118.204,-486.5 118.204,-479.5"/>
+<path fill="none" stroke="midnightblue" d="M112.726,-483C129.92,-483 148.671,-483 165.997,-483"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="112.248,-479.5 102.248,-483 112.248,-486.5 112.248,-479.5"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node"><title>Node17</title>
 <g id="a_node17"><a xlink:href="class_urho3_d_1_1_hash_map.html" target="_top" xlink:title="Urho3D::HashMap\&lt; StringHash,\l Variant \&gt;">
-<polygon fill="none" stroke="black" points="366,-535 366,-565 538,-565 538,-535 366,-535"/>
-<text text-anchor="start" x="374" y="-553" font-family="FreeSans" font-size="10.00">Urho3D::HashMap&lt; StringHash,</text>
-<text text-anchor="middle" x="452" y="-542" font-family="FreeSans" font-size="10.00"> Variant &gt;</text>
+<polygon fill="none" stroke="black" points="338.5,-535 338.5,-565 497.5,-565 497.5,-535 338.5,-535"/>
+<text text-anchor="start" x="346.5" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::HashMap&lt; StringHash,</text>
+<text text-anchor="middle" x="418" y="-542" font-family="Helvetica,sans-Serif" font-size="10.00"> Variant &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node17 -->
 <g id="edge20" class="edge"><title>Node7&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M69.4397,-499.99C85.8642,-517.872 114.517,-544.933 146,-556 222.82,-583.005 317.381,-575.408 380.663,-565.031"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="72.0485,-497.656 62.7876,-492.51 66.8177,-502.308 72.0485,-497.656"/>
+<path fill="none" stroke="midnightblue" d="M66.2709,-500.463C82.1161,-518.335 109.512,-545 140,-556 207.418,-580.323 290.194,-574.3 347.611,-565.016"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="68.6189,-497.823 59.4572,-492.502 63.301,-502.375 68.6189,-497.823"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
 <g id="a_node8"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::ObjectAnimation \&gt;">
-<polygon fill="none" stroke="red" points="170.5,-517 170.5,-547 323.5,-547 323.5,-517 170.5,-517"/>
-<text text-anchor="start" x="178.5" y="-535" font-family="FreeSans" font-size="10.00">Urho3D::SharedPtr&lt;</text>
-<text text-anchor="middle" x="247" y="-524" font-family="FreeSans" font-size="10.00"> Urho3D::ObjectAnimation &gt;</text>
+<polygon fill="none" stroke="red" points="160,-517 160,-547 300,-547 300,-517 160,-517"/>
+<text text-anchor="start" x="168" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::SharedPtr&lt;</text>
+<text text-anchor="middle" x="230" y="-524" font-family="Helvetica,sans-Serif" font-size="10.00"> Urho3D::ObjectAnimation &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node4 -->
 <g id="edge7" class="edge"><title>Node8&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M333.888,-520.417C415.978,-509.168 528.635,-493.193 538,-489 547.504,-484.744 546.704,-478.693 556,-474 568.901,-467.488 583.665,-462.681 597.751,-459.156"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="333.219,-516.976 323.786,-521.798 334.168,-523.911 333.219,-516.976"/>
-<text text-anchor="middle" x="452" y="-519" font-family="FreeSans" font-size="10.00"> objectAnimation_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M310.099,-520.302C385.679,-508.965 489.386,-492.921 498,-489 507.478,-484.685 506.759,-478.8 516,-474 527.929,-467.804 541.613,-463.089 554.614,-459.552"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="309.471,-516.857 300.1,-521.8 310.508,-523.78 309.471,-516.857"/>
+<text text-anchor="middle" x="418" y="-519" font-family="Helvetica,sans-Serif" font-size="10.00"> objectAnimation_</text>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
 <g id="edge8" class="edge"><title>Node9&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M327.782,-476.515C407.418,-470.042 527.751,-460.262 597.843,-454.564"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="327.477,-473.028 317.794,-477.327 328.045,-480.005 327.477,-473.028"/>
-<text text-anchor="middle" x="452" y="-477" font-family="FreeSans" font-size="10.00"> animatedNetworkAttributes_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M304.123,-476.548C377.558,-470.068 488.829,-460.25 553.476,-454.546"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="303.675,-473.074 294.021,-477.439 304.29,-480.047 303.675,-473.074"/>
+<text text-anchor="middle" x="418" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00"> animatedNetworkAttributes_</text>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
 <g id="a_node10"><a xlink:href="class_urho3_d_1_1_weak_ptr.html" target="_top" xlink:title="Urho3D::WeakPtr\&lt; Urho3D\l::XMLFile \&gt;">
-<polygon fill="none" stroke="black" points="582,-123 582,-153 728,-153 728,-123 582,-123"/>
-<text text-anchor="start" x="590" y="-141" font-family="FreeSans" font-size="10.00">Urho3D::WeakPtr&lt; Urho3D</text>
-<text text-anchor="middle" x="655" y="-130" font-family="FreeSans" font-size="10.00">::XMLFile &gt;</text>
+<polygon fill="none" stroke="black" points="537.5,-123 537.5,-153 674.5,-153 674.5,-123 537.5,-123"/>
+<text text-anchor="start" x="545.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::WeakPtr&lt; Urho3D</text>
+<text text-anchor="middle" x="606" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00">::XMLFile &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node3 -->
 <g id="edge10" class="edge"><title>Node10&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M737.701,-151.894C743.606,-154.924 749.139,-158.583 754,-163 771.481,-178.882 754.396,-197.254 772,-213 801.97,-239.807 829.81,-207.442 860,-234 919.338,-286.2 931.907,-390.377 934.411,-422.407"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="738.718,-148.515 728.16,-147.633 735.863,-154.907 738.718,-148.515"/>
-<text text-anchor="middle" x="816" y="-237" font-family="FreeSans" font-size="10.00"> appliedStyleFile_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M684.013,-154.164C688.326,-156.699 692.373,-159.624 696,-163 713.289,-179.091 696.481,-197.16 714,-213 742.545,-238.809 769.53,-208.109 798,-234 855.995,-286.74 865.95,-390.55 867.651,-422.449"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="685.337,-150.911 674.838,-149.493 682.161,-157.149 685.337,-150.911"/>
+<text text-anchor="middle" x="756" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00"> appliedStyleFile_</text>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
 <g id="a_node11"><a xlink:href="class_urho3_d_1_1_x_m_l_file.html" target="_top" xlink:title="XML document resource. ">
-<polygon fill="none" stroke="red" points="200,-239.5 200,-258.5 294,-258.5 294,-239.5 200,-239.5"/>
-<text text-anchor="middle" x="247" y="-246.5" font-family="FreeSans" font-size="10.00">Urho3D::XMLFile</text>
+<polygon fill="none" stroke="red" points="184,-239.5 184,-258.5 276,-258.5 276,-239.5 184,-239.5"/>
+<text text-anchor="middle" x="230" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::XMLFile</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node10 -->
 <g id="edge11" class="edge"><title>Node11&#45;&gt;Node10</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M290.996,-236.665C350.453,-219.683 461.184,-188.328 556,-163 568.299,-159.715 581.492,-156.285 594.085,-153.056"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="289.857,-233.35 281.205,-239.464 291.781,-240.081 289.857,-233.35"/>
-<text text-anchor="middle" x="452" y="-217" font-family="FreeSans" font-size="10.00"> ptr_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M271.919,-236.383C327.206,-219.397 428.88,-188.378 516,-163 527.249,-159.723 539.319,-156.283 550.828,-153.038"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="270.679,-233.102 262.149,-239.387 272.736,-239.793 270.679,-233.102"/>
+<text text-anchor="middle" x="418" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr_</text>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node"><title>Node20</title>
 <g id="a_node20"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::XMLFile \&gt;">
-<polygon fill="none" stroke="black" points="597,-295 597,-325 713,-325 713,-295 597,-295"/>
-<text text-anchor="start" x="605" y="-313" font-family="FreeSans" font-size="10.00">Urho3D::SharedPtr&lt;</text>
-<text text-anchor="middle" x="655" y="-302" font-family="FreeSans" font-size="10.00"> Urho3D::XMLFile &gt;</text>
+<polygon fill="none" stroke="black" points="553,-295 553,-325 659,-325 659,-295 553,-295"/>
+<text text-anchor="start" x="561" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::SharedPtr&lt;</text>
+<text text-anchor="middle" x="606" y="-302" font-family="Helvetica,sans-Serif" font-size="10.00"> Urho3D::XMLFile &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node20 -->
 <g id="edge27" class="edge"><title>Node11&#45;&gt;Node20</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M304.186,-257.442C381.293,-269.027 519.16,-289.741 596.798,-301.406"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="304.587,-253.963 294.178,-255.938 303.547,-260.885 304.587,-253.963"/>
-<text text-anchor="middle" x="452" y="-295" font-family="FreeSans" font-size="10.00"> ptr_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M286.315,-258.022C358.135,-269.736 482.575,-290.032 552.822,-301.49"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="286.546,-254.513 276.113,-256.358 285.419,-261.422 286.546,-254.513"/>
+<text text-anchor="middle" x="418" y="-295" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr_</text>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
 <g id="a_node12"><a xlink:href="struct_urho3_d_1_1_ref_count.html" target="_top" xlink:title="Reference count structure. ">
-<polygon fill="none" stroke="black" points="196,-128.5 196,-147.5 298,-147.5 298,-128.5 196,-128.5"/>
-<text text-anchor="middle" x="247" y="-135.5" font-family="FreeSans" font-size="10.00">Urho3D::RefCount</text>
+<polygon fill="none" stroke="black" points="181,-128.5 181,-147.5 279,-147.5 279,-128.5 181,-128.5"/>
+<text text-anchor="middle" x="230" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::RefCount</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node10 -->
 <g id="edge12" class="edge"><title>Node12&#45;&gt;Node10</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M308.581,-138C381.513,-138 503.871,-138 581.679,-138"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="308.191,-134.5 298.191,-138 308.191,-141.5 308.191,-134.5"/>
-<text text-anchor="middle" x="452" y="-141" font-family="FreeSans" font-size="10.00"> refCount_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M289.53,-138C356.706,-138 466.696,-138 537.449,-138"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="289.128,-134.5 279.128,-138 289.128,-141.5 289.128,-134.5"/>
+<text text-anchor="middle" x="418" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00"> refCount_</text>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node"><title>Node13</title>
 <g id="a_node13"><a xlink:href="class_urho3_d_1_1_int_rect.html" target="_top" xlink:title="Two&#45;dimensional bounding rectangle with integer values. ">
-<polygon fill="none" stroke="black" points="609,-671.5 609,-690.5 701,-690.5 701,-671.5 609,-671.5"/>
-<text text-anchor="middle" x="655" y="-678.5" font-family="FreeSans" font-size="10.00">Urho3D::IntRect</text>
+<polygon fill="none" stroke="black" points="561.5,-671.5 561.5,-690.5 650.5,-690.5 650.5,-671.5 561.5,-671.5"/>
+<text text-anchor="middle" x="606" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IntRect</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node2 -->
 <g id="edge34" class="edge"><title>Node13&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M711.337,-688.561C753.4,-692.151 812.009,-692.447 860,-675 1001.47,-623.571 1128.22,-479.841 1160.24,-441.501"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="711.57,-685.067 701.285,-687.614 710.913,-692.036 711.57,-685.067"/>
-<text text-anchor="middle" x="936" y="-692" font-family="FreeSans" font-size="10.00"> imageRect_</text>
-<text text-anchor="middle" x="936" y="-681" font-family="FreeSans" font-size="10.00">border_</text>
-<text text-anchor="middle" x="936" y="-670" font-family="FreeSans" font-size="10.00">imageBorder_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M660.862,-688.514C700.176,-691.833 754.052,-691.807 798,-675 933.008,-623.368 1049.85,-480.402 1079.66,-441.744"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="660.973,-685.009 650.688,-687.553 660.315,-691.978 660.973,-685.009"/>
+<text text-anchor="middle" x="869" y="-692" font-family="Helvetica,sans-Serif" font-size="10.00"> imageRect_</text>
+<text text-anchor="middle" x="869" y="-681" font-family="Helvetica,sans-Serif" font-size="10.00">border_</text>
+<text text-anchor="middle" x="869" y="-670" font-family="Helvetica,sans-Serif" font-size="10.00">imageBorder_</text>
 </g>
 <!-- Node13&#45;&gt;Node3 -->
 <g id="edge13" class="edge"><title>Node13&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M704.992,-669.046C764.876,-654.391 858.52,-631.322 860,-630 918.941,-577.352 931.78,-473.479 934.38,-441.558"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="703.844,-665.723 694.962,-671.499 705.507,-672.523 703.844,-665.723"/>
-<text text-anchor="middle" x="816" y="-666" font-family="FreeSans" font-size="10.00"> clipBorder_</text>
-<text text-anchor="middle" x="816" y="-655" font-family="FreeSans" font-size="10.00">layoutBorder_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M653.222,-668.937C709.31,-654.26 796.633,-631.263 798,-630 855.572,-576.8 865.815,-473.302 867.619,-441.516"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="652.272,-665.568 643.483,-671.485 654.043,-672.34 652.272,-665.568"/>
+<text text-anchor="middle" x="756" y="-666" font-family="Helvetica,sans-Serif" font-size="10.00"> clipBorder_</text>
+<text text-anchor="middle" x="756" y="-655" font-family="Helvetica,sans-Serif" font-size="10.00">layoutBorder_</text>
 </g>
 <!-- Node13&#45;&gt;Node13 -->
 <g id="edge14" class="edge"><title>Node13&#45;&gt;Node13</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M625.06,-699.275C625.914,-704.741 635.894,-709 655,-709 683.438,-709 691.658,-699.565 679.661,-690.757"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="628.046,-701.101 630.339,-690.757 622.096,-697.413 628.046,-701.101"/>
-<text text-anchor="middle" x="655" y="-712" font-family="FreeSans" font-size="10.00"> ZERO</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M578.001,-699.654C579.171,-704.937 588.504,-709 606,-709 632.66,-709 640.367,-699.565 629.119,-690.757"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="581.14,-701.208 582.881,-690.757 575.003,-697.842 581.14,-701.208"/>
+<text text-anchor="middle" x="606" y="-712" font-family="Helvetica,sans-Serif" font-size="10.00"> ZERO</text>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
 <g id="a_node14"><a xlink:href="class_urho3_d_1_1_vector.html" target="_top" xlink:title="Urho3D::Vector\&lt; Urho3D\l::SharedPtr\&lt; Urho3D::UIElement \&gt; \&gt;">
-<polygon fill="none" stroke="black" points="556.5,-526 556.5,-556 753.5,-556 753.5,-526 556.5,-526"/>
-<text text-anchor="start" x="564.5" y="-544" font-family="FreeSans" font-size="10.00">Urho3D::Vector&lt; Urho3D</text>
-<text text-anchor="middle" x="655" y="-533" font-family="FreeSans" font-size="10.00">::SharedPtr&lt; Urho3D::UIElement &gt; &gt;</text>
+<polygon fill="none" stroke="black" points="516.5,-526 516.5,-556 695.5,-556 695.5,-526 516.5,-526"/>
+<text text-anchor="start" x="524.5" y="-544" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Vector&lt; Urho3D</text>
+<text text-anchor="middle" x="606" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">::SharedPtr&lt; Urho3D::UIElement &gt; &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node3 -->
 <g id="edge15" class="edge"><title>Node14&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M763.644,-537.826C795.999,-533.462 830.668,-525.193 860,-510 891.695,-493.584 917.656,-458.57 928.935,-441.607"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="763.18,-534.356 753.685,-539.058 764.039,-541.303 763.18,-534.356"/>
-<text text-anchor="middle" x="816" y="-540" font-family="FreeSans" font-size="10.00"> children_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M705.633,-537.764C736.652,-533.475 770.07,-525.264 798,-510 828.336,-493.421 852.201,-458.486 862.49,-441.574"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="705.14,-534.299 695.656,-539.023 706.016,-541.244 705.14,-534.299"/>
+<text text-anchor="middle" x="756" y="-539" font-family="Helvetica,sans-Serif" font-size="10.00"> children_</text>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
 <g id="a_node15"><a xlink:href="class_urho3_d_1_1_vector_base.html" target="_top" xlink:title="Vector base class. ">
-<polygon fill="none" stroke="black" points="190,-604.5 190,-623.5 304,-623.5 304,-604.5 190,-604.5"/>
-<text text-anchor="middle" x="247" y="-611.5" font-family="FreeSans" font-size="10.00">Urho3D::VectorBase</text>
+<polygon fill="none" stroke="black" points="176.5,-604.5 176.5,-623.5 283.5,-623.5 283.5,-604.5 176.5,-604.5"/>
+<text text-anchor="middle" x="230" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::VectorBase</text>
 </a>
 </g>
 </g>
 <!-- Node15&#45;&gt;Node14 -->
 <g id="edge16" class="edge"><title>Node15&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M314.203,-603.321C398.082,-589.783 532.503,-568.06 538,-567 554.921,-563.735 573.145,-559.834 590.021,-556.059"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="313.551,-599.881 304.236,-604.929 314.666,-606.791 313.551,-599.881"/>
+<path fill="none" stroke="midnightblue" d="M293.463,-602.881C308.075,-600.288 323.583,-597.542 338,-595 409.096,-582.467 427.332,-581.753 498,-567 513.626,-563.738 530.442,-559.838 546.009,-556.063"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="292.748,-599.454 283.514,-604.648 293.972,-606.346 292.748,-599.454"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node"><title>Node22</title>
 <g id="a_node22"><a xlink:href="class_urho3_d_1_1_vector.html" target="_top" xlink:title="Urho3D::Vector\&lt; String \&gt;">
-<polygon fill="none" stroke="black" points="584.5,-575.5 584.5,-594.5 725.5,-594.5 725.5,-575.5 584.5,-575.5"/>
-<text text-anchor="middle" x="655" y="-582.5" font-family="FreeSans" font-size="10.00">Urho3D::Vector&lt; String &gt;</text>
+<polygon fill="none" stroke="black" points="542,-575.5 542,-594.5 670,-594.5 670,-575.5 542,-575.5"/>
+<text text-anchor="middle" x="606" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Vector&lt; String &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node15&#45;&gt;Node22 -->
 <g id="edge31" class="edge"><title>Node15&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M314.199,-609.272C388.508,-603.964 508.559,-595.389 584.278,-589.98"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="313.751,-605.794 304.026,-609.998 314.25,-612.777 313.751,-605.794"/>
+<path fill="none" stroke="midnightblue" d="M294.077,-609.109C363.033,-603.762 472.877,-595.245 541.858,-589.896"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="293.491,-605.644 283.792,-609.907 294.033,-612.623 293.491,-605.644"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
 <g id="a_node16"><a xlink:href="class_urho3_d_1_1_vector2.html" target="_top" xlink:title="Two&#45;dimensional vector. ">
-<polygon fill="none" stroke="black" points="607,-172.5 607,-191.5 703,-191.5 703,-172.5 607,-172.5"/>
-<text text-anchor="middle" x="655" y="-179.5" font-family="FreeSans" font-size="10.00">Urho3D::Vector2</text>
+<polygon fill="none" stroke="black" points="561,-172.5 561,-191.5 651,-191.5 651,-172.5 561,-172.5"/>
+<text text-anchor="middle" x="606" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Vector2</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node3 -->
 <g id="edge17" class="edge"><title>Node16&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M679.054,-197.153C701.875,-211.607 738.2,-233.166 772,-247 809.518,-262.356 829.008,-244.867 860,-271 909.504,-312.743 928.259,-394.34 933.401,-422.317"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="680.739,-194.076 670.433,-191.623 676.96,-199.968 680.739,-194.076"/>
-<text text-anchor="middle" x="816" y="-307" font-family="FreeSans" font-size="10.00"> layoutFlexScale_</text>
-<text text-anchor="middle" x="816" y="-296" font-family="FreeSans" font-size="10.00">anchorMax_</text>
-<text text-anchor="middle" x="816" y="-285" font-family="FreeSans" font-size="10.00">pivot_</text>
-<text text-anchor="middle" x="816" y="-274" font-family="FreeSans" font-size="10.00">anchorMin_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M628.683,-197.568C649.658,-212.036 682.773,-233.35 714,-247 749.577,-262.552 768.796,-245.413 798,-271 846.142,-313.18 862.405,-394.497 866.695,-422.359"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="630.413,-194.507 620.213,-191.642 626.4,-200.243 630.413,-194.507"/>
+<text text-anchor="middle" x="756" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00"> layoutFlexScale_</text>
+<text text-anchor="middle" x="756" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">anchorMax_</text>
+<text text-anchor="middle" x="756" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">pivot_</text>
+<text text-anchor="middle" x="756" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">anchorMin_</text>
 </g>
 <!-- Node16&#45;&gt;Node16 -->
 <g id="edge18" class="edge"><title>Node16&#45;&gt;Node16</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M625.06,-200.275C625.914,-205.741 635.894,-210 655,-210 683.438,-210 691.658,-200.565 679.661,-191.757"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="628.046,-202.101 630.339,-191.757 622.096,-198.413 628.046,-202.101"/>
-<text text-anchor="middle" x="655" y="-268" font-family="FreeSans" font-size="10.00"> ONE</text>
-<text text-anchor="middle" x="655" y="-257" font-family="FreeSans" font-size="10.00">DOWN</text>
-<text text-anchor="middle" x="655" y="-246" font-family="FreeSans" font-size="10.00">RIGHT</text>
-<text text-anchor="middle" x="655" y="-235" font-family="FreeSans" font-size="10.00">LEFT</text>
-<text text-anchor="middle" x="655" y="-224" font-family="FreeSans" font-size="10.00">ZERO</text>
-<text text-anchor="middle" x="655" y="-213" font-family="FreeSans" font-size="10.00">UP</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M578.001,-200.654C579.171,-205.937 588.504,-210 606,-210 632.66,-210 640.367,-200.565 629.119,-191.757"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="581.14,-202.208 582.881,-191.757 575.003,-198.842 581.14,-202.208"/>
+<text text-anchor="middle" x="606" y="-268" font-family="Helvetica,sans-Serif" font-size="10.00"> ONE</text>
+<text text-anchor="middle" x="606" y="-257" font-family="Helvetica,sans-Serif" font-size="10.00">DOWN</text>
+<text text-anchor="middle" x="606" y="-246" font-family="Helvetica,sans-Serif" font-size="10.00">RIGHT</text>
+<text text-anchor="middle" x="606" y="-235" font-family="Helvetica,sans-Serif" font-size="10.00">LEFT</text>
+<text text-anchor="middle" x="606" y="-224" font-family="Helvetica,sans-Serif" font-size="10.00">ZERO</text>
+<text text-anchor="middle" x="606" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">UP</text>
 </g>
 <!-- Node17&#45;&gt;Node3 -->
 <g id="edge19" class="edge"><title>Node17&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M537.863,-528.635C548.154,-518.988 546.373,-510.989 556,-505 585.082,-486.909 826.619,-461.667 860,-454 875.077,-450.537 891.598,-445.796 905.288,-441.601"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="535.528,-526.014 529.686,-534.852 539.765,-531.586 535.528,-526.014"/>
-<text text-anchor="middle" x="655" y="-508" font-family="FreeSans" font-size="10.00"> vars_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M497.965,-528.581C508.123,-518.943 506.411,-511.05 516,-505 542.93,-488.009 767.084,-461.622 798,-454 812.1,-450.524 827.524,-445.781 840.296,-441.589"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="495.677,-525.925 489.899,-534.806 499.954,-531.467 495.677,-525.925"/>
+<text text-anchor="middle" x="606" y="-508" font-family="Helvetica,sans-Serif" font-size="10.00"> vars_</text>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node"><title>Node18</title>
 <g id="a_node18"><a xlink:href="class_urho3_d_1_1_string.html" target="_top" xlink:title="String class. ">
-<polygon fill="none" stroke="black" points="203,-302.5 203,-321.5 291,-321.5 291,-302.5 203,-302.5"/>
-<text text-anchor="middle" x="247" y="-309.5" font-family="FreeSans" font-size="10.00">Urho3D::String</text>
+<polygon fill="none" stroke="black" points="189,-302.5 189,-321.5 271,-321.5 271,-302.5 189,-302.5"/>
+<text text-anchor="middle" x="230" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::String</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node3 -->
 <g id="edge22" class="edge"><title>Node18&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M301.15,-314.54C394.006,-319.787 591.38,-334.538 754,-371 812.08,-384.023 877.699,-408.773 911.73,-422.403"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="301.333,-311.045 291.155,-313.99 300.948,-318.035 301.333,-311.045"/>
-<text text-anchor="middle" x="655" y="-385" font-family="FreeSans" font-size="10.00"> appliedStyle_</text>
-<text text-anchor="middle" x="655" y="-374" font-family="FreeSans" font-size="10.00">name_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M281.009,-314.818C366.879,-320.436 547.463,-335.671 696,-371 751.328,-384.16 813.63,-408.855 845.924,-422.439"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="281.218,-311.324 271.015,-314.179 280.772,-318.31 281.218,-311.324"/>
+<text text-anchor="middle" x="606" y="-385" font-family="Helvetica,sans-Serif" font-size="10.00"> appliedStyle_</text>
+<text text-anchor="middle" x="606" y="-374" font-family="Helvetica,sans-Serif" font-size="10.00">name_</text>
 </g>
 <!-- Node18&#45;&gt;Node18 -->
 <g id="edge23" class="edge"><title>Node18&#45;&gt;Node18</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M224.679,-331.029C225.896,-336.128 233.337,-340 247,-340 268.328,-340 274.493,-330.565 265.495,-321.757"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="227.926,-332.336 228.505,-321.757 221.455,-329.666 227.926,-332.336"/>
-<text text-anchor="middle" x="247" y="-343" font-family="FreeSans" font-size="10.00"> EMPTY</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M210.001,-331.4C211.337,-336.315 218.003,-340 230,-340 249.195,-340 254.744,-330.565 246.646,-321.757"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="213.376,-332.352 213.354,-321.757 206.764,-330.053 213.376,-332.352"/>
+<text text-anchor="middle" x="230" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00"> EMPTY</text>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node"><title>Node19</title>
 <g id="a_node19"><a xlink:href="class_urho3_d_1_1_x_path_query.html" target="_top" xlink:title="XPath query. ">
-<polygon fill="none" stroke="red" points="597.5,-402.5 597.5,-421.5 712.5,-421.5 712.5,-402.5 597.5,-402.5"/>
-<text text-anchor="middle" x="655" y="-409.5" font-family="FreeSans" font-size="10.00">Urho3D::XPathQuery</text>
+<polygon fill="none" stroke="red" points="551,-402.5 551,-421.5 661,-421.5 661,-402.5 551,-402.5"/>
+<text text-anchor="middle" x="606" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::XPathQuery</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node19 -->
 <g id="edge25" class="edge"><title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M277.052,-326.068C310.468,-342.207 361.358,-366.639 366,-368 439.955,-389.68 461.885,-377.926 538,-390 560.877,-393.629 586.159,-398.341 607.266,-402.472"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="278.256,-322.763 267.729,-321.562 275.209,-329.065 278.256,-322.763"/>
-<text text-anchor="middle" x="452" y="-393" font-family="FreeSans" font-size="10.00"> queryString_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M257.347,-326.407C286.231,-342.103 329.612,-365.347 338,-368 406.382,-389.629 427.326,-376.787 498,-389 520.093,-392.818 544.553,-398.003 564.503,-402.483"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="258.997,-323.32 248.54,-321.612 255.649,-329.468 258.997,-323.32"/>
+<text text-anchor="middle" x="418" y="-392" font-family="Helvetica,sans-Serif" font-size="10.00"> queryString_</text>
 </g>
 <!-- Node19&#45;&gt;Node3 -->
 <g id="edge24" class="edge"><title>Node19&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M722.92,-414.502C762.775,-416.268 814.33,-419.033 860,-423 866.924,-423.602 874.196,-424.34 881.375,-425.132"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="722.931,-410.999 712.789,-414.063 722.628,-417.993 722.931,-410.999"/>
-<text text-anchor="middle" x="816" y="-426" font-family="FreeSans" font-size="10.00"> styleXPathQuery_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M671.177,-414.569C708.282,-416.336 755.829,-419.08 798,-423 804.222,-423.578 810.743,-424.284 817.197,-425.042"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="671.153,-411.064 661.001,-414.096 670.828,-418.056 671.153,-411.064"/>
+<text text-anchor="middle" x="756" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00"> styleXPathQuery_</text>
 </g>
 <!-- Node20&#45;&gt;Node3 -->
 <g id="edge26" class="edge"><title>Node20&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M723.644,-313.5C773.807,-317.1 837.265,-324.072 860,-337 895.985,-357.463 921,-402.689 930.619,-422.449"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="723.699,-309.996 713.483,-312.803 723.22,-316.979 723.699,-309.996"/>
-<text text-anchor="middle" x="816" y="-340" font-family="FreeSans" font-size="10.00"> defaultStyle_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M669.258,-313.605C716.481,-317.291 776.768,-324.328 798,-337 832.656,-357.684 855.427,-402.791 864.082,-422.484"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="669.328,-310.101 659.095,-312.847 668.807,-317.081 669.328,-310.101"/>
+<text text-anchor="middle" x="756" y="-340" font-family="Helvetica,sans-Serif" font-size="10.00"> defaultStyle_</text>
 </g>
 <!-- Node21 -->
 <g id="node21" class="node"><title>Node21</title>
 <g id="a_node21"><a xlink:href="class_urho3_d_1_1_int_vector2.html" target="_top" xlink:title="Two&#45;dimensional vector with integer values. ">
-<polygon fill="none" stroke="black" points="601,-0.5 601,-19.5 709,-19.5 709,-0.5 601,-0.5"/>
-<text text-anchor="middle" x="655" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::IntVector2</text>
+<polygon fill="none" stroke="black" points="555.5,-0.5 555.5,-19.5 656.5,-19.5 656.5,-0.5 555.5,-0.5"/>
+<text text-anchor="middle" x="606" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::IntVector2</text>
 </a>
 </g>
 </g>
 <!-- Node21&#45;&gt;Node1 -->
 <g id="edge40" class="edge"><title>Node21&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M719.397,-14.6875C759.76,-18.0489 813.087,-23.1869 860,-30 1015.28,-52.5514 1197.7,-91.5112 1278.64,-109.451"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="719.678,-11.1989 709.426,-13.8712 719.107,-18.1755 719.678,-11.1989"/>
-<text text-anchor="middle" x="1051" y="-73" font-family="FreeSans" font-size="10.00"> checkedOffset_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M666.95,-14.7601C704.68,-18.1306 754.328,-23.2523 798,-30 944.325,-52.6088 1115.99,-91.5397 1192.15,-109.462"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="666.907,-11.2429 656.639,-13.8559 666.295,-18.2162 666.907,-11.2429"/>
+<text text-anchor="middle" x="977" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00"> checkedOffset_</text>
 </g>
 <!-- Node21&#45;&gt;Node2 -->
 <g id="edge39" class="edge"><title>Node21&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M719.302,-19.6551C761.728,-28.3327 817.407,-44.1511 860,-72 1015.24,-173.503 1135.97,-375.515 1162.54,-422.21"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="719.855,-16.1968 709.367,-17.7032 718.505,-23.0655 719.855,-16.1968"/>
-<text text-anchor="middle" x="936" y="-188" font-family="FreeSans" font-size="10.00"> hoverOffset_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M666.65,-20.0789C706.482,-28.9374 758.588,-44.798 798,-72 946.744,-174.663 1057.68,-375.791 1082,-422.259"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="667.314,-16.6418 656.803,-17.975 665.851,-23.4873 667.314,-16.6418"/>
+<text text-anchor="middle" x="869" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00"> hoverOffset_</text>
 </g>
 <!-- Node21&#45;&gt;Node3 -->
 <g id="edge28" class="edge"><title>Node21&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M680.261,-24.6809C703.178,-37.9743 738.882,-57.2259 772,-69 809.701,-82.4033 831.678,-59.7356 860,-88 909.323,-137.223 930.28,-371.633 934.275,-422.321"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="681.951,-21.6144 671.557,-19.5608 678.402,-27.6479 681.951,-21.6144"/>
-<text text-anchor="middle" x="816" y="-201" font-family="FreeSans" font-size="10.00"> maxSize_</text>
-<text text-anchor="middle" x="816" y="-190" font-family="FreeSans" font-size="10.00">childOffset_</text>
-<text text-anchor="middle" x="816" y="-179" font-family="FreeSans" font-size="10.00">minOffset_</text>
-<text text-anchor="middle" x="816" y="-168" font-family="FreeSans" font-size="10.00">size_</text>
-<text text-anchor="middle" x="816" y="-157" font-family="FreeSans" font-size="10.00">position_</text>
-<text text-anchor="middle" x="816" y="-146" font-family="FreeSans" font-size="10.00">maxOffset_</text>
-<text text-anchor="start" x="781" y="-135" font-family="FreeSans" font-size="10.00">screenPosition</text>
-<text text-anchor="middle" x="816" y="-124" font-family="FreeSans" font-size="10.00">_</text>
-<text text-anchor="start" x="781" y="-113" font-family="FreeSans" font-size="10.00">layoutMinSize</text>
-<text text-anchor="middle" x="816" y="-102" font-family="FreeSans" font-size="10.00">_</text>
-<text text-anchor="middle" x="816" y="-91" font-family="FreeSans" font-size="10.00">minSize_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M629.804,-25.0606C650.867,-38.3558 683.426,-57.3807 714,-69 749.78,-82.5978 771.23,-60.6424 798,-88 846.593,-137.659 864.155,-371.728 867.415,-422.337"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="631.56,-22.0287 621.253,-19.5772 627.782,-27.9214 631.56,-22.0287"/>
+<text text-anchor="middle" x="756" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00"> maxSize_</text>
+<text text-anchor="middle" x="756" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">childOffset_</text>
+<text text-anchor="middle" x="756" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">minOffset_</text>
+<text text-anchor="middle" x="756" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">size_</text>
+<text text-anchor="middle" x="756" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00">position_</text>
+<text text-anchor="middle" x="756" y="-146" font-family="Helvetica,sans-Serif" font-size="10.00">maxOffset_</text>
+<text text-anchor="start" x="723.5" y="-135" font-family="Helvetica,sans-Serif" font-size="10.00">screenPosition</text>
+<text text-anchor="middle" x="756" y="-124" font-family="Helvetica,sans-Serif" font-size="10.00">_</text>
+<text text-anchor="start" x="723.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">layoutMinSize</text>
+<text text-anchor="middle" x="756" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">_</text>
+<text text-anchor="middle" x="756" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00">minSize_</text>
 </g>
 <!-- Node21&#45;&gt;Node21 -->
 <g id="edge29" class="edge"><title>Node21&#45;&gt;Node21</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M625.06,-28.2746C625.914,-33.741 635.894,-38 655,-38 683.438,-38 691.658,-28.5653 679.661,-19.7571"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="628.046,-30.1007 630.339,-19.7571 622.096,-26.4128 628.046,-30.1007"/>
-<text text-anchor="middle" x="655" y="-96" font-family="FreeSans" font-size="10.00"> ONE</text>
-<text text-anchor="middle" x="655" y="-85" font-family="FreeSans" font-size="10.00">DOWN</text>
-<text text-anchor="middle" x="655" y="-74" font-family="FreeSans" font-size="10.00">RIGHT</text>
-<text text-anchor="middle" x="655" y="-63" font-family="FreeSans" font-size="10.00">LEFT</text>
-<text text-anchor="middle" x="655" y="-52" font-family="FreeSans" font-size="10.00">ZERO</text>
-<text text-anchor="middle" x="655" y="-41" font-family="FreeSans" font-size="10.00">UP</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M578.001,-28.6539C579.171,-33.9368 588.504,-38 606,-38 632.66,-38 640.367,-28.5653 629.119,-19.7571"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="581.14,-30.208 582.881,-19.7571 575.003,-26.8417 581.14,-30.208"/>
+<text text-anchor="middle" x="606" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00"> ONE</text>
+<text text-anchor="middle" x="606" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00">DOWN</text>
+<text text-anchor="middle" x="606" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00">RIGHT</text>
+<text text-anchor="middle" x="606" y="-63" font-family="Helvetica,sans-Serif" font-size="10.00">LEFT</text>
+<text text-anchor="middle" x="606" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">ZERO</text>
+<text text-anchor="middle" x="606" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">UP</text>
 </g>
 <!-- Node22&#45;&gt;Node3 -->
 <g id="edge30" class="edge"><title>Node22&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M735.965,-587.199C776.108,-584.736 823.771,-576.063 860,-552 901.544,-524.407 924.362,-465.119 932.029,-441.753"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="735.747,-583.706 725.933,-587.697 736.094,-590.697 735.747,-583.706"/>
-<text text-anchor="middle" x="816" y="-586" font-family="FreeSans" font-size="10.00"> tags_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M680.119,-586.187C718.222,-583.491 763.858,-574.741 798,-551 837.948,-523.221 858.557,-464.671 865.378,-441.618"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="679.878,-582.695 670.099,-586.771 680.285,-589.683 679.878,-582.695"/>
+<text text-anchor="middle" x="756" y="-585" font-family="Helvetica,sans-Serif" font-size="10.00"> tags_</text>
 </g>
 <!-- Node23 -->
 <g id="node23" class="node"><title>Node23</title>
 <g id="a_node23"><a xlink:href="class_urho3_d_1_1_color.html" target="_top" xlink:title="RGBA color. ">
-<polygon fill="none" stroke="black" points="205,-669.5 205,-688.5 289,-688.5 289,-669.5 205,-669.5"/>
-<text text-anchor="middle" x="247" y="-676.5" font-family="FreeSans" font-size="10.00">Urho3D::Color</text>
+<polygon fill="none" stroke="black" points="190,-669.5 190,-688.5 270,-688.5 270,-669.5 190,-669.5"/>
+<text text-anchor="middle" x="230" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Color</text>
 </a>
 </g>
 </g>
 <!-- Node23&#45;&gt;Node3 -->
 <g id="edge32" class="edge"><title>Node23&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M299.203,-672.554C445.351,-654.115 854.349,-602.199 860,-598 913.561,-558.203 929.78,-471.239 933.827,-441.895"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="298.628,-669.099 289.144,-673.823 299.504,-676.044 298.628,-669.099"/>
-<text text-anchor="middle" x="655" y="-654" font-family="FreeSans" font-size="10.00"> derivedColor_</text>
-<text text-anchor="middle" x="655" y="-643" font-family="FreeSans" font-size="10.00">color_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M280.212,-672.205C417.127,-653.259 792.847,-600.971 798,-597 850.005,-556.921 863.837,-470.819 867.092,-441.787"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="279.434,-668.779 270.008,-673.616 280.394,-675.713 279.434,-668.779"/>
+<text text-anchor="middle" x="606" y="-653" font-family="Helvetica,sans-Serif" font-size="10.00"> derivedColor_</text>
+<text text-anchor="middle" x="606" y="-642" font-family="Helvetica,sans-Serif" font-size="10.00">color_</text>
 </g>
 <!-- Node23&#45;&gt;Node23 -->
 <g id="edge33" class="edge"><title>Node23&#45;&gt;Node23</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M224.679,-698.029C225.896,-703.128 233.337,-707 247,-707 268.328,-707 274.493,-697.565 265.495,-688.757"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="227.926,-699.336 228.505,-688.757 221.455,-696.666 227.926,-699.336"/>
-<text text-anchor="middle" x="247" y="-820" font-family="FreeSans" font-size="10.00"> CYAN</text>
-<text text-anchor="middle" x="247" y="-809" font-family="FreeSans" font-size="10.00">GRAY</text>
-<text text-anchor="middle" x="247" y="-798" font-family="FreeSans" font-size="10.00">YELLOW</text>
-<text text-anchor="middle" x="247" y="-787" font-family="FreeSans" font-size="10.00">MAGENTA</text>
-<text text-anchor="middle" x="247" y="-776" font-family="FreeSans" font-size="10.00">WHITE</text>
-<text text-anchor="middle" x="247" y="-765" font-family="FreeSans" font-size="10.00">TRANSPARENT</text>
-<text text-anchor="middle" x="247" y="-754" font-family="FreeSans" font-size="10.00">BLUE</text>
-<text text-anchor="middle" x="247" y="-743" font-family="FreeSans" font-size="10.00">BLACK</text>
-<text text-anchor="middle" x="247" y="-732" font-family="FreeSans" font-size="10.00">RED</text>
-<text text-anchor="middle" x="247" y="-721" font-family="FreeSans" font-size="10.00">GREEN</text>
-<text text-anchor="middle" x="247" y="-710" font-family="FreeSans" font-size="10.00">...</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M210.001,-698.4C211.337,-703.315 218.003,-707 230,-707 249.195,-707 254.744,-697.565 246.646,-688.757"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="213.376,-699.352 213.354,-688.757 206.764,-697.053 213.376,-699.352"/>
+<text text-anchor="middle" x="230" y="-820" font-family="Helvetica,sans-Serif" font-size="10.00"> CYAN</text>
+<text text-anchor="middle" x="230" y="-809" font-family="Helvetica,sans-Serif" font-size="10.00">GRAY</text>
+<text text-anchor="middle" x="230" y="-798" font-family="Helvetica,sans-Serif" font-size="10.00">YELLOW</text>
+<text text-anchor="middle" x="230" y="-787" font-family="Helvetica,sans-Serif" font-size="10.00">MAGENTA</text>
+<text text-anchor="middle" x="230" y="-776" font-family="Helvetica,sans-Serif" font-size="10.00">WHITE</text>
+<text text-anchor="middle" x="230" y="-765" font-family="Helvetica,sans-Serif" font-size="10.00">TRANSPARENT</text>
+<text text-anchor="middle" x="230" y="-754" font-family="Helvetica,sans-Serif" font-size="10.00">BLUE</text>
+<text text-anchor="middle" x="230" y="-743" font-family="Helvetica,sans-Serif" font-size="10.00">BLACK</text>
+<text text-anchor="middle" x="230" y="-732" font-family="Helvetica,sans-Serif" font-size="10.00">RED</text>
+<text text-anchor="middle" x="230" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">GREEN</text>
+<text text-anchor="middle" x="230" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">...</text>
 </g>
 <!-- Node25 -->
 <g id="node25" class="node"><title>Node25</title>
 <g id="a_node25"><a xlink:href="class_urho3_d_1_1_texture.html" target="_top" xlink:title="Base class for texture resources. ">
-<polygon fill="none" stroke="red" points="608,-738.5 608,-757.5 702,-757.5 702,-738.5 608,-738.5"/>
-<text text-anchor="middle" x="655" y="-745.5" font-family="FreeSans" font-size="10.00">Urho3D::Texture</text>
+<polygon fill="none" stroke="red" points="561.5,-738.5 561.5,-757.5 650.5,-757.5 650.5,-738.5 561.5,-738.5"/>
+<text text-anchor="middle" x="606" y="-745.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Texture</text>
 </a>
 </g>
 </g>
 <!-- Node23&#45;&gt;Node25 -->
 <g id="edge38" class="edge"><title>Node23&#45;&gt;Node25</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M299.452,-687.744C379.183,-701.295 531.34,-727.154 607.769,-740.143"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="299.609,-684.221 289.164,-685.996 298.436,-691.122 299.609,-684.221"/>
-<text text-anchor="middle" x="452" y="-731" font-family="FreeSans" font-size="10.00"> borderColor_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M280.259,-688.088C353.812,-701.658 491.184,-727.002 561.336,-739.944"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="280.787,-684.626 270.318,-686.254 279.517,-691.51 280.787,-684.626"/>
+<text text-anchor="middle" x="418" y="-731" font-family="Helvetica,sans-Serif" font-size="10.00"> borderColor_</text>
 </g>
 <!-- Node24 -->
 <g id="node24" class="node"><title>Node24</title>
 <g id="a_node24"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Texture \&gt;">
-<polygon fill="none" stroke="black" points="878,-741 878,-771 994,-771 994,-741 878,-741"/>
-<text text-anchor="start" x="886" y="-759" font-family="FreeSans" font-size="10.00">Urho3D::SharedPtr&lt;</text>
-<text text-anchor="middle" x="936" y="-748" font-family="FreeSans" font-size="10.00"> Urho3D::Texture &gt;</text>
+<polygon fill="none" stroke="black" points="816,-741 816,-771 922,-771 922,-741 816,-741"/>
+<text text-anchor="start" x="824" y="-759" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::SharedPtr&lt;</text>
+<text text-anchor="middle" x="869" y="-748" font-family="Helvetica,sans-Serif" font-size="10.00"> Urho3D::Texture &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node24&#45;&gt;Node2 -->
 <g id="edge35" class="edge"><title>Node24&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1004.17,-746.996C1034.1,-739.741 1067.58,-726.643 1090,-703 1164.28,-624.661 1168.47,-480.222 1168.2,-441.669"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1003.17,-743.634 994.182,-749.24 1004.71,-750.464 1003.17,-743.634"/>
-<text text-anchor="middle" x="1051" y="-748" font-family="FreeSans" font-size="10.00"> texture_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M932.198,-746.557C960.739,-739.191 992.856,-726.128 1014,-703 1086.5,-623.704 1088.26,-479.957 1087.36,-441.614"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="931.187,-743.2 922.276,-748.932 932.816,-750.008 931.187,-743.2"/>
+<text text-anchor="middle" x="977" y="-747" font-family="Helvetica,sans-Serif" font-size="10.00"> texture_</text>
 </g>
 <!-- Node24&#45;&gt;Node25 -->
 <g id="edge37" class="edge"><title>Node24&#45;&gt;Node25</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M872.583,-738.958C868.346,-738.182 864.124,-737.514 860,-737 806.151,-730.285 743.801,-735.526 702.346,-740.83"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="871.962,-742.403 882.456,-740.945 873.343,-735.54 871.962,-742.403"/>
-<text text-anchor="middle" x="816" y="-740" font-family="FreeSans" font-size="10.00"> backupTexture_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M809.114,-738.831C805.374,-738.109 801.647,-737.486 798,-737 747.792,-730.307 689.623,-735.492 650.795,-740.778"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="808.49,-742.276 819.001,-740.947 809.955,-735.431 808.49,-742.276"/>
+<text text-anchor="middle" x="756" y="-740" font-family="Helvetica,sans-Serif" font-size="10.00"> backupTexture_</text>
 </g>
 <!-- Node25&#45;&gt;Node24 -->
 <g id="edge36" class="edge"><title>Node25&#45;&gt;Node24</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M712.328,-749.615C760.53,-750.997 829.6,-752.978 877.996,-754.365"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="712.167,-746.109 702.071,-749.321 711.967,-753.106 712.167,-746.109"/>
-<text text-anchor="middle" x="816" y="-757" font-family="FreeSans" font-size="10.00"> ptr_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M660.917,-749.653C706.265,-751.043 770.707,-753.018 815.618,-754.394"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="660.788,-746.147 650.686,-749.339 660.574,-753.144 660.788,-746.147"/>
+<text text-anchor="middle" x="756" y="-757" font-family="Helvetica,sans-Serif" font-size="10.00"> ptr_</text>
 </g>
 </g>
 </svg>

@@ -10,36 +10,36 @@
 <title>Urho3D::BoundingBox</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 122,-19.5 122,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="61" y="-7.5" font-family="FreeSans" font-size="10.00">Urho3D::BoundingBox</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 114,-19.5 114,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="57" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::BoundingBox</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_vector3.html" target="_top" xlink:title="Three&#45;dimensional vector. ">
-<polygon fill="none" stroke="black" points="13,-112.5 13,-131.5 109,-131.5 109,-112.5 13,-112.5"/>
-<text text-anchor="middle" x="61" y="-119.5" font-family="FreeSans" font-size="10.00">Urho3D::Vector3</text>
+<polygon fill="none" stroke="black" points="12,-112.5 12,-131.5 102,-131.5 102,-112.5 12,-112.5"/>
+<text text-anchor="middle" x="57" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Vector3</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M61,-102.348C61,-78.2538 61,-37.3079 61,-19.5914"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="57.5001,-102.368 61,-112.368 64.5001,-102.369 57.5001,-102.368"/>
-<text text-anchor="middle" x="76" y="-52" font-family="FreeSans" font-size="10.00"> max_</text>
-<text text-anchor="middle" x="76" y="-41" font-family="FreeSans" font-size="10.00">min_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M57,-102.348C57,-78.2538 57,-37.3079 57,-19.5914"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="53.5001,-102.368 57,-112.368 60.5001,-102.369 53.5001,-102.368"/>
+<text text-anchor="middle" x="71" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> max_</text>
+<text text-anchor="middle" x="71" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">min_</text>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M88.6242,-134.147C107.932,-137.898 127,-133.85 127,-122 127,-108.148 100.944,-104.956 78.9086,-112.423"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="89.4712,-130.75 78.9086,-131.577 87.6813,-137.518 89.4712,-130.75"/>
-<text text-anchor="middle" x="150" y="-158" font-family="FreeSans" font-size="10.00"> ONE</text>
-<text text-anchor="middle" x="150" y="-147" font-family="FreeSans" font-size="10.00">DOWN</text>
-<text text-anchor="middle" x="150" y="-136" font-family="FreeSans" font-size="10.00">BACK</text>
-<text text-anchor="middle" x="150" y="-125" font-family="FreeSans" font-size="10.00">RIGHT</text>
-<text text-anchor="middle" x="150" y="-114" font-family="FreeSans" font-size="10.00">LEFT</text>
-<text text-anchor="middle" x="150" y="-103" font-family="FreeSans" font-size="10.00">ZERO</text>
-<text text-anchor="middle" x="150" y="-92" font-family="FreeSans" font-size="10.00">FORWARD</text>
-<text text-anchor="middle" x="150" y="-81" font-family="FreeSans" font-size="10.00">UP</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M83.8734,-134.247C102.129,-137.824 120,-133.741 120,-122 120,-108.148 95.1285,-104.956 74.0946,-112.423"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="84.6634,-130.835 74.0946,-131.577 82.8193,-137.588 84.6634,-130.835"/>
+<text text-anchor="middle" x="146.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00"> ONE</text>
+<text text-anchor="middle" x="146.5" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">DOWN</text>
+<text text-anchor="middle" x="146.5" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">BACK</text>
+<text text-anchor="middle" x="146.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">RIGHT</text>
+<text text-anchor="middle" x="146.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">LEFT</text>
+<text text-anchor="middle" x="146.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">ZERO</text>
+<text text-anchor="middle" x="146.5" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00">FORWARD</text>
+<text text-anchor="middle" x="146.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00">UP</text>
 </g>
 </g>
 </svg>
