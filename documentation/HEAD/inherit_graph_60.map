@@ -1,3 +1,108 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$unioninternal_1_1_hasher_1_1_number_1_1_u.html" title="internal::Hasher\&lt; Encoding,\l Allocator \&gt;::Number::U" alt="" coords="5,5,189,46"/>
+<area shape="rect" id="node1" href="$class_urho3_d_1_1_hash_base.html" title="Hash set/map base class. " alt="" coords="5,4033,141,4060"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; asIScript\lObject *, Urho3D::SharedPtr\l\&lt; Urho3D::ScriptEventInvoker \&gt; \&gt;" alt="" coords="234,5,457,61"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; asIType\lInfo *, bool \&gt;" alt="" coords="250,85,441,126"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; asIType\lInfo *, Urho3D::HashMap\l\&lt; Urho3D::String, asIScriptFunction * \&gt; \&gt;" alt="" coords="213,149,477,205"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; const\l char *, asITypeInfo * \&gt;" alt="" coords="258,229,433,270"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; const\l void *, Urho3D::SharedPtr\l\&lt; Urho3D::LuaFunction \&gt; \&gt;" alt="" coords="254,293,437,349"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l int \&gt;" alt="" coords="265,373,426,414"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::PODVector\&lt; Urho3D\l::Light * \&gt; \&gt;" alt="" coords="244,437,447,493"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::FontFace \&gt; \&gt;" alt="" coords="248,517,443,573"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::PropertySet2D \&gt; \&gt;" alt="" coords="248,597,443,653"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::Sprite2D \&gt; \&gt;" alt="" coords="248,677,443,733"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::Technique \&gt; \&gt;" alt="" coords="248,757,443,813"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::SharedPtr\&lt; Urho3D\l::Texture2D \&gt; \&gt;" alt="" coords="248,837,443,893"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::TouchState \&gt;" alt="" coords="265,917,426,958"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; int,\l Urho3D::Vector\&lt; Urho3D\l::SharedPtr\&lt; Urho3D::Texture2D \&gt; \&gt; \&gt;" alt="" coords="220,981,471,1037"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; kNet\l::MessageConnection *,\l Urho3D::SharedPtr\&lt; Urho3D\l::Connection \&gt; \&gt;" alt="" coords="248,1062,443,1133"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; long\l long, unsigned \&gt;" alt="" coords="262,1157,429,1198"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; long\l long, Urho3D::Vector\l\&lt; Urho3D::SharedPtr\&lt; Urho3D\l::Texture \&gt; \&gt; \&gt;" alt="" coords="244,1222,447,1293"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Pair\l\&lt; ShaderVariation *,\l ShaderVariation * \&gt;,\l SharedPtr\&lt; ShaderProgram \&gt; \&gt;" alt="" coords="240,1317,451,1387"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; SDL\l_JoystickID, Urho3D::\lJoystickState \&gt;" alt="" coords="261,1412,430,1468"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; String,\l PListValue \&gt;" alt="" coords="255,1491,436,1533"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; StringHash,\l Variant \&gt;" alt="" coords="239,1557,451,1598"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Texture\lUnit, Urho3D::SharedPtr\l\&lt; Urho3D::Texture \&gt; \&gt;" alt="" coords="252,1621,439,1677"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned\l long long, Urho3D::FrameBuffer\lObject \&gt;" alt="" coords="240,1701,451,1757"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned\l long long, Urho3D::LightBatch\lQueue \&gt;" alt="" coords="245,1781,446,1837"/>
+<area shape="rect" id="node26" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned\l short, unsigned short \&gt;" alt="" coords="248,1861,443,1902"/>
+<area shape="rect" id="node27" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l SharedPtr\&lt; ConstantBuffer \&gt; \&gt;" alt="" coords="241,1926,449,1967"/>
+<area shape="rect" id="node28" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l short \&gt;" alt="" coords="246,1991,445,2033"/>
+<area shape="rect" id="node29" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l unsigned \&gt;" alt="" coords="246,2057,445,2098"/>
+<area shape="rect" id="node30" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::BatchQueue \&gt;" alt="" coords="246,2122,445,2163"/>
+<area shape="rect" id="node31" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::Component * \&gt;" alt="" coords="246,2187,445,2229"/>
+<area shape="rect" id="node32" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::ComponentReplicationState \&gt;" alt="" coords="218,2253,473,2294"/>
+<area shape="rect" id="node33" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::FontGlyph \&gt;" alt="" coords="246,2318,445,2359"/>
+<area shape="rect" id="node34" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::Node * \&gt;" alt="" coords="246,2383,445,2425"/>
+<area shape="rect" id="node35" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::NodeReplicationState \&gt;" alt="" coords="236,2449,455,2490"/>
+<area shape="rect" id="node36" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::PODVector\&lt; unsigned\l char \&gt; \&gt;" alt="" coords="240,2513,451,2569"/>
+<area shape="rect" id="node37" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::VertexBufferMorph \&gt;" alt="" coords="245,2593,445,2634"/>
+<area shape="rect" id="node38" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::WeakPtr\&lt; Urho3D\l::Component \&gt; \&gt;" alt="" coords="246,2657,445,2713"/>
+<area shape="rect" id="node39" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; unsigned,\l Urho3D::WeakPtr\&lt; Urho3D\l::Node \&gt; \&gt;" alt="" coords="246,2737,445,2793"/>
+<area shape="rect" id="node40" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::AttributeInfo *, unsigned \&gt;" alt="" coords="251,2817,439,2858"/>
+<area shape="rect" id="node41" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::BatchGroupKey, Urho3D\l::BatchGroup \&gt;" alt="" coords="251,2881,439,2937"/>
+<area shape="rect" id="node42" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Camera *, Urho3D::Matrix3x4 \&gt;" alt="" coords="238,2961,453,3002"/>
+<area shape="rect" id="node43" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Camera *, Urho3D::ViewBatch\lInfo2D \&gt;" alt="" coords="241,3025,450,3081"/>
+<area shape="rect" id="node44" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Camera *, Urho3D::WeakPtr\l\&lt; Urho3D::View \&gt; \&gt;" alt="" coords="247,3105,444,3161"/>
+<area shape="rect" id="node45" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Object *, Urho3D::HashMap\l\&lt; Urho3D::StringHash, Urho3D\l::SharedPtr\&lt; Urho3D::EventReceiverGroup \&gt; \&gt; \&gt;" alt="" coords="190,3186,501,3257"/>
+<area shape="rect" id="node46" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; unsigned char,\l unsigned char \&gt;, unsigned \&gt;" alt="" coords="250,3281,441,3337"/>
+<area shape="rect" id="node47" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; Urho3D::Light\l *, Urho3D::Camera * \&gt;,\l Urho3D::Rect \&gt;" alt="" coords="251,3362,439,3433"/>
+<area shape="rect" id="node48" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; Urho3D::Model\l *, unsigned \&gt;, Urho3D\l::SharedPtr\&lt; Urho3D::CollisionGeometry\lData \&gt; \&gt;" alt="" coords="215,3457,475,3543"/>
+<area shape="rect" id="node49" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; Urho3D::StringHash,\l Urho3D::StringHash \&gt;, Urho3D\l::BackgroundLoadItem \&gt;" alt="" coords="241,3567,450,3638"/>
+<area shape="rect" id="node50" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; Urho3D::StringHash,\l Urho3D::StringHash \&gt;, Urho3D\l::SharedPtr\&lt; Urho3D::Technique \&gt; \&gt;" alt="" coords="227,3662,464,3733"/>
+<area shape="rect" id="node51" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Pair\&lt; Urho3D::WeakPtr\l\&lt; Urho3D::RigidBody \&gt;, Urho3D\l::WeakPtr\&lt; Urho3D::RigidBody\l \&gt; \&gt;, Urho3D::ManifoldPair \&gt;" alt="" coords="239,3757,451,3843"/>
+<area shape="rect" id="node52" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::RigidBody *, Urho3D\l::DelayedWorldTransform \&gt;" alt="" coords="251,3867,439,3923"/>
+<area shape="rect" id="node53" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::RigidBody2D *, Urho3D\l::DelayedWorldTransform2D \&gt;" alt="" coords="245,3947,445,4003"/>
+<area shape="rect" id="node54" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, asIScriptFunction * \&gt;" alt="" coords="248,4026,443,4067"/>
+<area shape="rect" id="node55" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, TextureUnit \&gt;" alt="" coords="251,4091,439,4133"/>
+<area shape="rect" id="node56" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, unsigned \&gt;" alt="" coords="251,4157,439,4198"/>
+<area shape="rect" id="node57" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::CScriptDict\lValue \&gt;" alt="" coords="249,4221,442,4277"/>
+<area shape="rect" id="node58" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::CursorShape\lInfo \&gt;" alt="" coords="245,4301,446,4357"/>
+<area shape="rect" id="node59" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::PackageEntry \&gt;" alt="" coords="236,4381,455,4422"/>
+<area shape="rect" id="node60" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::AttributeAnimationInfo \&gt; \&gt;" alt="" coords="225,4445,465,4501"/>
+<area shape="rect" id="node61" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::LuaFunction \&gt; \&gt;" alt="" coords="251,4525,439,4581"/>
+<area shape="rect" id="node62" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::Sprite2D \&gt; \&gt;" alt="" coords="251,4605,439,4661"/>
+<area shape="rect" id="node63" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::ValueAnimationInfo \&gt; \&gt;" alt="" coords="233,4685,457,4741"/>
+<area shape="rect" id="node64" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::SharedPtr\l\&lt; Urho3D::XMLFile \&gt; \&gt;" alt="" coords="251,4765,439,4821"/>
+<area shape="rect" id="node65" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::String \&gt;" alt="" coords="251,4845,439,4886"/>
+<area shape="rect" id="node66" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::Timer \&gt;" alt="" coords="251,4910,439,4951"/>
+<area shape="rect" id="node67" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::Variant \&gt;" alt="" coords="251,4975,439,5017"/>
+<area shape="rect" id="node68" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::Vector\l\&lt; Urho3D::SharedPtr\&lt; Urho3D\l::DbConnection \&gt; \&gt; \&gt;" alt="" coords="244,5041,447,5111"/>
+<area shape="rect" id="node69" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::Vector\l\&lt; Urho3D::StringHash \&gt; \&gt;" alt="" coords="251,5136,439,5192"/>
+<area shape="rect" id="node70" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lAnimationTrack \&gt;" alt="" coords="251,5216,439,5272"/>
+<area shape="rect" id="node71" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lHashMap\&lt; Urho3D::StringHash,\l Urho3D::String \&gt; \&gt;" alt="" coords="239,5297,451,5367"/>
+<area shape="rect" id="node72" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lHashSet\&lt; Urho3D::StringHash \&gt; \&gt;" alt="" coords="232,5392,459,5448"/>
+<area shape="rect" id="node73" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lMaterialShaderParameter \&gt;" alt="" coords="251,5472,439,5528"/>
+<area shape="rect" id="node74" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lPackageDownload \&gt;" alt="" coords="251,5552,439,5608"/>
+<area shape="rect" id="node75" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lPackageUpload \&gt;" alt="" coords="251,5632,439,5688"/>
+<area shape="rect" id="node76" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lPODVector\&lt; Urho3D::Node * \&gt; \&gt;" alt="" coords="236,5712,455,5768"/>
+<area shape="rect" id="node77" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lResourceGroup \&gt;" alt="" coords="251,5792,439,5848"/>
+<area shape="rect" id="node78" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lShaderParameter \&gt;" alt="" coords="251,5872,439,5928"/>
+<area shape="rect" id="node79" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::EventReceiver\lGroup \&gt; \&gt;" alt="" coords="230,5953,461,6023"/>
+<area shape="rect" id="node80" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::Object \&gt; \&gt;" alt="" coords="242,6048,449,6104"/>
+<area shape="rect" id="node81" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::ObjectFactory \&gt; \&gt;" alt="" coords="220,6128,471,6184"/>
+<area shape="rect" id="node82" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::Resource \&gt; \&gt;" alt="" coords="233,6208,458,6264"/>
+<area shape="rect" id="node83" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::ShaderParameter\lAnimationInfo \&gt; \&gt;" alt="" coords="222,6289,469,6359"/>
+<area shape="rect" id="node84" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::ShaderVariation \&gt; \&gt;" alt="" coords="215,6384,476,6440"/>
+<area shape="rect" id="node85" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lString \&gt;" alt="" coords="251,6464,439,6520"/>
+<area shape="rect" id="node86" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lTexture * \&gt;" alt="" coords="251,6544,439,6600"/>
+<area shape="rect" id="node87" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lVariant \&gt;" alt="" coords="251,6624,439,6680"/>
+<area shape="rect" id="node88" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lVector\&lt; Urho3D::AttributeInfo \&gt; \&gt;" alt="" coords="235,6704,455,6760"/>
+<area shape="rect" id="node89" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lVector\&lt; Urho3D::SharedPtr\l\&lt; Urho3D::ShaderVariation \&gt; \&gt; \&gt;" alt="" coords="238,6785,453,6855"/>
+<area shape="rect" id="node90" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Texture2D *, Urho3D\l::HashMap\&lt; int, Urho3D\l::SharedPtr\&lt; Urho3D::Material \&gt; \&gt; \&gt;" alt="" coords="228,6879,463,6950"/>
+<area shape="rect" id="node91" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::WeakPtr\&lt; Urho3D::UIElement\l \&gt;, bool \&gt;" alt="" coords="241,6975,449,7031"/>
+<area shape="rect" id="node92" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::WeakPtr\&lt; Urho3D::UIElement\l \&gt;, int \&gt;" alt="" coords="241,7055,449,7111"/>
+<area shape="rect" id="node93" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::WeakPtr\&lt; Urho3D::UIElement\l \&gt;, Urho3D::UI::DragData * \&gt;" alt="" coords="241,7135,449,7191"/>
+<area shape="rect" id="node94" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; const\l Urho3D::AttributeInfo * \&gt;" alt="" coords="260,7214,431,7255"/>
+<area shape="rect" id="node95" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; int \&gt;" alt="" coords="263,7280,427,7307"/>
+<area shape="rect" id="node96" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; unsigned \&gt;" alt="" coords="244,7331,447,7357"/>
+<area shape="rect" id="node97" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Drawable * \&gt;" alt="" coords="254,7382,437,7423"/>
+<area shape="rect" id="node98" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Octree * \&gt;" alt="" coords="254,7447,437,7489"/>
+<area shape="rect" id="node99" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Pair\&lt; Urho3D::ShaderVariation\l *, Urho3D::ShaderVariation * \&gt; \&gt;" alt="" coords="237,7512,454,7568"/>
+<area shape="rect" id="node100" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Pair\&lt; Urho3D::StringHash,\l Urho3D::StringHash \&gt; \&gt;" alt="" coords="252,7592,439,7648"/>
+<area shape="rect" id="node101" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Scene * \&gt;" alt="" coords="254,7671,437,7713"/>
+<area shape="rect" id="node102" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::String \&gt;" alt="" coords="254,7737,437,7778"/>
+<area shape="rect" id="node103" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::StringHash \&gt;" alt="" coords="254,7802,437,7843"/>
+<area shape="rect" id="node104" href="$class_urho3_d_1_1_hash_set.html" title="Urho3D::HashSet\&lt; Urho3D\l::Technique * \&gt;" alt="" coords="254,7867,437,7909"/>
+<area shape="rect" id="node105" href="$class_urho3_d_1_1_hash_map.html" title="Hash map template class. " alt="" coords="255,7933,436,7960"/>
+<area shape="rect" id="node106" href="$class_urho3_d_1_1_hash_set.html" title="Hash set template class. " alt="" coords="266,7984,425,8011"/>
 </map>
