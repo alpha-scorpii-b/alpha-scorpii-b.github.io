@@ -1301,25 +1301,6 @@
         };
       };
     </script>
-    <script>
-
-          (function() {
-            var memoryInitializer = '06_SkeletalAnimation.html.mem';
-            if (typeof Module['locateFile'] === 'function') {
-              memoryInitializer = Module['locateFile'](memoryInitializer);
-            } else if (Module['memoryInitializerPrefixURL']) {
-              memoryInitializer = Module['memoryInitializerPrefixURL'] + memoryInitializer;
-            }
-            var xhr = Module['memoryInitializerRequest'] = new XMLHttpRequest();
-            xhr.open('GET', memoryInitializer, true);
-            xhr.responseType = 'arraybuffer';
-            xhr.send(null);
-          })();
-
-          var script = document.createElement('script');
-          script.src = "06_SkeletalAnimation.js";
-          document.body.appendChild(script);
-
-</script>
+    <script async type="text/javascript" src="06_SkeletalAnimation.js"></script>
   </body>
 </html>
