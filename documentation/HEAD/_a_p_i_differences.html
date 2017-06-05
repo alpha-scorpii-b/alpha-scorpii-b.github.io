@@ -35,13 +35,13 @@ group: HEAD
 </ul>
 <p>OpenGL ES 2.0 has further limitations:</p>
 <ul>
-<li>Of the DXT formats, only DXT1 compressed textures will be uploaded as compressed, and only if the EXT_texture_compression_dxt1 extension is present. Other DXT formats will be uploaded as uncompressed RGBA. ETC1 (Android) and PVRTC (iOS) compressed textures are supported through the .ktx and .pvr file formats.</li>
+<li>Of the DXT formats, only DXT1 compressed textures will be uploaded as compressed, and only if the EXT_texture_compression_dxt1 extension is present. Other DXT formats will be uploaded as uncompressed RGBA. ETC1 (Android) and PVRTC (iOS/tvOS) compressed textures are supported through the .ktx and .pvr file formats.</li>
 <li>Texture formats such as 16-bit and 32-bit floating point are not available. Corresponding integer 8-bit formats will be returned instead.</li>
 <li>Light pre-pass and deferred rendering are not supported due to missing multiple rendertarget support, and limited rendertarget formats.</li>
 <li>Wireframe and point fill modes are not supported.</li>
 <li>Due to texture unit limit (usually 8), point light shadow maps are not supported.</li>
 <li>To reduce fillrate, the stencil buffer is not reserved and the stencil test is not available. As a consequence, the light stencil masking optimization is not used.</li>
-<li>For improved performance, shadow mapping quality is reduced: there is no smooth PCF filtering and directional lights do not support shadow cascades. Consider also using the simple shadow quality (1 sample) to avoid dependent texture reads in the pixel shader, which have an especially high performance cost on iOS hardware.</li>
+<li>For improved performance, shadow mapping quality is reduced: there is no smooth PCF filtering and directional lights do not support shadow cascades. Consider also using the simple shadow quality (1 sample) to avoid dependent texture reads in the pixel shader, which have an especially high performance cost on iOS/tvOS hardware.</li>
 <li>Custom clip planes are not currently supported.</li>
 <li>3D and 2D array textures are not currently supported.</li>
 <li>Multisampled texture rendertargets are not supported.</li>

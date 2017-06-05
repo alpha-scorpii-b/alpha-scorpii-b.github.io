@@ -25,7 +25,7 @@ group: HEAD
 <li>LogLevel (int) Log verbosity level. Default LOG_INFO in release builds and LOG_DEBUG in debug builds.</li>
 <li>LogQuiet (bool) Log quiet mode, ie. to not write warning/info/debug log entries into standard output. Default false.</li>
 <li>LogName (string) Log filename. Default "Urho3D.log".</li>
-<li>FrameLimiter (bool) Whether to cap maximum framerate to 200 (desktop) or 60 (Android/iOS.) Default true.</li>
+<li>FrameLimiter (bool) Whether to cap maximum framerate to 200 (desktop) or 60 (Android/iOS/tvOS). Default true.</li>
 <li>WorkerThreads (bool) Whether to create worker threads for the WorkQueue subsystem according to available CPU cores. Default true.</li>
 <li>EventProfiler (bool) Whether to create the <a class="el" href="class_urho3_d_1_1_event_profiler.html" title="Hierarchical performance event profiler subsystem. ">EventProfiler</a> subsystem. Default true.</li>
 <li>ResourcePrefixPaths (string) A semicolon-separated list of resource prefix paths to use. If not specified then the default prefix path is set to executable path. The resource prefix paths can also be defined using URHO3D_PREFIX_PATH env-var. When both are defined, the paths set by -pp takes higher precedence.</li>
@@ -42,7 +42,7 @@ group: HEAD
 <li>FullScreen (bool) Whether to create a full-screen window. Default true.</li>
 <li>Borderless (bool) Whether to create the window as borderless. Default false.</li>
 <li>WindowResizable (bool) Whether window is resizable. Default false.</li>
-<li>HighDPI (bool) Whether window is high DPI. Default true. Currently only supported by Apple platforms (OSX, iOS, and tvOS).</li>
+<li>HighDPI (bool) Whether window is high DPI. Default true. Currently only supported by Apple platforms (macOS, iOS, and tvOS).</li>
 <li>TripleBuffer (bool) Whether to use triple-buffering. Default false.</li>
 <li>VSync (bool) Whether to wait for vertical sync when presenting rendering window contents. Default false.</li>
 <li>FlushGPU (bool) Whether to flush GPU command buffer each frame (Direct3D9) or limit the amount of buffered frames (Direct3D11) for less input latency. Ineffective on OpenGL. Default false.</li>
@@ -95,11 +95,11 @@ Main loop and the application activation state</h2>
 <ul>
 <li>Rendering is always skipped when the window is minimized.</li>
 <li>To avoid spinning the CPU and GPU unnecessarily, it is possible to define a smaller maximum FPS when no input focus. See <a class="el" href="class_urho3_d_1_1_engine.html#a690ce0dff5ffdc0d24b4607d4e23af18">SetMaxInactiveFps()</a></li>
-<li>It is also possible to automatically pause update events and audio when the window is minimized. Use <a class="el" href="class_urho3_d_1_1_engine.html#ab3fc430d9c0e4fdbfefff85ae66eb65c">SetPauseMinimized()</a> to control this behaviour. By default it is not enabled on desktop, and enabled on mobile devices (Android and iOS.) For singleplayer games this is recommended to avoid unwanted progression while away from the program. However in a multiplayer game this should not be used, as the missing scene updates would likely desync the client with the server.</li>
+<li>It is also possible to automatically pause update events and audio when the window is minimized. Use <a class="el" href="class_urho3_d_1_1_engine.html#ab3fc430d9c0e4fdbfefff85ae66eb65c">SetPauseMinimized()</a> to control this behaviour. By default it is not enabled on desktop, and enabled on mobile devices (Android and iOS/tvOS). For singleplayer games this is recommended to avoid unwanted progression while away from the program. However in a multiplayer game this should not be used, as the missing scene updates would likely desync the client with the server.</li>
 <li>On mobile devices the window becoming minimized can mean that it will never become maximized again, in case the OS decides it needs to free memory and kills your program. Therefore you should listen for the E_INPUTFOCUS event from the <a class="el" href="class_urho3_d_1_1_input.html" title="Input subsystem. Converts operating system window messages to input state and events. ">Input</a> subsystem and immediately save your program state as applicable if the program loses input focus or is minimized.</li>
 <li>On mobile devices it is also unsafe to access or create any graphics resources while the window is minimized (as the graphics context may be destroyed during this time); doing so can crash the program. It is recommended to leave the pause-minimized feature on to ensure you do not have to check for this in your update code.</li>
 </ul>
-<p>Note that on iOS calling <a class="el" href="class_urho3_d_1_1_engine.html#afeccd853454e5deee375a3570f7bc4b2">Exit()</a> is a no-op as there is no officially sanctioned way to manually exit your program. On Android it will cause the activity to manually exit.</p>
+<p>Note that on iOS/tvOS calling <a class="el" href="class_urho3_d_1_1_engine.html#afeccd853454e5deee375a3570f7bc4b2">Exit()</a> is a no-op as there is no officially sanctioned way to manually exit your program. On Android it will cause the activity to manually exit.</p>
 <h2><a class="anchor" id="MainLoop_ApplicationFramework"></a>
 Application framework</h2>
 <p>The <a class="el" href="class_urho3_d_1_1_application.html" title="Base class for creating applications which initialize the Urho3D engine and run a main loop until exi...">Application</a> class provides a minimal framework for a Urho3D C++ application with a main loop. It has virtual functions Setup(), Start() and Stop() which can be defined by the application subclass. The header file also provides a macro for defining a program entry point, which will instantiate the <a class="el" href="class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers. ">Context</a> object and then the user-specified application class. A minimal example, which would just display a blank rendering window and exit by pressing ESC:</p>
