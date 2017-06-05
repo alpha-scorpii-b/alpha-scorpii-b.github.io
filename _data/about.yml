@@ -44,11 +44,11 @@ features:
 - Keyframe animation of object attributes<font color="olive"><sup>v1.32</sup></font>
 - Background loading of resources<font color="olive"><sup>v1.32</sup></font>
 - Keyboard, mouse, joystick and touch input (if available)
-- Cross-platform support using [SDL 2.0](https://www.libsdl.org/) (currently runs on Windows, Linux, Mac OS X, Android, iOS, [Raspberry Pi](https://www.raspberrypi.org/)<font color="olive"><sup>v1.3</sup></font> including other generic ARM boards<font color="green"><sup>v1.6</sup></font>, and Web<font color="olive"><sup>v1.4</sup></font> with [Emscripten](https://kripken.github.io/emscripten-site/) toolchain)
+- Cross-platform support using [SDL 2.0](https://www.libsdl.org/) (currently runs on Windows, Linux, macOS, iOS, tvOS<font color="goldenrod"><sup>new</sup></font>, Android, [Raspberry Pi](https://www.raspberrypi.org/)<font color="olive"><sup>v1.3</sup></font> including other generic ARM boards<font color="green"><sup>v1.6</sup></font>, and Web<font color="olive"><sup>v1.4</sup></font> with [Emscripten](https://kripken.github.io/emscripten-site/) toolchain)
 - Physics using [Bullet](http://www.bulletphysics.org/)
 - 2D physics using [Box2D](http://box2d.org/)<font color="olive"><sup>v1.32</sup></font>
 - Scripting using [AngelScript](http://www.angelcode.com/angelscript/)
-- Alternative script interface using [Lua](https://www.lua.org/)<font color="olive"><sup>v1.3</sup></font> or [LuaJIT](http://luajit.org/)<font color="olive"><sup>v1.31</sup></font> (on Windows, Linux, Mac OS X, Android, Raspberry Pi including other generic ARM boards, and iOS<font color="green"><sup>v1.6</sup></font>)
+- Alternative script interface using [Lua](https://www.lua.org/)<font color="olive"><sup>v1.3</sup></font> or [LuaJIT](http://luajit.org/)<font color="olive"><sup>v1.31</sup></font> on all the platforms except Web platform
 - Networking using [kNet](https://github.com/juj/kNet/) + possibility to make HTTP requests<font color="olive"><sup>v1.3</sup></font>
 - Pathfinding<font color="olive"><sup>v1.23</sup></font> and crowd simulation<font color="olive"><sup>v1.4</sup></font> using [Recast/Detour](https://github.com/memononen/recastnavigation)
 - Image loading using [stb_image](https://nothings.org/) + DDS / KTX / PVR compressed texture support
