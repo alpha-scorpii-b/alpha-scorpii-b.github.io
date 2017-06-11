@@ -42,7 +42,7 @@ travis:
       platform: Windows (MinGW) and Linux
       icons: [fa fa-windows fa-lg, fa fa-linux fa-lg]
     - branch: OSX-CI
-      platform: OSX and iOS
+      platform: macOS/iOS/tvOS
       icons: [fa fa-apple fa-lg, icon-mobile-device fm-lg]
     - branch: Android-CI
       platform: Android
