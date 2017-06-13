@@ -33,6 +33,7 @@ group: HEAD
 <li>Mark all application-usable classes, structs and functions with the macro URHO3D_API so that they are exported correctly in a shared library build.</li>
 <li>Please heed all the <a class="el" href="_coding_conventions.html">coding conventions</a> and study existing code where unsure. Ensure that your text editor or IDE is configured to show whitespace, so that you don't accidentally mix spaces and tabs.</li>
 <li>Whenever you are creating a major new feature, its usage should be documented in the .dox pages in addition to the function documentation in the header files. Create a new page if necessary, and link from an appropriate place in the existing documentation. If it's for example a new rendering feature, it could be linked from the <a class="el" href="_rendering.html">Rendering</a> page. If the feature introduces a completely new subsystem, it should be linked from the main page list in Urho3D.dox.</li>
+<li>When you add a new sample application, it should be implemented in all of C++, AngelScript and Lua if possible, to show how all of the APIs are used. Check sample numbering for the next free one available. If a (C++) sample depends on a specific Urho3D build option, for example physics or networking, it can be conditionally disabled in its CMakeLists.txt. See 11_Physics sample for an example.</li>
 </ul>
 <h2><a class="anchor" id="ContributionThirdParty"></a>
 Third party library considerations</h2>
