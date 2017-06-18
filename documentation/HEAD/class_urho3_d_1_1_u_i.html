@@ -156,6 +156,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3136d55d1cc4ea112324d890a332b810">SetForceAutoHint</a> (bool enable)</td></tr>
 <tr class="memdesc:a3136d55d1cc4ea112324d890a332b810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to force font autohinting instead of using FreeType's TTF bytecode interpreter. <br/></td></tr>
 <tr class="separator:a3136d55d1cc4ea112324d890a332b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0d8d9ace57d3dec84e96d92addf7f3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aa0d8d9ace57d3dec84e96d92addf7f3b">SetFontHintLevel</a> (FontHintLevel level)</td></tr>
+<tr class="memdesc:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hinting level used by FreeType fonts. <br/></td></tr>
+<tr class="separator:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c1e9ed8137e895cd9d2cf4e9be5796f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3c1e9ed8137e895cd9d2cf4e9be5796f">SetScale</a> (float scale)</td></tr>
 <tr class="memdesc:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UI scale. 1.0 is default (pixel perfect). Resize the root element to match. <br/></td></tr>
@@ -264,6 +268,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a155813347ba37920be96c71905c58169">GetForceAutoHint</a> () const </td></tr>
 <tr class="memdesc:a155813347ba37920be96c71905c58169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is using forced autohinting. <br/></td></tr>
 <tr class="separator:a155813347ba37920be96c71905c58169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005e640aa1b6370e56e5ceee8148037d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a005e640aa1b6370e56e5ceee8148037d"></a>
+FontHintLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a005e640aa1b6370e56e5ceee8148037d">GetFontHintLevel</a> () const </td></tr>
+<tr class="memdesc:a005e640aa1b6370e56e5ceee8148037d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current FreeType font hinting level. <br/></td></tr>
+<tr class="separator:a005e640aa1b6370e56e5ceee8148037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad379e7a45606eaa6b7871f651e7e7d35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad379e7a45606eaa6b7871f651e7e7d35"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ad379e7a45606eaa6b7871f651e7e7d35">HasModalElement</a> () const </td></tr>
 <tr class="memdesc:ad379e7a45606eaa6b7871f651e7e7d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> has modal element(s). <br/></td></tr>
@@ -698,6 +706,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ae4f5f5a5e2e1b624acfb7ac060f97d60">forceAutoHint_</a></td></tr>
 <tr class="memdesc:ae4f5f5a5e2e1b624acfb7ac060f97d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for forcing FreeType auto hinting. <br/></td></tr>
 <tr class="separator:ae4f5f5a5e2e1b624acfb7ac060f97d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6bf3d43a0c1ddb92712ad01a0ddf34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c6bf3d43a0c1ddb92712ad01a0ddf34"></a>
+FontHintLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a1c6bf3d43a0c1ddb92712ad01a0ddf34">fontHintLevel_</a></td></tr>
+<tr class="memdesc:a1c6bf3d43a0c1ddb92712ad01a0ddf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">FreeType hinting level (default is FONT_HINT_LEVEL_NORMAL). <br/></td></tr>
+<tr class="separator:a1c6bf3d43a0c1ddb92712ad01a0ddf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4fde77ea8a546dfc545f89916d055c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d4fde77ea8a546dfc545f89916d055c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a6d4fde77ea8a546dfc545f89916d055c">uiRendered_</a></td></tr>
 <tr class="memdesc:a6d4fde77ea8a546dfc545f89916d055c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> already being rendered this frame. <br/></td></tr>

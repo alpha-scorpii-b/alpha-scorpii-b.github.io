@@ -4218,15 +4218,18 @@ Classes</h2>
 <li>void SetEffect(ParticleEffect2D* effect)</li>
 <li>void SetSprite(Sprite2D* sprite)</li>
 <li>void SetBlendMode(BlendMode blendMode)</li>
+<li>void SetEmitting(bool emitting)</li>
 <li>ParticleEffect2D* GetEffect() const</li>
 <li>Sprite2D* GetSprite() const</li>
 <li>BlendMode GetBlendMode() const</li>
+<li>bool IsEmitting() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
 <li>ParticleEffect2D* effect</li>
 <li>Sprite2D* sprite</li>
 <li>BlendMode blendMode</li>
+<li>bool emitting</li>
 </ul>
 <p><a class="anchor" id="Class_Pass"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_pass.html" title="Material rendering pass, which defines shaders and render state. ">Pass</a> : <a class="el" href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable. ">RefCounted</a></h4>
@@ -6573,6 +6576,7 @@ Classes</h2>
 <li>void SetUseScreenKeyboard(bool enable)</li>
 <li>void SetUseMutableGlyphs(bool enable)</li>
 <li>void SetForceAutoHint(bool enable)</li>
+<li>void SetFontHintLevel(FontHintLevel level)</li>
 <li>void SetScale(float scale)</li>
 <li>void SetWidth(float width)</li>
 <li>void SetHeight(float height)</li>
@@ -6598,6 +6602,7 @@ Classes</h2>
 <li>bool GetUseScreenKeyboard() const</li>
 <li>bool GetUseMutableGlyphs() const</li>
 <li>bool GetForceAutoHint() const</li>
+<li>FontHintLevel GetFontHintLevel() const</li>
 <li>bool HasModalElement() const</li>
 <li>bool IsDragging() const</li>
 <li>float GetScale() const</li>
@@ -7714,6 +7719,12 @@ Enumerations</h2>
 <li>int FM_RESETFOCUS</li>
 <li>int FM_FOCUSABLE</li>
 <li>int FM_FOCUSABLE_DEFOCUSABLE</li>
+</ul>
+<h4>FontHintLevel</h4>
+<ul>
+<li>int FONT_HINT_LEVEL_NONE</li>
+<li>int FONT_HINT_LEVEL_LIGHT</li>
+<li>int FONT_HINT_LEVEL_NORMAL</li>
 </ul>
 <h4>FontType</h4>
 <ul>
