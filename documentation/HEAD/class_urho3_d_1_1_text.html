@@ -86,14 +86,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a65adc6542bb694c0d75dc60641180744">SetFont</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;fontName, int size=DEFAULT_FONT_SIZE)</td></tr>
 <tr class="memdesc:a65adc6542bb694c0d75dc60641180744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font by looking from resource cache by name and font size. Return true if successful. <br/></td></tr>
 <tr class="separator:a65adc6542bb694c0d75dc60641180744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a2a56ca1160f73ee257db6168fa95a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5a2a56ca1160f73ee257db6168fa95a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#ac5a2a56ca1160f73ee257db6168fa95a">SetFont</a> (<a class="el" href="class_urho3_d_1_1_font.html">Font</a> *font, int size=DEFAULT_FONT_SIZE)</td></tr>
-<tr class="memdesc:ac5a2a56ca1160f73ee257db6168fa95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font and font size. Return true if successful. <br/></td></tr>
-<tr class="separator:ac5a2a56ca1160f73ee257db6168fa95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f341de745f1c4317fab6b530b01c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00f341de745f1c4317fab6b530b01c4f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a00f341de745f1c4317fab6b530b01c4f">SetFontSize</a> (int size)</td></tr>
-<tr class="memdesc:a00f341de745f1c4317fab6b530b01c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font size only while retaining the existing font. Return true if successful. <br/></td></tr>
-<tr class="separator:a00f341de745f1c4317fab6b530b01c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20b901ed62fa016f46f2a4adf61631a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae20b901ed62fa016f46f2a4adf61631a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#ae20b901ed62fa016f46f2a4adf61631a">SetFont</a> (<a class="el" href="class_urho3_d_1_1_font.html">Font</a> *font, float size=DEFAULT_FONT_SIZE)</td></tr>
+<tr class="memdesc:ae20b901ed62fa016f46f2a4adf61631a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font and font size. Return true if successful. <br/></td></tr>
+<tr class="separator:ae20b901ed62fa016f46f2a4adf61631a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add44cd7ddf00deebc09b13554e02f953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add44cd7ddf00deebc09b13554e02f953"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#add44cd7ddf00deebc09b13554e02f953">SetFontSize</a> (float size)</td></tr>
+<tr class="memdesc:add44cd7ddf00deebc09b13554e02f953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font size only while retaining the existing font. Return true if successful. <br/></td></tr>
+<tr class="separator:add44cd7ddf00deebc09b13554e02f953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac758326e2b948758d1f6ddd17a73e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ac758326e2b948758d1f6ddd17a73e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a7ac758326e2b948758d1f6ddd17a73e6">SetText</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;text)</td></tr>
 <tr class="memdesc:a7ac758326e2b948758d1f6ddd17a73e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set text. <a class="el" href="class_urho3_d_1_1_text.html" title="Text UI element. ">Text</a> is assumed to be either ASCII or UTF8-encoded. <br/></td></tr>
@@ -154,10 +154,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_font.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#aa70e0b501dedcabfa955748dd20fb035">GetFont</a> () const </td></tr>
 <tr class="memdesc:aa70e0b501dedcabfa955748dd20fb035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font. <br/></td></tr>
 <tr class="separator:aa70e0b501dedcabfa955748dd20fb035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8d4a86962e454e05c281c98d5c2c94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd8d4a86962e454e05c281c98d5c2c94"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#afd8d4a86962e454e05c281c98d5c2c94">GetFontSize</a> () const </td></tr>
-<tr class="memdesc:afd8d4a86962e454e05c281c98d5c2c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font size. <br/></td></tr>
-<tr class="separator:afd8d4a86962e454e05c281c98d5c2c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbad12c8ab15b68db297d34dc176d70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cbad12c8ab15b68db297d34dc176d70"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a1cbad12c8ab15b68db297d34dc176d70">GetFontSize</a> () const </td></tr>
+<tr class="memdesc:a1cbad12c8ab15b68db297d34dc176d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font size. <br/></td></tr>
+<tr class="separator:a1cbad12c8ab15b68db297d34dc176d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c97b8f60cad489151940e742be739ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c97b8f60cad489151940e742be739ba"></a>
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a0c97b8f60cad489151940e742be739ba">GetText</a> () const </td></tr>
 <tr class="memdesc:a0c97b8f60cad489151940e742be739ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return text. <br/></td></tr>
@@ -1598,10 +1598,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#ae34d8001c4e2b3b8d970753bed2ca223">fontFace_</a></td></tr>
 <tr class="memdesc:ae34d8001c4e2b3b8d970753bed2ca223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current face. <br/></td></tr>
 <tr class="separator:ae34d8001c4e2b3b8d970753bed2ca223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2cb51d4c7331572d4329a2caed14bc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2cb51d4c7331572d4329a2caed14bc4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#ad2cb51d4c7331572d4329a2caed14bc4">fontSize_</a></td></tr>
-<tr class="memdesc:ad2cb51d4c7331572d4329a2caed14bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_font.html" title="Font resource. ">Font</a> size. <br/></td></tr>
-<tr class="separator:ad2cb51d4c7331572d4329a2caed14bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ead2bc7d6d3e4712c0bee98fa88be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90ead2bc7d6d3e4712c0bee98fa88be5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a90ead2bc7d6d3e4712c0bee98fa88be5">fontSize_</a></td></tr>
+<tr class="memdesc:a90ead2bc7d6d3e4712c0bee98fa88be5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_font.html" title="Font resource. ">Font</a> size. <br/></td></tr>
+<tr class="separator:a90ead2bc7d6d3e4712c0bee98fa88be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a0d7d07cc59b751d3b3ad10505ff4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33a0d7d07cc59b751d3b3ad10505ff4b"></a>
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_text.html#a33a0d7d07cc59b751d3b3ad10505ff4b">text_</a></td></tr>
 <tr class="memdesc:a33a0d7d07cc59b751d3b3ad10505ff4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 encoded text. <br/></td></tr>

@@ -64,10 +64,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#aee27eb190f91cd45e22dd64746c407c5">~FontFace</a> ()</td></tr>
 <tr class="memdesc:aee27eb190f91cd45e22dd64746c407c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:aee27eb190f91cd45e22dd64746c407c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ad612bcd13aa96fbe1ad9b591fd1c85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ad612bcd13aa96fbe1ad9b591fd1c85"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a9ad612bcd13aa96fbe1ad9b591fd1c85">Load</a> (const unsigned char *fontData, unsigned fontDataSize, int pointSize)=0</td></tr>
-<tr class="memdesc:a9ad612bcd13aa96fbe1ad9b591fd1c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font face. <br/></td></tr>
-<tr class="separator:a9ad612bcd13aa96fbe1ad9b591fd1c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e71997177bf95883de0906fc1ec29f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e71997177bf95883de0906fc1ec29f6"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a5e71997177bf95883de0906fc1ec29f6">Load</a> (const unsigned char *fontData, unsigned fontDataSize, float pointSize)=0</td></tr>
+<tr class="memdesc:a5e71997177bf95883de0906fc1ec29f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font face. <br/></td></tr>
+<tr class="separator:a5e71997177bf95883de0906fc1ec29f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b91e47bb935a890c515f4e840217c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b91e47bb935a890c515f4e840217c8b"></a>
 virtual const <a class="el" href="struct_urho3_d_1_1_font_glyph.html">FontGlyph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a4b91e47bb935a890c515f4e840217c8b">GetGlyph</a> (unsigned c)</td></tr>
 <tr class="memdesc:a4b91e47bb935a890c515f4e840217c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pointer to the glyph structure corresponding to a character. Return null if glyph not found. <br/></td></tr>
@@ -84,10 +84,10 @@ short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#ac37543aeed369a6f8e798bd0be3a8f53">IsDataLost</a> () const </td></tr>
 <tr class="memdesc:ac37543aeed369a6f8e798bd0be3a8f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when one of the texture has a data loss. <br/></td></tr>
 <tr class="separator:ac37543aeed369a6f8e798bd0be3a8f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00bf29e9ec09dee7470ad1d59161d23b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00bf29e9ec09dee7470ad1d59161d23b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a00bf29e9ec09dee7470ad1d59161d23b">GetPointSize</a> () const </td></tr>
-<tr class="memdesc:a00bf29e9ec09dee7470ad1d59161d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return point size. <br/></td></tr>
-<tr class="separator:a00bf29e9ec09dee7470ad1d59161d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22b68f3f6dd4f1352d10c007cf0bf63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa22b68f3f6dd4f1352d10c007cf0bf63"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#aa22b68f3f6dd4f1352d10c007cf0bf63">GetPointSize</a> () const </td></tr>
+<tr class="memdesc:aa22b68f3f6dd4f1352d10c007cf0bf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return point size. <br/></td></tr>
+<tr class="separator:aa22b68f3f6dd4f1352d10c007cf0bf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b92c9c0137c9c63f616066e435d7edc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b92c9c0137c9c63f616066e435d7edc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a5b92c9c0137c9c63f616066e435d7edc">GetRowHeight</a> () const </td></tr>
 <tr class="memdesc:a5b92c9c0137c9c63f616066e435d7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return row height. <br/></td></tr>
@@ -156,10 +156,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#ae5aa8d97b378517f05375ae7c05bee82">textures_</a></td></tr>
 <tr class="memdesc:ae5aa8d97b378517f05375ae7c05bee82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glyph texture pages. <br/></td></tr>
 <tr class="separator:ae5aa8d97b378517f05375ae7c05bee82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec4c296b7a9fc3b1a582112776bbd42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afec4c296b7a9fc3b1a582112776bbd42"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#afec4c296b7a9fc3b1a582112776bbd42">pointSize_</a></td></tr>
-<tr class="memdesc:afec4c296b7a9fc3b1a582112776bbd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point size. <br/></td></tr>
-<tr class="separator:afec4c296b7a9fc3b1a582112776bbd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e60f9be8afc62bbaa2e6d5ae387214"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0e60f9be8afc62bbaa2e6d5ae387214"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#ab0e60f9be8afc62bbaa2e6d5ae387214">pointSize_</a></td></tr>
+<tr class="memdesc:ab0e60f9be8afc62bbaa2e6d5ae387214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point size. <br/></td></tr>
+<tr class="separator:ab0e60f9be8afc62bbaa2e6d5ae387214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6903d5ccacb0b054164c9714b0594a03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6903d5ccacb0b054164c9714b0594a03"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font_face.html#a6903d5ccacb0b054164c9714b0594a03">rowHeight_</a></td></tr>
 <tr class="memdesc:a6903d5ccacb0b054164c9714b0594a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row height. <br/></td></tr>

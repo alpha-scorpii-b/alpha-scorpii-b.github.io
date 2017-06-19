@@ -80,10 +80,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#aa6bc66c66ce92df2e7e89992ed5abc1e">SetScaledGlyphOffset</a> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;offset)</td></tr>
 <tr class="memdesc:aa6bc66c66ce92df2e7e89992ed5abc1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set point size scaled position adjustment for glyphs. <br/></td></tr>
 <tr class="separator:aa6bc66c66ce92df2e7e89992ed5abc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa3c98164023d1d92c649cfd89564a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa3c98164023d1d92c649cfd89564a0"></a>
-<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#adfa3c98164023d1d92c649cfd89564a0">GetFace</a> (int pointSize)</td></tr>
-<tr class="memdesc:adfa3c98164023d1d92c649cfd89564a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font face. Pack and render to a texture if not rendered yet. Return null on error. <br/></td></tr>
-<tr class="separator:adfa3c98164023d1d92c649cfd89564a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab727a58b72596421548359b826711aad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab727a58b72596421548359b826711aad"></a>
+<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#ab727a58b72596421548359b826711aad">GetFace</a> (float pointSize)</td></tr>
+<tr class="memdesc:ab727a58b72596421548359b826711aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font face. Pack and render to a texture if not rendered yet. Return null on error. <br/></td></tr>
+<tr class="separator:ab727a58b72596421548359b826711aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7a33223b831abe2026c91fcbe8cf4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e7a33223b831abe2026c91fcbe8cf4e"></a>
 FontType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#a7e7a33223b831abe2026c91fcbe8cf4e">GetFontType</a> () const </td></tr>
 <tr class="memdesc:a7e7a33223b831abe2026c91fcbe8cf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font type. <br/></td></tr>
@@ -347,14 +347,14 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#aaa35a6d45cbb33f80cc18f6c0eec995b">LoadParameters</a> ()</td></tr>
 <tr class="memdesc:aaa35a6d45cbb33f80cc18f6c0eec995b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font glyph offset parameters from an optional XML file. Called internally when loading TrueType fonts. <br/></td></tr>
 <tr class="separator:aaa35a6d45cbb33f80cc18f6c0eec995b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f3cd58e3ba8a0cde4609c31c5ff11b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83f3cd58e3ba8a0cde4609c31c5ff11b"></a>
-<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#a83f3cd58e3ba8a0cde4609c31c5ff11b">GetFaceFreeType</a> (int pointSize)</td></tr>
-<tr class="memdesc:a83f3cd58e3ba8a0cde4609c31c5ff11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font face using FreeType. Called internally. Return null on error. <br/></td></tr>
-<tr class="separator:a83f3cd58e3ba8a0cde4609c31c5ff11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5058e909ed317de4b6f10ea541c86773"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5058e909ed317de4b6f10ea541c86773"></a>
-<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#a5058e909ed317de4b6f10ea541c86773">GetFaceBitmap</a> (int pointSize)</td></tr>
-<tr class="memdesc:a5058e909ed317de4b6f10ea541c86773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bitmap font face. Called internally. Return null on error. <br/></td></tr>
-<tr class="separator:a5058e909ed317de4b6f10ea541c86773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144360b0e37ca43bb66617b11fded141"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a144360b0e37ca43bb66617b11fded141"></a>
+<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#a144360b0e37ca43bb66617b11fded141">GetFaceFreeType</a> (float pointSize)</td></tr>
+<tr class="memdesc:a144360b0e37ca43bb66617b11fded141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font face using FreeType. Called internally. Return null on error. <br/></td></tr>
+<tr class="separator:a144360b0e37ca43bb66617b11fded141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a879fb3d18fe133075d60d63fcfd3e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a879fb3d18fe133075d60d63fcfd3e5"></a>
+<a class="el" href="class_urho3_d_1_1_font_face.html">FontFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_font.html#a8a879fb3d18fe133075d60d63fcfd3e5">GetFaceBitmap</a> (float pointSize)</td></tr>
+<tr class="memdesc:a8a879fb3d18fe133075d60d63fcfd3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bitmap font face. Called internally. Return null on error. <br/></td></tr>
+<tr class="separator:a8a879fb3d18fe133075d60d63fcfd3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
