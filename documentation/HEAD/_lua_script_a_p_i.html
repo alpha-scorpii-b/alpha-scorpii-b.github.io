@@ -2182,7 +2182,7 @@ Classes</h2>
 <li>void SetScaledGlyphOffset(const Vector2&amp; offset)</li>
 <li>const <a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a>&amp; GetAbsoluteGlyphOffset() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp; GetScaledGlyphOffset() const</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetTotalGlyphOffset(int pointSize) const</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetTotalGlyphOffset(float pointSize) const</li>
 <li>FontType GetFontType() const</li>
 <li>bool IsSDFFont() const</li>
 </ul>
@@ -6156,12 +6156,12 @@ Classes</h2>
 <li>int GetEffectStrokeThickness() const</li>
 <li>bool GetEffectRoundStroke() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; GetEffectColor() const</li>
-<li>int GetRowHeight() const</li>
+<li>float GetRowHeight() const</li>
 <li>unsigned GetNumRows() const</li>
 <li>unsigned GetNumChars() const</li>
-<li>int GetRowWidth(unsigned index) const</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetCharPosition(unsigned index)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetCharSize(unsigned index)</li>
+<li>float GetRowWidth(unsigned index) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> GetCharPosition(unsigned index)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> GetCharSize(unsigned index)</li>
 <li>void SetEffectDepthBias(float bias)</li>
 <li>float GetEffectDepthBias() const</li>
 </ul>
@@ -6183,7 +6183,7 @@ Classes</h2>
 <li>int effectStrokeThickness</li>
 <li>bool effectRoundStroke</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; effectColor</li>
-<li>int rowHeight (readonly)</li>
+<li>float rowHeight (readonly)</li>
 <li>unsigned numRows (readonly)</li>
 <li>unsigned numChars (readonly)</li>
 </ul>
@@ -6234,12 +6234,12 @@ Classes</h2>
 <li>float GetEffectDepthBias() const</li>
 <li>int GetWidth() const</li>
 <li>int GetHeight() const</li>
-<li>int GetRowHeight() const</li>
+<li>float GetRowHeight() const</li>
 <li>unsigned GetNumRows() const</li>
 <li>unsigned GetNumChars() const</li>
-<li>int GetRowWidth(unsigned index) const</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetCharPosition(unsigned index)</li>
-<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetCharSize(unsigned index)</li>
+<li>float GetRowWidth(unsigned index) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> GetCharPosition(unsigned index)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> GetCharSize(unsigned index)</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; GetColor(Corner corner) const</li>
 <li>float GetOpacity() const</li>
 <li>bool IsFixedScreenSize() const</li>
@@ -6265,7 +6265,7 @@ Classes</h2>
 <li>int width</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color</li>
 <li>int height (readonly)</li>
-<li>int rowHeight (readonly)</li>
+<li>float rowHeight (readonly)</li>
 <li>unsigned numRows (readonly)</li>
 <li>unsigned numChars (readonly)</li>
 <li>float opacity</li>
@@ -6577,6 +6577,7 @@ Classes</h2>
 <li>void SetUseMutableGlyphs(bool enable)</li>
 <li>void SetForceAutoHint(bool enable)</li>
 <li>void SetFontHintLevel(FontHintLevel level)</li>
+<li>void SetSubpixelGlyphPositions(bool enable)</li>
 <li>void SetScale(float scale)</li>
 <li>void SetWidth(float width)</li>
 <li>void SetHeight(float height)</li>
@@ -6603,6 +6604,7 @@ Classes</h2>
 <li>bool GetUseMutableGlyphs() const</li>
 <li>bool GetForceAutoHint() const</li>
 <li>FontHintLevel GetFontHintLevel() const</li>
+<li>bool GetSubpixelGlyphPositions() const</li>
 <li>bool HasModalElement() const</li>
 <li>bool IsDragging() const</li>
 <li>float GetScale() const</li>
@@ -6627,6 +6629,8 @@ Classes</h2>
 <li>bool useScreenKeyboard</li>
 <li>bool useMutableGlyphs</li>
 <li>bool forceAutoHint</li>
+<li>FontHintLevel fontHintLevel</li>
+<li>bool subpixelGlyphPositions</li>
 <li>bool modalElement (readonly)</li>
 <li>float scale</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a>&amp; customSize</li>
