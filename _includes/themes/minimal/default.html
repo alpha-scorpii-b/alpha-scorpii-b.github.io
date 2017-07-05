@@ -85,7 +85,7 @@ Copyright (c) 2014-2017 Yao Wei Tjong
             <table>
               {% for build_status in site.data.footer_info.appveyor.build_statuses %}
               <tr>
-                <td><a href="https://ci.appveyor.com/project/weitjong/urho3d/branch/{{ build_status.branch }}" target="_blank">{% for icon in build_status.icons %}&nbsp;<i class="{{ icon }}"></i>{% endfor %}&nbsp;<img src="https://ci.appveyor.com/api/projects/status/{{ site.data.footer_info.appveyor.project_id }}/branch/{{ build_status.branch }}?svg=true" title="{{ build_status.platform }}" alt="{{ build_status.platform }}"/></a></td>
+                <td><a href="https://ci.appveyor.com/project/urho3d/urho3d/branch/{{ build_status.branch }}" target="_blank">{% for icon in build_status.icons %}&nbsp;<i class="{{ icon }}"></i>{% endfor %}&nbsp;<img src="https://ci.appveyor.com/api/projects/status/{{ site.data.footer_info.appveyor.project_id }}/branch/{{ build_status.branch }}?svg=true" title="{{ build_status.platform }}" alt="{{ build_status.platform }}"/></a></td>
               </tr>
               {% endfor %}
             </table>
