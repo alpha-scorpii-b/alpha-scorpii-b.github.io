@@ -160,10 +160,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aa0d8d9ace57d3dec84e96d92addf7f3b">SetFontHintLevel</a> (FontHintLevel level)</td></tr>
 <tr class="memdesc:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hinting level used by FreeType fonts. <br/></td></tr>
 <tr class="separator:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01aba76774bb5e3b1b69c8394f14d746"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01aba76774bb5e3b1b69c8394f14d746"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a01aba76774bb5e3b1b69c8394f14d746">SetSubpixelGlyphPositions</a> (bool enable)</td></tr>
-<tr class="memdesc:a01aba76774bb5e3b1b69c8394f14d746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether text glyphs can have fractional positions. Default is false (pixel-aligned). <br/></td></tr>
-<tr class="separator:a01aba76774bb5e3b1b69c8394f14d746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4326a98edbefb4bf516bbb528e79e7bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4326a98edbefb4bf516bbb528e79e7bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a4326a98edbefb4bf516bbb528e79e7bd">SetFontSubpixelThreshold</a> (float threshold)</td></tr>
+<tr class="memdesc:a4326a98edbefb4bf516bbb528e79e7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. <br/></td></tr>
+<tr class="separator:a4326a98edbefb4bf516bbb528e79e7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42bd2fdb0910d88ccd48cfeed172b0fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a42bd2fdb0910d88ccd48cfeed172b0fd">SetFontOversampling</a> (int oversampling)</td></tr>
+<tr class="memdesc:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. <br/></td></tr>
+<tr class="separator:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c1e9ed8137e895cd9d2cf4e9be5796f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3c1e9ed8137e895cd9d2cf4e9be5796f">SetScale</a> (float scale)</td></tr>
 <tr class="memdesc:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UI scale. 1.0 is default (pixel perfect). Resize the root element to match. <br/></td></tr>
@@ -276,9 +280,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 FontHintLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a005e640aa1b6370e56e5ceee8148037d">GetFontHintLevel</a> () const </td></tr>
 <tr class="memdesc:a005e640aa1b6370e56e5ceee8148037d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current FreeType font hinting level. <br/></td></tr>
 <tr class="separator:a005e640aa1b6370e56e5ceee8148037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabd6c53d92c874df543b1f9dc827809f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabd6c53d92c874df543b1f9dc827809f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubpixelGlyphPositions</b> () const </td></tr>
-<tr class="separator:aabd6c53d92c874df543b1f9dc827809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a2795f829f247f74138f200548cd69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96a2795f829f247f74138f200548cd69"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a96a2795f829f247f74138f200548cd69">GetFontSubpixelThreshold</a> () const </td></tr>
+<tr class="memdesc:a96a2795f829f247f74138f200548cd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. <br/></td></tr>
+<tr class="separator:a96a2795f829f247f74138f200548cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f94f9eed5554eaf27d074b8fd257325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f94f9eed5554eaf27d074b8fd257325"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a4f94f9eed5554eaf27d074b8fd257325">GetFontOversampling</a> () const </td></tr>
+<tr class="memdesc:a4f94f9eed5554eaf27d074b8fd257325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. <br/></td></tr>
+<tr class="separator:a4f94f9eed5554eaf27d074b8fd257325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad379e7a45606eaa6b7871f651e7e7d35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad379e7a45606eaa6b7871f651e7e7d35"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ad379e7a45606eaa6b7871f651e7e7d35">HasModalElement</a> () const </td></tr>
 <tr class="memdesc:ad379e7a45606eaa6b7871f651e7e7d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> has modal element(s). <br/></td></tr>
@@ -717,10 +726,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 FontHintLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a1c6bf3d43a0c1ddb92712ad01a0ddf34">fontHintLevel_</a></td></tr>
 <tr class="memdesc:a1c6bf3d43a0c1ddb92712ad01a0ddf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">FreeType hinting level (default is FONT_HINT_LEVEL_NORMAL). <br/></td></tr>
 <tr class="separator:a1c6bf3d43a0c1ddb92712ad01a0ddf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac012379562c50e20e1d6c5c455f231e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac012379562c50e20e1d6c5c455f231e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ac012379562c50e20e1d6c5c455f231e2">subpixelGlyphPositions_</a></td></tr>
-<tr class="memdesc:ac012379562c50e20e1d6c5c455f231e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for subpixel text glyph positions. <br/></td></tr>
-<tr class="separator:ac012379562c50e20e1d6c5c455f231e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170dc2f73b9171937e0aa340ace1dc80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a170dc2f73b9171937e0aa340ace1dc80"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a170dc2f73b9171937e0aa340ace1dc80">fontSubpixelThreshold_</a></td></tr>
+<tr class="memdesc:a170dc2f73b9171937e0aa340ace1dc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maxmimum font size for subpixel glyph positioning and oversampling (default is 12). <br/></td></tr>
+<tr class="separator:a170dc2f73b9171937e0aa340ace1dc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3768049c13d701a2bc43f1a68d22dce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3768049c13d701a2bc43f1a68d22dce"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ac3768049c13d701a2bc43f1a68d22dce">fontOversampling_</a></td></tr>
+<tr class="memdesc:ac3768049c13d701a2bc43f1a68d22dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal oversampling for subpixel fonts (default is 2). <br/></td></tr>
+<tr class="separator:ac3768049c13d701a2bc43f1a68d22dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4fde77ea8a546dfc545f89916d055c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d4fde77ea8a546dfc545f89916d055c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a6d4fde77ea8a546dfc545f89916d055c">uiRendered_</a></td></tr>
 <tr class="memdesc:a6d4fde77ea8a546dfc545f89916d055c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> already being rendered this frame. <br/></td></tr>

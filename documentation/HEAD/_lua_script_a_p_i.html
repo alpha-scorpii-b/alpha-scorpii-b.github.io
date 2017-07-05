@@ -6577,7 +6577,8 @@ Classes</h2>
 <li>void SetUseMutableGlyphs(bool enable)</li>
 <li>void SetForceAutoHint(bool enable)</li>
 <li>void SetFontHintLevel(FontHintLevel level)</li>
-<li>void SetSubpixelGlyphPositions(bool enable)</li>
+<li>void SetFontSubpixelThreshold(float threshold)</li>
+<li>void SetFontOversampling(int limit)</li>
 <li>void SetScale(float scale)</li>
 <li>void SetWidth(float width)</li>
 <li>void SetHeight(float height)</li>
@@ -6604,7 +6605,8 @@ Classes</h2>
 <li>bool GetUseMutableGlyphs() const</li>
 <li>bool GetForceAutoHint() const</li>
 <li>FontHintLevel GetFontHintLevel() const</li>
-<li>bool GetSubpixelGlyphPositions() const</li>
+<li>float GetFontSubpixelThreshold() const</li>
+<li>int GetFontOversampling() const</li>
 <li>bool HasModalElement() const</li>
 <li>bool IsDragging() const</li>
 <li>float GetScale() const</li>
@@ -6630,7 +6632,8 @@ Classes</h2>
 <li>bool useMutableGlyphs</li>
 <li>bool forceAutoHint</li>
 <li>FontHintLevel fontHintLevel</li>
-<li>bool subpixelGlyphPositions</li>
+<li>float fontSubpixelThreshold</li>
+<li>int fontOversampling</li>
 <li>bool modalElement (readonly)</li>
 <li>float scale</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a>&amp; customSize</li>
