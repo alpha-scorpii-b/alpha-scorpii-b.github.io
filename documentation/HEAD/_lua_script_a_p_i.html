@@ -2471,8 +2471,6 @@ Classes</h2>
 <li>void SetRotationDecay(float decay)</li>
 <li>bool WeightedNlerpEnabled() const</li>
 <li>void EnableWeightedNlerp(bool enable)</li>
-<li>bool InheritParentRotationEnabled() const</li>
-<li>void EnableInheritParentRotation(bool enable)</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -2489,26 +2487,17 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a> : <a class="el" href="class_urho3_d_1_1_component.html" title="Base class for components. Components can be created to scene nodes. ">Component</a></h4>
 <p>Methods:</p>
 <ul>
-<li>IKSolver::Algorithm GetAlgorithm() const</li>
-<li>void SetAlgorithm(IKSolver::Algorithm algorithm)</li>
-<li>unsigned GetMaximumIterations() const</li>
-<li>void SetMaximumIterations(unsigned iterations)</li>
-<li>float GetTolerance() const</li>
-<li>void SetTolerance(float tolerance)</li>
-<li>bool BoneRotationsEnabled() const</li>
-<li>void EnableBoneRotations(bool enable)</li>
-<li>bool TargetRotationEnabled() const</li>
-<li>void EnableTargetRotation(bool enable)</li>
-<li>bool ContinuousSolvingEnabled() const</li>
-<li>void EnableContinuousSolving(bool enable)</li>
-<li>bool UpdatePoseEnabled() const</li>
-<li>void EnableUpdatePose(bool enable)</li>
-<li>bool AutoSolveEnabled() const</li>
-<li>void EnableAutoSolve(bool enable)</li>
+<li>bool GetFeature(IKSolver::Feature feature) const</li>
+<li>void SetFeature(IKSolver::Feature feature, bool enable)</li>
+<li>void RebuildData()</li>
+<li>void RecalculateSegmentLengths()</li>
+<li>void CalculateJointRotations()</li>
 <li>void Solve()</li>
-<li>void ResetToInitialPose()</li>
-<li>void UpdateInitialPose()</li>
-<li>void MarkSolverTreeDirty()</li>
+<li>void ApplyOriginalPoseToScene()</li>
+<li>void ApplySceneToOriginalPose()</li>
+<li>void ApplyActivePoseToScene()</li>
+<li>void ApplySceneToActivePose()</li>
+<li>void ApplyOriginalPoseToActivePose()</li>
 <li>void DrawDebugGeometry(bool depthTest)</li>
 </ul>
 <p>Properties:</p>
@@ -7543,6 +7532,8 @@ Classes</h2>
 Enumerations</h2>
 <h4>Algorithm</h4>
 <ul>
+<li>int ONE_BONE</li>
+<li>int TWO_BONE</li>
 <li>int FABRIK</li>
 </ul>
 <h4>AnimationBlendMode</h4>
@@ -7714,6 +7705,16 @@ Enumerations</h2>
 <li>int FC_LOOKAT_Y</li>
 <li>int FC_LOOKAT_MIXED</li>
 <li>int FC_DIRECTION</li>
+</ul>
+<h4>Feature</h4>
+<ul>
+<li>int JOINT_ROTATIONS</li>
+<li>int TARGET_ROTATIONS</li>
+<li>int UPDATE_ORIGINAL_POSE</li>
+<li>int UPDATE_ACTIVE_POSE</li>
+<li>int USE_ORIGINAL_POSE</li>
+<li>int CONSTRAINTS</li>
+<li>int AUTO_SOLVE</li>
 </ul>
 <h4>FileMode</h4>
 <ul>
