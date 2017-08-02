@@ -92,6 +92,11 @@ const <a class="el" href="struct_urho3_d_1_1_tile_map_info2_d.html">TileMapInfo2
 <a class="el" href="class_urho3_d_1_1_sprite2_d.html">Sprite2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a191718c5fd16e0d16bd8386a08811efa">GetTileSprite</a> (int gid) const </td></tr>
 <tr class="memdesc:a191718c5fd16e0d16bd8386a08811efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tile sprite by gid, if not exist return 0. <br/></td></tr>
 <tr class="separator:a191718c5fd16e0d16bd8386a08811efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06db4ee9c41fa34119d1598a0374da2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae06db4ee9c41fa34119d1598a0374da2"></a>
+<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_tile_map_object2_d.html">TileMapObject2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#ae06db4ee9c41fa34119d1598a0374da2">GetTileCollisionShapes</a> (int gid) const </td></tr>
+<tr class="memdesc:ae06db4ee9c41fa34119d1598a0374da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tile collision shapes for a given gid. <br/></td></tr>
+<tr class="separator:ae06db4ee9c41fa34119d1598a0374da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c9d8440b9b5d4b295a7271c634622cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c9d8440b9b5d4b295a7271c634622cb"></a>
 <a class="el" href="class_urho3_d_1_1_property_set2_d.html">PropertySet2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a5c9d8440b9b5d4b295a7271c634622cb">GetTilePropertySet</a> (int gid) const </td></tr>
 <tr class="memdesc:a5c9d8440b9b5d4b295a7271c634622cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tile property set by gid, if not exist return 0. <br/></td></tr>
@@ -359,10 +364,6 @@ Private Attributes</h2></td></tr>
 <a class="el" href="struct_urho3_d_1_1_tile_map_info2_d.html">TileMapInfo2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a70461478ba2ccbc211c5d7370ee6faba">info_</a></td></tr>
 <tr class="memdesc:a70461478ba2ccbc211c5d7370ee6faba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile map information. <br/></td></tr>
 <tr class="separator:a70461478ba2ccbc211c5d7370ee6faba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa94c413b9c193d61f7a1058ecd868da9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa94c413b9c193d61f7a1058ecd868da9"></a>
-<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#aa94c413b9c193d61f7a1058ecd868da9">tileSetTextures_</a></td></tr>
-<tr class="memdesc:aa94c413b9c193d61f7a1058ecd868da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile set textures. <br/></td></tr>
-<tr class="separator:aa94c413b9c193d61f7a1058ecd868da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef9af6d1a55c79ad03868da2d18ff4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abef9af6d1a55c79ad03868da2d18ff4f"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; int, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a><br class="typebreak"/>
 &lt; <a class="el" href="class_urho3_d_1_1_sprite2_d.html">Sprite2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#abef9af6d1a55c79ad03868da2d18ff4f">gidToSpriteMapping_</a></td></tr>
@@ -373,6 +374,11 @@ Private Attributes</h2></td></tr>
 &lt; <a class="el" href="class_urho3_d_1_1_property_set2_d.html">PropertySet2D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a90809bdf9c76ac0846218e3f05c5c564">gidToPropertySetMapping_</a></td></tr>
 <tr class="memdesc:a90809bdf9c76ac0846218e3f05c5c564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gid to tile property set mapping. <br/></td></tr>
 <tr class="separator:a90809bdf9c76ac0846218e3f05c5c564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac832d46f2dc0d23a02239701692a1a03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac832d46f2dc0d23a02239701692a1a03"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; int, <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_tile_map_object2_d.html">TileMapObject2D</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#ac832d46f2dc0d23a02239701692a1a03">gidToCollisionShapeMapping_</a></td></tr>
+<tr class="memdesc:ac832d46f2dc0d23a02239701692a1a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gid to tile collision shape mapping. <br/></td></tr>
+<tr class="separator:ac832d46f2dc0d23a02239701692a1a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b158f01eab3b98546d9ac33a28a5be6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b158f01eab3b98546d9ac33a28a5be6"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_tmx_layer2_d.html">TmxLayer2D</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tmx_file2_d.html#a4b158f01eab3b98546d9ac33a28a5be6">layers_</a></td></tr>
 <tr class="memdesc:a4b158f01eab3b98546d9ac33a28a5be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layers. <br/></td></tr>
