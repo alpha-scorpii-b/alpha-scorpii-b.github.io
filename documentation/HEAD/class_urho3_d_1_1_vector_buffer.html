@@ -76,7 +76,7 @@ virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="separator:a6ae560bea48bb804e3060d307693da05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0461910c61eda9fe018fa939c17880b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0461910c61eda9fe018fa939c17880b"></a>
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector_buffer.html#aa0461910c61eda9fe018fa939c17880b">Seek</a> (unsigned position)</td></tr>
-<tr class="memdesc:aa0461910c61eda9fe018fa939c17880b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the buffer. <br/></td></tr>
+<tr class="memdesc:aa0461910c61eda9fe018fa939c17880b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the buffer. Return actual new position. <br/></td></tr>
 <tr class="separator:aa0461910c61eda9fe018fa939c17880b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19164a1fb0554319bcab1a7fc28c7273"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19164a1fb0554319bcab1a7fc28c7273"></a>
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector_buffer.html#a19164a1fb0554319bcab1a7fc28c7273">Write</a> (const void *data, unsigned size)</td></tr>
@@ -152,10 +152,18 @@ virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a08651dae845ec5a8211f8a479f31ac6e">IsEof</a> () const </td></tr>
 <tr class="memdesc:a08651dae845ec5a8211f8a479f31ac6e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the end of stream has been reached. <br/></td></tr>
 <tr class="separator:a08651dae845ec5a8211f8a479f31ac6e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acff4d7732f540451137b8b0de0dba0ed"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#acff4d7732f540451137b8b0de0dba0ed">SeekRelative</a> (int delta)</td></tr>
+<tr class="memdesc:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position relative to current position. Return actual new position. <br/></td></tr>
+<tr class="separator:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b957f6cddecb559123fcba0afeb89e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b957f6cddecb559123fcba0afeb89e"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a24b957f6cddecb559123fcba0afeb89e">GetPosition</a> () const </td></tr>
 <tr class="memdesc:a24b957f6cddecb559123fcba0afeb89e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br/></td></tr>
 <tr class="separator:a24b957f6cddecb559123fcba0afeb89e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566400bbcd4b662cc77d7b4c6e7d38ad inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a566400bbcd4b662cc77d7b4c6e7d38ad"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a566400bbcd4b662cc77d7b4c6e7d38ad">Tell</a> () const </td></tr>
+<tr class="memdesc:a566400bbcd4b662cc77d7b4c6e7d38ad inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br/></td></tr>
+<tr class="separator:a566400bbcd4b662cc77d7b4c6e7d38ad inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae086a6bf43e795a73ca26e03c4f8db6d inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae086a6bf43e795a73ca26e03c4f8db6d"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ae086a6bf43e795a73ca26e03c4f8db6d">GetSize</a> () const </td></tr>
 <tr class="memdesc:ae086a6bf43e795a73ca26e03c4f8db6d inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br/></td></tr>
