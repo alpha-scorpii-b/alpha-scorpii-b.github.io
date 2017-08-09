@@ -94,10 +94,12 @@ Algorithm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a78158a230b7e123b9ca73f82d51824d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the solver algorithm. Default is FABRIK. Note that this may not be the most efficient algorithm available. The specialized solvers will be a lot faster.  <a href="#a78158a230b7e123b9ca73f82d51824d5">More...</a><br/></td></tr>
 <tr class="separator:a78158a230b7e123b9ca73f82d51824d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db7d94a24d0b88f0fc977283fec00a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9db7d94a24d0b88f0fc977283fec00a2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature</b> (<a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">Feature</a> feature) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a9db7d94a24d0b88f0fc977283fec00a2">GetFeature</a> (<a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">Feature</a> feature) const </td></tr>
+<tr class="memdesc:a9db7d94a24d0b88f0fc977283fec00a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a certain feature is enabled (see <a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">IKSolver::Feature</a>) <br/></td></tr>
 <tr class="separator:a9db7d94a24d0b88f0fc977283fec00a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed941e6a5f53cb2d6890fc5e5a5ed2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeed941e6a5f53cb2d6890fc5e5a5ed2c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature</b> (<a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">Feature</a> feature, bool enable)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#aeed941e6a5f53cb2d6890fc5e5a5ed2c">SetFeature</a> (<a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">Feature</a> feature, bool enable)</td></tr>
+<tr class="memdesc:aeed941e6a5f53cb2d6890fc5e5a5ed2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a certain feature (see <a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6d0eae5daeff781e346e24595d5750cc">IKSolver::Feature</a>) <br/></td></tr>
 <tr class="separator:aeed941e6a5f53cb2d6890fc5e5a5ed2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c98559ef4c6e4113b4d028cb2f264d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98c98559ef4c6e4113b4d028cb2f264d"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a98c98559ef4c6e4113b4d028cb2f264d">GetMaximumIterations</a> () const </td></tr>
@@ -113,9 +115,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memitem:a8a2071caa4cfa7795e0a6570ede45d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a8a2071caa4cfa7795e0a6570ede45d8e">SetTolerance</a> (float tolerance)</td></tr>
 <tr class="memdesc:a8a2071caa4cfa7795e0a6570ede45d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distance at which the effector is "close enough" to the target node, at which point the algorithm will stop iterating.  <a href="#a8a2071caa4cfa7795e0a6570ede45d8e">More...</a><br/></td></tr>
 <tr class="separator:a8a2071caa4cfa7795e0a6570ede45d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac47883128b4dc2529244fb5569fa573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#aac47883128b4dc2529244fb5569fa573">RebuildData</a> ()</td></tr>
-<tr class="memdesc:aac47883128b4dc2529244fb5569fa573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the solver's internal data structures, which is required whenever the tree is modified in any way (e.g. adding or removing nodes, adding or removing effectors, etc.).  <a href="#aac47883128b4dc2529244fb5569fa573">More...</a><br/></td></tr>
-<tr class="separator:aac47883128b4dc2529244fb5569fa573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ebc853336630a79e4b6ec7857cd78d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a75ebc853336630a79e4b6ec7857cd78d">RebuildChainTrees</a> ()</td></tr>
+<tr class="memdesc:a75ebc853336630a79e4b6ec7857cd78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the solver's internal data structures, which is required whenever the tree is modified in any way (e.g. adding or removing nodes, adding or removing effectors, etc.).  <a href="#a75ebc853336630a79e4b6ec7857cd78d">More...</a><br/></td></tr>
+<tr class="separator:a75ebc853336630a79e4b6ec7857cd78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a547169965fa60c3cc22c44710ddfb4fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a547169965fa60c3cc22c44710ddfb4fe">RecalculateSegmentLengths</a> ()</td></tr>
 <tr class="memdesc:a547169965fa60c3cc22c44710ddfb4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unusual, but if you have a tree with translational motions such that the distances between nodes changes (perhaps a slider?), you can call this to recalculate the segment lengths after assigning new positions to the nodes.  <a href="#a547169965fa60c3cc22c44710ddfb4fe">More...</a><br/></td></tr>
 <tr class="separator:a547169965fa60c3cc22c44710ddfb4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,21 +128,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad37fe0e1e1a31fff36b3f3f923853373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373">Solve</a> ()</td></tr>
 <tr class="memdesc:ad37fe0e1e1a31fff36b3f3f923853373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the solver. The solution is applied back to the scene graph automatically.  <a href="#ad37fe0e1e1a31fff36b3f3f923853373">More...</a><br/></td></tr>
 <tr class="separator:ad37fe0e1e1a31fff36b3f3f923853373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4c1364201933e830b92ac7b6712f6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4c1364201933e830b92ac7b6712f6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#afe4c1364201933e830b92ac7b6712f6a">ApplyOriginalPoseToScene</a> ()</td></tr>
-<tr class="memdesc:afe4c1364201933e830b92ac7b6712f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the initial tree to be applied back to Urho3D's scene graph. This is what gets called when continuous solving is disabled. <br/></td></tr>
+<tr class="memitem:afe4c1364201933e830b92ac7b6712f6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#afe4c1364201933e830b92ac7b6712f6a">ApplyOriginalPoseToScene</a> ()</td></tr>
 <tr class="separator:afe4c1364201933e830b92ac7b6712f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff682e8ed5f30b4f9f87ef5d1ba6740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#afff682e8ed5f30b4f9f87ef5d1ba6740">ApplySceneToOriginalPose</a> ()</td></tr>
-<tr class="memdesc:afff682e8ed5f30b4f9f87ef5d1ba6740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the current scene graph data to be copied into the solvers initial pose. This should generally be called before solving if you are using IK on an animated model. If you don't update the initial pose, then the result will be a "continuous solution", where the solver will use the previously calculated tree as a basis for the new solution.  <a href="#afff682e8ed5f30b4f9f87ef5d1ba6740">More...</a><br/></td></tr>
 <tr class="separator:afff682e8ed5f30b4f9f87ef5d1ba6740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af540808afa75e025e732014817ff4b4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af540808afa75e025e732014817ff4b4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyActivePoseToScene</b> ()</td></tr>
+<tr class="memitem:af540808afa75e025e732014817ff4b4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#af540808afa75e025e732014817ff4b4a">ApplyActivePoseToScene</a> ()</td></tr>
 <tr class="separator:af540808afa75e025e732014817ff4b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b857cf9c23cd910eb4b08f2952b28b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b857cf9c23cd910eb4b08f2952b28b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplySceneToActivePose</b> ()</td></tr>
+<tr class="memitem:a4b857cf9c23cd910eb4b08f2952b28b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a4b857cf9c23cd910eb4b08f2952b28b7">ApplySceneToActivePose</a> ()</td></tr>
 <tr class="separator:a4b857cf9c23cd910eb4b08f2952b28b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36875cec883b9efb373f6b87f5bbf210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36875cec883b9efb373f6b87f5bbf210"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyOriginalPoseToActivePose</b> ()</td></tr>
+<tr class="memitem:a36875cec883b9efb373f6b87f5bbf210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a36875cec883b9efb373f6b87f5bbf210">ApplyOriginalPoseToActivePose</a> ()</td></tr>
 <tr class="separator:a36875cec883b9efb373f6b87f5bbf210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c889fc8759deb0245efdff0102bb2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c889fc8759deb0245efdff0102bb2c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawDebugGeometry</b> (bool depthTest)</td></tr>
@@ -149,6 +145,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawDebugGeometry</b>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#adaee1b4b6f462841dc09ce52df696d0a">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
 <tr class="memdesc:adaee1b4b6f462841dc09ce52df696d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry. <br/></td></tr>
 <tr class="separator:adaee1b4b6f462841dc09ce52df696d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f1d9b5e9d1096c87b3e8493fdd4b7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6f1d9b5e9d1096c87b3e8493fdd4b7b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#ae6f1d9b5e9d1096c87b3e8493fdd4b7b">GetJOINT_ROTATIONS</a> () const </td></tr>
+<tr class="memdesc:ae6f1d9b5e9d1096c87b3e8493fdd4b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Need these wrapper functions flags of GetFeature/SetFeature can be correctly exposed to the editor and to AngelScript and lua. <br/></td></tr>
+<tr class="separator:ae6f1d9b5e9d1096c87b3e8493fdd4b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb0de0dd2d54a5e3754f40ec07a6f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb0de0dd2d54a5e3754f40ec07a6f56"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetTARGET_ROTATIONS</b> () const </td></tr>
+<tr class="separator:a7cb0de0dd2d54a5e3754f40ec07a6f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb028d66de01594c9715260e1ab6e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1eb028d66de01594c9715260e1ab6e81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUPDATE_ORIGINAL_POSE</b> () const </td></tr>
+<tr class="separator:a1eb028d66de01594c9715260e1ab6e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494d59ff12c723a1a8021a0051311652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a494d59ff12c723a1a8021a0051311652"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUPDATE_ACTIVE_POSE</b> () const </td></tr>
+<tr class="separator:a494d59ff12c723a1a8021a0051311652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7f766d9176cd9192273fc00cbc38af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb7f766d9176cd9192273fc00cbc38af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUSE_ORIGINAL_POSE</b> () const </td></tr>
+<tr class="separator:aeb7f766d9176cd9192273fc00cbc38af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c6524b6651de0c904ddf76f37e2820"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58c6524b6651de0c904ddf76f37e2820"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetCONSTRAINTS</b> () const </td></tr>
+<tr class="separator:a58c6524b6651de0c904ddf76f37e2820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c56bd318c1e5da375a93ddbea72398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80c56bd318c1e5da375a93ddbea72398"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAUTO_SOLVE</b> () const </td></tr>
+<tr class="separator:a80c56bd318c1e5da375a93ddbea72398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3490e56459214a921beff8aab70aae41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3490e56459214a921beff8aab70aae41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJOINT_ROTATIONS</b> (bool enable)</td></tr>
+<tr class="separator:a3490e56459214a921beff8aab70aae41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c1071f41506432dc6b855903e5cdcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06c1071f41506432dc6b855903e5cdcf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTARGET_ROTATIONS</b> (bool enable)</td></tr>
+<tr class="separator:a06c1071f41506432dc6b855903e5cdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53db498905f7fc619fb46224a243b793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53db498905f7fc619fb46224a243b793"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUPDATE_ORIGINAL_POSE</b> (bool enable)</td></tr>
+<tr class="separator:a53db498905f7fc619fb46224a243b793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8847e29959e675a3a96b8418b8d5ef37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8847e29959e675a3a96b8418b8d5ef37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUPDATE_ACTIVE_POSE</b> (bool enable)</td></tr>
+<tr class="separator:a8847e29959e675a3a96b8418b8d5ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f382fe9ac9b48f9de1f96784f28f69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f382fe9ac9b48f9de1f96784f28f69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUSE_ORIGINAL_POSE</b> (bool enable)</td></tr>
+<tr class="separator:a78f382fe9ac9b48f9de1f96784f28f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23630d4e25fd3c4c223d611bc3e044c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23630d4e25fd3c4c223d611bc3e044c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCONSTRAINTS</b> (bool enable)</td></tr>
+<tr class="separator:a23630d4e25fd3c4c223d611bc3e044c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5a0bbaa83dce5c5860204cfa9ffcc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a5a0bbaa83dce5c5860204cfa9ffcc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAUTO_SOLVE</b> (bool enable)</td></tr>
+<tr class="separator:a4a5a0bbaa83dce5c5860204cfa9ffcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a8fcb1334e846b73e7825777e0ffbd2d5 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcb1334e846b73e7825777e0ffbd2d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a8fcb1334e846b73e7825777e0ffbd2d5">Component</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -624,10 +663,18 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4ae40428d8f382ee0d88a0a57c2add5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ae40428d8f382ee0d88a0a57c2add5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a4ae40428d8f382ee0d88a0a57c2add5f">MarkSolverTreeDirty</a> ()</td></tr>
-<tr class="memdesc:a4ae40428d8f382ee0d88a0a57c2add5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the solver tree to be rebuilt before solving the next time. Intended to be used by <a class="el" href="class_urho3_d_1_1_i_k_effector.html">IKEffector</a>. <br/></td></tr>
-<tr class="separator:a4ae40428d8f382ee0d88a0a57c2add5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33218dc2749da6a94ea2d6e6df62f8c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33218dc2749da6a94ea2d6e6df62f8c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a33218dc2749da6a94ea2d6e6df62f8c8">MarkChainsNeedUpdating</a> ()</td></tr>
+<tr class="memdesc:a33218dc2749da6a94ea2d6e6df62f8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the internal structures of the IK library need to be updated. See the documentation of ik_solver_rebuild_chain_trees() for more info on when this happens. <br/></td></tr>
+<tr class="separator:a33218dc2749da6a94ea2d6e6df62f8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9de3bbe3fee387925ef039af8503dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e9de3bbe3fee387925ef039af8503dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a8e9de3bbe3fee387925ef039af8503dc">MarkTreeNeedsRebuild</a> ()</td></tr>
+<tr class="memdesc:a8e9de3bbe3fee387925ef039af8503dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the tree structure has changed in some way and needs updating (nodes added or removed, components added or removed) <br/></td></tr>
+<tr class="separator:a8e9de3bbe3fee387925ef039af8503dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f4b4e76fa2ac3404e77f7af10ad8e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8f4b4e76fa2ac3404e77f7af10ad8e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad8f4b4e76fa2ac3404e77f7af10ad8e4">IsSolverTreeValid</a> () const </td></tr>
+<tr class="memdesc:ad8f4b4e76fa2ac3404e77f7af10ad8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if calling <a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373" title="Invokes the solver. The solution is applied back to the scene graph automatically. ">Solve()</a> would cause the IK library to abort. Urho3D's error handling philosophy is to log an error and continue, not crash. <br/></td></tr>
+<tr class="separator:ad8f4b4e76fa2ac3404e77f7af10ad8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc49219593786fcc85bf7f1037e7bba2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc49219593786fcc85bf7f1037e7bba2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#abc49219593786fcc85bf7f1037e7bba2">OnSceneSet</a> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
 <tr class="memdesc:abc49219593786fcc85bf7f1037e7bba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to drawable update finished event here. <br/></td></tr>
@@ -636,10 +683,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a6b6320894254a5a6a248e7e6f7964f58">OnNodeSet</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *scene)</td></tr>
 <tr class="memdesc:a6b6320894254a5a6a248e7e6f7964f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and creates the tree. <br/></td></tr>
 <tr class="separator:a6b6320894254a5a6a248e7e6f7964f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1a4f2e831bb261795385e590e33da4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1a4f2e831bb261795385e590e33da4"></a>
-ik_node_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a2e1a4f2e831bb261795385e590e33da4">CreateIKNode</a> (const <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
-<tr class="memdesc:a2e1a4f2e831bb261795385e590e33da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the ik library node and sets the current rotation/position and user data correctly. <br/></td></tr>
-<tr class="separator:a2e1a4f2e831bb261795385e590e33da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e782eedb4819ac1f24020a3cce5eaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47e782eedb4819ac1f24020a3cce5eaa"></a>
+ik_node_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a47e782eedb4819ac1f24020a3cce5eaa">CreateIKNodeFromUrhoNode</a> (const <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="memdesc:a47e782eedb4819ac1f24020a3cce5eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the ik library node and sets the current rotation/position and user data correctly. <br/></td></tr>
+<tr class="separator:a47e782eedb4819ac1f24020a3cce5eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4ab41a3accf0ff067ad591d0f7c67e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad4ab41a3accf0ff067ad591d0f7c67e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#aad4ab41a3accf0ff067ad591d0f7c67e">DestroyTree</a> ()</td></tr>
 <tr class="memdesc:aad4ab41a3accf0ff067ad591d0f7c67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the solver's tree. <br/></td></tr>
@@ -648,10 +695,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a215740ec5753a2347b9da9ec9d84cc07">RebuildTree</a> ()</td></tr>
 <tr class="memdesc:a215740ec5753a2347b9da9ec9d84cc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the solver's tree to match the scene graph's tree. If a tree already exists, it is first destroyed. <br/></td></tr>
 <tr class="separator:a215740ec5753a2347b9da9ec9d84cc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d1c0331c539ccc75adfe7a22e80ea3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1d1c0331c539ccc75adfe7a22e80ea3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad1d1c0331c539ccc75adfe7a22e80ea3">BuildTreeToEffector</a> (const <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
-<tr class="memdesc:ad1d1c0331c539ccc75adfe7a22e80ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a chain of nodes up to the specified node and adds an effector. Thus, the specified node must have an <a class="el" href="class_urho3_d_1_1_i_k_effector.html">IKEffector</a> attached. <br/></td></tr>
-<tr class="separator:ad1d1c0331c539ccc75adfe7a22e80ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa45ef02d8aee5717b9eabece7ac883"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaa45ef02d8aee5717b9eabece7ac883"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#afaa45ef02d8aee5717b9eabece7ac883">BuildTreeToEffector</a> (<a class="el" href="class_urho3_d_1_1_i_k_effector.html">IKEffector</a> *effector)</td></tr>
+<tr class="memdesc:afaa45ef02d8aee5717b9eabece7ac883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a chain of nodes up to the node of the specified effector component. <br/></td></tr>
+<tr class="separator:afaa45ef02d8aee5717b9eabece7ac883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77ddb3022b6ed2a2a19bad8dc500f47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#ae77ddb3022b6ed2a2a19bad8dc500f47">ComponentIsInOurSubtree</a> (<a class="el" href="class_urho3_d_1_1_component.html">Component</a> *component) const </td></tr>
+<tr class="separator:ae77ddb3022b6ed2a2a19bad8dc500f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9fee8f31181b6a4b99fafaff06b9e1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9fee8f31181b6a4b99fafaff06b9e1b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleComponentAdded</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="separator:aa9fee8f31181b6a4b99fafaff06b9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -668,49 +717,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleNodeRemoved</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a33f6db3304063adb8c43f713c5be3b7a">HandleSceneDrawableUpdateFinished</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:a33f6db3304063adb8c43f713c5be3b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the IK solver. <br/></td></tr>
 <tr class="separator:a33f6db3304063adb8c43f713c5be3b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05cc81a731a60cc3a74c5c8bfaa07954"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05cc81a731a60cc3a74c5c8bfaa07954"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_solver.html#a05cc81a731a60cc3a74c5c8bfaa07954">GetFeature_JOINT_ROTATIONS</a> () const </td></tr>
-<tr class="memdesc:a05cc81a731a60cc3a74c5c8bfaa07954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Need these wrapper functions flags of GetFeature/SetFeature can be correctly exposed to the editor. <br/></td></tr>
-<tr class="separator:a05cc81a731a60cc3a74c5c8bfaa07954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea28da7f6f938cf0d0e987981e148533"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea28da7f6f938cf0d0e987981e148533"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_TARGET_ROTATIONS</b> () const </td></tr>
-<tr class="separator:aea28da7f6f938cf0d0e987981e148533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb9854700d1d25515a9b8f691fde234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfb9854700d1d25515a9b8f691fde234"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_UPDATE_ORIGINAL_POSE</b> () const </td></tr>
-<tr class="separator:abfb9854700d1d25515a9b8f691fde234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae74784ee7a7c4306c981fc23c511b9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae74784ee7a7c4306c981fc23c511b9b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_UPDATE_ACTIVE_POSE</b> () const </td></tr>
-<tr class="separator:aae74784ee7a7c4306c981fc23c511b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a046e339a192e6e912ca9099b819caa41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a046e339a192e6e912ca9099b819caa41"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_USE_ORIGINAL_POSE</b> () const </td></tr>
-<tr class="separator:a046e339a192e6e912ca9099b819caa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1aff80c4452edabc8e2d4deddcc5be0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1aff80c4452edabc8e2d4deddcc5be0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_CONSTRAINTS</b> () const </td></tr>
-<tr class="separator:ae1aff80c4452edabc8e2d4deddcc5be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4770b17e3b24dde3731852d77b2cb55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4770b17e3b24dde3731852d77b2cb55"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeature_AUTO_SOLVE</b> () const </td></tr>
-<tr class="separator:ad4770b17e3b24dde3731852d77b2cb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1073e2a9110cfad4f7e54e7efb88874f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1073e2a9110cfad4f7e54e7efb88874f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_JOINT_ROTATIONS</b> (bool enable)</td></tr>
-<tr class="separator:a1073e2a9110cfad4f7e54e7efb88874f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11798295d48cf949c31f66f102f4144"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa11798295d48cf949c31f66f102f4144"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_TARGET_ROTATIONS</b> (bool enable)</td></tr>
-<tr class="separator:aa11798295d48cf949c31f66f102f4144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c015108deb695ec1d55a01b409c4a4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c015108deb695ec1d55a01b409c4a4d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_UPDATE_ORIGINAL_POSE</b> (bool enable)</td></tr>
-<tr class="separator:a1c015108deb695ec1d55a01b409c4a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bfc60709031205196fadc89116a65b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bfc60709031205196fadc89116a65b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_UPDATE_ACTIVE_POSE</b> (bool enable)</td></tr>
-<tr class="separator:a4bfc60709031205196fadc89116a65b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304f38121a9f1030e3125da37357b0d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304f38121a9f1030e3125da37357b0d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_USE_ORIGINAL_POSE</b> (bool enable)</td></tr>
-<tr class="separator:a304f38121a9f1030e3125da37357b0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22737b21b87dcdf1ad52e2041ac8baca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22737b21b87dcdf1ad52e2041ac8baca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_CONSTRAINTS</b> (bool enable)</td></tr>
-<tr class="separator:a22737b21b87dcdf1ad52e2041ac8baca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad413f4ac28e41d4e79c5b639b0d01ba1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad413f4ac28e41d4e79c5b639b0d01ba1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFeature_AUTO_SOLVE</b> (bool enable)</td></tr>
-<tr class="separator:ad413f4ac28e41d4e79c5b639b0d01ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -729,9 +735,15 @@ Algorithm&#160;</td><td class="memItemRight" valign="bottom"><b>algorithm_</b></
 <tr class="memitem:ae22e5cfe9e04ccad908f9e73764abb41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae22e5cfe9e04ccad908f9e73764abb41"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>features_</b></td></tr>
 <tr class="separator:ae22e5cfe9e04ccad908f9e73764abb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849fcafacd1aca6cc57837fac578a2ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a849fcafacd1aca6cc57837fac578a2ef"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>solverTreeNeedsRebuild_</b></td></tr>
-<tr class="separator:a849fcafacd1aca6cc57837fac578a2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae824cf71dd837351206d9e2b95b615a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae824cf71dd837351206d9e2b95b615a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>chainTreesNeedUpdating_</b></td></tr>
+<tr class="separator:ae824cf71dd837351206d9e2b95b615a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35d6dc62c989e38bd152087150b209b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad35d6dc62c989e38bd152087150b209b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>treeNeedsRebuild</b></td></tr>
+<tr class="separator:ad35d6dc62c989e38bd152087150b209b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffa32f81de3062030ce9323cae746c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ffa32f81de3062030ce9323cae746c3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>solverTreeValid_</b></td></tr>
+<tr class="separator:a7ffa32f81de3062030ce9323cae746c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -911,6 +923,102 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af540808afa75e025e732014817ff4b4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::IKSolver::ApplyActivePoseToScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the solvers current active pose into the scene graph. You generally won't need to call this because it gets called for you automatically in <a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373" title="Invokes the solver. The solution is applied back to the scene graph automatically. ">Solve()</a>. This is used to apply the solution back to the scene graph. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_af540808afa75e025e732014817ff4b4a_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36875cec883b9efb373f6b87f5bbf210"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::IKSolver::ApplyOriginalPoseToActivePose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the solvers original pose into the solvers active pose. This is used in <a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373" title="Invokes the solver. The solution is applied back to the scene graph automatically. ">Solve()</a> automatically if Feature::USE_ORIGINAL_POSE is set. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_a36875cec883b9efb373f6b87f5bbf210_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afe4c1364201933e830b92ac7b6712f6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::IKSolver::ApplyOriginalPoseToScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the original pose into the scene graph. This will reset the pose to whatever state it had when the <a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a> component was first created, or, if the original pose was updated since then (for example if Feature::UPDATE_ORIGINAL_POSE is set), will reset it to that state. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_afe4c1364201933e830b92ac7b6712f6a_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b857cf9c23cd910eb4b08f2952b28b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::IKSolver::ApplySceneToActivePose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the current scene graph data into the solvers active pose. You generally won't need to call this because it gets called for you automatically if Feature::UPDATE_ACTIVE_POSE is set. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_a4b857cf9c23cd910eb4b08f2952b28b7_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="afff682e8ed5f30b4f9f87ef5d1ba6740"></a>
 <div class="memitem">
 <div class="memproto">
@@ -923,26 +1031,66 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Causes the current scene graph data to be copied into the solvers initial pose. This should generally be called before solving if you are using IK on an animated model. If you don't update the initial pose, then the result will be a "continuous solution", where the solver will use the previously calculated tree as a basis for the new solution. </p>
-<dl class="section note"><dt>Note</dt><dd>This is </dd></dl>
+<p>Copies the current scene graph data into the solvers original pose. You generally won't need to call this, because it gets called for you automatically if Feature::UPDATE_ORIGINAL_POSE is set. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_afff682e8ed5f30b4f9f87ef5d1ba6740_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_afff682e8ed5f30b4f9f87ef5d1ba6740_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aac47883128b4dc2529244fb5569fa573"></a>
+<a class="anchor" id="ae77ddb3022b6ed2a2a19bad8dc500f47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Urho3D::IKSolver::ComponentIsInOurSubtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_component.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if the specified component is 1) attached to a node that is below the one we are attached to and 2) isn't in the subtree of a child solver. </p>
+<dl class="section note"><dt>Note</dt><dd>This will return false if the component is attached to our root node, because in that case the solver can't do anything to it, it's in the hands of a parent solver (if it exists). </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ae77ddb3022b6ed2a2a19bad8dc500f47_cgraph.svg" width="662" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ae77ddb3022b6ed2a2a19bad8dc500f47_icgraph.svg" width="100%" height="453"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a75ebc853336630a79e4b6ec7857cd78d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Urho3D::IKSolver::RebuildData </td>
+          <td class="memname">void Urho3D::IKSolver::RebuildChainTrees </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -956,7 +1104,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_aac47883128b4dc2529244fb5569fa573_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_a75ebc853336630a79e4b6ec7857cd78d_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -977,7 +1125,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Unusual, but if you have a tree with translational motions such that the distances between nodes changes (perhaps a slider?), you can call this to recalculate the segment lengths after assigning new positions to the nodes. </p>
-<dl class="section note"><dt>Note</dt><dd>This function gets called by <a class="el" href="class_urho3_d_1_1_i_k_solver.html#aac47883128b4dc2529244fb5569fa573" title="Updates the solver&#39;s internal data structures, which is required whenever the tree is modified in any...">RebuildData()</a> and by extension in <a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373" title="Invokes the solver. The solution is applied back to the scene graph automatically. ">Solve()</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function gets called by RebuildData() and by extension in <a class="el" href="class_urho3_d_1_1_i_k_solver.html#ad37fe0e1e1a31fff36b3f3f923853373" title="Invokes the solver. The solution is applied back to the scene graph automatically. ">Solve()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1107,7 +1255,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ad37fe0e1e1a31fff36b3f3f923853373_cgraph.svg" width="432" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ad37fe0e1e1a31fff36b3f3f923853373_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1115,7 +1263,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ad37fe0e1e1a31fff36b3f3f923853373_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_i_k_solver_ad37fe0e1e1a31fff36b3f3f923853373_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>

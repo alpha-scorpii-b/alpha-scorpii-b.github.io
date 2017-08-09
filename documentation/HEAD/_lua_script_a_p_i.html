@@ -2473,8 +2473,6 @@ Classes</h2>
 <li>void SetRotationWeight(float weight)</li>
 <li>float GetRotationDecay() const</li>
 <li>void SetRotationDecay(float decay)</li>
-<li>bool WeightedNlerpEnabled() const</li>
-<li>void EnableWeightedNlerp(bool enable)</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -2486,14 +2484,14 @@ Classes</h2>
 <li>float weight</li>
 <li>float rotationWeight</li>
 <li>float rotationDecay</li>
+<li>bool WEIGHT_NLERP</li>
+<li>bool INHERIT_PARENT_ROTATION</li>
 </ul>
 <p><a class="anchor" id="Class_IKSolver"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a> : <a class="el" href="class_urho3_d_1_1_component.html" title="Base class for components. Components can be created to scene nodes. ">Component</a></h4>
 <p>Methods:</p>
 <ul>
-<li>bool GetFeature(IKSolver::Feature feature) const</li>
-<li>void SetFeature(IKSolver::Feature feature, bool enable)</li>
-<li>void RebuildData()</li>
+<li>void RebuildChainTrees()</li>
 <li>void RecalculateSegmentLengths()</li>
 <li>void CalculateJointRotations()</li>
 <li>void Solve()</li>
@@ -2509,6 +2507,13 @@ Classes</h2>
 <li>IKSolver::Algorithm algorithm</li>
 <li>unsigned maximumIterations</li>
 <li>float tolerance</li>
+<li>bool JOINT_ROTATIONS</li>
+<li>bool TARGET_ROTATIONS</li>
+<li>bool UPDATE_ORIGINAL_POSE</li>
+<li>bool UPDATE_ACTIVE_POSE</li>
+<li>bool USE_ORIGINAL_POSE</li>
+<li>bool CONSTRAINTS</li>
+<li>bool AUTO_SOLVE</li>
 </ul>
 <p><a class="anchor" id="Class_Image"></a> </p>
 <h4><a class="el" href="class_urho3_d_1_1_image.html" title="Image resource. ">Image</a> : <a class="el" href="class_urho3_d_1_1_resource.html" title="Base class for resources. ">Resource</a></h4>
@@ -7711,6 +7716,11 @@ Enumerations</h2>
 <li>int FC_LOOKAT_Y</li>
 <li>int FC_LOOKAT_MIXED</li>
 <li>int FC_DIRECTION</li>
+</ul>
+<h4>Feature</h4>
+<ul>
+<li>int WEIGHT_NLERP</li>
+<li>int INHERIT_PARENT_ROTATION</li>
 </ul>
 <h4>Feature</h4>
 <ul>

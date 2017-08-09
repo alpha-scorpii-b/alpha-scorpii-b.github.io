@@ -27,6 +27,7 @@ group: HEAD
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -50,6 +51,13 @@ Collaboration diagram for Urho3D::IKEffector:</div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab8b915e05852f0d02d6fc1226044d7ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">Feature</a> { <a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7aea07e2bb23b991ae176511e27bda101741">WEIGHT_NLERP</a> = 0x01, 
+<a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7aea8d5e06a34c6fd95b5173968a91764f3e">INHERIT_PARENT_ROTATION</a> = 0x02
+ }</td></tr>
+<tr class="separator:ab8b915e05852f0d02d6fc1226044d7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a64a7de3e98fab79ed87636628d58a0d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64a7de3e98fab79ed87636628d58a0d4"></a>
@@ -60,6 +68,14 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a0d5316cb586df221a526ed9e4b0fc541">~IKEffector</a> ()</td></tr>
 <tr class="memdesc:a0d5316cb586df221a526ed9e4b0fc541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs he IK effector. <br/></td></tr>
 <tr class="separator:a0d5316cb586df221a526ed9e4b0fc541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091180d6cd887dd99d548071e4d8cda0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a091180d6cd887dd99d548071e4d8cda0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a091180d6cd887dd99d548071e4d8cda0">GetFeature</a> (<a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">Feature</a> feature) const </td></tr>
+<tr class="memdesc:a091180d6cd887dd99d548071e4d8cda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a certain feature is enabled (see <a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">IKEffector::Feature</a>) <br/></td></tr>
+<tr class="separator:a091180d6cd887dd99d548071e4d8cda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec80bd120efe6e20bd6bacf969ba486f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec80bd120efe6e20bd6bacf969ba486f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#aec80bd120efe6e20bd6bacf969ba486f">SetFeature</a> (<a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">Feature</a> feature, bool enable)</td></tr>
+<tr class="memdesc:aec80bd120efe6e20bd6bacf969ba486f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a certain feature (see <a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">IKEffector::Feature</a>) <br/></td></tr>
+<tr class="separator:aec80bd120efe6e20bd6bacf969ba486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2f89de28bb21ea7c8190c5d2b46d63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c2f89de28bb21ea7c8190c5d2b46d63"></a>
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a5c2f89de28bb21ea7c8190c5d2b46d63">GetTargetNode</a> () const </td></tr>
 <tr class="memdesc:a5c2f89de28bb21ea7c8190c5d2b46d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the node that is being used as a target. Can be NULL. <br/></td></tr>
@@ -127,14 +143,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memitem:a26b0b26834cb25e7d664b71a8d21e4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a26b0b26834cb25e7d664b71a8d21e4f4">SetRotationDecay</a> (float decay)</td></tr>
 <tr class="memdesc:a26b0b26834cb25e7d664b71a8d21e4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A factor with which to control the target rotation influence of the next segments down the chain.  <a href="#a26b0b26834cb25e7d664b71a8d21e4f4">More...</a><br/></td></tr>
 <tr class="separator:a26b0b26834cb25e7d664b71a8d21e4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf29cbc29eb7e6caa89783718e7fdca1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf29cbc29eb7e6caa89783718e7fdca1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#acf29cbc29eb7e6caa89783718e7fdca1">WeightedNlerpEnabled</a> () const </td></tr>
-<tr class="memdesc:acf29cbc29eb7e6caa89783718e7fdca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not to nlerp instead of lerp when transitioning with the weight parameter. <br/></td></tr>
-<tr class="separator:acf29cbc29eb7e6caa89783718e7fdca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdf72f21d7089662e9f48ba9b754df0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cdf72f21d7089662e9f48ba9b754df0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a6cdf72f21d7089662e9f48ba9b754df0">EnableWeightedNlerp</a> (bool enable)</td></tr>
-<tr class="memdesc:a6cdf72f21d7089662e9f48ba9b754df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you set the effector weight (see <a class="el" href="class_urho3_d_1_1_i_k_effector.html#a8cc6ed9a67bd72285bce83dd75fbb701" title="Sets how much influence the effector has on the solution. ">SetWeight()</a>) to a value in between 0 and 1, the default behaviour is to linearly interpolate the effector's target position. If the solved tree and the initial tree are far apart, this can look very strange, especially if you are controlling limbs on a character that are designed to rotation. Enabling this causes a rotational based interpolation (nlerp) around the chain's base node and makes transitions look much more natural. <br/></td></tr>
-<tr class="separator:a6cdf72f21d7089662e9f48ba9b754df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3830a26258d7022c9b6c94ba6dbda6ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3830a26258d7022c9b6c94ba6dbda6ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawDebugGeometry</b> (bool depthTest)</td></tr>
 <tr class="separator:a3830a26258d7022c9b6c94ba6dbda6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +150,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawDebugGeometry</b>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a6b3195d3ae8b2c269c6183ac5d740492">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
 <tr class="memdesc:a6b3195d3ae8b2c269c6183ac5d740492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry. <br/></td></tr>
 <tr class="separator:a6b3195d3ae8b2c269c6183ac5d740492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6dec936f6b4841fed927b0d46e881bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6dec936f6b4841fed927b0d46e881bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab6dec936f6b4841fed927b0d46e881bc">GetWEIGHT_NLERP</a> () const </td></tr>
+<tr class="memdesc:ab6dec936f6b4841fed927b0d46e881bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Need these wrapper functions flags of GetFeature/SetFeature can be correctly exposed to the editor and to AngelScript and lua. <br/></td></tr>
+<tr class="separator:ab6dec936f6b4841fed927b0d46e881bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ab0a1cc08dfcdfea3cbcc3df5164bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ab0a1cc08dfcdfea3cbcc3df5164bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetINHERIT_PARENT_ROTATION</b> () const </td></tr>
+<tr class="separator:a80ab0a1cc08dfcdfea3cbcc3df5164bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf9316dc2dfa11269be4dedf23e4cee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbf9316dc2dfa11269be4dedf23e4cee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWEIGHT_NLERP</b> (bool enable)</td></tr>
+<tr class="separator:adbf9316dc2dfa11269be4dedf23e4cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ca1a0d12e0b0e3ae6cb9deec0dfa81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90ca1a0d12e0b0e3ae6cb9deec0dfa81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetINHERIT_PARENT_ROTATION</b> (bool enable)</td></tr>
+<tr class="separator:a90ca1a0d12e0b0e3ae6cb9deec0dfa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a8fcb1334e846b73e7825777e0ffbd2d5 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcb1334e846b73e7825777e0ffbd2d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a8fcb1334e846b73e7825777e0ffbd2d5">Component</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -621,10 +642,10 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#ac0dd6e86c446116462d1732946952825">SetIKSolver</a> (<a class="el" href="class_urho3_d_1_1_i_k_solver.html">IKSolver</a> *solver)</td></tr>
 <tr class="memdesc:ac0dd6e86c446116462d1732946952825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended to be used only by <a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a>. <br/></td></tr>
 <tr class="separator:ac0dd6e86c446116462d1732946952825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9783bbdbd009e044603b96125a872b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9783bbdbd009e044603b96125a872b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#aa9783bbdbd009e044603b96125a872b3">SetIKEffector</a> (ik_effector_t *effector)</td></tr>
-<tr class="memdesc:aa9783bbdbd009e044603b96125a872b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended to be used only by <a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a>. <br/></td></tr>
-<tr class="separator:aa9783bbdbd009e044603b96125a872b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09db0f188e5400c909d922a73c969116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09db0f188e5400c909d922a73c969116"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#a09db0f188e5400c909d922a73c969116">SetIKEffectorNode</a> (ik_node_t *effector)</td></tr>
+<tr class="memdesc:a09db0f188e5400c909d922a73c969116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended to be used only by <a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a>. <br/></td></tr>
+<tr class="separator:a09db0f188e5400c909d922a73c969116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5050a41248a4af9a649fd9d854b4786"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5050a41248a4af9a649fd9d854b4786"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_i_k_effector.html#ad5050a41248a4af9a649fd9d854b4786">UpdateTargetNodePosition</a> ()</td></tr>
 <tr class="memdesc:ad5050a41248a4af9a649fd9d854b4786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended to be used by <a class="el" href="class_urho3_d_1_1_i_k_solver.html" title="Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set ...">IKSolver</a>. Copies the positions/rotations of the target node into the effector. <br/></td></tr>
@@ -638,9 +659,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5d383af0a4d4af067d130ed9f296ebb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d383af0a4d4af067d130ed9f296ebb9"></a>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_i_k_solver.html">IKSolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>solver_</b></td></tr>
 <tr class="separator:a5d383af0a4d4af067d130ed9f296ebb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304b791d28ff3af8c5a43f33d3267f2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304b791d28ff3af8c5a43f33d3267f2b"></a>
-ik_effector_t *&#160;</td><td class="memItemRight" valign="bottom"><b>ikEffector_</b></td></tr>
-<tr class="separator:a304b791d28ff3af8c5a43f33d3267f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05366f7e7a6ef3c728b0ae4696ef6574"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05366f7e7a6ef3c728b0ae4696ef6574"></a>
+ik_node_t *&#160;</td><td class="memItemRight" valign="bottom"><b>ikEffectorNode_</b></td></tr>
+<tr class="separator:a05366f7e7a6ef3c728b0ae4696ef6574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9dd5c9905686b8f5f2990ae2588769"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9dd5c9905686b8f5f2990ae2588769"></a>
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>targetName_</b></td></tr>
 <tr class="separator:abd9dd5c9905686b8f5f2990ae2588769"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -662,12 +683,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>rotationWeight_</b><
 <tr class="memitem:adc92b8930e7a5d77928ac5f001cd1409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc92b8930e7a5d77928ac5f001cd1409"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>rotationDecay_</b></td></tr>
 <tr class="separator:adc92b8930e7a5d77928ac5f001cd1409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c0b0000fd2fbbed84bdb04c7bbe48f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c0b0000fd2fbbed84bdb04c7bbe48f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>weightedNlerp_</b></td></tr>
-<tr class="separator:ac1c0b0000fd2fbbed84bdb04c7bbe48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fdf1894b9bf7193a7bcbae76612b143"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fdf1894b9bf7193a7bcbae76612b143"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>inheritParentRotation_</b></td></tr>
-<tr class="separator:a9fdf1894b9bf7193a7bcbae76612b143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92f4f2201af119a895dce4ee8446c56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac92f4f2201af119a895dce4ee8446c56"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>features_</b></td></tr>
+<tr class="separator:ac92f4f2201af119a895dce4ee8446c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -805,6 +823,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution context. <br/></td></tr>
 <tr class="separator:a3a7df857ddaa8c3e218c3645152dc23d inherit pro_attribs_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ab8b915e05852f0d02d6fc1226044d7ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_urho3_d_1_1_i_k_effector.html#ab8b915e05852f0d02d6fc1226044d7ae">Urho3D::IKEffector::Feature</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab8b915e05852f0d02d6fc1226044d7aea07e2bb23b991ae176511e27bda101741"></a>WEIGHT_NLERP</em>&#160;</td><td class="fielddoc">
+<p>If you set the effector weight (see <a class="el" href="class_urho3_d_1_1_i_k_effector.html#a8cc6ed9a67bd72285bce83dd75fbb701" title="Sets how much influence the effector has on the solution. ">SetWeight()</a>) to a value in between 0 and 1, the default behaviour is to linearly interpolate the effector's target position. If the solved tree and the initial tree are far apart, this can look very strange, especially if you are controlling limbs on a character that are designed to rotation. Enabling this causes a rotational based interpolation (nlerp) around the chain's base node and makes transitions look much more natural. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab8b915e05852f0d02d6fc1226044d7aea8d5e06a34c6fd95b5173968a91764f3e"></a>INHERIT_PARENT_ROTATION</em>&#160;</td><td class="fielddoc">
+<p>By default the end effector node will retain its global orientation, even after solving. By enabling this feature, the node will instead "rotate with" its parent node. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a26b0b26834cb25e7d664b71a8d21e4f4"></a>
 <div class="memitem">
@@ -848,7 +887,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Sets how much influence the target rotation should have on the solution. A value of 1 means to match the target rotation exactly, if possible. A value of 0 means to not match it at all. </p>
-<dl class="section note"><dt>Note</dt><dd>The solver must have target rotation enabled for this to have any effect. See IKSolver::EnableTargetRotation(). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The solver must have target rotation enabled for this to have any effect. See IKSolver::Feature::TARGET_ROTATIONS. </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
