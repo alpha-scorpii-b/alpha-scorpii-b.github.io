@@ -239,6 +239,9 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_ray.html#a3d2d15c771b885647e72370e1429b8f4">Urho3D::Ray</a>
 , <a class="el" href="class_urho3_d_1_1_sphere.html#a7bb41a663363888183521b7f73e5630a">Urho3D::Sphere</a>
 </li>
+<li>DistanceToPoint()
+: <a class="el" href="class_urho3_d_1_1_bounding_box.html#a8fd8064467325a168824546dc40fd4a6">Urho3D::BoundingBox</a>
+</li>
 <li>DoAutoRemove()
 : <a class="el" href="class_urho3_d_1_1_component.html#af908546af61d16a0ac497fdad2ed42f2">Urho3D::Component</a>
 </li>
@@ -290,15 +293,15 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_component.html#a219e412aa90aa36b9c05872abf0608dc">Urho3D::Component</a>
 , <a class="el" href="class_urho3_d_1_1_constraint.html#a61f7152089c57306cec502e16f471a79">Urho3D::Constraint</a>
 , <a class="el" href="class_urho3_d_1_1_crowd_agent.html#a29b649a27aa3a906b2abcd67152b157f">Urho3D::CrowdAgent</a>
-, <a class="el" href="class_urho3_d_1_1_crowd_manager.html#af43cdf31e01b954a654780155d5ba08d">Urho3D::CrowdManager</a>
+, <a class="el" href="class_urho3_d_1_1_crowd_manager.html#a0785f2f584ab96fb1d727d713fa5e655">Urho3D::CrowdManager</a>
 , <a class="el" href="class_urho3_d_1_1_drawable.html#ab2d53b63e2340bfd7036d70e212a8707">Urho3D::Drawable</a>
 , <a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html#ac3525ed32fcfa8a82da4e67fda1a811a">Urho3D::DynamicNavigationMesh</a>
 , <a class="el" href="class_urho3_d_1_1_i_k_effector.html#a6b3195d3ae8b2c269c6183ac5d740492">Urho3D::IKEffector</a>
 , <a class="el" href="class_urho3_d_1_1_i_k_solver.html#adaee1b4b6f462841dc09ce52df696d0a">Urho3D::IKSolver</a>
 , <a class="el" href="class_urho3_d_1_1_light.html#a17da908f6a48aa381779ada1f902d172">Urho3D::Light</a>
 , <a class="el" href="class_urho3_d_1_1_nav_area.html#ac7c4811d56f1f66dff7ceb298a7e5185">Urho3D::NavArea</a>
-, <a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a09f8c5c22c5480e25682180a97c0cf15">Urho3D::NavigationMesh</a>
-, <a class="el" href="class_urho3_d_1_1_obstacle.html#a45d7e0dad2135cd9633466e18245dc27">Urho3D::Obstacle</a>
+, <a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a250c94d8ee843a6219679daccf951a1f">Urho3D::NavigationMesh</a>
+, <a class="el" href="class_urho3_d_1_1_obstacle.html#a163190f3e253800097859b43812fad77">Urho3D::Obstacle</a>
 , <a class="el" href="class_urho3_d_1_1_octant.html#a0cc41080dea82194594c51583b1a2d62">Urho3D::Octant</a>
 , <a class="el" href="class_urho3_d_1_1_octree.html#a8564da99dddece6d4203f33809be7f5b">Urho3D::Octree</a>
 , <a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#aea18dd933bd2c32286f9a04c7065cb50">Urho3D::OffMeshConnection</a>
@@ -309,7 +312,7 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_sound_source3_d.html#ad1195c57a4fefc40865c20491a000cf6">Urho3D::SoundSource3D</a>
 , <a class="el" href="class_urho3_d_1_1_spline_path.html#a4f238d19b9538149a3eb5ad89c4b8563">Urho3D::SplinePath</a>
 , <a class="el" href="class_urho3_d_1_1_terrain_patch.html#ad9bee75d85d37d41dd16f51fc1673886">Urho3D::TerrainPatch</a>
-, <a class="el" href="class_urho3_d_1_1_tile_map2_d.html#a721cfd249053a9dec72f879988f47472">Urho3D::TileMap2D</a>
+, <a class="el" href="class_urho3_d_1_1_tile_map2_d.html#aa30915ff5bf56a4a3c9217104ce54d1b">Urho3D::TileMap2D</a>
 , <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#ad1cc4cb0964fee62fb58f19e0a511e1b">Urho3D::TileMapLayer2D</a>
 , <a class="el" href="class_urho3_d_1_1_zone.html#ae289225d1e3d94b51038b14e9d1ba4e3">Urho3D::Zone</a>
 </li>
@@ -317,7 +320,7 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_view.html#a9f5a7068310ea03c58673eb5add7db21">Urho3D::View</a>
 </li>
 <li>DrawInstanced()
-: <a class="el" href="class_urho3_d_1_1_graphics.html#ac70644f8ff6fccb95ad2e1cfd32e03d1">Urho3D::Graphics</a>
+: <a class="el" href="class_urho3_d_1_1_graphics.html#a3b3826f68144fb6a1f222811207986b1">Urho3D::Graphics</a>
 </li>
 <li>drawLine()
 : <a class="el" href="class_urho3_d_1_1_physics_world.html#ab30fad4ada5a7cc1b4817bd7246d1352">Urho3D::PhysicsWorld</a>

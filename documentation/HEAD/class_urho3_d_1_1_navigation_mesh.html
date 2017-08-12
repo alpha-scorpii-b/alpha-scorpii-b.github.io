@@ -130,6 +130,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a9731e0bf1cfa39e2a80de0c4ecf18968">SetAreaCost</a> (unsigned areaID, float cost)</td></tr>
 <tr class="memdesc:a9731e0bf1cfa39e2a80de0c4ecf18968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cost of an area. <br/></td></tr>
 <tr class="separator:a9731e0bf1cfa39e2a80de0c4ecf18968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96147f96c4694884d56a1f527e15f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae96147f96c4694884d56a1f527e15f55"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#ae96147f96c4694884d56a1f527e15f55">Allocate</a> (const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;boundingBox, unsigned maxTiles)</td></tr>
+<tr class="memdesc:ae96147f96c4694884d56a1f527e15f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the navigation mesh without building any tiles. Bounding box is not padded. Return true if successful. <br/></td></tr>
+<tr class="separator:ae96147f96c4694884d56a1f527e15f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38f762e87f10300096e08666fbafb443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38f762e87f10300096e08666fbafb443"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a38f762e87f10300096e08666fbafb443">Build</a> ()</td></tr>
 <tr class="memdesc:a38f762e87f10300096e08666fbafb443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild the navigation mesh. Return true if successful. <br/></td></tr>
@@ -138,6 +142,38 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a953581c16e8126f8866e1b831888489e">Build</a> (const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;boundingBox)</td></tr>
 <tr class="memdesc:a953581c16e8126f8866e1b831888489e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild part of the navigation mesh contained by the world-space bounding box. Return true if successful. <br/></td></tr>
 <tr class="separator:a953581c16e8126f8866e1b831888489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e613d82cba64f687f1642d1b8e75862"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e613d82cba64f687f1642d1b8e75862"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a4e613d82cba64f687f1642d1b8e75862">Build</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;from, const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;to)</td></tr>
+<tr class="memdesc:a4e613d82cba64f687f1642d1b8e75862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild part of the navigation mesh in the rectangular area. Return true if successful. <br/></td></tr>
+<tr class="separator:a4e613d82cba64f687f1642d1b8e75862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9af2e7282b11fb3198e9be3d8481640"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9af2e7282b11fb3198e9be3d8481640"></a>
+virtual <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#af9af2e7282b11fb3198e9be3d8481640">GetTileData</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;tile) const </td></tr>
+<tr class="memdesc:af9af2e7282b11fb3198e9be3d8481640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tile data. <br/></td></tr>
+<tr class="separator:af9af2e7282b11fb3198e9be3d8481640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95083df6e9f80afe8dbba00522666b06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95083df6e9f80afe8dbba00522666b06"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a95083df6e9f80afe8dbba00522666b06">AddTile</a> (const <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; unsigned char &gt; &amp;tileData)</td></tr>
+<tr class="memdesc:a95083df6e9f80afe8dbba00522666b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tile to navigation mesh. <br/></td></tr>
+<tr class="separator:a95083df6e9f80afe8dbba00522666b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68970c4bff7ba9cae31508b60a49ed4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68970c4bff7ba9cae31508b60a49ed4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#aa68970c4bff7ba9cae31508b60a49ed4">RemoveTile</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;tile)</td></tr>
+<tr class="memdesc:aa68970c4bff7ba9cae31508b60a49ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove tile from navigation mesh. <br/></td></tr>
+<tr class="separator:aa68970c4bff7ba9cae31508b60a49ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02544d63d003eb643212ba96efc416a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02544d63d003eb643212ba96efc416a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#aa02544d63d003eb643212ba96efc416a">RemoveAllTiles</a> ()</td></tr>
+<tr class="memdesc:aa02544d63d003eb643212ba96efc416a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all tiles from navigation mesh. <br/></td></tr>
+<tr class="separator:aa02544d63d003eb643212ba96efc416a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e61b72da7203e0ed712865a1d76bbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4e61b72da7203e0ed712865a1d76bbf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#ad4e61b72da7203e0ed712865a1d76bbf">HasTile</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;tile) const </td></tr>
+<tr class="memdesc:ad4e61b72da7203e0ed712865a1d76bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the navigation mesh has tile. <br/></td></tr>
+<tr class="separator:ad4e61b72da7203e0ed712865a1d76bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1429cfd3177d5ce2159a0abcb756a71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1429cfd3177d5ce2159a0abcb756a71"></a>
+<a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#ad1429cfd3177d5ce2159a0abcb756a71">GetTileBoudningBox</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;tile) const </td></tr>
+<tr class="memdesc:ad1429cfd3177d5ce2159a0abcb756a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bounding box of the tile in the node space. <br/></td></tr>
+<tr class="separator:ad1429cfd3177d5ce2159a0abcb756a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fa4b744532b08f44397286a1e7e4dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1fa4b744532b08f44397286a1e7e4dc"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#aa1fa4b744532b08f44397286a1e7e4dc">GetTileIndex</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position) const </td></tr>
+<tr class="memdesc:aa1fa4b744532b08f44397286a1e7e4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index of the tile at the position. <br/></td></tr>
+<tr class="separator:aa1fa4b744532b08f44397286a1e7e4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80483be36f1e04d2baf487b016e0613"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae80483be36f1e04d2baf487b016e0613"></a>
 <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#ae80483be36f1e04d2baf487b016e0613">FindNearestPoint</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;point, const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;extents=<a class="el" href="class_urho3_d_1_1_vector3.html#a402fdc96e79366f13803eb238a5623ed">Vector3::ONE</a>, const dtQueryFilter *filter=0, dtPolyRef *nearestRef=0)</td></tr>
 <tr class="memdesc:ae80483be36f1e04d2baf487b016e0613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the nearest point on the navigation mesh to a given point. Extents specifies how far out from the specified point to check along each axis. <br/></td></tr>
@@ -783,6 +819,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a602be9b482a0a9b7917bb13fd3b02cbf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a602be9b482a0a9b7917bb13fd3b02cbf">BuildTile</a> (<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_navigation_geometry_info.html">NavigationGeometryInfo</a> &gt; &amp;geometryList, int x, int z)</td></tr>
 <tr class="memdesc:a602be9b482a0a9b7917bb13fd3b02cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build one tile of the navigation mesh. Return true if successful.  <a href="#a602be9b482a0a9b7917bb13fd3b02cbf">More...</a><br/></td></tr>
 <tr class="separator:a602be9b482a0a9b7917bb13fd3b02cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab649eee713babaa030e62c423da0e5f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab649eee713babaa030e62c423da0e5f8"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#ab649eee713babaa030e62c423da0e5f8">BuildTiles</a> (<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_navigation_geometry_info.html">NavigationGeometryInfo</a> &gt; &amp;geometryList, const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;from, const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;to)</td></tr>
+<tr class="memdesc:ab649eee713babaa030e62c423da0e5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build tiles in the rectangular area. Return number of built tiles. <br/></td></tr>
+<tr class="separator:ab649eee713babaa030e62c423da0e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50591668a60de1ec65c56aaeaed4f57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa50591668a60de1ec65c56aaeaed4f57"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#aa50591668a60de1ec65c56aaeaed4f57">InitializeQuery</a> ()</td></tr>
 <tr class="memdesc:aa50591668a60de1ec65c56aaeaed4f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the navigation mesh query is initialized. Return true if successful. <br/></td></tr>
@@ -1035,6 +1075,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af4c9f5805170b3b67af31fb3e0266661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4c9f5805170b3b67af31fb3e0266661"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_navigation_mesh.html">NavigationMesh</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
 <tr class="separator:af4c9f5805170b3b67af31fb3e0266661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22cb9096217ee5b13276ae34ccc8839"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa22cb9096217ee5b13276ae34ccc8839"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#aa22cb9096217ee5b13276ae34ccc8839">WriteTile</a> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest, int x, int z) const </td></tr>
+<tr class="memdesc:aa22cb9096217ee5b13276ae34ccc8839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write tile data. <br/></td></tr>
+<tr class="separator:aa22cb9096217ee5b13276ae34ccc8839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e69586bdbe9d9fd5de178023ade279"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11e69586bdbe9d9fd5de178023ade279"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_navigation_mesh.html#a11e69586bdbe9d9fd5de178023ade279">ReadTile</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source, bool silent)</td></tr>
+<tr class="memdesc:a11e69586bdbe9d9fd5de178023ade279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read tile data to the navigation mesh. <br/></td></tr>
+<tr class="separator:a11e69586bdbe9d9fd5de178023ade279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -1084,7 +1132,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CrowdManager</b></td
 </div><div class="memdoc">
 
 <p>Build one tile of the navigation mesh. Return true if successful. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>Assignment of flags from navigation areas? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Assignment of flags from navigation areas? </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1097,7 +1145,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_navigation_mesh_a602be9b482a0a9b7917bb13fd3b02cbf_icgraph.svg" width="400" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_navigation_mesh_a602be9b482a0a9b7917bb13fd3b02cbf_icgraph.svg" width="619" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1149,7 +1197,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Visit nodes and collect navigable geometry. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Evaluate whether should handle other types. Now <a class="el" href="class_urho3_d_1_1_static_model.html" title="Static model component. ">StaticModel</a> &amp; <a class="el" href="class_urho3_d_1_1_terrain_patch.html" title="Individually rendered part of a heightmap terrain. ">TerrainPatch</a> are supported, others skipped </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Evaluate whether should handle other types. Now <a class="el" href="class_urho3_d_1_1_static_model.html" title="Static model component. ">StaticModel</a> &amp; <a class="el" href="class_urho3_d_1_1_terrain_patch.html" title="Individually rendered part of a heightmap terrain. ">TerrainPatch</a> are supported, others skipped </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

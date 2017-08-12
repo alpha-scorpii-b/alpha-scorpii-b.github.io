@@ -901,6 +901,7 @@ Classes</h2>
 <li>void Define(const Vector3&amp;, const Vector3&amp;)</li>
 <li>void Define(float, float)</li>
 <li>bool Defined() const</li>
+<li>float DistanceToPoint(const Vector3&amp;) const</li>
 <li>Intersection IsInside(const BoundingBox&amp;) const</li>
 <li>Intersection IsInside(const Sphere&amp;) const</li>
 <li>Intersection IsInside(const Vector3&amp;) const</li>
@@ -4074,9 +4075,12 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_dynamic_navigation_mesh.html">DynamicNavigationMesh</a></h4>
 <p>Methods:</p>
 <ul>
+<li>bool AddTile(const VectorBuffer&amp;) const</li>
+<li>bool Allocate(const BoundingBox&amp;, uint)</li>
 <li>void ApplyAttributes()</li>
 <li>bool Build()</li>
 <li>bool Build(const BoundingBox&amp;)</li>
+<li>bool Build(const IntVector2&amp;, const IntVector2&amp;)</li>
 <li>void DrawDebugGeometry(<a class="el" href="class_urho3_d_1_1_debug_renderer.html" title="Debug geometry rendering component. Should be added only to the root scene node. ">DebugRenderer</a>@, bool)</li>
 <li>void DrawDebugGeometry(bool)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> FindNearestPoint(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
@@ -4092,8 +4096,12 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetRandomPoint()</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetRandomPointInCircle(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, float, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
+<li><a class="el" href="class_urho3_d_1_1_bounding_box.html" title="Three-dimensional axis-aligned bounding box. ">BoundingBox</a> GetTileBoudningBox(const IntVector2&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a> GetTileData(const IntVector2&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetTileIndex(const Vector3&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTile(const IntVector2&amp;) const</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
 <li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
@@ -4102,9 +4110,11 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> MoveAlongSurface(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ), int = 3)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Raycast(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
 <li>void Remove()</li>
+<li>void RemoveAllTiles()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>void RemoveTile(const IntVector2&amp;)</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@) const</li>
 <li>bool Save(VectorBuffer&amp;) const</li>
@@ -6246,9 +6256,12 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_navigation_mesh.html" title="Navigation mesh component. Collects the navigation geometry from child nodes with the Navigable compo...">NavigationMesh</a></h4>
 <p>Methods:</p>
 <ul>
+<li>bool AddTile(const VectorBuffer&amp;) const</li>
+<li>bool Allocate(const BoundingBox&amp;, uint)</li>
 <li>void ApplyAttributes()</li>
 <li>bool Build()</li>
 <li>bool Build(const BoundingBox&amp;)</li>
+<li>bool Build(const IntVector2&amp;, const IntVector2&amp;)</li>
 <li>void DrawDebugGeometry(<a class="el" href="class_urho3_d_1_1_debug_renderer.html" title="Debug geometry rendering component. Should be added only to the root scene node. ">DebugRenderer</a>@, bool)</li>
 <li>void DrawDebugGeometry(bool)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> FindNearestPoint(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
@@ -6264,8 +6277,12 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetRandomPoint()</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetRandomPointInCircle(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, float, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
+<li><a class="el" href="class_urho3_d_1_1_bounding_box.html" title="Three-dimensional axis-aligned bounding box. ">BoundingBox</a> GetTileBoudningBox(const IntVector2&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a> GetTileData(const IntVector2&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetTileIndex(const Vector3&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>bool HasTile(const IntVector2&amp;) const</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
 <li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
@@ -6274,9 +6291,11 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> MoveAlongSurface(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ), int = 3)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Raycast(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
 <li>void Remove()</li>
+<li>void RemoveAllTiles()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void RemoveObjectAnimation()</li>
+<li>void RemoveTile(const IntVector2&amp;)</li>
 <li>void ResetToDefault()</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@) const</li>
 <li>bool Save(VectorBuffer&amp;) const</li>
@@ -13225,6 +13244,7 @@ Global functions</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetVariantTypeName(VariantType)</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
+<li>uint IntegerLog2(uint)</li>
 <li>float InverseLerp(float, float, float)</li>
 <li>bool IsAbsolutePath(const String&amp;)</li>
 <li>bool IsAlpha(uint)</li>
