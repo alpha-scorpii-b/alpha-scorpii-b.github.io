@@ -239,7 +239,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aae8dd89a7f79cd9d547f0b55ca53ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b76b3006a5e7581803f173616c91976"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b76b3006a5e7581803f173616c91976"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a2b76b3006a5e7581803f173616c91976">EnableMassUpdate</a> ()</td></tr>
-<tr class="memdesc:a2b76b3006a5e7581803f173616c91976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-enable mass update and recalculate the mass/inertia by calling <a class="el" href="class_urho3_d_1_1_rigid_body.html#a1207bc70121deacf2aa07fde3c2731df" title="Update mass and inertia to the Bullet rigid body. ">UpdateMass()</a>. Call when collision shape changes are finished. <br/></td></tr>
+<tr class="memdesc:a2b76b3006a5e7581803f173616c91976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-enable mass update and recalculate the mass/inertia by calling <a class="el" href="class_urho3_d_1_1_rigid_body.html#a58b409554af87bb4867f28405f51cabc" title="Update mass and inertia to the Bullet rigid body. Readd body to world if necessary. ">UpdateMass()</a>. Call when collision shape changes are finished. <br/></td></tr>
 <tr class="separator:a2b76b3006a5e7581803f173616c91976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0117dde54b30f58df46fa0ee88ae389"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0117dde54b30f58df46fa0ee88ae389"></a>
 <a class="el" href="class_urho3_d_1_1_physics_world.html">PhysicsWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#ab0117dde54b30f58df46fa0ee88ae389">GetPhysicsWorld</a> () const </td></tr>
@@ -373,10 +373,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a1683e21222126986b0d7c8c7c58e4b8f">ApplyWorldTransform</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;newWorldPosition, const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;newWorldRotation)</td></tr>
 <tr class="memdesc:a1683e21222126986b0d7c8c7c58e4b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply new world transform after a simulation step. Called internally. <br/></td></tr>
 <tr class="separator:a1683e21222126986b0d7c8c7c58e4b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1207bc70121deacf2aa07fde3c2731df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1207bc70121deacf2aa07fde3c2731df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a1207bc70121deacf2aa07fde3c2731df">UpdateMass</a> ()</td></tr>
-<tr class="memdesc:a1207bc70121deacf2aa07fde3c2731df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mass and inertia to the Bullet rigid body. <br/></td></tr>
-<tr class="separator:a1207bc70121deacf2aa07fde3c2731df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b409554af87bb4867f28405f51cabc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58b409554af87bb4867f28405f51cabc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a58b409554af87bb4867f28405f51cabc">UpdateMass</a> (bool calledForAddBodyToWorld=false)</td></tr>
+<tr class="memdesc:a58b409554af87bb4867f28405f51cabc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update mass and inertia to the Bullet rigid body. Readd body to world if necessary. <br/></td></tr>
+<tr class="separator:a58b409554af87bb4867f28405f51cabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0f803bf8285833124c55ec86bcd3d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d0f803bf8285833124c55ec86bcd3d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a4d0f803bf8285833124c55ec86bcd3d3">UpdateGravity</a> ()</td></tr>
 <tr class="memdesc:a4d0f803bf8285833124c55ec86bcd3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update gravity parameters to the Bullet rigid body. <br/></td></tr>
@@ -954,7 +954,7 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1db632b98c49679540049fbb9b132fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c961b128867e4b196defc0973d3e03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c961b128867e4b196defc0973d3e03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a84c961b128867e4b196defc0973d3e03">AddBodyToWorld</a> ()</td></tr>
-<tr class="memdesc:a84c961b128867e4b196defc0973d3e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the rigid body, or re-add to the physics world with changed flags. Calls <a class="el" href="class_urho3_d_1_1_rigid_body.html#a1207bc70121deacf2aa07fde3c2731df" title="Update mass and inertia to the Bullet rigid body. ">UpdateMass()</a>. <br/></td></tr>
+<tr class="memdesc:a84c961b128867e4b196defc0973d3e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the rigid body, or re-add to the physics world with changed flags. Calls <a class="el" href="class_urho3_d_1_1_rigid_body.html#a58b409554af87bb4867f28405f51cabc" title="Update mass and inertia to the Bullet rigid body. Readd body to world if necessary. ">UpdateMass()</a>. <br/></td></tr>
 <tr class="separator:a84c961b128867e4b196defc0973d3e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bdc0a663b7be7779c7b0ca5e798a185"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bdc0a663b7be7779c7b0ca5e798a185"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_rigid_body.html#a1bdc0a663b7be7779c7b0ca5e798a185">RemoveBodyFromWorld</a> ()</td></tr>
