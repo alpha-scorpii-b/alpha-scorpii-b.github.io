@@ -18,7 +18,262 @@ group: HEAD
 <div class="title">History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>V1.6</p>
+<div class="textblock"><p>V1.7</p>
+<ul>
+<li>Inverse kinematics support.</li>
+<li>Bullet RaycastVehicle support.</li>
+<li>AppleTV platform support.</li>
+<li>IME support on Linux platform.</li>
+<li>Several font rendering improvements and TypoGraphy sample.</li>
+<li>WebP image loading support.</li>
+<li>Sparse navigation meshes and navmesh streaming support.</li>
+<li>AutoRemove bool removed. Replaced with more general AutoRemoveMode mechanism.</li>
+<li>Free functions supported in attribute accessors.</li>
+<li>IntVector3 class.</li>
+<li>EnumAttributeAccessorImpl is now compatible with enum classes.</li>
+<li>Use default continuous physics &amp; substepping values for Box2D world.</li>
+<li>Node-specific 2D physics collision events.</li>
+<li>Improved Box2D joint handling.</li>
+<li>Use GetDerivedComponent() when getting PhysicsWorld2D to allow subclassing it. PhysicsWorld2D members no longer private also for this reason.</li>
+<li>ApplyLinearImpulseToCenter() function in RigidBody2D.</li>
+<li>Additional info exposed in 2D physics events.</li>
+<li>CollisionShape2D scale allowed to be signed.</li>
+<li>Refactor PhysicsWorld2D contact info.</li>
+<li>ParticleEmitter2D can be made to stop / restart emitting.</li>
+<li>CSV and base64 encoding options when loading TMX files.</li>
+<li>Several tilemap / TMX file improvements.</li>
+<li>Improved convex hull debug draw.</li>
+<li>Bool &amp; int shader parameters on D3D11 / OpenGL.</li>
+<li>Maximum extrusion distance for directional light shadows.</li>
+<li>Shader compilation defines added to materials.</li>
+<li>Shader compilation defines added to renderpath commands.</li>
+<li>Shader compilation define exclusion mechanism in Pass.</li>
+<li>Multisampled rendertargets.</li>
+<li>Mipmapped rendertargets.</li>
+<li>Alpha-to-coverage can be enabled in pass or material. Requires D3D11 or OpenGL.</li>
+<li>Line antialiasing support.</li>
+<li>Optional soft particles support.</li>
+<li>Improve VSM shadows by moving z/w divide to pixel shader.</li>
+<li>Anisotropic-nearest filtering mode, when supported.</li>
+<li>Optional per-texture max anisotropy setting.</li>
+<li>Physical light values support.</li>
+<li>Area light support.</li>
+<li>Multisample option for VSM shadows.</li>
+<li>Shader cache location is configurable, and defaults to a user-writable directory.</li>
+<li>Renderer events for screen buffer allocation &amp; global shader parameters having been set.</li>
+<li>Renderer event for all views having been rendered.</li>
+<li>DecalSet optionally sizes vertex &amp; index buffer only based on use.</li>
+<li>New face camera mode in BillboardSet &amp; Text3D.</li>
+<li>Support defining neighbor terrains to avoid LOD discontinuities.</li>
+<li>AnimationController internal control structures can be accessed as part of its public API.</li>
+<li>AnimationController can be queried if any animation is playing on a layer.</li>
+<li>Allow to get animation tracks by index.</li>
+<li>Custom projection matrix support.</li>
+<li>Implement GetMultiSampleLevels() on OpenGL.</li>
+<li>Monitor and refresh rate options for Graphics::SetMode().</li>
+<li>Allow unclamped morph weights.</li>
+<li>Static helper function for calculating VertexBuffer element offsets.</li>
+<li>Model metadata support.</li>
+<li>PBR improvements.</li>
+<li>Clean up PBR shaders &amp; techniques; do not require tangents in PBR shaders unless using normal mappings.</li>
+<li>Possibility to set mouse mode or visibility before Input class initialization.</li>
+<li>Mouse centering / position setting moved to Input public API.</li>
+<li>Seek method for audio streams.</li>
+<li>Anchors and pivots can optionally be specified for UI elements.</li>
+<li>ProgressBar UI element added.</li>
+<li>UI root element custom size support.</li>
+<li>UIElement child XML loading returns created child instead of success bool.</li>
+<li>Add delta parameter to UI element resize event.</li>
+<li>SDF font supersampling.</li>
+<li>FontType enum exposed to public API.</li>
+<li>NAVIGATIONPUSHINESS_NONE mode in CrowdAgent.</li>
+<li>NavArea solid debug geometry.</li>
+<li>To/from string conversions in JSONValueType / JSONNumberType.</li>
+<li>Add function to test for Rect / Rect intersection.</li>
+<li>Resize overloads in Vector / PODVector.</li>
+<li>Remove ineffective static TypeInfo checking functions.</li>
+<li>Node &amp; UIElement child query function overloads that return a collection.</li>
+<li>Node IsChildOf() function.</li>
+<li>Temporary parameter added to Node CreateChild() function.</li>
+<li>Sprite2D can define its draw &amp; texture rectangles.</li>
+<li>UniquePtr class.</li>
+<li>Several math API functions added.</li>
+<li>Stable random generator added.</li>
+<li>Add FloatToRawIntBits function.</li>
+<li>Variant can hold Rect objects.</li>
+<li>Variant can hold 64-bit integers.</li>
+<li>Mipmap manipulation support in Image.</li>
+<li>Image class SaveDDS() function.</li>
+<li>Text3D GetHeight() function.</li>
+<li>Console auto-completion.</li>
+<li>Console text highlighting according to message type.</li>
+<li>XMLFile GetOrCreateRoot() function, and XMLElement GetOrCreateChild(9 function.</li>
+<li>Urho3DPlayer attempts to read CommandLine.txt from resource system on all platforms, if cannot read from filesystem.</li>
+<li>Improve use of SDL_Init() so that Context keeps track of initialized SDL subsystems.</li>
+<li>IES cookie generation in RampGenerator.</li>
+<li>AbstractFile as a parent class for those that implement both Serializer &amp; Deserializer.</li>
+<li>Allow specifying child node by name in attribute animation paths.</li>
+<li>Functions to get rotation axis &amp; angle in Quaternion.</li>
+<li>Improved AngelScript API dump.</li>
+<li>Consts exposed to AngelScript API.</li>
+<li>OS query functions added to ProcessUtils.</li>
+<li>Add resource to cache before sending background load event.</li>
+<li>Prevent sending event to subscribers added during event handling.</li>
+<li>Prevent rendering of unnecessary shadow maps.</li>
+<li>Prevent rendering of deferred light volumes which would be masked out due to lightmask being only 8-bit in deferred rendering.</li>
+<li>Move "cold" parts of Node into NodeImpl class to improve performance.</li>
+<li>Populate rapidjson value before adding to parent.</li>
+<li>Update to AngelScript 2.31.2.</li>
+<li>Update to FreeType 2.7.1.</li>
+<li>Update to SQLite 3.18.0.</li>
+<li>Update to LibCpuId 0.4.0.</li>
+<li>Update to Box2D 2.3.2.</li>
+<li>Update to Assimp 3.2.</li>
+<li>Update to LZ4 1.7.5.</li>
+<li>Update to Bullet 2.86.1.</li>
+<li>Documentation: explain how to setup Windows MKLINK privilege.</li>
+<li>Documentation: add section on scene graph events.</li>
+<li>Documentation: explain EMSCRIPTEN_WASM build option.</li>
+<li>Documentation: note on simultaneous network server &amp; client usage.</li>
+<li>Documentation: update on the define_resource_dirs() macro.</li>
+<li>Documentation: do not include RapidJSON classes.</li>
+<li>Documentation: inverse kinematics page.</li>
+<li>AssetImporter: possibility to export animation without skinned mesh.</li>
+<li>AssetImporter: $fbx node suppression.</li>
+<li>AssetImporter: fix animation start/end times when saving multiple animations.</li>
+<li>AssetImporter: fix incorrect applying of model's root node transform.</li>
+<li>Editor: do not attempt to parse extensionless files as XML.</li>
+<li>Editor: draw navigation debug geometry.</li>
+<li>Editor: prevent unnecessary attribute inspector refresh on resource reload.</li>
+<li>Editor: allow drag-drop of generic XML files into attribute edit fields.</li>
+<li>Editor: improved handling of structure attributes.</li>
+<li>Editor: optimization to avoid updating temporary objects when they are not shown in hierarchy.</li>
+<li>Editor: optimize update during object spawn.</li>
+<li>Editor: paint selection.</li>
+<li>Editor: show origins option.</li>
+<li>Editor: fix UI element internal var indexing so that editing user-defined variables works right.</li>
+<li>Editor: restore window positions on viewport mode switch.</li>
+<li>Editor: terrain editor.</li>
+<li>Editor: color wheel for Text3D.</li>
+<li>Editor: double size on high DPI display.</li>
+<li>Editor: fix resource browser node add/removal shown in hierarchy window.</li>
+<li>Editor: fix resource browser preview camera position.</li>
+<li>Build system: ensure empty CMAKE_OSX_DEPLOYMENT_TARGET on iOS build.</li>
+<li>Build system: auto-disable PCH on Android Clang build.</li>
+<li>Build system: prefer CMake's regex instead of grep.</li>
+<li>Build system: turn off PCH on bad ccache version.</li>
+<li>Build system: Bash on Ubuntu on Windows -support.</li>
+<li>Build system: work around MinGW 6.1.0 linking issue.</li>
+<li>Build system: MinGW 6.1.0+ fix (narrowing conversion / internal compiler error.)</li>
+<li>Build system: consider MinGW as multilib compiler.</li>
+<li>Build system: make URHO3D_64BIT option applicable on MinGW.</li>
+<li>Build system: use absolute output path for MinGW sysroot auto-detection.</li>
+<li>Build system: fix Wayland build.</li>
+<li>Build system: autodetect availability of clock_gettime() on Apple platforms.</li>
+<li>Build system: fix package metadata for RPI &amp; ARM platforms.</li>
+<li>Build system: fix Urho3DAll.h generation in non out-of-source build.</li>
+<li>Build system: avoid special chars in paths in MRI script passed to ar utility (Web build.)</li>
+<li>Build system: Always use export header for auto-discovering build options.</li>
+<li>Build system: use -O2 option for MinGW release build</li>
+<li>Build system: add option to control how to share resources on web platform.</li>
+<li>Build system: check availability of native compiler toolchain.</li>
+<li>Build system: remove older CMake constructs that are no longer necessary.</li>
+<li>Build system: new Android toolchain.</li>
+<li>Build system: several Web build related improvements.</li>
+<li>Build system: MODULE library type support option for Web build.</li>
+<li>Build system: disable exception handling codegen for Web DEBUG build.</li>
+<li>Build system: remove unused options from define_source_files() macro.</li>
+<li>Build system: Prevent resource symlink creation during resource packaging.</li>
+<li>Build system: Skip try_compile test when not appropriate (iOS debug build.)</li>
+<li>Build system: use no_weak_imports linker flag.</li>
+<li>Build system: workaround struct redefinition on newer MinGW.</li>
+<li>Build system: search for DirectX path both rooted &amp; non-rooted.</li>
+<li>Build system: make clean for MinGW / Android / Web platforms.</li>
+<li>Build system: enable multi-threaded compilation in Visual Studio.</li>
+<li>Build system: fix mklink test when current path is not sources dir.</li>
+<li>Build system: fix symlinked batch files not being launchable from Windows Explorer.</li>
+<li>Build system: generate PCH files using naming convention expected by Clion.</li>
+<li>Build system: generate dummy PCH only in out-of-source build tree.</li>
+<li>Sample content: Kachujin model, used in SkeletalAnimation sample.</li>
+<li>Sample content: new Urho3D logo.</li>
+<li>Sample content: mutant model added to the CharacterDemo.</li>
+<li>Sample content: Vertex colors in the standard primitive models.</li>
+<li>Sample content: Line primitive models.</li>
+<li>Sample content: material preview model.</li>
+<li>Fix broken off-mesh movement for CrowdAgent.</li>
+<li>Fix Bullet assert / crash when collision shape was changed from compound to non-compound.</li>
+<li>Fix unintended update of wordwrapping text's width.</li>
+<li>Fix uninitialized fields in FontFaceBitmap.</li>
+<li>Fix recreation of CollisionChain2D shape.</li>
+<li>Fix positioning of borderless window (if not filling the whole monitor.)</li>
+<li>Fix RigidBody2D not returning to original transform.</li>
+<li>Fix copypaste error in SpriteSheet2D load code.</li>
+<li>Fix out-of-bounds text buffer access when compiling an AngelScript module.</li>
+<li>Fix VariantMap to JSONValue and back conversion.</li>
+<li>Fix handling /./ in executable path in SanitateResourceName().</li>
+<li>Fix crash if script object constructor throws.</li>
+<li>Fix incorrect optimization in UIElement::GetElementAt().</li>
+<li>Fix potential crash when erasing sibling nodes during component destructor.</li>
+<li>Fix blend modes for 2D particles.</li>
+<li>Fix use of asGetActiveContext() in template code, as it could leak undesirably to user application and cause undefined symbol.</li>
+<li>Fix jumping Slider knob.</li>
+<li>Fix AngelScript temp variable corruption and problem with handle-reference argument.</li>
+<li>Fix Constraint2D body connection serialization (other body nodeID.)</li>
+<li>Fix instancing in vegetation shader.</li>
+<li>Fix SDL keyboard input on RPI platform.</li>
+<li>Fix fixed size billboard not properly realculating size in all cases.</li>
+<li>Fix multisample quality handling on D3D11.</li>
+<li>Fix Text3D batches beyond the first not showing correctly.</li>
+<li>Fix input scaling for high DPI displays.</li>
+<li>Fix differentiation of alpha &amp; RGBA textures in text shader.</li>
+<li>Fix crash in usedGlyphs mode.</li>
+<li>Fix zero sized UI root element causing divide by zero.</li>
+<li>Fix various missing script API functions.</li>
+<li>Fix terrain UV coordinates generation.</li>
+<li>Fix shader define update when Text3D changes its rendering between SDF / non-SDF.</li>
+<li>Fix erroneous fadeout of other AnimationController animations, if playback of new animation failed.</li>
+<li>Fix nearest filter mode not using mipmaps on OpenGOL.</li>
+<li>Fix skinning matrix pointers changing erroneously after late creation of bones.</li>
+<li>Fix BillboardSet 16 bit indices limitation.</li>
+<li>Fix CrowdAgents getting erroneously included in navmesh geometry.</li>
+<li>Fix calculation of UI element combined screen rect.</li>
+<li>Fix world space tangent for billboards.</li>
+<li>Fix ValueAnimation's time range not getting expanded by adding event frames.</li>
+<li>Fix ValueAnimation removal during event handling causing crash.</li>
+<li>Fix word wrap text char positions.</li>
+<li>Fix WorkQueue item insertion; insert last if no other option possible.</li>
+<li>Fix unnecessary mouse centering in screen mode change handling.</li>
+<li>Fix unsafe removal of event receivers.</li>
+<li>Fix string corruption in SQLite queries.</li>
+<li>Fix error in skybox HLSL shader when instancing is forced on.</li>
+<li>Fix erroneous reuse of backbuffer depth buffer when multisampling.</li>
+<li>Fix uninitialized memory in Material.</li>
+<li>Fix out of bounds array access when material quality is higher than high.</li>
+<li>Fix shadow-related shader function signatures on GLES.</li>
+<li>Fix shaky water shader on GLES.</li>
+<li>Fix memory leak in AngelScript Dictionary.</li>
+<li>Fix weight fade erroneously affecting animation after weight was set manually.</li>
+<li>Fix LookAt mixed rotation mode.</li>
+<li>Fix skydome GLSL shader.</li>
+<li>Fix depth bias not getting cloned in Material::Clone().</li>
+<li>Fix CrowdAgent removal to be safe during reposition event.</li>
+<li>Fix keeping track of RigidBody2D constraints.</li>
+<li>Fix double shader parameters passed from e.g. Lua, convert to float.</li>
+<li>Fix navigation system obstacles not observing their scene node movement and updating themselves.</li>
+<li>Fix self-insertion in Vector.</li>
+<li>Fix slowed down navigation agent when scene node dirtied during reposition event.</li>
+<li>Fix slope-scale bias adjustment on OpenGL.</li>
+<li>Fix incorrect hashing of rasterizer states on D3D11.</li>
+<li>Fix AnimationController animation search differentiating slash and backslash when it shouldn't.</li>
+<li>Fix LineEdit text &amp; cursor not being centered by default.</li>
+<li>Fix potential flipped normals in physics collisions (double manifold issue.)</li>
+<li>Fix undefined __cpu_model symbol in shared lib on GCC.</li>
+<li>Fix cache datatype for URHO3D_LIB_TYPE</li>
+<li>Fix Android black screenshot (use RGBA format.)</li>
+<li>Fix missing network update if node is added to the scene late.</li>
+<li>Fix crash when setting model resource to drawable component that is not attached to a scene node.</li>
+</ul>
+<p>V1.6</p>
 <ul>
 <li>Physically based rendering shaders, techniques, renderpaths and example materials / demo scene.</li>
 <li>AngelScript support on Emscripten and 64-bit iOS, based on generic bindings.</li>
