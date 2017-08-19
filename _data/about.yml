@@ -51,7 +51,8 @@ features:
 - Alternative script interface using [Lua](https://www.lua.org/)<font color="olive"><sup>v1.3</sup></font> or [LuaJIT](http://luajit.org/)<font color="olive"><sup>v1.31</sup></font> on all the platforms except Web platform
 - Networking using [kNet](https://github.com/juj/kNet/) + possibility to make HTTP requests<font color="olive"><sup>v1.3</sup></font>
 - Pathfinding<font color="olive"><sup>v1.23</sup></font> and crowd simulation<font color="olive"><sup>v1.4</sup></font> using [Recast/Detour](https://github.com/memononen/recastnavigation)
-- Image loading using [stb_image](https://nothings.org/) + DDS / KTX / PVR compressed texture support
+- Inverse kinematics<font color="goldenrod"><sup>new</sup></font>
+- Image loading using [stb_image](https://nothings.org/) + DDS / KTX / PVR compressed texture support + WEBP image format support<font color="goldenrod"><sup>new</sup></font>
 - 2D and "3D" audio playback, Ogg Vorbis support using [stb_vorbis](https://nothings.org/) + WAV format support
 - TrueType font rendering using [FreeType](https://www.freetype.org/), [AngelCode bitmap fonts](http://www.angelcode.com/products/bmfont/) are also supported
 - Unicode string support
