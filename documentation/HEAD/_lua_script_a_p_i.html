@@ -2690,12 +2690,16 @@ Classes</h2>
 <li>IntRect* new()</li>
 <li>IntRect(int left, int top, int right, int bottom) (GC)</li>
 <li>IntRect* new(int left, int top, int right, int bottom)</li>
+<li>IntRect(const IntVector2&amp; min, const IntVector2&amp; max) (GC)</li>
+<li>IntRect* new(const IntVector2&amp; min, const IntVector2&amp; max)</li>
 <li>void delete()</li>
 <li>bool operator==(const IntRect&amp; rhs) const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> Size() const</li>
 <li>int Width() const</li>
 <li>int Height() const</li>
 <li>Intersection IsInside(const IntVector2&amp; point) const</li>
+<li>void Clip(const IntRect&amp; rect)</li>
+<li>void Merge(const IntRect&amp; rect)</li>
 </ul>
 <p>Properties:</p>
 <ul>
