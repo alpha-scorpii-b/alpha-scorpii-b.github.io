@@ -40,7 +40,6 @@ Third party library considerations</h2>
 <ul>
 <li>When you add a new third-party library, insert its license statement to the LICENSE in the Source directory. Only libraries with permissive licenses such as BSD/MIT/zlib are accepted, because complying for example with the LGPL is difficult on mobile platforms, and would leave the application in a legal grey area.</li>
 <li>Prefer small and well-focused libraries for the Urho3D runtime. For example we use stb_image instead of FreeImage to load images, as it's assumed that the application developer can control the data and do offline conversion to supported formats as necessary.</li>
-<li>For libraries that would be mandatorily part of the Urho3D build (not switchable off via CMake options), use of C++11 features is not yet acceptable. The same applies to your own code.</li>
 <li>Third-party libraries should not leak C++ exceptions or use of STL containers into the Urho3D public API. Do a wrapping for example on the subsystem level if necessary. </li>
 </ul>
 </div></div><!-- contents -->
