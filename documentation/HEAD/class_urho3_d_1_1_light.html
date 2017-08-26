@@ -65,10 +65,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ace317715b98d7f9e259fef7b0f7bf7b2">~Light</a> ()</td></tr>
 <tr class="memdesc:ace317715b98d7f9e259fef7b0f7bf7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:ace317715b98d7f9e259fef7b0f7bf7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae943c8d078854ca77edfe4c179f43918"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae943c8d078854ca77edfe4c179f43918"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ae943c8d078854ca77edfe4c179f43918">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
-<tr class="memdesc:ae943c8d078854ca77edfe4c179f43918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute change. <br/></td></tr>
-<tr class="separator:ae943c8d078854ca77edfe4c179f43918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfe8723bbf33633af6ae2fd9dd517d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dfe8723bbf33633af6ae2fd9dd517d2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a7dfe8723bbf33633af6ae2fd9dd517d2">ProcessRayQuery</a> (const <a class="el" href="class_urho3_d_1_1_ray_octree_query.html">RayOctreeQuery</a> &amp;query, <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="struct_urho3_d_1_1_ray_query_result.html">RayQueryResult</a> &gt; &amp;results)</td></tr>
 <tr class="memdesc:a7dfe8723bbf33633af6ae2fd9dd517d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process octree raycast. May be called from a worker thread. <br/></td></tr>
@@ -141,14 +137,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a29bcfb6c4e922439e51a4cf687242b0d">SetShadowBias</a> (const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a29bcfb6c4e922439e51a4cf687242b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow depth bias parameters. <br/></td></tr>
 <tr class="separator:a29bcfb6c4e922439e51a4cf687242b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c831ba46598bd90f601fa9058e56e2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c831ba46598bd90f601fa9058e56e2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a6c831ba46598bd90f601fa9058e56e2d">SetShadowConstantBias</a> (float constantBias)</td></tr>
+<tr class="memdesc:a6c831ba46598bd90f601fa9058e56e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow constant bias. <br/></td></tr>
+<tr class="separator:a6c831ba46598bd90f601fa9058e56e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6b35f26b6804ef7e2f0ff08debd6fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f6b35f26b6804ef7e2f0ff08debd6fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a6f6b35f26b6804ef7e2f0ff08debd6fe">SetShadowSlopeScaledBias</a> (float slopeScaledBias)</td></tr>
+<tr class="memdesc:a6f6b35f26b6804ef7e2f0ff08debd6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow slope scaled bias. <br/></td></tr>
+<tr class="separator:a6f6b35f26b6804ef7e2f0ff08debd6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aaecfef80340bd9d073aea0db8fec11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7aaecfef80340bd9d073aea0db8fec11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a7aaecfef80340bd9d073aea0db8fec11">SetShadowNormalOffset</a> (float normalOffset)</td></tr>
+<tr class="memdesc:a7aaecfef80340bd9d073aea0db8fec11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow normal offset multiplier. <br/></td></tr>
+<tr class="separator:a7aaecfef80340bd9d073aea0db8fec11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed46f46b0c1cc59e546f523c92482e96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed46f46b0c1cc59e546f523c92482e96"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aed46f46b0c1cc59e546f523c92482e96">SetShadowCascade</a> (const <a class="el" href="struct_urho3_d_1_1_cascade_parameters.html">CascadeParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:aed46f46b0c1cc59e546f523c92482e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set directional light cascaded shadow parameters. <br/></td></tr>
 <tr class="separator:aed46f46b0c1cc59e546f523c92482e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f70841e0ce99d706f57f2173dea252"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f70841e0ce99d706f57f2173dea252"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a82f70841e0ce99d706f57f2173dea252">SetShadowCascadeSplits</a> (const <a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a> &amp;value)</td></tr>
+<tr class="memdesc:a82f70841e0ce99d706f57f2173dea252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow cascade splits. <br/></td></tr>
+<tr class="separator:a82f70841e0ce99d706f57f2173dea252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9603a0b9a30b9f8a756b7dbf5b2498"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add9603a0b9a30b9f8a756b7dbf5b2498"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#add9603a0b9a30b9f8a756b7dbf5b2498">SetShadowCascadeFadeStart</a> (float fadeStart)</td></tr>
+<tr class="memdesc:add9603a0b9a30b9f8a756b7dbf5b2498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow cascade fade start. <br/></td></tr>
+<tr class="separator:add9603a0b9a30b9f8a756b7dbf5b2498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d67904a37c0715783bc4aa239cb96c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d67904a37c0715783bc4aa239cb96c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a94d67904a37c0715783bc4aa239cb96c">SetShadowCascadeBiasAutoAdjust</a> (float biasAutoAdjust)</td></tr>
+<tr class="memdesc:a94d67904a37c0715783bc4aa239cb96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow cascade automatic depth bias adjustment strength. <br/></td></tr>
+<tr class="separator:a94d67904a37c0715783bc4aa239cb96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070ce2b75df5e02d7e7ad15cddae538f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a070ce2b75df5e02d7e7ad15cddae538f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a070ce2b75df5e02d7e7ad15cddae538f">SetShadowFocus</a> (const <a class="el" href="struct_urho3_d_1_1_focus_parameters.html">FocusParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a070ce2b75df5e02d7e7ad15cddae538f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow map focusing parameters. <br/></td></tr>
 <tr class="separator:a070ce2b75df5e02d7e7ad15cddae538f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a461462ca67fc63a1d19c2e0c6d638"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9a461462ca67fc63a1d19c2e0c6d638"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#af9a461462ca67fc63a1d19c2e0c6d638">SetShadowFocusFlag</a> (bool focus)</td></tr>
+<tr class="memdesc:af9a461462ca67fc63a1d19c2e0c6d638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow focus flag. <br/></td></tr>
+<tr class="separator:af9a461462ca67fc63a1d19c2e0c6d638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88be7a578d7eef074187947b1793f64a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88be7a578d7eef074187947b1793f64a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a88be7a578d7eef074187947b1793f64a">SetShadowFocusNonUniform</a> (bool nonUniform)</td></tr>
+<tr class="memdesc:a88be7a578d7eef074187947b1793f64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow non-uniform focus flag. <br/></td></tr>
+<tr class="separator:a88be7a578d7eef074187947b1793f64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb39c863da1cca78f121ca33a8fe184"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bb39c863da1cca78f121ca33a8fe184"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a1bb39c863da1cca78f121ca33a8fe184">SetShadowFocusAutoSize</a> (bool autoSize)</td></tr>
+<tr class="memdesc:a1bb39c863da1cca78f121ca33a8fe184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow focus auto-size. <br/></td></tr>
+<tr class="separator:a1bb39c863da1cca78f121ca33a8fe184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792b9fd52ef544eecef0498305b3809f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a792b9fd52ef544eecef0498305b3809f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a792b9fd52ef544eecef0498305b3809f">SetShadowFocusQuantize</a> (float quantize)</td></tr>
+<tr class="memdesc:a792b9fd52ef544eecef0498305b3809f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow focus quantization. <br/></td></tr>
+<tr class="separator:a792b9fd52ef544eecef0498305b3809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3b47dc28556e36d74ddd62025c07a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3b47dc28556e36d74ddd62025c07a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a9d3b47dc28556e36d74ddd62025c07a9">SetShadowFocusMinView</a> (float minView)</td></tr>
+<tr class="memdesc:a9d3b47dc28556e36d74ddd62025c07a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shadow focus minimum view size. <br/></td></tr>
+<tr class="separator:a9d3b47dc28556e36d74ddd62025c07a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f05ba31a68acadddb6887d03e2a3c4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f05ba31a68acadddb6887d03e2a3c4e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a8f05ba31a68acadddb6887d03e2a3c4e">SetShadowIntensity</a> (float intensity)</td></tr>
 <tr class="memdesc:a8f05ba31a68acadddb6887d03e2a3c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set light intensity in shadow between 0.0 - 1.0. 0.0 (the default) gives fully dark shadows. <br/></td></tr>
@@ -245,14 +285,58 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 const <a class="el" href="struct_urho3_d_1_1_bias_parameters.html">BiasParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a197042349c1b2d07fdf3320da9208fe9">GetShadowBias</a> () const </td></tr>
 <tr class="memdesc:a197042349c1b2d07fdf3320da9208fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow depth bias parameters. <br/></td></tr>
 <tr class="separator:a197042349c1b2d07fdf3320da9208fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7660b884700673b4de23239053586f5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7660b884700673b4de23239053586f5f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a7660b884700673b4de23239053586f5f">GetShadowConstantBias</a> () const </td></tr>
+<tr class="memdesc:a7660b884700673b4de23239053586f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow constant bias. <br/></td></tr>
+<tr class="separator:a7660b884700673b4de23239053586f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89930304e2d0df6e36b4c77faab64c7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89930304e2d0df6e36b4c77faab64c7d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a89930304e2d0df6e36b4c77faab64c7d">GetShadowSlopeScaledBias</a> () const </td></tr>
+<tr class="memdesc:a89930304e2d0df6e36b4c77faab64c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow slope scaled bias. <br/></td></tr>
+<tr class="separator:a89930304e2d0df6e36b4c77faab64c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62291ab68425fea77a145fdce2b77e60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62291ab68425fea77a145fdce2b77e60"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a62291ab68425fea77a145fdce2b77e60">GetShadowNormalOffset</a> () const </td></tr>
+<tr class="memdesc:a62291ab68425fea77a145fdce2b77e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow normal offset multiplier. <br/></td></tr>
+<tr class="separator:a62291ab68425fea77a145fdce2b77e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5386819f7304c54c217c57f8ee7ec6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5386819f7304c54c217c57f8ee7ec6d"></a>
 const <a class="el" href="struct_urho3_d_1_1_cascade_parameters.html">CascadeParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#ad5386819f7304c54c217c57f8ee7ec6d">GetShadowCascade</a> () const </td></tr>
 <tr class="memdesc:ad5386819f7304c54c217c57f8ee7ec6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return directional light cascaded shadow parameters. <br/></td></tr>
 <tr class="separator:ad5386819f7304c54c217c57f8ee7ec6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e653003ea6ac3a48197e2c7d495d44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09e653003ea6ac3a48197e2c7d495d44"></a>
+<a class="el" href="class_urho3_d_1_1_vector4.html">Vector4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a09e653003ea6ac3a48197e2c7d495d44">GetShadowCascadeSplits</a> () const </td></tr>
+<tr class="memdesc:a09e653003ea6ac3a48197e2c7d495d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow cascade splits. <br/></td></tr>
+<tr class="separator:a09e653003ea6ac3a48197e2c7d495d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29dd49fa65d432fd2bc01f54ba0148e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa29dd49fa65d432fd2bc01f54ba0148e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aa29dd49fa65d432fd2bc01f54ba0148e">GetShadowCascadeFadeStart</a> () const </td></tr>
+<tr class="memdesc:aa29dd49fa65d432fd2bc01f54ba0148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow cascade fade start. <br/></td></tr>
+<tr class="separator:aa29dd49fa65d432fd2bc01f54ba0148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e63fdc5c5a38f64ef789e9220acda4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65e63fdc5c5a38f64ef789e9220acda4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a65e63fdc5c5a38f64ef789e9220acda4">GetShadowCascadeBiasAutoAdjust</a> () const </td></tr>
+<tr class="memdesc:a65e63fdc5c5a38f64ef789e9220acda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow cascade automatic depth bias adjustment strength. <br/></td></tr>
+<tr class="separator:a65e63fdc5c5a38f64ef789e9220acda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf62991616e9a38efe521f8ad27fb1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bf62991616e9a38efe521f8ad27fb1f"></a>
 const <a class="el" href="struct_urho3_d_1_1_focus_parameters.html">FocusParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a4bf62991616e9a38efe521f8ad27fb1f">GetShadowFocus</a> () const </td></tr>
 <tr class="memdesc:a4bf62991616e9a38efe521f8ad27fb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow map focus parameters. <br/></td></tr>
 <tr class="separator:a4bf62991616e9a38efe521f8ad27fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00d9c066eaae3e8c9677931de87ab2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa00d9c066eaae3e8c9677931de87ab2b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aa00d9c066eaae3e8c9677931de87ab2b">GetShadowFocusFlag</a> () const </td></tr>
+<tr class="memdesc:aa00d9c066eaae3e8c9677931de87ab2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow focus flag. <br/></td></tr>
+<tr class="separator:aa00d9c066eaae3e8c9677931de87ab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ae705970514899fc486a247a4f0d3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91ae705970514899fc486a247a4f0d3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a91ae705970514899fc486a247a4f0d3e">GetShadowFocusNonUniform</a> () const </td></tr>
+<tr class="memdesc:a91ae705970514899fc486a247a4f0d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow non-uniform focus flag. <br/></td></tr>
+<tr class="separator:a91ae705970514899fc486a247a4f0d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f7d88e2c75f66589f6dda202a49d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f7d88e2c75f66589f6dda202a49d7b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a37f7d88e2c75f66589f6dda202a49d7b">GetShadowFocusAutoSize</a> () const </td></tr>
+<tr class="memdesc:a37f7d88e2c75f66589f6dda202a49d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow focus auto-size. <br/></td></tr>
+<tr class="separator:a37f7d88e2c75f66589f6dda202a49d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb22366145c7cc0994680200528b72c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb22366145c7cc0994680200528b72c9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#acb22366145c7cc0994680200528b72c9">GetShadowFocusQuantize</a> () const </td></tr>
+<tr class="memdesc:acb22366145c7cc0994680200528b72c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow focus quantization. <br/></td></tr>
+<tr class="separator:acb22366145c7cc0994680200528b72c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b814f314c9dece9968fc9a3a34913a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b814f314c9dece9968fc9a3a34913a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a84b814f314c9dece9968fc9a3a34913a">GetShadowFocusMinView</a> () const </td></tr>
+<tr class="memdesc:a84b814f314c9dece9968fc9a3a34913a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shadow focus minimum view size. <br/></td></tr>
+<tr class="separator:a84b814f314c9dece9968fc9a3a34913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80f9fadb57953da7623ad04d9d40b3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af80f9fadb57953da7623ad04d9d40b3e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#af80f9fadb57953da7623ad04d9d40b3e">GetShadowIntensity</a> () const </td></tr>
 <tr class="memdesc:af80f9fadb57953da7623ad04d9d40b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return light intensity in shadow. <br/></td></tr>
@@ -759,6 +843,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4be5aa810d8c2388cdb30d16204f9847">~Serializable</a> ()</td></tr>
 <tr class="memdesc:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>

@@ -64,10 +64,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a9db9c27eaf01a1ac195795cc23f1b010">~OffMeshConnection</a> ()</td></tr>
 <tr class="memdesc:a9db9c27eaf01a1ac195795cc23f1b010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a9db9c27eaf01a1ac195795cc23f1b010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a215c2f959bc139c87f5b778a365a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a215c2f959bc139c87f5b778a365a2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a68a215c2f959bc139c87f5b778a365a2">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
-<tr class="memdesc:a68a215c2f959bc139c87f5b778a365a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
-<tr class="separator:a68a215c2f959bc139c87f5b778a365a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a43b8b6640449c2254acae4ee6ac09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25a43b8b6640449c2254acae4ee6ac09"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a25a43b8b6640449c2254acae4ee6ac09">ApplyAttributes</a> ()</td></tr>
 <tr class="memdesc:a25a43b8b6640449c2254acae4ee6ac09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply attribute changes that can not be applied immediately. Called after scene load or a network update. <br/></td></tr>
@@ -80,6 +76,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a3d487570a38f51ed495c6f2094506e22">SetEndPoint</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="memdesc:a3d487570a38f51ed495c6f2094506e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set endpoint node. <br/></td></tr>
 <tr class="separator:a3d487570a38f51ed495c6f2094506e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63905a8ad7a53a7cb9f4febd0969fb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae63905a8ad7a53a7cb9f4febd0969fb1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#ae63905a8ad7a53a7cb9f4febd0969fb1">SetEndPointNodeIDAttr</a> (unsigned nodeID)</td></tr>
+<tr class="memdesc:ae63905a8ad7a53a7cb9f4febd0969fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set endpoint node ID. <br/></td></tr>
+<tr class="separator:ae63905a8ad7a53a7cb9f4febd0969fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbb8d1c4f3e80d01f3f77ae4cdb5f14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fbb8d1c4f3e80d01f3f77ae4cdb5f14"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a8fbb8d1c4f3e80d01f3f77ae4cdb5f14">SetRadius</a> (float radius)</td></tr>
 <tr class="memdesc:a8fbb8d1c4f3e80d01f3f77ae4cdb5f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set radius. <br/></td></tr>
@@ -96,10 +96,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a45c962de67953c5c90ea2d5714430b04">SetAreaID</a> (unsigned newAreaID)</td></tr>
 <tr class="memdesc:a45c962de67953c5c90ea2d5714430b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the assigned area Id for the connection. <br/></td></tr>
 <tr class="separator:a45c962de67953c5c90ea2d5714430b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e72b1bc6e12d9771ee61d6043352ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69e72b1bc6e12d9771ee61d6043352ab"></a>
-<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a69e72b1bc6e12d9771ee61d6043352ab">GetEndPoint</a> () const </td></tr>
-<tr class="memdesc:a69e72b1bc6e12d9771ee61d6043352ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return endpoint node. <br/></td></tr>
-<tr class="separator:a69e72b1bc6e12d9771ee61d6043352ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61022ef993749e22dd9d4eef9ced2ef4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61022ef993749e22dd9d4eef9ced2ef4"></a>
+<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a61022ef993749e22dd9d4eef9ced2ef4">GetEndPoint</a> () const </td></tr>
+<tr class="memdesc:a61022ef993749e22dd9d4eef9ced2ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return endpoint node. <br/></td></tr>
+<tr class="separator:a61022ef993749e22dd9d4eef9ced2ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f62805ecb4dc6beca4b95b4e0b6de7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f62805ecb4dc6beca4b95b4e0b6de7f"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a4f62805ecb4dc6beca4b95b4e0b6de7f">GetEndPointNodeID</a> () const </td></tr>
+<tr class="memdesc:a4f62805ecb4dc6beca4b95b4e0b6de7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return endpoint node ID. <br/></td></tr>
+<tr class="separator:a4f62805ecb4dc6beca4b95b4e0b6de7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aefa12835e6e525e2df3562c06c79bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aefa12835e6e525e2df3562c06c79bc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a8aefa12835e6e525e2df3562c06c79bc">GetRadius</a> () const </td></tr>
 <tr class="memdesc:a8aefa12835e6e525e2df3562c06c79bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return radius. <br/></td></tr>
@@ -301,6 +305,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4be5aa810d8c2388cdb30d16204f9847">~Serializable</a> ()</td></tr>
 <tr class="memdesc:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
