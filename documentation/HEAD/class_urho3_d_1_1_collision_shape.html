@@ -65,6 +65,10 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a4c4ec93f94cd112dd50f0113521dffe2">~CollisionShape</a> ()</td></tr>
 <tr class="memdesc:a4c4ec93f94cd112dd50f0113521dffe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Free the geometry data and clean up unused data from the geometry data cache. <br/></td></tr>
 <tr class="separator:a4c4ec93f94cd112dd50f0113521dffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae159f5b135e99fe8ec0d08d80a811099"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae159f5b135e99fe8ec0d08d80a811099"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#ae159f5b135e99fe8ec0d08d80a811099">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:ae159f5b135e99fe8ec0d08d80a811099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
+<tr class="separator:ae159f5b135e99fe8ec0d08d80a811099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e919c80bd3ea90e008a16ad206e716"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35e919c80bd3ea90e008a16ad206e716"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a35e919c80bd3ea90e008a16ad206e716">ApplyAttributes</a> ()</td></tr>
 <tr class="memdesc:a35e919c80bd3ea90e008a16ad206e716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply attribute changes that can not be applied immediately. Called after scene load or a network update. <br/></td></tr>
@@ -185,10 +189,6 @@ const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#ac9e4b1ed27d9b43a5c8dacbdf6e43108">GetMargin</a> () const </td></tr>
 <tr class="memdesc:ac9e4b1ed27d9b43a5c8dacbdf6e43108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return collision margin. <br/></td></tr>
 <tr class="separator:ac9e4b1ed27d9b43a5c8dacbdf6e43108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4282bb85dcbad849c0df16209a4309e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4282bb85dcbad849c0df16209a4309e0"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a4282bb85dcbad849c0df16209a4309e0">GetCustomGeometryID</a> () const </td></tr>
-<tr class="memdesc:a4282bb85dcbad849c0df16209a4309e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return custom geometry component ID. <br/></td></tr>
-<tr class="separator:a4282bb85dcbad849c0df16209a4309e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32558015cc4b86af7166690f5d89fe40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32558015cc4b86af7166690f5d89fe40"></a>
 <a class="el" href="class_urho3_d_1_1_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a32558015cc4b86af7166690f5d89fe40">GetModel</a> () const </td></tr>
 <tr class="memdesc:a32558015cc4b86af7166690f5d89fe40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return triangle mesh / convex hull model. <br/></td></tr>
@@ -205,30 +205,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a8cfe09cb27ec041dedcd92a69293bcbc">NotifyRigidBody</a> (bool updateMass=true)</td></tr>
 <tr class="memdesc:a8cfe09cb27ec041dedcd92a69293bcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the new collision shape to the <a class="el" href="class_urho3_d_1_1_rigid_body.html" title="Physics rigid body component. ">RigidBody</a>. <br/></td></tr>
 <tr class="separator:a8cfe09cb27ec041dedcd92a69293bcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c0a57787f0141a726cbdea2221d821"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65c0a57787f0141a726cbdea2221d821"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a65c0a57787f0141a726cbdea2221d821">SetShapeTypeAttr</a> (ShapeType type)</td></tr>
-<tr class="memdesc:a65c0a57787f0141a726cbdea2221d821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set shape type attribute. <br/></td></tr>
-<tr class="separator:a65c0a57787f0141a726cbdea2221d821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ab901ba1e5c8f4cf90c5293dbc3497"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1ab901ba1e5c8f4cf90c5293dbc3497"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#aa1ab901ba1e5c8f4cf90c5293dbc3497">SetSizeAttr</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;value)</td></tr>
-<tr class="memdesc:aa1ab901ba1e5c8f4cf90c5293dbc3497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set size attribute. <br/></td></tr>
-<tr class="separator:aa1ab901ba1e5c8f4cf90c5293dbc3497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d83a5bc125f5e709fda13becd7e9e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7d83a5bc125f5e709fda13becd7e9e7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#ad7d83a5bc125f5e709fda13becd7e9e7">SetModelAttr</a> (const <a class="el" href="struct_urho3_d_1_1_resource_ref.html">ResourceRef</a> &amp;value)</td></tr>
 <tr class="memdesc:ad7d83a5bc125f5e709fda13becd7e9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model attribute. <br/></td></tr>
 <tr class="separator:ad7d83a5bc125f5e709fda13becd7e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a52318b457f36ac3d2c5f7d329db55b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a52318b457f36ac3d2c5f7d329db55b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a4a52318b457f36ac3d2c5f7d329db55b">SetLodLevelAttr</a> (unsigned value)</td></tr>
-<tr class="memdesc:a4a52318b457f36ac3d2c5f7d329db55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model LOD level attribute. <br/></td></tr>
-<tr class="separator:a4a52318b457f36ac3d2c5f7d329db55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0d4c8fe9b5e15ca46bc99abb889cd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc0d4c8fe9b5e15ca46bc99abb889cd4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#afc0d4c8fe9b5e15ca46bc99abb889cd4">SetMarginAttr</a> (float value)</td></tr>
-<tr class="memdesc:afc0d4c8fe9b5e15ca46bc99abb889cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set collision margin attribute. <br/></td></tr>
-<tr class="separator:afc0d4c8fe9b5e15ca46bc99abb889cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e0b4bffaee1028dbb36217e210b941"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9e0b4bffaee1028dbb36217e210b941"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#ac9e0b4bffaee1028dbb36217e210b941">SetCustomGeometryIDAttr</a> (unsigned componentID)</td></tr>
-<tr class="memdesc:ac9e0b4bffaee1028dbb36217e210b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom geometry component ID attribute. <br/></td></tr>
-<tr class="separator:ac9e0b4bffaee1028dbb36217e210b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dbd079719d41ddf8087d9f88d590305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dbd079719d41ddf8087d9f88d590305"></a>
 <a class="el" href="struct_urho3_d_1_1_resource_ref.html">ResourceRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_collision_shape.html#a9dbd079719d41ddf8087d9f88d590305">GetModelAttr</a> () const </td></tr>
 <tr class="memdesc:a9dbd079719d41ddf8087d9f88d590305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model attribute. <br/></td></tr>
@@ -418,10 +398,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4be5aa810d8c2388cdb30d16204f9847">~Serializable</a> ()</td></tr>
 <tr class="memdesc:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
-<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
-<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>

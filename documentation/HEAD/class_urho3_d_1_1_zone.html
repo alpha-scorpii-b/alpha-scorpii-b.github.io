@@ -65,6 +65,10 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a6e814a46c01c7693931caf4c1b401597">~Zone</a> ()</td></tr>
 <tr class="memdesc:a6e814a46c01c7693931caf4c1b401597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a6e814a46c01c7693931caf4c1b401597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e26981a05718f56ab157ab5d40b30e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63e26981a05718f56ab157ab5d40b30e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a63e26981a05718f56ab157ab5d40b30e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a63e26981a05718f56ab157ab5d40b30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
+<tr class="separator:a63e26981a05718f56ab157ab5d40b30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae289225d1e3d94b51038b14e9d1ba4e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae289225d1e3d94b51038b14e9d1ba4e3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#ae289225d1e3d94b51038b14e9d1ba4e3">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
 <tr class="memdesc:ae289225d1e3d94b51038b14e9d1ba4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry. <br/></td></tr>
@@ -73,14 +77,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a0484162a595123827bda691a1a37ab12">SetBoundingBox</a> (const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
 <tr class="memdesc:a0484162a595123827bda691a1a37ab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local-space bounding box. Will be used as an oriented bounding box to test whether objects or the camera are inside. <br/></td></tr>
 <tr class="separator:a0484162a595123827bda691a1a37ab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c405cc32277258b9269436b60a66d06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c405cc32277258b9269436b60a66d06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a8c405cc32277258b9269436b60a66d06">SetBoundingBoxMin</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;boxMin)</td></tr>
-<tr class="memdesc:a8c405cc32277258b9269436b60a66d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local-space bounding box min. <br/></td></tr>
-<tr class="separator:a8c405cc32277258b9269436b60a66d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0743f2772ea6eb3459541d668020cc2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0743f2772ea6eb3459541d668020cc2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a0743f2772ea6eb3459541d668020cc2f">SetBoundingBoxMax</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;boxMax)</td></tr>
-<tr class="memdesc:a0743f2772ea6eb3459541d668020cc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local-space bounding box max. <br/></td></tr>
-<tr class="separator:a0743f2772ea6eb3459541d668020cc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16f86f99899d239003e0200c848ebdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16f86f99899d239003e0200c848ebdb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#ad16f86f99899d239003e0200c848ebdb">SetAmbientColor</a> (const <a class="el" href="class_urho3_d_1_1_color.html">Color</a> &amp;color)</td></tr>
 <tr class="memdesc:ad16f86f99899d239003e0200c848ebdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ambient color. <br/></td></tr>
@@ -129,18 +125,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a1870bb8d8a8c071c75dec9c6a4b86b25">GetInverseWorldTransform</a> () const </td></tr>
 <tr class="memdesc:a1870bb8d8a8c071c75dec9c6a4b86b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return inverse world transform. <br/></td></tr>
 <tr class="separator:a1870bb8d8a8c071c75dec9c6a4b86b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a489e89bdc9183b2ea270e27cc5418baa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a489e89bdc9183b2ea270e27cc5418baa"></a>
-const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a489e89bdc9183b2ea270e27cc5418baa">GetBoundingBox</a> () const </td></tr>
-<tr class="memdesc:a489e89bdc9183b2ea270e27cc5418baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return local-space bounding box. <br/></td></tr>
-<tr class="separator:a489e89bdc9183b2ea270e27cc5418baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31281ae1b6379598d9e9b6d4f5a6e767"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31281ae1b6379598d9e9b6d4f5a6e767"></a>
-const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a31281ae1b6379598d9e9b6d4f5a6e767">GetBoundingBoxMin</a> () const </td></tr>
-<tr class="memdesc:a31281ae1b6379598d9e9b6d4f5a6e767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return local-space bounding box min. <br/></td></tr>
-<tr class="separator:a31281ae1b6379598d9e9b6d4f5a6e767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56485f0841886cfd52df2071313113f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56485f0841886cfd52df2071313113f3"></a>
-const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a56485f0841886cfd52df2071313113f3">GetBoundingBoxMax</a> () const </td></tr>
-<tr class="memdesc:a56485f0841886cfd52df2071313113f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return local-space bounding box max. <br/></td></tr>
-<tr class="separator:a56485f0841886cfd52df2071313113f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7461c3e76577b855c490eb593d4e8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c7461c3e76577b855c490eb593d4e8b"></a>
 const <a class="el" href="class_urho3_d_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a8c7461c3e76577b855c490eb593d4e8b">GetAmbientColor</a> () const </td></tr>
 <tr class="memdesc:a8c7461c3e76577b855c490eb593d4e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return zone's own ambient color, disregarding gradient mode. <br/></td></tr>
@@ -639,10 +623,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4be5aa810d8c2388cdb30d16204f9847">~Serializable</a> ()</td></tr>
 <tr class="memdesc:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a4be5aa810d8c2388cdb30d16204f9847 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
-<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
-<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
