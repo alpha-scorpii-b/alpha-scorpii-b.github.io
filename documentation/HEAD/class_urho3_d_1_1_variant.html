@@ -179,6 +179,11 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#aa98c4c1fa1ec1a24e1bda67196d96349">Variant</a> (const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;value)</td></tr>
 <tr class="memdesc:aa98c4c1fa1ec1a24e1bda67196d96349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection. ">Matrix4</a>. <br/></td></tr>
 <tr class="separator:aa98c4c1fa1ec1a24e1bda67196d96349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8622422b751d01067fa95be1b16068c"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad8622422b751d01067fa95be1b16068c"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad8622422b751d01067fa95be1b16068c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#ad8622422b751d01067fa95be1b16068c">Variant</a> (const <a class="el" href="class_urho3_d_1_1_custom_variant_value_impl.html">CustomVariantValueImpl</a>&lt; T &gt; &amp;value)</td></tr>
+<tr class="memdesc:ad8622422b751d01067fa95be1b16068c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from custom value. <br/></td></tr>
+<tr class="separator:ad8622422b751d01067fa95be1b16068c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c44abb323a00bf33abd2245d573d480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c44abb323a00bf33abd2245d573d480"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a8c44abb323a00bf33abd2245d573d480">Variant</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;type, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;value)</td></tr>
 <tr class="memdesc:a8c44abb323a00bf33abd2245d573d480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from type and value. <br/></td></tr>
@@ -335,6 +340,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#af7df5ef99137817d700e29b33ddc1b77">operator=</a> (const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;rhs)</td></tr>
 <tr class="memdesc:af7df5ef99137817d700e29b33ddc1b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection. ">Matrix4</a>. <br/></td></tr>
 <tr class="separator:af7df5ef99137817d700e29b33ddc1b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f2f4c591ee54ec3832b3938f1bd95a"><td class="memTemplParams" colspan="2"><a class="anchor" id="af4f2f4c591ee54ec3832b3938f1bd95a"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:af4f2f4c591ee54ec3832b3938f1bd95a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#af4f2f4c591ee54ec3832b3938f1bd95a">operator=</a> (const <a class="el" href="class_urho3_d_1_1_custom_variant_value_impl.html">CustomVariantValueImpl</a>&lt; T &gt; &amp;value)</td></tr>
+<tr class="memdesc:af4f2f4c591ee54ec3832b3938f1bd95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from custom value. <br/></td></tr>
+<tr class="separator:af4f2f4c591ee54ec3832b3938f1bd95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4317f6154aebed6119c49939dadae47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4317f6154aebed6119c49939dadae47"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#ae4317f6154aebed6119c49939dadae47">operator==</a> (const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;rhs) const </td></tr>
 <tr class="memdesc:ae4317f6154aebed6119c49939dadae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test for equality with another variant. <br/></td></tr>
@@ -599,6 +609,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a29fe26789b7c6a429e720bc80b579b25">SetBuffer</a> (const void *data, unsigned size)</td></tr>
 <tr class="memdesc:a29fe26789b7c6a429e720bc80b579b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set buffer type from a memory area. <br/></td></tr>
 <tr class="separator:a29fe26789b7c6a429e720bc80b579b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b137fe6d863cce819c1ed9d71f48b5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b137fe6d863cce819c1ed9d71f48b5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a6b137fe6d863cce819c1ed9d71f48b5d">SetCustomVariantValue</a> (const <a class="el" href="class_urho3_d_1_1_custom_variant_value.html">CustomVariantValue</a> &amp;value)</td></tr>
+<tr class="memdesc:a6b137fe6d863cce819c1ed9d71f48b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom value. <br/></td></tr>
+<tr class="separator:a6b137fe6d863cce819c1ed9d71f48b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433ef57e1b81ea90c289e5ba7477b65d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a433ef57e1b81ea90c289e5ba7477b65d"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a433ef57e1b81ea90c289e5ba7477b65d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a433ef57e1b81ea90c289e5ba7477b65d">SetCustom</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:a433ef57e1b81ea90c289e5ba7477b65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom value. <br/></td></tr>
+<tr class="separator:a433ef57e1b81ea90c289e5ba7477b65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62051727a7f524e6d0b6a107d02bf36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac62051727a7f524e6d0b6a107d02bf36"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#ac62051727a7f524e6d0b6a107d02bf36">GetInt</a> () const </td></tr>
 <tr class="memdesc:ac62051727a7f524e6d0b6a107d02bf36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return int or zero on type mismatch. Floats and doubles are converted. <br/></td></tr>
@@ -719,6 +738,24 @@ const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&
 const <a class="el" href="class_urho3_d_1_1_matrix4.html">Matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a9e5e57d393870b8093da5e409cdc97cb">GetMatrix4</a> () const </td></tr>
 <tr class="memdesc:a9e5e57d393870b8093da5e409cdc97cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="class_urho3_d_1_1_matrix4.html" title="4x4 matrix for arbitrary linear transforms including projection. ">Matrix4</a> or identity on type mismatch. <br/></td></tr>
 <tr class="separator:a9e5e57d393870b8093da5e409cdc97cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac09b8bdfd56fa47093b3ba3d5cf73fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac09b8bdfd56fa47093b3ba3d5cf73fd"></a>
+<a class="el" href="class_urho3_d_1_1_custom_variant_value.html">CustomVariantValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#aac09b8bdfd56fa47093b3ba3d5cf73fd">GetCustomVariantValuePtr</a> ()</td></tr>
+<tr class="memdesc:aac09b8bdfd56fa47093b3ba3d5cf73fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pointer to custom variant value. <br/></td></tr>
+<tr class="separator:aac09b8bdfd56fa47093b3ba3d5cf73fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572b7890207fd7e195d58af08ca7d14b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a572b7890207fd7e195d58af08ca7d14b"></a>
+const <a class="el" href="class_urho3_d_1_1_custom_variant_value.html">CustomVariantValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a572b7890207fd7e195d58af08ca7d14b">GetCustomVariantValuePtr</a> () const </td></tr>
+<tr class="memdesc:a572b7890207fd7e195d58af08ca7d14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return const pointer to custom variant value. <br/></td></tr>
+<tr class="separator:a572b7890207fd7e195d58af08ca7d14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad81d4b1f9699b542d1cc1e6ee2e464f"><td class="memTemplParams" colspan="2"><a class="anchor" id="aad81d4b1f9699b542d1cc1e6ee2e464f"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aad81d4b1f9699b542d1cc1e6ee2e464f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#aad81d4b1f9699b542d1cc1e6ee2e464f">GetCustom</a> () const </td></tr>
+<tr class="memdesc:aad81d4b1f9699b542d1cc1e6ee2e464f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return custom variant value or default-constructed on type mismatch. <br/></td></tr>
+<tr class="separator:aad81d4b1f9699b542d1cc1e6ee2e464f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8f8715cf83fa3b1902ed1212e90b5c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5a8f8715cf83fa3b1902ed1212e90b5c"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5a8f8715cf83fa3b1902ed1212e90b5c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a5a8f8715cf83fa3b1902ed1212e90b5c">IsCustomType</a> () const </td></tr>
+<tr class="memdesc:a5a8f8715cf83fa3b1902ed1212e90b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if specified custom type is stored in the variant. <br/></td></tr>
+<tr class="separator:a5a8f8715cf83fa3b1902ed1212e90b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae449bb5e4c219b5a85c329187606050f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae449bb5e4c219b5a85c329187606050f"></a>
 VariantType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#ae449bb5e4c219b5a85c329187606050f">GetType</a> () const </td></tr>
 <tr class="memdesc:ae449bb5e4c219b5a85c329187606050f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return value's type. <br/></td></tr>
@@ -739,6 +776,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#acb152231909742b937c12734833f96e8">IsEmpty</a> () const </td></tr>
 <tr class="memdesc:acb152231909742b937c12734833f96e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when the variant is empty (i.e. not initialized yet). <br/></td></tr>
 <tr class="separator:acb152231909742b937c12734833f96e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994cefb308d0ff3454a420d3fb17521c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a994cefb308d0ff3454a420d3fb17521c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a994cefb308d0ff3454a420d3fb17521c">IsCustom</a> () const </td></tr>
+<tr class="memdesc:a994cefb308d0ff3454a420d3fb17521c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when the variant stores custom type. <br/></td></tr>
+<tr class="separator:a994cefb308d0ff3454a420d3fb17521c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd544085c34f1017e1085b6b955d6e94"><td class="memTemplParams" colspan="2"><a class="anchor" id="afd544085c34f1017e1085b6b955d6e94"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:afd544085c34f1017e1085b6b955d6e94"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#afd544085c34f1017e1085b6b955d6e94">Get</a> () const </td></tr>
@@ -760,6 +801,11 @@ template&lt;class T &gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a4cd58e30859545bff58c4eb865d74d80">GetVariantMapPtr</a> ()</td></tr>
 <tr class="memdesc:a4cd58e30859545bff58c4eb865d74d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a modifiable variant map or null on type mismatch. <br/></td></tr>
 <tr class="separator:a4cd58e30859545bff58c4eb865d74d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e89e33b284204836b35eb556e90f43d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8e89e33b284204836b35eb556e90f43d"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8e89e33b284204836b35eb556e90f43d"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_variant.html#a8e89e33b284204836b35eb556e90f43d">GetCustomPtr</a> ()</td></tr>
+<tr class="memdesc:a8e89e33b284204836b35eb556e90f43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a modifiable custom variant value or null on type mismatch. <br/></td></tr>
+<tr class="separator:a8e89e33b284204836b35eb556e90f43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e1301079ed7640bb340ff8cb491080b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6e1301079ed7640bb340ff8cb491080b"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a6e1301079ed7640bb340ff8cb491080b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Get</b> () const </td></tr>

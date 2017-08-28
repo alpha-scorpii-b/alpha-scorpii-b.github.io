@@ -514,6 +514,12 @@ group: HEAD
 <li>IsCursorMovable()
 : <a class="el" href="class_urho3_d_1_1_line_edit.html#a0c2e13a722a302303565f2a84e223fd2">Urho3D::LineEdit</a>
 </li>
+<li>IsCustom()
+: <a class="el" href="class_urho3_d_1_1_variant.html#a994cefb308d0ff3454a420d3fb17521c">Urho3D::Variant</a>
+</li>
+<li>IsCustomType()
+: <a class="el" href="class_urho3_d_1_1_variant.html#a5a8f8715cf83fa3b1902ed1212e90b5c">Urho3D::Variant</a>
+</li>
 <li>IsDataLost()
 : <a class="el" href="class_urho3_d_1_1_font_face.html#ac37543aeed369a6f8e798bd0be3a8f53">Urho3D::FontFace</a>
 , <a class="el" href="class_urho3_d_1_1_g_p_u_object.html#afcfd2ec12501214e6f78bb0ce2fee6d5">Urho3D::GPUObject</a>
@@ -642,7 +648,7 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_geometry.html#a0c2c63368bf9120ed71caa17a00cf720">Urho3D::Geometry</a>
 , <a class="el" href="class_urho3_d_1_1_int_rect.html#adb910b299707b4793259f20c68156fcc">Urho3D::IntRect</a>
 , <a class="el" href="class_urho3_d_1_1_rect.html#a22aac02eaebee6938ba340d5b00b2c68">Urho3D::Rect</a>
-, <a class="el" href="class_urho3_d_1_1_sphere.html#a64b3945246b85e7adc0825c62f7c6f06">Urho3D::Sphere</a>
+, <a class="el" href="class_urho3_d_1_1_sphere.html#ab0fefc454ea18c44b5f08510fb12fded">Urho3D::Sphere</a>
 , <a class="el" href="class_urho3_d_1_1_static_model.html#a97db73bb0717e04c8d86812d1ba910bf">Urho3D::StaticModel</a>
 , <a class="el" href="class_urho3_d_1_1_u_i_element.html#a479f87ac369c89be8df4e9da40e6fa3a">Urho3D::UIElement</a>
 , <a class="el" href="class_urho3_d_1_1_zone.html#aa47d1509103f86cd17b80c18bf961641">Urho3D::Zone</a>
@@ -652,20 +658,20 @@ group: HEAD
 </li>
 <li>IsInsideFast()
 : <a class="el" href="class_urho3_d_1_1_bounding_box.html#ac149c12fdb0aeb14023ea6ebd137bcdd">Urho3D::BoundingBox</a>
-, <a class="el" href="class_urho3_d_1_1_frustum.html#a2339261ab11f940f481ac3cf95915867">Urho3D::Frustum</a>
+, <a class="el" href="class_urho3_d_1_1_frustum.html#a48df64ed4b98657647b45a96e293cd97">Urho3D::Frustum</a>
 , <a class="el" href="class_urho3_d_1_1_sphere.html#af9bdab6691b5614918d332f2ab4b8110">Urho3D::Sphere</a>
 </li>
 <li>IsInsideLocal()
 : <a class="el" href="class_urho3_d_1_1_static_model.html#a234b3b649fa56f1f1c6243a18277b051">Urho3D::StaticModel</a>
 </li>
 <li>IsInstanceOf()
-: <a class="el" href="class_urho3_d_1_1_object.html#a2fadbff6a42d6e28d33fdd9ba944805d">Urho3D::Object</a>
+: <a class="el" href="class_urho3_d_1_1_object.html#addd171ce8f6839930a6f141b4c402bee">Urho3D::Object</a>
 </li>
 <li>IsInternal()
 : <a class="el" href="class_urho3_d_1_1_u_i_element.html#a8296551e7368721c952f0277d2d40007">Urho3D::UIElement</a>
 </li>
 <li>IsInView()
-: <a class="el" href="class_urho3_d_1_1_drawable.html#a598fc44760f18bc1fcddbda7d012c584">Urho3D::Drawable</a>
+: <a class="el" href="class_urho3_d_1_1_drawable.html#a59b912ec5b7995253510ac48e8de808d">Urho3D::Drawable</a>
 </li>
 <li>IsKinematic()
 : <a class="el" href="class_urho3_d_1_1_rigid_body.html#a6cd664809a0274d7eead0b7bde7b2c38">Urho3D::RigidBody</a>
@@ -894,6 +900,9 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html#a62d4c8cd3d266be3cd06fb95ace45976">Urho3D::CollisionShape2D</a>
 , <a class="el" href="class_urho3_d_1_1_rigid_body.html#a41caefe120cce1dda8f28c44e01f22f0">Urho3D::RigidBody</a>
 </li>
+<li>IsType()
+: <a class="el" href="class_urho3_d_1_1_custom_variant_value.html#a7cd1bab96cd6d86475d332afe77b5a0d">Urho3D::CustomVariantValue</a>
+</li>
 <li>IsTypeOf()
 : <a class="el" href="class_urho3_d_1_1_type_info.html#a1664ac04413b4ffb332dea05613e3dfd">Urho3D::TypeInfo</a>
 </li>
@@ -930,14 +939,17 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_u_i_element.html#a486c5023163ab7c684f65bd5978e0d79">Urho3D::UIElement</a>
 </li>
 <li>IsZero()
-: <a class="el" href="class_urho3_d_1_1_variant.html#ac149129565974f10ea1f8e093c96eeb3">Urho3D::Variant</a>
+: <a class="el" href="class_urho3_d_1_1_custom_variant_value.html#a1be3e1b1ce06eebae02f139bccc61017">Urho3D::CustomVariantValue</a>
+, <a class="el" href="class_urho3_d_1_1_custom_variant_value_impl.html#af7c0cbc256104ca8c7a30f44d1347884">Urho3D::CustomVariantValueImpl&lt; T &gt;</a>
+, <a class="el" href="struct_urho3_d_1_1_custom_variant_value_traits.html#aaf6eff538eed33fe4e5424decf71e531">Urho3D::CustomVariantValueTraits&lt; T &gt;</a>
+, <a class="el" href="class_urho3_d_1_1_variant.html#ac149129565974f10ea1f8e093c96eeb3">Urho3D::Variant</a>
 </li>
 <li>IsZoneDirty()
 : <a class="el" href="class_urho3_d_1_1_drawable.html#a0057557abbbd2bba7dab0a834145b2b7">Urho3D::Drawable</a>
 </li>
 <li>Iterator()
-: <a class="el" href="struct_urho3_d_1_1_hash_map_1_1_iterator.html#ac58b06a4f47caff100e1c5fce1876536">Urho3D::HashMap&lt; T, U &gt;::Iterator</a>
-, <a class="el" href="struct_urho3_d_1_1_hash_set_1_1_iterator.html#a14915d3813c7e5ac51282d5a86e9d573">Urho3D::HashSet&lt; T &gt;::Iterator</a>
+: <a class="el" href="struct_urho3_d_1_1_hash_map_1_1_iterator.html#abc59433708685a11fa909706626c80b3">Urho3D::HashMap&lt; T, U &gt;::Iterator</a>
+, <a class="el" href="struct_urho3_d_1_1_hash_set_1_1_iterator.html#a964534c0f64479b61508396babd9939f">Urho3D::HashSet&lt; T &gt;::Iterator</a>
 , <a class="el" href="struct_urho3_d_1_1_list_1_1_iterator.html#a5eefb6e918ab8bf0fc52021b2191bd82">Urho3D::List&lt; T &gt;::Iterator</a>
 </li>
 </ul>
