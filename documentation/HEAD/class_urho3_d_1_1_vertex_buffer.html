@@ -61,22 +61,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a5e99e198558445182ec8f030e975eb6b">VertexBuffer</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context, bool forceHeadless=false)</td></tr>
 <tr class="memdesc:a5e99e198558445182ec8f030e975eb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. Optionally force headless (no GPU-side buffer) operation. <br/></td></tr>
 <tr class="separator:a5e99e198558445182ec8f030e975eb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00789dbe4f77055fc61cfd7f324b422f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00789dbe4f77055fc61cfd7f324b422f"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a00789dbe4f77055fc61cfd7f324b422f">~VertexBuffer</a> ()</td></tr>
-<tr class="memdesc:a00789dbe4f77055fc61cfd7f324b422f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
-<tr class="separator:a00789dbe4f77055fc61cfd7f324b422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b2b2bab8d1026ea6428c78102a01be4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b2b2bab8d1026ea6428c78102a01be4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a6b2b2bab8d1026ea6428c78102a01be4">OnDeviceLost</a> ()</td></tr>
-<tr class="memdesc:a6b2b2bab8d1026ea6428c78102a01be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the buffer destroyed on graphics context destruction. May be a no-op depending on the API. <br/></td></tr>
-<tr class="separator:a6b2b2bab8d1026ea6428c78102a01be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc091469bada00884671bdf664733695"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc091469bada00884671bdf664733695"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#acc091469bada00884671bdf664733695">OnDeviceReset</a> ()</td></tr>
-<tr class="memdesc:acc091469bada00884671bdf664733695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the buffer and restore data if applicable. May be a no-op depending on the API. <br/></td></tr>
-<tr class="separator:acc091469bada00884671bdf664733695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9be1cdd9329140b16464462ac10c7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf9be1cdd9329140b16464462ac10c7d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#abf9be1cdd9329140b16464462ac10c7d">Release</a> ()</td></tr>
-<tr class="memdesc:abf9be1cdd9329140b16464462ac10c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release buffer. <br/></td></tr>
-<tr class="separator:abf9be1cdd9329140b16464462ac10c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae242007d00342d486f60d7e998131243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae242007d00342d486f60d7e998131243"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#ae242007d00342d486f60d7e998131243">~VertexBuffer</a> () override</td></tr>
+<tr class="memdesc:ae242007d00342d486f60d7e998131243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
+<tr class="separator:ae242007d00342d486f60d7e998131243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5b1d3ad958b729367f2e7a2d54dd41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d5b1d3ad958b729367f2e7a2d54dd41"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a7d5b1d3ad958b729367f2e7a2d54dd41">OnDeviceLost</a> () override</td></tr>
+<tr class="memdesc:a7d5b1d3ad958b729367f2e7a2d54dd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the buffer destroyed on graphics context destruction. May be a no-op depending on the API. <br/></td></tr>
+<tr class="separator:a7d5b1d3ad958b729367f2e7a2d54dd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c70ab797f2cf7ff97abb58664c6306"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26c70ab797f2cf7ff97abb58664c6306"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a26c70ab797f2cf7ff97abb58664c6306">OnDeviceReset</a> () override</td></tr>
+<tr class="memdesc:a26c70ab797f2cf7ff97abb58664c6306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the buffer and restore data if applicable. May be a no-op depending on the API. <br/></td></tr>
+<tr class="separator:a26c70ab797f2cf7ff97abb58664c6306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c1a387c164fe346fbd069fcbb7a51e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44c1a387c164fe346fbd069fcbb7a51e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a44c1a387c164fe346fbd069fcbb7a51e">Release</a> () override</td></tr>
+<tr class="memdesc:a44c1a387c164fe346fbd069fcbb7a51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release buffer. <br/></td></tr>
+<tr class="separator:a44c1a387c164fe346fbd069fcbb7a51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c2ded230cbfbbeac650caac088ad7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54c2ded230cbfbbeac650caac088ad7c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a54c2ded230cbfbbeac650caac088ad7c">SetShadowed</a> (bool enable)</td></tr>
 <tr class="memdesc:a54c2ded230cbfbbeac650caac088ad7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable shadowing in CPU memory. Shadowing is forced on if the graphics subsystem does not exist. <br/></td></tr>
@@ -174,10 +174,10 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a95a6cd1c5c12a458fda4b38f873a334d">Object</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
 <tr class="memdesc:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0315666e4cd1d17b8de8c62bb0231f64 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0315666e4cd1d17b8de8c62bb0231f64"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a0315666e4cd1d17b8de8c62bb0231f64">~Object</a> ()</td></tr>
-<tr class="memdesc:a0315666e4cd1d17b8de8c62bb0231f64 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br/></td></tr>
-<tr class="separator:a0315666e4cd1d17b8de8c62bb0231f64 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d472106f01c137d237b3099751d10c5"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
+<tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br/></td></tr>
+<tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c7af660afc8467a99d1f17c8d099b3b"></a>
 virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
 <tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash. <br/></td></tr>
@@ -215,14 +215,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#ac9ea95ee6f24e7fbeede16ba149dbc2d">SubscribeToEvent</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *sender, <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_event_handler.html">EventHandler</a> *handler)</td></tr>
 <tr class="memdesc:ac9ea95ee6f24e7fbeede16ba149dbc2d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a specific sender's event. <br/></td></tr>
 <tr class="separator:ac9ea95ee6f24e7fbeede16ba149dbc2d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a875945a819298ed7e22affde1a918383 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a875945a819298ed7e22affde1a918383"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a875945a819298ed7e22affde1a918383">SubscribeToEvent</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, const std::function&lt; void(<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;)&gt; &amp;function, void *userData=0)</td></tr>
-<tr class="memdesc:a875945a819298ed7e22affde1a918383 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to an event that can be sent by any sender. <br/></td></tr>
-<tr class="separator:a875945a819298ed7e22affde1a918383 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbd3128d70cd2d702878cff90c3af7d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdbd3128d70cd2d702878cff90c3af7d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#afdbd3128d70cd2d702878cff90c3af7d">SubscribeToEvent</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *sender, <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, const std::function&lt; void(<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;)&gt; &amp;function, void *userData=0)</td></tr>
-<tr class="memdesc:afdbd3128d70cd2d702878cff90c3af7d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a specific sender's event. <br/></td></tr>
-<tr class="separator:afdbd3128d70cd2d702878cff90c3af7d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0662ad7abbb5664ab7a08212d0453132 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0662ad7abbb5664ab7a08212d0453132"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a0662ad7abbb5664ab7a08212d0453132">SubscribeToEvent</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, const std::function&lt; void(<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;)&gt; &amp;function, void *userData=nullptr)</td></tr>
+<tr class="memdesc:a0662ad7abbb5664ab7a08212d0453132 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to an event that can be sent by any sender. <br/></td></tr>
+<tr class="separator:a0662ad7abbb5664ab7a08212d0453132 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb611e65937538a43d41500705004075 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb611e65937538a43d41500705004075"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acb611e65937538a43d41500705004075">SubscribeToEvent</a> (<a class="el" href="class_urho3_d_1_1_object.html">Object</a> *sender, <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, const std::function&lt; void(<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;)&gt; &amp;function, void *userData=nullptr)</td></tr>
+<tr class="memdesc:acb611e65937538a43d41500705004075 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a specific sender's event. <br/></td></tr>
+<tr class="separator:acb611e65937538a43d41500705004075 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153b96c4397e045b2ca2b2d5471d097c inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153b96c4397e045b2ca2b2d5471d097c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a153b96c4397e045b2ca2b2d5471d097c">UnsubscribeFromEvent</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType)</td></tr>
 <tr class="memdesc:a153b96c4397e045b2ca2b2d5471d097c inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe from an event. <br/></td></tr>

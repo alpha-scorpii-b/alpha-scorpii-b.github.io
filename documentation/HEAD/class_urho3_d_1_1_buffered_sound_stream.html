@@ -59,14 +59,14 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#a3666748faa0f231a8934f541a6d4ace1">BufferedSoundStream</a> ()</td></tr>
 <tr class="memdesc:a3666748faa0f231a8934f541a6d4ace1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a3666748faa0f231a8934f541a6d4ace1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc318343a4210da769fc3a4b88be7880"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc318343a4210da769fc3a4b88be7880"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#abc318343a4210da769fc3a4b88be7880">~BufferedSoundStream</a> ()</td></tr>
-<tr class="memdesc:abc318343a4210da769fc3a4b88be7880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
-<tr class="separator:abc318343a4210da769fc3a4b88be7880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b800f56045326decc8674efb710c8ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b800f56045326decc8674efb710c8ac"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#a8b800f56045326decc8674efb710c8ac">GetData</a> (signed char *dest, unsigned numBytes)</td></tr>
-<tr class="memdesc:a8b800f56045326decc8674efb710c8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce sound data into destination. Return number of bytes produced. Called by <a class="el" href="class_urho3_d_1_1_sound_source.html" title="Sound source component with stereo position. A sound source needs to be created to a node to be consi...">SoundSource</a> from the mixing thread. <br/></td></tr>
-<tr class="separator:a8b800f56045326decc8674efb710c8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf37a95ca4190abcc076cbce1cdda3a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf37a95ca4190abcc076cbce1cdda3a5"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#adf37a95ca4190abcc076cbce1cdda3a5">~BufferedSoundStream</a> () override</td></tr>
+<tr class="memdesc:adf37a95ca4190abcc076cbce1cdda3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
+<tr class="separator:adf37a95ca4190abcc076cbce1cdda3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51728179f4b8a602c527c3fcb6ab0d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51728179f4b8a602c527c3fcb6ab0d4b"></a>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#a51728179f4b8a602c527c3fcb6ab0d4b">GetData</a> (signed char *dest, unsigned numBytes) override</td></tr>
+<tr class="memdesc:a51728179f4b8a602c527c3fcb6ab0d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce sound data into destination. Return number of bytes produced. Called by <a class="el" href="class_urho3_d_1_1_sound_source.html" title="Sound source component with stereo position. A sound source needs to be created to a node to be consi...">SoundSource</a> from the mixing thread. <br/></td></tr>
+<tr class="separator:a51728179f4b8a602c527c3fcb6ab0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a163dffbabdacc2cde3fcc85fc6510213"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a163dffbabdacc2cde3fcc85fc6510213"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_buffered_sound_stream.html#a163dffbabdacc2cde3fcc85fc6510213">AddData</a> (void *data, unsigned numBytes)</td></tr>
 <tr class="memdesc:a163dffbabdacc2cde3fcc85fc6510213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer sound data. Makes a copy of it. <br/></td></tr>
@@ -96,10 +96,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#af3d389af2fdebf8e005dcc54def92001">SoundStream</a> ()</td></tr>
 <tr class="memdesc:af3d389af2fdebf8e005dcc54def92001 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:af3d389af2fdebf8e005dcc54def92001 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f0f699b20cf7fae917c24c7a89a083 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8f0f699b20cf7fae917c24c7a89a083"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#ad8f0f699b20cf7fae917c24c7a89a083">~SoundStream</a> ()</td></tr>
-<tr class="memdesc:ad8f0f699b20cf7fae917c24c7a89a083 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
-<tr class="separator:ad8f0f699b20cf7fae917c24c7a89a083 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc4bfb469fbc33fe35d5b0b17eea6f8 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dc4bfb469fbc33fe35d5b0b17eea6f8"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#a1dc4bfb469fbc33fe35d5b0b17eea6f8">~SoundStream</a> () override</td></tr>
+<tr class="memdesc:a1dc4bfb469fbc33fe35d5b0b17eea6f8 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
+<tr class="separator:a1dc4bfb469fbc33fe35d5b0b17eea6f8 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd6a2969826ec7a324971c62328b474 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd6a2969826ec7a324971c62328b474"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sound_stream.html#a0fd6a2969826ec7a324971c62328b474">Seek</a> (unsigned sample_number)</td></tr>
 <tr class="memdesc:a0fd6a2969826ec7a324971c62328b474 inherit pub_methods_class_urho3_d_1_1_sound_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek to sample number. Return true on success. Need not be implemented by all streams. <br/></td></tr>

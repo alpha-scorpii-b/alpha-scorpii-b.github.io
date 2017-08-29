@@ -63,18 +63,18 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#ae6fa8c953788935074af1d39e00bbd35">LuaFunction</a> (lua_State *L, lua_CFunction func)</td></tr>
 <tr class="memdesc:ae6fa8c953788935074af1d39e00bbd35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a C function. <br/></td></tr>
 <tr class="separator:ae6fa8c953788935074af1d39e00bbd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af871eea523693ea5cd3f7074847b4009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af871eea523693ea5cd3f7074847b4009"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#af871eea523693ea5cd3f7074847b4009">~LuaFunction</a> ()</td></tr>
-<tr class="memdesc:af871eea523693ea5cd3f7074847b4009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
-<tr class="separator:af871eea523693ea5cd3f7074847b4009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016f261b1e479d38dcd381497648cf87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a016f261b1e479d38dcd381497648cf87"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a016f261b1e479d38dcd381497648cf87">~LuaFunction</a> () override</td></tr>
+<tr class="memdesc:a016f261b1e479d38dcd381497648cf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
+<tr class="separator:a016f261b1e479d38dcd381497648cf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dedcdd8936666c31010a3c784b3da6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65dedcdd8936666c31010a3c784b3da6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a65dedcdd8936666c31010a3c784b3da6">IsValid</a> () const </td></tr>
 <tr class="memdesc:a65dedcdd8936666c31010a3c784b3da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that function is valid. <br/></td></tr>
 <tr class="separator:a65dedcdd8936666c31010a3c784b3da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b8e1ca07e9b47c8f9cae28a7f9a9f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03b8e1ca07e9b47c8f9cae28a7f9a9f9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a03b8e1ca07e9b47c8f9cae28a7f9a9f9">BeginCall</a> (const <a class="el" href="class_urho3_d_1_1_lua_script_instance.html">LuaScriptInstance</a> *instance=0)</td></tr>
-<tr class="memdesc:a03b8e1ca07e9b47c8f9cae28a7f9a9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin function call. When a script object is given then pass it as self argument (first parameter) to the function call. <br/></td></tr>
-<tr class="separator:a03b8e1ca07e9b47c8f9cae28a7f9a9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebe8556aab514240aae0a06f82c2629"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaebe8556aab514240aae0a06f82c2629"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#aaebe8556aab514240aae0a06f82c2629">BeginCall</a> (const <a class="el" href="class_urho3_d_1_1_lua_script_instance.html">LuaScriptInstance</a> *instance=nullptr)</td></tr>
+<tr class="memdesc:aaebe8556aab514240aae0a06f82c2629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin function call. When a script object is given then pass it as self argument (first parameter) to the function call. <br/></td></tr>
+<tr class="separator:aaebe8556aab514240aae0a06f82c2629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c1b2a030d1763e524b5fd50e4afd8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10c1b2a030d1763e524b5fd50e4afd8b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a10c1b2a030d1763e524b5fd50e4afd8b">EndCall</a> (int numReturns=0)</td></tr>
 <tr class="memdesc:a10c1b2a030d1763e524b5fd50e4afd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">End call and actually execute the function. The return values, if any, are still left in the stack when this call returns. <br/></td></tr>
@@ -123,10 +123,10 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a54a8e6d527dd2167b02301ea61262167"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a54a8e6d527dd2167b02301ea61262167">PushUserType</a> (const T &amp;userType, const char *typeName)</td></tr>
 <tr class="memdesc:a54a8e6d527dd2167b02301ea61262167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push user type to stack. <br/></td></tr>
 <tr class="separator:a54a8e6d527dd2167b02301ea61262167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab907e8f599cf78b1f50900de498695ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab907e8f599cf78b1f50900de498695ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#ab907e8f599cf78b1f50900de498695ea">PushVariant</a> (const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;variant, const char *asType=0)</td></tr>
-<tr class="memdesc:ab907e8f599cf78b1f50900de498695ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push variant to stack. <br/></td></tr>
-<tr class="separator:ab907e8f599cf78b1f50900de498695ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fe2c98d42fbdf302a8cd9ce326fe3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34fe2c98d42fbdf302a8cd9ce326fe3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a34fe2c98d42fbdf302a8cd9ce326fe3e">PushVariant</a> (const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;variant, const char *asType=nullptr)</td></tr>
+<tr class="memdesc:a34fe2c98d42fbdf302a8cd9ce326fe3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push variant to stack. <br/></td></tr>
+<tr class="separator:a34fe2c98d42fbdf302a8cd9ce326fe3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a3980bbadca58126674623d2be695d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a3980bbadca58126674623d2be695d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_lua_function.html#a10a3980bbadca58126674623d2be695d">PushLuaTable</a> (const char *tableName)</td></tr>
 <tr class="memdesc:a10a3980bbadca58126674623d2be695d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push Lua table to stack. When the specified table is not found then a nil is pushed instead. <br/></td></tr>

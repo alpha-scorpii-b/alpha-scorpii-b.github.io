@@ -56,12 +56,12 @@ Collaboration diagram for Urho3D::AttributeAccessorFreeImpl&lt; T, U, Trait &gt;
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a06e27182604b9805635b80a005994e6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06e27182604b9805635b80a005994e6c"></a>
-typedef Trait::ReturnType(*&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionPtr</b> )(const T *)</td></tr>
-<tr class="separator:a06e27182604b9805635b80a005994e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b81a16f61b8b2b81450f372acd65684"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b81a16f61b8b2b81450f372acd65684"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>SetFunctionPtr</b> )(T *, typename Trait::ParameterType)</td></tr>
-<tr class="separator:a8b81a16f61b8b2b81450f372acd65684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347246c53a3d2282cc4ac8082c11059c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347246c53a3d2282cc4ac8082c11059c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionPtr</b> = typename Trait::ReturnType(*)(const T *)</td></tr>
+<tr class="separator:a347246c53a3d2282cc4ac8082c11059c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3072556752c7e577f5b0e63d1a1ca9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f3072556752c7e577f5b0e63d1a1ca9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SetFunctionPtr</b> = void(*)(T *, typename Trait::ParameterType)</td></tr>
+<tr class="separator:a2f3072556752c7e577f5b0e63d1a1ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -69,14 +69,14 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_attribute_accessor_free_impl.html#a6ad6568e75fbd3e3e0efed473d10d28d">AttributeAccessorFreeImpl</a> (GetFunctionPtr getFunction, SetFunctionPtr setFunction)</td></tr>
 <tr class="memdesc:a6ad6568e75fbd3e3e0efed473d10d28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with function pointers. <br/></td></tr>
 <tr class="separator:a6ad6568e75fbd3e3e0efed473d10d28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1d4c02333126907db8d5828cde6559"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf1d4c02333126907db8d5828cde6559"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_attribute_accessor_free_impl.html#adf1d4c02333126907db8d5828cde6559">Get</a> (const <a class="el" href="class_urho3_d_1_1_serializable.html">Serializable</a> *ptr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
-<tr class="memdesc:adf1d4c02333126907db8d5828cde6559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke getter function. <br/></td></tr>
-<tr class="separator:adf1d4c02333126907db8d5828cde6559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac054770abf4aebdb38e321a54e54f987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac054770abf4aebdb38e321a54e54f987"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_attribute_accessor_free_impl.html#ac054770abf4aebdb38e321a54e54f987">Set</a> (<a class="el" href="class_urho3_d_1_1_serializable.html">Serializable</a> *ptr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
-<tr class="memdesc:ac054770abf4aebdb38e321a54e54f987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke setter function. <br/></td></tr>
-<tr class="separator:ac054770abf4aebdb38e321a54e54f987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc3c18813230f5d80aedb7c338858c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cc3c18813230f5d80aedb7c338858c1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_attribute_accessor_free_impl.html#a5cc3c18813230f5d80aedb7c338858c1">Get</a> (const <a class="el" href="class_urho3_d_1_1_serializable.html">Serializable</a> *ptr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const override</td></tr>
+<tr class="memdesc:a5cc3c18813230f5d80aedb7c338858c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke getter function. <br/></td></tr>
+<tr class="separator:a5cc3c18813230f5d80aedb7c338858c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d83be6e0a5ea17610d45a558e233d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35d83be6e0a5ea17610d45a558e233d1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_attribute_accessor_free_impl.html#a35d83be6e0a5ea17610d45a558e233d1">Set</a> (<a class="el" href="class_urho3_d_1_1_serializable.html">Serializable</a> *ptr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value) override</td></tr>
+<tr class="memdesc:a35d83be6e0a5ea17610d45a558e233d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke setter function. <br/></td></tr>
+<tr class="separator:a35d83be6e0a5ea17610d45a558e233d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#aad6e2ac9e97ca71b28c47248a9aad9b9">RefCounted</a> ()</td></tr>

@@ -60,14 +60,14 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#a6d57f77767f848db9fd9acb1c4963320">BackgroundLoader</a> (<a class="el" href="class_urho3_d_1_1_resource_cache.html">ResourceCache</a> *owner)</td></tr>
 <tr class="memdesc:a6d57f77767f848db9fd9acb1c4963320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a6d57f77767f848db9fd9acb1c4963320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb6d335fb6be9c6a48a89d9a4208dfed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb6d335fb6be9c6a48a89d9a4208dfed"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#abb6d335fb6be9c6a48a89d9a4208dfed">~BackgroundLoader</a> ()</td></tr>
-<tr class="memdesc:abb6d335fb6be9c6a48a89d9a4208dfed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Forcibly clear the load queue. <br/></td></tr>
-<tr class="separator:abb6d335fb6be9c6a48a89d9a4208dfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cda6e4d47c2a7ab8342e5b38b15b386"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cda6e4d47c2a7ab8342e5b38b15b386"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#a0cda6e4d47c2a7ab8342e5b38b15b386">ThreadFunction</a> ()</td></tr>
-<tr class="memdesc:a0cda6e4d47c2a7ab8342e5b38b15b386"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_resource.html" title="Base class for resources. ">Resource</a> background loading loop. <br/></td></tr>
-<tr class="separator:a0cda6e4d47c2a7ab8342e5b38b15b386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c2d914e5ddb5db0430437127baa8cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63c2d914e5ddb5db0430437127baa8cb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#a63c2d914e5ddb5db0430437127baa8cb">~BackgroundLoader</a> () override</td></tr>
+<tr class="memdesc:a63c2d914e5ddb5db0430437127baa8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Forcibly clear the load queue. <br/></td></tr>
+<tr class="separator:a63c2d914e5ddb5db0430437127baa8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69be18943f0877f2c836095a03ef7cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69be18943f0877f2c836095a03ef7cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#af69be18943f0877f2c836095a03ef7cb">ThreadFunction</a> () override</td></tr>
+<tr class="memdesc:af69be18943f0877f2c836095a03ef7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_resource.html" title="Base class for resources. ">Resource</a> background loading loop. <br/></td></tr>
+<tr class="separator:af69be18943f0877f2c836095a03ef7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79c8906e8d5ac677cb6662c81db0373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af79c8906e8d5ac677cb6662c81db0373"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_background_loader.html#af79c8906e8d5ac677cb6662c81db0373">QueueResource</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, bool sendEventOnFailure, <a class="el" href="class_urho3_d_1_1_resource.html">Resource</a> *caller)</td></tr>
 <tr class="memdesc:af79c8906e8d5ac677cb6662c81db0373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue loading of a resource. The name must be sanitated to ensure consistent format. Return true if queued (not a duplicate and resource was a known type). <br/></td></tr>

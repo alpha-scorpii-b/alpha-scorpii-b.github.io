@@ -139,7 +139,7 @@ Shapes</h3>
 </ul>
 <p>Several collision shapes may exist in the same node to create compound shapes. This can be handy to approximate complex or concave shapes.</p>
 <p>Important: collision shapes must match your textures in order to be accurate. You can use Tiled's objects to create your shapes (see <a class="el" href="_urho2_d.html#Urho2D_TMX_Objects">Tile map objects</a>). Or you can use tools like Physics Body Editor (<a href="https://code.google.com/p/box2d-editor/">https://code.google.com/p/box2d-editor/</a>), RUBE (<a href="https://www.iforce2d.net/rube/">https://www.iforce2d.net/rube/</a>), LevelHelper (<a href="http://www.gamedevhelper.com/levelhelper/">http://www.gamedevhelper.com/levelhelper/</a>), PhysicsEditor (<a href="https://www.codeandweb.com/physicseditor">https://www.codeandweb.com/physicseditor</a>), ... to help you. Other interesting tool is BisonKick (<a href="https://bisonkick.com/app/518195d06927101d38a83b66/">https://bisonkick.com/app/518195d06927101d38a83b66/</a>).</p>
-<p>Use <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a2dd5a326a820daa8e81d9c45595fd340">SetDrawShape()</a> in combination with <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac12df17875fcd0466f50ceb56e919228">DrawDebugGeometry()</a> to toggle shapes visibility.</p>
+<p>Use <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a2dd5a326a820daa8e81d9c45595fd340">SetDrawShape()</a> in combination with <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#accc7288fda438c631913a4952c3af4ba">DrawDebugGeometry()</a> to toggle shapes visibility.</p>
 <h3><a class="anchor" id="Urho2D_Collision_Shapes_Fixtures"></a>
 Fixtures</h3>
 <p>Box2D fixtures are implemented through the <a class="el" href="class_urho3_d_1_1_collision_shape2_d.html" title="2D collision shape component. ">CollisionShape2D</a> base class for 2D physics collision shapes. Common parameters shared by every collision shape include:</p>
@@ -198,7 +198,7 @@ Constraints components</h2>
 <li>Motor joint &lt;=&gt; <a class="el" href="class_urho3_d_1_1_constraint_motor2_d.html" title="2D motor constraint component. ">ConstraintMotor2D</a>: defines 2D physics motor constraint. This constraint lets you control the motion of a body by specifying target position (<a class="el" href="class_urho3_d_1_1_constraint_motor2_d.html#a14c62adb173d053ef7b3337b943dd934">SetLinearOffset()</a>) and rotation offsets (<a class="el" href="class_urho3_d_1_1_constraint_motor2_d.html#ad003e407c97e8715f5cfec7bd06113bc">SetAngularOffset()</a>). You can set the maximum motor force (<a class="el" href="class_urho3_d_1_1_constraint_motor2_d.html#a4cfcc3ba4793b33d88b91b145d280168">SetMaxForce()</a>) and torque (<a class="el" href="class_urho3_d_1_1_constraint_motor2_d.html#aba8592ffa2a417b8e52da009cdaf3e97">SetMaxTorque()</a>) that will be applied to reach the target position and rotation. If the body is blocked, it will stop and the contact forces will be proportional to the maximum motor force and torque.</li>
 </ul>
 <p>Collision between bodies connected by a constraint can be enabled/disabled using <a class="el" href="class_urho3_d_1_1_constraint2_d.html#a752cd142edd50376608fb588df23aed6">SetCollideConnected()</a>.</p>
-<p>Use <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a64ed4fcf6e26b4958188f46ca25ef18d">SetDrawJoint()</a> in combination with <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac12df17875fcd0466f50ceb56e919228">DrawDebugGeometry()</a> to toggle joints visibility.</p>
+<p>Use <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a64ed4fcf6e26b4958188f46ca25ef18d">SetDrawJoint()</a> in combination with <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#accc7288fda438c631913a4952c3af4ba">DrawDebugGeometry()</a> to toggle joints visibility.</p>
 <h2><a class="anchor" id="Urho2D_Physics_Queries"></a>
 Physics queries</h2>
 <p>The following queries into the physics world are provided:</p>
@@ -271,7 +271,7 @@ TMX tile maps</h3>
 <li><a class="el" href="class_urho3_d_1_1_tile_map2_d.html#a593853e7c27a6370086b3f472bcd42f6">TileIndexToPosition()</a> to convert tile index to Urho position</li>
 <li><a class="el" href="class_urho3_d_1_1_tile_map2_d.html#a093e73fbfb13f94dccb3fe6d5f9e0fc5">PositionToTileIndex()</a> to convert Urho position to tile index (returns false if position is outside of the map)</li>
 </ul>
-<p>You can display debug geometry for the whole tile map using <a class="el" href="class_urho3_d_1_1_tile_map2_d.html#aa30915ff5bf56a4a3c9217104ce54d1b">DrawDebugGeometry()</a>.</p>
+<p>You can display debug geometry for the whole tile map using <a class="el" href="class_urho3_d_1_1_tile_map2_d.html#a4ed5cbef75e154a2cd2b7bdf3b1742f2">DrawDebugGeometry()</a>.</p>
 <h3><a class="anchor" id="Urho2D_TMX_Tileset"></a>
 TMX tile map tilesets and tiles</h3>
 <p>A tile map is built from fixed-size sprites ('tiles', accessible from the <a class="el" href="class_urho3_d_1_1_tile2_d.html" title="Tile define. ">Tile2D</a> class) belonging to one or more 'tilesets' (=spritesheets). Each tile is characterized by its:</p>
@@ -292,7 +292,7 @@ TMX tile map layers</h3>
 <li>type: retrieved using <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#a764820e1ae1b9e7080a927877f111759">GetLayerType()</a> (returns the type of layer, a TileMapLayerType2D: Tile=LT_TILE_LAYER, Object=LT_OBJECT_GROUP, Image=LT_IMAGE_LAYER and Invalid=LT_INVALID)</li>
 <li>custom properties : use <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#a8608e274c87e7357d1314fb501639c73">HasProperty()</a> and <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#a5bc62aee504bb570e54dc6dd08f25ce0">GetProperty()</a> to check/access these values</li>
 </ul>
-<p>Layer visibility can be toggled using <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#aa53a92674aca3d23e9927f7909bbd62c">SetVisible()</a> (and visibility state can be accessed with <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#a22047ff3b2f95699cd8bf6b364fefd77">IsVisible()</a>). Currently layer opacity is not implemented. Use <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#ad1cc4cb0964fee62fb58f19e0a511e1b">DrawDebugGeometry()</a> to display debug geometry for a given layer.</p>
+<p>Layer visibility can be toggled using <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#aa53a92674aca3d23e9927f7909bbd62c">SetVisible()</a> (and visibility state can be accessed with <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#a22047ff3b2f95699cd8bf6b364fefd77">IsVisible()</a>). Currently layer opacity is not implemented. Use <a class="el" href="class_urho3_d_1_1_tile_map_layer2_d.html#aef0b04647bec35d267d982bf2439f81a">DrawDebugGeometry()</a> to display debug geometry for a given layer.</p>
 <p>By default, first tile map layer is drawn on scene layer 0 and subsequent layers are drawn in a 10 scene layers step. For example, if your tile map has 3 layers:</p>
 <ul>
 <li>bottom layer is drawn on layer 0</li>

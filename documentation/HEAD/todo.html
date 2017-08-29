@@ -20,7 +20,7 @@ group: HEAD
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_urho3_d_1_1_animated_model.html#aee70c95d29604511d3e2964bff967284">Urho3D::AnimatedModel::OnWorldBoundingBoxUpdate</a>  ()</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_urho3_d_1_1_animated_model.html#af60822b6afad9ae9e135e2b05fd13005">Urho3D::AnimatedModel::OnWorldBoundingBoxUpdate</a>  () override</dt>
 <dd>If it's a skinned attachment that does not cover the whole body, it will have unnecessarily large bounds  </dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_urho3_d_1_1_animated_model.html#ab6505918614fd80f5621e2a36abd2cf2">Urho3D::AnimatedModel::UpdateBoneBoundingBox</a>  ()</dt>
 <dd>The sphere radius should be multiplied with bone scale  </dd>
@@ -34,29 +34,29 @@ group: HEAD
 <dd>Searching for the component is a potential CPU hotspot. It should be cached  </dd>
 <dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="class_urho3_d_1_1_connection.html#a0a9e39346bc1f85b9186d3258a178ac1">Urho3D::Connection::ProcessSceneUpdate</a>  (int msgID, MemoryBuffer &amp;msg)</dt>
 <dd>On mobile devices processing this message may potentially cause a crash if it attempts to load new GPU resources while the application is minimized  </dd>
-<dt><a class="anchor" id="_todo000033"></a>Member <a class="el" href="class_urho3_d_1_1_constraint.html#a27ad73e394c74db3eafa12ca51cd6400">Urho3D::Constraint::OnMarkedDirty</a>  (Node *node)</dt>
+<dt><a class="anchor" id="_todo000033"></a>Member <a class="el" href="class_urho3_d_1_1_constraint.html#af98cd9b392064a8305a4aa29787b46af">Urho3D::Constraint::OnMarkedDirty</a>  (Node *node) override</dt>
 <dd>This does not catch the connected body node's scale changing  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_urho3_d_1_1_context.html#a68ab6cd5113c02ec67e04bbe11504090">Urho3D::Context::~Context</a>  ()</dt>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_urho3_d_1_1_context.html#a72de0447e36979d2e83d577bad37b59b">Urho3D::Context::~Context</a>  () override</dt>
 <dd>Context should not need to know about subsystems  </dd>
-<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="class_urho3_d_1_1_crowd_agent.html#a039e3277d24ef2b90445f1868709713a">Urho3D::CrowdAgent::OnMarkedDirty</a>  (Node *node)</dt>
+<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="class_urho3_d_1_1_crowd_agent.html#af46aaf3983f59aee19ad367d03fcbcd3">Urho3D::CrowdAgent::OnMarkedDirty</a>  (Node *node) override</dt>
 <dd>Handle node transform being dirtied.  </dd>
 <dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_urho3_d_1_1_decal_set.html#a70a16cdcd0674837b6b2338f94f476b8">Urho3D::DecalSet::AddDecal</a>  (Drawable *target, const Vector3 &amp;worldPosition, const Quaternion &amp;worldRotation, float size, float aspectRatio, float depth, const Vector2 &amp;topLeftUV, const Vector2 &amp;bottomRightUV, float timeToLive=0.0f, float normalCutoff=0.1f, unsigned subGeometry=M_MAX_UNSIGNED)</dt>
 <dd>target transform is not right if adding a decal to StaticModelGroup  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_urho3_d_1_1_decal_set.html#a6ad99bf1fab63be297e4104444589cfd">Urho3D::DecalSet::OnWorldBoundingBoxUpdate</a>  ()</dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_urho3_d_1_1_decal_set.html#a110f79ed9580101f15779fb5a81877b1">Urho3D::DecalSet::OnWorldBoundingBoxUpdate</a>  () override</dt>
 <dd>The sphere radius should be multiplied with bone scale  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_urho3_d_1_1_event_receiver_group.html#a6e8d795aec1eb82fb3a62ac9324d38de">Urho3D::EventReceiverGroup::EndSendEvent</a>  ()</dt>
 <dd>Could be optimized by erase-swap, but this keeps the receiver order  </dd>
-<dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="class_urho3_d_1_1_file.html#ac9ad6d7a55a6f03848f3bb77b8e6890c">Urho3D::File::Read</a>  (void *dest, unsigned size)</dt>
+<dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="class_urho3_d_1_1_file.html#aa96e3d354d967ebeb8ad5863eb2797fe">Urho3D::File::Read</a>  (void *dest, unsigned size) override</dt>
 <dd>Handle errors  </dd>
 <dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="class_urho3_d_1_1_file_system.html#a59227c0c4b9e7cd81ad0eabb203ea949">Urho3D::FileSystem::ScanDirInternal</a>  (<a class="el" href="class_urho3_d_1_1_vector.html">Vector&lt; String &gt;</a> &amp;result, String path, const String &amp;startPath, const String &amp;filter, unsigned flags, bool recursive) const </dt>
 <dd>Filename may be unnormalized Unicode on Mac OS X. Re-normalize as necessary  </dd>
 <dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_urho3_d_1_1_graphics.html#a3e7b555e97944dd99eef236499d73d7b">Urho3D::Graphics::Clear</a>  (unsigned flags, const Color &amp;color=Color(0.0f, 0.0f, 0.0f, 0.0f), float depth=1.0f, unsigned stencil=0)</dt>
 <dd>Any user-set scissor test will be lost  </dd>
-<dt><a class="anchor" id="_todo000032"></a>Member <a class="el" href="class_urho3_d_1_1_http_request.html#a119d79e4e4dfb87db35fc9d5d4be762b">Urho3D::HttpRequest::ThreadFunction</a>  ()</dt>
+<dt><a class="anchor" id="_todo000032"></a>Member <a class="el" href="class_urho3_d_1_1_http_request.html#a4db849ffc1a4031e2f2da62704d0c566">Urho3D::HttpRequest::ThreadFunction</a>  () override</dt>
 <dd>SSL mode will not actually work unless Civetweb's SSL mode is initialized with an external SSL DLL  </dd>
 <dt><a class="anchor" id="_todo000034"></a>Member <a class="el" href="class_urho3_d_1_1_image.html#a5be924efa3bb0f85f2d812d0149aedda">Urho3D::Image::Resize</a>  (int width, int height)</dt>
 <dd>Reducing image size does not sample all needed pixels  </dd>
-<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="class_urho3_d_1_1_input.html#a108458dfa956947d861e96c58d269e85">Urho3D::Input::AddScreenJoystick</a>  (XMLFile *layoutFile=0, XMLFile *styleFile=0)</dt>
+<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="class_urho3_d_1_1_input.html#ae6e2a0dd7db2be45379d5551187afb7b">Urho3D::Input::AddScreenJoystick</a>  (XMLFile *layoutFile=nullptr, XMLFile *styleFile=nullptr)</dt>
 <dd><p class="startdd">After a real joystick has been plugged in 1073741824 times, the ranges will overlap </p>
 <p class="enddd">Axis emulation for screen joystick is not fully supported yet.  </p>
 </dd>
@@ -86,7 +86,7 @@ group: HEAD
 <dd>Do not allocate a new vector each time  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_urho3_d_1_1_spline.html#a797a4db283284031153a6dd1b6a9ded9">Urho3D::Spline::GetPoint</a>  (float f) const </dt>
 <dd>Do not allocate a new vector each time  </dd>
-<dt><a class="anchor" id="_todo000038"></a>Member <a class="el" href="class_urho3_d_1_1_sprite.html#a0330f3057cc51c09cb5f6e97497646e6">Urho3D::Sprite::IsWithinScissor</a>  (const IntRect &amp;currentScissor)</dt>
+<dt><a class="anchor" id="_todo000038"></a>Member <a class="el" href="class_urho3_d_1_1_sprite.html#af3d3e34628297a887c3200937a412000">Urho3D::Sprite::IsWithinScissor</a>  (const IntRect &amp;currentScissor) override</dt>
 <dd>Implement properly, for now just checks visibility flag  </dd>
 <dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="class_urho3_d_1_1_terrain.html#a700824d66feab6400aa4f93c667fb76c">Urho3D::Terrain::GetHeight</a>  (const Vector3 &amp;worldPosition) const </dt>
 <dd>This assumes that the terrain scene node is upright  </dd>
