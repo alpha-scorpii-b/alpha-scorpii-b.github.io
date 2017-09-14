@@ -32,6 +32,9 @@ group: HEAD
 <li>Constants and enumerations are in uppercase. For example <code>Vector3::ZERO</code> or <code>PASS_SHADOW</code>.</li>
 <li>Pointers and references append the * or &amp; symbol to the type without a space in between. For example <code>Drawable*</code> drawable, <code>Serializer&amp;</code> dest.</li>
 <li>The macro <code>NULL</code> and 0 should not be used for null pointers, <code>nullptr</code> is used instead.</li>
+<li><code>override</code> is used wherever possible.</li>
+<li><code>using</code> is used instead of <code>typedef</code> in type declarations.</li>
+<li><code>enum class</code> is not used because of legacy reasons.</li>
 <li>Class definitions proceed in the following order:<ul>
 <li>public constructors and the destructor</li>
 <li>public virtual functions</li>
@@ -45,18 +48,18 @@ group: HEAD
 <li>Header files are commented using one-line comments beginning with /// to mark them for Doxygen.</li>
 <li>Inline functions are defined inside the class definitions where possible, without using the inline keyword.</li>
 </ul>
-<p>Keep contributions consistent with existing code unless wide scale refactoring is performed. Follow this guideline to keep code style consistent among contributions and contributors:</p>
+<p>It's recommended to follow <a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md">C++ Core Guidelines</a> (except items that contradict Urho legacy, e.g. ES.107, Enum.3, Enum.5)</p>
+<p>Use this brief checklist to keep code style consistent among contributions and contributors:</p>
 <ul>
-<li>Use <code>override</code> wherever possible.</li>
 <li>Prefer inplace member initialization to initializer lists.</li>
-<li>Prefer <code>using</code> to <code>typedef</code> type declarations.</li>
 <li>Prefer range-based <code>for</code> to old style <code>for</code> unless index or iterator is used by itself.</li>
-<li>Avoid <code>enum</code> <code>class</code> to keep Urho API consistent. TODO: Perform API-breaking migration to <code>enum</code> <code>class</code>?</li>
-<li>Avoid <code>auto</code> unless it increases code readability.</li>
+<li>Avoid <code>auto</code> unless it increases code readability. More details <a href="https://clang.llvm.org/extra/clang-tidy/checks/modernize-use-auto.html">here</a> and <a href="https://google.github.io/styleguide/cppguide.html#auto">here</a>.<ul>
 <li>Use <code>auto</code> for verbose, unknown or redundant types. Example: <div class="fragment"><div class="line"><span class="keyword">auto</span> iter = variables.Find(name); <span class="comment">// verbose iterator type: HashMap&lt;String, Variant&gt;::Iterator</span></div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; variable : variables) { } <span class="comment">// verbose pair type: HashMap&lt;String, Variant&gt;::KeyValue</span></div>
 <div class="line"><span class="keyword">auto</span> model = MakeShared&lt;Model&gt;(context_); <span class="comment">// type is already mentioned in the expression: SharedPtr&lt;Model&gt;</span></div>
-</div><!-- fragment --> See <a href="https://clang.llvm.org/extra/clang-tidy/checks/modernize-use-auto.html">https://clang.llvm.org/extra/clang-tidy/checks/modernize-use-auto.html</a> and <a href="https://google.github.io/styleguide/cppguide.html#auto">https://google.github.io/styleguide/cppguide.html#auto</a></li>
+</div><!-- fragment --></li>
 <li>Use <code>auto</code> instead of manual type deduction via <code>decltype</code> and <code>typename</code>. </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
