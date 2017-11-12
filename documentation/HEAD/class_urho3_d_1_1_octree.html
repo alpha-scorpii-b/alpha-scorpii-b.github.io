@@ -66,10 +66,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octree.html#abf0cac6cada3c211170104b8563b2976">~Octree</a> () override</td></tr>
 <tr class="memdesc:abf0cac6cada3c211170104b8563b2976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:abf0cac6cada3c211170104b8563b2976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0996c2fbdb8be78d9aa97d260d95c2d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0996c2fbdb8be78d9aa97d260d95c2d3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octree.html#a0996c2fbdb8be78d9aa97d260d95c2d3">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src) override</td></tr>
-<tr class="memdesc:a0996c2fbdb8be78d9aa97d260d95c2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute change. <br/></td></tr>
-<tr class="separator:a0996c2fbdb8be78d9aa97d260d95c2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeec3d5df2bc2b32712fa416c7b6faa1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeec3d5df2bc2b32712fa416c7b6faa1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octree.html#abeec3d5df2bc2b32712fa416c7b6faa1">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest) override</td></tr>
 <tr class="memdesc:abeec3d5df2bc2b32712fa416c7b6faa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry. <br/></td></tr>
@@ -303,6 +299,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
@@ -678,6 +678,10 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octree.html#aa8eb76b6cb6ec002fd1687a001668222">HandleRenderUpdate</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:aa8eb76b6cb6ec002fd1687a001668222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle render update in case of headless execution. <br/></td></tr>
 <tr class="separator:aa8eb76b6cb6ec002fd1687a001668222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d1b8dd5d68768a3e401b2d605746be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d1b8dd5d68768a3e401b2d605746be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octree.html#ab5d1b8dd5d68768a3e401b2d605746be">UpdateOctreeSize</a> ()</td></tr>
+<tr class="memdesc:ab5d1b8dd5d68768a3e401b2d605746be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update octree size. <br/></td></tr>
+<tr class="separator:ab5d1b8dd5d68768a3e401b2d605746be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

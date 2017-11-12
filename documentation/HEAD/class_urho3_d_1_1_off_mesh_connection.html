@@ -65,10 +65,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a176b15a2620c03864f12c2a5d4d92269">~OffMeshConnection</a> () override</td></tr>
 <tr class="memdesc:a176b15a2620c03864f12c2a5d4d92269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a176b15a2620c03864f12c2a5d4d92269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a56807ed194b827a0bb53588e5b7ca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a56807ed194b827a0bb53588e5b7ca5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a6a56807ed194b827a0bb53588e5b7ca5">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src) override</td></tr>
-<tr class="memdesc:a6a56807ed194b827a0bb53588e5b7ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
-<tr class="separator:a6a56807ed194b827a0bb53588e5b7ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e86ebaa97f280cdcaa15c60eb18792d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e86ebaa97f280cdcaa15c60eb18792d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#a4e86ebaa97f280cdcaa15c60eb18792d">ApplyAttributes</a> () override</td></tr>
 <tr class="memdesc:a4e86ebaa97f280cdcaa15c60eb18792d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply attribute changes that can not be applied immediately. Called after scene load or a network update. <br/></td></tr>
@@ -302,6 +298,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
@@ -600,6 +600,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9b63c5872d13a6d85b32a5f0d3b63176"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b63c5872d13a6d85b32a5f0d3b63176"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_off_mesh_connection.html">OffMeshConnection</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
 <tr class="separator:a9b63c5872d13a6d85b32a5f0d3b63176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86a9611c1bfb1083cae41f37ae58825"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af86a9611c1bfb1083cae41f37ae58825"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#af86a9611c1bfb1083cae41f37ae58825">MarkEndPointDirty</a> ()</td></tr>
+<tr class="memdesc:af86a9611c1bfb1083cae41f37ae58825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark end point dirty. <br/></td></tr>
+<tr class="separator:af86a9611c1bfb1083cae41f37ae58825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

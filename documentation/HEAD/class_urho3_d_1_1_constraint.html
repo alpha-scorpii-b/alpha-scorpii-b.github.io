@@ -67,10 +67,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#aa376e28ef7543e0e986e5ce8ef8a2449">~Constraint</a> () override</td></tr>
 <tr class="memdesc:aa376e28ef7543e0e986e5ce8ef8a2449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:aa376e28ef7543e0e986e5ce8ef8a2449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4c15a85588d39d7678f61650c807bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace4c15a85588d39d7678f61650c807bf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#ace4c15a85588d39d7678f61650c807bf">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src) override</td></tr>
-<tr class="memdesc:ace4c15a85588d39d7678f61650c807bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
-<tr class="separator:ace4c15a85588d39d7678f61650c807bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9d37e56291499492b0dfdb90a6d841"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c9d37e56291499492b0dfdb90a6d841"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#a8c9d37e56291499492b0dfdb90a6d841">ApplyAttributes</a> () override</td></tr>
 <tr class="memdesc:a8c9d37e56291499492b0dfdb90a6d841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply attribute changes that can not be applied immediately. Called after scene load or a network update. <br/></td></tr>
@@ -388,6 +384,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
@@ -778,6 +778,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#a99f0746af3049d429da0c6c98dfcd8de">ApplyLimits</a> ()</td></tr>
 <tr class="memdesc:a99f0746af3049d429da0c6c98dfcd8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply high and low constraint limits. <br/></td></tr>
 <tr class="separator:a99f0746af3049d429da0c6c98dfcd8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3ac3cd83a6c73099c92c88c1ac367b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad3ac3cd83a6c73099c92c88c1ac367b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#aad3ac3cd83a6c73099c92c88c1ac367b">AdjustOtherBodyPosition</a> ()</td></tr>
+<tr class="memdesc:aad3ac3cd83a6c73099c92c88c1ac367b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust other body position. <br/></td></tr>
+<tr class="separator:aad3ac3cd83a6c73099c92c88c1ac367b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d006377d14ff057dab85a74d4b1b1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76d006377d14ff057dab85a74d4b1b1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#a76d006377d14ff057dab85a74d4b1b1b">MarkConstraintDirty</a> ()</td></tr>
+<tr class="memdesc:a76d006377d14ff057dab85a74d4b1b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark constraint dirty. <br/></td></tr>
+<tr class="separator:a76d006377d14ff057dab85a74d4b1b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89444c85e0f17376dc4e2ff52cd4497d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89444c85e0f17376dc4e2ff52cd4497d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_constraint.html#a89444c85e0f17376dc4e2ff52cd4497d">MarkFramesDirty</a> ()</td></tr>
+<tr class="memdesc:a89444c85e0f17376dc4e2ff52cd4497d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark frames dirty. <br/></td></tr>
+<tr class="separator:a89444c85e0f17376dc4e2ff52cd4497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

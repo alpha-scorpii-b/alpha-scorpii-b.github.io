@@ -66,10 +66,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a77bf82702c1c0e5728863fe46a74ebd2">~Zone</a> () override</td></tr>
 <tr class="memdesc:a77bf82702c1c0e5728863fe46a74ebd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a77bf82702c1c0e5728863fe46a74ebd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c530d56c47b586ab9347d4350d56ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9c530d56c47b586ab9347d4350d56ef"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#ab9c530d56c47b586ab9347d4350d56ef">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src) override</td></tr>
-<tr class="memdesc:ab9c530d56c47b586ab9347d4350d56ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. <br/></td></tr>
-<tr class="separator:ab9c530d56c47b586ab9347d4350d56ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e121e27dbd584f85c633bc995ee5ab2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e121e27dbd584f85c633bc995ee5ab2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a2e121e27dbd584f85c633bc995ee5ab2">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest) override</td></tr>
 <tr class="memdesc:a2e121e27dbd584f85c633bc995ee5ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry. <br/></td></tr>
@@ -624,6 +620,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
@@ -948,6 +948,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a59f02e5760339c323d4a61467b56f80e">ClearDrawablesZone</a> ()</td></tr>
 <tr class="memdesc:a59f02e5760339c323d4a61467b56f80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear zone reference from drawables inside the bounding box. <br/></td></tr>
 <tr class="separator:a59f02e5760339c323d4a61467b56f80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccacfcdafdec86719bfd084d6643e56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ccacfcdafdec86719bfd084d6643e56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_zone.html#a7ccacfcdafdec86719bfd084d6643e56">MarkNodeDirty</a> ()</td></tr>
+<tr class="memdesc:a7ccacfcdafdec86719bfd084d6643e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark node transform dirty. <br/></td></tr>
+<tr class="separator:a7ccacfcdafdec86719bfd084d6643e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_drawable.html">Urho3D::Drawable</a></td></tr>
 <tr class="memitem:aa7a00b82f8a07ba71b8a63561023a4c4 inherit pro_methods_class_urho3_d_1_1_drawable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a00b82f8a07ba71b8a63561023a4c4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_drawable.html#aa7a00b82f8a07ba71b8a63561023a4c4">OnNodeSet</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node) override</td></tr>

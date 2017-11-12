@@ -66,10 +66,6 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a89cad1717f06add03ff26a127ff85d08">~Light</a> () override</td></tr>
 <tr class="memdesc:a89cad1717f06add03ff26a127ff85d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a89cad1717f06add03ff26a127ff85d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe9ec4308d17d9e4cc12b578e0e1c466"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe9ec4308d17d9e4cc12b578e0e1c466"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#abe9ec4308d17d9e4cc12b578e0e1c466">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src) override</td></tr>
-<tr class="memdesc:abe9ec4308d17d9e4cc12b578e0e1c466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute change. <br/></td></tr>
-<tr class="separator:abe9ec4308d17d9e4cc12b578e0e1c466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9950193fda0f4651eaa25629cf21695e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9950193fda0f4651eaa25629cf21695e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a9950193fda0f4651eaa25629cf21695e">ProcessRayQuery</a> (const <a class="el" href="class_urho3_d_1_1_ray_octree_query.html">RayOctreeQuery</a> &amp;query, <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="struct_urho3_d_1_1_ray_query_result.html">RayQueryResult</a> &gt; &amp;results) override</td></tr>
 <tr class="memdesc:a9950193fda0f4651eaa25629cf21695e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process octree raycast. May be called from a worker thread. <br/></td></tr>
@@ -760,6 +756,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3785d97ef92557bab8239688af94ac5e">OnSetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;src)</td></tr>
+<tr class="memdesc:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute write access. Default implementation writes to the variable at offset, or invokes the set accessor. <br/></td></tr>
+<tr class="separator:a3785d97ef92557bab8239688af94ac5e inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938ff9d35938771da3843f3fa129ed21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a938ff9d35938771da3843f3fa129ed21">OnGetAttribute</a> (const <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &amp;attr, <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a938ff9d35938771da3843f3fa129ed21 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle attribute read access. Default implementation reads the variable at offset, or invokes the get accessor. <br/></td></tr>
@@ -1177,6 +1177,18 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a00d07c94ee3fd8eb7494612873988d8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00d07c94ee3fd8eb7494612873988d8c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_light.html">Light</a>, <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a>)</td></tr>
 <tr class="separator:a00d07c94ee3fd8eb7494612873988d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7bd151ba0cad6d81593885a8e89568"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf7bd151ba0cad6d81593885a8e89568"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#aaf7bd151ba0cad6d81593885a8e89568">ValidateShadowFocus</a> ()</td></tr>
+<tr class="memdesc:aaf7bd151ba0cad6d81593885a8e89568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate shadow focus. <br/></td></tr>
+<tr class="separator:aaf7bd151ba0cad6d81593885a8e89568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285fbe60e5d080afbe71abd332bdc7f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a285fbe60e5d080afbe71abd332bdc7f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a285fbe60e5d080afbe71abd332bdc7f6">ValidateShadowCascade</a> ()</td></tr>
+<tr class="memdesc:a285fbe60e5d080afbe71abd332bdc7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate shadow cascade. <br/></td></tr>
+<tr class="separator:a285fbe60e5d080afbe71abd332bdc7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2761ead843c3fd7b8ac6828e426bf52e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2761ead843c3fd7b8ac6828e426bf52e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_light.html#a2761ead843c3fd7b8ac6828e426bf52e">ValidateShadowBias</a> ()</td></tr>
+<tr class="memdesc:a2761ead843c3fd7b8ac6828e426bf52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate shadow bias. <br/></td></tr>
+<tr class="separator:a2761ead843c3fd7b8ac6828e426bf52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

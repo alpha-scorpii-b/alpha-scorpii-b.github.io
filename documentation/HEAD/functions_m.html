@@ -98,8 +98,14 @@ group: HEAD
 <li>MarkAnimationOrderDirty()
 : <a class="el" href="class_urho3_d_1_1_animated_model.html#a757174e4cdb2240a2095f50efed7176f">Urho3D::AnimatedModel</a>
 </li>
+<li>MarkBodyDirty()
+: <a class="el" href="class_urho3_d_1_1_rigid_body.html#a409e3939e65520bb723872f006ccf26f">Urho3D::RigidBody</a>
+</li>
 <li>MarkChainsNeedUpdating()
 : <a class="el" href="class_urho3_d_1_1_i_k_solver.html#a33218dc2749da6a94ea2d6e6df62f8c8">Urho3D::IKSolver</a>
+</li>
+<li>MarkConstraintDirty()
+: <a class="el" href="class_urho3_d_1_1_constraint.html#a76d006377d14ff057dab85a74d4b1b1b">Urho3D::Constraint</a>
 </li>
 <li>MarkDecalsDirty()
 : <a class="el" href="class_urho3_d_1_1_decal_set.html#a41027d16a7e3f21f99bf61cbfbb66770">Urho3D::DecalSet</a>
@@ -111,6 +117,9 @@ group: HEAD
 <li>markedDirty_
 : <a class="el" href="struct_urho3_d_1_1_node_replication_state.html#a47f8f01e554a39fcbfc4f7ff55848f69">Urho3D::NodeReplicationState</a>
 </li>
+<li>MarkEndPointDirty()
+: <a class="el" href="class_urho3_d_1_1_off_mesh_connection.html#af86a9611c1bfb1083cae41f37ae58825">Urho3D::OffMeshConnection</a>
+</li>
 <li>MarkFBODirty()
 : <a class="el" href="class_urho3_d_1_1_graphics.html#a81ed7ddfa8dfc2abd1ef043cfb825a6a">Urho3D::Graphics</a>
 </li>
@@ -120,17 +129,29 @@ group: HEAD
 <li>MarkForUpdate()
 : <a class="el" href="class_urho3_d_1_1_drawable.html#a87d6de3a8a7895228665ef79ad331510">Urho3D::Drawable</a>
 </li>
+<li>MarkFramesDirty()
+: <a class="el" href="class_urho3_d_1_1_constraint.html#a89444c85e0f17376dc4e2ff52cd4497d">Urho3D::Constraint</a>
+</li>
 <li>MarkInView()
 : <a class="el" href="class_urho3_d_1_1_drawable.html#a1f5358a58f4f0bfa38919dd14c04e240">Urho3D::Drawable</a>
 </li>
 <li>MarkMorphsDirty()
 : <a class="el" href="class_urho3_d_1_1_animated_model.html#af2e0f42d13cf7df4fef77bf6cbef879b">Urho3D::AnimatedModel</a>
 </li>
+<li>MarkNeighborsDirty()
+: <a class="el" href="class_urho3_d_1_1_terrain.html#af052a3642e935a6be60f9f7fb8a3a69c">Urho3D::Terrain</a>
+</li>
 <li>MarkNetworkUpdate()
 : <a class="el" href="class_urho3_d_1_1_component.html#aaf87acb64001774c62f0784254f9b291">Urho3D::Component</a>
 , <a class="el" href="class_urho3_d_1_1_node.html#a9c4864e96c873752bed6b1f178888fde">Urho3D::Node</a>
-, <a class="el" href="class_urho3_d_1_1_scene.html#a00b724dfff718639b9de12d71139499c">Urho3D::Scene</a>
+, <a class="el" href="class_urho3_d_1_1_scene.html#a7e6a52ecf14db5d598710f5ae05d2932">Urho3D::Scene</a>
 , <a class="el" href="class_urho3_d_1_1_serializable.html#a428c1b2e9b098b23684f7d6228e97177">Urho3D::Serializable</a>
+</li>
+<li>MarkNodeDirty()
+: <a class="el" href="class_urho3_d_1_1_zone.html#a7ccacfcdafdec86719bfd084d6643e56">Urho3D::Zone</a>
+</li>
+<li>MarkOtherBodyNodeIDDirty()
+: <a class="el" href="class_urho3_d_1_1_constraint2_d.html#ac17f901cf30072a451b639c539ec8f6e">Urho3D::Constraint2D</a>
 </li>
 <li>MarkPositionsDirty()
 : <a class="el" href="class_urho3_d_1_1_billboard_set.html#ab8531127f88c6a4ae7928e4f4d1cc229">Urho3D::BillboardSet</a>
@@ -142,6 +163,12 @@ group: HEAD
 </li>
 <li>MarkShadersLoaded()
 : <a class="el" href="class_urho3_d_1_1_pass.html#a2146de07dfe5adbdcd94be413d9e1363">Urho3D::Pass</a>
+</li>
+<li>MarkShapeDirty()
+: <a class="el" href="class_urho3_d_1_1_collision_shape.html#aa9eba09679f6d28012b9fe24cf0459ad">Urho3D::CollisionShape</a>
+</li>
+<li>MarkTerrainDirty()
+: <a class="el" href="class_urho3_d_1_1_terrain.html#ab3fe476781ca662287494e32502b5ccf">Urho3D::Terrain</a>
 </li>
 <li>MarkTextDirty()
 : <a class="el" href="class_urho3_d_1_1_text3_d.html#ad44e2ab1dccca583ae229245729a5d19">Urho3D::Text3D</a>
@@ -335,7 +362,7 @@ group: HEAD
 : <a class="el" href="struct_urho3_d_1_1_resource_group.html#afbec02d8dae6a6d4162ebd90a24ac029">Urho3D::ResourceGroup</a>
 </li>
 <li>MemoryBuffer()
-: <a class="el" href="class_urho3_d_1_1_memory_buffer.html#a3a8295c6e55e74c3edaafc32656faa79">Urho3D::MemoryBuffer</a>
+: <a class="el" href="class_urho3_d_1_1_memory_buffer.html#a1ad56cec6d3ec11ea13eabfd9e684acb">Urho3D::MemoryBuffer</a>
 </li>
 <li>memoryText_
 : <a class="el" href="class_urho3_d_1_1_debug_hud.html#a319857a68a37dc55fc1de107e0f914bf">Urho3D::DebugHud</a>
@@ -350,7 +377,7 @@ group: HEAD
 <li>Merge()
 : <a class="el" href="class_urho3_d_1_1_bounding_box.html#a4befcf3c67e94eb2f1924e1179b09bd2">Urho3D::BoundingBox</a>
 , <a class="el" href="class_urho3_d_1_1_int_rect.html#a284c2c7d90a1af7c02e8c49fd217a144">Urho3D::IntRect</a>
-, <a class="el" href="class_urho3_d_1_1_rect.html#a31dd9880cc9d0dda98cb34976bb3bd80">Urho3D::Rect</a>
+, <a class="el" href="class_urho3_d_1_1_rect.html#a650d5688686e366134cf43a83532aba8">Urho3D::Rect</a>
 , <a class="el" href="class_urho3_d_1_1_sphere.html#a7b5d4b9d99b9b4b158ca504a4e7a5b93">Urho3D::Sphere</a>
 , <a class="el" href="class_urho3_d_1_1_u_i_batch.html#a716bbd0567f4013b135ea1e132c79de7">Urho3D::UIBatch</a>
 </li>
