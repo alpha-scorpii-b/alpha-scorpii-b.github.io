@@ -1697,6 +1697,7 @@ Classes</h2>
 <li>void AddSphereSector(const <a class="el" href="class_urho3_d_1_1_sphere.html" title="Sphere in three-dimensional space. ">Sphere</a>&amp; sphere, const <a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector. ">Quaternion</a>&amp; rotation, float angle, bool drawLines, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddSkeleton(const <a class="el" href="class_urho3_d_1_1_skeleton.html" title="Hierarchical collection of bones. ">Skeleton</a>&amp; skeleton, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddTriangleMesh(const void* vertexData, unsigned vertexSize, const void* indexData, unsigned indexSize, unsigned indexStart, unsigned indexCount, const <a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations. ">Matrix3x4</a>&amp; transform, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
+<li>void AddTriangleMesh(const void* vertexData, unsigned vertexSize, unsigned vertexStart, const void* indexData, unsigned indexSize, unsigned indexStart, unsigned indexCount, const <a class="el" href="class_urho3_d_1_1_matrix3x4.html" title="3x4 matrix for scene node transform calculations. ">Matrix3x4</a>&amp; transform, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddCircle(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; center, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; normal, float radius, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, int steps = 64, bool depthTest = true)</li>
 <li>void AddCross(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; center, float size, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
 <li>void AddQuad(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; center, float width, float height, const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color, bool depthTest = true)</li>
@@ -2166,6 +2167,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetProgramDir() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetUserDocumentsDir() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetAppPreferencesDir(const String org, const String app) const</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetTemporaryDir() const</li>
 </ul>
 <p><a class="anchor" id="Class_FocusParameters"></a> </p>
 <h4><a class="el" href="struct_urho3_d_1_1_focus_parameters.html" title="Shadow map focusing parameters. ">FocusParameters</a></h4>
@@ -2288,6 +2290,7 @@ Classes</h2>
 <li>bool ToggleFullscreen()</li>
 <li>void Maximize()</li>
 <li>void Minimize()</li>
+<li>void Raise()</li>
 <li>void Close()</li>
 <li>bool TakeScreenShot(Image&amp; destImage)</li>
 <li>void BeginDumpShaders(const String fileName)</li>
@@ -2331,6 +2334,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetDesktopResolution(int monitor) const</li>
 <li>int GetMonitorCount() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetShaderCacheDir() const</li>
+<li>int GetCurrentMonitor() const</li>
+<li>bool GetMaximized() const</li>
+<li>void Raise() const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetDisplayDPI(int monitor = 0) const</li>
 <li>unsigned GetAlphaFormat()</li>
 <li>unsigned GetLuminanceFormat()</li>
 <li>unsigned GetLuminanceAlphaFormat()</li>
@@ -2561,9 +2568,11 @@ Classes</h2>
 <li>CompressedFormat GetCompressedFormat() const</li>
 <li>unsigned GetNumCompressedLevels() const</li>
 <li>Image* GetSubimage(const IntRect&amp; rect) const</li>
+<li>bool SetSubimage(const Image* image, const IntRect rect)</li>
 <li>bool IsCubemap() const</li>
 <li>bool IsArray() const</li>
 <li>bool IsSRGB() const</li>
+<li>bool HasAlphaChannel() const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -3952,6 +3961,8 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string. ">StringHash</a> GetType() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetTypeName() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetCategory() const</li>
+<li>void SetBlockEvents(bool block)</li>
+<li>bool GetBlockEvents() const</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> eventName, VariantMap* eventData = 0)</li>
 <li>bool HasSubscribedToEvent(const String eventName) const</li>
 <li>bool HasSubscribedToEvent(Object* sender, const String eventName) const</li>
@@ -4785,6 +4796,8 @@ Classes</h2>
 <li>bool Load(XMLFile* file)</li>
 <li>bool Append(XMLFile* file)</li>
 <li>void SetEnabled(const String tag, bool active)</li>
+<li>bool IsEnabled(const String tag) const</li>
+<li>bool IsAdded(const String tag) const</li>
 <li>void ToggleEnabled(const String tag)</li>
 <li>void SetRenderTarget(unsigned index, const RenderTargetInfo&amp; info)</li>
 <li>void AddRenderTarget(const RenderTargetInfo&amp; info)</li>
@@ -5994,7 +6007,7 @@ Classes</h2>
 <li>unsigned Value() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ToString() const</li>
 <li>unsigned ToHash() const</li>
-<li>unsigned Calculate(const char* str)</li>
+<li>unsigned Calculate(const char* str, unsigned hash = 0)</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -6545,6 +6558,7 @@ Classes</h2>
 <li>float GetTimeStep() const</li>
 <li>unsigned GetTimerPeriod() const</li>
 <li>float GetElapsedTime()</li>
+<li>float GetFramesPerSecond() const</li>
 <li>unsigned GetSystemTime()</li>
 <li>unsigned GetTimeSinceEpoch()</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetTimeStamp()</li>
@@ -7432,12 +7446,14 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a></h4>
 <p>Methods:</p>
 <ul>
+<li>bool AppendChild(XMLElement element, bool asCopy)</li>
 <li><a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a> CreateChild(const String name)</li>
 <li><a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a> GetOrCreateChild(const String name)</li>
 <li>bool RemoveChild(const XMLElement&amp; element)</li>
 <li>bool RemoveChild(const String name)</li>
 <li>bool RemoveChildren(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> name = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string. ">String::EMPTY</a>)</li>
 <li>bool RemoveAttribute(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> name = <a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e" title="Empty string. ">String::EMPTY</a>)</li>
+<li>bool Remove()</li>
 <li>bool SetValue(const String value)</li>
 <li>bool SetAttribute(const String name, const String value)</li>
 <li>bool SetAttribute(const String value)</li>
@@ -8487,19 +8503,60 @@ Global constants</h2>
 <li>int KEY_8</li>
 <li>int KEY_9</li>
 <li>int KEY_A</li>
+<li>int KEY_AC_BACK</li>
+<li>int KEY_AC_BOOKMARKS</li>
+<li>int KEY_AC_FORWARD</li>
+<li>int KEY_AC_HOME</li>
+<li>int KEY_AC_REFRESH</li>
+<li>int KEY_AC_SEARCH</li>
+<li>int KEY_AC_STOP</li>
+<li>int KEY_AGAIN</li>
 <li>int KEY_ALT</li>
+<li>int KEY_ALTERASE</li>
+<li>int KEY_AMPERSAND</li>
 <li>int KEY_APPLICATION</li>
+<li>int KEY_ASTERISK</li>
+<li>int KEY_AT</li>
+<li>int KEY_AUDIOMUTE</li>
+<li>int KEY_AUDIONEXT</li>
+<li>int KEY_AUDIOPLAY</li>
+<li>int KEY_AUDIOPREV</li>
+<li>int KEY_AUDIOSTOP</li>
 <li>int KEY_B</li>
+<li>int KEY_BACKQUOTE</li>
+<li>int KEY_BACKSLASH</li>
 <li>int KEY_BACKSPACE</li>
+<li>int KEY_BRIGHTNESSDOWN</li>
+<li>int KEY_BRIGHTNESSUP</li>
 <li>int KEY_C</li>
+<li>int KEY_CALCULATOR</li>
+<li>int KEY_CANCEL</li>
 <li>int KEY_CAPSLOCK</li>
+<li>int KEY_CARET</li>
+<li>int KEY_CLEAR</li>
+<li>int KEY_CLEARAGAIN</li>
+<li>int KEY_COLON</li>
+<li>int KEY_COMMA</li>
+<li>int KEY_COMPUTER</li>
+<li>int KEY_COPY</li>
+<li>int KEY_CRSEL</li>
 <li>int KEY_CTRL</li>
+<li>int KEY_CURRENCYSUBUNIT</li>
+<li>int KEY_CURRENCYUNIT</li>
+<li>int KEY_CUT</li>
 <li>int KEY_D</li>
+<li>int KEY_DECIMALSEPARATOR</li>
 <li>int KEY_DELETE</li>
+<li>int KEY_DISPLAYSWITCH</li>
+<li>int KEY_DOLLAR</li>
 <li>int KEY_DOWN</li>
 <li>int KEY_E</li>
+<li>int KEY_EJECT</li>
 <li>int KEY_END</li>
+<li>int KEY_EQUALS</li>
 <li>int KEY_ESCAPE</li>
+<li>int KEY_EXCLAIM</li>
+<li>int KEY_EXSEL</li>
 <li>int KEY_F</li>
 <li>int KEY_F1</li>
 <li>int KEY_F10</li>
@@ -8525,15 +8582,24 @@ Global constants</h2>
 <li>int KEY_F7</li>
 <li>int KEY_F8</li>
 <li>int KEY_F9</li>
+<li>int KEY_FIND</li>
 <li>int KEY_G</li>
+<li>int KEY_GREATER</li>
 <li>int KEY_GUI</li>
 <li>int KEY_H</li>
+<li>int KEY_HASH</li>
+<li>int KEY_HELP</li>
 <li>int KEY_HOME</li>
 <li>int KEY_I</li>
 <li>int KEY_INSERT</li>
 <li>int KEY_J</li>
 <li>int KEY_K</li>
+<li>int KEY_KBDILLUMDOWN</li>
+<li>int KEY_KBDILLUMTOGGLE</li>
+<li>int KEY_KBDILLUMUP</li>
 <li>int KEY_KP_0</li>
+<li>int KEY_KP_00</li>
+<li>int KEY_KP_000</li>
 <li>int KEY_KP_1</li>
 <li>int KEY_KP_2</li>
 <li>int KEY_KP_3</li>
@@ -8543,28 +8609,91 @@ Global constants</h2>
 <li>int KEY_KP_7</li>
 <li>int KEY_KP_8</li>
 <li>int KEY_KP_9</li>
+<li>int KEY_KP_A</li>
+<li>int KEY_KP_AMPERSAND</li>
+<li>int KEY_KP_AT</li>
+<li>int KEY_KP_B</li>
+<li>int KEY_KP_BACKSPACE</li>
+<li>int KEY_KP_BINARY</li>
+<li>int KEY_KP_C</li>
+<li>int KEY_KP_CLEAR</li>
+<li>int KEY_KP_CLEARENTRY</li>
+<li>int KEY_KP_COLON</li>
+<li>int KEY_KP_COMMA</li>
+<li>int KEY_KP_D</li>
+<li>int KEY_KP_DBLAMPERSAND</li>
+<li>int KEY_KP_DBLVERTICALBAR</li>
+<li>int KEY_KP_DECIMAL</li>
 <li>int KEY_KP_DIVIDE</li>
+<li>int KEY_KP_E</li>
 <li>int KEY_KP_ENTER</li>
+<li>int KEY_KP_EQUALS</li>
+<li>int KEY_KP_EQUALSAS400</li>
+<li>int KEY_KP_EXCLAM</li>
+<li>int KEY_KP_F</li>
+<li>int KEY_KP_GREATER</li>
+<li>int KEY_KP_HASH</li>
+<li>int KEY_KP_HEXADECIMAL</li>
+<li>int KEY_KP_LEFTBRACE</li>
+<li>int KEY_KP_LEFTPAREN</li>
+<li>int KEY_KP_LESS</li>
+<li>int KEY_KP_MEMADD</li>
+<li>int KEY_KP_MEMCLEAR</li>
+<li>int KEY_KP_MEMDIVIDE</li>
+<li>int KEY_KP_MEMMULTIPLY</li>
+<li>int KEY_KP_MEMRECALL</li>
+<li>int KEY_KP_MEMSTORE</li>
+<li>int KEY_KP_MEMSUBTRACT</li>
 <li>int KEY_KP_MINUS</li>
 <li>int KEY_KP_MULTIPLY</li>
+<li>int KEY_KP_OCTAL</li>
+<li>int KEY_KP_PERCENT</li>
 <li>int KEY_KP_PERIOD</li>
 <li>int KEY_KP_PLUS</li>
+<li>int KEY_KP_PLUSMINUS</li>
+<li>int KEY_KP_POWER</li>
+<li>int KEY_KP_RIGHTBRACE</li>
+<li>int KEY_KP_RIGHTPAREN</li>
+<li>int KEY_KP_SPACE</li>
+<li>int KEY_KP_TAB</li>
+<li>int KEY_KP_VERTICALBAR</li>
+<li>int KEY_KP_XOR</li>
 <li>int KEY_L</li>
 <li>int KEY_LALT</li>
 <li>int KEY_LCTRL</li>
 <li>int KEY_LEFT</li>
+<li>int KEY_LEFTBRACKET</li>
+<li>int KEY_LEFTPAREN</li>
+<li>int KEY_LESS</li>
 <li>int KEY_LGUI</li>
 <li>int KEY_LSHIFT</li>
 <li>int KEY_M</li>
+<li>int KEY_MAIL</li>
+<li>int KEY_MEDIASELECT</li>
+<li>int KEY_MENU</li>
+<li>int KEY_MINUS</li>
+<li>int KEY_MODE</li>
+<li>int KEY_MUTE</li>
 <li>int KEY_N</li>
 <li>int KEY_NUMLOCKCLEAR</li>
 <li>int KEY_O</li>
+<li>int KEY_OPER</li>
+<li>int KEY_OUT</li>
 <li>int KEY_P</li>
 <li>int KEY_PAGEDOWN</li>
 <li>int KEY_PAGEUP</li>
+<li>int KEY_PASTE</li>
 <li>int KEY_PAUSE</li>
+<li>int KEY_PERCENT</li>
+<li>int KEY_PERIOD</li>
+<li>int KEY_PLUS</li>
+<li>int KEY_POWER</li>
 <li>int KEY_PRINTSCREEN</li>
+<li>int KEY_PRIOR</li>
 <li>int KEY_Q</li>
+<li>int KEY_QUESTION</li>
+<li>int KEY_QUOTE</li>
+<li>int KEY_QUOTEDBL</li>
 <li>int KEY_R</li>
 <li>int KEY_RALT</li>
 <li>int KEY_RCTRL</li>
@@ -8572,19 +8701,33 @@ Global constants</h2>
 <li>int KEY_RETURN2</li>
 <li>int KEY_RGUI</li>
 <li>int KEY_RIGHT</li>
+<li>int KEY_RIGHTBRACKET</li>
+<li>int KEY_RIGHTPAREN</li>
 <li>int KEY_RSHIFT</li>
 <li>int KEY_S</li>
 <li>int KEY_SCROLLLOCK</li>
 <li>int KEY_SELECT</li>
+<li>int KEY_SEMICOLON</li>
+<li>int KEY_SEPARATOR</li>
 <li>int KEY_SHIFT</li>
+<li>int KEY_SLASH</li>
+<li>int KEY_SLEEP</li>
 <li>int KEY_SPACE</li>
+<li>int KEY_STOP</li>
+<li>int KEY_SYSREQ</li>
 <li>int KEY_T</li>
 <li>int KEY_TAB</li>
+<li>int KEY_THOUSANDSSEPARATOR</li>
 <li>int KEY_U</li>
+<li>int KEY_UNDERSCORE</li>
+<li>int KEY_UNDO</li>
 <li>int KEY_UNKNOWN</li>
 <li>int KEY_UP</li>
 <li>int KEY_V</li>
+<li>int KEY_VOLUMEDOWN</li>
+<li>int KEY_VOLUMEUP</li>
 <li>int KEY_W</li>
+<li>int KEY_WWW</li>
 <li>int KEY_X</li>
 <li>int KEY_Y</li>
 <li>int KEY_Z</li>

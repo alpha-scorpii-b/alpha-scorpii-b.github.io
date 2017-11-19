@@ -4372,6 +4372,7 @@ Classes</h2>
 <li>bool executeConsoleCommands</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> programDir // readonly</li>
 <li>int refs // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> temporaryDir // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string. ">StringHash</a> type // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> typeName // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> userDocumentsDir // readonly</li>
@@ -4487,6 +4488,7 @@ Classes</h2>
 <li>void Minimize()</li>
 <li>void PrecacheShaders(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>void PrecacheShaders(VectorBuffer&amp;)</li>
+<li>void Raise()</li>
 <li>void SendEvent(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;, VariantMap&amp; = VariantMap ( ))</li>
 <li>bool SetMode(int, int)</li>
 <li>bool SetMode(int, int, bool, bool, bool, bool, bool, bool, int, int, int)</li>
@@ -4499,9 +4501,11 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> apiName // readonly</li>
 <li>bool borderless // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> category // readonly</li>
+<li>int currentMonitor // readonly</li>
 <li>bool deferredSupport // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a>[] desktopResolution // readonly</li>
 <li>bool deviceLost // readonly</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>[] displayDPI // readonly</li>
 <li>bool dither</li>
 <li>bool flushGPU</li>
 <li>bool fullscreen // readonly</li>
@@ -4510,6 +4514,7 @@ Classes</h2>
 <li>bool initialized // readonly</li>
 <li>bool instancingSupport // readonly</li>
 <li>bool lightPrepassSupport // readonly</li>
+<li>bool maximized // readonly</li>
 <li>int monitorCount // readonly</li>
 <li>int multiSample // readonly</li>
 <li>int[]@ multiSampleLevels // readonly</li>
@@ -4775,6 +4780,7 @@ Classes</h2>
 <li>void SetPixelInt(int, int, uint)</li>
 <li>bool SetSize(int, int, int, uint)</li>
 <li>bool SetSize(int, int, uint)</li>
+<li>bool SetSubimage(const <a class="el" href="class_urho3_d_1_1_image.html" title="Image resource. ">Image</a>@, const <a class="el" href="class_urho3_d_1_1_int_rect.html" title="Two-dimensional bounding rectangle with integer values. ">IntRect</a>&amp;) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -4785,6 +4791,7 @@ Classes</h2>
 <li>CompressedFormat compressedFormat // readonly</li>
 <li>bool cubemap // readonly</li>
 <li>int depth // readonly</li>
+<li>bool hasAlphaChannel // readonly</li>
 <li>int height // readonly</li>
 <li>uint memoryUse // readonly</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> name</li>
@@ -7674,7 +7681,9 @@ Classes</h2>
 </ul>
 <p>Properties:</p>
 <ul>
+<li>bool[] added // readonly</li>
 <li><a class="el" href="struct_urho3_d_1_1_render_path_command.html" title="Rendering path command. ">RenderPathCommand</a>[] commands</li>
+<li>bool[] enabled // readonly</li>
 <li>uint numCommands // readonly</li>
 <li>uint numRenderTargets // readonly</li>
 <li>int refs // readonly</li>
@@ -11209,6 +11218,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> category // readonly</li>
 <li>float elapsedTime // readonly</li>
 <li>uint frameNumber // readonly</li>
+<li>float framesPerSecond // readonly</li>
 <li>int refs // readonly</li>
 <li>uint systemTime // readonly</li>
 <li>uint timeSinceEpoch // readonly</li>
@@ -12474,6 +12484,7 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a></h4>
 <p>Methods:</p>
 <ul>
+<li>bool AppendChild(XMLElement, bool)</li>
 <li><a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a> CreateChild(const String&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetAttribute(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ( )) const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetAttributeLower(const String&amp;) const</li>
@@ -12510,6 +12521,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types. ">Variant</a> GetVectorVariant(const String&amp;) const</li>
 <li>bool HasAttribute(const String&amp;) const</li>
 <li>bool HasChild(const String&amp;) const</li>
+<li>bool Remove()</li>
 <li>bool RemoveAttribute(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ( ))</li>
 <li>bool RemoveChild(const String&amp;)</li>
 <li>bool RemoveChild(const XMLElement&amp;)</li>
@@ -13524,19 +13536,60 @@ Global constants</h2>
 <li>int KEY_8</li>
 <li>int KEY_9</li>
 <li>int KEY_A</li>
+<li>int KEY_AC_BACK</li>
+<li>int KEY_AC_BOOKMARKS</li>
+<li>int KEY_AC_FORWARD</li>
+<li>int KEY_AC_HOME</li>
+<li>int KEY_AC_REFRESH</li>
+<li>int KEY_AC_SEARCH</li>
+<li>int KEY_AC_STOP</li>
+<li>int KEY_AGAIN</li>
 <li>int KEY_ALT</li>
+<li>int KEY_ALTERASE</li>
+<li>int KEY_AMPERSAND</li>
 <li>int KEY_APPLICATION</li>
+<li>int KEY_ASTERISK</li>
+<li>int KEY_AT</li>
+<li>int KEY_AUDIOMUTE</li>
+<li>int KEY_AUDIONEXT</li>
+<li>int KEY_AUDIOPLAY</li>
+<li>int KEY_AUDIOPREV</li>
+<li>int KEY_AUDIOSTOP</li>
 <li>int KEY_B</li>
+<li>int KEY_BACKQUOTE</li>
+<li>int KEY_BACKSLASH</li>
 <li>int KEY_BACKSPACE</li>
+<li>int KEY_BRIGHTNESSDOWN</li>
+<li>int KEY_BRIGHTNESSUP</li>
 <li>int KEY_C</li>
+<li>int KEY_CALCULATOR</li>
+<li>int KEY_CANCEL</li>
 <li>int KEY_CAPSLOCK</li>
+<li>int KEY_CARET</li>
+<li>int KEY_CLEAR</li>
+<li>int KEY_CLEARAGAIN</li>
+<li>int KEY_COLON</li>
+<li>int KEY_COMMA</li>
+<li>int KEY_COMPUTER</li>
+<li>int KEY_COPY</li>
+<li>int KEY_CRSEL</li>
 <li>int KEY_CTRL</li>
+<li>int KEY_CURRENCYSUBUNIT</li>
+<li>int KEY_CURRENCYUNIT</li>
+<li>int KEY_CUT</li>
 <li>int KEY_D</li>
+<li>int KEY_DECIMALSEPARATOR</li>
 <li>int KEY_DELETE</li>
+<li>int KEY_DISPLAYSWITCH</li>
+<li>int KEY_DOLLAR</li>
 <li>int KEY_DOWN</li>
 <li>int KEY_E</li>
+<li>int KEY_EJECT</li>
 <li>int KEY_END</li>
+<li>int KEY_EQUALS</li>
 <li>int KEY_ESCAPE</li>
+<li>int KEY_EXCLAIM</li>
+<li>int KEY_EXSEL</li>
 <li>int KEY_F</li>
 <li>int KEY_F1</li>
 <li>int KEY_F10</li>
@@ -13562,15 +13615,24 @@ Global constants</h2>
 <li>int KEY_F7</li>
 <li>int KEY_F8</li>
 <li>int KEY_F9</li>
+<li>int KEY_FIND</li>
 <li>int KEY_G</li>
+<li>int KEY_GREATER</li>
 <li>int KEY_GUI</li>
 <li>int KEY_H</li>
+<li>int KEY_HASH</li>
+<li>int KEY_HELP</li>
 <li>int KEY_HOME</li>
 <li>int KEY_I</li>
 <li>int KEY_INSERT</li>
 <li>int KEY_J</li>
 <li>int KEY_K</li>
+<li>int KEY_KBDILLUMDOWN</li>
+<li>int KEY_KBDILLUMTOGGLE</li>
+<li>int KEY_KBDILLUMUP</li>
 <li>int KEY_KP_0</li>
+<li>int KEY_KP_00</li>
+<li>int KEY_KP_000</li>
 <li>int KEY_KP_1</li>
 <li>int KEY_KP_2</li>
 <li>int KEY_KP_3</li>
@@ -13580,28 +13642,91 @@ Global constants</h2>
 <li>int KEY_KP_7</li>
 <li>int KEY_KP_8</li>
 <li>int KEY_KP_9</li>
+<li>int KEY_KP_A</li>
+<li>int KEY_KP_AMPERSAND</li>
+<li>int KEY_KP_AT</li>
+<li>int KEY_KP_B</li>
+<li>int KEY_KP_BACKSPACE</li>
+<li>int KEY_KP_BINARY</li>
+<li>int KEY_KP_C</li>
+<li>int KEY_KP_CLEAR</li>
+<li>int KEY_KP_CLEARENTRY</li>
+<li>int KEY_KP_COLON</li>
+<li>int KEY_KP_COMMA</li>
+<li>int KEY_KP_D</li>
+<li>int KEY_KP_DBLAMPERSAND</li>
+<li>int KEY_KP_DBLVERTICALBAR</li>
+<li>int KEY_KP_DECIMAL</li>
 <li>int KEY_KP_DIVIDE</li>
+<li>int KEY_KP_E</li>
 <li>int KEY_KP_ENTER</li>
+<li>int KEY_KP_EQUALS</li>
+<li>int KEY_KP_EQUALSAS400</li>
+<li>int KEY_KP_EXCLAM</li>
+<li>int KEY_KP_F</li>
+<li>int KEY_KP_GREATER</li>
+<li>int KEY_KP_HASH</li>
+<li>int KEY_KP_HEXADECIMAL</li>
+<li>int KEY_KP_LEFTBRACE</li>
+<li>int KEY_KP_LEFTPAREN</li>
+<li>int KEY_KP_LESS</li>
+<li>int KEY_KP_MEMADD</li>
+<li>int KEY_KP_MEMCLEAR</li>
+<li>int KEY_KP_MEMDIVIDE</li>
+<li>int KEY_KP_MEMMULTIPLY</li>
+<li>int KEY_KP_MEMRECALL</li>
+<li>int KEY_KP_MEMSTORE</li>
+<li>int KEY_KP_MEMSUBTRACT</li>
 <li>int KEY_KP_MINUS</li>
 <li>int KEY_KP_MULTIPLY</li>
+<li>int KEY_KP_OCTAL</li>
+<li>int KEY_KP_PERCENT</li>
 <li>int KEY_KP_PERIOD</li>
 <li>int KEY_KP_PLUS</li>
+<li>int KEY_KP_PLUSMINUS</li>
+<li>int KEY_KP_POWER</li>
+<li>int KEY_KP_RIGHTBRACE</li>
+<li>int KEY_KP_RIGHTPAREN</li>
+<li>int KEY_KP_SPACE</li>
+<li>int KEY_KP_TAB</li>
+<li>int KEY_KP_VERTICALBAR</li>
+<li>int KEY_KP_XOR</li>
 <li>int KEY_L</li>
 <li>int KEY_LALT</li>
 <li>int KEY_LCTRL</li>
 <li>int KEY_LEFT</li>
+<li>int KEY_LEFTBRACKET</li>
+<li>int KEY_LEFTPAREN</li>
+<li>int KEY_LESS</li>
 <li>int KEY_LGUI</li>
 <li>int KEY_LSHIFT</li>
 <li>int KEY_M</li>
+<li>int KEY_MAIL</li>
+<li>int KEY_MEDIASELECT</li>
+<li>int KEY_MENU</li>
+<li>int KEY_MINUS</li>
+<li>int KEY_MODE</li>
+<li>int KEY_MUTE</li>
 <li>int KEY_N</li>
 <li>int KEY_NUMLOCKCLEAR</li>
 <li>int KEY_O</li>
+<li>int KEY_OPER</li>
+<li>int KEY_OUT</li>
 <li>int KEY_P</li>
 <li>int KEY_PAGEDOWN</li>
 <li>int KEY_PAGEUP</li>
+<li>int KEY_PASTE</li>
 <li>int KEY_PAUSE</li>
+<li>int KEY_PERCENT</li>
+<li>int KEY_PERIOD</li>
+<li>int KEY_PLUS</li>
+<li>int KEY_POWER</li>
 <li>int KEY_PRINTSCREEN</li>
+<li>int KEY_PRIOR</li>
 <li>int KEY_Q</li>
+<li>int KEY_QUESTION</li>
+<li>int KEY_QUOTE</li>
+<li>int KEY_QUOTEDBL</li>
 <li>int KEY_R</li>
 <li>int KEY_RALT</li>
 <li>int KEY_RCTRL</li>
@@ -13609,19 +13734,33 @@ Global constants</h2>
 <li>int KEY_RETURN2</li>
 <li>int KEY_RGUI</li>
 <li>int KEY_RIGHT</li>
+<li>int KEY_RIGHTBRACKET</li>
+<li>int KEY_RIGHTPAREN</li>
 <li>int KEY_RSHIFT</li>
 <li>int KEY_S</li>
 <li>int KEY_SCROLLLOCK</li>
 <li>int KEY_SELECT</li>
+<li>int KEY_SEMICOLON</li>
+<li>int KEY_SEPARATOR</li>
 <li>int KEY_SHIFT</li>
+<li>int KEY_SLASH</li>
+<li>int KEY_SLEEP</li>
 <li>int KEY_SPACE</li>
+<li>int KEY_STOP</li>
+<li>int KEY_SYSREQ</li>
 <li>int KEY_T</li>
 <li>int KEY_TAB</li>
+<li>int KEY_THOUSANDSSEPARATOR</li>
 <li>int KEY_U</li>
+<li>int KEY_UNDERSCORE</li>
+<li>int KEY_UNDO</li>
 <li>int KEY_UNKNOWN</li>
 <li>int KEY_UP</li>
 <li>int KEY_V</li>
+<li>int KEY_VOLUMEDOWN</li>
+<li>int KEY_VOLUMEUP</li>
 <li>int KEY_W</li>
+<li>int KEY_WWW</li>
 <li>int KEY_X</li>
 <li>int KEY_Y</li>
 <li>int KEY_Z</li>

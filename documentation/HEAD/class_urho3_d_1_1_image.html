@@ -249,6 +249,14 @@ SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a6dd41c6d09d08071499e039d965ae566">PrecalculateLevels</a> ()</td></tr>
 <tr class="memdesc:a6dd41c6d09d08071499e039d965ae566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precalculate the mip levels. Used by asynchronous texture loading. <br/></td></tr>
 <tr class="separator:a6dd41c6d09d08071499e039d965ae566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deaa5b293b060a3abe2ddcffcda2575"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8deaa5b293b060a3abe2ddcffcda2575"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a8deaa5b293b060a3abe2ddcffcda2575">HasAlphaChannel</a> () const </td></tr>
+<tr class="memdesc:a8deaa5b293b060a3abe2ddcffcda2575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this texture has an alpha channel. <br/></td></tr>
+<tr class="separator:a8deaa5b293b060a3abe2ddcffcda2575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a9d296c44006d85b0dd65f97515ebb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46a9d296c44006d85b0dd65f97515ebb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a46a9d296c44006d85b0dd65f97515ebb">SetSubimage</a> (const <a class="el" href="class_urho3_d_1_1_image.html">Image</a> *image, const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a46a9d296c44006d85b0dd65f97515ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy contents of the image into the defined rect, scaling if necessary. This image should already be large enough to include the rect. Compressed and 3D images are not supported. <br/></td></tr>
+<tr class="separator:a46a9d296c44006d85b0dd65f97515ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce11f230d20cc7a23f58b6c85346cb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ce11f230d20cc7a23f58b6c85346cb2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_image.html#a5ce11f230d20cc7a23f58b6c85346cb2">CleanupLevels</a> ()</td></tr>
 <tr class="memdesc:a5ce11f230d20cc7a23f58b6c85346cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the mip levels. <br/></td></tr>
@@ -454,6 +462,14 @@ template&lt;class T &gt; </td></tr>
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#af91bcd494ffe005fbf0f8238ba82121e">GetCategory</a> () const </td></tr>
 <tr class="memdesc:af91bcd494ffe005fbf0f8238ba82121e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br/></td></tr>
 <tr class="separator:af91bcd494ffe005fbf0f8238ba82121e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd72cab3f338ef6ca76da511bcd941dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#abd72cab3f338ef6ca76da511bcd941dc">SetBlockEvents</a> (bool block)</td></tr>
+<tr class="memdesc:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block object from sending and receiving events. <br/></td></tr>
+<tr class="separator:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28561ebe8370acd9608bb520c7ac82fa inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28561ebe8370acd9608bb520c7ac82fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a28561ebe8370acd9608bb520c7ac82fa">GetBlockEvents</a> () const </td></tr>
+<tr class="memdesc:a28561ebe8370acd9608bb520c7ac82fa inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return sending and receiving events blocking status. <br/></td></tr>
+<tr class="separator:a28561ebe8370acd9608bb520c7ac82fa inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#aad6e2ac9e97ca71b28c47248a9aad9b9">RefCounted</a> ()</td></tr>
