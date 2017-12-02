@@ -33,7 +33,6 @@ group: HEAD
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_urho3_d_1_1_u_i_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::UIComponent Class Reference</div>  </div>
@@ -74,6 +73,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ab6343a8e426d5544cbf2e45be9338a45">GetTexture</a> () const </td></tr>
 <tr class="memdesc:ab6343a8e426d5544cbf2e45be9338a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return texture which will be used for rendering <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> to. <br/></td></tr>
 <tr class="separator:ab6343a8e426d5544cbf2e45be9338a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fbc64c5079690cf264aad7832c8a36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72fbc64c5079690cf264aad7832c8a36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a72fbc64c5079690cf264aad7832c8a36">SetViewportIndex</a> (unsigned int index)</td></tr>
+<tr class="memdesc:a72fbc64c5079690cf264aad7832c8a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set index of viewport to be used for screen coordinate translation. <br/></td></tr>
+<tr class="separator:a72fbc64c5079690cf264aad7832c8a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a8fcb1334e846b73e7825777e0ffbd2d5 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcb1334e846b73e7825777e0ffbd2d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a8fcb1334e846b73e7825777e0ffbd2d5">Component</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
@@ -586,16 +589,12 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aada4fb6355ce0d6d6a21e8db02fa214f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aada4fb6355ce0d6d6a21e8db02fa214f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#aada4fb6355ce0d6d6a21e8db02fa214f">OnNodeSet</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node) override</td></tr>
-<tr class="memdesc:aada4fb6355ce0d6d6a21e8db02fa214f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle scene node being assigned at creation. <br/></td></tr>
+<tr class="memdesc:aada4fb6355ce0d6d6a21e8db02fa214f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle component being added to <a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a> or removed from it. <br/></td></tr>
 <tr class="separator:aada4fb6355ce0d6d6a21e8db02fa214f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4e85609dba417839730d35501c75c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f4e85609dba417839730d35501c75c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0f4e85609dba417839730d35501c75c3">OnElementResized</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;args)</td></tr>
 <tr class="memdesc:a0f4e85609dba417839730d35501c75c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle resizing of element. Setting size of element will automatically resize texture. <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a> size matches size of texture. <br/></td></tr>
 <tr class="separator:a0f4e85609dba417839730d35501c75c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf3a3572bb16aeea59310deb715216f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3a3572bb16aeea59310deb715216f3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#adf3a3572bb16aeea59310deb715216f3">ScreenToUIPosition</a> (<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> screenPos, <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;result)</td></tr>
-<tr class="memdesc:adf3a3572bb16aeea59310deb715216f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert screen position to position on <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>. <br/></td></tr>
-<tr class="separator:adf3a3572bb16aeea59310deb715216f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:ae124af54fe3f62a04f68c8e0c5e7ab52 inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae124af54fe3f62a04f68c8e0c5e7ab52"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ae124af54fe3f62a04f68c8e0c5e7ab52">OnAttributeAnimationAdded</a> () override</td></tr>
@@ -687,40 +686,16 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a0425d6706b150dc97ac4b93255582697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0648bda84d19cdc0ed30b35832205daf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0648bda84d19cdc0ed30b35832205daf"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_static_model.html">StaticModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0648bda84d19cdc0ed30b35832205daf">model_</a></td></tr>
-<tr class="memdesc:a0648bda84d19cdc0ed30b35832205daf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a> that texture will be applied to. <br/></td></tr>
+<tr class="memdesc:a0648bda84d19cdc0ed30b35832205daf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a> created by this component. If node already has <a class="el" href="class_urho3_d_1_1_static_model.html" title="Static model component. ">StaticModel</a> then this will be null. <br/></td></tr>
 <tr class="separator:a0648bda84d19cdc0ed30b35832205daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27abdca6576b8cfe09ecd32b304d3b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab27abdca6576b8cfe09ecd32b304d3b5"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ab27abdca6576b8cfe09ecd32b304d3b5">rootElement_</a></td></tr>
-<tr class="memdesc:ab27abdca6576b8cfe09ecd32b304d3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a> to be rendered into texture. <br/></td></tr>
-<tr class="separator:ab27abdca6576b8cfe09ecd32b304d3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad614dfe748c000a1e115e78803a17a42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad614dfe748c000a1e115e78803a17a42"></a>
-<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_batch.html">UIBatch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ad614dfe748c000a1e115e78803a17a42">batches_</a></td></tr>
-<tr class="memdesc:ad614dfe748c000a1e115e78803a17a42"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> rendering batches. <br/></td></tr>
-<tr class="separator:ad614dfe748c000a1e115e78803a17a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d747705a57e2bff17bb7934892fd85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93d747705a57e2bff17bb7934892fd85"></a>
-<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a93d747705a57e2bff17bb7934892fd85">vertexData_</a></td></tr>
-<tr class="memdesc:a93d747705a57e2bff17bb7934892fd85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> rendering vertex data. <br/></td></tr>
-<tr class="separator:a93d747705a57e2bff17bb7934892fd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a1939ca55e1c3999cc4d9549f708271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a1939ca55e1c3999cc4d9549f708271"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a1a1939ca55e1c3999cc4d9549f708271">vertexBuffer_</a></td></tr>
-<tr class="memdesc:a1a1939ca55e1c3999cc4d9549f708271"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> vertex buffer. <br/></td></tr>
-<tr class="separator:a1a1939ca55e1c3999cc4d9549f708271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2eed9cc58d41fc31012633b0fd135b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a2eed9cc58d41fc31012633b0fd135b"></a>
-<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_batch.html">UIBatch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a5a2eed9cc58d41fc31012633b0fd135b">debugDrawBatches_</a></td></tr>
-<tr class="memdesc:a5a2eed9cc58d41fc31012633b0fd135b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> rendering batches for debug draw. <br/></td></tr>
-<tr class="separator:a5a2eed9cc58d41fc31012633b0fd135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437bdc142d593fb784fcf2f61daecd06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a437bdc142d593fb784fcf2f61daecd06"></a>
-<a class="el" href="class_urho3_d_1_1_p_o_d_vector.html">PODVector</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a437bdc142d593fb784fcf2f61daecd06">debugVertexData_</a></td></tr>
-<tr class="memdesc:a437bdc142d593fb784fcf2f61daecd06"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> rendering vertex data for debug draw. <br/></td></tr>
-<tr class="separator:a437bdc142d593fb784fcf2f61daecd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4ed5ddeb5f081b4b60fa6db13da5bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb4ed5ddeb5f081b4b60fa6db13da5bd"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#abb4ed5ddeb5f081b4b60fa6db13da5bd">debugVertexBuffer_</a></td></tr>
-<tr class="memdesc:abb4ed5ddeb5f081b4b60fa6db13da5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> debug geometry vertex buffer. <br/></td></tr>
-<tr class="separator:abb4ed5ddeb5f081b4b60fa6db13da5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa594e6c549f6289cd97461ad73101569"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa594e6c549f6289cd97461ad73101569"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#aa594e6c549f6289cd97461ad73101569">isStaticModelOwned_</a></td></tr>
-<tr class="memdesc:aa594e6c549f6289cd97461ad73101569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is <a class="el" href="class_urho3_d_1_1_static_model.html" title="Static model component. ">StaticModel</a> component created by this component. <br/></td></tr>
-<tr class="separator:aa594e6c549f6289cd97461ad73101569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a185bde56b5f7e2d983781dfdc4460a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a185bde56b5f7e2d983781dfdc4460a"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; UIElement3D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0a185bde56b5f7e2d983781dfdc4460a">rootElement_</a></td></tr>
+<tr class="memdesc:a0a185bde56b5f7e2d983781dfdc4460a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a> to be rendered into texture. It also handles screen to <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> coordinate translation. <br/></td></tr>
+<tr class="separator:a0a185bde56b5f7e2d983781dfdc4460a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3c3215f878bcd2feebb3198a0cc9b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a3c3215f878bcd2feebb3198a0cc9b4"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a4a3c3215f878bcd2feebb3198a0cc9b4">viewportIndex_</a></td></tr>
+<tr class="memdesc:a4a3c3215f878bcd2feebb3198a0cc9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_viewport.html" title="Viewport definition either for a render surface or the backbuffer. ">Viewport</a> index to be set when component is added to a node. <br/></td></tr>
+<tr class="separator:a4a3c3215f878bcd2feebb3198a0cc9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
 <tr class="memitem:a1e35dfd6ec760ebafd81fabcec2ad86b inherit pro_attribs_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e35dfd6ec760ebafd81fabcec2ad86b"></a>
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a1e35dfd6ec760ebafd81fabcec2ad86b">node_</a></td></tr>
@@ -772,12 +747,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a920d66d6fd624a29e81ebce6418ea23c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a920d66d6fd624a29e81ebce6418ea23c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_u_i_component.html">UIComponent</a>, <a class="el" href="class_urho3_d_1_1_component.html">Component</a>)</td></tr>
 <tr class="separator:a920d66d6fd624a29e81ebce6418ea23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aef008c3dadcd60243e199b4b59b40303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef008c3dadcd60243e199b4b59b40303"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>UI</b></td></tr>
-<tr class="separator:aef008c3dadcd60243e199b4b59b40303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/UI/UIComponent.h</li>
