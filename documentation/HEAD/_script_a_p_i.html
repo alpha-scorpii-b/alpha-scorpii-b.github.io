@@ -704,6 +704,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> initialScale</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> name</li>
 <li><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@ node</li>
+<li>uint parentIndex</li>
 <li>float radius</li>
 </ul>
 <p><a class="anchor" id="Class_BorderImage"></a></p>
@@ -8979,6 +8980,8 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li><a class="el" href="struct_urho3_d_1_1_bone.html" title="Bone in a skeleton. ">Bone</a>@ GetBone(const String&amp;) const</li>
+<li>uint GetBoneIndex(const String&amp;) const</li>
+<li><a class="el" href="struct_urho3_d_1_1_bone.html" title="Bone in a skeleton. ">Bone</a>@ GetBoneParent(<a class="el" href="struct_urho3_d_1_1_bone.html" title="Bone in a skeleton. ">Bone</a>@) const</li>
 <li>void Reset()</li>
 </ul>
 <p>Properties:</p>
@@ -11887,6 +11890,8 @@ Classes</h2>
 <li>float AbsDotProduct(const Vector3&amp;) const</li>
 <li>float Angle(const Vector3&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> CrossProduct(const Vector3&amp;) const</li>
+<li>float DistanceToPlane(const Vector3&amp;, const Vector3&amp;) const</li>
+<li>float DistanceToPoint(const Vector3&amp;) const</li>
 <li>float DotProduct(const Vector3&amp;) const</li>
 <li>bool Equals(const Vector3&amp;) const</li>
 <li>bool IsNaN() const</li>
@@ -11895,6 +11900,8 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Normalized() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Orthogonalize(const Vector3&amp;) const</li>
 <li>float ProjectOntoAxis(const Vector3&amp;) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ProjectOntoLine(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, bool = false) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ProjectOntoPlane(const Vector3&amp;, const Vector3&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ToString() const</li>
 </ul>
 <p>Properties:</p>

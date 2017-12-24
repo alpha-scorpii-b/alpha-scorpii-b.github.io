@@ -5587,6 +5587,9 @@ Classes</h2>
 <li>Bone* GetRootBone()</li>
 <li>Bone* GetBone(const String name)</li>
 <li>Bone* GetBone(unsigned index)</li>
+<li>unsigned GetBoneIndex(const String boneName) const</li>
+<li>unsigned GetBoneIndex(const Bone* bone) const</li>
+<li>Bone* GetBoneParent(const Bone* bone)</li>
 </ul>
 <p>Properties:</p>
 <ul>
@@ -7122,6 +7125,10 @@ Classes</h2>
 <li>float DotProduct(const Vector3&amp; rhs) const</li>
 <li>float AbsDotProduct(const Vector3&amp; rhs) const</li>
 <li>float ProjectOntoAxis(const Vector3&amp; axis) const</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ProjectOntoPlane(const Vector3&amp; origin, const Vector3&amp; normal)</li>
+<li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ProjectOntoLine(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; from, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; to, bool clamped = false)</li>
+<li>float DistanceToPoint(const Vector3&amp; point) const</li>
+<li>float DistanceToPlane(const Vector3&amp; origin, const Vector3&amp; normal) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Orthogonalize(const Vector3&amp; axis) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> CrossProduct(const Vector3&amp; rhs) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Abs() const</li>

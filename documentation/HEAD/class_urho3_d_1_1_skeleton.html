@@ -97,6 +97,22 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a3b7beb6add6f9a7369b31e708f6fe621">GetRootBone</a> ()</td></tr>
 <tr class="memdesc:a3b7beb6add6f9a7369b31e708f6fe621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return root bone. <br/></td></tr>
 <tr class="separator:a3b7beb6add6f9a7369b31e708f6fe621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb60fd604ac8efb3180ae4c1cb235876"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb60fd604ac8efb3180ae4c1cb235876"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#afb60fd604ac8efb3180ae4c1cb235876">GetBoneIndex</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;boneName) const </td></tr>
+<tr class="memdesc:afb60fd604ac8efb3180ae4c1cb235876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index of the bone by name. Return M_MAX_UNSIGNED if not found. <br/></td></tr>
+<tr class="separator:afb60fd604ac8efb3180ae4c1cb235876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fe9d515cddea83e09c9bb9aa090183"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12fe9d515cddea83e09c9bb9aa090183"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a12fe9d515cddea83e09c9bb9aa090183">GetBoneIndex</a> (const <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &amp;boneNameHash) const </td></tr>
+<tr class="memdesc:a12fe9d515cddea83e09c9bb9aa090183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index of the bone by name hash. Return M_MAX_UNSIGNED if not found. <br/></td></tr>
+<tr class="separator:a12fe9d515cddea83e09c9bb9aa090183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a00cedff74861fd33bc51578aadb5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92a00cedff74861fd33bc51578aadb5b"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a92a00cedff74861fd33bc51578aadb5b">GetBoneIndex</a> (const <a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *bone) const </td></tr>
+<tr class="memdesc:a92a00cedff74861fd33bc51578aadb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index of the bone by the bone pointer. Return M_MAX_UNSIGNED if not found. <br/></td></tr>
+<tr class="separator:a92a00cedff74861fd33bc51578aadb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5481f8136746a088b19f3cc5d0e9ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f5481f8136746a088b19f3cc5d0e9ea"></a>
+<a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a7f5481f8136746a088b19f3cc5d0e9ea">GetBoneParent</a> (const <a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *bone)</td></tr>
+<tr class="memdesc:a7f5481f8136746a088b19f3cc5d0e9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent of the given bone. Return null for root bones. <br/></td></tr>
+<tr class="separator:a7f5481f8136746a088b19f3cc5d0e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0725533171475c6f23a550b9c9d26b2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0725533171475c6f23a550b9c9d26b2f"></a>
 <a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a0725533171475c6f23a550b9c9d26b2f">GetBone</a> (unsigned index)</td></tr>
 <tr class="memdesc:a0725533171475c6f23a550b9c9d26b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bone by index. <br/></td></tr>
@@ -109,10 +125,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a11b02dc9a61c3997b03942bbfb6335fe">GetBone</a> (const char *boneName)</td></tr>
 <tr class="memdesc:a11b02dc9a61c3997b03942bbfb6335fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bone by name. <br/></td></tr>
 <tr class="separator:a11b02dc9a61c3997b03942bbfb6335fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f00acf070ee3de39a184bf1b7e8a0b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f00acf070ee3de39a184bf1b7e8a0b0"></a>
-<a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#a7f00acf070ee3de39a184bf1b7e8a0b0">GetBone</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> boneNameHash)</td></tr>
-<tr class="memdesc:a7f00acf070ee3de39a184bf1b7e8a0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bone by name hash. <br/></td></tr>
-<tr class="separator:a7f00acf070ee3de39a184bf1b7e8a0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64d8cf4210085d086218c0239d82ec6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa64d8cf4210085d086218c0239d82ec6"></a>
+<a class="el" href="struct_urho3_d_1_1_bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#aa64d8cf4210085d086218c0239d82ec6">GetBone</a> (const <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &amp;boneNameHash)</td></tr>
+<tr class="memdesc:aa64d8cf4210085d086218c0239d82ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return bone by name hash. <br/></td></tr>
+<tr class="separator:aa64d8cf4210085d086218c0239d82ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e9f865c699b794ccfac73c988c98c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1e9f865c699b794ccfac73c988c98c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_skeleton.html#aa1e9f865c699b794ccfac73c988c98c9">ResetSilent</a> ()</td></tr>
 <tr class="memdesc:aa1e9f865c699b794ccfac73c988c98c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all animating bones to initial positions without marking the nodes dirty. Requires the node dirtying to be performed later. <br/></td></tr>
