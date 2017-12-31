@@ -65,29 +65,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0e6f129a4111dd6fac2a0f239dafb207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and open in either server or client mode. <br/></td></tr>
 <tr class="separator:a0e6f129a4111dd6fac2a0f239dafb207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a793d6772e8e47572a5513b3f7726d1dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a793d6772e8e47572a5513b3f7726d1dc"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a793d6772e8e47572a5513b3f7726d1dc">~NamedPipe</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a793d6772e8e47572a5513b3f7726d1dc">~NamedPipe</a> () override</td></tr>
 <tr class="memdesc:a793d6772e8e47572a5513b3f7726d1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct and close. <br/></td></tr>
 <tr class="separator:a793d6772e8e47572a5513b3f7726d1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6572f98b7f7caa1ba181f490731ed84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6572f98b7f7caa1ba181f490731ed84"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#af6572f98b7f7caa1ba181f490731ed84">Read</a> (void *dest, unsigned size) override</td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#af6572f98b7f7caa1ba181f490731ed84">Read</a> (void *dest, unsigned size) override</td></tr>
 <tr class="memdesc:af6572f98b7f7caa1ba181f490731ed84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from the pipe without blocking if there is less data available. Return number of bytes actually read. <br/></td></tr>
 <tr class="separator:af6572f98b7f7caa1ba181f490731ed84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa9819e51c9cac9c35239ad0001fa1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfa9819e51c9cac9c35239ad0001fa1e"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#abfa9819e51c9cac9c35239ad0001fa1e">Seek</a> (unsigned position) override</td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#abfa9819e51c9cac9c35239ad0001fa1e">Seek</a> (unsigned position) override</td></tr>
 <tr class="memdesc:abfa9819e51c9cac9c35239ad0001fa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position. No-op for pipes. <br/></td></tr>
 <tr class="separator:abfa9819e51c9cac9c35239ad0001fa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bcb08d891cfb916861ae30a464d8470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bcb08d891cfb916861ae30a464d8470"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a3bcb08d891cfb916861ae30a464d8470">Write</a> (const void *data, unsigned size) override</td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a3bcb08d891cfb916861ae30a464d8470">Write</a> (const void *data, unsigned size) override</td></tr>
 <tr class="memdesc:a3bcb08d891cfb916861ae30a464d8470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to the pipe. Return number of bytes actually written. <br/></td></tr>
 <tr class="separator:a3bcb08d891cfb916861ae30a464d8470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8e31b41d82f568fd2eb2a0882c0976"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b8e31b41d82f568fd2eb2a0882c0976"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a5b8e31b41d82f568fd2eb2a0882c0976">IsEof</a> () const override</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a5b8e31b41d82f568fd2eb2a0882c0976">IsEof</a> () const override</td></tr>
 <tr class="memdesc:a5b8e31b41d82f568fd2eb2a0882c0976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether pipe has no data available. <br/></td></tr>
 <tr class="separator:a5b8e31b41d82f568fd2eb2a0882c0976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae83c9abe7d9a1bdf7b2e4a0426c6e8a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83c9abe7d9a1bdf7b2e4a0426c6e8a7"></a>
-virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#ae83c9abe7d9a1bdf7b2e4a0426c6e8a7">GetName</a> () const override</td></tr>
-<tr class="memdesc:ae83c9abe7d9a1bdf7b2e4a0426c6e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pipe name. <br/></td></tr>
-<tr class="separator:ae83c9abe7d9a1bdf7b2e4a0426c6e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9747b8bfbade4425521c0f0d9c11b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9747b8bfbade4425521c0f0d9c11b8"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a6f9747b8bfbade4425521c0f0d9c11b8">GetName</a> () const override</td></tr>
+<tr class="memdesc:a6f9747b8bfbade4425521c0f0d9c11b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pipe name. <br/></td></tr>
+<tr class="separator:a6f9747b8bfbade4425521c0f0d9c11b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8263fec1dc8b7eb7fcfa2142d9718083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8263fec1dc8b7eb7fcfa2142d9718083"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_named_pipe.html#a8263fec1dc8b7eb7fcfa2142d9718083">Open</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;pipeName, bool isServer)</td></tr>
 <tr class="memdesc:a8263fec1dc8b7eb7fcfa2142d9718083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the pipe in either server or client mode. If already open, the existing pipe is closed. For a client end to open successfully the server end must already to be open. Return true if successful. <br/></td></tr>
@@ -110,7 +110,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d472106f01c137d237b3099751d10c5"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br/></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c7af660afc8467a99d1f17c8d099b3b"></a>
@@ -300,10 +300,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_abstract_file.html#ad05ae12604318af1459bc4c4b6791d65">AbstractFile</a> (unsigned int size)</td></tr>
 <tr class="memdesc:ad05ae12604318af1459bc4c4b6791d65 inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:ad05ae12604318af1459bc4c4b6791d65 inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6d146fa4c350bd0b6015c928cd798a inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b6d146fa4c350bd0b6015c928cd798a"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_abstract_file.html#a0b6d146fa4c350bd0b6015c928cd798a">~AbstractFile</a> () override</td></tr>
-<tr class="memdesc:a0b6d146fa4c350bd0b6015c928cd798a inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
-<tr class="separator:a0b6d146fa4c350bd0b6015c928cd798a inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee2e06721fcc4c842d6b41a59d508a1 inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ee2e06721fcc4c842d6b41a59d508a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_abstract_file.html#a9ee2e06721fcc4c842d6b41a59d508a1">~AbstractFile</a> () override=default</td></tr>
+<tr class="memdesc:a9ee2e06721fcc4c842d6b41a59d508a1 inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
+<tr class="separator:a9ee2e06721fcc4c842d6b41a59d508a1 inherit pub_methods_class_urho3_d_1_1_abstract_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_deserializer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_deserializer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_deserializer.html">Urho3D::Deserializer</a></td></tr>
 <tr class="memitem:a3d2945f96e7a91278d7347c842ddf475 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d2945f96e7a91278d7347c842ddf475"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a3d2945f96e7a91278d7347c842ddf475">Deserializer</a> ()</td></tr>

@@ -29,7 +29,6 @@ group: HEAD
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_urho3_d_1_1_allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -58,6 +57,14 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#a5492b7fbe75be842fb3eaa8b84160515">~Allocator</a> ()</td></tr>
 <tr class="memdesc:a5492b7fbe75be842fb3eaa8b84160515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a5492b7fbe75be842fb3eaa8b84160515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d465edc902dfada934af5847329581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78d465edc902dfada934af5847329581"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#a78d465edc902dfada934af5847329581">Allocator</a> (const <a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;rhs)=delete</td></tr>
+<tr class="memdesc:a78d465edc902dfada934af5847329581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent copy construction. <br/></td></tr>
+<tr class="separator:a78d465edc902dfada934af5847329581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2b57d88311a241d5dbee98fb062e95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c2b57d88311a241d5dbee98fb062e95"></a>
+<a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#a2c2b57d88311a241d5dbee98fb062e95">operator=</a> (const <a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;rhs)=delete</td></tr>
+<tr class="memdesc:a2c2b57d88311a241d5dbee98fb062e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br/></td></tr>
+<tr class="separator:a2c2b57d88311a241d5dbee98fb062e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc70a7dc69cf92fddaeb96b74b3f7fdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc70a7dc69cf92fddaeb96b74b3f7fdc"></a>
 T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#abc70a7dc69cf92fddaeb96b74b3f7fdc">Reserve</a> ()</td></tr>
 <tr class="memdesc:abc70a7dc69cf92fddaeb96b74b3f7fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve and default-construct an object. <br/></td></tr>
@@ -70,17 +77,6 @@ T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#af5fac98582e95fa72a167c61501fecf0">Free</a> (T *object)</td></tr>
 <tr class="memdesc:af5fac98582e95fa72a167c61501fecf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct and free an object. <br/></td></tr>
 <tr class="separator:af5fac98582e95fa72a167c61501fecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae3094053f73afec50d4b5851aea8035b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3094053f73afec50d4b5851aea8035b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#ae3094053f73afec50d4b5851aea8035b">Allocator</a> (const <a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ae3094053f73afec50d4b5851aea8035b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent copy construction. <br/></td></tr>
-<tr class="separator:ae3094053f73afec50d4b5851aea8035b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81fbcff932019cc94f5b17a9acc6823a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81fbcff932019cc94f5b17a9acc6823a"></a>
-<a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_allocator.html#a81fbcff932019cc94f5b17a9acc6823a">operator=</a> (const <a class="el" href="class_urho3_d_1_1_allocator.html">Allocator</a>&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:a81fbcff932019cc94f5b17a9acc6823a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br/></td></tr>
-<tr class="separator:a81fbcff932019cc94f5b17a9acc6823a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

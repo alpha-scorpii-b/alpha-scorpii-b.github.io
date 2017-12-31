@@ -193,7 +193,7 @@
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
 <g id="a_node16"><a xlink:href="class_urho3_d_1_1_collision_shape.html#a6968b6da91828a07b6ed36453c0e6e89" target="_top" xlink:title="Return world&#45;space bounding box. ">
-<polygon fill="none" stroke="red" points="180,-776 180,-806 302,-806 302,-776 180,-776"/>
+<polygon fill="none" stroke="black" points="180,-776 180,-806 302,-806 302,-776 180,-776"/>
 <text text-anchor="start" x="188" y="-794" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::CollisionShape</text>
 <text text-anchor="middle" x="241" y="-783" font-family="Helvetica,sans-Serif" font-size="10.00">::GetWorldBoundingBox</text>
 </a>
@@ -332,17 +332,16 @@
 </g>
 <!-- Node17 -->
 <g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="class_urho3_d_1_1_rigid_body.html#aa622b94639213f71fd97a7e0c2f711e6" target="_top" xlink:title="Return rigid body position in world space. ">
-<polygon fill="none" stroke="black" points="386.5,-776 386.5,-806 493.5,-806 493.5,-776 386.5,-776"/>
-<text text-anchor="start" x="394.5" y="-794" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::RigidBody::</text>
-<text text-anchor="middle" x="440" y="-783" font-family="Helvetica,sans-Serif" font-size="10.00">GetPosition</text>
+<g id="a_node17"><a xlink:href="class_urho3_d_1_1_node.html#a863d9699737000ae9d83e63496c415de" target="_top" xlink:title="Return scale in world space. ">
+<polygon fill="none" stroke="black" points="364,-781.5 364,-800.5 516,-800.5 516,-781.5 364,-781.5"/>
+<text text-anchor="middle" x="440" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::Node::GetWorldScale</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge16" class="edge"><title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M302.177,-791C325.537,-791 352.304,-791 375.933,-791"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="376.196,-794.5 386.195,-791 376.195,-787.5 376.196,-794.5"/>
+<path fill="none" stroke="midnightblue" d="M302.177,-791C318.446,-791 336.368,-791 353.731,-791"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="353.873,-794.5 363.873,-791 353.873,-787.5 353.873,-794.5"/>
 </g>
 <!-- Node25&#45;&gt;Node5 -->
 <g id="edge28" class="edge"><title>Node25&#45;&gt;Node5</title>

@@ -62,7 +62,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a23c677a1f43edd6bbd8db693bc1f6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a23c677a1f43edd6bbd8db693bc1f6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d9809cb57cfa96d16c126d4a6aa584"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90d9809cb57cfa96d16c126d4a6aa584"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a90d9809cb57cfa96d16c126d4a6aa584">~Serializable</a> () override</td></tr>
 <tr class="memdesc:a90d9809cb57cfa96d16c126d4a6aa584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a90d9809cb57cfa96d16c126d4a6aa584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3785d97ef92557bab8239688af94ac5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3785d97ef92557bab8239688af94ac5e"></a>
@@ -83,26 +83,26 @@ virtual const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a><br c
 &lt; <a class="el" href="struct_urho3_d_1_1_attribute_info.html">AttributeInfo</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4e1be5b8087800821d37ebb87837329a">GetNetworkAttributes</a> () const </td></tr>
 <tr class="memdesc:a4e1be5b8087800821d37ebb87837329a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return network replication attribute descriptions, or null if none defined. <br/></td></tr>
 <tr class="separator:a4e1be5b8087800821d37ebb87837329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf236a970d61b56c78e2c95ae53839d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf236a970d61b56c78e2c95ae53839d4"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#adf236a970d61b56c78e2c95ae53839d4">Load</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source, bool setInstanceDefault=false)</td></tr>
-<tr class="memdesc:adf236a970d61b56c78e2c95ae53839d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from binary data. When setInstanceDefault is set to true, after setting the attribute value, store the value as instance's default value. Return true if successful. <br/></td></tr>
-<tr class="separator:adf236a970d61b56c78e2c95ae53839d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fe50c87274dbb2b8b970ea0c199767"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04fe50c87274dbb2b8b970ea0c199767"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a04fe50c87274dbb2b8b970ea0c199767">Load</a> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
+<tr class="memdesc:a04fe50c87274dbb2b8b970ea0c199767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from binary data. Return true if successful. <br/></td></tr>
+<tr class="separator:a04fe50c87274dbb2b8b970ea0c199767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efaa89f4647724a205bd94d86981984"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9efaa89f4647724a205bd94d86981984"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a9efaa89f4647724a205bd94d86981984">Save</a> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a9efaa89f4647724a205bd94d86981984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as binary data. Return true if successful. <br/></td></tr>
 <tr class="separator:a9efaa89f4647724a205bd94d86981984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2b4f1b59a4b918238eb92d62d061ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f2b4f1b59a4b918238eb92d62d061ba"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3f2b4f1b59a4b918238eb92d62d061ba">LoadXML</a> (const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;source, bool setInstanceDefault=false)</td></tr>
-<tr class="memdesc:a3f2b4f1b59a4b918238eb92d62d061ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from XML data. When setInstanceDefault is set to true, after setting the attribute value, store the value as instance's default value. Return true if successful. <br/></td></tr>
-<tr class="separator:a3f2b4f1b59a4b918238eb92d62d061ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725a0fc06d1b050525e2d02c5e7187ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725a0fc06d1b050525e2d02c5e7187ad"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a725a0fc06d1b050525e2d02c5e7187ad">LoadXML</a> (const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;source)</td></tr>
+<tr class="memdesc:a725a0fc06d1b050525e2d02c5e7187ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from XML data. Return true if successful. <br/></td></tr>
+<tr class="separator:a725a0fc06d1b050525e2d02c5e7187ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62d15302a8260651af8bbb687a85a256"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62d15302a8260651af8bbb687a85a256"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a62d15302a8260651af8bbb687a85a256">SaveXML</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a62d15302a8260651af8bbb687a85a256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as XML data. Return true if successful. <br/></td></tr>
 <tr class="separator:a62d15302a8260651af8bbb687a85a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeda18b3f4b5477071a3f6a7cd620417b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeda18b3f4b5477071a3f6a7cd620417b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#aeda18b3f4b5477071a3f6a7cd620417b">LoadJSON</a> (const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;source, bool setInstanceDefault=false)</td></tr>
-<tr class="memdesc:aeda18b3f4b5477071a3f6a7cd620417b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from JSON data. When setInstanceDefault is set to true, after setting the attribute value, store the value as instance's default value. Return true if successful. <br/></td></tr>
-<tr class="separator:aeda18b3f4b5477071a3f6a7cd620417b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7363a7dda75d1dc158a0841d459b32e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7363a7dda75d1dc158a0841d459b32e4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a7363a7dda75d1dc158a0841d459b32e4">LoadJSON</a> (const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;source)</td></tr>
+<tr class="memdesc:a7363a7dda75d1dc158a0841d459b32e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from JSON data. Return true if successful. <br/></td></tr>
+<tr class="separator:a7363a7dda75d1dc158a0841d459b32e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7b47e2961d5f26dda4a63450c6fb36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7b47e2961d5f26dda4a63450c6fb36"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a1b7b47e2961d5f26dda4a63450c6fb36">SaveJSON</a> (<a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;dest) const </td></tr>
 <tr class="memdesc:a1b7b47e2961d5f26dda4a63450c6fb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as JSON data. Return true if successful. <br/></td></tr>
@@ -127,6 +127,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a45834f05e09c1edc90bd759b1c03e187">SetAttribute</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
 <tr class="memdesc:a45834f05e09c1edc90bd759b1c03e187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute by name. Return true if successfully set. <br/></td></tr>
 <tr class="separator:a45834f05e09c1edc90bd759b1c03e187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c4c6b4aaa1375ac927e2c0fdb4537e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7c4c6b4aaa1375ac927e2c0fdb4537e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#ae7c4c6b4aaa1375ac927e2c0fdb4537e">SetInstanceDefault</a> (bool enable)</td></tr>
+<tr class="memdesc:ae7c4c6b4aaa1375ac927e2c0fdb4537e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set instance-level default flag. <br/></td></tr>
+<tr class="separator:ae7c4c6b4aaa1375ac927e2c0fdb4537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9652196ab03ef1f9d98f9dbfa9e1adbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9652196ab03ef1f9d98f9dbfa9e1adbb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a9652196ab03ef1f9d98f9dbfa9e1adbb">ResetToDefault</a> ()</td></tr>
 <tr class="memdesc:a9652196ab03ef1f9d98f9dbfa9e1adbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all editable attributes to their default values. <br/></td></tr>
@@ -209,7 +213,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d472106f01c137d237b3099751d10c5"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br/></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c7af660afc8467a99d1f17c8d099b3b"></a>
@@ -423,6 +427,10 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_unique_ptr.html">UniquePtr</a>&lt; <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a73a625d2d3185c2934021d192c64d684">instanceDefaultValues_</a></td></tr>
 <tr class="memdesc:a73a625d2d3185c2934021d192c64d684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute default value at each instance level. <br/></td></tr>
 <tr class="separator:a73a625d2d3185c2934021d192c64d684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaf6b2938d392f127885f6673f6985e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accaf6b2938d392f127885f6673f6985e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#accaf6b2938d392f127885f6673f6985e">setInstanceDefault_</a></td></tr>
+<tr class="memdesc:accaf6b2938d392f127885f6673f6985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, store the attribute value as instance's default value (internal use only). <br/></td></tr>
+<tr class="separator:accaf6b2938d392f127885f6673f6985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e600cc84e1f680cc08714f733739c20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e600cc84e1f680cc08714f733739c20"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a7e600cc84e1f680cc08714f733739c20">temporary_</a></td></tr>
 <tr class="memdesc:a7e600cc84e1f680cc08714f733739c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary flag. <br/></td></tr>

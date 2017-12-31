@@ -61,23 +61,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a566fbbabc194a73f96b4dee6a62a3854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a566fbbabc194a73f96b4dee6a62a3854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3325a97bf9b3416b4b69f724bfeda4e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3325a97bf9b3416b4b69f724bfeda4e1"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a3325a97bf9b3416b4b69f724bfeda4e1">~Network</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a3325a97bf9b3416b4b69f724bfeda4e1">~Network</a> () override</td></tr>
 <tr class="memdesc:a3325a97bf9b3416b4b69f724bfeda4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a3325a97bf9b3416b4b69f724bfeda4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59527245c2c76db53a8a5bb53b65d65c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59527245c2c76db53a8a5bb53b65d65c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a59527245c2c76db53a8a5bb53b65d65c">HandleMessage</a> (kNet::MessageConnection *source, kNet::packet_id_t packetId, kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a59527245c2c76db53a8a5bb53b65d65c">HandleMessage</a> (kNet::MessageConnection *source, kNet::packet_id_t packetId, kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
 <tr class="memdesc:a59527245c2c76db53a8a5bb53b65d65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a kNet message from either a client or the server. <br/></td></tr>
 <tr class="separator:a59527245c2c76db53a8a5bb53b65d65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e90e0be13802c04a3e353d79e4c296e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e90e0be13802c04a3e353d79e4c296e"></a>
-virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a4e90e0be13802c04a3e353d79e4c296e">ComputeContentID</a> (kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
+u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a4e90e0be13802c04a3e353d79e4c296e">ComputeContentID</a> (kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
 <tr class="memdesc:a4e90e0be13802c04a3e353d79e4c296e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the content ID for a message. <br/></td></tr>
 <tr class="separator:a4e90e0be13802c04a3e353d79e4c296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02cab2a2bef3b56abb762bb36d71d7c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac02cab2a2bef3b56abb762bb36d71d7c">NewConnectionEstablished</a> (kNet::MessageConnection *connection) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac02cab2a2bef3b56abb762bb36d71d7c">NewConnectionEstablished</a> (kNet::MessageConnection *connection) override</td></tr>
 <tr class="memdesc:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a new client connection. <br/></td></tr>
 <tr class="separator:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e0e7ac6067171bd5972e04e1f53ec36"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a8e0e7ac6067171bd5972e04e1f53ec36">ClientDisconnected</a> (kNet::MessageConnection *connection) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a8e0e7ac6067171bd5972e04e1f53ec36">ClientDisconnected</a> (kNet::MessageConnection *connection) override</td></tr>
 <tr class="memdesc:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a client disconnection. <br/></td></tr>
 <tr class="separator:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e313f197c4150135e0577b02915bfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75e313f197c4150135e0577b02915bfa"></a>
@@ -202,7 +202,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct. <br/></td></tr>
 <tr class="separator:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d472106f01c137d237b3099751d10c5"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4d472106f01c137d237b3099751d10c5">~Object</a> () override</td></tr>
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br/></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c7af660afc8467a99d1f17c8d099b3b"></a>

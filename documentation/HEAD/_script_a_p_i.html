@@ -47,10 +47,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
 <li>void RemoveInstanceDefault()</li>
@@ -105,10 +105,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllAnimationStates()</li>
@@ -154,7 +154,7 @@ Classes</h2>
 <li>bool inView // readonly</li>
 <li>uint lightMask</li>
 <li>float lodBias</li>
-<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material // writeonly</li>
+<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@[] materials</li>
 <li>uint maxLights</li>
 <li><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a>@ model</li>
@@ -198,10 +198,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -368,10 +368,10 @@ Classes</h2>
 <li>bool IsFadingOut(const String&amp;) const</li>
 <li>bool IsPlaying(const String&amp;) const</li>
 <li>bool IsPlaying(uint8) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>bool Play(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;, uint8, bool, float = 0.0f)</li>
 <li>bool PlayExclusive(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;, uint8, bool, float = 0.0f)</li>
@@ -626,10 +626,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -741,16 +741,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -965,16 +965,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -1144,10 +1144,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_frustum.html" title="Convex constructed of 6 planes. ">Frustum</a> GetSplitFrustum(float, float) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1258,16 +1258,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -1426,10 +1426,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1499,10 +1499,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>[]@ GetVertices() const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1571,10 +1571,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1641,10 +1641,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1712,10 +1712,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>[]@ GetVertices() const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1783,10 +1783,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1860,10 +1860,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -1973,10 +1973,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2108,10 +2108,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2180,10 +2180,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2240,10 +2240,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2305,10 +2305,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2368,10 +2368,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2431,10 +2431,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2496,10 +2496,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2560,10 +2560,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2628,10 +2628,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2693,10 +2693,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2760,10 +2760,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2823,10 +2823,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2886,10 +2886,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -2970,10 +2970,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -3058,10 +3058,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetRandomPointInCircle(const Vector3&amp;, float, int)</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> MoveAlongSurface(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, int, uint = 3)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Raycast(const Vector3&amp;, const Vector3&amp;, int)</li>
@@ -3166,16 +3166,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -3346,10 +3346,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -3527,10 +3527,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -3587,10 +3587,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllDecals()</li>
@@ -3741,10 +3741,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -3813,10 +3813,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -3908,16 +3908,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -4115,10 +4115,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool HasTile(const IntVector2&amp;) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> MoveAlongSurface(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ), int = 3)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Raycast(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
@@ -4621,10 +4621,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -4693,10 +4693,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void RebuildChainTrees()</li>
 <li>void RecalculateSegmentLengths()</li>
@@ -5076,10 +5076,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -5195,16 +5195,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -5402,16 +5402,16 @@ Classes</h2>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
 <li>bool IsSelected(uint) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -5842,16 +5842,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -6180,10 +6180,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -6240,10 +6240,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -6314,10 +6314,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool HasTile(const IntVector2&amp;) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> MoveAlongSurface(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ), int = 3)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> Raycast(const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp; = <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> ( 1.0 , 1.0 , 1.0 ))</li>
@@ -6434,10 +6434,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -6521,10 +6521,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool HasTag(const String&amp;)</li>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> LocalToWorld(const Vector3&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> LocalToWorld(const Vector4&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> LocalToWorld2D(const Vector2&amp;) const</li>
@@ -6717,10 +6717,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -6784,10 +6784,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="struct_urho3_d_1_1_ray_query_result.html" title="Raycast result. ">RayQueryResult</a>[]@ Raycast(const <a class="el" href="class_urho3_d_1_1_ray.html" title="Infinite straight line in three-dimensional space. ">Ray</a>&amp;, RayQueryLevel = RAY_TRIANGLE, float = M_INFINITY, uint8 = DRAWABLE_ANY, uint = DEFAULT_VIEWMASK) const</li>
 <li><a class="el" href="struct_urho3_d_1_1_ray_query_result.html" title="Raycast result. ">RayQueryResult</a> RaycastSingle(const <a class="el" href="class_urho3_d_1_1_ray.html" title="Infinite straight line in three-dimensional space. ">Ray</a>&amp;, RayQueryLevel = RAY_TRIANGLE, float = M_INFINITY, uint8 = DRAWABLE_ANY, uint = DEFAULT_VIEWMASK) const</li>
@@ -6847,10 +6847,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -7036,10 +7036,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllParticles()</li>
@@ -7126,10 +7126,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -7248,10 +7248,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_rigid_body.html" title="Physics rigid body component. ">RigidBody</a>@[]@ GetRigidBodies(const <a class="el" href="class_urho3_d_1_1_sphere.html" title="Sphere in three-dimensional space. ">Sphere</a>&amp;, uint = 0xffff)</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html" title="Physics raycast hit. ">PhysicsRaycastResult</a>[]@ Raycast(const <a class="el" href="class_urho3_d_1_1_ray.html" title="Infinite straight line in three-dimensional space. ">Ray</a>&amp;, float, uint = 0xffff)</li>
 <li><a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html" title="Physics raycast hit. ">PhysicsRaycastResult</a> RaycastSingle(const <a class="el" href="class_urho3_d_1_1_ray.html" title="Infinite straight line in three-dimensional space. ">Ray</a>&amp;, float, uint = 0xffff)</li>
@@ -7324,10 +7324,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_rigid_body2_d.html" title="2D rigid body component. ">RigidBody2D</a>@ GetRigidBody(int, int, uint = 0xffff)</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li><a class="el" href="struct_urho3_d_1_1_physics_raycast_result2_d.html" title="2D Physics raycast hit. ">PhysicsRaycastResult2D</a>[]@ Raycast(const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp;, uint = 0xffff)</li>
 <li><a class="el" href="struct_urho3_d_1_1_physics_raycast_result2_d.html" title="2D Physics raycast hit. ">PhysicsRaycastResult2D</a> RaycastSingle(const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp;, uint = 0xffff)</li>
@@ -7572,10 +7572,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>void Init()</li>
 <li>bool IsFrontWheel(int)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -7950,10 +7950,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -8046,10 +8046,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetVelocityAtPoint(const Vector3&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void ReAddBodyToWorld()</li>
 <li>void Remove()</li>
@@ -8141,10 +8141,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -8252,16 +8252,16 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@ InstantiateXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector. ">Quaternion</a>&amp;, CreateMode = REPLICATED)</li>
 <li><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@ InstantiateXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, const <a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a>&amp;, const <a class="el" href="class_urho3_d_1_1_quaternion.html" title="Rotation represented as a four-dimensional normalized vector. ">Quaternion</a>&amp;, CreateMode = REPLICATED)</li>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
 <li>bool LoadAsync(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, LoadMode = LOAD_SCENE_AND_RESOURCES)</li>
 <li>bool LoadAsyncXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, LoadMode = LOAD_SCENE_AND_RESOURCES)</li>
 <li>bool LoadJSON(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadJSON(VectorBuffer&amp;)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> LocalToWorld(const Vector3&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> LocalToWorld(const Vector4&amp;) const</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> LocalToWorld2D(const Vector2&amp;) const</li>
@@ -8473,10 +8473,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsA(const String&amp;) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -8555,16 +8555,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -8741,16 +8741,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -8908,10 +8908,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void RemoveInstanceDefault()</li>
 <li>void ResetToDefault()</li>
@@ -9007,10 +9007,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -9046,7 +9046,7 @@ Classes</h2>
 <li>bool inView // readonly</li>
 <li>uint lightMask</li>
 <li>float lodBias</li>
-<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material // writeonly</li>
+<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@[] materials</li>
 <li>uint maxLights</li>
 <li><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a>@ model</li>
@@ -9103,16 +9103,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -9273,10 +9273,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -9373,10 +9373,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -9430,10 +9430,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Play(<a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource. ">Sound</a>@)</li>
 <li>void Play(<a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource. ">Sound</a>@, float)</li>
@@ -9502,10 +9502,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Play(<a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource. ">Sound</a>@)</li>
 <li>void Play(<a class="el" href="class_urho3_d_1_1_sound.html" title="Sound resource. ">Sound</a>@, float)</li>
@@ -9631,10 +9631,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> GetPosition() const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Move(float)</li>
 <li>void Remove()</li>
@@ -9716,16 +9716,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -9944,10 +9944,10 @@ Classes</h2>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
 <li>bool IsInside(const Vector3&amp;) const</li>
 <li>bool IsInsideLocal(const Vector3&amp;) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -9983,7 +9983,7 @@ Classes</h2>
 <li>bool inView // readonly</li>
 <li>uint lightMask</li>
 <li>float lodBias</li>
-<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material // writeonly</li>
+<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@[] materials</li>
 <li>uint maxLights</li>
 <li><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a>@ model</li>
@@ -10023,10 +10023,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllInstanceNodes()</li>
@@ -10065,7 +10065,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes. ">Node</a>@[] instanceNodes // readonly</li>
 <li>uint lightMask</li>
 <li>float lodBias</li>
-<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material // writeonly</li>
+<li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@ material</li>
 <li><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries. ">Material</a>@[] materials</li>
 <li>uint maxLights</li>
 <li><a class="el" href="class_urho3_d_1_1_model.html" title="3D model resource. ">Model</a>@ model</li>
@@ -10105,10 +10105,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -10312,10 +10312,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector3.html" title="Three-dimensional vector. ">Vector3</a> HeightMapToWorld(const IntVector2&amp;) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -10397,10 +10397,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -10488,16 +10488,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -10670,10 +10670,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -11074,10 +11074,10 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_tile_map_object2_d.html" title="Tile map object. ">TileMapObject2D</a>@[]@ GetTileCollisionShapes(int) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>bool PositionToTileIndex(int&amp;, int&amp;, const Vector2&amp;) const</li>
 <li>void Remove()</li>
@@ -11153,10 +11153,10 @@ Classes</h2>
 <li>bool HasProperty(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -11313,16 +11313,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -11538,10 +11538,10 @@ Classes</h2>
 <li>bool GetInterceptNetworkUpdate(const String&amp;) const</li>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
@@ -11617,16 +11617,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -12107,16 +12107,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void QueueUpdate()</li>
 <li>void Remove()</li>
@@ -12348,16 +12348,16 @@ Classes</h2>
 <li>bool IsChildOf(<a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@) const</li>
 <li>bool IsInside(IntVector2, bool)</li>
 <li>bool IsInsideCombined(IntVector2, bool)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null)</li>
-<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@ = null, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li><a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements. ">UIElement</a>@ LoadChildXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool LoadXML(VectorBuffer&amp;)</li>
 <li>bool LoadXML(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, <a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAllChildren()</li>
@@ -12676,10 +12676,10 @@ Classes</h2>
 <li>bool HasSubscribedToEvent(<a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;)</li>
 <li>bool HasSubscribedToEvent(const String&amp;)</li>
 <li>bool IsInView(<a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component. ">Camera</a>@) const</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, bool = false)</li>
-<li>bool Load(<a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp;, bool = false)</li>
-<li>bool LoadJSON(const <a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html" title="JSON value class. ">JSONValue</a>&amp;, bool = false)</li>
-<li>bool LoadXML(const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html" title="Element in an XML file. ">XMLElement</a>&amp;, bool = false)</li>
+<li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
+<li>bool Load(VectorBuffer&amp;)</li>
+<li>bool LoadJSON(const JSONValue&amp;)</li>
+<li>bool LoadXML(const XMLElement&amp;)</li>
 <li>void MarkNetworkUpdate() const</li>
 <li>void Remove()</li>
 <li>void RemoveAttributeAnimation(const String&amp;)</li>
