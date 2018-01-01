@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2014-2017 Yao Wei Tjong
+// Copyright (c) 2014-2018 Yao Wei Tjong
 //
 
 // Avoid theme flicker on Webkit-based browsers
