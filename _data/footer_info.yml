@@ -30,7 +30,7 @@ appveyor:
   project_id: vsyffvjtnwovdh86
   build_statuses:
     - branch: master
-      platform: Windows (VS2015)
+      platform: Windows (VS2017)
       icons: fa fa-windows fa-lg
     - branch: MinGW-CI
       platform: Windows (MinGW)
