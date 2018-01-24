@@ -6924,9 +6924,9 @@ Classes</h2>
 <p>Methods:</p>
 <ul>
 <li>void AddColorFrame(<a class="el" href="struct_urho3_d_1_1_color_frame.html" title="Color animation frame definition. ">ColorFrame</a>@)</li>
-<li>void AddColorTime(Color&amp;, float)</li>
+<li>void AddColorTime(const Color&amp;, float)</li>
 <li>void AddTextureFrame(<a class="el" href="struct_urho3_d_1_1_texture_frame.html" title="Texture animation frame definition. ">TextureFrame</a>@)</li>
-<li>void AddTextureTime(Rect&amp;, float)</li>
+<li>void AddTextureTime(const Rect&amp;, float)</li>
 <li><a class="el" href="class_urho3_d_1_1_particle_effect.html" title="Particle effect definition. ">ParticleEffect</a>@ Clone(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ( )) const</li>
 <li><a class="el" href="struct_urho3_d_1_1_color_frame.html" title="Color animation frame definition. ">ColorFrame</a>@ GetColorFrame(uint) const</li>
 <li><a class="el" href="struct_urho3_d_1_1_texture_frame.html" title="Texture animation frame definition. ">TextureFrame</a>@ GetTextureFrame(uint) const</li>
@@ -12611,8 +12611,8 @@ Classes</h2>
 <li>bool Load(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@)</li>
 <li>bool Load(VectorBuffer&amp;)</li>
 <li>bool Load(const String&amp;)</li>
-<li>void Patch(XMLElement)</li>
 <li>void Patch(<a class="el" href="class_urho3_d_1_1_x_m_l_file.html" title="XML document resource. ">XMLFile</a>@)</li>
+<li>void Patch(const XMLElement&amp;)</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@) const</li>
 <li>bool Save(<a class="el" href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file. ">File</a>@, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;) const</li>
 <li>bool Save(VectorBuffer&amp;) const</li>
@@ -12638,10 +12638,10 @@ Classes</h2>
 <ul>
 <li>void Bind()</li>
 <li>void Clear()</li>
-<li><a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set. ">XPathResultSet</a> Evaluate(XMLElement)</li>
-<li>bool EvaluateToBool(XMLElement)</li>
-<li>float EvaluateToFloat(XMLElement)</li>
-<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> EvaluateToString(XMLElement)</li>
+<li><a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set. ">XPathResultSet</a> Evaluate(const XMLElement&amp;)</li>
+<li>bool EvaluateToBool(const XMLElement&amp;)</li>
+<li>float EvaluateToFloat(const XMLElement&amp;)</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> EvaluateToString(const XMLElement&amp;)</li>
 <li>bool SetQuery(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp;, const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a>&amp; = <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> ( ), bool = true)</li>
 <li>bool SetVariable(const String&amp;, bool)</li>
 <li>bool SetVariable(const String&amp;, const String&amp;)</li>

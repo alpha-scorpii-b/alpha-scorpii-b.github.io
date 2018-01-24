@@ -165,18 +165,18 @@ static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</
 <tr class="memitem:ae68204bceeb3d5ccc8bf0a3d9985a465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae68204bceeb3d5ccc8bf0a3d9985a465"></a>
 static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (asITypeInfo *ot, asUINT length)</td></tr>
 <tr class="separator:ae68204bceeb3d5ccc8bf0a3d9985a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53396830ac6d43d922f9a69a80a3d874"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53396830ac6d43d922f9a69a80a3d874"></a>
-static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (asITypeInfo *ot, asUINT length, void *defaultValue)</td></tr>
-<tr class="separator:a53396830ac6d43d922f9a69a80a3d874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae880eb98cd29efc7af668aa7b983c942"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae880eb98cd29efc7af668aa7b983c942"></a>
-static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (asITypeInfo *ot, void *listBuffer)</td></tr>
-<tr class="separator:ae880eb98cd29efc7af668aa7b983c942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c899c0e6e79c5f3ab7ac58b6f02c5c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c899c0e6e79c5f3ab7ac58b6f02c5c3"></a>
+static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (asITypeInfo *ot, asUINT length, void *defVal)</td></tr>
+<tr class="separator:a1c899c0e6e79c5f3ab7ac58b6f02c5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61367b99de6107ad127f5355e9414548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61367b99de6107ad127f5355e9414548"></a>
+static <a class="el" href="class_urho3_d_1_1_c_script_array.html">CScriptArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (asITypeInfo *ot, void *initList)</td></tr>
+<tr class="separator:a61367b99de6107ad127f5355e9414548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a167948d57bf83da434543a65c52a85aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a167948d57bf83da434543a65c52a85aa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CScriptArray</b> (asITypeInfo *ot, void *initBuf)</td></tr>
-<tr class="separator:a167948d57bf83da434543a65c52a85aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bf26c5afb1c51ec78d26f1acc725dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5bf26c5afb1c51ec78d26f1acc725dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CScriptArray</b> (asITypeInfo *ot, void *buf)</td></tr>
+<tr class="separator:ae5bf26c5afb1c51ec78d26f1acc725dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e06ef7337d430b47211ad7613bbffd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39e06ef7337d430b47211ad7613bbffd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CScriptArray</b> (asUINT length, asITypeInfo *ot)</td></tr>
 <tr class="separator:a39e06ef7337d430b47211ad7613bbffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,9 +240,9 @@ asITypeInfo *&#160;</td><td class="memItemRight" valign="bottom"><b>objType</b><
 <tr class="memitem:a34484058343c9b9c12d1f52de9140160"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34484058343c9b9c12d1f52de9140160"></a>
 SArrayBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
 <tr class="separator:a34484058343c9b9c12d1f52de9140160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a637f4a27ac282b6f8f39d05e6ddfb17a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a637f4a27ac282b6f8f39d05e6ddfb17a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>elementSize</b></td></tr>
-<tr class="separator:a637f4a27ac282b6f8f39d05e6ddfb17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd2dda4522bd7e45df9702631ddb2cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cd2dda4522bd7e45df9702631ddb2cc"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>elementSize</b></td></tr>
+<tr class="separator:a5cd2dda4522bd7e45df9702631ddb2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac639cf9b3ee93e7bc688cfecd421ddca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac639cf9b3ee93e7bc688cfecd421ddca"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>subTypeId</b></td></tr>
 <tr class="separator:ac639cf9b3ee93e7bc688cfecd421ddca"><td class="memSeparator" colspan="2">&#160;</td></tr>

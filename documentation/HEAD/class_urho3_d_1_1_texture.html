@@ -32,6 +32,7 @@ group: HEAD
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_urho3_d_1_1_texture-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::Texture Class Reference</div>  </div>
@@ -68,14 +69,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f041595c6630ece64e123cb84fa5465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a7f041595c6630ece64e123cb84fa5465">SetNumLevels</a> (unsigned levels)</td></tr>
 <tr class="memdesc:a7f041595c6630ece64e123cb84fa5465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of requested mip levels. Needs to be called before setting size.  <a href="#a7f041595c6630ece64e123cb84fa5465">More...</a><br/></td></tr>
 <tr class="separator:a7f041595c6630ece64e123cb84fa5465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4296f685b88bbc52db01d0353699406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4296f685b88bbc52db01d0353699406"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ab4296f685b88bbc52db01d0353699406">SetFilterMode</a> (TextureFilterMode filter)</td></tr>
-<tr class="memdesc:ab4296f685b88bbc52db01d0353699406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set filtering mode. <br/></td></tr>
-<tr class="separator:ab4296f685b88bbc52db01d0353699406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389fd0d8d0e6af16e2b91208de4ef890"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a389fd0d8d0e6af16e2b91208de4ef890"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a389fd0d8d0e6af16e2b91208de4ef890">SetAddressMode</a> (TextureCoordinate coord, TextureAddressMode address)</td></tr>
-<tr class="memdesc:a389fd0d8d0e6af16e2b91208de4ef890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set addressing mode by texture coordinate. <br/></td></tr>
-<tr class="separator:a389fd0d8d0e6af16e2b91208de4ef890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687d8ebe38f3eb27e393d9af8ae93a81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a687d8ebe38f3eb27e393d9af8ae93a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a687d8ebe38f3eb27e393d9af8ae93a81">SetFilterMode</a> (TextureFilterMode mode)</td></tr>
+<tr class="memdesc:a687d8ebe38f3eb27e393d9af8ae93a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set filtering mode. <br/></td></tr>
+<tr class="separator:a687d8ebe38f3eb27e393d9af8ae93a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378338759a87ffe1b474dc42b526d46e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a378338759a87ffe1b474dc42b526d46e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a378338759a87ffe1b474dc42b526d46e">SetAddressMode</a> (TextureCoordinate coord, TextureAddressMode mode)</td></tr>
+<tr class="memdesc:a378338759a87ffe1b474dc42b526d46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set addressing mode by texture coordinate. <br/></td></tr>
+<tr class="separator:a378338759a87ffe1b474dc42b526d46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3faee8d80841137e19e372f7b20b28d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3faee8d80841137e19e372f7b20b28d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aa3faee8d80841137e19e372f7b20b28d">SetAnisotropy</a> (unsigned level)</td></tr>
 <tr class="memdesc:aa3faee8d80841137e19e372f7b20b28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture max. anisotropy level. No effect if not using anisotropic filtering. Value 0 (default) uses the default setting from <a class="el" href="class_urho3_d_1_1_renderer.html" title="High-level rendering subsystem. Manages drawing of 3D views. ">Renderer</a>. <br/></td></tr>
@@ -208,10 +209,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a0c6760bb91c25cb9b5387eb9cae27a50">GetParametersDirty</a> () const </td></tr>
 <tr class="memdesc:a0c6760bb91c25cb9b5387eb9cae27a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the parameters are dirty. <br/></td></tr>
 <tr class="separator:a0c6760bb91c25cb9b5387eb9cae27a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59aaabb00cc39f4b6035b7b319d61fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac59aaabb00cc39f4b6035b7b319d61fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#ac59aaabb00cc39f4b6035b7b319d61fc">SetParameters</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *xml)</td></tr>
-<tr class="memdesc:ac59aaabb00cc39f4b6035b7b319d61fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional parameters from an XML file. <br/></td></tr>
-<tr class="separator:ac59aaabb00cc39f4b6035b7b319d61fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e635893e2f569815c31347bb7569797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e635893e2f569815c31347bb7569797"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#a6e635893e2f569815c31347bb7569797">SetParameters</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *file)</td></tr>
+<tr class="memdesc:a6e635893e2f569815c31347bb7569797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional parameters from an XML file. <br/></td></tr>
+<tr class="separator:a6e635893e2f569815c31347bb7569797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee2915774cd960588e9dcdb3e213ff33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee2915774cd960588e9dcdb3e213ff33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_texture.html#aee2915774cd960588e9dcdb3e213ff33">SetParameters</a> (const <a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> &amp;element)</td></tr>
 <tr class="memdesc:aee2915774cd960588e9dcdb3e213ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional parameters from an XML element. <br/></td></tr>
@@ -763,6 +764,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#ada5a50cf10c6f65deb6b273bfc1649ab">dataPending_</a></td></tr>
 <tr class="memdesc:ada5a50cf10c6f65deb6b273bfc1649ab inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data pending flag. <br/></td></tr>
 <tr class="separator:ada5a50cf10c6f65deb6b273bfc1649ab inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adf63f2a2477f2f34d2bac3833d0c5cfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf63f2a2477f2f34d2bac3833d0c5cfc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>URHO3D_OBJECT</b> (<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a>, <a class="el" href="class_urho3_d_1_1_resource_with_metadata.html">ResourceWithMetadata</a>)</td></tr>
+<tr class="separator:adf63f2a2477f2f34d2bac3833d0c5cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for texture resources. </p>

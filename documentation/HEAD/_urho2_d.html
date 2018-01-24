@@ -104,7 +104,7 @@ Rigid bodies components</h2>
 <li>BT_DYNAMIC: a dynamic body is fully simulated. It can be moved manually by the user, but normally it moves according to forces. A dynamic body can collide with all body types. A dynamic body always has finite, non-zero mass. If you try to set the mass of a dynamic body to zero, it will automatically acquire a mass of one kilogram.</li>
 <li>BT_KINEMATIC: a kinematic body moves under simulation according to its velocity. Kinematic bodies do not respond to forces. They can be moved manually by the user, but normally a kinematic body is moved by setting its velocity. A kinematic body behaves as if it has infinite mass, however, Box2D stores zero for the mass and the inverse mass. Kinematic bodies do not collide with other static or kinematic bodies.</li>
 </ul>
-<p>You should establish the body type at creation, using <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html#ae050ad90041b66a3a93192bd7139a135">SetBodyType()</a>, because changing the body type later is expensive.</p>
+<p>You should establish the body type at creation, using <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html#aff8e10a282a37f439e29b9e954500353">SetBodyType()</a>, because changing the body type later is expensive.</p>
 <p>Rigid bodies can be moved/rotated by applying forces and impulses:</p>
 <ul>
 <li>linear force (progressive/gradual):<ul>
@@ -219,7 +219,7 @@ Binary functions</h3>
 <h3><a class="anchor" id="Urho2D_Physics_Queries_World"></a>
 World queries (see Box2D manual - Chapter 10 World Class)</h3>
 <ul>
-<li>AABB queries: return the bodies overlaping with the given rectangle. See <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a8391d9b8e0e5abfec95fb5281ae920fd">GetRigidBodies()</a>.</li>
+<li>AABB queries: return the bodies overlaping with the given rectangle. See <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#ac960e25745f06ff9b207a69d0b942572">GetRigidBodies()</a>.</li>
 <li>Ray casts: return the body, distance, point of intersection (position) and normal vector for every shape hit by the ray. See <a class="el" href="class_urho3_d_1_1_physics_world2_d.html#a81816843adb8e4fdfad7f69f27090867">Raycast()</a>.</li>
 </ul>
 <h2><a class="anchor" id="Urho2D_Physics_Events"></a>
