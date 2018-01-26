@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 288;
+var viewWidth = 371;
 var viewHeight = 476;
 var sectionId = 'dynsection-0';
 </script>
@@ -166,15 +166,28 @@ var sectionId = 'dynsection-0';
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
 <g id="a_node10"><a xlink:href="class_urho3_d_1_1_animated_sprite2_d.html" target="_top" xlink:title="Animated sprite component, it uses to play animation created by Spine (http://www.esotericsoftware.com) and Spriter (http://www.brashmonkey.com/). ">
-<polygon fill="none" stroke="black" points="144,-0.5 144,-19.5 280,-19.5 280,-0.5 144,-0.5"/>
-<text text-anchor="middle" x="212" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::AnimatedSprite2D</text>
+<polygon fill="none" stroke="black" points="65,-0.5 65,-19.5 201,-19.5 201,-0.5 65,-0.5"/>
+<text text-anchor="middle" x="133" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::AnimatedSprite2D</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge"><title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M212,-45.8045C212,-36.9102 212,-26.7798 212,-19.7511"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="208.5,-46.083 212,-56.083 215.5,-46.083 208.5,-46.083"/>
+<path fill="none" stroke="midnightblue" d="M190.966,-50.6221C176.534,-40.7574 157.859,-27.9919 145.661,-19.6545"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="189.077,-53.5703 199.307,-56.324 193.027,-47.7914 189.077,-53.5703"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node"><title>Node11</title>
+<g id="a_node11"><a xlink:href="class_urho3_d_1_1_stretchable_sprite2_d.html" target="_top" xlink:title="Stretchable sprite component. ">
+<polygon fill="none" stroke="black" points="219,-0.5 219,-19.5 363,-19.5 363,-0.5 219,-0.5"/>
+<text text-anchor="middle" x="291" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Urho3D::StretchableSprite2D</text>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node11 -->
+<g id="edge10" class="edge"><title>Node9&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M233.034,-50.6221C247.466,-40.7574 266.141,-27.9919 278.339,-19.6545"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="230.973,-47.7914 224.693,-56.324 234.923,-53.5703 230.973,-47.7914"/>
 </g>
 </g>
 </svg>
