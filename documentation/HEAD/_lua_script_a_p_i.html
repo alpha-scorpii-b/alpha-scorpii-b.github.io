@@ -964,6 +964,7 @@ Classes</h2>
 <li>void Remove()</li>
 <li>void DrawDebugGeometry(DebugRenderer* debug, bool depthTest)</li>
 <li>unsigned GetID() const</li>
+<li>bool IsReplicated() const</li>
 <li>Node* GetNode() const</li>
 <li>Scene* GetScene() const</li>
 <li>bool IsEnabled() const</li>
@@ -974,6 +975,7 @@ Classes</h2>
 <p>Properties:</p>
 <ul>
 <li>unsigned ID (readonly)</li>
+<li>bool replicated (readonly)</li>
 <li>bool enabled</li>
 <li>bool enabledEffective (readonly)</li>
 <li>Node* node (readonly)</li>
@@ -3859,6 +3861,7 @@ Classes</h2>
 <li>int GetScriptObject() const</li>
 <li>int GetScriptObject(const String scriptObjectType) const</li>
 <li>unsigned GetID() const</li>
+<li>bool IsReplicated() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetName() const</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string. ">StringHash</a> GetNameHash() const</li>
 <li>Node* GetParent() const</li>
@@ -3923,6 +3926,7 @@ Classes</h2>
 <p>Properties:</p>
 <ul>
 <li>unsigned ID (readonly)</li>
+<li>bool replicated (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> name</li>
 <li><a class="el" href="class_urho3_d_1_1_string_hash.html" title="32-bit hash value for a string. ">StringHash</a> nameHash (readonly)</li>
 <li>Node* parent</li>
