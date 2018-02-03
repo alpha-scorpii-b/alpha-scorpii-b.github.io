@@ -30,6 +30,7 @@ group: HEAD
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_urho3_d_1_1_raycast_vehicle-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -151,6 +152,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a311759e072f5eb4bed939081c433d34f">SetInAirRPM</a> (float rpm)</td></tr>
 <tr class="memdesc:a311759e072f5eb4bed939081c433d34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set revolution per minute value for when wheel doesn't touch ground. If set to 0 (or not set), calculated from engine force (probably not what you want). <br/></td></tr>
 <tr class="separator:a311759e072f5eb4bed939081c433d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3498dae909b1e329365213bc9bf21e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d3498dae909b1e329365213bc9bf21e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a3d3498dae909b1e329365213bc9bf21e">SetCoordinateSystem</a> (const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a> &amp;coordinateSystem=<a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a3d2336c76dc89cb18a63ba1ae4098105">RIGHT_FORWARD_UP</a>)</td></tr>
+<tr class="memdesc:a3d3498dae909b1e329365213bc9bf21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coordinate system. The default is (0, 1, 2). <br/></td></tr>
+<tr class="separator:a3d3498dae909b1e329365213bc9bf21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa3caceeaba3f96973e97bbb0288e30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaa3caceeaba3f96973e97bbb0288e30"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#adaa3caceeaba3f96973e97bbb0288e30">Init</a> ()</td></tr>
 <tr class="memdesc:adaa3caceeaba3f96973e97bbb0288e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the vehicle component after creation. <br/></td></tr>
@@ -275,6 +280,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#ac3a235a1afe20859a997e437e8ccd0f5">GetInAirRPM</a> () const </td></tr>
 <tr class="memdesc:ac3a235a1afe20859a997e437e8ccd0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get revolution per minute value for when wheel doesn't touch ground. <br/></td></tr>
 <tr class="separator:ac3a235a1afe20859a997e437e8ccd0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d61ea04ff784d57412e7ed3e5306b96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d61ea04ff784d57412e7ed3e5306b96"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a3d61ea04ff784d57412e7ed3e5306b96">GetCoordinateSystem</a> () const </td></tr>
+<tr class="memdesc:a3d61ea04ff784d57412e7ed3e5306b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coordinate system. <br/></td></tr>
+<tr class="separator:a3d61ea04ff784d57412e7ed3e5306b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ff2cc9e4fa0da1bdb8068c8df51dcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27ff2cc9e4fa0da1bdb8068c8df51dcc"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">VariantVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a27ff2cc9e4fa0da1bdb8068c8df51dcc">GetWheelDataAttr</a> () const </td></tr>
 <tr class="memdesc:a27ff2cc9e4fa0da1bdb8068c8df51dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wheel data attribute for serialization. <br/></td></tr>
@@ -791,6 +800,33 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 <tr class="memdesc:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type info static. <br/></td></tr>
 <tr class="separator:aaf5a648d6c449dd14b273c10fdd498a9 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8796870f0da70b0d9226c26a4affeae8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8796870f0da70b0d9226c26a4affeae8"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a8796870f0da70b0d9226c26a4affeae8">RIGHT_UP_FORWARD</a></td></tr>
+<tr class="memdesc:a8796870f0da70b0d9226c26a4affeae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(0, 1, 2) coordinate system (default). <br/></td></tr>
+<tr class="separator:a8796870f0da70b0d9226c26a4affeae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2336c76dc89cb18a63ba1ae4098105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d2336c76dc89cb18a63ba1ae4098105"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a3d2336c76dc89cb18a63ba1ae4098105">RIGHT_FORWARD_UP</a></td></tr>
+<tr class="memdesc:a3d2336c76dc89cb18a63ba1ae4098105"><td class="mdescLeft">&#160;</td><td class="mdescRight">(0, 2, 1) coordinate system. <br/></td></tr>
+<tr class="separator:a3d2336c76dc89cb18a63ba1ae4098105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af908be4985cdec0ce832f5f6e6fea579"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af908be4985cdec0ce832f5f6e6fea579"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#af908be4985cdec0ce832f5f6e6fea579">UP_FORWARD_RIGHT</a></td></tr>
+<tr class="memdesc:af908be4985cdec0ce832f5f6e6fea579"><td class="mdescLeft">&#160;</td><td class="mdescRight">(1, 2, 0) coordinate system. <br/></td></tr>
+<tr class="separator:af908be4985cdec0ce832f5f6e6fea579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978c0ccccf67df5529904f0a78775d57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a978c0ccccf67df5529904f0a78775d57"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a978c0ccccf67df5529904f0a78775d57">UP_RIGHT_FORWARD</a></td></tr>
+<tr class="memdesc:a978c0ccccf67df5529904f0a78775d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">(1, 0, 2) coordinate system. <br/></td></tr>
+<tr class="separator:a978c0ccccf67df5529904f0a78775d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa84ed88b59ea05511267e89ab8fdb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fa84ed88b59ea05511267e89ab8fdb9"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a2fa84ed88b59ea05511267e89ab8fdb9">FORWARD_RIGHT_UP</a></td></tr>
+<tr class="memdesc:a2fa84ed88b59ea05511267e89ab8fdb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(2, 0, 1) coordinate system. <br/></td></tr>
+<tr class="separator:a2fa84ed88b59ea05511267e89ab8fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a3851f27fcefa40d23b350d55ae9e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9a3851f27fcefa40d23b350d55ae9e7"></a>
+static const <a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#ac9a3851f27fcefa40d23b350d55ae9e7">FORWARD_UP_RIGHT</a></td></tr>
+<tr class="memdesc:ac9a3851f27fcefa40d23b350d55ae9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(2, 1, 0) coordinate system. <br/></td></tr>
+<tr class="separator:ac9a3851f27fcefa40d23b350d55ae9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1f7cb2a80aeff1b13b0e85fdd2eb5cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f7cb2a80aeff1b13b0e85fdd2eb5cfe"></a>
@@ -805,6 +841,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 RaycastVehicleData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#ac4d3c7b184c1ccaf286b766aacba4182">vehicleData_</a></td></tr>
 <tr class="memdesc:ac4d3c7b184c1ccaf286b766aacba4182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque Bullet data hidden from public. <br/></td></tr>
 <tr class="separator:ac4d3c7b184c1ccaf286b766aacba4182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77650d5fac55637af96c413c81c4ce8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad77650d5fac55637af96c413c81c4ce8"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector3.html">IntVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#ad77650d5fac55637af96c413c81c4ce8">coordinateSystem_</a></td></tr>
+<tr class="memdesc:ad77650d5fac55637af96c413c81c4ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinate system. <br/></td></tr>
+<tr class="separator:ad77650d5fac55637af96c413c81c4ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78003566a4aac7fc7f584e1dba54c876"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78003566a4aac7fc7f584e1dba54c876"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_raycast_vehicle.html#a78003566a4aac7fc7f584e1dba54c876">wheelNodes_</a></td></tr>
 <tr class="memdesc:a78003566a4aac7fc7f584e1dba54c876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes of all wheels. <br/></td></tr>
