@@ -5970,9 +5970,10 @@ Classes</h2>
 <ul>
 <li>void SetSprite(Sprite2D* sprite)</li>
 <li>void SetBlendMode(BlendMode mode)</li>
-<li>void SetFlip(bool flipX, bool flipY)</li>
+<li>void SetFlip(bool flipX, bool flipY, bool swapXY = false)</li>
 <li>void SetFlipX(bool flipX)</li>
 <li>void SetFlipY(bool flipY)</li>
+<li>void SetSwapXY(bool swapXY)</li>
 <li>void SetColor(const Color&amp; color)</li>
 <li>void SetAlpha(float alpha)</li>
 <li>void SetUseHotSpot(bool useHotSpot)</li>
@@ -5986,6 +5987,7 @@ Classes</h2>
 <li>BlendMode GetBlendMode() const</li>
 <li>bool GetFlipX() const</li>
 <li>bool GetFlipY() const</li>
+<li>bool GetSwapXY() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; GetColor() const</li>
 <li>float GetAlpha() const</li>
 <li>bool GetUseHotSpot() const</li>
@@ -6002,6 +6004,7 @@ Classes</h2>
 <li>BlendMode blendMode</li>
 <li>bool flipX</li>
 <li>bool flipY</li>
+<li>bool swapXY</li>
 <li><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color. ">Color</a>&amp; color</li>
 <li>float alpha</li>
 <li>bool useHotSpot</li>
@@ -6484,14 +6487,17 @@ Classes</h2>
 <h4><a class="el" href="class_urho3_d_1_1_tile2_d.html" title="Tile define. ">Tile2D</a></h4>
 <p>Methods:</p>
 <ul>
-<li>int GetGid() const</li>
+<li>unsigned GetGid() const</li>
+<li>bool GetFlipX() const</li>
+<li>bool GetFlipY() const</li>
+<li>bool GetSwapXY() const</li>
 <li>Sprite2D* GetSprite() const</li>
 <li>bool HasProperty(const String name) const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetProperty(const String name) const</li>
 </ul>
 <p>Properties:</p>
 <ul>
-<li>int gid (readonly)</li>
+<li>unsigned gid (readonly)</li>
 <li>Sprite2D* sprite (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_TileMap2D"></a> </p>
@@ -6570,7 +6576,10 @@ Classes</h2>
 <li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp; GetSize() const</li>
 <li>unsigned GetNumPoints() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a>&amp; GetPoint(unsigned index) const</li>
-<li>int GetTileGid() const</li>
+<li>unsigned GetTileGid() const</li>
+<li>bool GetTileFlipX() const</li>
+<li>bool GetTileFlipY() const</li>
+<li>bool GetTileSwapXY() const</li>
 <li>Sprite2D* GetTileSprite() const</li>
 <li>bool HasProperty(const String name) const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetProperty(const String name) const</li>
@@ -6583,7 +6592,7 @@ Classes</h2>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> position (readonly)</li>
 <li><a class="el" href="class_urho3_d_1_1_vector2.html" title="Two-dimensional vector. ">Vector2</a> size (readonly)</li>
 <li>unsigned numPoints (readonly)</li>
-<li>int tileGid (readonly)</li>
+<li>unsigned tileGid (readonly)</li>
 <li>Sprite2D* tileSprite (readonly)</li>
 </ul>
 <p><a class="anchor" id="Class_Time"></a> </p>
@@ -8540,6 +8549,11 @@ Global constants</h2>
 <li>unsigned DRAWABLE_ZONE</li>
 <li>unsigned FIRST_LOCAL_ID</li>
 <li>unsigned FIRST_REPLICATED_ID</li>
+<li>unsigned FLIP_ALL</li>
+<li>unsigned FLIP_DIAGONAL</li>
+<li>unsigned FLIP_HORIZONTAL</li>
+<li>unsigned FLIP_RESERVED</li>
+<li>unsigned FLIP_VERTICAL</li>
 <li>int HAT_CENTER</li>
 <li>int HAT_DOWN</li>
 <li>int HAT_LEFT</li>
