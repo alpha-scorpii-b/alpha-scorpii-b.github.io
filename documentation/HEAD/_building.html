@@ -89,7 +89,7 @@ Building prerequisites</h2>
 <p>To run Urho3D, the minimum system requirements are:</p>
 <ul>
 <li>Windows: CPU with SSE2 instructions support, Windows XP or newer, DirectX 9.0c, GPU with Shader Model 3 support.</li>
-<li>macOS: CPU with SSE2 instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions, OS version 10.5 or newer.</li>
+<li>macOS: CPU with SSE2 instructions support, GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions, OS version 10.9 or newer.</li>
 <li>Linux: any CPU (MMX, 3DNow!, and SSE/SSE2 instructions will be used if supported), GPU with OpenGL 2.0 support, EXT_framebuffer_object and EXT_packed_depth_stencil extensions.</li>
 <li>Raspberry Pi: Model B revision 2.0 with at least 128 MB of 512 MB SDRAM allocated for GPU.</li>
 <li>Android: OS version 2.3 or newer, OpenGL ES 2.0 capable GPU.</li>
@@ -221,7 +221,7 @@ Build options</h2>
 <tr>
 <td>CMAKE_INSTALL_PREFIX </td><td>*</td><td>Install path prefix, prepended onto install directories; default to 'c:/Program Files/Urho3D' on Windows host and '/usr/local' on all other non-Windows hosts </td></tr>
 <tr>
-<td>CMAKE_OSX_DEPLOYMENT_TARGET</td><td>-</td><td>Specify macOS deployment target (macOS platform only); default to current running macOS if not specified, the minimum supported target is 10.5 due to constraint from SDL library </td></tr>
+<td>CMAKE_OSX_DEPLOYMENT_TARGET</td><td>-</td><td>Specify macOS deployment target (macOS platform only); default to current running macOS if not specified, the minimum supported target is 10.9 </td></tr>
 <tr>
 <td>IPHONEOS_DEPLOYMENT_TARGET</td><td>-</td><td>Specify iOS deployment target (iOS platform only); default to latest installed iOS SDK if not specified, the minimum supported target is 3.0 due to constraint from SDL library </td></tr>
 <tr>
