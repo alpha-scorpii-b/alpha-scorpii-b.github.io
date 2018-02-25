@@ -32,7 +32,6 @@ group: HEAD
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_urho3_d_1_1_octree-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Urho3D::Octree Class Reference</div>  </div>
@@ -732,12 +731,6 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a9ce0763362743c80dcfbef5576049a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subdivision level. <br/></td></tr>
 <tr class="separator:a9ce0763362743c80dcfbef5576049a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:abd36bc61e004301cf76550dfbf266191"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd36bc61e004301cf76550dfbf266191"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RaycastDrawablesWork</b> (const <a class="el" href="struct_urho3_d_1_1_work_item.html">WorkItem</a> *item, unsigned threadIndex)</td></tr>
-<tr class="separator:abd36bc61e004301cf76550dfbf266191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_urho3_d_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_urho3_d_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_urho3_d_1_1_component.html">Urho3D::Component</a></td></tr>
@@ -906,7 +899,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a108f540cf98ea89320f8e0fd1a5a3782 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_drawable.html" title="Base class for visible components. ">Drawable</a> objects. <br/></td></tr>
 <tr class="separator:a108f540cf98ea89320f8e0fd1a5a3782 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52a4716ad2ab161a1311e8b76624f12 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae52a4716ad2ab161a1311e8b76624f12"></a>
-<a class="el" href="class_urho3_d_1_1_octant.html">Octant</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#ae52a4716ad2ab161a1311e8b76624f12">children_</a> [NUM_OCTANTS]</td></tr>
+<a class="el" href="class_urho3_d_1_1_octant.html">Octant</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#ae52a4716ad2ab161a1311e8b76624f12">children_</a> [NUM_OCTANTS] {}</td></tr>
 <tr class="memdesc:ae52a4716ad2ab161a1311e8b76624f12 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child octants. <br/></td></tr>
 <tr class="separator:ae52a4716ad2ab161a1311e8b76624f12 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad402316410a7f537b4a73fba90df55c4 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad402316410a7f537b4a73fba90df55c4"></a>
@@ -922,7 +915,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:acd00b21e2f22e37697c12299ca20339d inherit pro_attribs_class_urho3_d_1_1_octant"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subdivision level. <br/></td></tr>
 <tr class="separator:acd00b21e2f22e37697c12299ca20339d inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e9ad0ca606be6790fcdbb0801a4e55 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e9ad0ca606be6790fcdbb0801a4e55"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a61e9ad0ca606be6790fcdbb0801a4e55">numDrawables_</a></td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a61e9ad0ca606be6790fcdbb0801a4e55">numDrawables_</a> {}</td></tr>
 <tr class="memdesc:a61e9ad0ca606be6790fcdbb0801a4e55 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of drawable objects in this octant and child octants. <br/></td></tr>
 <tr class="separator:a61e9ad0ca606be6790fcdbb0801a4e55 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad23d7d6efed939ca9035303cdbc7b6 inherit pro_attribs_class_urho3_d_1_1_octant"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ad23d7d6efed939ca9035303cdbc7b6"></a>
