@@ -152,10 +152,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a7714c87f664595e59c28663653dd56e9">RaycastSingle</a> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
 <tr class="memdesc:a7714c87f664595e59c28663653dd56e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a physics world raycast and return the closest hit. <br/></td></tr>
 <tr class="separator:a7714c87f664595e59c28663653dd56e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1905d3a9482589b50ad625a5ac23c5eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1905d3a9482589b50ad625a5ac23c5eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a1905d3a9482589b50ad625a5ac23c5eb">RaycastSingleSegmented</a> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, float segmentDistance, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
-<tr class="memdesc:a1905d3a9482589b50ad625a5ac23c5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a physics world segmented raycast and return the closest hit. Useful for big scenes with many bodies. <br/></td></tr>
-<tr class="separator:a1905d3a9482589b50ad625a5ac23c5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a75aa1ba5ef79934fa5933e9fc2a0516c">RaycastSingleSegmented</a> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, float segmentDistance, unsigned collisionMask=M_MAX_UNSIGNED, float overlapDistance=0.1f)</td></tr>
+<tr class="separator:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9625022dc308a9b18750c969bbd72963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9625022dc308a9b18750c969bbd72963"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a9625022dc308a9b18750c969bbd72963">SphereCast</a> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float radius, float maxDistance, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
 <tr class="memdesc:a9625022dc308a9b18750c969bbd72963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a physics world swept sphere test and return the closest hit. <br/></td></tr>
@@ -1110,7 +1108,59 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physics simulation world component. Should be added only to the root scene node. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a75aa1ba5ef79934fa5933e9fc2a0516c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Urho3D::PhysicsWorld::RaycastSingleSegmented </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>segmentDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>collisionMask</em> = <code>M_MAX_UNSIGNED</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>overlapDistance</em> = <code>0.1f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform a physics world segmented raycast and return the closest hit. Useful for big scenes with many bodies. overlapDistance is used to make sure there are no gap between segments, and must be smaller than segmentDistance. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Physics/PhysicsWorld.h</li>
 <li>Source/Urho3D/Physics/PhysicsWorld.cpp</li>
 </ul>
