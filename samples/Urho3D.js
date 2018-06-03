@@ -1,7 +1,5 @@
 
-var Module;
-
-if (typeof Module === 'undefined') Module = eval('(function() { try { return Module || {} } catch(e) { return {} } })()');
+var Module = typeof Module !== 'undefined' ? Module : {};
 
 if (!Module.expectedDataFileDownloads) {
   Module.expectedDataFileDownloads = 0;
@@ -122,7 +120,7 @@ Module.expectedDataFileDownloads++;
     };
 
         var files = metadata.files;
-        for (i = 0; i < files.length; ++i) {
+        for (var i = 0; i < files.length; ++i) {
           new DataRequest(files[i].start, files[i].end, files[i].crunched, files[i].audio).open('GET', files[i].filename);
         }
 
@@ -231,7 +229,7 @@ Module.expectedDataFileDownloads++;
         DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
   
           var files = metadata.files;
-          for (i = 0; i < files.length; ++i) {
+          for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
               Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
@@ -283,6 +281,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 154658, "filename": "/CoreData.pak"}, {"audio": 0, "start": 154658, "crunched": 0, "end": 17518814, "filename": "/Data.pak"}], "remote_package_size": 17518814, "package_uuid": "2c1ea62e-116e-467b-8125-16992f3975e6"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 154658, "filename": "/CoreData.pak"}, {"audio": 0, "start": 154658, "crunched": 0, "end": 17518814, "filename": "/Data.pak"}], "remote_package_size": 17518814, "package_uuid": "063175f8-12e3-4715-9294-b892c3162af2"});
 
 })();

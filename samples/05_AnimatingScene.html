@@ -76,7 +76,7 @@
 
       #progress {
         height: 20px;
-        width: 30px;
+        width: 300px;
       }
 
       #controls {
@@ -109,7 +109,7 @@
 <a href="https://urho3d.github.io" title="Urho3D Homepage"><img src="https://urho3d.github.io/assets/images/logo.png" alt="link to https://urho3d.github.io" height="80" width="160" /></a>
 
     <a href="http://emscripten.org">
-      <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+      <svg
    version="1.1"
    id="Layer_1"
    x="0px"
@@ -1267,10 +1267,12 @@
         })(),
         setStatus: function(text) {
           if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
-          if (text === Module.setStatus.text) return;
+          if (text === Module.setStatus.last.text) return;
           var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
           var now = Date.now();
-          if (m && now - Date.now() < 30) return; // if this is a progress update, skip it if too soon
+          if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
+          Module.setStatus.last.time = now;
+          Module.setStatus.last.text = text;
           if (m) {
             text = m[1];
             progressElement.value = parseInt(m[2])*100;
