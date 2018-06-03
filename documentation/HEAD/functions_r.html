@@ -459,9 +459,6 @@ group: HEAD
 <li>RegisterAttribute()
 : <a class="el" href="class_urho3_d_1_1_context.html#a55851d5ab03e8f1decedf34ccd510518">Urho3D::Context</a>
 </li>
-<li>RegisterEventName()
-: <a class="el" href="struct_urho3_d_1_1_event_name_registrar.html#a0eee3a719a58ad3fc67dbc24f230e228">Urho3D::EventNameRegistrar</a>
-</li>
 <li>RegisterFactory()
 : <a class="el" href="class_urho3_d_1_1_context.html#aa9b2cffef8d52fa18bfe533a2615a598">Urho3D::Context</a>
 </li>
@@ -597,6 +594,9 @@ group: HEAD
 </li>
 <li>RegisterRemoteEvent()
 : <a class="el" href="class_urho3_d_1_1_network.html#a9f4cfd09d02c0b1180b6eb4d9e9b7f62">Urho3D::Network</a>
+</li>
+<li>RegisterString()
+: <a class="el" href="class_urho3_d_1_1_string_hash_register.html#a2de6bafdcc16e913379f4b7c749f30d5">Urho3D::StringHashRegister</a>
 </li>
 <li>RegisterSubsystem()
 : <a class="el" href="class_urho3_d_1_1_context.html#a1d6f7fd248f44896e0c5f8609485e7e6">Urho3D::Context</a>
@@ -791,7 +791,7 @@ group: HEAD
 </li>
 <li>RemoveAttributeAnimation()
 : <a class="el" href="class_urho3_d_1_1_animatable.html#ae6ca516abed8b44c3ea4a0cc60fbb9ae">Urho3D::Animatable</a>
-, <a class="el" href="class_urho3_d_1_1_object_animation.html#ab6d8a5c0c1f781cf7aa85dbf25d7a642">Urho3D::ObjectAnimation</a>
+, <a class="el" href="class_urho3_d_1_1_object_animation.html#adb55fe8fad1b003fe2f1dd7a6861be82">Urho3D::ObjectAnimation</a>
 </li>
 <li>RemoveAutoComplete()
 : <a class="el" href="class_urho3_d_1_1_console.html#a4c21b4b3a9d5f6a13c4a8cf94934781d">Urho3D::Console</a>
@@ -805,7 +805,7 @@ group: HEAD
 <li>RemoveChild()
 : <a class="el" href="class_urho3_d_1_1_node.html#a3ffe2c6ea129ee77f6d2ed1d4a67f41f">Urho3D::Node</a>
 , <a class="el" href="class_urho3_d_1_1_u_i_element.html#a9ccf68e4882157d8fc2489ea9b10a658">Urho3D::UIElement</a>
-, <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a4b62c7e68fa1c89d8e5eeb238057f19f">Urho3D::XMLElement</a>
+, <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a1decf306791cbbeddaa44b0eb520121c">Urho3D::XMLElement</a>
 </li>
 <li>RemoveChildAtIndex()
 : <a class="el" href="class_urho3_d_1_1_u_i_element.html#a7f9a61d707abb6dcc23dbd95b52d70ac">Urho3D::UIElement</a>
@@ -815,7 +815,7 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a03566428329fd84e12bdbaaab2724be3">Urho3D::XMLElement</a>
 </li>
 <li>RemoveChildXML()
-: <a class="el" href="class_urho3_d_1_1_u_i_element.html#a154858866562d7ba595c17eb936348bb">Urho3D::UIElement</a>
+: <a class="el" href="class_urho3_d_1_1_u_i_element.html#a0e4a734068b4e281d25c3d4cac326af0">Urho3D::UIElement</a>
 </li>
 <li>RemoveCollisionShape()
 : <a class="el" href="class_urho3_d_1_1_physics_world.html#ac1c50c09ad613f74b051891dba4d83b0">Urho3D::PhysicsWorld</a>
@@ -833,7 +833,7 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_render_path.html#ae0d1d4dc9ae14661414b86f4570c4ee8">Urho3D::RenderPath</a>
 </li>
 <li>RemoveComponent()
-: <a class="el" href="class_urho3_d_1_1_node.html#a9ebc93d0dede9247dbbe0b17cdbcbb93">Urho3D::Node</a>
+: <a class="el" href="class_urho3_d_1_1_node.html#a461bf7180ffd7a5247a3fa5b57ce1524">Urho3D::Node</a>
 </li>
 <li>RemoveComponents()
 : <a class="el" href="class_urho3_d_1_1_node.html#a533ee53c16f6100f82ad00068dacbe8a">Urho3D::Node</a>
@@ -863,7 +863,7 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#ab20ad405d511fb3c3628ca4225bcf77d">Urho3D::LuaScriptEventListener</a>
 , <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#a7ea80194ece693c98c76754cab82a1c0">Urho3D::LuaScriptInstance</a>
 , <a class="el" href="class_urho3_d_1_1_script_event_listener.html#a828e59ae4db9a3b4a75e2f025604708a">Urho3D::ScriptEventListener</a>
-, <a class="el" href="class_urho3_d_1_1_script_file.html#a63032449e11b5a24a7d2b415a2dabbc6">Urho3D::ScriptFile</a>
+, <a class="el" href="class_urho3_d_1_1_script_file.html#a03afb2f798897a8bdf2ae696a3a31cc0">Urho3D::ScriptFile</a>
 , <a class="el" href="class_urho3_d_1_1_script_instance.html#a42ca5d2cf0a313b8154c935079878ad3">Urho3D::ScriptInstance</a>
 </li>
 <li>RemoveEventHandlers()
@@ -871,8 +871,8 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#abafe94290ca2a07cad22ab689d59db62">Urho3D::LuaScriptEventListener</a>
 , <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#a491bf5f45a08b6976251ca55eb8b912e">Urho3D::LuaScriptInstance</a>
 , <a class="el" href="class_urho3_d_1_1_script_event_listener.html#aedae6844cf8a8dfa1b557bfeffbb42f2">Urho3D::ScriptEventListener</a>
-, <a class="el" href="class_urho3_d_1_1_script_file.html#acabe80ecd63e402984cd7188c4fcf310">Urho3D::ScriptFile</a>
-, <a class="el" href="class_urho3_d_1_1_script_instance.html#a19ddf25bf8d1d4922a0ba1923570e5bc">Urho3D::ScriptInstance</a>
+, <a class="el" href="class_urho3_d_1_1_script_file.html#af7dbbf6ba2a7ede8f2c11aee20cfe331">Urho3D::ScriptFile</a>
+, <a class="el" href="class_urho3_d_1_1_script_instance.html#a989ae4c6d7ff04fabd21a1317e9498f4">Urho3D::ScriptInstance</a>
 </li>
 <li>RemoveEventHandlersExcept()
 : <a class="el" href="class_urho3_d_1_1_lua_script.html#af9175e523e8b4bdf90b33e5e47c0c48c">Urho3D::LuaScript</a>
@@ -883,7 +883,7 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_script_instance.html#ac4a802c44c0da88dd12e3a2a1429a907">Urho3D::ScriptInstance</a>
 </li>
 <li>RemoveEventReceiver()
-: <a class="el" href="class_urho3_d_1_1_context.html#ac51cece3ce521865bda2b82008e1acc2">Urho3D::Context</a>
+: <a class="el" href="class_urho3_d_1_1_context.html#a7b5bd076e695054df7930255c3eee18b">Urho3D::Context</a>
 </li>
 <li>RemoveEventSender()
 : <a class="el" href="class_urho3_d_1_1_context.html#a3b2110b5cf78732574cbf823a7e3cfb7">Urho3D::Context</a>
@@ -1096,10 +1096,10 @@ group: HEAD
 , <a class="el" href="class_urho3_d_1_1_slider.html#a1c0a331ac5dc33629cfd9158ce2b5af9">Urho3D::Slider</a>
 </li>
 <li>Replace()
-: <a class="el" href="class_urho3_d_1_1_string.html#ab08b5f1f7cee23f3e14eebcb2f7f8d4e">Urho3D::String</a>
+: <a class="el" href="class_urho3_d_1_1_string.html#ac393b2f64bee09e24ed47cc40815484a">Urho3D::String</a>
 </li>
 <li>Replaced()
-: <a class="el" href="class_urho3_d_1_1_string.html#a1a41055acbf0ccfd4ab3b97d9bc2cf94">Urho3D::String</a>
+: <a class="el" href="class_urho3_d_1_1_string.html#a0975ca6234d9bb2789c763138ba1249a">Urho3D::String</a>
 </li>
 <li>ReplacePrint()
 : <a class="el" href="class_urho3_d_1_1_lua_script.html#a51e775ac0c9bf13de0f3c7230a38170c">Urho3D::LuaScript</a>
@@ -1153,9 +1153,9 @@ group: HEAD
 : <a class="el" href="struct_urho3_d_1_1_scratch_buffer.html#aef972aaf6c930ccf763481a3e1cff7c8">Urho3D::ScratchBuffer</a>
 </li>
 <li>ReserveNode()
-: <a class="el" href="class_urho3_d_1_1_hash_map.html#a7ce17d71a4cc26fe66ca01558093e672">Urho3D::HashMap&lt; T, U &gt;</a>
+: <a class="el" href="class_urho3_d_1_1_hash_map.html#ae040c849142a9db237dccb55fbf18e6f">Urho3D::HashMap&lt; T, U &gt;</a>
 , <a class="el" href="class_urho3_d_1_1_hash_set.html#abd9742800f7ac34e40cb8068fcaaf4f6">Urho3D::HashSet&lt; T &gt;</a>
-, <a class="el" href="class_urho3_d_1_1_list.html#a6bbdba3032fcc6a509e29dc0a20bbc36">Urho3D::List&lt; T &gt;</a>
+, <a class="el" href="class_urho3_d_1_1_list.html#a2937959f3186f4143d687c2ce896309c">Urho3D::List&lt; T &gt;</a>
 </li>
 <li>ReserveScratchBuffer()
 : <a class="el" href="class_urho3_d_1_1_graphics.html#a1310752620e1a218f8b842b8e80e331c">Urho3D::Graphics</a>
@@ -1372,7 +1372,7 @@ group: HEAD
 : <a class="el" href="class_urho3_d_1_1_resource_cache.html#a4a71c415f8d9cc386f83c625cfcbfb5e">Urho3D::ResourceCache</a>
 </li>
 <li>ResourceRef()
-: <a class="el" href="struct_urho3_d_1_1_resource_ref.html#a705d270a04dd8baa2d8029b47cc616ca">Urho3D::ResourceRef</a>
+: <a class="el" href="struct_urho3_d_1_1_resource_ref.html#a7ebb027bc399067957f85506b917019e">Urho3D::ResourceRef</a>
 </li>
 <li>ResourceRefList()
 : <a class="el" href="struct_urho3_d_1_1_resource_ref_list.html#a986ec68bb427b72311f7dceb978158e4">Urho3D::ResourceRefList</a>
@@ -1427,6 +1427,9 @@ group: HEAD
 </li>
 <li>reuseShadowMaps_
 : <a class="el" href="class_urho3_d_1_1_renderer.html#a05ccfe5b4f61cd36de93d33946f2b83b">Urho3D::Renderer</a>
+</li>
+<li>Reverse()
+: <a class="el" href="class_urho3_d_1_1_string_hash.html#a72d2b6c526b71592a55db530d51564ff">Urho3D::StringHash</a>
 </li>
 <li>reverseCulling_
 : <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html#a419cd90c918a111238d1a0d5d442527f">Urho3D::OcclusionBuffer</a>
