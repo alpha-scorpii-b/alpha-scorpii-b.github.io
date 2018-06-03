@@ -90,6 +90,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#a8616056b547e1bb977b532aaa3524b51">HashMap</a> (const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; T, U &gt; &amp;map)</td></tr>
 <tr class="memdesc:a8616056b547e1bb977b532aaa3524b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from another hash map. <br/></td></tr>
 <tr class="separator:a8616056b547e1bb977b532aaa3524b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd629df0550217471e78dabaad6c003"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fd629df0550217471e78dabaad6c003"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#a5fd629df0550217471e78dabaad6c003">HashMap</a> (<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; T, U &gt; &amp;&amp;map) noexcept</td></tr>
+<tr class="memdesc:a5fd629df0550217471e78dabaad6c003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-construct from another hash map. <br/></td></tr>
+<tr class="separator:a5fd629df0550217471e78dabaad6c003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbee90158fa4068e63bef00ccf7b86b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbee90158fa4068e63bef00ccf7b86b6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#acbee90158fa4068e63bef00ccf7b86b6">HashMap</a> (const std::initializer_list&lt; <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; T, U &gt;&gt; &amp;list)</td></tr>
 <tr class="memdesc:acbee90158fa4068e63bef00ccf7b86b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregate initialization constructor. <br/></td></tr>
@@ -102,6 +106,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#af46d59064db81ce144a4eba8cbeb578d">operator=</a> (const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; T, U &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:af46d59064db81ce144a4eba8cbeb578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a hash map. <br/></td></tr>
 <tr class="separator:af46d59064db81ce144a4eba8cbeb578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a93b82829cb5816b1115e7ff421e2e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a93b82829cb5816b1115e7ff421e2e6"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#a8a93b82829cb5816b1115e7ff421e2e6">operator=</a> (<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; T, U &gt; &amp;&amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a8a93b82829cb5816b1115e7ff421e2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assign a hash map. <br/></td></tr>
+<tr class="separator:a8a93b82829cb5816b1115e7ff421e2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada972fad853f0353af992b1d7887eec1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada972fad853f0353af992b1d7887eec1"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#ada972fad853f0353af992b1d7887eec1">operator+=</a> (const <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; T, U &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ada972fad853f0353af992b1d7887eec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add-assign a pair. <br/></td></tr>
@@ -130,11 +138,11 @@ U *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#a4ea3f4d40aa0dbac474e21a04a746dd8">Populate</a> (const T &amp;key, const U &amp;value)</td></tr>
 <tr class="memdesc:a4ea3f4d40aa0dbac474e21a04a746dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the map using variadic template. This handles the base case. <br/></td></tr>
 <tr class="separator:a4ea3f4d40aa0dbac474e21a04a746dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af845f478ba0c6c3d217855ea8658a8b1"><td class="memTemplParams" colspan="2"><a class="anchor" id="af845f478ba0c6c3d217855ea8658a8b1"></a>
+<tr class="memitem:acf65722c5fcdad2dacf6b5f0da0fa9cf"><td class="memTemplParams" colspan="2"><a class="anchor" id="acf65722c5fcdad2dacf6b5f0da0fa9cf"></a>
 template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:af845f478ba0c6c3d217855ea8658a8b1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#af845f478ba0c6c3d217855ea8658a8b1">Populate</a> (const T &amp;key, const U &amp;value, Args...args)</td></tr>
-<tr class="memdesc:af845f478ba0c6c3d217855ea8658a8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the map using variadic template. <br/></td></tr>
-<tr class="separator:af845f478ba0c6c3d217855ea8658a8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf65722c5fcdad2dacf6b5f0da0fa9cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#acf65722c5fcdad2dacf6b5f0da0fa9cf">Populate</a> (const T &amp;key, const U &amp;value, const Args &amp;...args)</td></tr>
+<tr class="memdesc:acf65722c5fcdad2dacf6b5f0da0fa9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the map using variadic template. <br/></td></tr>
+<tr class="separator:acf65722c5fcdad2dacf6b5f0da0fa9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e80c0c98d795960287fdce2215e312"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e80c0c98d795960287fdce2215e312"></a>
 <a class="el" href="struct_urho3_d_1_1_hash_map_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_hash_map.html#ad7e80c0c98d795960287fdce2215e312">Insert</a> (const <a class="el" href="class_urho3_d_1_1_pair.html">Pair</a>&lt; T, U &gt; &amp;pair)</td></tr>
 <tr class="memdesc:ad7e80c0c98d795960287fdce2215e312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a pair. Return an iterator to it. <br/></td></tr>
