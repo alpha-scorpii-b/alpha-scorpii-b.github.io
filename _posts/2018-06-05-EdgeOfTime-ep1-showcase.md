@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Edge of Time Bolderline Episode 1: Rise of the Aeus'
+title: 'Edge of Time Episode 1: Rise of the Aeus'
 description: Posted by Galileo
 category: showcases
 image:
