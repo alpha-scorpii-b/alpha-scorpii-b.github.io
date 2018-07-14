@@ -586,7 +586,7 @@ Classes</h2>
 <li>void SetZoom(float zoom)</li>
 <li>void SetLodBias(float bias)</li>
 <li>void SetViewMask(unsigned mask)</li>
-<li>void SetViewOverrideFlags(unsigned flags)</li>
+<li>void SetViewOverrideFlags(ViewOverride flags)</li>
 <li>void SetOrthographic(bool enable)</li>
 <li>void SetAutoAspectRatio(bool enable)</li>
 <li>void SetProjectionOffset(const Vector2&amp; offset)</li>
@@ -603,7 +603,7 @@ Classes</h2>
 <li>float GetZoom() const</li>
 <li>float GetLodBias() const</li>
 <li>unsigned GetViewMask() const</li>
-<li>unsigned GetViewOverrideFlags() const</li>
+<li>ViewOverride GetViewOverrideFlags() const</li>
 <li>FillMode GetFillMode() const</li>
 <li>bool IsOrthographic() const</li>
 <li>bool GetAutoAspectRatio() const</li>
@@ -640,7 +640,7 @@ Classes</h2>
 <li>float zoom</li>
 <li>float lodBias</li>
 <li>unsigned viewMask</li>
-<li>unsigned viewOverrideFlags</li>
+<li>ViewOverride viewOverrideFlags</li>
 <li>FillMode fillMode</li>
 <li>bool orthographic</li>
 <li>bool autoAspectRatio</li>
@@ -2639,20 +2639,20 @@ Classes</h2>
 <li>void RemoveAllGestures()</li>
 <li>void SetMousePosition(const IntVector2&amp; position)</li>
 <li>void CenterMousePosition()</li>
-<li>int GetKeyFromName(const String name) const</li>
-<li>int GetKeyFromScancode(int scancode) const</li>
-<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetKeyName(int key) const</li>
-<li>int GetScancodeFromKey(int key) const</li>
-<li>int GetScancodeFromName(const String name) const</li>
-<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetScancodeName(int scancode) const</li>
-<li>bool GetKeyDown(int key) const</li>
-<li>bool GetKeyPress(int key) const</li>
-<li>bool GetScancodeDown(int scancode) const</li>
-<li>bool GetScancodePress(int scancode) const</li>
-<li>bool GetMouseButtonDown(int button) const</li>
-<li>bool GetMouseButtonPress(int button) const</li>
-<li>bool GetQualifierDown(int qualifier) const</li>
-<li>bool GetQualifierPress(int qualifier) const</li>
+<li>Key GetKeyFromName(const String name) const</li>
+<li>Key GetKeyFromScancode(Scancode scancode) const</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetKeyName(Key key) const</li>
+<li>Scancode GetScancodeFromKey(Key key) const</li>
+<li>Scancode GetScancodeFromName(const String name) const</li>
+<li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetScancodeName(Scancode scancode) const</li>
+<li>bool GetKeyDown(Key key) const</li>
+<li>bool GetKeyPress(Key key) const</li>
+<li>bool GetScancodeDown(Scancode scancode) const</li>
+<li>bool GetScancodePress(Scancode scancode) const</li>
+<li>bool GetMouseButtonDown(MouseButton button) const</li>
+<li>bool GetMouseButtonPress(MouseButton button) const</li>
+<li>bool GetQualifierDown(Qualifier qualifier) const</li>
+<li>bool GetQualifierPress(Qualifier qualifier) const</li>
 <li>int GetQualifiers() const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetMousePosition() const</li>
 <li><a class="el" href="class_urho3_d_1_1_int_vector2.html" title="Two-dimensional vector with integer values. ">IntVector2</a> GetMouseMove() const</li>
@@ -3172,7 +3172,7 @@ Classes</h2>
 <li>Material* new()</li>
 <li>void delete()</li>
 <li>void SetNumTechniques(unsigned num)</li>
-<li>void SetTechnique(unsigned index, Technique* tech, unsigned qualityLevel = 0, float lodDistance = 0.0f)</li>
+<li>void SetTechnique(unsigned index, Technique* tech, MaterialQuality qualityLevel = 0, float lodDistance = 0.0f)</li>
 <li>void SetVertexShaderDefines(const String defines)</li>
 <li>void SetPixelShaderDefines(const String defines)</li>
 <li>void SetShaderParameter(const String name, const Variant&amp; value)</li>
@@ -4950,8 +4950,8 @@ Classes</h2>
 <li>void SetSpecularLighting(bool enable)</li>
 <li>void SetTextureAnisotropy(int level)</li>
 <li>void SetTextureFilterMode(TextureFilterMode mode)</li>
-<li>void SetTextureQuality(int quality)</li>
-<li>void SetMaterialQuality(int quality)</li>
+<li>void SetTextureQuality(MaterialQuality quality)</li>
+<li>void SetMaterialQuality(MaterialQuality quality)</li>
 <li>void SetDrawShadows(bool enable)</li>
 <li>void SetShadowMapSize(int size)</li>
 <li>void SetShadowQuality(ShadowQuality quality)</li>
@@ -4982,8 +4982,8 @@ Classes</h2>
 <li>bool GetDrawShadows() const</li>
 <li>int GetTextureAnisotropy() const</li>
 <li>TextureFilterMode GetTextureFilterMode() const</li>
-<li>int GetTextureQuality() const</li>
-<li>int GetMaterialQuality() const</li>
+<li>MaterialQuality GetTextureQuality() const</li>
+<li>MaterialQuality GetMaterialQuality() const</li>
 <li>int GetShadowMapSize() const</li>
 <li>ShadowQuality GetShadowQuality() const</li>
 <li>float GetShadowSoftness() const</li>
@@ -5025,8 +5025,8 @@ Classes</h2>
 <li>bool drawShadows</li>
 <li>int textureAnisotropy</li>
 <li>TextureFilterMode textureFilterMode</li>
-<li>int textureQuality</li>
-<li>int materialQuality</li>
+<li>MaterialQuality textureQuality</li>
+<li>MaterialQuality materialQuality</li>
 <li>int shadowMapSize</li>
 <li>ShadowQuality shadowQuality</li>
 <li>float shadowSoftness</li>
@@ -6369,7 +6369,7 @@ Classes</h2>
 <li>void SetBorderColor(const Color&amp; color)</li>
 <li>void SetSRGB(bool enable)</li>
 <li>void SetBackupTexture(Texture* texture)</li>
-<li>void SetMipsToSkip(int quality, int toSkip)</li>
+<li>void SetMipsToSkip(MaterialQuality quality, int toSkip)</li>
 <li>unsigned GetFormat() const</li>
 <li>bool IsCompressed() const</li>
 <li>unsigned GetLevels() const</li>
@@ -6385,7 +6385,7 @@ Classes</h2>
 <li>bool IsResolveDirty() const</li>
 <li>bool GetLevelsDirty() const</li>
 <li>Texture* GetBackupTexture() const</li>
-<li>int GetMipsToSkip(int quality) const</li>
+<li>int GetMipsToSkip(MaterialQuality quality) const</li>
 <li>int GetLevelWidth(unsigned level) const</li>
 <li>int GetLevelHeight(unsigned level) const</li>
 <li>TextureUsage GetUsage() const</li>
@@ -6821,7 +6821,7 @@ Classes</h2>
 <li>void SetSelected(bool enable)</li>
 <li>void SetVisible(bool enable)</li>
 <li>void SetFocusMode(FocusMode mode)</li>
-<li>void SetDragDropMode(unsigned mode)</li>
+<li>void SetDragDropMode(DragAndDropMode mode)</li>
 <li>bool SetStyle(const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> styleName, XMLFile* file = 0)</li>
 <li>bool SetStyle(const XMLElement&amp; element)</li>
 <li>bool SetStyleAuto(XMLFile* file = 0)</li>
@@ -6899,7 +6899,7 @@ Classes</h2>
 <li>bool IsInternal() const</li>
 <li>bool HasColorGradient() const</li>
 <li>FocusMode GetFocusMode() const</li>
-<li>unsigned GetDragDropMode() const</li>
+<li>DragAndDropMode GetDragDropMode() const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetAppliedStyle() const</li>
 <li>XMLFile* GetDefaultStyle(bool recursiveUp = true) const</li>
 <li>LayoutMode GetLayoutMode() const</li>
@@ -6983,7 +6983,7 @@ Classes</h2>
 <li>bool internal</li>
 <li>bool colorGradient (readonly)</li>
 <li>FocusMode focusMode</li>
-<li>unsigned dragDropMode</li>
+<li>DragAndDropMode dragDropMode</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> style</li>
 <li>XMLFile* defaultStyle</li>
 <li>LayoutMode layoutMode</li>
@@ -7716,6 +7716,12 @@ Enumerations</h2>
 <li>int BT_KINEMATIC</li>
 <li>int BT_DYNAMIC</li>
 </ul>
+<h4>ClearTarget</h4>
+<ul>
+<li>int CLEAR_COLOR</li>
+<li>int CLEAR_DEPTH</li>
+<li>int CLEAR_STENCIL</li>
+</ul>
 <h4>CollisionEventMode</h4>
 <ul>
 <li>int COLLISION_NEVER</li>
@@ -7752,6 +7758,33 @@ Enumerations</h2>
 <li>int CONSTRAINT_HINGE</li>
 <li>int CONSTRAINT_SLIDER</li>
 <li>int CONSTRAINT_CONETWIST</li>
+</ul>
+<h4>ControllerAxis</h4>
+<ul>
+<li>int CONTROLLER_AXIS_LEFTX</li>
+<li>int CONTROLLER_AXIS_LEFTY</li>
+<li>int CONTROLLER_AXIS_RIGHTX</li>
+<li>int CONTROLLER_AXIS_RIGHTY</li>
+<li>int CONTROLLER_AXIS_TRIGGERLEFT</li>
+<li>int CONTROLLER_AXIS_TRIGGERRIGHT</li>
+</ul>
+<h4>ControllerButton</h4>
+<ul>
+<li>int CONTROLLER_BUTTON_A</li>
+<li>int CONTROLLER_BUTTON_B</li>
+<li>int CONTROLLER_BUTTON_X</li>
+<li>int CONTROLLER_BUTTON_Y</li>
+<li>int CONTROLLER_BUTTON_BACK</li>
+<li>int CONTROLLER_BUTTON_GUIDE</li>
+<li>int CONTROLLER_BUTTON_START</li>
+<li>int CONTROLLER_BUTTON_LEFTSTICK</li>
+<li>int CONTROLLER_BUTTON_RIGHTSTICK</li>
+<li>int CONTROLLER_BUTTON_LEFTSHOULDER</li>
+<li>int CONTROLLER_BUTTON_RIGHTSHOULDER</li>
+<li>int CONTROLLER_BUTTON_DPAD_UP</li>
+<li>int CONTROLLER_BUTTON_DPAD_DOWN</li>
+<li>int CONTROLLER_BUTTON_DPAD_LEFT</li>
+<li>int CONTROLLER_BUTTON_DPAD_RIGHT</li>
 </ul>
 <h4>Corner</h4>
 <ul>
@@ -7858,11 +7891,6 @@ Enumerations</h2>
 </ul>
 <h4>Feature</h4>
 <ul>
-<li>int WEIGHT_NLERP</li>
-<li>int INHERIT_PARENT_ROTATION</li>
-</ul>
-<h4>Feature</h4>
-<ul>
 <li>int JOINT_ROTATIONS</li>
 <li>int TARGET_ROTATIONS</li>
 <li>int UPDATE_ORIGINAL_POSE</li>
@@ -7870,6 +7898,11 @@ Enumerations</h2>
 <li>int USE_ORIGINAL_POSE</li>
 <li>int CONSTRAINTS</li>
 <li>int AUTO_SOLVE</li>
+</ul>
+<h4>Feature</h4>
+<ul>
+<li>int WEIGHT_NLERP</li>
+<li>int INHERIT_PARENT_ROTATION</li>
 </ul>
 <h4>FileMode</h4>
 <ul>
@@ -7920,6 +7953,14 @@ Enumerations</h2>
 <li>int GEOM_BILLBOARD</li>
 <li>int GEOM_STATIC_NOINSTANCING</li>
 <li>int MAX_GEOMETRYTYPES</li>
+</ul>
+<h4>HatPosition</h4>
+<ul>
+<li>int HAT_CENTER</li>
+<li>int HAT_UP</li>
+<li>int HAT_RIGHT</li>
+<li>int HAT_DOWN</li>
+<li>int HAT_LEFT</li>
 </ul>
 <h4>HighlightMode</h4>
 <ul>
@@ -7976,6 +8017,248 @@ Enumerations</h2>
 <li>int JSON_ARRAY</li>
 <li>int JSON_OBJECT</li>
 </ul>
+<h4>Key</h4>
+<ul>
+<li>int KEY_UNKNOWN</li>
+<li>int KEY_A</li>
+<li>int KEY_B</li>
+<li>int KEY_C</li>
+<li>int KEY_D</li>
+<li>int KEY_E</li>
+<li>int KEY_F</li>
+<li>int KEY_G</li>
+<li>int KEY_H</li>
+<li>int KEY_I</li>
+<li>int KEY_J</li>
+<li>int KEY_K</li>
+<li>int KEY_L</li>
+<li>int KEY_M</li>
+<li>int KEY_N</li>
+<li>int KEY_O</li>
+<li>int KEY_P</li>
+<li>int KEY_Q</li>
+<li>int KEY_R</li>
+<li>int KEY_S</li>
+<li>int KEY_T</li>
+<li>int KEY_U</li>
+<li>int KEY_V</li>
+<li>int KEY_W</li>
+<li>int KEY_X</li>
+<li>int KEY_Y</li>
+<li>int KEY_Z</li>
+<li>int KEY_0</li>
+<li>int KEY_1</li>
+<li>int KEY_2</li>
+<li>int KEY_3</li>
+<li>int KEY_4</li>
+<li>int KEY_5</li>
+<li>int KEY_6</li>
+<li>int KEY_7</li>
+<li>int KEY_8</li>
+<li>int KEY_9</li>
+<li>int KEY_BACKSPACE</li>
+<li>int KEY_TAB</li>
+<li>int KEY_RETURN</li>
+<li>int KEY_RETURN2</li>
+<li>int KEY_KP_ENTER</li>
+<li>int KEY_SHIFT</li>
+<li>int KEY_CTRL</li>
+<li>int KEY_ALT</li>
+<li>int KEY_GUI</li>
+<li>int KEY_PAUSE</li>
+<li>int KEY_CAPSLOCK</li>
+<li>int KEY_ESCAPE</li>
+<li>int KEY_SPACE</li>
+<li>int KEY_PAGEUP</li>
+<li>int KEY_PAGEDOWN</li>
+<li>int KEY_END</li>
+<li>int KEY_HOME</li>
+<li>int KEY_LEFT</li>
+<li>int KEY_UP</li>
+<li>int KEY_RIGHT</li>
+<li>int KEY_DOWN</li>
+<li>int KEY_SELECT</li>
+<li>int KEY_PRINTSCREEN</li>
+<li>int KEY_INSERT</li>
+<li>int KEY_DELETE</li>
+<li>int KEY_LGUI</li>
+<li>int KEY_RGUI</li>
+<li>int KEY_APPLICATION</li>
+<li>int KEY_KP_0</li>
+<li>int KEY_KP_1</li>
+<li>int KEY_KP_2</li>
+<li>int KEY_KP_3</li>
+<li>int KEY_KP_4</li>
+<li>int KEY_KP_5</li>
+<li>int KEY_KP_6</li>
+<li>int KEY_KP_7</li>
+<li>int KEY_KP_8</li>
+<li>int KEY_KP_9</li>
+<li>int KEY_KP_MULTIPLY</li>
+<li>int KEY_KP_PLUS</li>
+<li>int KEY_KP_MINUS</li>
+<li>int KEY_KP_PERIOD</li>
+<li>int KEY_KP_DIVIDE</li>
+<li>int KEY_F1</li>
+<li>int KEY_F2</li>
+<li>int KEY_F3</li>
+<li>int KEY_F4</li>
+<li>int KEY_F5</li>
+<li>int KEY_F6</li>
+<li>int KEY_F7</li>
+<li>int KEY_F8</li>
+<li>int KEY_F9</li>
+<li>int KEY_F10</li>
+<li>int KEY_F11</li>
+<li>int KEY_F12</li>
+<li>int KEY_F13</li>
+<li>int KEY_F14</li>
+<li>int KEY_F15</li>
+<li>int KEY_F16</li>
+<li>int KEY_F17</li>
+<li>int KEY_F18</li>
+<li>int KEY_F19</li>
+<li>int KEY_F20</li>
+<li>int KEY_F21</li>
+<li>int KEY_F22</li>
+<li>int KEY_F23</li>
+<li>int KEY_F24</li>
+<li>int KEY_NUMLOCKCLEAR</li>
+<li>int KEY_SCROLLLOCK</li>
+<li>int KEY_LSHIFT</li>
+<li>int KEY_RSHIFT</li>
+<li>int KEY_LCTRL</li>
+<li>int KEY_RCTRL</li>
+<li>int KEY_LALT</li>
+<li>int KEY_RALT</li>
+<li>int KEY_AC_BACK</li>
+<li>int KEY_AC_BOOKMARKS</li>
+<li>int KEY_AC_FORWARD</li>
+<li>int KEY_AC_HOME</li>
+<li>int KEY_AC_REFRESH</li>
+<li>int KEY_AC_SEARCH</li>
+<li>int KEY_AC_STOP</li>
+<li>int KEY_AGAIN</li>
+<li>int KEY_ALTERASE</li>
+<li>int KEY_AMPERSAND</li>
+<li>int KEY_ASTERISK</li>
+<li>int KEY_AT</li>
+<li>int KEY_AUDIOMUTE</li>
+<li>int KEY_AUDIONEXT</li>
+<li>int KEY_AUDIOPLAY</li>
+<li>int KEY_AUDIOPREV</li>
+<li>int KEY_AUDIOSTOP</li>
+<li>int KEY_BACKQUOTE</li>
+<li>int KEY_BACKSLASH</li>
+<li>int KEY_BRIGHTNESSDOWN</li>
+<li>int KEY_BRIGHTNESSUP</li>
+<li>int KEY_CALCULATOR</li>
+<li>int KEY_CANCEL</li>
+<li>int KEY_CARET</li>
+<li>int KEY_CLEAR</li>
+<li>int KEY_CLEARAGAIN</li>
+<li>int KEY_COLON</li>
+<li>int KEY_COMMA</li>
+<li>int KEY_COMPUTER</li>
+<li>int KEY_COPY</li>
+<li>int KEY_CRSEL</li>
+<li>int KEY_CURRENCYSUBUNIT</li>
+<li>int KEY_CURRENCYUNIT</li>
+<li>int KEY_CUT</li>
+<li>int KEY_DECIMALSEPARATOR</li>
+<li>int KEY_DISPLAYSWITCH</li>
+<li>int KEY_DOLLAR</li>
+<li>int KEY_EJECT</li>
+<li>int KEY_EQUALS</li>
+<li>int KEY_EXCLAIM</li>
+<li>int KEY_EXSEL</li>
+<li>int KEY_FIND</li>
+<li>int KEY_GREATER</li>
+<li>int KEY_HASH</li>
+<li>int KEY_HELP</li>
+<li>int KEY_KBDILLUMDOWN</li>
+<li>int KEY_KBDILLUMTOGGLE</li>
+<li>int KEY_KBDILLUMUP</li>
+<li>int KEY_KP_00</li>
+<li>int KEY_KP_000</li>
+<li>int KEY_KP_A</li>
+<li>int KEY_KP_AMPERSAND</li>
+<li>int KEY_KP_AT</li>
+<li>int KEY_KP_B</li>
+<li>int KEY_KP_BACKSPACE</li>
+<li>int KEY_KP_BINARY</li>
+<li>int KEY_KP_C</li>
+<li>int KEY_KP_CLEAR</li>
+<li>int KEY_KP_CLEARENTRY</li>
+<li>int KEY_KP_COLON</li>
+<li>int KEY_KP_COMMA</li>
+<li>int KEY_KP_D</li>
+<li>int KEY_KP_DBLAMPERSAND</li>
+<li>int KEY_KP_DBLVERTICALBAR</li>
+<li>int KEY_KP_DECIMAL</li>
+<li>int KEY_KP_E</li>
+<li>int KEY_KP_EQUALS</li>
+<li>int KEY_KP_EQUALSAS400</li>
+<li>int KEY_KP_EXCLAM</li>
+<li>int KEY_KP_F</li>
+<li>int KEY_KP_GREATER</li>
+<li>int KEY_KP_HASH</li>
+<li>int KEY_KP_HEXADECIMAL</li>
+<li>int KEY_KP_LEFTBRACE</li>
+<li>int KEY_KP_LEFTPAREN</li>
+<li>int KEY_KP_LESS</li>
+<li>int KEY_KP_MEMADD</li>
+<li>int KEY_KP_MEMCLEAR</li>
+<li>int KEY_KP_MEMDIVIDE</li>
+<li>int KEY_KP_MEMMULTIPLY</li>
+<li>int KEY_KP_MEMRECALL</li>
+<li>int KEY_KP_MEMSTORE</li>
+<li>int KEY_KP_MEMSUBTRACT</li>
+<li>int KEY_KP_OCTAL</li>
+<li>int KEY_KP_PERCENT</li>
+<li>int KEY_KP_PLUSMINUS</li>
+<li>int KEY_KP_POWER</li>
+<li>int KEY_KP_RIGHTBRACE</li>
+<li>int KEY_KP_RIGHTPAREN</li>
+<li>int KEY_KP_SPACE</li>
+<li>int KEY_KP_TAB</li>
+<li>int KEY_KP_VERTICALBAR</li>
+<li>int KEY_KP_XOR</li>
+<li>int KEY_LEFTBRACKET</li>
+<li>int KEY_LEFTPAREN</li>
+<li>int KEY_LESS</li>
+<li>int KEY_MAIL</li>
+<li>int KEY_MEDIASELECT</li>
+<li>int KEY_MENU</li>
+<li>int KEY_MINUS</li>
+<li>int KEY_MODE</li>
+<li>int KEY_MUTE</li>
+<li>int KEY_OPER</li>
+<li>int KEY_OUT</li>
+<li>int KEY_PASTE</li>
+<li>int KEY_PERCENT</li>
+<li>int KEY_PERIOD</li>
+<li>int KEY_PLUS</li>
+<li>int KEY_POWER</li>
+<li>int KEY_PRIOR</li>
+<li>int KEY_QUESTION</li>
+<li>int KEY_QUOTE</li>
+<li>int KEY_QUOTEDBL</li>
+<li>int KEY_RIGHTBRACKET</li>
+<li>int KEY_RIGHTPAREN</li>
+<li>int KEY_SEMICOLON</li>
+<li>int KEY_SEPARATOR</li>
+<li>int KEY_SLASH</li>
+<li>int KEY_SLEEP</li>
+<li>int KEY_STOP</li>
+<li>int KEY_SYSREQ</li>
+<li>int KEY_THOUSANDSSEPARATOR</li>
+<li>int KEY_UNDERSCORE</li>
+<li>int KEY_UNDO</li>
+<li>int KEY_VOLUMEDOWN</li>
+<li>int KEY_VOLUMEUP</li>
+<li>int KEY_WWW</li>
+</ul>
 <h4>LayoutMode</h4>
 <ul>
 <li>int LM_FREE</li>
@@ -8024,6 +8307,19 @@ Enumerations</h2>
 <li>int LM_DEFAULT</li>
 <li>int LM_FORCE_LOOPED</li>
 <li>int LM_FORCE_CLAMPED</li>
+</ul>
+<h4>MaterialQuality</h4>
+<ul>
+<li>int QUALITY_LOW</li>
+<li>int QUALITY_MEDIUM</li>
+<li>int QUALITY_HIGH</li>
+<li>int QUALITY_MAX</li>
+</ul>
+<h4>MouseButton</h4>
+<ul>
+<li>int MOUSEB_LEFT</li>
+<li>int MOUSEB_MIDDLE</li>
+<li>int MOUSEB_RIGHT</li>
 </ul>
 <h4>MouseMode</h4>
 <ul>
@@ -8077,6 +8373,13 @@ Enumerations</h2>
 <li>int LINE_STRIP</li>
 <li>int TRIANGLE_FAN</li>
 </ul>
+<h4>Qualifier</h4>
+<ul>
+<li>int QUAL_SHIFT</li>
+<li>int QUAL_CTRL</li>
+<li>int QUAL_ALT</li>
+<li>int QUAL_ANY</li>
+</ul>
 <h4>RayQueryLevel</h4>
 <ul>
 <li>int RAY_AABB</li>
@@ -8111,6 +8414,254 @@ Enumerations</h2>
 <li>int SIZE_ABSOLUTE</li>
 <li>int SIZE_VIEWPORTDIVISOR</li>
 <li>int SIZE_VIEWPORTMULTIPLIER</li>
+</ul>
+<h4>Scancode</h4>
+<ul>
+<li>int SCANCODE_UNKNOWN</li>
+<li>int SCANCODE_CTRL</li>
+<li>int SCANCODE_SHIFT</li>
+<li>int SCANCODE_ALT</li>
+<li>int SCANCODE_GUI</li>
+<li>int SCANCODE_A</li>
+<li>int SCANCODE_B</li>
+<li>int SCANCODE_C</li>
+<li>int SCANCODE_D</li>
+<li>int SCANCODE_E</li>
+<li>int SCANCODE_F</li>
+<li>int SCANCODE_G</li>
+<li>int SCANCODE_H</li>
+<li>int SCANCODE_I</li>
+<li>int SCANCODE_J</li>
+<li>int SCANCODE_K</li>
+<li>int SCANCODE_L</li>
+<li>int SCANCODE_M</li>
+<li>int SCANCODE_N</li>
+<li>int SCANCODE_O</li>
+<li>int SCANCODE_P</li>
+<li>int SCANCODE_Q</li>
+<li>int SCANCODE_R</li>
+<li>int SCANCODE_S</li>
+<li>int SCANCODE_T</li>
+<li>int SCANCODE_U</li>
+<li>int SCANCODE_V</li>
+<li>int SCANCODE_W</li>
+<li>int SCANCODE_X</li>
+<li>int SCANCODE_Y</li>
+<li>int SCANCODE_Z</li>
+<li>int SCANCODE_1</li>
+<li>int SCANCODE_2</li>
+<li>int SCANCODE_3</li>
+<li>int SCANCODE_4</li>
+<li>int SCANCODE_5</li>
+<li>int SCANCODE_6</li>
+<li>int SCANCODE_7</li>
+<li>int SCANCODE_8</li>
+<li>int SCANCODE_9</li>
+<li>int SCANCODE_0</li>
+<li>int SCANCODE_RETURN</li>
+<li>int SCANCODE_ESCAPE</li>
+<li>int SCANCODE_BACKSPACE</li>
+<li>int SCANCODE_TAB</li>
+<li>int SCANCODE_SPACE</li>
+<li>int SCANCODE_MINUS</li>
+<li>int SCANCODE_EQUALS</li>
+<li>int SCANCODE_LEFTBRACKET</li>
+<li>int SCANCODE_RIGHTBRACKET</li>
+<li>int SCANCODE_BACKSLASH</li>
+<li>int SCANCODE_NONUSHASH</li>
+<li>int SCANCODE_SEMICOLON</li>
+<li>int SCANCODE_APOSTROPHE</li>
+<li>int SCANCODE_GRAVE</li>
+<li>int SCANCODE_COMMA</li>
+<li>int SCANCODE_PERIOD</li>
+<li>int SCANCODE_SLASH</li>
+<li>int SCANCODE_CAPSLOCK</li>
+<li>int SCANCODE_F1</li>
+<li>int SCANCODE_F2</li>
+<li>int SCANCODE_F3</li>
+<li>int SCANCODE_F4</li>
+<li>int SCANCODE_F5</li>
+<li>int SCANCODE_F6</li>
+<li>int SCANCODE_F7</li>
+<li>int SCANCODE_F8</li>
+<li>int SCANCODE_F9</li>
+<li>int SCANCODE_F10</li>
+<li>int SCANCODE_F11</li>
+<li>int SCANCODE_F12</li>
+<li>int SCANCODE_PRINTSCREEN</li>
+<li>int SCANCODE_SCROLLLOCK</li>
+<li>int SCANCODE_PAUSE</li>
+<li>int SCANCODE_INSERT</li>
+<li>int SCANCODE_HOME</li>
+<li>int SCANCODE_PAGEUP</li>
+<li>int SCANCODE_DELETE</li>
+<li>int SCANCODE_END</li>
+<li>int SCANCODE_PAGEDOWN</li>
+<li>int SCANCODE_RIGHT</li>
+<li>int SCANCODE_LEFT</li>
+<li>int SCANCODE_DOWN</li>
+<li>int SCANCODE_UP</li>
+<li>int SCANCODE_NUMLOCKCLEAR</li>
+<li>int SCANCODE_KP_DIVIDE</li>
+<li>int SCANCODE_KP_MULTIPLY</li>
+<li>int SCANCODE_KP_MINUS</li>
+<li>int SCANCODE_KP_PLUS</li>
+<li>int SCANCODE_KP_ENTER</li>
+<li>int SCANCODE_KP_1</li>
+<li>int SCANCODE_KP_2</li>
+<li>int SCANCODE_KP_3</li>
+<li>int SCANCODE_KP_4</li>
+<li>int SCANCODE_KP_5</li>
+<li>int SCANCODE_KP_6</li>
+<li>int SCANCODE_KP_7</li>
+<li>int SCANCODE_KP_8</li>
+<li>int SCANCODE_KP_9</li>
+<li>int SCANCODE_KP_0</li>
+<li>int SCANCODE_KP_PERIOD</li>
+<li>int SCANCODE_NONUSBACKSLASH</li>
+<li>int SCANCODE_APPLICATION</li>
+<li>int SCANCODE_POWER</li>
+<li>int SCANCODE_KP_EQUALS</li>
+<li>int SCANCODE_F13</li>
+<li>int SCANCODE_F14</li>
+<li>int SCANCODE_F15</li>
+<li>int SCANCODE_F16</li>
+<li>int SCANCODE_F17</li>
+<li>int SCANCODE_F18</li>
+<li>int SCANCODE_F19</li>
+<li>int SCANCODE_F20</li>
+<li>int SCANCODE_F21</li>
+<li>int SCANCODE_F22</li>
+<li>int SCANCODE_F23</li>
+<li>int SCANCODE_F24</li>
+<li>int SCANCODE_EXECUTE</li>
+<li>int SCANCODE_HELP</li>
+<li>int SCANCODE_MENU</li>
+<li>int SCANCODE_SELECT</li>
+<li>int SCANCODE_STOP</li>
+<li>int SCANCODE_AGAIN</li>
+<li>int SCANCODE_UNDO</li>
+<li>int SCANCODE_CUT</li>
+<li>int SCANCODE_COPY</li>
+<li>int SCANCODE_PASTE</li>
+<li>int SCANCODE_FIND</li>
+<li>int SCANCODE_MUTE</li>
+<li>int SCANCODE_VOLUMEUP</li>
+<li>int SCANCODE_VOLUMEDOWN</li>
+<li>int SCANCODE_KP_COMMA</li>
+<li>int SCANCODE_KP_EQUALSAS400</li>
+<li>int SCANCODE_INTERNATIONAL1</li>
+<li>int SCANCODE_INTERNATIONAL2</li>
+<li>int SCANCODE_INTERNATIONAL3</li>
+<li>int SCANCODE_INTERNATIONAL4</li>
+<li>int SCANCODE_INTERNATIONAL5</li>
+<li>int SCANCODE_INTERNATIONAL6</li>
+<li>int SCANCODE_INTERNATIONAL7</li>
+<li>int SCANCODE_INTERNATIONAL8</li>
+<li>int SCANCODE_INTERNATIONAL9</li>
+<li>int SCANCODE_LANG1</li>
+<li>int SCANCODE_LANG2</li>
+<li>int SCANCODE_LANG3</li>
+<li>int SCANCODE_LANG4</li>
+<li>int SCANCODE_LANG5</li>
+<li>int SCANCODE_LANG6</li>
+<li>int SCANCODE_LANG7</li>
+<li>int SCANCODE_LANG8</li>
+<li>int SCANCODE_LANG9</li>
+<li>int SCANCODE_ALTERASE</li>
+<li>int SCANCODE_SYSREQ</li>
+<li>int SCANCODE_CANCEL</li>
+<li>int SCANCODE_CLEAR</li>
+<li>int SCANCODE_PRIOR</li>
+<li>int SCANCODE_RETURN2</li>
+<li>int SCANCODE_SEPARATOR</li>
+<li>int SCANCODE_OUT</li>
+<li>int SCANCODE_OPER</li>
+<li>int SCANCODE_CLEARAGAIN</li>
+<li>int SCANCODE_CRSEL</li>
+<li>int SCANCODE_EXSEL</li>
+<li>int SCANCODE_KP_00</li>
+<li>int SCANCODE_KP_000</li>
+<li>int SCANCODE_THOUSANDSSEPARATOR</li>
+<li>int SCANCODE_DECIMALSEPARATOR</li>
+<li>int SCANCODE_CURRENCYUNIT</li>
+<li>int SCANCODE_CURRENCYSUBUNIT</li>
+<li>int SCANCODE_KP_LEFTPAREN</li>
+<li>int SCANCODE_KP_RIGHTPAREN</li>
+<li>int SCANCODE_KP_LEFTBRACE</li>
+<li>int SCANCODE_KP_RIGHTBRACE</li>
+<li>int SCANCODE_KP_TAB</li>
+<li>int SCANCODE_KP_BACKSPACE</li>
+<li>int SCANCODE_KP_A</li>
+<li>int SCANCODE_KP_B</li>
+<li>int SCANCODE_KP_C</li>
+<li>int SCANCODE_KP_D</li>
+<li>int SCANCODE_KP_E</li>
+<li>int SCANCODE_KP_F</li>
+<li>int SCANCODE_KP_XOR</li>
+<li>int SCANCODE_KP_POWER</li>
+<li>int SCANCODE_KP_PERCENT</li>
+<li>int SCANCODE_KP_LESS</li>
+<li>int SCANCODE_KP_GREATER</li>
+<li>int SCANCODE_KP_AMPERSAND</li>
+<li>int SCANCODE_KP_DBLAMPERSAND</li>
+<li>int SCANCODE_KP_VERTICALBAR</li>
+<li>int SCANCODE_KP_DBLVERTICALBAR</li>
+<li>int SCANCODE_KP_COLON</li>
+<li>int SCANCODE_KP_HASH</li>
+<li>int SCANCODE_KP_SPACE</li>
+<li>int SCANCODE_KP_AT</li>
+<li>int SCANCODE_KP_EXCLAM</li>
+<li>int SCANCODE_KP_MEMSTORE</li>
+<li>int SCANCODE_KP_MEMRECALL</li>
+<li>int SCANCODE_KP_MEMCLEAR</li>
+<li>int SCANCODE_KP_MEMADD</li>
+<li>int SCANCODE_KP_MEMSUBTRACT</li>
+<li>int SCANCODE_KP_MEMMULTIPLY</li>
+<li>int SCANCODE_KP_MEMDIVIDE</li>
+<li>int SCANCODE_KP_PLUSMINUS</li>
+<li>int SCANCODE_KP_CLEAR</li>
+<li>int SCANCODE_KP_CLEARENTRY</li>
+<li>int SCANCODE_KP_BINARY</li>
+<li>int SCANCODE_KP_OCTAL</li>
+<li>int SCANCODE_KP_DECIMAL</li>
+<li>int SCANCODE_KP_HEXADECIMAL</li>
+<li>int SCANCODE_LCTRL</li>
+<li>int SCANCODE_LSHIFT</li>
+<li>int SCANCODE_LALT</li>
+<li>int SCANCODE_LGUI</li>
+<li>int SCANCODE_RCTRL</li>
+<li>int SCANCODE_RSHIFT</li>
+<li>int SCANCODE_RALT</li>
+<li>int SCANCODE_RGUI</li>
+<li>int SCANCODE_MODE</li>
+<li>int SCANCODE_AUDIONEXT</li>
+<li>int SCANCODE_AUDIOPREV</li>
+<li>int SCANCODE_AUDIOSTOP</li>
+<li>int SCANCODE_AUDIOPLAY</li>
+<li>int SCANCODE_AUDIOMUTE</li>
+<li>int SCANCODE_MEDIASELECT</li>
+<li>int SCANCODE_WWW</li>
+<li>int SCANCODE_MAIL</li>
+<li>int SCANCODE_CALCULATOR</li>
+<li>int SCANCODE_COMPUTER</li>
+<li>int SCANCODE_AC_SEARCH</li>
+<li>int SCANCODE_AC_HOME</li>
+<li>int SCANCODE_AC_BACK</li>
+<li>int SCANCODE_AC_FORWARD</li>
+<li>int SCANCODE_AC_STOP</li>
+<li>int SCANCODE_AC_REFRESH</li>
+<li>int SCANCODE_AC_BOOKMARKS</li>
+<li>int SCANCODE_BRIGHTNESSDOWN</li>
+<li>int SCANCODE_BRIGHTNESSUP</li>
+<li>int SCANCODE_DISPLAYSWITCH</li>
+<li>int SCANCODE_KBDILLUMTOGGLE</li>
+<li>int SCANCODE_KBDILLUMDOWN</li>
+<li>int SCANCODE_KBDILLUMUP</li>
+<li>int SCANCODE_EJECT</li>
+<li>int SCANCODE_SLEEP</li>
+<li>int SCANCODE_APP1</li>
+<li>int SCANCODE_APP2</li>
 </ul>
 <h4>ShaderType</h4>
 <ul>
@@ -8280,6 +8831,24 @@ Enumerations</h2>
 <li>int TYPE_UBYTE4</li>
 <li>int TYPE_UBYTE4_NORM</li>
 <li>int MAX_VERTEX_ELEMENT_TYPES</li>
+</ul>
+<h4>VertexMask</h4>
+<ul>
+<li>int MASK_NONE</li>
+<li>int MASK_POSITION</li>
+<li>int MASK_NORMAL</li>
+<li>int MASK_COLOR</li>
+<li>int MASK_TEXCOORD1</li>
+<li>int MASK_TEXCOORD2</li>
+<li>int MASK_CUBETEXCOORD1</li>
+<li>int MASK_CUBETEXCOORD2</li>
+<li>int MASK_TANGENT</li>
+<li>int MASK_BLENDWEIGHTS</li>
+<li>int MASK_BLENDINDICES</li>
+<li>int MASK_INSTANCEMATRIX1</li>
+<li>int MASK_INSTANCEMATRIX2</li>
+<li>int MASK_INSTANCEMATRIX3</li>
+<li>int MASK_OBJECTINDEX</li>
 </ul>
 <h4>VerticalAlignment</h4>
 <ul>
@@ -8518,30 +9087,6 @@ Global constants</h2>
 <li>char CHANNEL_POSITION</li>
 <li>char CHANNEL_ROTATION</li>
 <li>char CHANNEL_SCALE</li>
-<li>unsigned CLEAR_COLOR</li>
-<li>unsigned CLEAR_DEPTH</li>
-<li>unsigned CLEAR_STENCIL</li>
-<li>int CONTROLLER_AXIS_LEFTX</li>
-<li>int CONTROLLER_AXIS_LEFTY</li>
-<li>int CONTROLLER_AXIS_RIGHTX</li>
-<li>int CONTROLLER_AXIS_RIGHTY</li>
-<li>int CONTROLLER_AXIS_TRIGGERLEFT</li>
-<li>int CONTROLLER_AXIS_TRIGGERRIGHT</li>
-<li>int CONTROLLER_BUTTON_A</li>
-<li>int CONTROLLER_BUTTON_B</li>
-<li>int CONTROLLER_BUTTON_BACK</li>
-<li>int CONTROLLER_BUTTON_DPAD_DOWN</li>
-<li>int CONTROLLER_BUTTON_DPAD_LEFT</li>
-<li>int CONTROLLER_BUTTON_DPAD_RIGHT</li>
-<li>int CONTROLLER_BUTTON_DPAD_UP</li>
-<li>int CONTROLLER_BUTTON_GUIDE</li>
-<li>int CONTROLLER_BUTTON_LEFTSHOULDER</li>
-<li>int CONTROLLER_BUTTON_LEFTSTICK</li>
-<li>int CONTROLLER_BUTTON_RIGHTSHOULDER</li>
-<li>int CONTROLLER_BUTTON_RIGHTSTICK</li>
-<li>int CONTROLLER_BUTTON_START</li>
-<li>int CONTROLLER_BUTTON_X</li>
-<li>int CONTROLLER_BUTTON_Y</li>
 <li>unsigned DD_DISABLED</li>
 <li>unsigned DD_SOURCE</li>
 <li>unsigned DD_SOURCE_AND_TARGET</li>
@@ -8569,250 +9114,6 @@ Global constants</h2>
 <li>unsigned FLIP_HORIZONTAL</li>
 <li>unsigned FLIP_RESERVED</li>
 <li>unsigned FLIP_VERTICAL</li>
-<li>int HAT_CENTER</li>
-<li>int HAT_DOWN</li>
-<li>int HAT_LEFT</li>
-<li>int HAT_RIGHT</li>
-<li>int HAT_UP</li>
-<li>int KEY_0</li>
-<li>int KEY_1</li>
-<li>int KEY_2</li>
-<li>int KEY_3</li>
-<li>int KEY_4</li>
-<li>int KEY_5</li>
-<li>int KEY_6</li>
-<li>int KEY_7</li>
-<li>int KEY_8</li>
-<li>int KEY_9</li>
-<li>int KEY_A</li>
-<li>int KEY_AC_BACK</li>
-<li>int KEY_AC_BOOKMARKS</li>
-<li>int KEY_AC_FORWARD</li>
-<li>int KEY_AC_HOME</li>
-<li>int KEY_AC_REFRESH</li>
-<li>int KEY_AC_SEARCH</li>
-<li>int KEY_AC_STOP</li>
-<li>int KEY_AGAIN</li>
-<li>int KEY_ALT</li>
-<li>int KEY_ALTERASE</li>
-<li>int KEY_AMPERSAND</li>
-<li>int KEY_APPLICATION</li>
-<li>int KEY_ASTERISK</li>
-<li>int KEY_AT</li>
-<li>int KEY_AUDIOMUTE</li>
-<li>int KEY_AUDIONEXT</li>
-<li>int KEY_AUDIOPLAY</li>
-<li>int KEY_AUDIOPREV</li>
-<li>int KEY_AUDIOSTOP</li>
-<li>int KEY_B</li>
-<li>int KEY_BACKQUOTE</li>
-<li>int KEY_BACKSLASH</li>
-<li>int KEY_BACKSPACE</li>
-<li>int KEY_BRIGHTNESSDOWN</li>
-<li>int KEY_BRIGHTNESSUP</li>
-<li>int KEY_C</li>
-<li>int KEY_CALCULATOR</li>
-<li>int KEY_CANCEL</li>
-<li>int KEY_CAPSLOCK</li>
-<li>int KEY_CARET</li>
-<li>int KEY_CLEAR</li>
-<li>int KEY_CLEARAGAIN</li>
-<li>int KEY_COLON</li>
-<li>int KEY_COMMA</li>
-<li>int KEY_COMPUTER</li>
-<li>int KEY_COPY</li>
-<li>int KEY_CRSEL</li>
-<li>int KEY_CTRL</li>
-<li>int KEY_CURRENCYSUBUNIT</li>
-<li>int KEY_CURRENCYUNIT</li>
-<li>int KEY_CUT</li>
-<li>int KEY_D</li>
-<li>int KEY_DECIMALSEPARATOR</li>
-<li>int KEY_DELETE</li>
-<li>int KEY_DISPLAYSWITCH</li>
-<li>int KEY_DOLLAR</li>
-<li>int KEY_DOWN</li>
-<li>int KEY_E</li>
-<li>int KEY_EJECT</li>
-<li>int KEY_END</li>
-<li>int KEY_EQUALS</li>
-<li>int KEY_ESCAPE</li>
-<li>int KEY_EXCLAIM</li>
-<li>int KEY_EXSEL</li>
-<li>int KEY_F</li>
-<li>int KEY_F1</li>
-<li>int KEY_F10</li>
-<li>int KEY_F11</li>
-<li>int KEY_F12</li>
-<li>int KEY_F13</li>
-<li>int KEY_F14</li>
-<li>int KEY_F15</li>
-<li>int KEY_F16</li>
-<li>int KEY_F17</li>
-<li>int KEY_F18</li>
-<li>int KEY_F19</li>
-<li>int KEY_F2</li>
-<li>int KEY_F20</li>
-<li>int KEY_F21</li>
-<li>int KEY_F22</li>
-<li>int KEY_F23</li>
-<li>int KEY_F24</li>
-<li>int KEY_F3</li>
-<li>int KEY_F4</li>
-<li>int KEY_F5</li>
-<li>int KEY_F6</li>
-<li>int KEY_F7</li>
-<li>int KEY_F8</li>
-<li>int KEY_F9</li>
-<li>int KEY_FIND</li>
-<li>int KEY_G</li>
-<li>int KEY_GREATER</li>
-<li>int KEY_GUI</li>
-<li>int KEY_H</li>
-<li>int KEY_HASH</li>
-<li>int KEY_HELP</li>
-<li>int KEY_HOME</li>
-<li>int KEY_I</li>
-<li>int KEY_INSERT</li>
-<li>int KEY_J</li>
-<li>int KEY_K</li>
-<li>int KEY_KBDILLUMDOWN</li>
-<li>int KEY_KBDILLUMTOGGLE</li>
-<li>int KEY_KBDILLUMUP</li>
-<li>int KEY_KP_0</li>
-<li>int KEY_KP_00</li>
-<li>int KEY_KP_000</li>
-<li>int KEY_KP_1</li>
-<li>int KEY_KP_2</li>
-<li>int KEY_KP_3</li>
-<li>int KEY_KP_4</li>
-<li>int KEY_KP_5</li>
-<li>int KEY_KP_6</li>
-<li>int KEY_KP_7</li>
-<li>int KEY_KP_8</li>
-<li>int KEY_KP_9</li>
-<li>int KEY_KP_A</li>
-<li>int KEY_KP_AMPERSAND</li>
-<li>int KEY_KP_AT</li>
-<li>int KEY_KP_B</li>
-<li>int KEY_KP_BACKSPACE</li>
-<li>int KEY_KP_BINARY</li>
-<li>int KEY_KP_C</li>
-<li>int KEY_KP_CLEAR</li>
-<li>int KEY_KP_CLEARENTRY</li>
-<li>int KEY_KP_COLON</li>
-<li>int KEY_KP_COMMA</li>
-<li>int KEY_KP_D</li>
-<li>int KEY_KP_DBLAMPERSAND</li>
-<li>int KEY_KP_DBLVERTICALBAR</li>
-<li>int KEY_KP_DECIMAL</li>
-<li>int KEY_KP_DIVIDE</li>
-<li>int KEY_KP_E</li>
-<li>int KEY_KP_ENTER</li>
-<li>int KEY_KP_EQUALS</li>
-<li>int KEY_KP_EQUALSAS400</li>
-<li>int KEY_KP_EXCLAM</li>
-<li>int KEY_KP_F</li>
-<li>int KEY_KP_GREATER</li>
-<li>int KEY_KP_HASH</li>
-<li>int KEY_KP_HEXADECIMAL</li>
-<li>int KEY_KP_LEFTBRACE</li>
-<li>int KEY_KP_LEFTPAREN</li>
-<li>int KEY_KP_LESS</li>
-<li>int KEY_KP_MEMADD</li>
-<li>int KEY_KP_MEMCLEAR</li>
-<li>int KEY_KP_MEMDIVIDE</li>
-<li>int KEY_KP_MEMMULTIPLY</li>
-<li>int KEY_KP_MEMRECALL</li>
-<li>int KEY_KP_MEMSTORE</li>
-<li>int KEY_KP_MEMSUBTRACT</li>
-<li>int KEY_KP_MINUS</li>
-<li>int KEY_KP_MULTIPLY</li>
-<li>int KEY_KP_OCTAL</li>
-<li>int KEY_KP_PERCENT</li>
-<li>int KEY_KP_PERIOD</li>
-<li>int KEY_KP_PLUS</li>
-<li>int KEY_KP_PLUSMINUS</li>
-<li>int KEY_KP_POWER</li>
-<li>int KEY_KP_RIGHTBRACE</li>
-<li>int KEY_KP_RIGHTPAREN</li>
-<li>int KEY_KP_SPACE</li>
-<li>int KEY_KP_TAB</li>
-<li>int KEY_KP_VERTICALBAR</li>
-<li>int KEY_KP_XOR</li>
-<li>int KEY_L</li>
-<li>int KEY_LALT</li>
-<li>int KEY_LCTRL</li>
-<li>int KEY_LEFT</li>
-<li>int KEY_LEFTBRACKET</li>
-<li>int KEY_LEFTPAREN</li>
-<li>int KEY_LESS</li>
-<li>int KEY_LGUI</li>
-<li>int KEY_LSHIFT</li>
-<li>int KEY_M</li>
-<li>int KEY_MAIL</li>
-<li>int KEY_MEDIASELECT</li>
-<li>int KEY_MENU</li>
-<li>int KEY_MINUS</li>
-<li>int KEY_MODE</li>
-<li>int KEY_MUTE</li>
-<li>int KEY_N</li>
-<li>int KEY_NUMLOCKCLEAR</li>
-<li>int KEY_O</li>
-<li>int KEY_OPER</li>
-<li>int KEY_OUT</li>
-<li>int KEY_P</li>
-<li>int KEY_PAGEDOWN</li>
-<li>int KEY_PAGEUP</li>
-<li>int KEY_PASTE</li>
-<li>int KEY_PAUSE</li>
-<li>int KEY_PERCENT</li>
-<li>int KEY_PERIOD</li>
-<li>int KEY_PLUS</li>
-<li>int KEY_POWER</li>
-<li>int KEY_PRINTSCREEN</li>
-<li>int KEY_PRIOR</li>
-<li>int KEY_Q</li>
-<li>int KEY_QUESTION</li>
-<li>int KEY_QUOTE</li>
-<li>int KEY_QUOTEDBL</li>
-<li>int KEY_R</li>
-<li>int KEY_RALT</li>
-<li>int KEY_RCTRL</li>
-<li>int KEY_RETURN</li>
-<li>int KEY_RETURN2</li>
-<li>int KEY_RGUI</li>
-<li>int KEY_RIGHT</li>
-<li>int KEY_RIGHTBRACKET</li>
-<li>int KEY_RIGHTPAREN</li>
-<li>int KEY_RSHIFT</li>
-<li>int KEY_S</li>
-<li>int KEY_SCROLLLOCK</li>
-<li>int KEY_SELECT</li>
-<li>int KEY_SEMICOLON</li>
-<li>int KEY_SEPARATOR</li>
-<li>int KEY_SHIFT</li>
-<li>int KEY_SLASH</li>
-<li>int KEY_SLEEP</li>
-<li>int KEY_SPACE</li>
-<li>int KEY_STOP</li>
-<li>int KEY_SYSREQ</li>
-<li>int KEY_T</li>
-<li>int KEY_TAB</li>
-<li>int KEY_THOUSANDSSEPARATOR</li>
-<li>int KEY_U</li>
-<li>int KEY_UNDERSCORE</li>
-<li>int KEY_UNDO</li>
-<li>int KEY_UNKNOWN</li>
-<li>int KEY_UP</li>
-<li>int KEY_V</li>
-<li>int KEY_VOLUMEDOWN</li>
-<li>int KEY_VOLUMEUP</li>
-<li>int KEY_W</li>
-<li>int KEY_WWW</li>
-<li>int KEY_X</li>
-<li>int KEY_Y</li>
-<li>int KEY_Z</li>
 <li>unsigned LAST_LOCAL_ID</li>
 <li>unsigned LAST_REPLICATED_ID</li>
 <li>int LOG_DEBUG</li>
@@ -8821,25 +9122,7 @@ Global constants</h2>
 <li>int LOG_NONE</li>
 <li>int LOG_TRACE</li>
 <li>int LOG_WARNING</li>
-<li>unsigned MASK_BLENDINDICES</li>
-<li>unsigned MASK_BLENDWEIGHTS</li>
-<li>unsigned MASK_COLOR</li>
-<li>unsigned MASK_CUBETEXCOORD1</li>
-<li>unsigned MASK_CUBETEXCOORD2</li>
-<li>unsigned MASK_INSTANCEMATRIX1</li>
-<li>unsigned MASK_INSTANCEMATRIX2</li>
-<li>unsigned MASK_INSTANCEMATRIX3</li>
-<li>unsigned MASK_NONE</li>
-<li>unsigned MASK_NORMAL</li>
-<li>unsigned MASK_OBJECTINDEX</li>
-<li>unsigned MASK_POSITION</li>
-<li>unsigned MASK_TANGENT</li>
-<li>unsigned MASK_TEXCOORD1</li>
-<li>unsigned MASK_TEXCOORD2</li>
 <li>int MAX_VERTEX_LIGHTS</li>
-<li>int MOUSEB_LEFT</li>
-<li>int MOUSEB_MIDDLE</li>
-<li>int MOUSEB_RIGHT</li>
 <li>float M_DEGTORAD</li>
 <li>float M_DEGTORAD_2</li>
 <li>float M_EPSILON</li>
@@ -8858,259 +9141,6 @@ Global constants</h2>
 <li>unsigned NUM_FRUSTUM_PLANES</li>
 <li>unsigned NUM_FRUSTUM_VERTICES</li>
 <li>float PIXEL_SIZE</li>
-<li>int QUALITY_HIGH</li>
-<li>int QUALITY_LOW</li>
-<li>int QUALITY_MAX</li>
-<li>int QUALITY_MEDIUM</li>
-<li>int QUAL_ALT</li>
-<li>int QUAL_ANY</li>
-<li>int QUAL_CTRL</li>
-<li>int QUAL_SHIFT</li>
-<li>int SCANCODE_0</li>
-<li>int SCANCODE_1</li>
-<li>int SCANCODE_2</li>
-<li>int SCANCODE_3</li>
-<li>int SCANCODE_4</li>
-<li>int SCANCODE_5</li>
-<li>int SCANCODE_6</li>
-<li>int SCANCODE_7</li>
-<li>int SCANCODE_8</li>
-<li>int SCANCODE_9</li>
-<li>int SCANCODE_A</li>
-<li>int SCANCODE_AC_BACK</li>
-<li>int SCANCODE_AC_BOOKMARKS</li>
-<li>int SCANCODE_AC_FORWARD</li>
-<li>int SCANCODE_AC_HOME</li>
-<li>int SCANCODE_AC_REFRESH</li>
-<li>int SCANCODE_AC_SEARCH</li>
-<li>int SCANCODE_AC_STOP</li>
-<li>int SCANCODE_AGAIN</li>
-<li>int SCANCODE_ALT</li>
-<li>int SCANCODE_ALTERASE</li>
-<li>int SCANCODE_APOSTROPHE</li>
-<li>int SCANCODE_APP1</li>
-<li>int SCANCODE_APP2</li>
-<li>int SCANCODE_APPLICATION</li>
-<li>int SCANCODE_AUDIOMUTE</li>
-<li>int SCANCODE_AUDIONEXT</li>
-<li>int SCANCODE_AUDIOPLAY</li>
-<li>int SCANCODE_AUDIOPREV</li>
-<li>int SCANCODE_AUDIOSTOP</li>
-<li>int SCANCODE_B</li>
-<li>int SCANCODE_BACKSLASH</li>
-<li>int SCANCODE_BACKSPACE</li>
-<li>int SCANCODE_BRIGHTNESSDOWN</li>
-<li>int SCANCODE_BRIGHTNESSUP</li>
-<li>int SCANCODE_C</li>
-<li>int SCANCODE_CALCULATOR</li>
-<li>int SCANCODE_CANCEL</li>
-<li>int SCANCODE_CAPSLOCK</li>
-<li>int SCANCODE_CLEAR</li>
-<li>int SCANCODE_CLEARAGAIN</li>
-<li>int SCANCODE_COMMA</li>
-<li>int SCANCODE_COMPUTER</li>
-<li>int SCANCODE_COPY</li>
-<li>int SCANCODE_CRSEL</li>
-<li>int SCANCODE_CTRL</li>
-<li>int SCANCODE_CURRENCYSUBUNIT</li>
-<li>int SCANCODE_CURRENCYUNIT</li>
-<li>int SCANCODE_CUT</li>
-<li>int SCANCODE_D</li>
-<li>int SCANCODE_DECIMALSEPARATOR</li>
-<li>int SCANCODE_DELETE</li>
-<li>int SCANCODE_DISPLAYSWITCH</li>
-<li>int SCANCODE_DOWN</li>
-<li>int SCANCODE_E</li>
-<li>int SCANCODE_EJECT</li>
-<li>int SCANCODE_END</li>
-<li>int SCANCODE_EQUALS</li>
-<li>int SCANCODE_ESCAPE</li>
-<li>int SCANCODE_EXECUTE</li>
-<li>int SCANCODE_EXSEL</li>
-<li>int SCANCODE_F</li>
-<li>int SCANCODE_F1</li>
-<li>int SCANCODE_F10</li>
-<li>int SCANCODE_F11</li>
-<li>int SCANCODE_F12</li>
-<li>int SCANCODE_F13</li>
-<li>int SCANCODE_F14</li>
-<li>int SCANCODE_F15</li>
-<li>int SCANCODE_F16</li>
-<li>int SCANCODE_F17</li>
-<li>int SCANCODE_F18</li>
-<li>int SCANCODE_F19</li>
-<li>int SCANCODE_F2</li>
-<li>int SCANCODE_F20</li>
-<li>int SCANCODE_F21</li>
-<li>int SCANCODE_F22</li>
-<li>int SCANCODE_F23</li>
-<li>int SCANCODE_F24</li>
-<li>int SCANCODE_F3</li>
-<li>int SCANCODE_F4</li>
-<li>int SCANCODE_F5</li>
-<li>int SCANCODE_F6</li>
-<li>int SCANCODE_F7</li>
-<li>int SCANCODE_F8</li>
-<li>int SCANCODE_F9</li>
-<li>int SCANCODE_FIND</li>
-<li>int SCANCODE_G</li>
-<li>int SCANCODE_GRAVE</li>
-<li>int SCANCODE_GUI</li>
-<li>int SCANCODE_H</li>
-<li>int SCANCODE_HELP</li>
-<li>int SCANCODE_HOME</li>
-<li>int SCANCODE_I</li>
-<li>int SCANCODE_INSERT</li>
-<li>int SCANCODE_INTERNATIONAL1</li>
-<li>int SCANCODE_INTERNATIONAL2</li>
-<li>int SCANCODE_INTERNATIONAL3</li>
-<li>int SCANCODE_INTERNATIONAL4</li>
-<li>int SCANCODE_INTERNATIONAL5</li>
-<li>int SCANCODE_INTERNATIONAL6</li>
-<li>int SCANCODE_INTERNATIONAL7</li>
-<li>int SCANCODE_INTERNATIONAL8</li>
-<li>int SCANCODE_INTERNATIONAL9</li>
-<li>int SCANCODE_J</li>
-<li>int SCANCODE_K</li>
-<li>int SCANCODE_KBDILLUMDOWN</li>
-<li>int SCANCODE_KBDILLUMTOGGLE</li>
-<li>int SCANCODE_KBDILLUMUP</li>
-<li>int SCANCODE_KP_0</li>
-<li>int SCANCODE_KP_00</li>
-<li>int SCANCODE_KP_000</li>
-<li>int SCANCODE_KP_1</li>
-<li>int SCANCODE_KP_2</li>
-<li>int SCANCODE_KP_3</li>
-<li>int SCANCODE_KP_4</li>
-<li>int SCANCODE_KP_5</li>
-<li>int SCANCODE_KP_6</li>
-<li>int SCANCODE_KP_7</li>
-<li>int SCANCODE_KP_8</li>
-<li>int SCANCODE_KP_9</li>
-<li>int SCANCODE_KP_A</li>
-<li>int SCANCODE_KP_AMPERSAND</li>
-<li>int SCANCODE_KP_AT</li>
-<li>int SCANCODE_KP_B</li>
-<li>int SCANCODE_KP_BACKSPACE</li>
-<li>int SCANCODE_KP_BINARY</li>
-<li>int SCANCODE_KP_C</li>
-<li>int SCANCODE_KP_CLEAR</li>
-<li>int SCANCODE_KP_CLEARENTRY</li>
-<li>int SCANCODE_KP_COLON</li>
-<li>int SCANCODE_KP_COMMA</li>
-<li>int SCANCODE_KP_D</li>
-<li>int SCANCODE_KP_DBLAMPERSAND</li>
-<li>int SCANCODE_KP_DBLVERTICALBAR</li>
-<li>int SCANCODE_KP_DECIMAL</li>
-<li>int SCANCODE_KP_DIVIDE</li>
-<li>int SCANCODE_KP_E</li>
-<li>int SCANCODE_KP_ENTER</li>
-<li>int SCANCODE_KP_EQUALS</li>
-<li>int SCANCODE_KP_EQUALSAS400</li>
-<li>int SCANCODE_KP_EXCLAM</li>
-<li>int SCANCODE_KP_F</li>
-<li>int SCANCODE_KP_GREATER</li>
-<li>int SCANCODE_KP_HASH</li>
-<li>int SCANCODE_KP_HEXADECIMAL</li>
-<li>int SCANCODE_KP_LEFTBRACE</li>
-<li>int SCANCODE_KP_LEFTPAREN</li>
-<li>int SCANCODE_KP_LESS</li>
-<li>int SCANCODE_KP_MEMADD</li>
-<li>int SCANCODE_KP_MEMCLEAR</li>
-<li>int SCANCODE_KP_MEMDIVIDE</li>
-<li>int SCANCODE_KP_MEMMULTIPLY</li>
-<li>int SCANCODE_KP_MEMRECALL</li>
-<li>int SCANCODE_KP_MEMSTORE</li>
-<li>int SCANCODE_KP_MEMSUBTRACT</li>
-<li>int SCANCODE_KP_MINUS</li>
-<li>int SCANCODE_KP_MULTIPLY</li>
-<li>int SCANCODE_KP_OCTAL</li>
-<li>int SCANCODE_KP_PERCENT</li>
-<li>int SCANCODE_KP_PERIOD</li>
-<li>int SCANCODE_KP_PLUS</li>
-<li>int SCANCODE_KP_PLUSMINUS</li>
-<li>int SCANCODE_KP_POWER</li>
-<li>int SCANCODE_KP_RIGHTBRACE</li>
-<li>int SCANCODE_KP_RIGHTPAREN</li>
-<li>int SCANCODE_KP_SPACE</li>
-<li>int SCANCODE_KP_TAB</li>
-<li>int SCANCODE_KP_VERTICALBAR</li>
-<li>int SCANCODE_KP_XOR</li>
-<li>int SCANCODE_L</li>
-<li>int SCANCODE_LALT</li>
-<li>int SCANCODE_LANG1</li>
-<li>int SCANCODE_LANG2</li>
-<li>int SCANCODE_LANG3</li>
-<li>int SCANCODE_LANG4</li>
-<li>int SCANCODE_LANG5</li>
-<li>int SCANCODE_LANG6</li>
-<li>int SCANCODE_LANG7</li>
-<li>int SCANCODE_LANG8</li>
-<li>int SCANCODE_LANG9</li>
-<li>int SCANCODE_LCTRL</li>
-<li>int SCANCODE_LEFT</li>
-<li>int SCANCODE_LEFTBRACKET</li>
-<li>int SCANCODE_LGUI</li>
-<li>int SCANCODE_LSHIFT</li>
-<li>int SCANCODE_M</li>
-<li>int SCANCODE_MAIL</li>
-<li>int SCANCODE_MEDIASELECT</li>
-<li>int SCANCODE_MENU</li>
-<li>int SCANCODE_MINUS</li>
-<li>int SCANCODE_MODE</li>
-<li>int SCANCODE_MUTE</li>
-<li>int SCANCODE_N</li>
-<li>int SCANCODE_NONUSBACKSLASH</li>
-<li>int SCANCODE_NONUSHASH</li>
-<li>int SCANCODE_NUMLOCKCLEAR</li>
-<li>int SCANCODE_O</li>
-<li>int SCANCODE_OPER</li>
-<li>int SCANCODE_OUT</li>
-<li>int SCANCODE_P</li>
-<li>int SCANCODE_PAGEDOWN</li>
-<li>int SCANCODE_PAGEUP</li>
-<li>int SCANCODE_PASTE</li>
-<li>int SCANCODE_PAUSE</li>
-<li>int SCANCODE_PERIOD</li>
-<li>int SCANCODE_POWER</li>
-<li>int SCANCODE_PRINTSCREEN</li>
-<li>int SCANCODE_PRIOR</li>
-<li>int SCANCODE_Q</li>
-<li>int SCANCODE_R</li>
-<li>int SCANCODE_RALT</li>
-<li>int SCANCODE_RCTRL</li>
-<li>int SCANCODE_RETURN</li>
-<li>int SCANCODE_RETURN2</li>
-<li>int SCANCODE_RGUI</li>
-<li>int SCANCODE_RIGHT</li>
-<li>int SCANCODE_RIGHTBRACKET</li>
-<li>int SCANCODE_RSHIFT</li>
-<li>int SCANCODE_S</li>
-<li>int SCANCODE_SCROLLLOCK</li>
-<li>int SCANCODE_SELECT</li>
-<li>int SCANCODE_SEMICOLON</li>
-<li>int SCANCODE_SEPARATOR</li>
-<li>int SCANCODE_SHIFT</li>
-<li>int SCANCODE_SLASH</li>
-<li>int SCANCODE_SLEEP</li>
-<li>int SCANCODE_SPACE</li>
-<li>int SCANCODE_STOP</li>
-<li>int SCANCODE_SYSREQ</li>
-<li>int SCANCODE_T</li>
-<li>int SCANCODE_TAB</li>
-<li>int SCANCODE_THOUSANDSSEPARATOR</li>
-<li>int SCANCODE_U</li>
-<li>int SCANCODE_UNDO</li>
-<li>int SCANCODE_UNKNOWN</li>
-<li>int SCANCODE_UP</li>
-<li>int SCANCODE_V</li>
-<li>int SCANCODE_VOLUMEDOWN</li>
-<li>int SCANCODE_VOLUMEUP</li>
-<li>int SCANCODE_W</li>
-<li>int SCANCODE_WWW</li>
-<li>int SCANCODE_X</li>
-<li>int SCANCODE_Y</li>
-<li>int SCANCODE_Z</li>
 <li>unsigned SCAN_DIRS</li>
 <li>unsigned SCAN_FILES</li>
 <li>unsigned SCAN_HIDDEN</li>

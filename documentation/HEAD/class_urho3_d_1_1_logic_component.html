@@ -184,14 +184,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#aa740607df08b5b43904e6c29993844a8">FixedPostUpdate</a> (float timeStep)</td></tr>
 <tr class="memdesc:aa740607df08b5b43904e6c29993844a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on physics post-update, fixed timestep. <br/></td></tr>
 <tr class="separator:aa740607df08b5b43904e6c29993844a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736f44acab864066f1715c66bf586175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a736f44acab864066f1715c66bf586175"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a736f44acab864066f1715c66bf586175">SetUpdateEventMask</a> (unsigned char mask)</td></tr>
-<tr class="memdesc:a736f44acab864066f1715c66bf586175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set what update events should be subscribed to. Use this for optimization: by default all are in use. Note that this is not an attribute and is not saved or network-serialized, therefore it should always be called eg. in the subclass constructor. <br/></td></tr>
-<tr class="separator:a736f44acab864066f1715c66bf586175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8440aec06f3606241d6894c96f0aa314"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8440aec06f3606241d6894c96f0aa314"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a8440aec06f3606241d6894c96f0aa314">GetUpdateEventMask</a> () const </td></tr>
-<tr class="memdesc:a8440aec06f3606241d6894c96f0aa314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return what update events are subscribed to. <br/></td></tr>
-<tr class="separator:a8440aec06f3606241d6894c96f0aa314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6fce6c91519714ba64fb61505a71d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed6fce6c91519714ba64fb61505a71d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#aed6fce6c91519714ba64fb61505a71d0">SetUpdateEventMask</a> (UpdateEventFlags mask)</td></tr>
+<tr class="memdesc:aed6fce6c91519714ba64fb61505a71d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set what update events should be subscribed to. Use this for optimization: by default all are in use. Note that this is not an attribute and is not saved or network-serialized, therefore it should always be called eg. in the subclass constructor. <br/></td></tr>
+<tr class="separator:aed6fce6c91519714ba64fb61505a71d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37bff40555093848d0452d362a65ac1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37bff40555093848d0452d362a65ac1c"></a>
+UpdateEventFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a37bff40555093848d0452d362a65ac1c">GetUpdateEventMask</a> () const </td></tr>
+<tr class="memdesc:a37bff40555093848d0452d362a65ac1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return what update events are subscribed to. <br/></td></tr>
+<tr class="separator:a37bff40555093848d0452d362a65ac1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e4d981b8e797abf6917b3a1ae3611b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e4d981b8e797abf6917b3a1ae3611b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a61e4d981b8e797abf6917b3a1ae3611b">IsDelayedStartCalled</a> () const </td></tr>
 <tr class="memdesc:a61e4d981b8e797abf6917b3a1ae3611b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the <a class="el" href="class_urho3_d_1_1_logic_component.html#ab87accfdac685351fde43278dca1fa1f" title="Called before the first update. At this point all other components of the node should exist...">DelayedStart()</a> function has been called. <br/></td></tr>
@@ -211,14 +211,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0f5d90395573cd01f155df566e631948"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f5d90395573cd01f155df566e631948"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a0f5d90395573cd01f155df566e631948">updateEventMask_</a></td></tr>
-<tr class="memdesc:a0f5d90395573cd01f155df566e631948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested event subscription mask. <br/></td></tr>
-<tr class="separator:a0f5d90395573cd01f155df566e631948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a08320111f7908b0105912352fd62b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a08320111f7908b0105912352fd62b9"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a8a08320111f7908b0105912352fd62b9">currentEventMask_</a></td></tr>
-<tr class="memdesc:a8a08320111f7908b0105912352fd62b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current event subscription mask. <br/></td></tr>
-<tr class="separator:a8a08320111f7908b0105912352fd62b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85740611e8c6ee14a3e1751d09855e77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85740611e8c6ee14a3e1751d09855e77"></a>
+UpdateEventFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#a85740611e8c6ee14a3e1751d09855e77">updateEventMask_</a></td></tr>
+<tr class="memdesc:a85740611e8c6ee14a3e1751d09855e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested event subscription mask. <br/></td></tr>
+<tr class="separator:a85740611e8c6ee14a3e1751d09855e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1962b4d957225d9b5656c3367fdfd70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1962b4d957225d9b5656c3367fdfd70"></a>
+UpdateEventFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#ac1962b4d957225d9b5656c3367fdfd70">currentEventMask_</a></td></tr>
+<tr class="memdesc:ac1962b4d957225d9b5656c3367fdfd70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current event subscription mask. <br/></td></tr>
+<tr class="separator:ac1962b4d957225d9b5656c3367fdfd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb1f1c6d9a287e4217bcbf6e9f8b442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affb1f1c6d9a287e4217bcbf6e9f8b442"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_logic_component.html#affb1f1c6d9a287e4217bcbf6e9f8b442">delayedStartCalled_</a></td></tr>
 <tr class="memdesc:affb1f1c6d9a287e4217bcbf6e9f8b442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for delayed start. <br/></td></tr>

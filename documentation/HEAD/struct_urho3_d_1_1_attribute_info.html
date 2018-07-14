@@ -53,10 +53,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#aaa8c452f402eeaaf83dc2073aff4d882">AttributeInfo</a> ()=default</td></tr>
 <tr class="memdesc:aaa8c452f402eeaaf83dc2073aff4d882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct empty. <br/></td></tr>
 <tr class="separator:aaa8c452f402eeaaf83dc2073aff4d882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad116eae071d87ee244eb1767d9bd1c55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad116eae071d87ee244eb1767d9bd1c55"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#ad116eae071d87ee244eb1767d9bd1c55">AttributeInfo</a> (VariantType type, const char *name, const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_attribute_accessor.html">AttributeAccessor</a> &gt; &amp;accessor, const char **enumNames, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;defaultValue, unsigned mode)</td></tr>
-<tr class="memdesc:ad116eae071d87ee244eb1767d9bd1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct attribute. <br/></td></tr>
-<tr class="separator:ad116eae071d87ee244eb1767d9bd1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347f06301f37db008036b7eeda9355cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347f06301f37db008036b7eeda9355cf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#a347f06301f37db008036b7eeda9355cf">AttributeInfo</a> (VariantType type, const char *name, const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_attribute_accessor.html">AttributeAccessor</a> &gt; &amp;accessor, const char **enumNames, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;defaultValue, AttributeModeFlags mode)</td></tr>
+<tr class="memdesc:a347f06301f37db008036b7eeda9355cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct attribute. <br/></td></tr>
+<tr class="separator:a347f06301f37db008036b7eeda9355cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf35c0c78baeb9588f92163e54e18da9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf35c0c78baeb9588f92163e54e18da9"></a>
 const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#abf35c0c78baeb9588f92163e54e18da9">GetMetadata</a> (const <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &amp;key) const </td></tr>
 <tr class="memdesc:abf35c0c78baeb9588f92163e54e18da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get attribute metadata. <br/></td></tr>
@@ -89,10 +89,10 @@ const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#ae926142e798b66d4949c3ab80e253f2b">defaultValue_</a></td></tr>
 <tr class="memdesc:ae926142e798b66d4949c3ab80e253f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for network replication. <br/></td></tr>
 <tr class="separator:ae926142e798b66d4949c3ab80e253f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7008072701a906f6db5442ceecf8eb52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7008072701a906f6db5442ceecf8eb52"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#a7008072701a906f6db5442ceecf8eb52">mode_</a> = AM_DEFAULT</td></tr>
-<tr class="memdesc:a7008072701a906f6db5442ceecf8eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute mode: whether to use for serialization, network replication, or both. <br/></td></tr>
-<tr class="separator:a7008072701a906f6db5442ceecf8eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5455f9bd3427c38b895fda34169346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c5455f9bd3427c38b895fda34169346"></a>
+AttributeModeFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#a3c5455f9bd3427c38b895fda34169346">mode_</a> = AM_DEFAULT</td></tr>
+<tr class="memdesc:a3c5455f9bd3427c38b895fda34169346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute mode: whether to use for serialization, network replication, or both. <br/></td></tr>
+<tr class="separator:a3c5455f9bd3427c38b895fda34169346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d00cf1b7ab85264b861d368b1ae40e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d00cf1b7ab85264b861d368b1ae40e6"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_urho3_d_1_1_attribute_info.html#a1d00cf1b7ab85264b861d368b1ae40e6">metadata_</a></td></tr>
 <tr class="memdesc:a1d00cf1b7ab85264b861d368b1ae40e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute metadata. <br/></td></tr>

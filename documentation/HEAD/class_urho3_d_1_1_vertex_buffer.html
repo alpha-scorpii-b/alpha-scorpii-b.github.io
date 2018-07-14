@@ -153,10 +153,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a1049573bcaf587d673c81698d3e76598">GetElementOffset</a> (VertexElementType type, VertexElementSemantic semantic, unsigned char index=0) const </td></tr>
 <tr class="memdesc:a1049573bcaf587d673c81698d3e76598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return offset of a element with specific type within vertex, or M_MAX_UNSIGNED if element does not exist. <br/></td></tr>
 <tr class="separator:a1049573bcaf587d673c81698d3e76598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa7f6e34561d0ea8c7a8b0a97692253"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fa7f6e34561d0ea8c7a8b0a97692253"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a9fa7f6e34561d0ea8c7a8b0a97692253">GetElementMask</a> () const </td></tr>
-<tr class="memdesc:a9fa7f6e34561d0ea8c7a8b0a97692253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return legacy vertex element mask. Note that both semantic and type must match the legacy element for a mask bit to be set. <br/></td></tr>
-<tr class="separator:a9fa7f6e34561d0ea8c7a8b0a97692253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891e51c30b4d6c567ecce438d4908e65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a891e51c30b4d6c567ecce438d4908e65"></a>
+VertexMaskFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a891e51c30b4d6c567ecce438d4908e65">GetElementMask</a> () const </td></tr>
+<tr class="memdesc:a891e51c30b4d6c567ecce438d4908e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return legacy vertex element mask. Note that both semantic and type must match the legacy element for a mask bit to be set. <br/></td></tr>
+<tr class="separator:a891e51c30b4d6c567ecce438d4908e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3a33f74971db8bb1acfdaa1232a94e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c3a33f74971db8bb1acfdaa1232a94e"></a>
 unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a3c3a33f74971db8bb1acfdaa1232a94e">GetShadowData</a> () const </td></tr>
 <tr class="memdesc:a3c3a33f74971db8bb1acfdaa1232a94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return CPU memory shadow data. <br/></td></tr>
@@ -474,10 +474,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a1269d0a2361e1017fe15fd00880ea842">elementHash_</a> {}</td></tr>
 <tr class="memdesc:a1269d0a2361e1017fe15fd00880ea842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex element hash. <br/></td></tr>
 <tr class="separator:a1269d0a2361e1017fe15fd00880ea842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc03554cc57eddb0f9dfb6cd1d01016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cc03554cc57eddb0f9dfb6cd1d01016"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a7cc03554cc57eddb0f9dfb6cd1d01016">elementMask_</a> {}</td></tr>
-<tr class="memdesc:a7cc03554cc57eddb0f9dfb6cd1d01016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex element legacy bitmask. <br/></td></tr>
-<tr class="separator:a7cc03554cc57eddb0f9dfb6cd1d01016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a37136fb846a0edfa581a923b1c6f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30a37136fb846a0edfa581a923b1c6f0"></a>
+VertexMaskFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a30a37136fb846a0edfa581a923b1c6f0">elementMask_</a> {}</td></tr>
+<tr class="memdesc:a30a37136fb846a0edfa581a923b1c6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex element legacy bitmask. <br/></td></tr>
+<tr class="separator:a30a37136fb846a0edfa581a923b1c6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223ca95343465263c028265e005b92bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a223ca95343465263c028265e005b92bb"></a>
 LockState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a223ca95343465263c028265e005b92bb">lockState_</a> {LOCK_NONE}</td></tr>
 <tr class="memdesc:a223ca95343465263c028265e005b92bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer locking state. <br/></td></tr>
