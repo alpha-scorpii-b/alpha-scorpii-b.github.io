@@ -44,7 +44,7 @@ group: HEAD
 <div class="dynheader">
 Inheritance diagram for Urho3D::Network:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_network__inherit__graph.svg" width="543" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_network__inherit__graph.svg" width="155" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -64,22 +64,34 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a3325a97bf9b3416b4b69f724bfeda4e1">~Network</a> () override</td></tr>
 <tr class="memdesc:a3325a97bf9b3416b4b69f724bfeda4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br/></td></tr>
 <tr class="separator:a3325a97bf9b3416b4b69f724bfeda4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59527245c2c76db53a8a5bb53b65d65c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59527245c2c76db53a8a5bb53b65d65c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a59527245c2c76db53a8a5bb53b65d65c">HandleMessage</a> (kNet::MessageConnection *source, kNet::packet_id_t packetId, kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
-<tr class="memdesc:a59527245c2c76db53a8a5bb53b65d65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a kNet message from either a client or the server. <br/></td></tr>
-<tr class="separator:a59527245c2c76db53a8a5bb53b65d65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e90e0be13802c04a3e353d79e4c296e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e90e0be13802c04a3e353d79e4c296e"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a4e90e0be13802c04a3e353d79e4c296e">ComputeContentID</a> (kNet::message_id_t msgId, const char *data, size_t numBytes) override</td></tr>
-<tr class="memdesc:a4e90e0be13802c04a3e353d79e4c296e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the content ID for a message. <br/></td></tr>
-<tr class="separator:a4e90e0be13802c04a3e353d79e4c296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02cab2a2bef3b56abb762bb36d71d7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac02cab2a2bef3b56abb762bb36d71d7c">NewConnectionEstablished</a> (kNet::MessageConnection *connection) override</td></tr>
-<tr class="memdesc:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a new client connection. <br/></td></tr>
-<tr class="separator:ac02cab2a2bef3b56abb762bb36d71d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e0e7ac6067171bd5972e04e1f53ec36"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a8e0e7ac6067171bd5972e04e1f53ec36">ClientDisconnected</a> (kNet::MessageConnection *connection) override</td></tr>
-<tr class="memdesc:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a client disconnection. <br/></td></tr>
-<tr class="separator:a8e0e7ac6067171bd5972e04e1f53ec36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e675ccc446bc8f6567b4b9f2248f32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e675ccc446bc8f6567b4b9f2248f32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a27e675ccc446bc8f6567b4b9f2248f32">HandleMessage</a> (const SLNet::AddressOrGUID &amp;source, int packetID, int msgID, const char *data, size_t numBytes)</td></tr>
+<tr class="memdesc:a27e675ccc446bc8f6567b4b9f2248f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle an inbound message. <br/></td></tr>
+<tr class="separator:a27e675ccc446bc8f6567b4b9f2248f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da3ef241cd68a9f3f2ba185c4393379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3da3ef241cd68a9f3f2ba185c4393379"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a3da3ef241cd68a9f3f2ba185c4393379">NewConnectionEstablished</a> (const SLNet::AddressOrGUID &amp;connection)</td></tr>
+<tr class="memdesc:a3da3ef241cd68a9f3f2ba185c4393379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a new client connection. <br/></td></tr>
+<tr class="separator:a3da3ef241cd68a9f3f2ba185c4393379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb3829412767960a9a893e710521748"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bb3829412767960a9a893e710521748"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a7bb3829412767960a9a893e710521748">ClientDisconnected</a> (const SLNet::AddressOrGUID &amp;connection)</td></tr>
+<tr class="memdesc:a7bb3829412767960a9a893e710521748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a client disconnection. <br/></td></tr>
+<tr class="separator:a7bb3829412767960a9a893e710521748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b44bbb4e74d5aaf904d731de7bce1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55b44bbb4e74d5aaf904d731de7bce1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a55b44bbb4e74d5aaf904d731de7bce1f">SetDiscoveryBeacon</a> (const <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;data)</td></tr>
+<tr class="memdesc:a55b44bbb4e74d5aaf904d731de7bce1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the data that will be used for a reply to attempts at host discovery on LAN/subnet. <br/></td></tr>
+<tr class="separator:a55b44bbb4e74d5aaf904d731de7bce1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0ded8065a0d15d8a28463168a58206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a0ded8065a0d15d8a28463168a58206"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a2a0ded8065a0d15d8a28463168a58206">DiscoverHosts</a> (unsigned port)</td></tr>
+<tr class="memdesc:a2a0ded8065a0d15d8a28463168a58206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan the LAN/subnet for available hosts. <br/></td></tr>
+<tr class="separator:a2a0ded8065a0d15d8a28463168a58206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07297cd10483fa8425f77c6478cb502"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad07297cd10483fa8425f77c6478cb502"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ad07297cd10483fa8425f77c6478cb502">SetPassword</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;password)</td></tr>
+<tr class="memdesc:ad07297cd10483fa8425f77c6478cb502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set password for the client/server communcation. <br/></td></tr>
+<tr class="separator:ad07297cd10483fa8425f77c6478cb502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cd4700a00273c83b295e90b31728fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3cd4700a00273c83b295e90b31728fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac3cd4700a00273c83b295e90b31728fc">SetNATServerInfo</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;address, unsigned short port)</td></tr>
+<tr class="memdesc:ac3cd4700a00273c83b295e90b31728fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set NAT server information. <br/></td></tr>
+<tr class="separator:ac3cd4700a00273c83b295e90b31728fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e313f197c4150135e0577b02915bfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75e313f197c4150135e0577b02915bfa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a75e313f197c4150135e0577b02915bfa">Connect</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;address, unsigned short port, <a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene, const <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;identity=<a class="el" href="class_urho3_d_1_1_variant.html#a99f50f441c7130d8a4aa340fd2a827da">Variant::emptyVariantMap</a>)</td></tr>
 <tr class="memdesc:a75e313f197c4150135e0577b02915bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a server using UDP protocol. Return true if connection process successfully started. <br/></td></tr>
@@ -96,6 +108,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#acbc869d61a1cbb47a7843d27ce17fdce">StopServer</a> ()</td></tr>
 <tr class="memdesc:acbc869d61a1cbb47a7843d27ce17fdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the server. <br/></td></tr>
 <tr class="separator:acbc869d61a1cbb47a7843d27ce17fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c4769ea6dc21317fce32ba7715e4cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44c4769ea6dc21317fce32ba7715e4cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a44c4769ea6dc21317fce32ba7715e4cd">StartNATClient</a> ()</td></tr>
+<tr class="memdesc:a44c4769ea6dc21317fce32ba7715e4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start NAT punchtrough client to allow remote connections. <br/></td></tr>
+<tr class="separator:a44c4769ea6dc21317fce32ba7715e4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3541b6ec3c258ea8ccc804f4477b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d3541b6ec3c258ea8ccc804f4477b13"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a2d3541b6ec3c258ea8ccc804f4477b13">GetGUID</a> () const </td></tr>
+<tr class="memdesc:a2d3541b6ec3c258ea8ccc804f4477b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local server GUID. <br/></td></tr>
+<tr class="separator:a2d3541b6ec3c258ea8ccc804f4477b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84470301e8b3e81b6c8b8628165738d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84470301e8b3e81b6c8b8628165738d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a84470301e8b3e81b6c8b8628165738d5">AttemptNATPunchtrough</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;guid, <a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene, const <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;identity=<a class="el" href="class_urho3_d_1_1_variant.html#a99f50f441c7130d8a4aa340fd2a827da">Variant::emptyVariantMap</a>)</td></tr>
+<tr class="memdesc:a84470301e8b3e81b6c8b8628165738d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to connect to NAT server. <br/></td></tr>
+<tr class="separator:a84470301e8b3e81b6c8b8628165738d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616df39554546ab60e0c26481be29ee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a616df39554546ab60e0c26481be29ee2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a616df39554546ab60e0c26481be29ee2">BroadcastMessage</a> (int msgID, bool reliable, bool inOrder, const <a class="el" href="class_urho3_d_1_1_vector_buffer.html">VectorBuffer</a> &amp;msg, unsigned contentID=0)</td></tr>
 <tr class="memdesc:a616df39554546ab60e0c26481be29ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a message with content ID to all client connections. <br/></td></tr>
@@ -152,6 +176,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_http_request.html">HttpRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#aabc1ba9ce8a6d595ea1daca38e662280">MakeHttpRequest</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;url, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;verb=<a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e">String::EMPTY</a>, const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a> &gt; &amp;headers=<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a> &gt;(), const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;postData=<a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e">String::EMPTY</a>)</td></tr>
 <tr class="memdesc:aabc1ba9ce8a6d595ea1daca38e662280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an HTTP request to the specified URL. Empty verb defaults to a GET request. Return a request object which can be used to read the response data. <br/></td></tr>
 <tr class="separator:aabc1ba9ce8a6d595ea1daca38e662280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3b75b209e31cf5aa569eac7755a411"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d3b75b209e31cf5aa569eac7755a411"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a0d3b75b209e31cf5aa569eac7755a411">BanAddress</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;address)</td></tr>
+<tr class="memdesc:a0d3b75b209e31cf5aa569eac7755a411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ban specific IP addresses. <br/></td></tr>
+<tr class="separator:a0d3b75b209e31cf5aa569eac7755a411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c993dcb51941a8413dd4210a60d3b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c993dcb51941a8413dd4210a60d3b8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac3c993dcb51941a8413dd4210a60d3b8">GetUpdateFps</a> () const </td></tr>
 <tr class="memdesc:ac3c993dcb51941a8413dd4210a60d3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return network update FPS. <br/></td></tr>
@@ -164,10 +192,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a7bc3c086f8ce693476be1d23db384751">GetSimulatedPacketLoss</a> () const </td></tr>
 <tr class="memdesc:a7bc3c086f8ce693476be1d23db384751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return simulated packet loss probability. <br/></td></tr>
 <tr class="separator:a7bc3c086f8ce693476be1d23db384751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8072b074715114cc0798ac28e2ea36c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8072b074715114cc0798ac28e2ea36c0"></a>
-<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a8072b074715114cc0798ac28e2ea36c0">GetConnection</a> (kNet::MessageConnection *connection) const </td></tr>
-<tr class="memdesc:a8072b074715114cc0798ac28e2ea36c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a client or server connection by kNet MessageConnection, or null if none exist. <br/></td></tr>
-<tr class="separator:a8072b074715114cc0798ac28e2ea36c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4cbbc840abacbded792b8754ad91e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc4cbbc840abacbded792b8754ad91e3"></a>
+<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#abc4cbbc840abacbded792b8754ad91e3">GetConnection</a> (const SLNet::AddressOrGUID &amp;connection) const </td></tr>
+<tr class="memdesc:abc4cbbc840abacbded792b8754ad91e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a client or server connection by kNet MessageConnection, or null if none exist. <br/></td></tr>
+<tr class="separator:abc4cbbc840abacbded792b8754ad91e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9709e95d9d35b25251d5e41adea622"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add9709e95d9d35b25251d5e41adea622"></a>
 <a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#add9709e95d9d35b25251d5e41adea622">GetServerConnection</a> () const </td></tr>
 <tr class="memdesc:add9709e95d9d35b25251d5e41adea622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the connection to the server. Null if not connected. <br/></td></tr>
@@ -397,10 +425,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a9e10514a40056835caf21a3fb9737e77">HandleRenderUpdate</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> eventType, <a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a> &amp;eventData)</td></tr>
 <tr class="memdesc:a9e10514a40056835caf21a3fb9737e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle render update frame event. <br/></td></tr>
 <tr class="separator:a9e10514a40056835caf21a3fb9737e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf8ff732a27140116c906cfb1b75981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabf8ff732a27140116c906cfb1b75981"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#aabf8ff732a27140116c906cfb1b75981">OnServerConnected</a> ()</td></tr>
-<tr class="memdesc:aabf8ff732a27140116c906cfb1b75981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle server connection. <br/></td></tr>
-<tr class="separator:aabf8ff732a27140116c906cfb1b75981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48ae048fec78232189d00087cfc832a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae48ae048fec78232189d00087cfc832a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ae48ae048fec78232189d00087cfc832a">OnServerConnected</a> (const SLNet::AddressOrGUID &amp;address)</td></tr>
+<tr class="memdesc:ae48ae048fec78232189d00087cfc832a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle server connection. <br/></td></tr>
+<tr class="separator:ae48ae048fec78232189d00087cfc832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b8ee247fda12a1b0d3956972177a4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36b8ee247fda12a1b0d3956972177a4b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a36b8ee247fda12a1b0d3956972177a4b">OnServerDisconnected</a> ()</td></tr>
 <tr class="memdesc:a36b8ee247fda12a1b0d3956972177a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle server disconnection. <br/></td></tr>
@@ -409,23 +437,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#adac5fa1674e39763fbfb4c8301023621">ConfigureNetworkSimulator</a> ()</td></tr>
 <tr class="memdesc:adac5fa1674e39763fbfb4c8301023621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfigure network simulator parameters on all existing connections. <br/></td></tr>
 <tr class="separator:adac5fa1674e39763fbfb4c8301023621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d878e00c02066e4b7d5a77e3e129e12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d878e00c02066e4b7d5a77e3e129e12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a3d878e00c02066e4b7d5a77e3e129e12">HandleIncomingPacket</a> (SLNet::Packet *packet, bool isServer)</td></tr>
+<tr class="memdesc:a3d878e00c02066e4b7d5a77e3e129e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">All incoming packages are handled here. <br/></td></tr>
+<tr class="separator:a3d878e00c02066e4b7d5a77e3e129e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4dd6ce55ebfb5530c38ceaae1251c091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dd6ce55ebfb5530c38ceaae1251c091"></a>
-<a class="el" href="class_urho3_d_1_1_unique_ptr.html">UniquePtr</a>&lt; kNet::Network &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a4dd6ce55ebfb5530c38ceaae1251c091">network_</a></td></tr>
-<tr class="memdesc:a4dd6ce55ebfb5530c38ceaae1251c091"><td class="mdescLeft">&#160;</td><td class="mdescRight">kNet instance. <br/></td></tr>
-<tr class="separator:a4dd6ce55ebfb5530c38ceaae1251c091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021edcf1ca4c3abe95dce7909c7e696a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a021edcf1ca4c3abe95dce7909c7e696a"></a>
+SLNet::RakPeerInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a021edcf1ca4c3abe95dce7909c7e696a">rakPeer_</a></td></tr>
+<tr class="memdesc:a021edcf1ca4c3abe95dce7909c7e696a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SLikeNet peer instance for server connection. <br/></td></tr>
+<tr class="separator:a021edcf1ca4c3abe95dce7909c7e696a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bee8dd79b7edb4c92de2eb94dfc6c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6bee8dd79b7edb4c92de2eb94dfc6c2"></a>
+SLNet::RakPeerInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ad6bee8dd79b7edb4c92de2eb94dfc6c2">rakPeerClient_</a></td></tr>
+<tr class="memdesc:ad6bee8dd79b7edb4c92de2eb94dfc6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SLikeNet peer instance for client connection. <br/></td></tr>
+<tr class="separator:ad6bee8dd79b7edb4c92de2eb94dfc6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b52469ed6bf832101051a53d0f9ebf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35b52469ed6bf832101051a53d0f9ebf"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a35b52469ed6bf832101051a53d0f9ebf">serverConnection_</a></td></tr>
 <tr class="memdesc:a35b52469ed6bf832101051a53d0f9ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client's server connection. <br/></td></tr>
 <tr class="separator:a35b52469ed6bf832101051a53d0f9ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b6c0e128fd2848f46c43a673fbe0b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40b6c0e128fd2848f46c43a673fbe0b7"></a>
-<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a><br class="typebreak"/>
-&lt; kNet::MessageConnection <br class="typebreak"/>
-*, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a40b6c0e128fd2848f46c43a673fbe0b7">clientConnections_</a></td></tr>
-<tr class="memdesc:a40b6c0e128fd2848f46c43a673fbe0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server's client connections. <br/></td></tr>
-<tr class="separator:a40b6c0e128fd2848f46c43a673fbe0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa94db2c4205e0646b8028a0462f036"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa94db2c4205e0646b8028a0462f036"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; SLNet::AddressOrGUID, <br class="typebreak"/>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#adfa94db2c4205e0646b8028a0462f036">clientConnections_</a></td></tr>
+<tr class="memdesc:adfa94db2c4205e0646b8028a0462f036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server's client connections. <br/></td></tr>
+<tr class="separator:adfa94db2c4205e0646b8028a0462f036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9672da271199e1f2e90b35e29bef9ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9672da271199e1f2e90b35e29bef9ee"></a>
 <a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#af9672da271199e1f2e90b35e29bef9ee">allowedRemoteEvents_</a></td></tr>
 <tr class="memdesc:af9672da271199e1f2e90b35e29bef9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed remote events. <br/></td></tr>
@@ -462,6 +497,42 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a51a2dc60370b25419f6cb206dfd87690">packageCacheDir_</a></td></tr>
 <tr class="memdesc:a51a2dc60370b25419f6cb206dfd87690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Package cache directory. <br/></td></tr>
 <tr class="separator:a51a2dc60370b25419f6cb206dfd87690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9736e2aa5b2d85a8a60bdbd7b65492bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9736e2aa5b2d85a8a60bdbd7b65492bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a9736e2aa5b2d85a8a60bdbd7b65492bd">isServer_</a></td></tr>
+<tr class="memdesc:a9736e2aa5b2d85a8a60bdbd7b65492bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we started as server or not. <br/></td></tr>
+<tr class="separator:a9736e2aa5b2d85a8a60bdbd7b65492bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b149098e9a3c7f1c465bfc9aa9518"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae19b149098e9a3c7f1c465bfc9aa9518"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ae19b149098e9a3c7f1c465bfc9aa9518">password_</a></td></tr>
+<tr class="memdesc:ae19b149098e9a3c7f1c465bfc9aa9518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server/Client password used for connecting. <br/></td></tr>
+<tr class="separator:ae19b149098e9a3c7f1c465bfc9aa9518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82292b4098e669098ee1e2bd2d740c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82292b4098e669098ee1e2bd2d740c41"></a>
+<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a82292b4098e669098ee1e2bd2d740c41">scene_</a></td></tr>
+<tr class="memdesc:a82292b4098e669098ee1e2bd2d740c41"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene. ">Scene</a> which will be used for NAT punchtrough connections. <br/></td></tr>
+<tr class="separator:a82292b4098e669098ee1e2bd2d740c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff33a10d55fa8099d629d82a7322cfc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff33a10d55fa8099d629d82a7322cfc6"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">VariantMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#aff33a10d55fa8099d629d82a7322cfc6">identity_</a></td></tr>
+<tr class="memdesc:aff33a10d55fa8099d629d82a7322cfc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client identify for NAT punchtrough connections. <br/></td></tr>
+<tr class="separator:aff33a10d55fa8099d629d82a7322cfc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8dacefb8d5e94198c6558a9ca963e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8dacefb8d5e94198c6558a9ca963e6b"></a>
+SLNet::SystemAddress *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ac8dacefb8d5e94198c6558a9ca963e6b">natPunchServerAddress_</a></td></tr>
+<tr class="memdesc:ac8dacefb8d5e94198c6558a9ca963e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAT punchtrough server information. <br/></td></tr>
+<tr class="separator:ac8dacefb8d5e94198c6558a9ca963e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52d44ee2a709ee9606b5cdfc5560e13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa52d44ee2a709ee9606b5cdfc5560e13"></a>
+SLNet::NatPunchthroughClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#aa52d44ee2a709ee9606b5cdfc5560e13">natPunchthroughServerClient_</a></td></tr>
+<tr class="memdesc:aa52d44ee2a709ee9606b5cdfc5560e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAT punchtrough client for the server. <br/></td></tr>
+<tr class="separator:aa52d44ee2a709ee9606b5cdfc5560e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc6f704a32aefb24b727b8d9633c237"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedc6f704a32aefb24b727b8d9633c237"></a>
+SLNet::NatPunchthroughClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#aedc6f704a32aefb24b727b8d9633c237">natPunchthroughClient_</a></td></tr>
+<tr class="memdesc:aedc6f704a32aefb24b727b8d9633c237"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAT punchtrough client for the client. <br/></td></tr>
+<tr class="separator:aedc6f704a32aefb24b727b8d9633c237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02f80bf32f52c1190384f8c6650cbbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab02f80bf32f52c1190384f8c6650cbbe"></a>
+SLNet::RakNetGUID *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#ab02f80bf32f52c1190384f8c6650cbbe">remoteGUID_</a></td></tr>
+<tr class="memdesc:ab02f80bf32f52c1190384f8c6650cbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote GUID information. <br/></td></tr>
+<tr class="separator:ab02f80bf32f52c1190384f8c6650cbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6160e8a1af4f81e6ead3874b717a8f57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6160e8a1af4f81e6ead3874b717a8f57"></a>
+<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_network.html#a6160e8a1af4f81e6ead3874b717a8f57">guid_</a></td></tr>
+<tr class="memdesc:a6160e8a1af4f81e6ead3874b717a8f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local server GUID. <br/></td></tr>
+<tr class="separator:a6160e8a1af4f81e6ead3874b717a8f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
