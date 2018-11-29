@@ -1,26 +1,26 @@
 <map id="Urho3D::Renderer::UpdateQueuedViewport" name="Urho3D::Renderer::UpdateQueuedViewport">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_weak_ptr.html#ac945a22af2b3a9dedf9c5b5392f42dff" title="Check if the pointer is not null. " alt="" coords="252,349,431,376"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_weak_ptr.html#a9f3707fbe1cc49ece4d5e5ea064dbab0" title="Return whether the object has expired. If null pointer, always return true. " alt="" coords="252,400,431,427"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_view.html#a38bd2f1292778c57fae949c4e271c20d" title="Define with rendertarget and viewport. Return true if successful. " alt="" coords="266,501,417,528"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_int_rect.html#a7d8747bfdd710559f3715160beac2872" title="Return size. " alt="" coords="543,5,695,32"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_scene.html#ab881efcd27fe757cf1885633c959c36c" title="Return component from the whole scene by ID, or null if not found. " alt="" coords="515,991,723,1017"/>
-<area shape="rect" id="node23" href="$class_urho3_d_1_1_debug_renderer.html#a65ddc45de33de57b41a9889fdce2363c" title="Set the camera viewpoint. Call before rendering, or before adding geometry if you want to use culling..." alt="" coords="258,603,425,645"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_renderer.html#adea49989775cfdab341fd9e1a20b75f4" title="Reset shadow map allocation counts. " alt="" coords="232,669,451,710"/>
-<area shape="rect" id="node25" href="$class_urho3_d_1_1_view.html#a50c3fe5d5c2b3040e13925aa277a8d93" title="Update and cull objects and construct rendering batches. " alt="" coords="264,735,419,761"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_viewport.html#a6fea5c54862fded7dd4c31708cd9c324" title="Return rendering path. " alt="" coords="507,56,731,83"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_viewport.html#a695eda72c59939a08b0a764184c43942" title="Return whether to draw debug geometry. " alt="" coords="525,107,712,149"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_render_surface.html#a1be67d97ab77b0d6f24776a3f75c5e6a" title="Return width. " alt="" coords="537,173,700,214"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_render_surface.html#a3c0b5d48265c55fd1692924b9e45ce24" title="Return height. " alt="" coords="537,238,700,279"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_viewport.html#a5b11a34faeae6959741dd919ed7ed3a4" title="Return view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget&#39;s full dimensions..." alt="" coords="527,304,710,331"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_viewport.html#a1f8680824d6d5fbb4aee0894af8eca7a" title="Return scene. " alt="" coords="523,355,715,381"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_viewport.html#a373e7e9fdec8dc8a3f2d6ed21d810756" title="Return the culling camera. If null, the viewport camera will be used for culling (normal case..." alt="" coords="529,406,708,447"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_viewport.html#aa09a004f072d387b6c57474f3b2229a7" title="Return viewport camera. " alt="" coords="518,472,719,499"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_technique.html#a1ccb22ef2367381c00c4564b2d4b9995" title="Return a pass type index by name. Allocate new if not used yet. " alt="" coords="547,523,690,565"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_string.html#a11572e3c07f60de65ac5d0c1ca5b6ba3" title="Return length. " alt="" coords="787,644,943,671"/>
-<area shape="rect" id="node16" href="$class_urho3_d_1_1_string.html#a69ac7aadaa628fc05fc96abde992fcdc" title="Return whether the string is empty. " alt="" coords="541,640,696,667"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_view.html#aa0236891bcc55453371beb712228b4ef" title="Set shader defines for a batch queue if used. " alt="" coords="513,691,724,733"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_component.html#a73cc05aee9060f5618ea1ef72668ba01" title="Return whether is effectively enabled (node is also enabled). " alt="" coords="543,757,694,798"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_scene.html#abb2996951ef1c7e92e5b4745ec198617" title="Return whether an asynchronous loading operation is in progress. " alt="" coords="512,823,725,849"/>
-<area shape="rect" id="node20" href="$class_urho3_d_1_1_scene.html#aa4caa63f25045cca835ad6ab8c51fb35" title="Return the load mode of the current asynchronous loading operation. " alt="" coords="499,873,738,900"/>
-<area shape="rect" id="node22" href="$class_urho3_d_1_1_camera.html#aa342ca178488ff7b172b37d57d88ce8f" title="Return if projection parameters are valid for rendering and raycasting. " alt="" coords="519,925,718,966"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_weak_ptr.html#a193a1cccf78a53456ed0db10d6a503bf" title="Check if the pointer is not null. " alt="" coords="266,349,457,376"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_weak_ptr.html#a80470479c6c1e102058e458fe5d20190" title="Return whether the object has expired. If null pointer, always return true. " alt="" coords="266,400,457,427"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_view.html#a38bd2f1292778c57fae949c4e271c20d" title="Define with rendertarget and viewport. Return true if successful. " alt="" coords="281,501,441,528"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_int_rect.html#a55a4bf2a2282cc3de62288ff424efd73" title="Return size. " alt="" coords="573,5,732,32"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_scene.html#a0c7ddadabfbb191e42b39877ca84cd67" title="Return component from the whole scene by ID, or null if not found. " alt="" coords="541,991,765,1017"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_debug_renderer.html#a65ddc45de33de57b41a9889fdce2363c" title="Set the camera viewpoint. Call before rendering, or before adding geometry if you want to use culling..." alt="" coords="272,603,451,645"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_renderer.html#adea49989775cfdab341fd9e1a20b75f4" title="Reset shadow map allocation counts. " alt="" coords="245,669,477,710"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_view.html#a50c3fe5d5c2b3040e13925aa277a8d93" title="Update and cull objects and construct rendering batches. " alt="" coords="279,735,444,761"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_viewport.html#a79693beecd3cd15bc867f3f0f46158ff" title="Return rendering path. " alt="" coords="532,56,773,83"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_viewport.html#ad96fbac45fe545c78bcf10acc5e31a65" title="Return whether to draw debug geometry. " alt="" coords="551,107,754,149"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_render_surface.html#a1c44bd8b104b1692c87c464fad2db0fd" title="Return width. " alt="" coords="566,173,739,214"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_render_surface.html#a9456dcc2b317d57bfb8ab13d9f1c4b8b" title="Return height. " alt="" coords="566,238,739,279"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_viewport.html#af3ac752ae3130a8b91e029688ae846cc" title="Return view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget&#39;s full dimensions..." alt="" coords="555,304,751,331"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_viewport.html#a2d603e8c21c8ace61bd51fdbe260e22b" title="Return scene. " alt="" coords="549,355,756,381"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_viewport.html#a7c72b8364e0aad111e220ec132c293e3" title="Return the culling camera. If null, the viewport camera will be used for culling (normal case..." alt="" coords="556,406,749,447"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_viewport.html#a4c8b897705850220d9dc9f3b6244e5bf" title="Return viewport camera. " alt="" coords="543,472,762,499"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_technique.html#a1ccb22ef2367381c00c4564b2d4b9995" title="Return a pass type index by name. Allocate new if not used yet. " alt="" coords="577,523,729,565"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_string.html#a0a988cc147946dd80bf73cea2c1ac04c" title="Return length. " alt="" coords="828,644,997,671"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_string.html#a8413f000551027cd127996e3c5b00185" title="Return whether the string is empty. " alt="" coords="569,640,736,667"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_view.html#aa0236891bcc55453371beb712228b4ef" title="Set shader defines for a batch queue if used. " alt="" coords="539,691,766,733"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_component.html#aafa7952d0f225edde3387da0c91a9356" title="Return whether is effectively enabled (node is also enabled). " alt="" coords="571,757,734,798"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_scene.html#afb19f909e12d09ec9884e192a5843ffc" title="Return whether an asynchronous loading operation is in progress. " alt="" coords="539,823,766,849"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_scene.html#af090f042ca4ddcc432af8841007b8a46" title="Return the load mode of the current asynchronous loading operation. " alt="" coords="525,873,780,900"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_camera.html#ab80937e50cbb6c26ee2b653d9bbd1a1e" title="Return if projection parameters are valid for rendering and raycasting. " alt="" coords="545,925,760,966"/>
 </map>
