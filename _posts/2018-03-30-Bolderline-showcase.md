@@ -3,7 +3,7 @@ layout: post
 title: Bolderline released on Google Play
 description: Posted by rifai
 category: showcases
-image:
+image: Bolderline.jpg
 tags: [google play, published game, puzzle]
 ---
 {% include JB/setup %}

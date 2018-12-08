@@ -3,7 +3,7 @@ layout: post
 title: Hellbreaker released on Steam
 description: Posted by Enhex
 category: showcases
-image:
+image: Hellbreaker.jpg
 tags: [steam, published game, shooter]
 ---
 {% include JB/setup %}

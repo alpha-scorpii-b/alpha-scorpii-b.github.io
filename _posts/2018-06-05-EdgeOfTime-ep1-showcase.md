@@ -3,7 +3,7 @@ layout: post
 title: 'Edge of Time Episode 1: Rise of the Aeus'
 description: Posted by Galileo
 category: showcases
-image:
+image: edge-of-time-ep1.jpg
 tags: [unpublished game, puzzle, action-adventure]
 ---
 {% include JB/setup %}

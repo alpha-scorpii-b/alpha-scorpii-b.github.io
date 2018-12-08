@@ -3,7 +3,7 @@ layout: post
 title: 'Clinically Dead is released on Steam'
 description: Posted by Paweł Mogiła
 category: showcases
-image:
+image: clinically_dead_screenshot.jpg
 tags: [published game, steam, puzzle, action-adventure]
 ---
 {% include JB/setup %}
