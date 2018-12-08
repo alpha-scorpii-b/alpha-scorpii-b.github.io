@@ -15,21 +15,23 @@ Copyright (c) 2014-2018 Yao Wei Tjong
 <div id="newsflash" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    {% for category in site.categories %}
+    {% for post in site.posts limit:4 %}
     <li data-target="#newsflash" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
     {% endfor %}
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    {% for category in site.categories %}
+    {% for post in site.posts limit:4 %}
     <div class="item{% if forloop.first %} active{% endif %}">
-      <img src="{{ BASE_PATH }}/assets/images/{% if category[1][0].image %}{{ category[1][0].image }}{% else %}carousel-background-{{ forloop.index }}.jpg{% endif %}" alt="slide background image">
+      <img src="{{ BASE_PATH }}/assets/images/{% if post.image %}{{ post.image }}{% else %}carousel-background-{{ forloop.index }}.jpg{% endif %}" alt="slide background image">
       <div class="carousel-caption jumbotron">
-        <h1>{{ category[1][0].title }}</h1>
-        <!-- There are two anchors below but only one would be displayed at any viewport size -->
-        <p>{{ category[1][0].date |date_to_string }} - {{ category[0] }}<a class="visible-xxs-inline" href="{{ BASE_PATH }}{{ category[1][0].url }}" role="button">&nbsp;&nbsp;<span class="icon fa fa-arrow-circle-right"></span></a></p>
-        <a class="btn btn-hollow hidden-xxs" href="{{ BASE_PATH }}{{ category[1][0].url }}" role="button">Learn more&nbsp;&nbsp;<span class="icon fa fa-arrow-circle-right"></span></a>
+        <h1>{{ post.title }}</h1>
+        <!-- There are two anchors below but only one would be displayed based on the viewport size -->
+        <p>{{ post.date |date_to_string }} - {{ post.category }}
+          <a class="visible-xxs-inline" href="{{ BASE_PATH }}{{ post.url }}" role="button">&nbsp;&nbsp;<span class="icon fa fa-arrow-circle-right"></span></a>
+        </p>
+        <a class="btn btn-hollow hidden-xxs" href="{{ BASE_PATH }}{{ post.url }}" role="button">Learn more&nbsp;&nbsp;<span class="icon fa fa-arrow-circle-right"></span></a>
       </div>
     </div>
     {% endfor %}
