@@ -31,6 +31,9 @@ Copyright (c) 2014-2018 Yao Wei Tjong
     <!-- Theme switcher needs to init the body background color ASAP to avoid flicker -->
     <script src="{{ ASSET_PATH }}/js/vendor/js.cookie.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/webkit-flicker-fix.js"></script>
+    <!-- Doxygen pages generated from 1.8.13 requires jquery to be sourced at the top -->
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery.smartmenus.min.js"></script>
 
     {% seo title=false %}
     {% include JB/analytics %}
@@ -120,8 +123,6 @@ Copyright (c) 2014-2018 Yao Wei Tjong
       </footer>
     </div>
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/js/vendor/bootstrap.min.js"></script>
     {% if DOXYGEN_PATH %}
     <script src="{{ DOXYGEN_PATH }}/dynsections.js"></script>
