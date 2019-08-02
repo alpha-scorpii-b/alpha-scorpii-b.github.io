@@ -2763,12 +2763,13 @@ Classes</h2>
 <li>bool IsString() const</li>
 <li>bool IsArray() const</li>
 <li>bool IsObject() const</li>
-<li>bool GetBool() const</li>
-<li>int GetInt() const</li>
-<li>unsigned GetUInt() const</li>
-<li>float GetFloat() const</li>
-<li>double GetDouble() const</li>
+<li>bool GetBool(bool defaultValue = false) const</li>
+<li>int GetInt(int defaultValue = 0) const</li>
+<li>unsigned GetUInt(unsigned defaultValue = 0) const</li>
+<li>float GetFloat(float defaultValue = 0) const</li>
+<li>double GetDouble(double defaultValue = 0) const</li>
 <li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetString() const</li>
+<li>const <a class="el" href="class_urho3_d_1_1_string.html" title="String class. ">String</a> GetString(const String defaultValue) const</li>
 <li>const JSONArray&amp; GetArray() const</li>
 <li>const JSONObject&amp; GetObject() const</li>
 <li><a class="el" href="class_urho3_d_1_1_variant.html" title="Variable that supports a fixed set of types. ">Variant</a> GetVariant() const</li>
