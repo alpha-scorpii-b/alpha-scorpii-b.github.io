@@ -89,6 +89,9 @@ $(function() {
 <li>AddAgentToCrowd()
 : <a class="el" href="class_urho3_d_1_1_crowd_agent.html#a5f8ee77ec07f0b2337f5396b09f1230b">Urho3D::CrowdAgent</a>
 </li>
+<li>AddAltTarget()
+: <a class="el" href="class_urho3_d_1_1_tool_tip.html#adb51272bae9ef5fea24ef96956fccaa9">Urho3D::ToolTip</a>
+</li>
 <li>AddAnimationState()
 : <a class="el" href="class_urho3_d_1_1_animated_model.html#a849cb76532b41588869360da17a823c9">Urho3D::AnimatedModel</a>
 , <a class="el" href="class_urho3_d_1_1_animation_controller.html#abc4bb398fed2bf044fd7e16c83d20799">Urho3D::AnimationController</a>
@@ -175,7 +178,7 @@ $(function() {
 , <a class="el" href="class_urho3_d_1_1_lua_script_event_invoker.html#afd46ee2343075e5ab37bb2a6c1bb19c3">Urho3D::LuaScriptEventInvoker</a>
 , <a class="el" href="class_urho3_d_1_1_lua_script_event_listener.html#a2dd47b1e6aebbbe8d1f82d3d9212340a">Urho3D::LuaScriptEventListener</a>
 , <a class="el" href="class_urho3_d_1_1_lua_script_instance.html#a1d3967919b1bf80ef354edd2343c7d00">Urho3D::LuaScriptInstance</a>
-, <a class="el" href="class_urho3_d_1_1_script_event_listener.html#a11136253bde8b1d7319daca9a34b6ffd">Urho3D::ScriptEventListener</a>
+, <a class="el" href="class_urho3_d_1_1_script_event_listener.html#a16768d782a7a9e7fcb0e5e7e63423543">Urho3D::ScriptEventListener</a>
 , <a class="el" href="class_urho3_d_1_1_script_file.html#afed96dfcd098cfb7ac7e074583b3b430">Urho3D::ScriptFile</a>
 , <a class="el" href="class_urho3_d_1_1_script_instance.html#aa40aae3865f4b2634af34547817d6fe7">Urho3D::ScriptInstance</a>
 </li>
@@ -450,6 +453,9 @@ $(function() {
 , <a class="el" href="class_urho3_d_1_1_material.html#a3a4b3b1d3a9b547774281f9e14f284b4">Urho3D::Material</a>
 , <a class="el" href="class_urho3_d_1_1_pass.html#af3db6ecdce3e9e10101c783e15f7c451">Urho3D::Pass</a>
 </li>
+<li>altTargets_
+: <a class="el" href="class_urho3_d_1_1_tool_tip.html#a6d1421e3cfd78d8c8304bcba65bf5ba9">Urho3D::ToolTip</a>
+</li>
 <li>alwaysUpdateOwner_
 : <a class="el" href="class_urho3_d_1_1_network_priority.html#ac78f3ad86461dfc5655c6a8c3eb08bbe">Urho3D::NetworkPriority</a>
 </li>
@@ -565,7 +571,7 @@ $(function() {
 : <a class="el" href="class_urho3_d_1_1_animated_sprite2_d.html#a4d8d933fe2cf6a2de2c6ae8c896f736f">Urho3D::AnimatedSprite2D</a>
 </li>
 <li>AnimationState()
-: <a class="el" href="class_urho3_d_1_1_animation_state.html#aeb42ac6c4d41adc1dc936aa6265af2ac">Urho3D::AnimationState</a>
+: <a class="el" href="class_urho3_d_1_1_animation_state.html#a345dfb4137ec34a49b0abc34d443ea8f">Urho3D::AnimationState</a>
 </li>
 <li>animationStates_
 : <a class="el" href="class_urho3_d_1_1_animated_model.html#a56ce779e5af6b6115a7264ff66b3be81">Urho3D::AnimatedModel</a>
@@ -590,7 +596,7 @@ $(function() {
 </li>
 <li>Append()
 : <a class="el" href="class_urho3_d_1_1_render_path.html#a83dc9a84e0ef778f2165bcc76d2f6634">Urho3D::RenderPath</a>
-, <a class="el" href="class_urho3_d_1_1_string.html#aaf6835e7667d1b92a6454b02977da820">Urho3D::String</a>
+, <a class="el" href="class_urho3_d_1_1_string.html#af929252b4bd8cbd8dca97a116365c359">Urho3D::String</a>
 </li>
 <li>AppendChild()
 : <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#afa984dd7a6e77c6a4d610b00ac31b192">Urho3D::XMLElement</a>
@@ -747,14 +753,14 @@ $(function() {
 , <a class="el" href="class_urho3_d_1_1_value_animation_info.html#a2cdea0464232009129f6ddaf8ffe6fda">Urho3D::ValueAnimationInfo</a>
 </li>
 <li>ApplyWorldTransform()
-: <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html#a536af8f567b3c277e89a704b473cb34c">Urho3D::RigidBody2D</a>
+: <a class="el" href="class_urho3_d_1_1_rigid_body2_d.html#ac71fa33fffbe1fe749361b89ccf0f2fb">Urho3D::RigidBody2D</a>
 , <a class="el" href="class_urho3_d_1_1_rigid_body.html#a1683e21222126986b0d7c8c7c58e4b8f">Urho3D::RigidBody</a>
 </li>
 <li>appStats_
 : <a class="el" href="class_urho3_d_1_1_debug_hud.html#abab5e22b9c5faae29825676737e0a497">Urho3D::DebugHud</a>
 </li>
 <li>AreaAllocator()
-: <a class="el" href="class_urho3_d_1_1_area_allocator.html#a616d7f8982858359e03002663a118511">Urho3D::AreaAllocator</a>
+: <a class="el" href="class_urho3_d_1_1_area_allocator.html#afa363c8e94933422b5947ca23aec24ca">Urho3D::AreaAllocator</a>
 </li>
 <li>areaID_
 : <a class="el" href="class_urho3_d_1_1_nav_area.html#a6e956b64fb147ae2573cd2ecf00ff999">Urho3D::NavArea</a>
@@ -812,9 +818,9 @@ $(function() {
 : <a class="el" href="class_urho3_d_1_1_scene.html#ac7c95999e6efd93a722ea7b225ad1313">Urho3D::Scene</a>
 </li>
 <li>At()
-: <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html#aabc11f163709bbf8c305c2af5de15d6a">Urho3D::PODVector&lt; T &gt;</a>
-, <a class="el" href="class_urho3_d_1_1_string.html#a7c1d0c8fa071d8f01836fc27129cd376">Urho3D::String</a>
-, <a class="el" href="class_urho3_d_1_1_vector.html#acc6d3367d69abfd9545f22381cfee50c">Urho3D::Vector&lt; T &gt;</a>
+: <a class="el" href="class_urho3_d_1_1_p_o_d_vector.html#ad065cb294438df80b7ab01af38bb0305">Urho3D::PODVector&lt; T &gt;</a>
+, <a class="el" href="class_urho3_d_1_1_string.html#afc16fe42e6584ce781ca73ada89026c7">Urho3D::String</a>
+, <a class="el" href="class_urho3_d_1_1_vector.html#af85d4a4d9882b3f12556d6af6bfde45c">Urho3D::Vector&lt; T &gt;</a>
 , <a class="el" href="class_urho3_d_1_1_w_string.html#aecc1abbe3759f5950cb410d886c64856">Urho3D::WString</a>
 </li>
 <li>AtPanic()
@@ -837,7 +843,7 @@ $(function() {
 , <a class="el" href="class_urho3_d_1_1_rigid_body.html#abc1e83bd9f5983567577322edbc23103">Urho3D::RigidBody</a>
 </li>
 <li>AttributeAnimationInfo()
-: <a class="el" href="class_urho3_d_1_1_attribute_animation_info.html#ac08f543970a6c3e30c59e76a73c0317a">Urho3D::AttributeAnimationInfo</a>
+: <a class="el" href="class_urho3_d_1_1_attribute_animation_info.html#a3f1d360beb85781adaa998f844bc2d28">Urho3D::AttributeAnimationInfo</a>
 </li>
 <li>attributeAnimationInfos_
 : <a class="el" href="class_urho3_d_1_1_animatable.html#a7e85bc4f9402746604ad2a63d58c0cc7">Urho3D::Animatable</a>

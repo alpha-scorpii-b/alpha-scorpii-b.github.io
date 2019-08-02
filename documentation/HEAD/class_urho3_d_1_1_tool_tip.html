@@ -60,6 +60,14 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a1652f796b22acf7087e05e4929541104">Update</a> (float timeStep) override</td></tr>
 <tr class="memdesc:a1652f796b22acf7087e05e4929541104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> element update. <br /></td></tr>
 <tr class="separator:a1652f796b22acf7087e05e4929541104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a1d9518db0d686186655b07eab5cd2"><td class="memItemLeft" align="right" valign="top"><a id="a73a1d9518db0d686186655b07eab5cd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a73a1d9518db0d686186655b07eab5cd2">Reset</a> ()</td></tr>
+<tr class="memdesc:a73a1d9518db0d686186655b07eab5cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide tooltip if visible and reset parentage. <br /></td></tr>
+<tr class="separator:a73a1d9518db0d686186655b07eab5cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb51272bae9ef5fea24ef96956fccaa9"><td class="memItemLeft" align="right" valign="top"><a id="adb51272bae9ef5fea24ef96956fccaa9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#adb51272bae9ef5fea24ef96956fccaa9">AddAltTarget</a> (<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *target)</td></tr>
+<tr class="memdesc:adb51272bae9ef5fea24ef96956fccaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alternative hover target. <br /></td></tr>
+<tr class="separator:adb51272bae9ef5fea24ef96956fccaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6320fc168a13145f136336e4473af0e1"><td class="memItemLeft" align="right" valign="top"><a id="a6320fc168a13145f136336e4473af0e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a6320fc168a13145f136336e4473af0e1">SetDelay</a> (float delay)</td></tr>
 <tr class="memdesc:a6320fc168a13145f136336e4473af0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the delay in seconds until the tooltip shows once hovering. Set zero to use the default from the <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface. ">UI</a> subsystem. <br /></td></tr>
@@ -1363,14 +1371,18 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a1ac7ef231315708f96800a8ff3369dba">target_</a></td></tr>
 <tr class="memdesc:a1ac7ef231315708f96800a8ff3369dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The element that is being tracked for hovering. Normally the parent element. <br /></td></tr>
 <tr class="separator:a1ac7ef231315708f96800a8ff3369dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1421e3cfd78d8c8304bcba65bf5ba9"><td class="memItemLeft" align="right" valign="top"><a id="a6d1421e3cfd78d8c8304bcba65bf5ba9"></a>
+<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a6d1421e3cfd78d8c8304bcba65bf5ba9">altTargets_</a></td></tr>
+<tr class="memdesc:a6d1421e3cfd78d8c8304bcba65bf5ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative targets. Primarily targets parent. <br /></td></tr>
+<tr class="separator:a6d1421e3cfd78d8c8304bcba65bf5ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6075a8a7cfb667d2dd47bec891a373"><td class="memItemLeft" align="right" valign="top"><a id="a5f6075a8a7cfb667d2dd47bec891a373"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a5f6075a8a7cfb667d2dd47bec891a373">delay_</a></td></tr>
 <tr class="memdesc:a5f6075a8a7cfb667d2dd47bec891a373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay from hover start to displaying the tooltip. <br /></td></tr>
 <tr class="separator:a5f6075a8a7cfb667d2dd47bec891a373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d621972c7a92285136320c962c60463"><td class="memItemLeft" align="right" valign="top"><a id="a2d621972c7a92285136320c962c60463"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a2d621972c7a92285136320c962c60463">parentHovered_</a></td></tr>
-<tr class="memdesc:a2d621972c7a92285136320c962c60463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point at which the parent was hovered. <br /></td></tr>
-<tr class="separator:a2d621972c7a92285136320c962c60463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd130793feef0357d0f9b9fbcba17199"><td class="memItemLeft" align="right" valign="top"><a id="acd130793feef0357d0f9b9fbcba17199"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#acd130793feef0357d0f9b9fbcba17199">hovered_</a></td></tr>
+<tr class="memdesc:acd130793feef0357d0f9b9fbcba17199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hover countdown has started. <br /></td></tr>
+<tr class="separator:acd130793feef0357d0f9b9fbcba17199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106b1e3e358cdc5542304bc3a60e28cd"><td class="memItemLeft" align="right" valign="top"><a id="a106b1e3e358cdc5542304bc3a60e28cd"></a>
 <a class="el" href="class_urho3_d_1_1_timer.html">Timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_tool_tip.html#a106b1e3e358cdc5542304bc3a60e28cd">displayAt_</a></td></tr>
 <tr class="memdesc:a106b1e3e358cdc5542304bc3a60e28cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point at which the tooltip was set visible. <br /></td></tr>
