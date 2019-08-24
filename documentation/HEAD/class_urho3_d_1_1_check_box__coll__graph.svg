@@ -64,16 +64,16 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node8</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_border_image.html" target="_top" xlink:title="Image UI element with optional border. ">
-<polygon fill="none" stroke="#000000" points="1093,-185 1093,-204 1215,-204 1215,-185 1093,-185"/>
-<text text-anchor="middle" x="1154" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::BorderImage</text>
+<polygon fill="none" stroke="#000000" points="1093,-189 1093,-208 1215,-208 1215,-189 1093,-189"/>
+<text text-anchor="middle" x="1154" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::BorderImage</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node7 -->
 <g id="edge1" class="edge">
 <title>Node8&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M1174.9006,-178.8245C1206.7958,-154.9031 1266.6833,-109.9875 1293.0159,-90.238"/>
-<polygon fill="#191970" stroke="#191970" points="1172.598,-176.1765 1166.698,-184.9765 1176.798,-181.7765 1172.598,-176.1765"/>
+<path fill="none" stroke="#191970" d="M1174.6494,-182.4695C1206.6314,-157.6414 1267.1851,-110.6326 1293.3893,-90.2899"/>
+<polygon fill="#191970" stroke="#191970" points="1172.1916,-179.9466 1166.4388,-188.8436 1176.4842,-185.476 1172.1916,-179.9466"/>
 </g>
 <!-- Node9 -->
 <g id="node3" class="node">
@@ -87,8 +87,8 @@ var sectionId = 'dynsection-1';
 <!-- Node9&#45;&gt;Node8 -->
 <g id="edge2" class="edge">
 <title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M939.629,-379.0335C986.4715,-338.7108 1105.7974,-235.9935 1142.8508,-204.0974"/>
-<polygon fill="#191970" stroke="#191970" points="937.0576,-376.6288 931.7622,-385.8054 941.6244,-381.934 937.0576,-376.6288"/>
+<path fill="none" stroke="#191970" d="M939.6089,-379.3782C986.3227,-339.9665 1105.2083,-239.6647 1142.5773,-208.1372"/>
+<polygon fill="#191970" stroke="#191970" points="937.1484,-376.8747 931.7622,-385.9983 941.6623,-382.225 937.1484,-376.8747"/>
 </g>
 <!-- Node9&#45;&gt;Node9 -->
 <g id="edge17" class="edge">
@@ -257,8 +257,8 @@ var sectionId = 'dynsection-1';
 <!-- Node52&#45;&gt;Node8 -->
 <g id="edge29" class="edge">
 <title>Node52&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M695.1298,-751.8626C739.6737,-749.4716 801.3029,-739.9666 845,-708.5 1040.1779,-567.9509 1134.716,-262.5377 1151.3191,-204.2271"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="694.8875,-748.3697 685.0481,-752.2988 695.1901,-755.3631 694.8875,-748.3697"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M695.1003,-751.8215C739.6275,-749.4073 801.2486,-739.891 845,-708.5 1039.3045,-569.0891 1134.5454,-266.0169 1151.2941,-208.1527"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="694.8597,-748.3286 685.0227,-752.2634 695.1664,-755.3219 694.8597,-748.3286"/>
 <text text-anchor="middle" x="920.5" y="-716.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> imageRect_</text>
 <text text-anchor="middle" x="920.5" y="-705.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">border_</text>
 <text text-anchor="middle" x="920.5" y="-694.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">imageBorder_</text>
@@ -441,9 +441,10 @@ var sectionId = 'dynsection-1';
 <!-- Node59&#45;&gt;Node8 -->
 <g id="edge38" class="edge">
 <title>Node59&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M703.4077,-83.201C744.3338,-85.1689 798.1218,-89.4026 845,-98.5 953.6383,-119.5829 1078.0586,-165.067 1129.6381,-184.9125"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="703.4385,-79.699 693.2919,-82.7479 703.1252,-86.692 703.4385,-79.699"/>
-<text text-anchor="middle" x="920.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> hoverOffset_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M703.4454,-83.0094C744.3861,-84.9036 798.1761,-89.1271 845,-98.5 954.7473,-120.4686 1080.0808,-168.4918 1130.8463,-188.9564"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="703.4663,-79.5072 693.3257,-82.5763 703.1669,-86.5008 703.4663,-79.5072"/>
+<text text-anchor="middle" x="920.5" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> disabledOffset_</text>
+<text text-anchor="middle" x="920.5" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">hoverOffset_</text>
 </g>
 <!-- Node59&#45;&gt;Node9 -->
 <g id="edge24" class="edge">
@@ -553,8 +554,8 @@ var sectionId = 'dynsection-1';
 <!-- Node62&#45;&gt;Node8 -->
 <g id="edge30" class="edge">
 <title>Node62&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M987.9961,-782.3873C1019.0193,-775.5721 1053.5976,-762.2982 1075,-736.5 1145.8848,-651.0562 1153.1838,-270.5672 1153.9192,-204.3444"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="987.1849,-778.9803 978.0698,-784.3808 988.5632,-785.8432 987.1849,-778.9803"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M987.9842,-782.3774C1019.0046,-775.5598 1053.5839,-762.2868 1075,-736.5 1145.4176,-651.711 1153.1016,-274.0101 1153.9084,-208.2723"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="987.1734,-778.9703 978.0589,-784.3718 988.5525,-785.8331 987.1734,-778.9703"/>
 <text text-anchor="middle" x="1035.5" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> texture_</text>
 </g>
 <!-- Node62&#45;&gt;Node63 -->
@@ -584,7 +585,7 @@ var sectionId = 'dynsection-1';
 <!-- Node105&#45;&gt;Node8 -->
 <g id="edge34" class="edge">
 <title>Node105&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M944.8096,-37.021C958.9371,-48.5994 977.5483,-62.341 996,-71.5 1028.7555,-87.7591 1044.6694,-74.0711 1075,-94.5 1111.1509,-118.8491 1138.4454,-164.9412 1149.1063,-184.8935"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M944.8096,-37.021C958.9371,-48.5994 977.5483,-62.341 996,-71.5 1028.7555,-87.7591 1044.8647,-73.7841 1075,-94.5 1111.9963,-119.9323 1139.0222,-168.2374 1149.3692,-188.8202"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="946.9548,-34.2521 937.0448,-30.5048 942.455,-39.6141 946.9548,-34.2521"/>
 <text text-anchor="middle" x="1035.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> material_</text>
 </g>
