@@ -54,16 +54,16 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>Urho3D::Connection::ProcessSceneUpdate</title>
-<!-- Node230 -->
+<!-- Node65 -->
 <g id="node1" class="node">
-<title>Node230</title>
+<title>Node65</title>
 <polygon fill="#bfbfbf" stroke="#000000" points="0,-.5 0,-30.5 125,-30.5 125,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Connection</text>
 <text text-anchor="middle" x="62.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ProcessSceneUpdate</text>
 </g>
-<!-- Node231 -->
+<!-- Node66 -->
 <g id="node2" class="node">
-<title>Node231</title>
+<title>Node66</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_connection.html#a3eaca6b184877eeb85a6f77a90f4d497" target="_top" xlink:title="Process a message from the server or client. Called by Network. ">
 <polygon fill="none" stroke="#000000" points="161,-.5 161,-30.5 275,-30.5 275,-.5 161,-.5"/>
 <text text-anchor="start" x="169" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Connection</text>
@@ -71,30 +71,30 @@ var sectionId = 'dynsection-4';
 </a>
 </g>
 </g>
-<!-- Node230&#45;&gt;Node231 -->
+<!-- Node65&#45;&gt;Node66 -->
 <g id="edge1" class="edge">
-<title>Node230&#45;&gt;Node231</title>
+<title>Node65&#45;&gt;Node66</title>
 <path fill="none" stroke="#191970" d="M135.3443,-15.5C143.9541,-15.5 152.6445,-15.5 160.9908,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="135.2996,-12.0001 125.2996,-15.5 135.2995,-19.0001 135.2996,-12.0001"/>
 </g>
-<!-- Node232 -->
+<!-- Node67 -->
 <g id="node3" class="node">
-<title>Node232</title>
+<title>Node67</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_network.html#a27e675ccc446bc8f6567b4b9f2248f32" target="_top" xlink:title="Handle an inbound message. ">
 <polygon fill="none" stroke="#000000" points="311,-6 311,-25 495,-25 495,-6 311,-6"/>
 <text text-anchor="middle" x="403" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Network::HandleMessage</text>
 </a>
 </g>
 </g>
-<!-- Node231&#45;&gt;Node232 -->
+<!-- Node66&#45;&gt;Node67 -->
 <g id="edge2" class="edge">
-<title>Node231&#45;&gt;Node232</title>
+<title>Node66&#45;&gt;Node67</title>
 <path fill="none" stroke="#191970" d="M285.0572,-15.5C293.4289,-15.5 302.1021,-15.5 310.7721,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="285.0157,-12.0001 275.0156,-15.5 285.0156,-19.0001 285.0157,-12.0001"/>
 </g>
-<!-- Node233 -->
+<!-- Node68 -->
 <g id="node4" class="node">
-<title>Node233</title>
+<title>Node68</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_network.html#a3d878e00c02066e4b7d5a77e3e129e12" target="_top" xlink:title="All incoming packages are handled here. ">
 <polygon fill="none" stroke="#000000" points="531,-.5 531,-30.5 717,-30.5 717,-.5 531,-.5"/>
 <text text-anchor="start" x="539" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Network::HandleIncoming</text>
@@ -102,30 +102,30 @@ var sectionId = 'dynsection-4';
 </a>
 </g>
 </g>
-<!-- Node232&#45;&gt;Node233 -->
+<!-- Node67&#45;&gt;Node68 -->
 <g id="edge3" class="edge">
-<title>Node232&#45;&gt;Node233</title>
+<title>Node67&#45;&gt;Node68</title>
 <path fill="none" stroke="#191970" d="M505.1729,-15.5C513.7707,-15.5 522.436,-15.5 530.9591,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="505.1236,-12.0001 495.1236,-15.5 505.1236,-19.0001 505.1236,-12.0001"/>
 </g>
-<!-- Node234 -->
+<!-- Node69 -->
 <g id="node5" class="node">
-<title>Node234</title>
+<title>Node69</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_network.html#a71021827cd049524ec014dd55cc24ea5" target="_top" xlink:title="Process incoming messages from connections. Called by HandleBeginFrame. ">
 <polygon fill="none" stroke="#000000" points="753,-6 753,-25 895,-25 895,-6 753,-6"/>
 <text text-anchor="middle" x="824" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Network::Update</text>
 </a>
 </g>
 </g>
-<!-- Node233&#45;&gt;Node234 -->
+<!-- Node68&#45;&gt;Node69 -->
 <g id="edge4" class="edge">
-<title>Node233&#45;&gt;Node234</title>
+<title>Node68&#45;&gt;Node69</title>
 <path fill="none" stroke="#191970" d="M727.3347,-15.5C735.9117,-15.5 744.4559,-15.5 752.7146,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="727.2663,-12.0001 717.2663,-15.5 727.2662,-19.0001 727.2663,-12.0001"/>
 </g>
-<!-- Node235 -->
+<!-- Node70 -->
 <g id="node6" class="node">
-<title>Node235</title>
+<title>Node70</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_network.html#aa03da1be461abb4b6567e8470966c594" target="_top" xlink:title="Handle begin frame event. ">
 <polygon fill="none" stroke="#000000" points="931,-.5 931,-30.5 1100,-30.5 1100,-.5 931,-.5"/>
 <text text-anchor="start" x="939" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Network::HandleBegin</text>
@@ -133,24 +133,24 @@ var sectionId = 'dynsection-4';
 </a>
 </g>
 </g>
-<!-- Node234&#45;&gt;Node235 -->
+<!-- Node69&#45;&gt;Node70 -->
 <g id="edge5" class="edge">
-<title>Node234&#45;&gt;Node235</title>
+<title>Node69&#45;&gt;Node70</title>
 <path fill="none" stroke="#191970" d="M905.3032,-15.5C913.7993,-15.5 922.4508,-15.5 930.9816,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="905.0354,-12.0001 895.0354,-15.5 905.0354,-19.0001 905.0354,-12.0001"/>
 </g>
-<!-- Node236 -->
+<!-- Node71 -->
 <g id="node7" class="node">
-<title>Node236</title>
+<title>Node71</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_network.html#a566fbbabc194a73f96b4dee6a62a3854" target="_top" xlink:title="Construct. ">
 <polygon fill="none" stroke="#000000" points="1136,-6 1136,-25 1284,-25 1284,-6 1136,-6"/>
 <text text-anchor="middle" x="1210" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Network::Network</text>
 </a>
 </g>
 </g>
-<!-- Node235&#45;&gt;Node236 -->
+<!-- Node70&#45;&gt;Node71 -->
 <g id="edge6" class="edge">
-<title>Node235&#45;&gt;Node236</title>
+<title>Node70&#45;&gt;Node71</title>
 <path fill="none" stroke="#191970" d="M1110.3082,-15.5C1118.9044,-15.5 1127.5261,-15.5 1135.9044,-15.5"/>
 <polygon fill="#191970" stroke="#191970" points="1110.2448,-12.0001 1100.2447,-15.5 1110.2447,-19.0001 1110.2448,-12.0001"/>
 </g>

@@ -1,26 +1,13 @@
 <map id="Urho3D::NavigationMesh::BuildTile" name="Urho3D::NavigationMesh::BuildTile">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_navigation_mesh.html#a6fc3d8aa1cf4e1c7a69c4946c7c6f720" title="Return bounding box of the tile in the node space. " alt="" coords="249,138,433,179"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_navigation_mesh.html#aa1afd3c3723b93fb9f93f97cc1dc4770" title="Get geometry data within a bounding box. " alt="" coords="249,203,433,245"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_p_o_d_vector.html#a5be72d35fc52d2623985f20b95855d10" title="Return whether vector is empty. " alt="" coords="263,269,419,310"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_p_o_d_vector.html#ab1ba347a0118ed7d9ef79f3026153c88" title="Return number of elements. " alt="" coords="250,335,433,361"/>
-<area shape="rect" id="node20" href="$class_urho3_d_1_1_shared_array_ptr.html#a3140ad32d60cbe06ccfbcbe3c52bd5c7" title="Return the raw pointer. " alt="" coords="237,385,445,412"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_object.html#a4846883db29b93b88e0b89c9cca85d4e" title="Return execution context. " alt="" coords="240,436,443,463"/>
-<area shape="rect" id="node22" href="$class_urho3_d_1_1_context.html#acb628095602a49ade116c4761ab44004" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="242,487,441,529"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_component.html#a4df57b33f219fa7401bd72079198debf" title="Return scene node. " alt="" coords="260,553,423,594"/>
-<area shape="rect" id="node25" href="$class_urho3_d_1_1_object.html#a32020dbf77c196b9777eca479e8abb36" title="Send event to all subscribers. " alt="" coords="242,619,441,645"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_node.html#a39a71635548b048079a15cc563a02895" title="Return world space transform matrix. " alt="" coords="498,5,745,32"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse. " alt="" coords="545,57,697,98"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_vector.html#a5da7101c355895f41098fcf875e4c56a" title="Return size of vector. " alt="" coords="544,123,699,149"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_bounding_box.html#aaf2af3166bfa73be242635232e36ab7c" title="Test if another bounding box is (partially) inside or outside. " alt="" coords="539,174,704,215"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_p_o_d_vector.html#a3eb78093c096ab9e9d68595facc56470" title="Add an element at the end. " alt="" coords="821,207,1007,233"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_model.html#aba28748a2a74d9cee16dee155b869952" title="Return number of geometries. " alt="" coords="493,291,749,317"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_navigation_mesh.html#ae43a2bf6ba897fa62844ed0169dcc548" title="Add a triangle mesh to the geometry data. " alt="" coords="529,342,713,383"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_model.html#a950fd42a902c2301b71848c6b9e0cb22" title="Return geometry by index and LOD level. The LOD level is clamped if out of range. ..." alt="" coords="514,408,729,435"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_geometry.html#aec935a4a9c832f37255d72bc172c8f78" title="Return raw vertex and index data for CPU operations, or null pointers if not available. Will return data of the first vertex buffer if override data not set. " alt="" coords="797,257,1031,284"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_vertex_buffer.html#afdb3a120f19945f58c189cf76a00ee25" title="Return offset of a element within vertex, or M_MAX_UNSIGNED if does not exist. " alt="" coords="834,309,994,350"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_geometry.html#a98faaf23ff0c4ab8a8e16011517fea80" title="Return start index. " alt="" coords="809,374,1019,415"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_geometry.html#a00c09617cfdc7175df34b3701050de7e" title="Return number of indices. " alt="" coords="809,439,1019,481"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_geometry.html#a9985765cea3457bbb80a2441fc13a1ec" title="Return first used vertex. " alt="" coords="806,505,1022,546"/>
-<area shape="rect" id="node16" href="$class_urho3_d_1_1_geometry.html#a83dab7be1e1ca752552d9fc4ad56b2d7" title="Return number of used vertices. " alt="" coords="806,570,1022,611"/>
-<area shape="rect" id="node23" href="$class_urho3_d_1_1_hash_map.html#ac02bdba9ea0d1055a3a75f6bae2ffc69" title="Clear the map. " alt="" coords="531,495,712,521"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_navigation_mesh.html#a6fc3d8aa1cf4e1c7a69c4946c7c6f720" title="Return bounding box of the tile in the node space. " alt="" coords="249,5,433,47"/>
+<area shape="rect" id="node3" href="$_math_defs_8h.html#a1a55d5f5c4764f0184f60d1577c43478" title="Round value up. " alt="" coords="274,95,409,122"/>
+<area shape="rect" id="node4" href="$_math_defs_8h.html#a52553bebbd1fa9f15fef8cf0254f2481" title="Round value down. Returns integer value. " alt="" coords="270,170,413,197"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_navigation_mesh.html#aa1afd3c3723b93fb9f93f97cc1dc4770" title="Get geometry data within a bounding box. " alt="" coords="249,221,433,263"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_p_o_d_vector.html#a5be72d35fc52d2623985f20b95855d10" title="Return whether vector is empty. " alt="" coords="263,287,419,328"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_p_o_d_vector.html#ab1ba347a0118ed7d9ef79f3026153c88" title="Return number of elements. " alt="" coords="250,353,433,379"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_shared_array_ptr.html#a3140ad32d60cbe06ccfbcbe3c52bd5c7" title="Return the raw pointer. " alt="" coords="237,403,445,430"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_node.html#a39a71635548b048079a15cc563a02895" title="Return world space transform matrix. " alt="" coords="493,141,740,167"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse. " alt="" coords="541,192,693,233"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_vector.html#a5da7101c355895f41098fcf875e4c56a" title="Return size of vector. " alt="" coords="539,258,694,285"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_bounding_box.html#aaf2af3166bfa73be242635232e36ab7c" title="Test if another bounding box is (partially) inside or outside. " alt="" coords="534,309,699,351"/>
 </map>

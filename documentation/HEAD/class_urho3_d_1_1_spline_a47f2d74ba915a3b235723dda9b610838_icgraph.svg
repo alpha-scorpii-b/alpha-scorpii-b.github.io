@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1290;
+var viewWidth = 696;
 var viewHeight = 382;
 var sectionId = 'dynsection-2';
 </script>
@@ -54,30 +54,30 @@ var sectionId = 'dynsection-2';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>Urho3D::Spline::BezierInterpolation</title>
-<!-- Node5 -->
+<!-- Node2 -->
 <g id="node1" class="node">
-<title>Node5</title>
+<title>Node2</title>
 <polygon fill="#bfbfbf" stroke="#000000" points="0,-287 0,-306 188,-306 188,-287 0,-287"/>
 <text text-anchor="middle" x="94" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Spline::BezierInterpolation</text>
 </g>
-<!-- Node6 -->
+<!-- Node3 -->
 <g id="node2" class="node">
-<title>Node6</title>
+<title>Node3</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_spline.html#a7ece7665efcb2fb858921e5798cdb3ea" target="_top" xlink:title="Return the T of the point of the spline at f from 0.f &#45; 1.f. ">
 <polygon fill="none" stroke="#000000" points="224,-287 224,-306 361,-306 361,-287 224,-287"/>
 <text text-anchor="middle" x="292.5" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Spline::GetPoint</text>
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node6 -->
+<!-- Node2&#45;&gt;Node3 -->
 <g id="edge1" class="edge">
-<title>Node5&#45;&gt;Node6</title>
+<title>Node2&#45;&gt;Node3</title>
 <path fill="none" stroke="#191970" d="M198.2574,-296.5C206.9732,-296.5 215.6374,-296.5 223.9802,-296.5"/>
 <polygon fill="#191970" stroke="#191970" points="198.0183,-293.0001 188.0183,-296.5 198.0182,-300.0001 198.0183,-293.0001"/>
 </g>
-<!-- Node7 -->
+<!-- Node4 -->
 <g id="node3" class="node">
-<title>Node7</title>
+<title>Node4</title>
 <g id="a_node3"><a xlink:href="class_urho3_d_1_1_spline_path.html#ae6a554f14b5e726a7525d2b7f7158262" target="_top" xlink:title="Draw the Debug Geometry. ">
 <polygon fill="none" stroke="#000000" points="397,-330.5 397,-360.5 525,-360.5 525,-330.5 397,-330.5"/>
 <text text-anchor="start" x="405" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -85,15 +85,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node7 -->
+<!-- Node3&#45;&gt;Node4 -->
 <g id="edge2" class="edge">
-<title>Node6&#45;&gt;Node7</title>
+<title>Node3&#45;&gt;Node4</title>
 <path fill="none" stroke="#191970" d="M335.0229,-308.8657C357.5839,-315.4265 385.4854,-323.5403 409.2913,-330.463"/>
 <polygon fill="#191970" stroke="#191970" points="335.9681,-305.4956 325.3885,-306.064 334.0134,-312.2172 335.9681,-305.4956"/>
 </g>
-<!-- Node8 -->
+<!-- Node5 -->
 <g id="node4" class="node">
-<title>Node8</title>
+<title>Node5</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_spline_path.html#aefdd5c1d63769dccefaf37053d09e5e4" target="_top" xlink:title="Get a point on the SplinePath from 0.f to 1.f where 0 is the start and 1 is the end. ">
 <polygon fill="none" stroke="#000000" points="406,-281.5 406,-311.5 516,-311.5 516,-281.5 406,-281.5"/>
 <text text-anchor="start" x="414" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -101,15 +101,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node8 -->
+<!-- Node3&#45;&gt;Node5 -->
 <g id="edge3" class="edge">
-<title>Node6&#45;&gt;Node8</title>
+<title>Node3&#45;&gt;Node5</title>
 <path fill="none" stroke="#191970" d="M371.2741,-296.5C382.9926,-296.5 394.8531,-296.5 405.9434,-296.5"/>
 <polygon fill="#191970" stroke="#191970" points="371.0354,-293.0001 361.0354,-296.5 371.0354,-300.0001 371.0354,-293.0001"/>
 </g>
-<!-- Node10 -->
+<!-- Node7 -->
 <g id="node6" class="node">
-<title>Node10</title>
+<title>Node7</title>
 <g id="a_node6"><a xlink:href="class_urho3_d_1_1_spline_path.html#a36d325ce97cc0e763e2feb1f62c3f606" target="_top" xlink:title="Calculate the length of the SplinePath. Used for movement calculations. ">
 <polygon fill="none" stroke="#000000" points="406,-171.5 406,-201.5 516,-201.5 516,-171.5 406,-171.5"/>
 <text text-anchor="start" x="414" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -117,15 +117,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node10 -->
+<!-- Node3&#45;&gt;Node7 -->
 <g id="edge5" class="edge">
-<title>Node6&#45;&gt;Node10</title>
+<title>Node3&#45;&gt;Node7</title>
 <path fill="none" stroke="#191970" d="M315.8973,-281.2258C348.0785,-260.2173 405.6536,-222.6312 437.7546,-201.675"/>
 <polygon fill="#191970" stroke="#191970" points="313.6189,-278.5334 307.1585,-286.9306 317.4454,-284.3949 313.6189,-278.5334"/>
 </g>
-<!-- Node9 -->
+<!-- Node6 -->
 <g id="node5" class="node">
-<title>Node9</title>
+<title>Node6</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_spline_path.html#ae41c6741a56b4f3509acc433c64f93b7" target="_top" xlink:title="Move the controlled Node to the next position along the SplinePath based off the Speed value...">
 <polygon fill="none" stroke="#000000" points="569.5,-343.5 569.5,-373.5 679.5,-373.5 679.5,-343.5 569.5,-343.5"/>
 <text text-anchor="start" x="577.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -133,15 +133,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
+<!-- Node5&#45;&gt;Node6 -->
 <g id="edge4" class="edge">
-<title>Node8&#45;&gt;Node9</title>
+<title>Node5&#45;&gt;Node6</title>
 <path fill="none" stroke="#191970" d="M510.6337,-315.3809C526.702,-321.4879 544.6045,-328.2865 561,-334.5 568.6042,-337.3818 576.7223,-340.4537 584.525,-343.4038"/>
 <polygon fill="#191970" stroke="#191970" points="511.4869,-311.9609 500.8958,-311.6791 508.9995,-318.5041 511.4869,-311.9609"/>
 </g>
-<!-- Node11 -->
+<!-- Node8 -->
 <g id="node7" class="node">
-<title>Node11</title>
+<title>Node8</title>
 <g id="a_node7"><a xlink:href="class_urho3_d_1_1_spline_path.html#a050f0c34ef856d7794b007bb1bc6d5db" target="_top" xlink:title="Apply Attributes to the SplinePath. ">
 <polygon fill="none" stroke="#000000" points="569.5,-294.5 569.5,-324.5 679.5,-324.5 679.5,-294.5 569.5,-294.5"/>
 <text text-anchor="start" x="577.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -149,15 +149,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node11 -->
+<!-- Node7&#45;&gt;Node8 -->
 <g id="edge6" class="edge">
-<title>Node10&#45;&gt;Node11</title>
+<title>Node7&#45;&gt;Node8</title>
 <path fill="none" stroke="#191970" d="M479.2108,-209.4444C497.7627,-231.5194 528.3728,-264.5471 561,-285.5 566.1567,-288.8116 571.8384,-291.768 577.6192,-294.377"/>
 <polygon fill="#191970" stroke="#191970" points="481.776,-207.0539 472.7119,-201.5682 476.3768,-211.5091 481.776,-207.0539"/>
 </g>
-<!-- Node12 -->
+<!-- Node9 -->
 <g id="node8" class="node">
-<title>Node12</title>
+<title>Node9</title>
 <g id="a_node8"><a xlink:href="class_urho3_d_1_1_spline_path.html#aeda8d385fe734579f66408158582ada0" target="_top" xlink:title="Add a Node to the SplinePath as a Control Point. ">
 <polygon fill="none" stroke="#000000" points="569.5,-245.5 569.5,-275.5 679.5,-275.5 679.5,-245.5 569.5,-245.5"/>
 <text text-anchor="start" x="577.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -165,15 +165,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node12 -->
+<!-- Node7&#45;&gt;Node9 -->
 <g id="edge7" class="edge">
-<title>Node10&#45;&gt;Node12</title>
+<title>Node7&#45;&gt;Node9</title>
 <path fill="none" stroke="#191970" d="M498.1262,-206.198C516.7782,-215.802 539.8552,-227.2468 561,-236.5 568.018,-239.5711 575.5659,-242.6299 582.9222,-245.4847"/>
 <polygon fill="#191970" stroke="#191970" points="499.5705,-203.0044 489.0819,-201.5073 496.3476,-209.2184 499.5705,-203.0044"/>
 </g>
-<!-- Node13 -->
+<!-- Node10 -->
 <g id="node9" class="node">
-<title>Node13</title>
+<title>Node10</title>
 <g id="a_node9"><a xlink:href="class_urho3_d_1_1_spline_path.html#a0f115ec8c2245008faf5687aca256a4e" target="_top" xlink:title="Remove a Node Control Point from the SplinePath. ">
 <polygon fill="none" stroke="#000000" points="563.5,-196.5 563.5,-226.5 685.5,-226.5 685.5,-196.5 563.5,-196.5"/>
 <text text-anchor="start" x="571.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -181,15 +181,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node13 -->
+<!-- Node7&#45;&gt;Node10 -->
 <g id="edge8" class="edge">
-<title>Node10&#45;&gt;Node13</title>
+<title>Node7&#45;&gt;Node10</title>
 <path fill="none" stroke="#191970" d="M526.4317,-196.5048C538.5999,-198.3654 551.2708,-200.3029 563.3062,-202.1431"/>
 <polygon fill="#191970" stroke="#191970" points="526.7678,-193.0156 516.3536,-194.9639 525.7097,-199.9352 526.7678,-193.0156"/>
 </g>
-<!-- Node14 -->
+<!-- Node11 -->
 <g id="node10" class="node">
-<title>Node14</title>
+<title>Node11</title>
 <g id="a_node10"><a xlink:href="class_urho3_d_1_1_spline_path.html#ae029f501c426c03362faf3f51678eefb" target="_top" xlink:title="Clear the Control Points from the SplinePath. ">
 <polygon fill="none" stroke="#000000" points="568,-147.5 568,-177.5 681,-177.5 681,-147.5 568,-147.5"/>
 <text text-anchor="start" x="576" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -197,15 +197,15 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node14 -->
+<!-- Node7&#45;&gt;Node11 -->
 <g id="edge9" class="edge">
-<title>Node10&#45;&gt;Node14</title>
+<title>Node7&#45;&gt;Node11</title>
 <path fill="none" stroke="#191970" d="M526.6333,-176.8658C540.2693,-174.8641 554.5283,-172.7711 567.8103,-170.8214"/>
 <polygon fill="#191970" stroke="#191970" points="525.7393,-173.4594 516.3536,-178.3747 526.756,-180.3852 525.7393,-173.4594"/>
 </g>
-<!-- Node15 -->
+<!-- Node12 -->
 <g id="node11" class="node">
-<title>Node15</title>
+<title>Node12</title>
 <g id="a_node11"><a xlink:href="class_urho3_d_1_1_spline_path.html#ae9a6a13c7f1d9f24065cd015265a469f" target="_top" xlink:title="Set the Interpolation Mode. ">
 <polygon fill="none" stroke="#000000" points="561,-98.5 561,-128.5 688,-128.5 688,-98.5 561,-98.5"/>
 <text text-anchor="start" x="569" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
@@ -213,89 +213,43 @@ var sectionId = 'dynsection-2';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node15 -->
+<!-- Node7&#45;&gt;Node12 -->
 <g id="edge10" class="edge">
-<title>Node10&#45;&gt;Node15</title>
+<title>Node7&#45;&gt;Node12</title>
 <path fill="none" stroke="#191970" d="M500.1357,-166.9049C518.4744,-157.9322 540.7076,-147.3509 561,-138.5 568.7105,-135.1369 577.0285,-131.7163 585.0239,-128.5288"/>
 <polygon fill="#191970" stroke="#191970" points="498.3597,-163.878 490.9317,-171.4328 501.4497,-170.1591 498.3597,-163.878"/>
 </g>
-<!-- Node19 -->
-<g id="node15" class="node">
-<title>Node19</title>
-<g id="a_node15"><a xlink:href="class_urho3_d_1_1_spline_path.html#a52f7ac7452d9c538da76d297030d8841" target="_top" xlink:title="Listener to manage Control Point movement. ">
+<!-- Node13 -->
+<g id="node12" class="node">
+<title>Node13</title>
+<g id="a_node12"><a xlink:href="class_urho3_d_1_1_spline_path.html#a52f7ac7452d9c538da76d297030d8841" target="_top" xlink:title="Listener to manage Control Point movement. ">
 <polygon fill="none" stroke="#000000" points="569.5,-49.5 569.5,-79.5 679.5,-79.5 679.5,-49.5 569.5,-49.5"/>
 <text text-anchor="start" x="577.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
 <text text-anchor="middle" x="624.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::OnMarkedDirty</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node19 -->
-<g id="edge14" class="edge">
-<title>Node10&#45;&gt;Node19</title>
+<!-- Node7&#45;&gt;Node13 -->
+<g id="edge11" class="edge">
+<title>Node7&#45;&gt;Node13</title>
 <path fill="none" stroke="#191970" d="M479.6812,-163.7747C498.3801,-142.2359 528.914,-110.1848 561,-89.5 566.7756,-85.7766 573.1937,-82.4571 579.6666,-79.5497"/>
 <polygon fill="#191970" stroke="#191970" points="476.944,-161.5903 473.1156,-171.4693 482.269,-166.134 476.944,-161.5903"/>
 </g>
-<!-- Node20 -->
-<g id="node16" class="node">
-<title>Node20</title>
-<g id="a_node16"><a xlink:href="class_urho3_d_1_1_spline_path.html#a70332b257f6b5adc371291208dd7e430" target="_top" xlink:title="Listener to manage Control Point enabling. ">
+<!-- Node14 -->
+<g id="node13" class="node">
+<title>Node14</title>
+<g id="a_node13"><a xlink:href="class_urho3_d_1_1_spline_path.html#a70332b257f6b5adc371291208dd7e430" target="_top" xlink:title="Listener to manage Control Point enabling. ">
 <polygon fill="none" stroke="#000000" points="566.5,-.5 566.5,-30.5 682.5,-30.5 682.5,-.5 566.5,-.5"/>
 <text text-anchor="start" x="574.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
 <text text-anchor="middle" x="624.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::OnNodeSetEnabled</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node20 -->
-<g id="edge15" class="edge">
-<title>Node10&#45;&gt;Node20</title>
+<!-- Node7&#45;&gt;Node14 -->
+<g id="edge12" class="edge">
+<title>Node7&#45;&gt;Node14</title>
 <path fill="none" stroke="#191970" d="M471.8523,-162.4058C487.3679,-130.4444 518.7516,-74.1547 561,-40.5 565.8189,-36.6613 571.3001,-33.3506 576.9757,-30.5118"/>
 <polygon fill="#191970" stroke="#191970" points="468.6664,-160.9558 467.5521,-171.4919 474.9936,-163.9503 468.6664,-160.9558"/>
-</g>
-<!-- Node16 -->
-<g id="node12" class="node">
-<title>Node16</title>
-<g id="a_node12"><a xlink:href="class_urho3_d_1_1_spline_path.html#a0c940eaebcacf000d99883f747d03b1d" target="_top" xlink:title="Register object factory. ">
-<polygon fill="none" stroke="#000000" points="724,-98.5 724,-128.5 834,-128.5 834,-98.5 724,-98.5"/>
-<text text-anchor="start" x="732" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SplinePath</text>
-<text text-anchor="middle" x="779" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::RegisterObject</text>
-</a>
-</g>
-</g>
-<!-- Node15&#45;&gt;Node16 -->
-<g id="edge11" class="edge">
-<title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M698.2697,-113.5C706.8638,-113.5 715.5154,-113.5 723.798,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="698.2331,-110.0001 688.2331,-113.5 698.233,-117.0001 698.2331,-110.0001"/>
-</g>
-<!-- Node17 -->
-<g id="node13" class="node">
-<title>Node17</title>
-<g id="a_node13"><a xlink:href="class_urho3_d_1_1_scene.html#a96adc07853e2b6104564db2d10b22fdb" target="_top" xlink:title="Preload resources from a JSON scene or object prefab file. ">
-<polygon fill="none" stroke="#000000" points="870,-104 870,-123 1075,-123 1075,-104 870,-104"/>
-<text text-anchor="middle" x="972.5" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Scene::PreloadResourcesJSON</text>
-</a>
-</g>
-</g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge12" class="edge">
-<title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M844.36,-113.5C852.5468,-113.5 861.0699,-113.5 869.6573,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="844.1904,-110.0001 834.1904,-113.5 844.1903,-117.0001 844.1904,-110.0001"/>
-</g>
-<!-- Node18 -->
-<g id="node14" class="node">
-<title>Node18</title>
-<g id="a_node14"><a xlink:href="class_urho3_d_1_1_scene.html#aa66ba16b03bd936a00b96e18da703947" target="_top" xlink:title="Load from a JSON file asynchronously. Return true if started successfully. The LOAD_RESOURCES_ONLY mo...">
-<polygon fill="none" stroke="#000000" points="1111,-104 1111,-123 1282,-123 1282,-104 1111,-104"/>
-<text text-anchor="middle" x="1196.5" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Scene::LoadAsyncJSON</text>
-</a>
-</g>
-</g>
-<!-- Node17&#45;&gt;Node18 -->
-<g id="edge13" class="edge">
-<title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M1085.3377,-113.5C1093.8775,-113.5 1102.4107,-113.5 1110.7389,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="1085.3217,-110.0001 1075.3217,-113.5 1085.3216,-117.0001 1085.3217,-110.0001"/>
 </g>
 </g>
 </svg>

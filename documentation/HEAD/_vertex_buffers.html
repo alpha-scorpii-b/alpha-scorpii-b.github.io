@@ -21,7 +21,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>Geometry data is defined by <a class="el" href="class_urho3_d_1_1_vertex_buffer.html" title="Hardware vertex buffer. ">VertexBuffer</a> objects, which hold a number of vertices of a certain vertex format. For rendering, the data is uploaded to the GPU, but optionally a shadow copy of the vertex data can exist in CPU memory, see <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a54c2ded230cbfbbeac650caac088ad7c">SetShadowed()</a> to allow e.g. raycasts into the geometry without having to lock and read GPU memory.</p>
 <p>The vertex format can be defined in two ways by two overloads of <a class="el" href="class_urho3_d_1_1_vertex_buffer.html#ae3a60a0235f13bc2bc719f296068e134">SetSize()</a>:</p>
-<p>1) With a bitmask representing hardcoded vertex element semantics and datatypes. Each of the following elements may or may not be present, but the order or datatypes may not change. The order is defined by the LegacyVertexElement enum in GraphicsDefs.h, while bitmask defines exist as MASK_POSITION, MASK_NORMAL etc.</p>
+<p>1) With a bitmask representing hardcoded vertex element semantics and datatypes. Each of the following elements may or may not be present, but the order or datatypes may not change. The order is defined by the LegacyVertexElement enum in <a class="el" href="_graphics_defs_8h.html">GraphicsDefs.h</a>, while bitmask defines exist as MASK_POSITION, MASK_NORMAL etc.</p>
 <ul>
 <li>Position (Vector3)</li>
 <li>Normal (Vector3)</li>
