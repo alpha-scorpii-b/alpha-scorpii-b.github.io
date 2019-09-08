@@ -31,10 +31,11 @@ $(function() {
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MathDefs.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_math_defs_8h__incl.svg" width="247" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_math_defs_8h__incl.svg" width="363" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -46,10 +47,6 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h3 class="groupheader"><a name="enum-members"></a>
 Enumerations</h3></td></tr>
-<tr class="memitem:a8c686d36773bd3529627a3b14069feff"><td class="memItemLeft" align="right" valign="top"><a id="a8c686d36773bd3529627a3b14069feff"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AngleTypeEnum</b> { <b>DEGREES</b>, 
-<b>RADIANS</b>
- }</td></tr>
-<tr class="separator:a8c686d36773bd3529627a3b14069feff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f8b9469a6348fb469c53533bc4d13e"><td class="memItemLeft" align="right" valign="top"><a id="ac8f8b9469a6348fb469c53533bc4d13e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#ac8f8b9469a6348fb469c53533bc4d13e">Urho3D::Intersection</a> { <b>OUTSIDE</b>, 
 <b>INTERSECTS</b>, 
 <b>INSIDE</b>
@@ -94,16 +91,16 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a4c3e27f8ba8165b0ceb539e3edd835de"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a4c3e27f8ba8165b0ceb539e3edd835de">Urho3D::Sign</a> (T value)</td></tr>
 <tr class="memdesc:a4c3e27f8ba8165b0ceb539e3edd835de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sign of a float (-1, 0 or 1.) <br /></td></tr>
 <tr class="separator:a4c3e27f8ba8165b0ceb539e3edd835de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d0c5bea0d099335943b18b854a44aa"><td class="memTemplParams" colspan="2"><a id="ad3d0c5bea0d099335943b18b854a44aa"></a>
+<tr class="memitem:a3f7584e4a99a1086de4901416de02166"><td class="memTemplParams" colspan="2"><a id="a3f7584e4a99a1086de4901416de02166"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad3d0c5bea0d099335943b18b854a44aa"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#ad3d0c5bea0d099335943b18b854a44aa">Urho3D::toRadians</a> (const T degrees)</td></tr>
-<tr class="memdesc:ad3d0c5bea0d099335943b18b854a44aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns radians from degrees. <br /></td></tr>
-<tr class="separator:ad3d0c5bea0d099335943b18b854a44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120250f4a2afc7c0af12961cfee13f5e"><td class="memTemplParams" colspan="2"><a id="a120250f4a2afc7c0af12961cfee13f5e"></a>
+<tr class="memitem:a3f7584e4a99a1086de4901416de02166"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a3f7584e4a99a1086de4901416de02166">Urho3D::ToRadians</a> (const T degrees)</td></tr>
+<tr class="memdesc:a3f7584e4a99a1086de4901416de02166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert degrees to radians. <br /></td></tr>
+<tr class="separator:a3f7584e4a99a1086de4901416de02166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a959b897316512f115db6f6849e34e"><td class="memTemplParams" colspan="2"><a id="a04a959b897316512f115db6f6849e34e"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a120250f4a2afc7c0af12961cfee13f5e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a120250f4a2afc7c0af12961cfee13f5e">Urho3D::toDegrees</a> (const T radians)</td></tr>
-<tr class="memdesc:a120250f4a2afc7c0af12961cfee13f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns degrees from radians. <br /></td></tr>
-<tr class="separator:a120250f4a2afc7c0af12961cfee13f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a959b897316512f115db6f6849e34e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a04a959b897316512f115db6f6849e34e">Urho3D::ToDegrees</a> (const T radians)</td></tr>
+<tr class="memdesc:a04a959b897316512f115db6f6849e34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert radians to degrees. <br /></td></tr>
+<tr class="separator:a04a959b897316512f115db6f6849e34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1511b3d2184e720bf4d44fe6c082d64"><td class="memItemLeft" align="right" valign="top"><a id="aa1511b3d2184e720bf4d44fe6c082d64"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#aa1511b3d2184e720bf4d44fe6c082d64">Urho3D::FloatToRawIntBits</a> (float value)</td></tr>
 <tr class="memdesc:aa1511b3d2184e720bf4d44fe6c082d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a representation of the specified floating-point value as a single format bit layout. <br /></td></tr>
@@ -198,11 +195,11 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:abd793d352fd1907d613db417160ba530"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#abd793d352fd1907d613db417160ba530">Urho3D::Round</a> (T x)</td></tr>
 <tr class="memdesc:abd793d352fd1907d613db417160ba530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round value to nearest integer. <br /></td></tr>
 <tr class="separator:abd793d352fd1907d613db417160ba530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a6af120eacd19e9606f214595dc01c3"><td class="memTemplParams" colspan="2"><a id="a3a6af120eacd19e9606f214595dc01c3"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3a6af120eacd19e9606f214595dc01c3"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a3a6af120eacd19e9606f214595dc01c3">Urho3D::Average</a> (const Vector&lt; T &gt; &amp;list)</td></tr>
-<tr class="memdesc:a3a6af120eacd19e9606f214595dc01c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Average. <br /></td></tr>
-<tr class="separator:a3a6af120eacd19e9606f214595dc01c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e698fe349f9185b4553737f27aa0d1"><td class="memTemplParams" colspan="2"><a id="ad1e698fe349f9185b4553737f27aa0d1"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:ad1e698fe349f9185b4553737f27aa0d1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#ad1e698fe349f9185b4553737f27aa0d1">Urho3D::Average</a> (Iterator begin, Iterator end) -&gt; typename std::decay&lt; decltype(*begin)&gt;::type</td></tr>
+<tr class="memdesc:ad1e698fe349f9185b4553737f27aa0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute average value of the range. <br /></td></tr>
+<tr class="separator:ad1e698fe349f9185b4553737f27aa0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0439c3642fe1b9779fe2199b9d89af"><td class="memTemplParams" colspan="2"><a id="a1e0439c3642fe1b9779fe2199b9d89af"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1e0439c3642fe1b9779fe2199b9d89af"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a1e0439c3642fe1b9779fe2199b9d89af">Urho3D::RoundToInt</a> (T x)</td></tr>
