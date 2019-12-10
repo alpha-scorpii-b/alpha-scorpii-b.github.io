@@ -3598,7 +3598,7 @@ Classes</h2>
 <li>bool Connect(const String address, short port, Scene* scene)</li>
 <li>bool Connect(const String address, short port, Scene* scene, const VariantMap&amp; identity)</li>
 <li>void Disconnect(int waitMSec = 0)</li>
-<li>bool StartServer(short port)</li>
+<li>bool StartServer(short port, int maxConnections = 128)</li>
 <li>void StopServer()</li>
 <li>void BroadcastMessage(int msgID, bool reliable, bool inOrder, const <a class="el" href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream. ">VectorBuffer</a>&amp; msg, unsigned contentID = 0)</li>
 <li>void BroadcastRemoteEvent(StringHash eventType, bool inOrder)</li>
