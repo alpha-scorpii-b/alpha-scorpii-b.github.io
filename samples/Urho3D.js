@@ -18,15 +18,13 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = '/home/travis/build/urho3d/Build/bin/Urho3D.js.data';
+    var PACKAGE_NAME = '/home/travis/build/weitjong/Urho3D/build/ci/bin/Urho3D.js.data';
     var REMOTE_PACKAGE_BASE = 'Urho3D.js.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
-      Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
+      err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
     }
-    var REMOTE_PACKAGE_NAME = typeof Module['locateFile'] === 'function' ?
-                              Module['locateFile'](REMOTE_PACKAGE_BASE) :
-                              ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
+    var REMOTE_PACKAGE_NAME = Module['locateFile'] ? Module['locateFile'](REMOTE_PACKAGE_BASE, '') : REMOTE_PACKAGE_BASE;
   
     var REMOTE_PACKAGE_SIZE = metadata.remote_package_size;
     var PACKAGE_UUID = metadata.package_uuid;
@@ -89,10 +87,9 @@ Module.expectedDataFileDownloads++;
       if (!check) throw msg + new Error().stack;
     }
 
-    function DataRequest(start, end, crunched, audio) {
+    function DataRequest(start, end, audio) {
       this.start = start;
       this.end = end;
-      this.crunched = crunched;
       this.audio = audio;
     }
     DataRequest.prototype = {
@@ -105,9 +102,7 @@ Module.expectedDataFileDownloads++;
       send: function() {},
       onload: function() {
         var byteArray = this.byteArray.subarray(this.start, this.end);
-
-          this.finish(byteArray);
-
+        this.finish(byteArray);
       },
       finish: function(byteArray) {
         var that = this;
@@ -121,7 +116,7 @@ Module.expectedDataFileDownloads++;
 
         var files = metadata.files;
         for (var i = 0; i < files.length; ++i) {
-          new DataRequest(files[i].start, files[i].end, files[i].crunched, files[i].audio).open('GET', files[i].filename);
+          new DataRequest(files[i].start, files[i].end, files[i].audio).open('GET', files[i].filename);
         }
 
   
@@ -160,59 +155,122 @@ Module.expectedDataFileDownloads++;
         };
       };
 
+      // This is needed as chromium has a limit on per-entry files in IndexedDB
+      // https://cs.chromium.org/chromium/src/content/renderer/indexed_db/webidbdatabase_impl.cc?type=cs&sq=package:chromium&g=0&l=177
+      // https://cs.chromium.org/chromium/src/out/Debug/gen/third_party/blink/public/mojom/indexeddb/indexeddb.mojom.h?type=cs&sq=package:chromium&g=0&l=60
+      // We set the chunk size to 64MB to stay well-below the limit
+      var CHUNK_SIZE = 64 * 1024 * 1024;
+
+      function cacheRemotePackage(
+        db,
+        packageName,
+        packageData,
+        packageMeta,
+        callback,
+        errback
+      ) {
+        var transactionPackages = db.transaction([PACKAGE_STORE_NAME], IDB_RW);
+        var packages = transactionPackages.objectStore(PACKAGE_STORE_NAME);
+        var chunkSliceStart = 0;
+        var nextChunkSliceStart = 0;
+        var chunkCount = Math.ceil(packageData.byteLength / CHUNK_SIZE);
+        var finishedChunks = 0;
+        for (var chunkId = 0; chunkId < chunkCount; chunkId++) {
+          nextChunkSliceStart += CHUNK_SIZE;
+          var putPackageRequest = packages.put(
+            packageData.slice(chunkSliceStart, nextChunkSliceStart),
+            'package/' + packageName + '/' + chunkId
+          );
+          chunkSliceStart = nextChunkSliceStart;
+          putPackageRequest.onsuccess = function(event) {
+            finishedChunks++;
+            if (finishedChunks == chunkCount) {
+              var transaction_metadata = db.transaction(
+                [METADATA_STORE_NAME],
+                IDB_RW
+              );
+              var metadata = transaction_metadata.objectStore(METADATA_STORE_NAME);
+              var putMetadataRequest = metadata.put(
+                {
+                  uuid: packageMeta.uuid,
+                  chunkCount: chunkCount
+                },
+                'metadata/' + packageName
+              );
+              putMetadataRequest.onsuccess = function(event) {
+                callback(packageData);
+              };
+              putMetadataRequest.onerror = function(error) {
+                errback(error);
+              };
+            }
+          };
+          putPackageRequest.onerror = function(error) {
+            errback(error);
+          };
+        }
+      }
+
       /* Check if there's a cached package, and if so whether it's the latest available */
       function checkCachedPackage(db, packageName, callback, errback) {
         var transaction = db.transaction([METADATA_STORE_NAME], IDB_RO);
         var metadata = transaction.objectStore(METADATA_STORE_NAME);
-
-        var getRequest = metadata.get("metadata/" + packageName);
+        var getRequest = metadata.get('metadata/' + packageName);
         getRequest.onsuccess = function(event) {
           var result = event.target.result;
           if (!result) {
-            return callback(false);
+            return callback(false, null);
           } else {
-            return callback(PACKAGE_UUID === result.uuid);
+            return callback(PACKAGE_UUID === result.uuid, result);
           }
         };
         getRequest.onerror = function(error) {
           errback(error);
         };
-      };
+      }
 
-      function fetchCachedPackage(db, packageName, callback, errback) {
+      function fetchCachedPackage(db, packageName, metadata, callback, errback) {
         var transaction = db.transaction([PACKAGE_STORE_NAME], IDB_RO);
         var packages = transaction.objectStore(PACKAGE_STORE_NAME);
 
-        var getRequest = packages.get("package/" + packageName);
-        getRequest.onsuccess = function(event) {
-          var result = event.target.result;
-          callback(result);
-        };
-        getRequest.onerror = function(error) {
-          errback(error);
-        };
-      };
+        var chunksDone = 0;
+        var totalSize = 0;
+        var chunks = new Array(metadata.chunkCount);
 
-      function cacheRemotePackage(db, packageName, packageData, packageMeta, callback, errback) {
-        var transaction_packages = db.transaction([PACKAGE_STORE_NAME], IDB_RW);
-        var packages = transaction_packages.objectStore(PACKAGE_STORE_NAME);
-
-        var putPackageRequest = packages.put(packageData, "package/" + packageName);
-        putPackageRequest.onsuccess = function(event) {
-          var transaction_metadata = db.transaction([METADATA_STORE_NAME], IDB_RW);
-          var metadata = transaction_metadata.objectStore(METADATA_STORE_NAME);
-          var putMetadataRequest = metadata.put(packageMeta, "metadata/" + packageName);
-          putMetadataRequest.onsuccess = function(event) {
-            callback(packageData);
+        for (var chunkId = 0; chunkId < metadata.chunkCount; chunkId++) {
+          var getRequest = packages.get('package/' + packageName + '/' + chunkId);
+          getRequest.onsuccess = function(event) {
+            // If there's only 1 chunk, there's nothing to concatenate it with so we can just return it now
+            if (metadata.chunkCount == 1) {
+              callback(event.target.result);
+            } else {
+              chunksDone++;
+              totalSize += event.target.result.byteLength;
+              chunks.push(event.target.result);
+              if (chunksDone == metadata.chunkCount) {
+                if (chunksDone == 1) {
+                  callback(event.target.result);
+                } else {
+                  var tempTyped = new Uint8Array(totalSize);
+                  var byteOffset = 0;
+                  for (var chunkId in chunks) {
+                    var buffer = chunks[chunkId];
+                    tempTyped.set(new Uint8Array(buffer), byteOffset);
+                    byteOffset += buffer.byteLength;
+                    buffer = undefined;
+                  }
+                  chunks = undefined;
+                  callback(tempTyped.buffer);
+                  tempTyped = undefined;
+                }
+              }
+            }
           };
-          putMetadataRequest.onerror = function(error) {
+          getRequest.onerror = function(error) {
             errback(error);
           };
-        };
-        putPackageRequest.onerror = function(error) {
-          errback(error);
-        };
-      };
+        }
+      }
     
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -223,7 +281,6 @@ Module.expectedDataFileDownloads++;
       
         // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
         // (we may be allocating before malloc is ready, during startup).
-        if (Module['SPLIT_MEMORY']) Module.printErr('warning: you should run the file packager with --no-heap-copy when SPLIT_MEMORY is used, otherwise copying into the heap may fail due to the splitting');
         var ptr = Module['getMemory'](byteArray.length);
         Module['HEAPU8'].set(byteArray, ptr);
         DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
@@ -232,10 +289,10 @@ Module.expectedDataFileDownloads++;
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
+              Module['removeRunDependency']('datafile_/home/travis/build/weitjong/Urho3D/build/ci/bin/Urho3D.js.data');
 
     };
-    Module['addRunDependency']('datafile_/home/travis/build/urho3d/Build/bin/Urho3D.js.data');
+    Module['addRunDependency']('datafile_/home/travis/build/weitjong/Urho3D/build/ci/bin/Urho3D.js.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -248,14 +305,12 @@ Module.expectedDataFileDownloads++;
       openDatabase(
         function(db) {
           checkCachedPackage(db, PACKAGE_PATH + PACKAGE_NAME,
-            function(useCached) {
+            function(useCached, metadata) {
               Module.preloadResults[PACKAGE_NAME] = {fromCache: useCached};
               if (useCached) {
-                console.info('loading ' + PACKAGE_NAME + ' from cache');
-                fetchCachedPackage(db, PACKAGE_PATH + PACKAGE_NAME, processPackageData, preloadFallback);
+                fetchCachedPackage(db, PACKAGE_PATH + PACKAGE_NAME, metadata, processPackageData, preloadFallback);
               } else {
-                console.info('loading ' + PACKAGE_NAME + ' from remote');
-                fetchRemotePackage(REMOTE_PACKAGE_NAME, REMOTE_PACKAGE_SIZE, 
+                fetchRemotePackage(REMOTE_PACKAGE_NAME, REMOTE_PACKAGE_SIZE,
                   function(packageData) {
                     cacheRemotePackage(db, PACKAGE_PATH + PACKAGE_NAME, packageData, {uuid:PACKAGE_UUID}, processPackageData,
                       function(error) {
@@ -281,6 +336,6 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 154658, "filename": "/CoreData.pak"}, {"audio": 0, "start": 154658, "crunched": 0, "end": 17529559, "filename": "/Data.pak"}], "remote_package_size": 17529559, "package_uuid": "612d7bb0-7759-4fa5-92d0-ded28ae47824"});
+ loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 154658, "audio": 0}, {"filename": "/Data.pak", "start": 154658, "end": 17530095, "audio": 0}], "remote_package_size": 17530095, "package_uuid": "6967f574-ea64-4091-9350-1ee96af4d173"});
 
 })();
