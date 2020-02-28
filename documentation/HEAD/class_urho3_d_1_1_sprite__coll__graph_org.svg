@@ -455,7 +455,7 @@
 <g id="node22" class="node">
 <title>Node59</title>
 <g id="a_node22"><a xlink:href="class_urho3_d_1_1_color.html" target="_top" xlink:title="RGBA color. ">
-<polygon fill="none" stroke="#000000" points="205,-208.5 205,-227.5 290,-227.5 290,-208.5 205,-208.5"/>
+<polygon fill="none" stroke="#ff0000" points="205,-208.5 205,-227.5 290,-227.5 290,-208.5 205,-208.5"/>
 <text text-anchor="middle" x="247.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Color</text>
 </a>
 </g>
@@ -485,25 +485,25 @@
 <text text-anchor="middle" x="247.5" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GREEN</text>
 <text text-anchor="middle" x="247.5" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
 </g>
-<!-- Node61 -->
+<!-- Node62 -->
 <g id="node24" class="node">
-<title>Node61</title>
+<title>Node62</title>
 <g id="a_node24"><a xlink:href="class_urho3_d_1_1_texture.html" target="_top" xlink:title="Base class for texture resources. ">
 <polygon fill="none" stroke="#ff0000" points="609,-107.5 609,-126.5 704,-126.5 704,-107.5 609,-107.5"/>
 <text text-anchor="middle" x="656.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Texture</text>
 </a>
 </g>
 </g>
-<!-- Node59&#45;&gt;Node61 -->
+<!-- Node59&#45;&gt;Node62 -->
 <g id="edge38" class="edge">
-<title>Node59&#45;&gt;Node61</title>
+<title>Node59&#45;&gt;Node62</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M290.7001,-205.6008C350.4729,-188.6723 461.9116,-157.929 558,-136 574.47,-132.2413 592.6005,-128.6031 608.7685,-125.5338"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="289.5216,-202.2971 280.858,-208.3958 291.4338,-209.0308 289.5216,-202.2971"/>
 <text text-anchor="middle" x="454" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> borderColor_</text>
 </g>
-<!-- Node60 -->
+<!-- Node61 -->
 <g id="node23" class="node">
-<title>Node60</title>
+<title>Node61</title>
 <g id="a_node23"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Texture \&gt;">
 <polygon fill="none" stroke="#000000" points="881,-79 881,-109 996,-109 996,-79 881,-79"/>
 <text text-anchor="start" x="889" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -511,46 +511,46 @@
 </a>
 </g>
 </g>
-<!-- Node60&#45;&gt;Node6 -->
+<!-- Node61&#45;&gt;Node6 -->
 <g id="edge35" class="edge">
-<title>Node60&#45;&gt;Node6</title>
+<title>Node61&#45;&gt;Node6</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1006.3345,-96.7277C1028.5948,-100.3748 1052.3753,-107.4966 1071,-121 1106.2512,-146.558 1124.2642,-198.7099 1130.4581,-220.3034"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1006.6322,-93.2347 996.2378,-95.286 1005.6427,-100.1645 1006.6322,-93.2347"/>
 <text text-anchor="middle" x="1042.5" y="-124" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> texture_</text>
 </g>
-<!-- Node60&#45;&gt;Node61 -->
+<!-- Node61&#45;&gt;Node62 -->
 <g id="edge37" class="edge">
-<title>Node60&#45;&gt;Node61</title>
+<title>Node61&#45;&gt;Node62</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M870.7339,-99.527C819.2412,-103.7268 749.7111,-109.3977 704.0186,-113.1244"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="871.0972,-103.0091 880.7796,-98.7077 870.5281,-96.0323 871.0972,-103.0091"/>
 <text text-anchor="middle" x="818" y="-109" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> backupTexture_</text>
 </g>
-<!-- Node61&#45;&gt;Node60 -->
+<!-- Node62&#45;&gt;Node61 -->
 <g id="edge36" class="edge">
-<title>Node61&#45;&gt;Node60</title>
+<title>Node62&#45;&gt;Node61</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M692.9482,-104.2772C715.6573,-97.033 745.6582,-88.6868 773,-85 812.6412,-79.6547 823.0704,-82.6285 863,-85 868.798,-85.3444 874.8332,-85.8362 880.853,-86.4147"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="691.7975,-100.971 683.3778,-107.4021 693.9703,-107.6252 691.7975,-100.971"/>
 <text text-anchor="middle" x="818" y="-88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node103 -->
+<!-- Node104 -->
 <g id="node25" class="node">
-<title>Node103</title>
+<title>Node104</title>
 <g id="a_node25"><a xlink:href="class_urho3_d_1_1_matrix3x4.html" target="_top" xlink:title="3x4 matrix for scene node transform calculations. ">
 <polygon fill="none" stroke="#000000" points="884.5,-.5 884.5,-19.5 992.5,-19.5 992.5,-.5 884.5,-.5"/>
 <text text-anchor="middle" x="938.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Matrix3x4</text>
 </a>
 </g>
 </g>
-<!-- Node103&#45;&gt;Node6 -->
+<!-- Node104&#45;&gt;Node6 -->
 <g id="edge40" class="edge">
-<title>Node103&#45;&gt;Node6</title>
+<title>Node104&#45;&gt;Node6</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M976.9257,-23.179C1006.0954,-34.8934 1045.4178,-54.5962 1071,-83 1109.1851,-125.3967 1126.0624,-194.747 1131.1985,-220.2196"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="978.0463,-19.8597 967.4571,-19.5116 975.5179,-26.3872 978.0463,-19.8597"/>
 <text text-anchor="middle" x="1042.5" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> transform_</text>
 </g>
-<!-- Node103&#45;&gt;Node103 -->
+<!-- Node104&#45;&gt;Node104 -->
 <g id="edge41" class="edge">
-<title>Node103&#45;&gt;Node103</title>
+<title>Node104&#45;&gt;Node104</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M919.2417,-29.4C920.5278,-34.3146 926.9473,-38 938.5,-38 956.9844,-38 962.3275,-28.5653 954.5294,-19.7571"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="922.6142,-30.3509 922.4706,-19.7571 915.9765,-28.1283 922.6142,-30.3509"/>
 <text text-anchor="middle" x="938.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> IDENTITY</text>

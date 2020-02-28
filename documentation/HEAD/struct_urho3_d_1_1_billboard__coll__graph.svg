@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 647;
+var viewWidth = 641;
 var viewHeight = 331;
 var sectionId = 'dynsection-0';
 </script>
@@ -57,33 +57,33 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="120.5,-.5 120.5,-19.5 223.5,-19.5 223.5,-.5 120.5,-.5"/>
-<text text-anchor="middle" x="172" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Billboard</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="114.5,-.5 114.5,-19.5 217.5,-19.5 217.5,-.5 114.5,-.5"/>
+<text text-anchor="middle" x="166" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Billboard</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="class_urho3_d_1_1_rect.html" target="_top" xlink:title="Two&#45;dimensional bounding rectangle. ">
-<polygon fill="none" stroke="#000000" points="78,-129 78,-148 158,-148 158,-129 78,-129"/>
-<text text-anchor="middle" x="118" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Rect</text>
+<polygon fill="none" stroke="#000000" points="72,-129 72,-148 152,-148 152,-129 72,-129"/>
+<text text-anchor="middle" x="112" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Rect</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M126.0208,-119.4134C137.7033,-91.6134 158.9767,-40.9907 167.8941,-19.7705"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="122.7063,-118.2666 122.0588,-128.8416 129.1597,-120.9785 122.7063,-118.2666"/>
-<text text-anchor="middle" x="169.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> uv_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M120.0208,-119.4134C131.7033,-91.6134 152.9767,-40.9907 161.8941,-19.7705"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="116.7063,-118.2666 116.0588,-128.8416 123.1597,-120.9785 116.7063,-118.2666"/>
+<text text-anchor="middle" x="163.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> uv_</text>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M138.9095,-152.3103C156.9518,-158.5447 176,-153.9412 176,-138.5 176,-120.3672 149.7323,-117.1798 129.6724,-128.9378"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="140.2201,-149.0607 129.6724,-148.0622 137.2953,-155.4204 140.2201,-149.0607"/>
-<text text-anchor="middle" x="200" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> POSITIVE</text>
-<text text-anchor="middle" x="200" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ZERO</text>
-<text text-anchor="middle" x="200" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FULL</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M132.9095,-152.3103C150.9518,-158.5447 170,-153.9412 170,-138.5 170,-120.3672 143.7323,-117.1798 123.6724,-128.9378"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="134.2201,-149.0607 123.6724,-148.0622 131.2953,-155.4204 134.2201,-149.0607"/>
+<text text-anchor="middle" x="194" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> POSITIVE</text>
+<text text-anchor="middle" x="194" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ZERO</text>
+<text text-anchor="middle" x="194" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FULL</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -97,17 +97,17 @@ var sectionId = 'dynsection-0';
 <!-- Node3&#45;&gt;Node1 -->
 <g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M40.8557,-270.7041C27.5412,-231.2105 3.5146,-139.6927 41,-78 60.1608,-46.4655 99.2149,-28.8917 129.7198,-19.5505"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="37.5729,-271.9193 44.1921,-280.1919 44.1765,-269.5971 37.5729,-271.9193"/>
-<text text-anchor="middle" x="55" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> size_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M40.0139,-270.7176C25.0358,-231.249 -2.5353,-139.775 35,-78 54.1608,-46.4655 93.2149,-28.8917 123.7198,-19.5505"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="36.8292,-272.1824 43.7562,-280.1991 43.3404,-269.6125 36.8292,-272.1824"/>
+<text text-anchor="middle" x="49" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> size_</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M56.9284,-270.6764C72.0315,-237.9889 102.0893,-172.9353 113.4812,-148.28"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="53.6101,-269.5138 52.5929,-280.0597 59.9646,-272.4499 53.6101,-269.5138"/>
-<text text-anchor="middle" x="96.5" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> max_</text>
-<text text-anchor="middle" x="96.5" y="-220" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">min_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M56.1631,-270.6764C69.9717,-237.9889 97.4531,-172.9353 107.8685,-148.28"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="52.8666,-269.4859 52.1992,-280.0597 59.3148,-272.2099 52.8666,-269.4859"/>
+<text text-anchor="middle" x="94.5" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> max_</text>
+<text text-anchor="middle" x="94.5" y="-220" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">min_</text>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
@@ -125,65 +125,82 @@ var sectionId = 'dynsection-0';
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="class_urho3_d_1_1_vector3.html" target="_top" xlink:title="Three&#45;dimensional vector. ">
-<polygon fill="none" stroke="#000000" points="242,-129 242,-148 338,-148 338,-129 242,-129"/>
-<text text-anchor="middle" x="290" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Vector3</text>
+<polygon fill="none" stroke="#000000" points="236,-129 236,-148 332,-148 332,-129 236,-129"/>
+<text text-anchor="middle" x="284" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Vector3</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
 <g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M274.1288,-121.2166C249.0055,-93.8577 200.8876,-41.4581 180.9721,-19.7705"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="271.7891,-123.8433 281.1308,-128.8416 276.945,-119.1087 271.7891,-123.8433"/>
-<text text-anchor="middle" x="243" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> direction_</text>
-<text text-anchor="middle" x="243" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">position_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M268.1288,-121.2166C243.0055,-93.8577 194.8876,-41.4581 174.9721,-19.7705"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="265.7891,-123.8433 275.1308,-128.8416 270.945,-119.1087 265.7891,-123.8433"/>
+<text text-anchor="middle" x="237" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> direction_</text>
+<text text-anchor="middle" x="237" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">position_</text>
 </g>
 <!-- Node4&#45;&gt;Node4 -->
 <g id="edge7" class="edge">
 <title>Node4&#45;&gt;Node4</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M312.6647,-151.9562C333.5217,-158.7099 356,-154.2245 356,-138.5 356,-120.3672 326.1092,-117.1798 303.2824,-128.9378"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="313.8602,-148.6629 303.2824,-148.0622 311.1769,-155.1282 313.8602,-148.6629"/>
-<text text-anchor="middle" x="380.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ONE</text>
-<text text-anchor="middle" x="380.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DOWN</text>
-<text text-anchor="middle" x="380.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BACK</text>
-<text text-anchor="middle" x="380.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RIGHT</text>
-<text text-anchor="middle" x="380.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LEFT</text>
-<text text-anchor="middle" x="380.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ZERO</text>
-<text text-anchor="middle" x="380.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FORWARD</text>
-<text text-anchor="middle" x="380.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">UP</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M306.6647,-151.9562C327.5217,-158.7099 350,-154.2245 350,-138.5 350,-120.3672 320.1092,-117.1798 297.2824,-128.9378"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="307.8602,-148.6629 297.2824,-148.0622 305.1769,-155.1282 307.8602,-148.6629"/>
+<text text-anchor="middle" x="374.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ONE</text>
+<text text-anchor="middle" x="374.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DOWN</text>
+<text text-anchor="middle" x="374.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BACK</text>
+<text text-anchor="middle" x="374.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RIGHT</text>
+<text text-anchor="middle" x="374.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LEFT</text>
+<text text-anchor="middle" x="374.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ZERO</text>
+<text text-anchor="middle" x="374.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FORWARD</text>
+<text text-anchor="middle" x="374.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">UP</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="class_urho3_d_1_1_color.html" target="_top" xlink:title="RGBA color. ">
-<polygon fill="none" stroke="#000000" points="423.5,-129 423.5,-148 508.5,-148 508.5,-129 423.5,-129"/>
-<text text-anchor="middle" x="466" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Color</text>
+<polygon fill="none" stroke="#000000" points="417.5,-129 417.5,-148 502.5,-148 502.5,-129 417.5,-129"/>
+<text text-anchor="middle" x="460" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Color</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
 <title>Node5&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M454.6212,-120.2348C445.2827,-106.6941 430.8787,-88.7858 414,-78 355.1617,-40.4011 275.34,-23.2384 223.7479,-15.6536"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="451.8204,-122.3456 460.2451,-128.7702 457.6657,-118.4941 451.8204,-122.3456"/>
-<text text-anchor="middle" x="394.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> color_</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M448.6212,-120.2348C439.2827,-106.6941 424.8787,-88.7858 408,-78 349.1617,-40.4011 269.34,-23.2384 217.7479,-15.6536"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="445.8204,-122.3456 454.2451,-128.7702 451.6657,-118.4941 445.8204,-122.3456"/>
+<text text-anchor="middle" x="389.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> color_</text>
 </g>
 <!-- Node5&#45;&gt;Node5 -->
-<g id="edge9" class="edge">
+<g id="edge10" class="edge">
 <title>Node5&#45;&gt;Node5</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M487.5518,-152.2238C506.448,-158.5867 526.5,-154.0121 526.5,-138.5 526.5,-120.3672 499.1001,-117.1798 478.1756,-128.9378"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="488.7356,-148.92 478.1756,-148.0622 485.8958,-155.3181 488.7356,-148.92"/>
-<text text-anchor="middle" x="582.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> TRANSPARENT_BLACK</text>
-<text text-anchor="middle" x="582.5" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CYAN</text>
-<text text-anchor="middle" x="582.5" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GRAY</text>
-<text text-anchor="middle" x="582.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">YELLOW</text>
-<text text-anchor="middle" x="582.5" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">MAGENTA</text>
-<text text-anchor="middle" x="582.5" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">WHITE</text>
-<text text-anchor="middle" x="582.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BLUE</text>
-<text text-anchor="middle" x="582.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BLACK</text>
-<text text-anchor="middle" x="582.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RED</text>
-<text text-anchor="middle" x="582.5" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GREEN</text>
-<text text-anchor="middle" x="582.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M481.5518,-152.2238C500.448,-158.5867 520.5,-154.0121 520.5,-138.5 520.5,-120.3672 493.1001,-117.1798 472.1756,-128.9378"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="482.7356,-148.92 472.1756,-148.0622 479.8958,-155.3181 482.7356,-148.92"/>
+<text text-anchor="middle" x="576.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> TRANSPARENT_BLACK</text>
+<text text-anchor="middle" x="576.5" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CYAN</text>
+<text text-anchor="middle" x="576.5" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GRAY</text>
+<text text-anchor="middle" x="576.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">YELLOW</text>
+<text text-anchor="middle" x="576.5" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">MAGENTA</text>
+<text text-anchor="middle" x="576.5" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">WHITE</text>
+<text text-anchor="middle" x="576.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BLUE</text>
+<text text-anchor="middle" x="576.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">BLACK</text>
+<text text-anchor="middle" x="576.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RED</text>
+<text text-anchor="middle" x="576.5" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GREEN</text>
+<text text-anchor="middle" x="576.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="struct_urho3_d_1_1_color_1_1_channel_mask.html" target="_top" xlink:title="Mask describing color channels. ">
+<polygon fill="none" stroke="#000000" points="382,-280.5 382,-299.5 538,-299.5 538,-280.5 382,-280.5"/>
+<text text-anchor="middle" x="460" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Color::ChannelMask</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge9" class="edge">
+<title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M460,-269.8201C460,-236.8655 460,-172.7218 460,-148.28"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="456.5001,-270.0596 460,-280.0597 463.5001,-270.0597 456.5001,-270.0596"/>
+<text text-anchor="middle" x="475.5" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ARGB</text>
+<text text-anchor="middle" x="475.5" y="-220" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ABGR</text>
 </g>
 </g>
 </svg>

@@ -55,6 +55,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a17a0adce37d14138af25622ef134cd61">SharedPtr</a> (const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a17a0adce37d14138af25622ef134cd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construct from another shared pointer. <br /></td></tr>
 <tr class="separator:a17a0adce37d14138af25622ef134cd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebc446a08684b71637a875817dd2b7c"><td class="memItemLeft" align="right" valign="top"><a id="a5ebc446a08684b71637a875817dd2b7c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a5ebc446a08684b71637a875817dd2b7c">SharedPtr</a> (<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;&amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a5ebc446a08684b71637a875817dd2b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-construct from another shared pointer. <br /></td></tr>
+<tr class="separator:a5ebc446a08684b71637a875817dd2b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8aa94f5541a49074bc1dc17eb557dd"><td class="memTemplParams" colspan="2"><a id="aca8aa94f5541a49074bc1dc17eb557dd"></a>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:aca8aa94f5541a49074bc1dc17eb557dd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#aca8aa94f5541a49074bc1dc17eb557dd">SharedPtr</a> (const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; U &gt; &amp;rhs) noexcept</td></tr>
@@ -72,6 +76,10 @@ template&lt;class U &gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a248e1f0dee594908363567225cafdab0">operator=</a> (const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a248e1f0dee594908363567225cafdab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from another shared pointer. <br /></td></tr>
 <tr class="separator:a248e1f0dee594908363567225cafdab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6d4d408b02059924126d14cdbd2ff7"><td class="memItemLeft" align="right" valign="top"><a id="a2c6d4d408b02059924126d14cdbd2ff7"></a>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a2c6d4d408b02059924126d14cdbd2ff7">operator=</a> (<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a2c6d4d408b02059924126d14cdbd2ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assign from another shared pointer. <br /></td></tr>
+<tr class="separator:a2c6d4d408b02059924126d14cdbd2ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1804ebbe483b03f4f5719112b2fdc9"><td class="memTemplParams" colspan="2"><a id="a0c1804ebbe483b03f4f5719112b2fdc9"></a>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:a0c1804ebbe483b03f4f5719112b2fdc9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a0c1804ebbe483b03f4f5719112b2fdc9">operator=</a> (const <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; U &gt; &amp;rhs)</td></tr>
@@ -112,14 +120,14 @@ template&lt;class U &gt; </td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#adbf44e7b0a61c80fe494d9ec5eace65d">operator T*</a> () const</td></tr>
 <tr class="memdesc:adbf44e7b0a61c80fe494d9ec5eace65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to a raw pointer. <br /></td></tr>
 <tr class="separator:adbf44e7b0a61c80fe494d9ec5eace65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb4f4e8f9958dea8c5f21150deb841f"><td class="memItemLeft" align="right" valign="top"><a id="a6eb4f4e8f9958dea8c5f21150deb841f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a6eb4f4e8f9958dea8c5f21150deb841f">Swap</a> (<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a> &amp;rhs)</td></tr>
-<tr class="memdesc:a6eb4f4e8f9958dea8c5f21150deb841f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap with another <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting. ">SharedPtr</a>. <br /></td></tr>
-<tr class="separator:a6eb4f4e8f9958dea8c5f21150deb841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a921bd6b5a659b42c9f660a083640eb8f"><td class="memItemLeft" align="right" valign="top"><a id="a921bd6b5a659b42c9f660a083640eb8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a921bd6b5a659b42c9f660a083640eb8f">Reset</a> ()</td></tr>
-<tr class="memdesc:a921bd6b5a659b42c9f660a083640eb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to null and release the object reference. <br /></td></tr>
-<tr class="separator:a921bd6b5a659b42c9f660a083640eb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913ae8f8f0e4eced71a33195f3343a08"><td class="memItemLeft" align="right" valign="top"><a id="a913ae8f8f0e4eced71a33195f3343a08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a913ae8f8f0e4eced71a33195f3343a08">Swap</a> (<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a913ae8f8f0e4eced71a33195f3343a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap with another <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting. ">SharedPtr</a>. <br /></td></tr>
+<tr class="separator:a913ae8f8f0e4eced71a33195f3343a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438333cddc59c6f41a55bbf50ad39299"><td class="memItemLeft" align="right" valign="top"><a id="a438333cddc59c6f41a55bbf50ad39299"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a438333cddc59c6f41a55bbf50ad39299">Reset</a> (T *ptr=nullptr)</td></tr>
+<tr class="memdesc:a438333cddc59c6f41a55bbf50ad39299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset with another pointer. <br /></td></tr>
+<tr class="separator:a438333cddc59c6f41a55bbf50ad39299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5216c37523152c78a8f47f7c73303fc2"><td class="memItemLeft" align="right" valign="top"><a id="a5216c37523152c78a8f47f7c73303fc2"></a>
 T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_shared_ptr.html#a5216c37523152c78a8f47f7c73303fc2">Detach</a> ()</td></tr>
 <tr class="memdesc:a5216c37523152c78a8f47f7c73303fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach without destroying the object even if the refcount goes zero. To be used for scripting language interoperation. <br /></td></tr>

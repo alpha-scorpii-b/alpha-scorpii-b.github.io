@@ -137,18 +137,18 @@ var sectionId = 'dynsection-1';
 <path fill="none" stroke="#191970" d="M310.4488,-681.1476C380.9436,-653.4105 550.3658,-588.8675 697,-549.5 809.3841,-519.3278 841.1271,-527.7887 954,-499.5 1019.8641,-482.9929 1040.4471,-487.1194 1100,-454.5 1134.5273,-435.5881 1167.9588,-402.3871 1183.2832,-386.0835"/>
 <polygon fill="#191970" stroke="#191970" points="308.7958,-678.0373 300.7802,-684.9655 311.3668,-684.5481 308.7958,-678.0373"/>
 </g>
-<!-- Node218 -->
+<!-- Node219 -->
 <g id="node23" class="node">
-<title>Node218</title>
+<title>Node219</title>
 <g id="a_node23"><a xlink:href="class_urho3_d_1_1_render_path.html" target="_top" xlink:title="Rendering path definition. A sequence of commands (e.g. clear screen, draw objects with specific pass...">
 <polygon fill="none" stroke="#ff0000" points="483,-777 483,-796 597,-796 597,-777 483,-777"/>
 <text text-anchor="middle" x="540" y="-784" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::RenderPath</text>
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node218 -->
+<!-- Node5&#45;&gt;Node219 -->
 <g id="edge32" class="edge">
-<title>Node5&#45;&gt;Node218</title>
+<title>Node5&#45;&gt;Node219</title>
 <path fill="none" stroke="#191970" d="M314.109,-707.4811C367.6436,-726.208 465.3065,-760.3715 512.7219,-776.9579"/>
 <polygon fill="#191970" stroke="#191970" points="315.2434,-704.17 304.6485,-704.1717 312.932,-710.7774 315.2434,-704.17"/>
 </g>
@@ -185,9 +185,9 @@ var sectionId = 'dynsection-1';
 <polygon fill="#9a32cd" stroke="#9a32cd" points="51.6547,-674.4596 53.4488,-684.9014 58.5579,-675.6198 51.6547,-674.4596"/>
 <text text-anchor="middle" x="423" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> refCount_</text>
 </g>
-<!-- Node231 -->
+<!-- Node232 -->
 <g id="node25" class="node">
-<title>Node231</title>
+<title>Node232</title>
 <g id="a_node25"><a xlink:href="class_urho3_d_1_1_weak_ptr.html" target="_top" xlink:title="Urho3D::WeakPtr\&lt; Urho3D\l::Camera \&gt;">
 <polygon fill="none" stroke="#000000" points="751.5,-909.5 751.5,-939.5 899.5,-939.5 899.5,-909.5 751.5,-909.5"/>
 <text text-anchor="start" x="759.5" y="-927.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::WeakPtr&lt; Urho3D</text>
@@ -195,9 +195,9 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node231 -->
+<!-- Node6&#45;&gt;Node232 -->
 <g id="edge37" class="edge">
-<title>Node6&#45;&gt;Node231</title>
+<title>Node6&#45;&gt;Node232</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M72.6826,-710.0743C143.4561,-762.121 384.3324,-929.068 615,-970.5 678.5116,-981.9078 752.0078,-957.0558 793.1956,-939.6301"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="74.6671,-707.1887 64.5492,-704.0456 70.4987,-712.8123 74.6671,-707.1887"/>
 <text text-anchor="middle" x="423" y="-931.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> refCount_</text>
@@ -493,40 +493,40 @@ var sectionId = 'dynsection-1';
 <polygon fill="#9a32cd" stroke="#9a32cd" points="877.1758,-841.8589 867.1854,-845.3863 877.1949,-848.8589 877.1758,-841.8589"/>
 <text text-anchor="middle" x="1036" y="-848.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node205 -->
+<!-- Node206 -->
 <g id="node22" class="node">
-<title>Node205</title>
+<title>Node206</title>
 <g id="a_node22"><a xlink:href="class_urho3_d_1_1_camera.html" target="_top" xlink:title="Camera component. ">
 <polygon fill="none" stroke="#ff0000" points="491,-893 491,-912 589,-912 589,-893 491,-893"/>
 <text text-anchor="middle" x="540" y="-900" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Camera</text>
 </a>
 </g>
 </g>
-<!-- Node205&#45;&gt;Node99 -->
+<!-- Node206&#45;&gt;Node99 -->
 <g id="edge30" class="edge">
-<title>Node205&#45;&gt;Node99</title>
+<title>Node206&#45;&gt;Node99</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M583.1469,-890.3103C593.5354,-887.5652 604.6291,-884.7897 615,-882.5 673.1536,-869.6606 741.1294,-858.377 783.7527,-851.7452"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="582.1986,-886.9409 573.4495,-892.9161 584.0152,-893.7011 582.1986,-886.9409"/>
 <text text-anchor="middle" x="647" y="-896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> cullCamera_</text>
 <text text-anchor="middle" x="647" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">camera_</text>
 </g>
-<!-- Node205&#45;&gt;Node231 -->
+<!-- Node206&#45;&gt;Node232 -->
 <g id="edge36" class="edge">
-<title>Node205&#45;&gt;Node231</title>
+<title>Node206&#45;&gt;Node232</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M599.0859,-907.053C643.2539,-910.4565 703.9359,-915.1325 751.3614,-918.787"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="599.3186,-903.5607 589.0792,-906.2819 598.7807,-910.54 599.3186,-903.5607"/>
 <text text-anchor="middle" x="647" y="-916.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node218&#45;&gt;Node99 -->
+<!-- Node219&#45;&gt;Node99 -->
 <g id="edge31" class="edge">
-<title>Node218&#45;&gt;Node99</title>
+<title>Node219&#45;&gt;Node99</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M564.1196,-801.1376C578.4047,-809.0968 597.1499,-818.3436 615,-823.5 672.0108,-839.9689 740.8656,-844.4143 783.9311,-845.4521"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="565.8456,-798.0927 555.4306,-796.1491 562.3603,-804.1634 565.8456,-798.0927"/>
 <text text-anchor="middle" x="647" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> renderPath_</text>
 </g>
-<!-- Node217 -->
+<!-- Node218 -->
 <g id="node24" class="node">
-<title>Node217</title>
+<title>Node218</title>
 <g id="a_node24"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::RenderPath \&gt;">
 <polygon fill="none" stroke="#000000" points="972,-780.5 972,-810.5 1100,-810.5 1100,-780.5 972,-780.5"/>
 <text text-anchor="start" x="980" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -534,23 +534,23 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node218&#45;&gt;Node217 -->
+<!-- Node219&#45;&gt;Node218 -->
 <g id="edge34" class="edge">
-<title>Node218&#45;&gt;Node217</title>
+<title>Node219&#45;&gt;Node218</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M607.5399,-787.7255C703.3931,-789.4648 877.6688,-792.6271 971.7113,-794.3335"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="607.4439,-784.2233 597.3821,-787.5412 607.3169,-791.2221 607.4439,-784.2233"/>
 <text text-anchor="middle" x="647" y="-792.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node217&#45;&gt;Node3 -->
+<!-- Node218&#45;&gt;Node3 -->
 <g id="edge33" class="edge">
-<title>Node217&#45;&gt;Node3</title>
+<title>Node218&#45;&gt;Node3</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1110.0032,-798.7058C1155.1234,-800.9032 1213.9363,-804.1996 1266,-808.5 1288.254,-810.3381 1312.7814,-812.9108 1333.7941,-815.2828"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1110.166,-795.2097 1100.0097,-798.2262 1109.8303,-802.2017 1110.166,-795.2097"/>
 <text text-anchor="middle" x="1192" y="-811.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> renderPath_</text>
 </g>
-<!-- Node231&#45;&gt;Node3 -->
+<!-- Node232&#45;&gt;Node3 -->
 <g id="edge35" class="edge">
-<title>Node231&#45;&gt;Node3</title>
+<title>Node232&#45;&gt;Node3</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M909.9153,-920.0039C999.4531,-913.7952 1144.4688,-899.6079 1266,-868.5 1302.2833,-859.2127 1342.4091,-841.8738 1365.7082,-831.0507"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="909.5559,-916.5201 899.8148,-920.6867 910.0281,-923.5042 909.5559,-916.5201"/>
 <text text-anchor="middle" x="1192" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> cullCamera_</text>

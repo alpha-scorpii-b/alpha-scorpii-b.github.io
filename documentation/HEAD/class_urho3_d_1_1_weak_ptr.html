@@ -55,6 +55,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a8dcff7028bf3be6219f78bde04e566a7">WeakPtr</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a8dcff7028bf3be6219f78bde04e566a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construct from another weak pointer. <br /></td></tr>
 <tr class="separator:a8dcff7028bf3be6219f78bde04e566a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6198304e49c45f62ef11c20a9c91f42"><td class="memItemLeft" align="right" valign="top"><a id="af6198304e49c45f62ef11c20a9c91f42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#af6198304e49c45f62ef11c20a9c91f42">WeakPtr</a> (<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&amp;rhs) noexcept</td></tr>
+<tr class="memdesc:af6198304e49c45f62ef11c20a9c91f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-construct from another weak pointer. <br /></td></tr>
+<tr class="separator:af6198304e49c45f62ef11c20a9c91f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2bb0478b0d14527f88d6c8f7e3cf0f2"><td class="memTemplParams" colspan="2"><a id="ab2bb0478b0d14527f88d6c8f7e3cf0f2"></a>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:ab2bb0478b0d14527f88d6c8f7e3cf0f2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#ab2bb0478b0d14527f88d6c8f7e3cf0f2">WeakPtr</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs) noexcept</td></tr>
@@ -80,6 +84,10 @@ template&lt;class U &gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a2a135f817306e4ed6364d90f5552c910">operator=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a2a135f817306e4ed6364d90f5552c910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a weak pointer. <br /></td></tr>
 <tr class="separator:a2a135f817306e4ed6364d90f5552c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c964153c1b75845319f08856d48ef8"><td class="memItemLeft" align="right" valign="top"><a id="a75c964153c1b75845319f08856d48ef8"></a>
+<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a75c964153c1b75845319f08856d48ef8">operator=</a> (<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a75c964153c1b75845319f08856d48ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assign from another weak pointer. <br /></td></tr>
+<tr class="separator:a75c964153c1b75845319f08856d48ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplParams" colspan="2"><a id="acaad39ba18563702df9850035f78c3f0"></a>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:acaad39ba18563702df9850035f78c3f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#acaad39ba18563702df9850035f78c3f0">operator=</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs)</td></tr>
@@ -128,10 +136,14 @@ template&lt;class U &gt; </td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#aafa5c46d96e7da1385a0230c9b7f6444">operator T*</a> () const</td></tr>
 <tr class="memdesc:aafa5c46d96e7da1385a0230c9b7f6444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to a raw pointer, null if the object is expired. <br /></td></tr>
 <tr class="separator:aafa5c46d96e7da1385a0230c9b7f6444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021e39518ec5197e1463335878cb00e7"><td class="memItemLeft" align="right" valign="top"><a id="a021e39518ec5197e1463335878cb00e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a021e39518ec5197e1463335878cb00e7">Reset</a> ()</td></tr>
-<tr class="memdesc:a021e39518ec5197e1463335878cb00e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to null and release the weak reference. <br /></td></tr>
-<tr class="separator:a021e39518ec5197e1463335878cb00e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d2aa8eba3acd4927b4a7aef87b4599"><td class="memItemLeft" align="right" valign="top"><a id="a51d2aa8eba3acd4927b4a7aef87b4599"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a51d2aa8eba3acd4927b4a7aef87b4599">Swap</a> (<a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a51d2aa8eba3acd4927b4a7aef87b4599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap with another <a class="el" href="class_urho3_d_1_1_weak_ptr.html" title="Weak pointer template class with intrusive reference counting. Does not keep the object pointed to al...">WeakPtr</a>. <br /></td></tr>
+<tr class="separator:a51d2aa8eba3acd4927b4a7aef87b4599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fa489e33d135a645fd3c9e488b7e07"><td class="memItemLeft" align="right" valign="top"><a id="aa7fa489e33d135a645fd3c9e488b7e07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#aa7fa489e33d135a645fd3c9e488b7e07">Reset</a> (T *ptr=nullptr)</td></tr>
+<tr class="memdesc:aa7fa489e33d135a645fd3c9e488b7e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset with another pointer. <br /></td></tr>
+<tr class="separator:aa7fa489e33d135a645fd3c9e488b7e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebadfd6bfe91988f2d1a7c71774b439"><td class="memTemplParams" colspan="2"><a id="a6ebadfd6bfe91988f2d1a7c71774b439"></a>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:a6ebadfd6bfe91988f2d1a7c71774b439"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_weak_ptr.html#a6ebadfd6bfe91988f2d1a7c71774b439">StaticCast</a> (const <a class="el" href="class_urho3_d_1_1_weak_ptr.html">WeakPtr</a>&lt; U &gt; &amp;rhs)</td></tr>

@@ -361,14 +361,14 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_mutex.html">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#a81893236fc55f04d947701207582e9e4">queueMutex_</a></td></tr>
 <tr class="memdesc:a81893236fc55f04d947701207582e9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker queue mutex. <br /></td></tr>
 <tr class="separator:a81893236fc55f04d947701207582e9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60548a82abbc028e454ebe2537b029ce"><td class="memItemLeft" align="right" valign="top"><a id="a60548a82abbc028e454ebe2537b029ce"></a>
-volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#a60548a82abbc028e454ebe2537b029ce">shutDown_</a></td></tr>
-<tr class="memdesc:a60548a82abbc028e454ebe2537b029ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutting down flag. <br /></td></tr>
-<tr class="separator:a60548a82abbc028e454ebe2537b029ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9e866fc393542696b79ec172ab01d6"><td class="memItemLeft" align="right" valign="top"><a id="aee9e866fc393542696b79ec172ab01d6"></a>
-volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#aee9e866fc393542696b79ec172ab01d6">pausing_</a></td></tr>
-<tr class="memdesc:aee9e866fc393542696b79ec172ab01d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pausing flag. Indicates the worker threads should not contend for the queue mutex. <br /></td></tr>
-<tr class="separator:aee9e866fc393542696b79ec172ab01d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4098b040b44239c19af9ad433e2b83"><td class="memItemLeft" align="right" valign="top"><a id="a9a4098b040b44239c19af9ad433e2b83"></a>
+std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#a9a4098b040b44239c19af9ad433e2b83">shutDown_</a></td></tr>
+<tr class="memdesc:a9a4098b040b44239c19af9ad433e2b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutting down flag. <br /></td></tr>
+<tr class="separator:a9a4098b040b44239c19af9ad433e2b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34d3942910d40ac9dd5811ed0ba1cf0"><td class="memItemLeft" align="right" valign="top"><a id="ab34d3942910d40ac9dd5811ed0ba1cf0"></a>
+std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#ab34d3942910d40ac9dd5811ed0ba1cf0">pausing_</a></td></tr>
+<tr class="memdesc:ab34d3942910d40ac9dd5811ed0ba1cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pausing flag. Indicates the worker threads should not contend for the queue mutex. <br /></td></tr>
+<tr class="separator:ab34d3942910d40ac9dd5811ed0ba1cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef9f213bd32e658774120971666ddf6b"><td class="memItemLeft" align="right" valign="top"><a id="aef9f213bd32e658774120971666ddf6b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_work_queue.html#aef9f213bd32e658774120971666ddf6b">paused_</a></td></tr>
 <tr class="memdesc:aef9f213bd32e658774120971666ddf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paused flag. Indicates the queue mutex being locked to prevent worker threads using up CPU time. <br /></td></tr>

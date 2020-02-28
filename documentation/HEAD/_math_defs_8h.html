@@ -110,6 +110,11 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ad07fe6714e55ddc0083fd5989002d6a2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#ad07fe6714e55ddc0083fd5989002d6a2">Urho3D::IsNaN</a> (T value)</td></tr>
 <tr class="memdesc:ad07fe6714e55ddc0083fd5989002d6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a floating point value is NaN. <br /></td></tr>
 <tr class="separator:ad07fe6714e55ddc0083fd5989002d6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95082a062c63366e261a7141354c8a53"><td class="memTemplParams" colspan="2"><a id="a95082a062c63366e261a7141354c8a53"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a95082a062c63366e261a7141354c8a53"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a95082a062c63366e261a7141354c8a53">Urho3D::IsInf</a> (T value)</td></tr>
+<tr class="memdesc:a95082a062c63366e261a7141354c8a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a floating point value is positive or negative infinity. <br /></td></tr>
+<tr class="separator:a95082a062c63366e261a7141354c8a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a937fef228b452d2488ce13d78f0bd810"><td class="memTemplParams" colspan="2"><a id="a937fef228b452d2488ce13d78f0bd810"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a937fef228b452d2488ce13d78f0bd810"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a937fef228b452d2488ce13d78f0bd810">Urho3D::Clamp</a> (T value, T min, T max)</td></tr>
@@ -170,11 +175,15 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5cba0374723cae00759052bcebc3960e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a5cba0374723cae00759052bcebc3960e">Urho3D::Sqrt</a> (T x)</td></tr>
 <tr class="memdesc:a5cba0374723cae00759052bcebc3960e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return square root of X. <br /></td></tr>
 <tr class="separator:a5cba0374723cae00759052bcebc3960e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e7cf1a561b55cdfa235a274a40cc81"><td class="memTemplParams" colspan="2"><a id="a09e7cf1a561b55cdfa235a274a40cc81"></a>
+<tr class="memitem:a8f85ed243d4a793a76b0283a27f50302"><td class="memTemplParams" colspan="2">template&lt;class T , typename std::enable_if&lt; std::is_floating_point&lt; T &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:a8f85ed243d4a793a76b0283a27f50302"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a8f85ed243d4a793a76b0283a27f50302">Urho3D::Mod</a> (T x, T y)</td></tr>
+<tr class="memdesc:a8f85ed243d4a793a76b0283a27f50302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return remainder of X/Y for float values.  <a href="_math_defs_8h.html#a8f85ed243d4a793a76b0283a27f50302">More...</a><br /></td></tr>
+<tr class="separator:a8f85ed243d4a793a76b0283a27f50302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174186e576ebcfaaa293873bb2f01a19"><td class="memTemplParams" colspan="2"><a id="a174186e576ebcfaaa293873bb2f01a19"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a09e7cf1a561b55cdfa235a274a40cc81"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a09e7cf1a561b55cdfa235a274a40cc81">Urho3D::Mod</a> (T x, T y)</td></tr>
-<tr class="memdesc:a09e7cf1a561b55cdfa235a274a40cc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return floating-point remainder of X/Y. <br /></td></tr>
-<tr class="separator:a09e7cf1a561b55cdfa235a274a40cc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174186e576ebcfaaa293873bb2f01a19"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a174186e576ebcfaaa293873bb2f01a19">Urho3D::AbsMod</a> (T x, T y)</td></tr>
+<tr class="memdesc:a174186e576ebcfaaa293873bb2f01a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return always positive remainder of X/Y. <br /></td></tr>
+<tr class="separator:a174186e576ebcfaaa293873bb2f01a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1addf32ffcf84cac95ca33a7d0bd8bc8"><td class="memTemplParams" colspan="2"><a id="a1addf32ffcf84cac95ca33a7d0bd8bc8"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1addf32ffcf84cac95ca33a7d0bd8bc8"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a1addf32ffcf84cac95ca33a7d0bd8bc8">Urho3D::Fract</a> (T value)</td></tr>
@@ -228,6 +237,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_mat
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a40d33200d2bcbe345b556045ca344b29">Urho3D::NextPowerOfTwo</a> (unsigned value)</td></tr>
 <tr class="memdesc:a40d33200d2bcbe345b556045ca344b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round up to next power of two. <br /></td></tr>
 <tr class="separator:a40d33200d2bcbe345b556045ca344b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fcc2ac9844e904c502664b0920d54f"><td class="memItemLeft" align="right" valign="top"><a id="a88fcc2ac9844e904c502664b0920d54f"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a88fcc2ac9844e904c502664b0920d54f">Urho3D::ClosestPowerOfTwo</a> (unsigned value)</td></tr>
+<tr class="memdesc:a88fcc2ac9844e904c502664b0920d54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round up or down to the closest power of two. <br /></td></tr>
+<tr class="separator:a88fcc2ac9844e904c502664b0920d54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40930b7b71e52ee4d2562ba58a63317"><td class="memItemLeft" align="right" valign="top"><a id="aa40930b7b71e52ee4d2562ba58a63317"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#aa40930b7b71e52ee4d2562ba58a63317">Urho3D::LogBaseTwo</a> (unsigned value)</td></tr>
 <tr class="memdesc:aa40930b7b71e52ee4d2562ba58a63317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return log base two or the MSB position of the given value. <br /></td></tr>
@@ -236,10 +249,10 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a66f1c3f10121770fd4beebe9b463a96f">Urho3D::CountSetBits</a> (unsigned value)</td></tr>
 <tr class="memdesc:a66f1c3f10121770fd4beebe9b463a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of set bits in a mask. <br /></td></tr>
 <tr class="separator:a66f1c3f10121770fd4beebe9b463a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b59c071212844aa8d3bf12d90128a1"><td class="memItemLeft" align="right" valign="top"><a id="a46b59c071212844aa8d3bf12d90128a1"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a46b59c071212844aa8d3bf12d90128a1">Urho3D::SDBMHash</a> (unsigned hash, unsigned char c)</td></tr>
-<tr class="memdesc:a46b59c071212844aa8d3bf12d90128a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a hash with the given 8-bit value using the SDBM algorithm. <br /></td></tr>
-<tr class="separator:a46b59c071212844aa8d3bf12d90128a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0335c57ff0432163082a3d6d84c47b"><td class="memItemLeft" align="right" valign="top"><a id="aab0335c57ff0432163082a3d6d84c47b"></a>
+constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#aab0335c57ff0432163082a3d6d84c47b">Urho3D::SDBMHash</a> (unsigned hash, unsigned char c)</td></tr>
+<tr class="memdesc:aab0335c57ff0432163082a3d6d84c47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a hash with the given 8-bit value using the SDBM algorithm. <br /></td></tr>
+<tr class="separator:aab0335c57ff0432163082a3d6d84c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b4fa80f10e34623ced9d751d1c113e"><td class="memItemLeft" align="right" valign="top"><a id="a92b4fa80f10e34623ced9d751d1c113e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_defs_8h.html#a92b4fa80f10e34623ced9d751d1c113e">Urho3D::Random</a> ()</td></tr>
 <tr class="memdesc:a92b4fa80f10e34623ced9d751d1c113e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a random float between 0.0 (inclusive) and 1.0 (exclusive.) <br /></td></tr>
@@ -325,4 +338,58 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><b>Urho3D:
 static const float&#160;</td><td class="memItemRight" valign="bottom"><b>Urho3D::M_RADTODEG</b> = 1.0f / M_DEGTORAD</td></tr>
 <tr class="separator:aef1daaade12671fdd4f3ae2d024811d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h3 class="groupheader">Function Documentation</h3>
+<a id="file_a8f85ed243d4a793a76b0283a27f50302"></a>
+<h3 class="memtitle"><span class="permalink"><a href="#file_a8f85ed243d4a793a76b0283a27f50302">&#9670;&nbsp;</a></span>Mod()</h3>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , typename std::enable_if&lt; std::is_floating_point&lt; T &gt;::value &gt;::type *  = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T Urho3D::Mod </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return remainder of X/Y for float values. </p>
+<p>Return remainder of X/Y for integer values. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_math_defs_8h_a8f85ed243d4a793a76b0283a27f50302_cgraph.svg" width="118" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_math_defs_8h_a8f85ed243d4a793a76b0283a27f50302_icgraph.svg" width="402" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
