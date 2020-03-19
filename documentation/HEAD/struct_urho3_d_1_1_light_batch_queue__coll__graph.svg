@@ -60,18 +60,18 @@ var sectionId = 'dynsection-0';
 <polygon fill="#bfbfbf" stroke="#000000" points="817.5,-342.5 817.5,-361.5 960.5,-361.5 960.5,-342.5 817.5,-342.5"/>
 <text text-anchor="middle" x="889" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::LightBatchQueue</text>
 </g>
-<!-- Node90 -->
+<!-- Node92 -->
 <g id="node21" class="node">
-<title>Node90</title>
+<title>Node92</title>
 <g id="a_node21"><a xlink:href="class_urho3_d_1_1_light.html" target="_top" xlink:title="Light component. ">
 <polygon fill="none" stroke="#ff0000" points="1091,-363.5 1091,-382.5 1174,-382.5 1174,-363.5 1091,-363.5"/>
 <text text-anchor="middle" x="1132.5" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Light</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node90 -->
+<!-- Node1&#45;&gt;Node92 -->
 <g id="edge34" class="edge">
-<title>Node1&#45;&gt;Node90</title>
+<title>Node1&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M971.0154,-354.1999C1002.928,-355.6458 1039.7488,-358.0394 1073,-362 1078.8415,-362.6958 1084.9744,-363.6135 1090.9919,-364.6228"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="970.9783,-350.6952 960.8374,-353.763 970.678,-357.6888 970.9783,-350.6952"/>
 <text text-anchor="middle" x="1029" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> lightQueue_</text>
@@ -93,18 +93,18 @@ var sectionId = 'dynsection-0';
 <polygon fill="#9a32cd" stroke="#9a32cd" points="687.7715,-512.5295 679.3064,-518.9007 689.897,-519.199 687.7715,-512.5295"/>
 <text text-anchor="middle" x="752" y="-512" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> vertexLights_</text>
 </g>
-<!-- Node91 -->
+<!-- Node93 -->
 <g id="node22" class="node">
-<title>Node91</title>
+<title>Node93</title>
 <g id="a_node22"><a xlink:href="class_urho3_d_1_1_drawable.html" target="_top" xlink:title="Base class for visible components. ">
 <polygon fill="none" stroke="#ff0000" points="1262,-396.5 1262,-415.5 1368,-415.5 1368,-396.5 1262,-396.5"/>
 <text text-anchor="middle" x="1315" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Drawable</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node91 -->
+<!-- Node2&#45;&gt;Node93 -->
 <g id="edge31" class="edge">
-<title>Node2&#45;&gt;Node91</title>
+<title>Node2&#45;&gt;Node93</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M703.1649,-529.0825C731.1397,-526.7959 763.6533,-523.7451 793,-520 918.1703,-504.0265 949.8066,-500.3158 1073,-473 1149.822,-455.9662 1238.6197,-429.6447 1284.3146,-415.6007"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="702.7666,-525.6031 693.078,-529.8903 703.3255,-532.5808 702.7666,-525.6031"/>
 <text text-anchor="middle" x="1029" y="-505" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> vertexLights_</text>
@@ -374,9 +374,9 @@ var sectionId = 'dynsection-0';
 <path fill="none" stroke="#191970" d="M376.3884,-57.1049C425.1785,-65.733 496.3707,-80.5778 556,-102 578.1137,-109.9445 602.055,-122.6888 617.3849,-131.4331"/>
 <polygon fill="#191970" stroke="#191970" points="376.7808,-53.6208 366.3293,-55.358 375.583,-60.5175 376.7808,-53.6208"/>
 </g>
-<!-- Node85 -->
+<!-- Node87 -->
 <g id="node16" class="node">
-<title>Node85</title>
+<title>Node87</title>
 <g id="a_node16"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Texture \&gt;">
 <polygon fill="none" stroke="#000000" points="3,-178 3,-208 118,-208 118,-178 3,-178"/>
 <text text-anchor="start" x="11" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -384,47 +384,47 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node19&#45;&gt;Node85 -->
+<!-- Node19&#45;&gt;Node87 -->
 <g id="edge22" class="edge">
-<title>Node19&#45;&gt;Node85</title>
+<title>Node19&#45;&gt;Node87</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M260.9894,-52.7487C252.0306,-55.7742 243.5793,-60.3015 237,-67 210.2454,-94.2391 245.3431,-123.3628 219,-151 193.172,-178.0968 152.0566,-188.4379 118.1742,-192.0875"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="262.1397,-56.0621 270.8453,-50.0235 260.2742,-49.3152 262.1397,-56.0621"/>
 <text text-anchor="middle" x="179" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node85&#45;&gt;Node19 -->
+<!-- Node87&#45;&gt;Node19 -->
 <g id="edge21" class="edge">
-<title>Node85&#45;&gt;Node19</title>
+<title>Node87&#45;&gt;Node19</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M114.7086,-172.684C116.9055,-171.217 119.0153,-169.657 121,-168 132.3564,-158.5186 128.9055,-150.815 139,-140 176.0586,-100.2963 187.7382,-89.8693 237,-67 247.5423,-62.1058 259.4547,-58.415 270.8513,-55.6535"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="112.7176,-169.7949 105.8832,-177.8907 116.2745,-175.8239 112.7176,-169.7949"/>
 <text text-anchor="middle" x="179" y="-143" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> backupTexture_</text>
 </g>
-<!-- Node85&#45;&gt;Node90 -->
+<!-- Node87&#45;&gt;Node92 -->
 <g id="edge37" class="edge">
-<title>Node85&#45;&gt;Node90</title>
+<title>Node87&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M128.291,-209.7539C180.0563,-221.0864 253.3395,-234 318.5,-234 318.5,-234 318.5,-234 889,-234 977.6497,-234 999.892,-260.8603 1073,-311 1094.8997,-326.0195 1115.111,-350.127 1125.3942,-363.4232"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="128.7555,-206.2716 118.2336,-207.5128 127.2329,-213.104 128.7555,-206.2716"/>
 <text text-anchor="middle" x="633.5" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> shapeTexture_</text>
 <text text-anchor="middle" x="633.5" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">rampTexture_</text>
 </g>
-<!-- Node86 -->
+<!-- Node88 -->
 <g id="node17" class="node">
-<title>Node86</title>
+<title>Node88</title>
 <g id="a_node17"><a xlink:href="class_urho3_d_1_1_color.html" target="_top" xlink:title="RGBA color. ">
 <polygon fill="none" stroke="#ff0000" points="18,-.5 18,-19.5 103,-19.5 103,-.5 18,-.5"/>
 <text text-anchor="middle" x="60.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Color</text>
 </a>
 </g>
 </g>
-<!-- Node86&#45;&gt;Node19 -->
+<!-- Node88&#45;&gt;Node19 -->
 <g id="edge23" class="edge">
-<title>Node86&#45;&gt;Node19</title>
+<title>Node88&#45;&gt;Node19</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M113.1898,-19.7223C121.8047,-21.2183 130.6435,-22.6968 139,-24 183.5783,-30.9519 234.5814,-37.6512 270.7993,-42.1967"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="113.6771,-16.2544 103.2217,-17.9677 112.4635,-23.1484 113.6771,-16.2544"/>
 <text text-anchor="middle" x="179" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> borderColor_</text>
 </g>
-<!-- Node86&#45;&gt;Node86 -->
+<!-- Node88&#45;&gt;Node88 -->
 <g id="edge24" class="edge">
-<title>Node86&#45;&gt;Node86</title>
+<title>Node88&#45;&gt;Node88</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M38.5507,-29.0292C39.748,-34.128 47.0644,-38 60.5,-38 81.4727,-38 87.5351,-28.5653 78.6872,-19.7571"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="41.7962,-30.3393 42.3128,-19.7571 35.3098,-27.7074 41.7962,-30.3393"/>
 <text text-anchor="middle" x="60.5" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> TRANSPARENT_BLACK</text>
@@ -439,16 +439,16 @@ var sectionId = 'dynsection-0';
 <text text-anchor="middle" x="60.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GREEN</text>
 <text text-anchor="middle" x="60.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
 </g>
-<!-- Node86&#45;&gt;Node90 -->
+<!-- Node88&#45;&gt;Node92 -->
 <g id="edge38" class="edge">
-<title>Node86&#45;&gt;Node90</title>
+<title>Node88&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M113.4327,-10C165.5861,-10 247.5332,-10 318.5,-10 318.5,-10 318.5,-10 889,-10 1064.2975,-10 1121.5014,-305.5634 1131.0023,-363.2906"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="113.4114,-6.5001 103.4114,-10 113.4113,-13.5001 113.4114,-6.5001"/>
 <text text-anchor="middle" x="633.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> color_</text>
 </g>
-<!-- Node54 -->
+<!-- Node56 -->
 <g id="node18" class="node">
-<title>Node54</title>
+<title>Node56</title>
 <g id="a_node18"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Image \&gt;">
 <polygon fill="none" stroke="#ff0000" points="261,-126 261,-156 376,-156 376,-126 261,-126"/>
 <text text-anchor="start" x="269" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -456,16 +456,16 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node54&#45;&gt;Node18 -->
+<!-- Node56&#45;&gt;Node18 -->
 <g id="edge25" class="edge">
-<title>Node54&#45;&gt;Node18</title>
+<title>Node56&#45;&gt;Node18</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M386.3814,-141C443.9863,-141 525.563,-141 578.988,-141"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="386.2759,-137.5001 376.2759,-141 386.2758,-144.5001 386.2759,-137.5001"/>
 <text text-anchor="middle" x="487" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> loadImage_</text>
 </g>
-<!-- Node88 -->
+<!-- Node90 -->
 <g id="node19" class="node">
-<title>Node88</title>
+<title>Node90</title>
 <g id="a_node19"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::RenderSurface \&gt;">
 <polygon fill="none" stroke="#ff0000" points="246.5,-77 246.5,-107 390.5,-107 390.5,-77 246.5,-77"/>
 <text text-anchor="start" x="254.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -473,16 +473,16 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node88&#45;&gt;Node18 -->
+<!-- Node90&#45;&gt;Node18 -->
 <g id="edge26" class="edge">
-<title>Node88&#45;&gt;Node18</title>
+<title>Node90&#45;&gt;Node18</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M400.7872,-102.77C446.5728,-109.016 504.5423,-117.3423 556,-126 565.7305,-127.6372 576.118,-129.5399 586.0232,-131.4294"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="400.996,-99.2664 390.6161,-101.3893 400.0544,-106.2027 400.996,-99.2664"/>
 <text text-anchor="middle" x="487" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> renderSurface_</text>
 </g>
-<!-- Node89 -->
+<!-- Node91 -->
 <g id="node20" class="node">
-<title>Node89</title>
+<title>Node91</title>
 <g id="a_node20"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::XMLFile \&gt;">
 <polygon fill="none" stroke="#ff0000" points="261,-175 261,-205 376,-205 376,-175 261,-175"/>
 <text text-anchor="start" x="269" y="-193" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -490,77 +490,77 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node89&#45;&gt;Node18 -->
+<!-- Node91&#45;&gt;Node18 -->
 <g id="edge27" class="edge">
-<title>Node89&#45;&gt;Node18</title>
+<title>Node91&#45;&gt;Node18</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M386.393,-181.1799C433.9667,-174.7798 498.981,-165.5934 556,-156 565.7305,-154.3628 576.118,-152.4601 586.0232,-150.5706"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="385.6597,-177.7468 376.2126,-182.5428 386.5886,-184.6849 385.6597,-177.7468"/>
 <text text-anchor="middle" x="487" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> loadParameters_</text>
 </g>
-<!-- Node90&#45;&gt;Node1 -->
+<!-- Node92&#45;&gt;Node1 -->
 <g id="edge29" class="edge">
-<title>Node90&#45;&gt;Node1</title>
+<title>Node92&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1118.1757,-355.8321C1107.1961,-344.0971 1090.9228,-329.5307 1073,-323 1016.0291,-302.2409 943.8064,-327.4474 909.2349,-342.4232"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1115.623,-358.2285 1124.8864,-363.3704 1120.8514,-353.574 1115.623,-358.2285"/>
 <text text-anchor="middle" x="1029" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> light_</text>
 </g>
-<!-- Node90&#45;&gt;Node91 -->
+<!-- Node92&#45;&gt;Node93 -->
 <g id="edge32" class="edge">
-<title>Node90&#45;&gt;Node91</title>
+<title>Node92&#45;&gt;Node93</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1183.9768,-382.5359C1186.6901,-383.0326 1189.3774,-383.523 1192,-384 1214.837,-388.1533 1240.0715,-392.678 1261.7098,-396.5382"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1184.574,-379.0871 1174.1063,-380.7238 1183.3099,-385.9721 1184.574,-379.0871"/>
 <text text-anchor="middle" x="1218" y="-396" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> firstLight_</text>
 </g>
-<!-- Node91&#45;&gt;Node90 -->
+<!-- Node93&#45;&gt;Node92 -->
 <g id="edge30" class="edge">
-<title>Node91&#45;&gt;Node90</title>
+<title>Node93&#45;&gt;Node92</title>
 <path fill="none" stroke="#191970" d="M1273.3404,-393.8348C1263.7599,-391.3214 1253.573,-388.8728 1244,-387 1221.024,-382.5051 1195.0885,-379.148 1174.0164,-376.8497"/>
 <polygon fill="#191970" stroke="#191970" points="1272.487,-397.2296 1283.0535,-396.4562 1274.3109,-390.4714 1272.487,-397.2296"/>
 </g>
-<!-- Node161 -->
+<!-- Node163 -->
 <g id="node23" class="node">
-<title>Node161</title>
+<title>Node163</title>
 <g id="a_node23"><a xlink:href="struct_urho3_d_1_1_cascade_parameters.html" target="_top" xlink:title="Cascaded shadow map parameters. ">
 <polygon fill="none" stroke="#ff0000" points="811,-456.5 811,-475.5 967,-475.5 967,-456.5 811,-456.5"/>
 <text text-anchor="middle" x="889" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::CascadeParameters</text>
 </a>
 </g>
 </g>
-<!-- Node161&#45;&gt;Node90 -->
+<!-- Node163&#45;&gt;Node92 -->
 <g id="edge33" class="edge">
-<title>Node161&#45;&gt;Node90</title>
+<title>Node163&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M977.1655,-459.8085C1008.7352,-454.9114 1043.7254,-446.2519 1073,-431 1095.7724,-419.1357 1115.6428,-395.7295 1125.6372,-382.5678"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="976.4444,-456.3762 967.0474,-461.2698 977.445,-463.3043 976.4444,-456.3762"/>
 <text text-anchor="middle" x="1029" y="-461" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> shadowCascade_</text>
 </g>
-<!-- Node162 -->
+<!-- Node164 -->
 <g id="node24" class="node">
-<title>Node162</title>
+<title>Node164</title>
 <g id="a_node24"><a xlink:href="struct_urho3_d_1_1_focus_parameters.html" target="_top" xlink:title="Shadow map focusing parameters. ">
 <polygon fill="none" stroke="#000000" points="817.5,-418.5 817.5,-437.5 960.5,-437.5 960.5,-418.5 817.5,-418.5"/>
 <text text-anchor="middle" x="889" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::FocusParameters</text>
 </a>
 </g>
 </g>
-<!-- Node162&#45;&gt;Node90 -->
+<!-- Node164&#45;&gt;Node92 -->
 <g id="edge35" class="edge">
-<title>Node162&#45;&gt;Node90</title>
+<title>Node164&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M970.9113,-418.8694C1003.1099,-414.1881 1040.1575,-407.4332 1073,-398 1086.7846,-394.0407 1101.6596,-387.7907 1113.0885,-382.5305"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="970.0527,-415.4558 960.6391,-420.3173 971.0297,-422.3873 970.0527,-415.4558"/>
 <text text-anchor="middle" x="1029" y="-419" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> shadowFocus_</text>
 </g>
-<!-- Node163 -->
+<!-- Node165 -->
 <g id="node25" class="node">
-<title>Node163</title>
+<title>Node165</title>
 <g id="a_node25"><a xlink:href="struct_urho3_d_1_1_bias_parameters.html" target="_top" xlink:title="Depth bias parameters. Used both by lights (for shadow mapping) and materials. ">
 <polygon fill="none" stroke="#000000" points="821,-380.5 821,-399.5 957,-399.5 957,-380.5 821,-380.5"/>
 <text text-anchor="middle" x="889" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::BiasParameters</text>
 </a>
 </g>
 </g>
-<!-- Node163&#45;&gt;Node90 -->
+<!-- Node165&#45;&gt;Node92 -->
 <g id="edge36" class="edge">
-<title>Node163&#45;&gt;Node90</title>
+<title>Node165&#45;&gt;Node92</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M967.1388,-384.5447C1008.1916,-381.6786 1056.8672,-378.2803 1090.7333,-375.9159"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="966.884,-381.0539 957.1521,-385.2419 967.3716,-388.0369 966.884,-381.0539"/>
 <text text-anchor="middle" x="1029" y="-386" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> shadowBias_</text>
