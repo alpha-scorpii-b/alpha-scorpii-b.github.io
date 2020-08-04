@@ -383,9 +383,9 @@ var sectionId = 'dynsection-1';
 <polygon fill="#9a32cd" stroke="#9a32cd" points="558.6215,-265.2929 548.0517,-266.0212 556.7687,-272.0432 558.6215,-265.2929"/>
 <text text-anchor="middle" x="645" y="-349" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> impl_</text>
 </g>
-<!-- Node103 -->
+<!-- Node104 -->
 <g id="node18" class="node">
-<title>Node103</title>
+<title>Node104</title>
 <g id="a_node18"><a xlink:href="class_urho3_d_1_1_weak_ptr.html" target="_top" xlink:title="Urho3D::WeakPtr\&lt; Urho3D\l::Audio \&gt;">
 <polygon fill="none" stroke="#000000" points="915,-166 915,-196 1063,-196 1063,-166 915,-166"/>
 <text text-anchor="start" x="923" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::WeakPtr&lt; Urho3D</text>
@@ -393,25 +393,25 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node103&#45;&gt;Node8 -->
+<!-- Node104&#45;&gt;Node8 -->
 <g id="edge24" class="edge">
-<title>Node103&#45;&gt;Node8</title>
+<title>Node104&#45;&gt;Node8</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1073.0692,-174.1037C1109.1447,-171.1444 1150.5186,-167.7504 1183.6384,-165.0336"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1072.7262,-170.62 1063.0458,-174.9259 1073.2985,-177.5966 1072.7262,-170.62"/>
 <text text-anchor="middle" x="1123.5" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> audio_</text>
 </g>
-<!-- Node104 -->
+<!-- Node105 -->
 <g id="node19" class="node">
-<title>Node104</title>
+<title>Node105</title>
 <g id="a_node19"><a xlink:href="class_urho3_d_1_1_audio.html" target="_top" xlink:title="Audio subsystem. ">
 <polygon fill="none" stroke="#ff0000" points="720,-182.5 720,-201.5 807,-201.5 807,-182.5 720,-182.5"/>
 <text text-anchor="middle" x="763.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Audio</text>
 </a>
 </g>
 </g>
-<!-- Node104&#45;&gt;Node103 -->
+<!-- Node105&#45;&gt;Node104 -->
 <g id="edge25" class="edge">
-<title>Node104&#45;&gt;Node103</title>
+<title>Node105&#45;&gt;Node104</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M817.2362,-189.3787C846.4006,-187.9561 882.9002,-186.1756 914.7443,-184.6222"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="817.0636,-185.8829 807.246,-189.866 817.4047,-192.8746 817.0636,-185.8829"/>
 <text text-anchor="middle" x="870.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
@@ -425,16 +425,16 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node14&#45;&gt;Node103 -->
+<!-- Node14&#45;&gt;Node104 -->
 <g id="edge26" class="edge">
-<title>Node14&#45;&gt;Node103</title>
+<title>Node14&#45;&gt;Node104</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M825.7912,-161.4584C853.29,-164.7509 885.8339,-168.6475 914.5978,-172.0915"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="825.8626,-157.942 815.5174,-160.2282 825.0304,-164.8924 825.8626,-157.942"/>
 <text text-anchor="middle" x="870.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> refCount_</text>
 </g>
-<!-- Node110 -->
+<!-- Node111 -->
 <g id="node21" class="node">
-<title>Node110</title>
+<title>Node111</title>
 <g id="a_node21"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::SoundStream \&gt;">
 <polygon fill="none" stroke="#000000" points="919.5,-117 919.5,-147 1058.5,-147 1058.5,-117 919.5,-117"/>
 <text text-anchor="start" x="927.5" y="-135" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -442,32 +442,32 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node110&#45;&gt;Node8 -->
+<!-- Node111&#45;&gt;Node8 -->
 <g id="edge27" class="edge">
-<title>Node110&#45;&gt;Node8</title>
+<title>Node111&#45;&gt;Node8</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1068.9106,-140.4666C1099.311,-143.7168 1134.2618,-147.4887 1166,-151 1171.7625,-151.6375 1177.7606,-152.3081 1183.7619,-152.9838"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1069.1017,-136.9672 1058.7866,-139.3855 1068.3584,-143.9276 1069.1017,-136.9672"/>
 <text text-anchor="middle" x="1123.5" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> soundStream_</text>
 </g>
-<!-- Node111 -->
+<!-- Node112 -->
 <g id="node22" class="node">
-<title>Node111</title>
+<title>Node112</title>
 <g id="a_node22"><a xlink:href="class_urho3_d_1_1_sound_stream.html" target="_top" xlink:title="Base class for sound streams. ">
 <polygon fill="none" stroke="#ff0000" points="701,-106.5 701,-125.5 826,-125.5 826,-106.5 701,-106.5"/>
 <text text-anchor="middle" x="763.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SoundStream</text>
 </a>
 </g>
 </g>
-<!-- Node111&#45;&gt;Node110 -->
+<!-- Node112&#45;&gt;Node111 -->
 <g id="edge28" class="edge">
-<title>Node111&#45;&gt;Node110</title>
+<title>Node112&#45;&gt;Node111</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M836.2039,-117.6463C855.9473,-118.3869 877.3098,-119.4567 897,-121 904.2166,-121.5656 911.7388,-122.2723 919.2362,-123.0529"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="836.1614,-114.1428 826.0443,-117.2883 835.9148,-121.1384 836.1614,-114.1428"/>
 <text text-anchor="middle" x="870.5" y="-124" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>
 </g>
-<!-- Node112 -->
+<!-- Node113 -->
 <g id="node23" class="node">
-<title>Node112</title>
+<title>Node113</title>
 <g id="a_node23"><a xlink:href="class_urho3_d_1_1_shared_ptr.html" target="_top" xlink:title="Urho3D::SharedPtr\&lt;\l Urho3D::Sound \&gt;">
 <polygon fill="none" stroke="#000000" points="931.5,-68 931.5,-98 1046.5,-98 1046.5,-68 931.5,-68"/>
 <text text-anchor="start" x="939.5" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::SharedPtr&lt;</text>
@@ -475,26 +475,26 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node112&#45;&gt;Node8 -->
+<!-- Node113&#45;&gt;Node8 -->
 <g id="edge29" class="edge">
-<title>Node112&#45;&gt;Node8</title>
+<title>Node113&#45;&gt;Node8</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1056.9938,-90.4265C1090.4958,-95.3958 1131.0925,-103.406 1166,-116 1190.2185,-124.7376 1215.8287,-140.3378 1231.1082,-150.4219"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1057.2322,-86.9252 1046.8386,-88.9802 1056.2451,-93.8553 1057.2322,-86.9252"/>
 <text text-anchor="middle" x="1123.5" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> streamBuffer_</text>
 <text text-anchor="middle" x="1123.5" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sound_</text>
 </g>
-<!-- Node113 -->
+<!-- Node114 -->
 <g id="node24" class="node">
-<title>Node113</title>
+<title>Node114</title>
 <g id="a_node24"><a xlink:href="class_urho3_d_1_1_sound.html" target="_top" xlink:title="Sound resource. ">
 <polygon fill="none" stroke="#ff0000" points="719,-68.5 719,-87.5 808,-87.5 808,-68.5 719,-68.5"/>
 <text text-anchor="middle" x="763.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Sound</text>
 </a>
 </g>
 </g>
-<!-- Node113&#45;&gt;Node112 -->
+<!-- Node114&#45;&gt;Node113 -->
 <g id="edge30" class="edge">
-<title>Node113&#45;&gt;Node112</title>
+<title>Node114&#45;&gt;Node113</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M818.3346,-79.2158C852.5468,-79.9744 896.5248,-80.9496 931.269,-81.7199"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="818.1267,-75.7105 808.0515,-78.9878 817.9715,-82.7087 818.1267,-75.7105"/>
 <text text-anchor="middle" x="870.5" y="-83" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> ptr_</text>

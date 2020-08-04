@@ -447,18 +447,18 @@ var sectionId = 'dynsection-1';
 <text text-anchor="middle" x="782.5" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FORWARD</text>
 <text text-anchor="middle" x="782.5" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">UP</text>
 </g>
-<!-- Node101 -->
+<!-- Node102 -->
 <g id="node25" class="node">
-<title>Node101</title>
+<title>Node102</title>
 <g id="a_node25"><a xlink:href="class_urho3_d_1_1_bounding_box.html" target="_top" xlink:title="Three&#45;dimensional axis&#45;aligned bounding box. ">
 <polygon fill="none" stroke="#000000" points="1187,-.5 1187,-19.5 1311,-19.5 1311,-.5 1187,-.5"/>
 <text text-anchor="middle" x="1249" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::BoundingBox</text>
 </a>
 </g>
 </g>
-<!-- Node81&#45;&gt;Node101 -->
+<!-- Node81&#45;&gt;Node102 -->
 <g id="edge34" class="edge">
-<title>Node81&#45;&gt;Node101</title>
+<title>Node81&#45;&gt;Node102</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M840.7778,-17.0006C929.0992,-15.486 1096.1316,-12.6215 1186.7491,-11.0675"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="840.6051,-13.5029 830.6666,-17.174 840.7252,-20.5019 840.6051,-13.5029"/>
 <text text-anchor="middle" x="944.5" y="-30" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> max_</text>
@@ -481,9 +481,9 @@ var sectionId = 'dynsection-1';
 <polygon fill="#9a32cd" stroke="#9a32cd" points="852.1984,-505.2244 843.0517,-510.5712 853.5363,-512.0954 852.1984,-505.2244"/>
 <text text-anchor="middle" x="944.5" y="-498" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> impl_</text>
 </g>
-<!-- Node99 -->
+<!-- Node100 -->
 <g id="node23" class="node">
-<title>Node99</title>
+<title>Node100</title>
 <g id="a_node23"><a xlink:href="class_urho3_d_1_1_vector.html" target="_top" xlink:title="Urho3D::Vector\&lt; Urho3D\l::SharedPtr\&lt; Urho3D::Node \&gt; \&gt;">
 <polygon fill="none" stroke="#ff0000" points="696.5,-454 696.5,-484 868.5,-484 868.5,-454 696.5,-454"/>
 <text text-anchor="start" x="704.5" y="-472" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Vector&lt; Urho3D</text>
@@ -491,40 +491,40 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node99&#45;&gt;Node47 -->
+<!-- Node100&#45;&gt;Node47 -->
 <g id="edge30" class="edge">
-<title>Node99&#45;&gt;Node47</title>
+<title>Node100&#45;&gt;Node47</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M865.9148,-450.884C872.1175,-448.801 878.2087,-446.5109 884,-444 969.637,-406.8703 1051.3771,-325.6822 1077.9874,-297.704"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="864.5811,-447.6349 856.1029,-453.9886 866.6929,-454.3087 864.5811,-447.6349"/>
 <text text-anchor="middle" x="944.5" y="-439" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> children_</text>
 </g>
-<!-- Node100 -->
+<!-- Node101 -->
 <g id="node24" class="node">
-<title>Node100</title>
+<title>Node101</title>
 <g id="a_node24"><a xlink:href="class_urho3_d_1_1_matrix3x4.html" target="_top" xlink:title="3x4 matrix for scene node transform calculations. ">
 <polygon fill="none" stroke="#000000" points="728.5,-375.5 728.5,-394.5 836.5,-394.5 836.5,-375.5 728.5,-375.5"/>
 <text text-anchor="middle" x="782.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Urho3D::Matrix3x4</text>
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node47 -->
+<!-- Node101&#45;&gt;Node47 -->
 <g id="edge31" class="edge">
-<title>Node100&#45;&gt;Node47</title>
+<title>Node101&#45;&gt;Node47</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M846.6116,-374.1685C859.0699,-371.7345 871.9863,-368.9799 884,-366 930.5262,-354.4594 942.2419,-351.1637 987,-334 1015.9055,-322.9154 1048.2726,-307.439 1068.145,-297.568"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="845.9119,-370.7388 836.7444,-376.05 847.2231,-377.6149 845.9119,-370.7388"/>
 <text text-anchor="middle" x="944.5" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> worldTransform_</text>
 </g>
-<!-- Node100&#45;&gt;Node100 -->
+<!-- Node101&#45;&gt;Node101 -->
 <g id="edge32" class="edge">
-<title>Node100&#45;&gt;Node100</title>
+<title>Node101&#45;&gt;Node101</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M752.1856,-403.2746C753.0499,-408.741 763.1547,-413 782.5,-413 811.293,-413 819.6159,-403.5653 807.4689,-394.7571"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="755.1799,-405.0877 757.5311,-394.7571 749.2508,-401.3667 755.1799,-405.0877"/>
 <text text-anchor="middle" x="782.5" y="-427" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> IDENTITY</text>
 <text text-anchor="middle" x="782.5" y="-416" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ZERO</text>
 </g>
-<!-- Node101&#45;&gt;Node6 -->
+<!-- Node102&#45;&gt;Node6 -->
 <g id="edge33" class="edge">
-<title>Node101&#45;&gt;Node6</title>
+<title>Node102&#45;&gt;Node6</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1283.116,-23.3576C1341.1026,-46.0613 1457.5082,-91.6381 1508.0961,-111.445"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1284.2506,-20.0432 1273.6628,-19.6563 1281.6985,-26.5614 1284.2506,-20.0432"/>
 <text text-anchor="middle" x="1387" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> boundingBox_</text>
