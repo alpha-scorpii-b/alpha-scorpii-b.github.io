@@ -1,13 +1,14 @@
 <map id="Urho3D::NavigationMesh::BuildTile" name="Urho3D::NavigationMesh::BuildTile">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_navigation_mesh.html#a6fc3d8aa1cf4e1c7a69c4946c7c6f720" title="Return bounding box of the tile in the node space. " alt="" coords="249,5,433,47"/>
-<area shape="rect" id="node3" href="$_math_defs_8h.html#a1a55d5f5c4764f0184f60d1577c43478" title="Round value up. " alt="" coords="274,95,409,122"/>
-<area shape="rect" id="node4" href="$_math_defs_8h.html#a52553bebbd1fa9f15fef8cf0254f2481" title="Round value down. Returns integer value. " alt="" coords="270,170,413,197"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_navigation_mesh.html#aa1afd3c3723b93fb9f93f97cc1dc4770" title="Get geometry data within a bounding box. " alt="" coords="249,221,433,263"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_p_o_d_vector.html#a5be72d35fc52d2623985f20b95855d10" title="Return whether vector is empty. " alt="" coords="263,287,419,328"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_p_o_d_vector.html#ab1ba347a0118ed7d9ef79f3026153c88" title="Return number of elements. " alt="" coords="250,353,433,379"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_shared_array_ptr.html#a3140ad32d60cbe06ccfbcbe3c52bd5c7" title="Return the raw pointer. " alt="" coords="237,403,445,430"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_node.html#a39a71635548b048079a15cc563a02895" title="Return world space transform matrix. " alt="" coords="493,141,740,167"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse. " alt="" coords="541,192,693,233"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_vector.html#a5da7101c355895f41098fcf875e4c56a" title="Return size of vector. " alt="" coords="539,258,694,285"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_bounding_box.html#aaf2af3166bfa73be242635232e36ab7c" title="Test if another bounding box is (partially) inside or outside. " alt="" coords="534,309,699,351"/>
+<area shape="rect" id="node1" title="Build one tile of the navigation mesh. Return true if successful." alt="" coords="5,214,191,255"/>
+<area shape="rect" id="node2" href="$_math_defs_8h.html#a1a55d5f5c4764f0184f60d1577c43478" title="Round value up." alt="" coords="275,29,410,56"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_p_o_d_vector.html#a5be72d35fc52d2623985f20b95855d10" title="Return whether vector is empty." alt="" coords="265,81,421,122"/>
+<area shape="rect" id="node4" href="$_math_defs_8h.html#a52553bebbd1fa9f15fef8cf0254f2481" title="Round value down. Returns integer value." alt="" coords="271,171,414,197"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_shared_array_ptr.html#a3140ad32d60cbe06ccfbcbe3c52bd5c7" title="Return the raw pointer." alt="" coords="239,221,447,248"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_navigation_mesh.html#a6fc3d8aa1cf4e1c7a69c4946c7c6f720" title="Return bounding box of the tile in the node space." alt="" coords="250,273,435,314"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_navigation_mesh.html#aa1afd3c3723b93fb9f93f97cc1dc4770" title="Get geometry data within a bounding box." alt="" coords="250,338,435,379"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_p_o_d_vector.html#ab1ba347a0118ed7d9ef79f3026153c88" title="Return number of elements." alt="" coords="251,404,434,431"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_node.html#a39a71635548b048079a15cc563a02895" title="Return world space transform matrix." alt="" coords="495,253,741,280"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse." alt="" coords="541,305,695,346"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_bounding_box.html#aaf2af3166bfa73be242635232e36ab7c" title="Test if another bounding box is (partially) inside or outside." alt="" coords="535,370,701,411"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_vector.html#a5da7101c355895f41098fcf875e4c56a" title="Return size of vector." alt="" coords="541,436,695,463"/>
 </map>

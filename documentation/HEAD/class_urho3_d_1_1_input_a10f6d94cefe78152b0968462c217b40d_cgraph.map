@@ -1,26 +1,27 @@
 <map id="Urho3D::Input::RemoveScreenJoystick" name="Urho3D::Input::RemoveScreenJoystick">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_u_i_element.html#a49a86d0ee7b5d788ec48183668a82d4d" title="Remove from the parent element. If no other shared pointer references exist, causes immediate deletio..." alt="" coords="271,345,425,387"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_u_i_element.html#a9ccf68e4882157d8fc2489ea9b10a658" title="Remove a child element. Starting search at specified index if provided. " alt="" coords="473,345,628,387"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244" title="Return reference count. " alt="" coords="689,171,844,212"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_u_i_element.html#a4a2b495d60912fa836df47c0127f509c" title="Get element which should send child added / removed events. " alt="" coords="676,236,857,277"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_object.html#a69af51cfa67f9626273b35a6d501e03e" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="910,5,1099,47"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_u_i_element.html#a2362f950c4ae81d55c572d0efdfe441e" title="Return root element. " alt="" coords="689,564,844,605"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_object.html#a32020dbf77c196b9777eca479e8abb36" title="Send event to all subscribers. " alt="" coords="905,71,1104,98"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_u_i_element.html#a104379da3ee10e3b255076a6b5e0b6ac" title="Detach from parent. " alt="" coords="689,819,844,860"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_u_i_element.html#a7cba78373c23a734a1ccd2d4a27d8cb0" title="Manually update layout. Should not be necessary in most cases, but is provided for completeness..." alt="" coords="689,404,844,445"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_context.html#acb628095602a49ade116c4761ab44004" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="1152,5,1351,47"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_u_i_element.html#abc8b8b30578aaf470802cd7e5770029f" title="Return parent element. " alt="" coords="927,880,1082,921"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_u_i_element.html#ad18ecc5e79b04d47079bdc979eed8240" title="Mark screen position as needing an update. " alt="" coords="927,945,1082,987"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_u_i_element.html#a7e286d16e39b54282ca0d64666d26b67" title="Disable automatic layout update. Should only be used if there are performance problems. " alt="" coords="923,123,1086,164"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_u_i_element.html#af0d0d929939b0fb4b8d38c7699ecdfa0" title="Return indent width in pixels. " alt="" coords="927,188,1082,229"/>
-<area shape="rect" id="node16" href="$class_urho3_d_1_1_u_i_element.html#a8d8ba4e0f53c653b1defd109f5335246" title="Return whether element itself should be visible. Elements can be also hidden due to the parent being ..." alt="" coords="927,253,1082,295"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_p_o_d_vector.html#a3eb78093c096ab9e9d68595facc56470" title="Add an element at the end. " alt="" coords="1158,349,1345,375"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_u_i_element.html#a8c3df9a7b24aa874345db797a95e130e" title="Return width. " alt="" coords="927,436,1082,477"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_u_i_element.html#a6eca4b74842f82376a1d9a7f889aa174" title="Return effective minimum size, also considering layout. Used internally. " alt="" coords="927,501,1082,543"/>
-<area shape="rect" id="node20" href="$_math_defs_8h.html#a8096c22c3716e172f685af2a5f5e26bb" title="Return the larger of two values. " alt="" coords="1198,538,1305,565"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_u_i_element.html#a829de89e3280b1828723fdac83307bc4" title="Return minimum width. " alt="" coords="927,619,1082,660"/>
-<area shape="rect" id="node22" href="$class_urho3_d_1_1_u_i_element.html#aeac2711ca0e9a80b0facf6c3c4a04513" title="Return layout flex scale. " alt="" coords="927,684,1082,725"/>
-<area shape="rect" id="node23" href="$class_urho3_d_1_1_u_i_element.html#a2c26825089539496dc3c05f2701e9bff" title="Calculate child widths/positions in the layout. " alt="" coords="927,371,1082,412"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_u_i_element.html#aa8ec3dcc9f57f4c5b7d13f60dcb76f38" title="Calculate layout width for resizing the parent element. " alt="" coords="907,749,1102,791"/>
-<area shape="rect" id="node25" href="$class_urho3_d_1_1_u_i_element.html#a74426efba577c8b92f7b49c307d7a446" title="Return height. " alt="" coords="927,815,1082,856"/>
+<area shape="rect" id="node1" title="Remove screen joystick by instance ID." alt="" coords="5,259,224,300"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_u_i_element.html#a49a86d0ee7b5d788ec48183668a82d4d" title="Remove from the parent element. If no other shared pointer references exist, causes immediate deletio..." alt="" coords="272,259,427,300"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_u_i_element.html#a9ccf68e4882157d8fc2489ea9b10a658" title="Remove a child element. Starting search at specified index if provided." alt="" coords="475,259,629,300"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_u_i_element.html#a104379da3ee10e3b255076a6b5e0b6ac" title="Detach from parent." alt="" coords="691,32,845,73"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_u_i_element.html#a4a2b495d60912fa836df47c0127f509c" title="Get element which should send child added / removed events." alt="" coords="677,149,859,191"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_object.html#a69af51cfa67f9626273b35a6d501e03e" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="911,71,1101,112"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_u_i_element.html#a2362f950c4ae81d55c572d0efdfe441e" title="Return root element." alt="" coords="691,488,845,529"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244" title="Return reference count." alt="" coords="691,553,845,595"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_object.html#a32020dbf77c196b9777eca479e8abb36" title="Send event to all subscribers." alt="" coords="907,137,1105,163"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_u_i_element.html#a7cba78373c23a734a1ccd2d4a27d8cb0" title="Manually update layout. Should not be necessary in most cases, but is provided for completeness." alt="" coords="691,423,845,464"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_u_i_element.html#ad18ecc5e79b04d47079bdc979eed8240" title="Mark screen position as needing an update." alt="" coords="929,5,1083,47"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_context.html#acb628095602a49ade116c4761ab44004" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="1153,71,1352,112"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_u_i_element.html#abc8b8b30578aaf470802cd7e5770029f" title="Return parent element." alt="" coords="929,972,1083,1013"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_u_i_element.html#a2c26825089539496dc3c05f2701e9bff" title="Calculate child widths/positions in the layout." alt="" coords="929,188,1083,229"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_u_i_element.html#aa8ec3dcc9f57f4c5b7d13f60dcb76f38" title="Calculate layout width for resizing the parent element." alt="" coords="909,253,1103,295"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_u_i_element.html#a7e286d16e39b54282ca0d64666d26b67" title="Disable automatic layout update. Should only be used if there are performance problems." alt="" coords="925,319,1087,360"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_u_i_element.html#a952c4e37f3ee8fe5615791389d03f813" title="Enable automatic layout update." alt="" coords="927,384,1085,425"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_u_i_element.html#a6eca4b74842f82376a1d9a7f889aa174" title="Return effective minimum size, also considering layout. Used internally." alt="" coords="929,449,1083,491"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_u_i_element.html#aa54260b906ecc9755c56d59530bedd85" title="Return whether anchor positioning &amp; sizing is enabled." alt="" coords="929,515,1083,556"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_u_i_element.html#a74426efba577c8b92f7b49c307d7a446" title="Return height." alt="" coords="929,580,1083,621"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_u_i_element.html#af0d0d929939b0fb4b8d38c7699ecdfa0" title="Return indent width in pixels." alt="" coords="929,645,1083,687"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_u_i_element.html#a94a1fe4987f7861a8010ae1746aabed5" title="Get child element constant position in a layout." alt="" coords="919,711,1093,752"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_u_i_element.html#aeac2711ca0e9a80b0facf6c3c4a04513" title="Return layout flex scale." alt="" coords="929,776,1083,817"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_u_i_element.html#a7fea1c06051cf2ed6e639f4cc2915b18" title="Return minimum height." alt="" coords="929,841,1083,883"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_u_i_element.html#a829de89e3280b1828723fdac83307bc4" title="Return minimum width." alt="" coords="929,907,1083,948"/>
 </map>

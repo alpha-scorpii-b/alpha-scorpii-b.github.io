@@ -1,8 +1,9 @@
 <map id="Urho3D::Connection::ProcessSceneUpdate" name="Urho3D::Connection::ProcessSceneUpdate">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_connection.html#ab9c83a362d77dce88f60294d07c3a4aa" title="Return whether is a client connection. " alt="" coords="223,5,375,47"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_connection.html#a30a6d1fba95a44b4216bc9e89b16d3b3" title="Return an address:port string. " alt="" coords="223,71,375,112"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_deserializer.html#a508036fa8d83b204d775690a1dd8bc4a" title="Read a 24&#45;bit network object ID. " alt="" coords="220,136,377,177"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_connection.html#a57d24ca22583c309942c38c4730cfdc9" title="Return remote address. " alt="" coords="428,5,580,47"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_connection.html#a976445c138637cc95f7224916dbf1418" title="Return remote port. " alt="" coords="428,71,580,112"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_deserializer.html#ae82036f72896194adc1cd02f3b03509b" title="Read bytes from the stream. Return number of bytes actually read. " alt="" coords="425,136,583,177"/>
+<area shape="rect" id="node1" title="Process a scene update message from the server. Called by Network." alt="" coords="5,71,172,112"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_connection.html#ab9c83a362d77dce88f60294d07c3a4aa" title="Return whether is a client connection." alt="" coords="223,5,375,47"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_deserializer.html#a508036fa8d83b204d775690a1dd8bc4a" title="Read a 24&#45;bit network object ID." alt="" coords="220,71,377,112"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_connection.html#a30a6d1fba95a44b4216bc9e89b16d3b3" title="Return an address:port string." alt="" coords="223,136,375,177"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_deserializer.html#ae82036f72896194adc1cd02f3b03509b" title="Read bytes from the stream. Return number of bytes actually read." alt="" coords="425,71,583,112"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_connection.html#a57d24ca22583c309942c38c4730cfdc9" title="Return remote address." alt="" coords="428,136,580,177"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_connection.html#a976445c138637cc95f7224916dbf1418" title="Return remote port." alt="" coords="428,201,580,243"/>
 </map>

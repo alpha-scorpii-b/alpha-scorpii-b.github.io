@@ -1,17 +1,18 @@
 <map id="Urho3D::Camera::ScreenToWorldPoint" name="Urho3D::Camera::ScreenToWorldPoint">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_camera.html#a653cf41d95901dc68abdc463b4b3d5fc" title="Return ray corresponding to normalized screen coordinates (0 &#45; 1), with origin on the near clip plane..." alt="" coords="249,203,480,229"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_camera.html#a24305d3e4346c9eb4f8f3c2e50c5323d" title="Return near clip distance. If a custom projection matrix is in use, is calculated from it instead of ..." alt="" coords="817,5,1034,32"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_camera.html#a86a2e6d78d0ac6c20e043ada2f573401" title="Return view matrix. " alt="" coords="551,333,745,360"/>
-<area shape="rect" id="node16" href="$_math_defs_8h.html#a8096c22c3716e172f685af2a5f5e26bb" title="Return the larger of two values. " alt="" coords="311,328,418,355"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_camera.html#ab80937e50cbb6c26ee2b653d9bbd1a1e" title="Return if projection parameters are valid for rendering and raycasting. " alt="" coords="541,57,755,98"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_node.html#a8f3fe7808b7af4975ddb21be8a269ece" title="Return position in world space. " alt="" coords="1091,283,1325,309"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_node.html#afe17e6e94b7ab99663c827442db45a5e" title="Return direction in world space. " alt="" coords="528,228,768,255"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_camera.html#ad705a7447b5db893eb5642f0d05c02ca" title="Return projection matrix. It&#39;s in D3D convention with depth range 0 &#45; 1. " alt="" coords="535,177,761,204"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_vector3.html#a005fcc19e10062672549703f42401854" title="Return normalized to unit length. " alt="" coords="543,127,753,153"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_camera.html#aca9722244be40c0db7c31f891b8cb1bb" title="Return far clip distance. If a custom projection matrix is in use, is calculated from it instead of t..." alt="" coords="823,56,1028,83"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_camera.html#aa2ca83a0c0ffdede12922e6ed72b69b6" title="Recalculate projection matrix. " alt="" coords="1083,56,1333,83"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_camera.html#a08d24e076d62c0b397817f2c9f92cc41" title="Get effective world transform for matrix and frustum calculations including reflection but excluding ..." alt="" coords="816,330,1035,371"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse. " alt="" coords="849,395,1001,437"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_node.html#ad74175e15dfaa86263299e355a2d49ed" title="Return rotation in world space. " alt="" coords="1091,337,1325,364"/>
-<area shape="rect" id="node15" href="$_math_defs_8h.html#ad6a5d6144733a3594df64e9f8cbb3610" title="Check whether two floating point values are equal within accuracy. " alt="" coords="864,131,987,157"/>
+<area shape="rect" id="node1" title="Convert normalized screen coordinates (0 &#45; 1) and distance along view Z axis (in Z coordinate) to a w..." alt="" coords="5,323,201,364"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_camera.html#a24305d3e4346c9eb4f8f3c2e50c5323d" title="Return near clip distance. If a custom projection matrix is in use, is calculated from it instead of ..." alt="" coords="817,363,1034,390"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_camera.html#a653cf41d95901dc68abdc463b4b3d5fc" title="Return ray corresponding to normalized screen coordinates (0 &#45; 1), with origin on the near clip plane..." alt="" coords="249,246,480,273"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_camera.html#a86a2e6d78d0ac6c20e043ada2f573401" title="Return view matrix." alt="" coords="551,82,745,109"/>
+<area shape="rect" id="node16" href="$_math_defs_8h.html#a8096c22c3716e172f685af2a5f5e26bb" title="Return the larger of two values." alt="" coords="311,489,418,515"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_camera.html#aa2ca83a0c0ffdede12922e6ed72b69b6" title="Recalculate projection matrix." alt="" coords="1083,313,1333,339"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_camera.html#ad705a7447b5db893eb5642f0d05c02ca" title="Return projection matrix. It&#39;s in D3D convention with depth range 0 &#45; 1." alt="" coords="535,246,761,273"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_node.html#a8f3fe7808b7af4975ddb21be8a269ece" title="Return position in world space." alt="" coords="1091,133,1325,159"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_node.html#afe17e6e94b7ab99663c827442db45a5e" title="Return direction in world space." alt="" coords="528,363,768,390"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_camera.html#ab80937e50cbb6c26ee2b653d9bbd1a1e" title="Return if projection parameters are valid for rendering and raycasting." alt="" coords="541,297,755,339"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_vector3.html#a005fcc19e10062672549703f42401854" title="Return normalized to unit length." alt="" coords="543,195,753,222"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_camera.html#a08d24e076d62c0b397817f2c9f92cc41" title="Get effective world transform for matrix and frustum calculations including reflection but excluding ..." alt="" coords="816,71,1035,112"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_matrix3x4.html#a8d184f29d81512103ed020bc0da8a69b" title="Return inverse." alt="" coords="849,5,1002,47"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_node.html#ad74175e15dfaa86263299e355a2d49ed" title="Return rotation in world space." alt="" coords="1090,78,1326,105"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_camera.html#aca9722244be40c0db7c31f891b8cb1bb" title="Return far clip distance. If a custom projection matrix is in use, is calculated from it instead of t..." alt="" coords="823,313,1028,339"/>
+<area shape="rect" id="node15" href="$_math_defs_8h.html#ad6a5d6144733a3594df64e9f8cbb3610" title="Check whether two floating point values are equal within accuracy." alt="" coords="864,211,987,238"/>
 </map>

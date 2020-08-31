@@ -1,26 +1,27 @@
 <map id="Urho3D::ObjectFactory" name="Urho3D::ObjectFactory">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference&#45;counted objects. These are noncopyable and non&#45;assignable. " alt="" coords="919,184,1074,211"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers. " alt="" coords="1379,393,1510,420"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="" coords="1667,311,1789,337"/>
-<area shape="rect" id="node3" href="$struct_urho3_d_1_1_ref_count.html" title="Reference count structure. " alt="" coords="564,184,703,211"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::Object *, Urho3D::HashMap\l\&lt; Urho3D::StringHash, Urho3D\l::SharedPtr\&lt; Urho3D::EventReceiverGroup \&gt; \&gt; \&gt;" alt="" coords="825,607,1168,678"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_hash_base.html" title="Hash set/map base class. " alt="" coords="561,629,705,656"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::EventReceiver\lGroup \&gt; \&gt;" alt="" coords="871,702,1122,773"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; StringHash,\l Variant \&gt;" alt="" coords="882,878,1111,919"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::Object \&gt; \&gt;" alt="" coords="882,367,1111,423"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lSharedPtr\&lt; Urho3D::ObjectFactory \&gt; \&gt;" alt="" coords="859,527,1135,583"/>
-<area shape="rect" id="node22" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::String, Urho3D::Vector\l\&lt; Urho3D::StringHash \&gt; \&gt;" alt="" coords="895,797,1098,853"/>
-<area shape="rect" id="node23" href="$class_urho3_d_1_1_hash_map.html" title="Urho3D::HashMap\&lt; Urho3D\l::StringHash, Urho3D::\lVector\&lt; Urho3D::AttributeInfo \&gt; \&gt;" alt="" coords="873,447,1120,503"/>
-<area shape="rect" id="node7" href="$struct_urho3_d_1_1_hash_node_base.html" title="Hash set/map node base class. " alt="" coords="261,584,440,611"/>
-<area shape="rect" id="node8" href="$struct_urho3_d_1_1_allocator_block.html" title="Allocator memory block. " alt="" coords="264,673,437,700"/>
-<area shape="rect" id="node9" href="$struct_urho3_d_1_1_allocator_node.html" title="Allocator node. " alt="" coords="5,673,176,700"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_event_handler.html" title="Internal helper class for invoking event handler functions. " alt="" coords="1927,356,2093,383"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_linked_list.html" title="Urho3D::LinkedList\l\&lt; Urho3D::EventHandler \&gt;" alt="" coords="2185,318,2383,359"/>
-<area shape="rect" id="node12" href="$struct_urho3_d_1_1_linked_list_node.html" title="Singly&#45;linked list node base class. " alt="" coords="1639,488,1817,515"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_string_hash.html" title="32&#45;bit hash value for a string. " alt="" coords="921,44,1072,71"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_type_info.html" title="Type info. " alt="" coords="1377,133,1512,160"/>
-<area shape="rect" id="node16" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::Object *\&gt;" alt="" coords="917,235,1076,277"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_vector_base.html" title="Vector base class. " alt="" coords="557,276,709,303"/>
-<area shape="rect" id="node20" href="$class_urho3_d_1_1_p_o_d_vector.html" title="Urho3D::PODVector\&lt;\l Urho3D::HashMap *\&gt;" alt="" coords="914,301,1079,342"/>
-<area shape="rect" id="node25" href="$class_urho3_d_1_1_string.html" title="String class. " alt="" coords="938,133,1055,160"/>
+<area shape="rect" id="node1" title="Base class for object factories." alt="" coords="1644,184,1812,211"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference&#45;counted objects. These are noncopyable and non&#45;assignable." alt="" coords="919,184,1074,211"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes,..." alt="" coords="1379,393,1510,420"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="" coords="1667,311,1789,337"/>
+<area shape="rect" id="node3" href="$struct_urho3_d_1_1_ref_count.html" title="Reference count structure." alt="" coords="564,184,703,211"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="825,607,1168,678"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_hash_base.html" title="Hash set/map base class." alt="" coords="561,629,705,656"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="871,702,1122,773"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="881,878,1112,919"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="882,367,1111,423"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="859,527,1135,583"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="895,797,1099,853"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_hash_map.html" title=" " alt="" coords="873,447,1120,503"/>
+<area shape="rect" id="node7" href="$struct_urho3_d_1_1_hash_node_base.html" title="Hash set/map node base class." alt="" coords="261,584,440,611"/>
+<area shape="rect" id="node8" href="$struct_urho3_d_1_1_allocator_block.html" title="Allocator memory block." alt="" coords="264,673,437,700"/>
+<area shape="rect" id="node9" href="$struct_urho3_d_1_1_allocator_node.html" title="Allocator node." alt="" coords="5,673,176,700"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_p_o_d_vector.html" title=" " alt="" coords="917,235,1076,277"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_vector_base.html" title="Vector base class." alt="" coords="557,276,709,303"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_p_o_d_vector.html" title=" " alt="" coords="911,301,1082,342"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_event_handler.html" title="Internal helper class for invoking event handler functions." alt="" coords="1927,356,2093,383"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_linked_list.html" title=" " alt="" coords="2185,318,2383,359"/>
+<area shape="rect" id="node14" href="$struct_urho3_d_1_1_linked_list_node.html" title="Singly&#45;linked list node base class." alt="" coords="1639,488,1817,515"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_string_hash.html" title="32&#45;bit hash value for a string." alt="" coords="921,44,1072,71"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_type_info.html" title="Type info." alt="" coords="1377,133,1512,160"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_string.html" title="String class." alt="" coords="938,133,1055,160"/>
 </map>

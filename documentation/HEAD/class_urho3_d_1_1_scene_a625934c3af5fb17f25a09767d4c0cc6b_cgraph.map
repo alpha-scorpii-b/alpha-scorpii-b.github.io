@@ -1,26 +1,27 @@
 <map id="Urho3D::Scene::UpdateAsyncLoading" name="Urho3D::Scene::UpdateAsyncLoading">
-<area shape="rect" id="node2" href="$class_urho3_d_1_1_scene.html#a019a062421bf4e2d4f5f213245008f28" title="Finish asynchronous loading. " alt="" coords="532,391,735,433"/>
-<area shape="rect" id="node21" href="$class_urho3_d_1_1_x_m_l_element.html#a355dd709c5aa4cef307fd928cf5c37a4" title="Return an unsigned integer attribute, or zero if missing. " alt="" coords="295,515,455,557"/>
-<area shape="rect" id="node23" href="$class_urho3_d_1_1_node.html#af38b633b6f35ad2a430adb650e3b354f" title="Create a child scene node (with specified ID if provided). " alt="" coords="276,464,473,491"/>
-<area shape="rect" id="node25" href="$class_urho3_d_1_1_scene.html#a97fb1222bd2f38e6c1c433c0b7e54d40" title="Return whether the specified id is a replicated id. " alt="" coords="265,581,484,608"/>
-<area shape="rect" id="node3" href="$class_urho3_d_1_1_scene_resolver.html#a4322ce210921b372aa621462408597cc" title="Resolve component and node ID attributes and reset. " alt="" coords="807,326,981,367"/>
-<area shape="rect" id="node16" href="$class_urho3_d_1_1_node.html#a1885ad7b7ac3bacdb3573bc8c3cfdc67" title="Apply attribute changes that can not be applied immediately recursively to child nodes and components..." alt="" coords="783,224,1005,251"/>
-<area shape="rect" id="node17" href="$class_urho3_d_1_1_scene.html#aad4b930c9f2dc906c9cf960b2dfeebb3" title="Finish loading. Sets the scene filename and checksum. " alt="" coords="787,275,1001,301"/>
-<area shape="rect" id="node18" href="$class_urho3_d_1_1_scene.html#a08f99dc8b2497499e581f2eb7ce1a082" title="Stop asynchronous loading. " alt="" coords="797,391,991,433"/>
-<area shape="rect" id="node19" href="$class_urho3_d_1_1_object.html#a69af51cfa67f9626273b35a6d501e03e" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="799,457,989,498"/>
-<area shape="rect" id="node20" href="$class_urho3_d_1_1_object.html#a32020dbf77c196b9777eca479e8abb36" title="Send event to all subscribers. " alt="" coords="795,523,993,549"/>
-<area shape="rect" id="node4" href="$class_urho3_d_1_1_hash_set.html#a3baa6033b348457709d004b717ac9eaf" title="Return whether contains a key. " alt="" coords="1055,173,1254,200"/>
-<area shape="rect" id="node5" href="$class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b" title="Return type hash. " alt="" coords="1507,253,1689,280"/>
-<area shape="rect" id="node6" href="$class_urho3_d_1_1_serializable.html#a7e18871871feb97ee7cfb637e9b3e090" title="Return attribute descriptions, or null if none defined. " alt="" coords="1304,301,1459,342"/>
-<area shape="rect" id="node7" href="$class_urho3_d_1_1_hash_set.html#a14064ab8bc6c6c6782961cb95295a2ee" title="Insert a key. Return an iterator to it. " alt="" coords="1065,559,1244,585"/>
-<area shape="rect" id="node8" href="$class_urho3_d_1_1_vector.html#a5da7101c355895f41098fcf875e4c56a" title="Return size of vector. " alt="" coords="1304,396,1459,423"/>
-<area shape="rect" id="node9" href="$class_urho3_d_1_1_vector.html#acc6d3367d69abfd9545f22381cfee50c" title="Return element at index. " alt="" coords="1310,447,1453,473"/>
-<area shape="rect" id="node10" href="$class_urho3_d_1_1_serializable.html#a3783f928c689a3d4ee2d9766661eca0c" title="Return attribute value by index. Return empty if illegal index. " alt="" coords="1077,326,1232,367"/>
-<area shape="rect" id="node11" href="$class_urho3_d_1_1_variant.html#a9c415240f0a9c973fdc5269c61b57f6f" title="Return unsigned int or zero on type mismatch. Floats and doubles are converted. " alt="" coords="1063,5,1246,32"/>
-<area shape="rect" id="node12" href="$class_urho3_d_1_1_serializable.html#a52c377ff65bd3198a3c460c6a43dc008" title="Set attribute by index. Return true if successfully set. " alt="" coords="1077,391,1232,433"/>
-<area shape="rect" id="node13" href="$class_urho3_d_1_1_variant.html#a221afda9c073cb1e573b654065d7fe56" title="Return a variant vector or empty on type mismatch. " alt="" coords="1053,57,1256,98"/>
-<area shape="rect" id="node14" href="$class_urho3_d_1_1_vector.html#a083b39861b996df82f811a9a4ebff109" title="Add an element at the end. " alt="" coords="1075,123,1234,149"/>
-<area shape="rect" id="node15" href="$class_urho3_d_1_1_scene_resolver.html#a33df99e344392eb3cc86dfee09b02b6b" title="Reset. Clear all remembered nodes and components. " alt="" coords="1067,610,1242,651"/>
-<area shape="rect" id="node22" href="$class_urho3_d_1_1_x_m_l_element.html#a6de3d4f87f59ced8e52fa31f3a83873c" title="Return attribute, or empty if missing. " alt="" coords="553,515,713,557"/>
-<area shape="rect" id="node24" href="$class_urho3_d_1_1_node.html#a4fe38a2be941c8ca1fa59b9639775c09" title="Set name of the scene node. Names are not required to be unique. " alt="" coords="543,464,724,491"/>
+<area shape="rect" id="node1" title="Update asynchronous loading." alt="" coords="5,217,217,259"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_node.html#af38b633b6f35ad2a430adb650e3b354f" title="Create a child scene node (with specified ID if provided)." alt="" coords="277,141,474,167"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_scene.html#a019a062421bf4e2d4f5f213245008f28" title="Finish asynchronous loading." alt="" coords="533,188,736,229"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_x_m_l_element.html#a355dd709c5aa4cef307fd928cf5c37a4" title="Return an unsigned integer attribute, or zero if missing." alt="" coords="295,247,456,288"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_scene.html#a97fb1222bd2f38e6c1c433c0b7e54d40" title="Return whether the specified id is a replicated id." alt="" coords="265,313,485,339"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_node.html#a4fe38a2be941c8ca1fa59b9639775c09" title="Set name of the scene node. Names are not required to be unique." alt="" coords="544,107,725,134"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_object.html#a69af51cfa67f9626273b35a6d501e03e" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="801,71,990,112"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_node.html#a9c4864e96c873752bed6b1f178888fde" title="Mark for attribute check on the next network update." alt="" coords="791,5,1000,47"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_object.html#a32020dbf77c196b9777eca479e8abb36" title="Send event to all subscribers." alt="" coords="796,137,995,163"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_context.html#acb628095602a49ade116c4761ab44004" title="Return a preallocated map for event data. Used for optimization to avoid constant re&#45;allocation of ev..." alt="" coords="1057,71,1255,112"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_node.html#a1885ad7b7ac3bacdb3573bc8c3cfdc67" title="Apply attribute changes that can not be applied immediately recursively to child nodes and components..." alt="" coords="784,254,1007,281"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_scene.html#aad4b930c9f2dc906c9cf960b2dfeebb3" title="Finish loading. Sets the scene filename and checksum." alt="" coords="788,305,1003,331"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_scene_resolver.html#a4322ce210921b372aa621462408597cc" title="Resolve component and node ID attributes and reset." alt="" coords="808,524,983,565"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_scene.html#a08f99dc8b2497499e581f2eb7ce1a082" title="Stop asynchronous loading." alt="" coords="798,188,993,229"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae" title="Return a checksum if applicable." alt="" coords="1077,297,1235,339"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9" title="Return name of the stream." alt="" coords="1077,232,1235,273"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_vector.html#acc6d3367d69abfd9545f22381cfee50c" title="Return element at index." alt="" coords="1311,481,1454,507"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_hash_set.html#a3baa6033b348457709d004b717ac9eaf" title="Return whether contains a key." alt="" coords="1057,531,1255,558"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_serializable.html#a3783f928c689a3d4ee2d9766661eca0c" title="Return attribute value by index. Return empty if illegal index." alt="" coords="1079,415,1233,456"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_serializable.html#a7e18871871feb97ee7cfb637e9b3e090" title="Return attribute descriptions, or null if none defined." alt="" coords="1305,415,1460,456"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b" title="Return type hash." alt="" coords="1508,586,1691,613"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_variant.html#a9c415240f0a9c973fdc5269c61b57f6f" title="Return unsigned int or zero on type mismatch. Floats and doubles are converted." alt="" coords="1065,582,1247,609"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_variant.html#a221afda9c073cb1e573b654065d7fe56" title="Return a variant vector or empty on type mismatch." alt="" coords="1055,633,1257,675"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_hash_set.html#a14064ab8bc6c6c6782961cb95295a2ee" title="Insert a key. Return an iterator to it." alt="" coords="1067,699,1245,726"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_x_m_l_element.html#a6de3d4f87f59ced8e52fa31f3a83873c" title="Return attribute, or empty if missing." alt="" coords="554,253,715,295"/>
 </map>
