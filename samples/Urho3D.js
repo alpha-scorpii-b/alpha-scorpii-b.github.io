@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -87,6 +86,7 @@
         if (!check) throw msg + new Error().stack;
       }
   
+      /** @constructor */
       function DataRequest(start, end, audio) {
         this.start = start;
         this.end = end;
@@ -120,7 +120,15 @@
           }
   
     
-        var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        var indexedDB;
+        if (typeof window === 'object') {
+          indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        } else if (typeof location !== 'undefined') {
+          // worker
+          indexedDB = self.indexedDB;
+        } else {
+          throw 'using IndexedDB to cache data can only be done on a web page or in a web worker';
+        }
         var IDB_RO = "readonly";
         var IDB_RW = "readwrite";
         var DB_NAME = "EM_PRELOAD_CACHE";
@@ -274,7 +282,6 @@
         }
       
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -337,7 +344,7 @@
     }
   
    }
-   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176164, "audio": 0}, {"filename": "/Data.pak", "start": 176164, "end": 17555827, "audio": 0}], "remote_package_size": 17555827, "package_uuid": "6bb8796c-0021-4efa-8974-102ee892f52e"});
+   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176164, "audio": 0}, {"filename": "/Data.pak", "start": 176164, "end": 17555827, "audio": 0}], "remote_package_size": 17555827, "package_uuid": "8f4b5c48-f843-46cf-8f1c-1608be81c725"});
   
   })();
   
