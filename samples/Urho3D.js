@@ -17,7 +17,7 @@
       } else {
         throw 'using preloaded data can only be done on a web page or in a web worker';
       }
-      var PACKAGE_NAME = '/home/travis/build/urho3d/Urho3D/build/ci/bin/Urho3D.js.data';
+      var PACKAGE_NAME = '/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data';
       var REMOTE_PACKAGE_BASE = 'Urho3D.js.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
@@ -287,20 +287,17 @@
         var byteArray = new Uint8Array(arrayBuffer);
         var curr;
         
-          // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
-          // (we may be allocating before malloc is ready, during startup).
-          var ptr = Module['getMemory'](byteArray.length);
-          Module['HEAPU8'].set(byteArray, ptr);
-          DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
+          // Reuse the bytearray from the XHR as the source for file reads.
+          DataRequest.prototype.byteArray = byteArray;
     
             var files = metadata['files'];
             for (var i = 0; i < files.length; ++i) {
               DataRequest.prototype.requests[files[i].filename].onload();
             }
-                Module['removeRunDependency']('datafile_/home/travis/build/urho3d/Urho3D/build/ci/bin/Urho3D.js.data');
+                Module['removeRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data');
 
       };
-      Module['addRunDependency']('datafile_/home/travis/build/urho3d/Urho3D/build/ci/bin/Urho3D.js.data');
+      Module['addRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data');
     
       if (!Module.preloadResults) Module.preloadResults = {};
     
@@ -344,7 +341,7 @@
     }
   
    }
-   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176164, "audio": 0}, {"filename": "/Data.pak", "start": 176164, "end": 17555827, "audio": 0}], "remote_package_size": 17555827, "package_uuid": "8f4b5c48-f843-46cf-8f1c-1608be81c725"});
+   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176164, "audio": 0}, {"filename": "/Data.pak", "start": 176164, "end": 17555827, "audio": 0}], "remote_package_size": 17555827, "package_uuid": "28e76322-9f58-4f34-b329-de0c422b8020"});
   
   })();
   
