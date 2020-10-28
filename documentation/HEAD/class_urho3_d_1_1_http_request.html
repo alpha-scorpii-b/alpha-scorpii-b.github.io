@@ -63,7 +63,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a4db849ffc1a4031e2f2da62704d0c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ed1dd50303836c3f3e1839dfe7efc7"><td class="memItemLeft" align="right" valign="top"><a id="ab9ed1dd50303836c3f3e1839dfe7efc7"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#ab9ed1dd50303836c3f3e1839dfe7efc7">Read</a> (void *dest, unsigned size) override</td></tr>
-<tr class="memdesc:ab9ed1dd50303836c3f3e1839dfe7efc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read response data from the HTTP connection and return number of bytes actually read. While the connection is open, will block while trying to read the specified size. To avoid blocking, only read up to as many bytes as <a class="el" href="class_urho3_d_1_1_http_request.html#a8cb68df22c51ceeed001ccce31b103d6" title="Return amount of bytes in the read buffer.">GetAvailableSize()</a> returns. <br /></td></tr>
+<tr class="memdesc:ab9ed1dd50303836c3f3e1839dfe7efc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read response data from the HTTP connection and return number of bytes actually read. While the connection is open, will block while trying to read the specified size. To avoid blocking, only read up to as many bytes as <a class="el" href="class_urho3_d_1_1_http_request.html#a8cb68df22c51ceeed001ccce31b103d6">GetAvailableSize()</a> returns. <br /></td></tr>
 <tr class="separator:ab9ed1dd50303836c3f3e1839dfe7efc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a33d5f1eb1b32bcbf7798336a8af3f"><td class="memItemLeft" align="right" valign="top"><a id="a11a33d5f1eb1b32bcbf7798336a8af3f"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a11a33d5f1eb1b32bcbf7798336a8af3f">Seek</a> (unsigned position) override</td></tr>
@@ -73,29 +73,17 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a5b83ae3fd9b78b1de195bd9cd9103173">IsEof</a> () const override</td></tr>
 <tr class="memdesc:a5b83ae3fd9b78b1de195bd9cd9103173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether all response data has been read. <br /></td></tr>
 <tr class="separator:a5b83ae3fd9b78b1de195bd9cd9103173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0858c697573e3ab2d030d30938c5a1b2"><td class="memItemLeft" align="right" valign="top"><a id="a0858c697573e3ab2d030d30938c5a1b2"></a>
-const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a0858c697573e3ab2d030d30938c5a1b2">GetURL</a> () const</td></tr>
-<tr class="memdesc:a0858c697573e3ab2d030d30938c5a1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return URL used in the request. <br /></td></tr>
+<tr class="memitem:a0858c697573e3ab2d030d30938c5a1b2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a0858c697573e3ab2d030d30938c5a1b2">GetURL</a> () const</td></tr>
 <tr class="separator:a0858c697573e3ab2d030d30938c5a1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f7391755cf04e4b3c2b7ef2a866b22"><td class="memItemLeft" align="right" valign="top"><a id="a50f7391755cf04e4b3c2b7ef2a866b22"></a>
-const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a50f7391755cf04e4b3c2b7ef2a866b22">GetVerb</a> () const</td></tr>
-<tr class="memdesc:a50f7391755cf04e4b3c2b7ef2a866b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return verb used in the request. Default GET if empty verb specified on construction. <br /></td></tr>
+<tr class="memitem:a50f7391755cf04e4b3c2b7ef2a866b22"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a50f7391755cf04e4b3c2b7ef2a866b22">GetVerb</a> () const</td></tr>
 <tr class="separator:a50f7391755cf04e4b3c2b7ef2a866b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2251db96322081b5eba52146cf930e20"><td class="memItemLeft" align="right" valign="top"><a id="a2251db96322081b5eba52146cf930e20"></a>
-<a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a2251db96322081b5eba52146cf930e20">GetError</a> () const</td></tr>
-<tr class="memdesc:a2251db96322081b5eba52146cf930e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return error. Only non-empty in the error state. <br /></td></tr>
+<tr class="memitem:a2251db96322081b5eba52146cf930e20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a2251db96322081b5eba52146cf930e20">GetError</a> () const</td></tr>
 <tr class="separator:a2251db96322081b5eba52146cf930e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a687c17d7c33831e6f68ceddd643d7383"><td class="memItemLeft" align="right" valign="top"><a id="a687c17d7c33831e6f68ceddd643d7383"></a>
-<a class="el" href="_http_request_8h.html#ac0226ea12106b96d99f1ff9b9ed1a34e">HttpRequestState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a687c17d7c33831e6f68ceddd643d7383">GetState</a> () const</td></tr>
-<tr class="memdesc:a687c17d7c33831e6f68ceddd643d7383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return connection state. <br /></td></tr>
+<tr class="memitem:a687c17d7c33831e6f68ceddd643d7383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_http_request_8h.html#ac0226ea12106b96d99f1ff9b9ed1a34e">HttpRequestState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a687c17d7c33831e6f68ceddd643d7383">GetState</a> () const</td></tr>
 <tr class="separator:a687c17d7c33831e6f68ceddd643d7383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb68df22c51ceeed001ccce31b103d6"><td class="memItemLeft" align="right" valign="top"><a id="a8cb68df22c51ceeed001ccce31b103d6"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a8cb68df22c51ceeed001ccce31b103d6">GetAvailableSize</a> () const</td></tr>
-<tr class="memdesc:a8cb68df22c51ceeed001ccce31b103d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return amount of bytes in the read buffer. <br /></td></tr>
+<tr class="memitem:a8cb68df22c51ceeed001ccce31b103d6"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#a8cb68df22c51ceeed001ccce31b103d6">GetAvailableSize</a> () const</td></tr>
 <tr class="separator:a8cb68df22c51ceeed001ccce31b103d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1433fcc1ab5dd871e185b920674fe2d"><td class="memItemLeft" align="right" valign="top"><a id="ae1433fcc1ab5dd871e185b920674fe2d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#ae1433fcc1ab5dd871e185b920674fe2d">IsOpen</a> () const</td></tr>
-<tr class="memdesc:ae1433fcc1ab5dd871e185b920674fe2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether connection is in the open state. <br /></td></tr>
+<tr class="memitem:ae1433fcc1ab5dd871e185b920674fe2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_http_request.html#ae1433fcc1ab5dd871e185b920674fe2d">IsOpen</a> () const</td></tr>
 <tr class="separator:ae1433fcc1ab5dd871e185b920674fe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_ref_counted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_ref_counted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_ref_counted.html">Urho3D::RefCounted</a></td></tr>
 <tr class="memitem:aad6e2ac9e97ca71b28c47248a9aad9b9 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="aad6e2ac9e97ca71b28c47248a9aad9b9"></a>
@@ -122,13 +110,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
 <tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
-<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
-<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb5281d7e6cfd7e729ae0d07ca0da92 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0eb5281d7e6cfd7e729ae0d07ca0da92"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0eb5281d7e6cfd7e729ae0d07ca0da92">RefCountPtr</a> ()</td></tr>
@@ -147,29 +131,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a4f77ce0ce6c56ad7eeb494ff943a8d03">~Deserializer</a> ()</td></tr>
 <tr class="memdesc:a4f77ce0ce6c56ad7eeb494ff943a8d03 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br /></td></tr>
 <tr class="separator:a4f77ce0ce6c56ad7eeb494ff943a8d03 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b68616d6572fed705f41237cb57be9 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a59b68616d6572fed705f41237cb57be9"></a>
-virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">GetName</a> () const</td></tr>
-<tr class="memdesc:a59b68616d6572fed705f41237cb57be9 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name of the stream. <br /></td></tr>
+<tr class="memitem:a59b68616d6572fed705f41237cb57be9 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">GetName</a> () const</td></tr>
 <tr class="separator:a59b68616d6572fed705f41237cb57be9 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a34bb25ff9cde90db1e0614b078a2eaae"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae">GetChecksum</a> ()</td></tr>
-<tr class="memdesc:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a checksum if applicable. <br /></td></tr>
+<tr class="memitem:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae">GetChecksum</a> ()</td></tr>
 <tr class="separator:a34bb25ff9cde90db1e0614b078a2eaae inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="acff4d7732f540451137b8b0de0dba0ed"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#acff4d7732f540451137b8b0de0dba0ed">SeekRelative</a> (int delta)</td></tr>
 <tr class="memdesc:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position relative to current position. Return actual new position. <br /></td></tr>
 <tr class="separator:acff4d7732f540451137b8b0de0dba0ed inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eb039dde5cc9ec8fedaa044d850db1 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="ad0eb039dde5cc9ec8fedaa044d850db1"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ad0eb039dde5cc9ec8fedaa044d850db1">GetPosition</a> () const</td></tr>
-<tr class="memdesc:ad0eb039dde5cc9ec8fedaa044d850db1 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
+<tr class="memitem:ad0eb039dde5cc9ec8fedaa044d850db1 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ad0eb039dde5cc9ec8fedaa044d850db1">GetPosition</a> () const</td></tr>
 <tr class="separator:ad0eb039dde5cc9ec8fedaa044d850db1 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e253b647308a6cecb25d787b17edc18 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a8e253b647308a6cecb25d787b17edc18"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a8e253b647308a6cecb25d787b17edc18">Tell</a> () const</td></tr>
 <tr class="memdesc:a8e253b647308a6cecb25d787b17edc18 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
 <tr class="separator:a8e253b647308a6cecb25d787b17edc18 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f095da2db6cf9e4c7e76365341466e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a29f095da2db6cf9e4c7e76365341466e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a29f095da2db6cf9e4c7e76365341466e">GetSize</a> () const</td></tr>
-<tr class="memdesc:a29f095da2db6cf9e4c7e76365341466e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br /></td></tr>
+<tr class="memitem:a29f095da2db6cf9e4c7e76365341466e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a29f095da2db6cf9e4c7e76365341466e">GetSize</a> () const</td></tr>
 <tr class="separator:a29f095da2db6cf9e4c7e76365341466e inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ccfd2f2784af5fc4943843dee19ef7 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="aa8ccfd2f2784af5fc4943843dee19ef7"></a>
 long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#aa8ccfd2f2784af5fc4943843dee19ef7">ReadInt64</a> ()</td></tr>
@@ -229,7 +205,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="separator:a403d5e8df2cbc84bea47892a7353b7ec inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919252c073115ed4a19f23883e209b1b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a919252c073115ed4a19f23883e209b1b"></a>
 <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a919252c073115ed4a19f23883e209b1b">ReadRect</a> ()</td></tr>
-<tr class="memdesc:a919252c073115ed4a19f23883e209b1b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>. <br /></td></tr>
+<tr class="memdesc:a919252c073115ed4a19f23883e209b1b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>. <br /></td></tr>
 <tr class="separator:a919252c073115ed4a19f23883e209b1b inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fca5b0832f3129a82fcf2215380336 inherit pub_methods_class_urho3_d_1_1_deserializer"><td class="memItemLeft" align="right" valign="top"><a id="a24fca5b0832f3129a82fcf2215380336"></a>
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a24fca5b0832f3129a82fcf2215380336">ReadVector2</a> ()</td></tr>
@@ -418,9 +394,7 @@ Additional Inherited Members</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_thread.html#ab3c78fd27758b97f8897ba4b7c1f00ff">SetMainThread</a> ()</td></tr>
 <tr class="memdesc:ab3c78fd27758b97f8897ba4b7c1f00ff inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current thread as the main thread. <br /></td></tr>
 <tr class="separator:ab3c78fd27758b97f8897ba4b7c1f00ff inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1bc30494bec12d878e356376b542ad inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="memItemLeft" align="right" valign="top"><a id="a0f1bc30494bec12d878e356376b542ad"></a>
-static ThreadID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_thread.html#a0f1bc30494bec12d878e356376b542ad">GetCurrentThreadID</a> ()</td></tr>
-<tr class="memdesc:a0f1bc30494bec12d878e356376b542ad inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current thread's ID. <br /></td></tr>
+<tr class="memitem:a0f1bc30494bec12d878e356376b542ad inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="memItemLeft" align="right" valign="top">static ThreadID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_thread.html#a0f1bc30494bec12d878e356376b542ad">GetCurrentThreadID</a> ()</td></tr>
 <tr class="separator:a0f1bc30494bec12d878e356376b542ad inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591d469de804a63cbcca350b84f96670 inherit pub_static_methods_class_urho3_d_1_1_thread"><td class="memItemLeft" align="right" valign="top"><a id="a591d469de804a63cbcca350b84f96670"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_thread.html#a591d469de804a63cbcca350b84f96670">IsMainThread</a> ()</td></tr>
@@ -452,7 +426,146 @@ static ThreadID&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An HTTP connection with response data stream. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8cb68df22c51ceeed001ccce31b103d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb68df22c51ceeed001ccce31b103d6">&#9670;&nbsp;</a></span>GetAvailableSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Urho3D::HttpRequest::GetAvailableSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return amount of bytes in the read buffer. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_http_request_a8cb68df22c51ceeed001ccce31b103d6_cgraph.svg" width="422" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2251db96322081b5eba52146cf930e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2251db96322081b5eba52146cf930e20">&#9670;&nbsp;</a></span>GetError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_urho3_d_1_1_string.html">String</a> Urho3D::HttpRequest::GetError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return error. Only non-empty in the error state. </p>
+
+</div>
+</div>
+<a id="a687c17d7c33831e6f68ceddd643d7383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687c17d7c33831e6f68ceddd643d7383">&#9670;&nbsp;</a></span>GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_http_request_8h.html#ac0226ea12106b96d99f1ff9b9ed1a34e">HttpRequestState</a> Urho3D::HttpRequest::GetState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return connection state. </p>
+
+</div>
+</div>
+<a id="a0858c697573e3ab2d030d30938c5a1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0858c697573e3ab2d030d30938c5a1b2">&#9670;&nbsp;</a></span>GetURL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a>&amp; Urho3D::HttpRequest::GetURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return URL used in the request. </p>
+
+</div>
+</div>
+<a id="a50f7391755cf04e4b3c2b7ef2a866b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f7391755cf04e4b3c2b7ef2a866b22">&#9670;&nbsp;</a></span>GetVerb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a>&amp; Urho3D::HttpRequest::GetVerb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return verb used in the request. Default GET if empty verb specified on construction. </p>
+
+</div>
+</div>
+<a id="ae1433fcc1ab5dd871e185b920674fe2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1433fcc1ab5dd871e185b920674fe2d">&#9670;&nbsp;</a></span>IsOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Urho3D::HttpRequest::IsOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return whether connection is in the open state. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Network/<a class="el" href="_http_request_8h.html">HttpRequest.h</a></li>
 <li>Source/Urho3D/Network/HttpRequest.cpp</li>
 </ul>

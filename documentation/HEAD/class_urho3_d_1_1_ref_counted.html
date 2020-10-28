@@ -72,13 +72,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
 <tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
-<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
-<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb5281d7e6cfd7e729ae0d07ca0da92"><td class="memItemLeft" align="right" valign="top"><a id="a0eb5281d7e6cfd7e729ae0d07ca0da92"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0eb5281d7e6cfd7e729ae0d07ca0da92">RefCountPtr</a> ()</td></tr>
@@ -94,7 +90,50 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for intrusively reference-counted objects. These are noncopyable and non-assignable. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e764b1f4b072a1a0dbfaeac62626244">&#9670;&nbsp;</a></span>Refs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Urho3D::RefCounted::Refs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return reference count. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_ref_counted_a7e764b1f4b072a1a0dbfaeac62626244_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a27960099d665fa2a05b7d488cfc56d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27960099d665fa2a05b7d488cfc56d90">&#9670;&nbsp;</a></span>WeakRefs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Urho3D::RefCounted::WeakRefs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return weak reference count. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Container/RefCounted.h</li>
 <li>Source/Urho3D/Container/RefCounted.cpp</li>
 </ul>

@@ -30,9 +30,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Octree octant.  
- <a href="class_urho3_d_1_1_octant.html#details">More...</a></p>
-
 <p><code>#include &lt;Urho3D/Graphics/Octree.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::Octant:</div>
@@ -81,9 +78,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a74b7ecc1123df089ec72bcee7067db80">RemoveDrawable</a> (<a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> *drawable, bool resetOctant=true)</td></tr>
 <tr class="memdesc:a74b7ecc1123df089ec72bcee7067db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a drawable object from this octant. <br /></td></tr>
 <tr class="separator:a74b7ecc1123df089ec72bcee7067db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50751c38c5001aea44fd530da62c22d5"><td class="memItemLeft" align="right" valign="top"><a id="a50751c38c5001aea44fd530da62c22d5"></a>
-const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a50751c38c5001aea44fd530da62c22d5">GetWorldBoundingBox</a> () const</td></tr>
-<tr class="memdesc:a50751c38c5001aea44fd530da62c22d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return world-space bounding box. <br /></td></tr>
+<tr class="memitem:a50751c38c5001aea44fd530da62c22d5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a50751c38c5001aea44fd530da62c22d5">GetWorldBoundingBox</a> () const</td></tr>
 <tr class="separator:a50751c38c5001aea44fd530da62c22d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2850c7762a5333b92d254254e3de900"><td class="memItemLeft" align="right" valign="top"><a id="ac2850c7762a5333b92d254254e3de900"></a>
 const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#ac2850c7762a5333b92d254254e3de900">GetCullingBox</a> () const</td></tr>
@@ -189,12 +184,39 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:a33ce784c538181c58558eb371ec3d81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70211885df734b6607dc5e76df3a77dc"><td class="memItemLeft" align="right" valign="top"><a id="a70211885df734b6607dc5e76df3a77dc"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a70211885df734b6607dc5e76df3a77dc">index_</a></td></tr>
-<tr class="memdesc:a70211885df734b6607dc5e76df3a77dc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_octant.html" title="Octree octant.">Octant</a> index relative to its siblings or ROOT_INDEX for root octant. <br /></td></tr>
+<tr class="memdesc:a70211885df734b6607dc5e76df3a77dc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_octant.html">Octant</a> index relative to its siblings or ROOT_INDEX for root octant. <br /></td></tr>
 <tr class="separator:a70211885df734b6607dc5e76df3a77dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Octree octant. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a50751c38c5001aea44fd530da62c22d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50751c38c5001aea44fd530da62c22d5">&#9670;&nbsp;</a></span>GetWorldBoundingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a>&amp; Urho3D::Octant::GetWorldBoundingBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return world-space bounding box. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/Graphics/Octree.h</li>
 <li>Source/Urho3D/Graphics/Octree.cpp</li>
 </ul>

@@ -1,0 +1,27 @@
+<map id="Urho3D::Image::IsCompressed" name="Urho3D::Image::IsCompressed">
+<area shape="rect" id="node1" title=" " alt="" coords="580,528,800,555"/>
+<area shape="rect" id="node2" href="$class_urho3_d_1_1_image.html#aa7627113c124e4ce3165083fab860a16" title="Clear the image with an integer color. R component is in the 8 lowest bits." alt="" coords="327,5,506,32"/>
+<area shape="rect" id="node4" href="$class_urho3_d_1_1_image.html#abb6783717a2b5ea6926595f0347aa84d" title="Return image converted to 4&#45;component (RGBA) to circumvent modern rendering API&#39;s not supporting e...." alt="" coords="301,56,532,83"/>
+<area shape="rect" id="node5" href="$class_urho3_d_1_1_image.html#ab0314fcd1455d08f6b411af04ddc0183" title="Return decompressed image data in RGBA format." alt="" coords="5,74,253,115"/>
+<area shape="rect" id="node6" href="$class_urho3_d_1_1_animation_set2_d.html#a3b678397fa1bdef4df12c0009df462f1" title="Finish load scml." alt="" coords="324,158,509,199"/>
+<area shape="rect" id="node8" href="$class_urho3_d_1_1_image.html#a9e053a7acb4d07f65001c304c85fdae4" title="Flip image horizontally. Return true if successful." alt="" coords="307,224,526,251"/>
+<area shape="rect" id="node9" href="$class_urho3_d_1_1_image.html#a06351e85c01083bdfffc4904186c5015" title="Flip image vertically. Return true if successful." alt="" coords="316,275,517,301"/>
+<area shape="rect" id="node11" href="$class_urho3_d_1_1_image.html#a2f468ddfcf390ae960f81f75eba8d7df" title="Return next mip level by bilinear filtering. Note that if the image is already 1x1x1,..." alt="" coords="308,325,525,352"/>
+<area shape="rect" id="node12" href="$class_urho3_d_1_1_image.html#a6dd41c6d09d08071499e039d965ae566" title="Precalculate the mip levels. Used by asynchronous texture loading." alt="" coords="25,347,233,389"/>
+<area shape="rect" id="node13" href="$class_urho3_d_1_1_image.html#a387a9242e1cdc43e938a6d00022bfdfb" title="Return a 3D pixel color." alt="" coords="325,427,508,453"/>
+<area shape="rect" id="node14" href="$class_urho3_d_1_1_image.html#ac79b4e95f8bdde5aa693ababe2041e45" title="Return a 3D pixel integer color. R component is in the 8 lowest bits." alt="" coords="317,477,516,504"/>
+<area shape="rect" id="node15" href="$class_urho3_d_1_1_image.html#af9f6ee50d0efc9445e7c96f5db36cf47" title="Return an SDL surface from the image, or null if failed. Only RGB images are supported...." alt="" coords="304,528,529,555"/>
+<area shape="rect" id="node16" href="$class_urho3_d_1_1_image.html#aa00356020ffcbf5ff333a6748e959b5d" title="Return subimage from the image by the defined rect or null if failed. 3D images are not supported...." alt="" coords="309,579,525,605"/>
+<area shape="rect" id="node17" href="$class_urho3_d_1_1_image.html#a5be924efa3bb0f85f2d812d0149aedda" title="Resize image by bilinear resampling. Return true if successful." alt="" coords="331,629,502,656"/>
+<area shape="rect" id="node18" href="$class_urho3_d_1_1_image.html#a5c3047b0fe26178f7245f964f16e63b6" title="Save the image to a stream. Regardless of original format, the image is saved as png...." alt="" coords="337,680,497,707"/>
+<area shape="rect" id="node19" href="$class_urho3_d_1_1_image.html#acdb99a419aaf19b2b8aaba87ba345e82" title="Save in BMP format. Return true if successful." alt="" coords="322,731,511,757"/>
+<area shape="rect" id="node20" href="$class_urho3_d_1_1_image.html#a65ef8d3cf5b9c4e4bf12f8929618f12f" title="Save in JPG format with specified quality. Return true if successful." alt="" coords="325,781,508,808"/>
+<area shape="rect" id="node21" href="$class_urho3_d_1_1_image.html#a3a0016b82138cc5b1136fb8b9c3748fb" title="Save in TGA format. Return true if successful." alt="" coords="323,832,510,859"/>
+<area shape="rect" id="node22" href="$class_urho3_d_1_1_image.html#a00fb8676bd4c841927d7c417285d1877" title="Set new image data." alt="" coords="327,883,507,909"/>
+<area shape="rect" id="node23" href="$class_urho3_d_1_1_terrain.html#a22a49ec302f5976a837f343248e5c28c" title="Set heightmap image and optionally recreate the geometry immediately. Return true if successful." alt="" coords="319,934,514,975"/>
+<area shape="rect" id="node24" href="$class_urho3_d_1_1_image.html#a07475dcdaca55fb810cd3ce02e5a1bbe" title="Set a 3D pixel with an integer color. R component is in the 8 lowest bits." alt="" coords="318,1000,515,1027"/>
+<area shape="rect" id="node25" href="$class_urho3_d_1_1_image.html#a46a9d296c44006d85b0dd65f97515ebb" title="Copy contents of the image into the defined rect, scaling if necessary. This image should already be ..." alt="" coords="309,1051,524,1077"/>
+<area shape="rect" id="node3" href="$class_urho3_d_1_1_image.html#a6eb21b8e9c805de370f7b39785074667" title="Clear the image with a color." alt="" coords="48,5,211,32"/>
+<area shape="rect" id="node7" href="$class_urho3_d_1_1_animation_set2_d.html#a400a05b2809c877bb5902b0ac46ccb82" title="Finish resource loading. Always called from the main thread. Return true if successful." alt="" coords="37,158,222,199"/>
+<area shape="rect" id="node10" href="$class_urho3_d_1_1_graphics.html#aba8bc69f7cae9251dbf3dc99d771ed30" title="Take a screenshot. Return true if successful." alt="" coords="6,275,253,301"/>
+</map>

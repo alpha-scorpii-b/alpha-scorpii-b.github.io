@@ -29,9 +29,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Abstract stream for reading.  
- <a href="class_urho3_d_1_1_deserializer.html#details">More...</a></p>
-
 <p><code>#include &lt;Urho3D/IO/Deserializer.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::Deserializer:</div>
@@ -62,33 +59,23 @@ virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a04335b8bfc3e845d1e95599d362b2115">Seek</a> (unsigned position)=0</td></tr>
 <tr class="memdesc:a04335b8bfc3e845d1e95599d362b2115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the stream. Return actual new position. <br /></td></tr>
 <tr class="separator:a04335b8bfc3e845d1e95599d362b2115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b68616d6572fed705f41237cb57be9"><td class="memItemLeft" align="right" valign="top"><a id="a59b68616d6572fed705f41237cb57be9"></a>
-virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">GetName</a> () const</td></tr>
-<tr class="memdesc:a59b68616d6572fed705f41237cb57be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name of the stream. <br /></td></tr>
+<tr class="memitem:a59b68616d6572fed705f41237cb57be9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">GetName</a> () const</td></tr>
 <tr class="separator:a59b68616d6572fed705f41237cb57be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34bb25ff9cde90db1e0614b078a2eaae"><td class="memItemLeft" align="right" valign="top"><a id="a34bb25ff9cde90db1e0614b078a2eaae"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae">GetChecksum</a> ()</td></tr>
-<tr class="memdesc:a34bb25ff9cde90db1e0614b078a2eaae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a checksum if applicable. <br /></td></tr>
+<tr class="memitem:a34bb25ff9cde90db1e0614b078a2eaae"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a34bb25ff9cde90db1e0614b078a2eaae">GetChecksum</a> ()</td></tr>
 <tr class="separator:a34bb25ff9cde90db1e0614b078a2eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d8b0e28fa886adfdde1c42c6913477"><td class="memItemLeft" align="right" valign="top"><a id="a62d8b0e28fa886adfdde1c42c6913477"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a62d8b0e28fa886adfdde1c42c6913477">IsEof</a> () const</td></tr>
-<tr class="memdesc:a62d8b0e28fa886adfdde1c42c6913477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the end of stream has been reached. <br /></td></tr>
+<tr class="memitem:a62d8b0e28fa886adfdde1c42c6913477"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a62d8b0e28fa886adfdde1c42c6913477">IsEof</a> () const</td></tr>
 <tr class="separator:a62d8b0e28fa886adfdde1c42c6913477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff4d7732f540451137b8b0de0dba0ed"><td class="memItemLeft" align="right" valign="top"><a id="acff4d7732f540451137b8b0de0dba0ed"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#acff4d7732f540451137b8b0de0dba0ed">SeekRelative</a> (int delta)</td></tr>
 <tr class="memdesc:acff4d7732f540451137b8b0de0dba0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position relative to current position. Return actual new position. <br /></td></tr>
 <tr class="separator:acff4d7732f540451137b8b0de0dba0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eb039dde5cc9ec8fedaa044d850db1"><td class="memItemLeft" align="right" valign="top"><a id="ad0eb039dde5cc9ec8fedaa044d850db1"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ad0eb039dde5cc9ec8fedaa044d850db1">GetPosition</a> () const</td></tr>
-<tr class="memdesc:ad0eb039dde5cc9ec8fedaa044d850db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
+<tr class="memitem:ad0eb039dde5cc9ec8fedaa044d850db1"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#ad0eb039dde5cc9ec8fedaa044d850db1">GetPosition</a> () const</td></tr>
 <tr class="separator:ad0eb039dde5cc9ec8fedaa044d850db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e253b647308a6cecb25d787b17edc18"><td class="memItemLeft" align="right" valign="top"><a id="a8e253b647308a6cecb25d787b17edc18"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a8e253b647308a6cecb25d787b17edc18">Tell</a> () const</td></tr>
 <tr class="memdesc:a8e253b647308a6cecb25d787b17edc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
 <tr class="separator:a8e253b647308a6cecb25d787b17edc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f095da2db6cf9e4c7e76365341466e"><td class="memItemLeft" align="right" valign="top"><a id="a29f095da2db6cf9e4c7e76365341466e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a29f095da2db6cf9e4c7e76365341466e">GetSize</a> () const</td></tr>
-<tr class="memdesc:a29f095da2db6cf9e4c7e76365341466e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br /></td></tr>
+<tr class="memitem:a29f095da2db6cf9e4c7e76365341466e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a29f095da2db6cf9e4c7e76365341466e">GetSize</a> () const</td></tr>
 <tr class="separator:a29f095da2db6cf9e4c7e76365341466e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ccfd2f2784af5fc4943843dee19ef7"><td class="memItemLeft" align="right" valign="top"><a id="aa8ccfd2f2784af5fc4943843dee19ef7"></a>
 long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#aa8ccfd2f2784af5fc4943843dee19ef7">ReadInt64</a> ()</td></tr>
@@ -148,7 +135,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="separator:a403d5e8df2cbc84bea47892a7353b7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919252c073115ed4a19f23883e209b1b"><td class="memItemLeft" align="right" valign="top"><a id="a919252c073115ed4a19f23883e209b1b"></a>
 <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a919252c073115ed4a19f23883e209b1b">ReadRect</a> ()</td></tr>
-<tr class="memdesc:a919252c073115ed4a19f23883e209b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>. <br /></td></tr>
+<tr class="memdesc:a919252c073115ed4a19f23883e209b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>. <br /></td></tr>
 <tr class="separator:a919252c073115ed4a19f23883e209b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fca5b0832f3129a82fcf2215380336"><td class="memItemLeft" align="right" valign="top"><a id="a24fca5b0832f3129a82fcf2215380336"></a>
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a24fca5b0832f3129a82fcf2215380336">ReadVector2</a> ()</td></tr>
@@ -264,7 +251,168 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract stream for reading. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a34bb25ff9cde90db1e0614b078a2eaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bb25ff9cde90db1e0614b078a2eaae">&#9670;&nbsp;</a></span>GetChecksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Urho3D::Deserializer::GetChecksum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return a checksum if applicable. </p>
+
+<p>Reimplemented in <a class="el" href="class_urho3_d_1_1_file.html#af9a8d2dbe6424e8b27ad503b02c5239b">Urho3D::File</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_deserializer_a34bb25ff9cde90db1e0614b078a2eaae_icgraph.svg" width="100%" height="454"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a59b68616d6572fed705f41237cb57be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b68616d6572fed705f41237cb57be9">&#9670;&nbsp;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp; Urho3D::Deserializer::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return name of the stream. </p>
+
+<p>Reimplemented in <a class="el" href="class_urho3_d_1_1_file.html#ab0f9a30b544947d56e0c3ea40dd24307">Urho3D::File</a>, and <a class="el" href="class_urho3_d_1_1_named_pipe.html#a6f9747b8bfbade4425521c0f0d9c11b8">Urho3D::NamedPipe</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_deserializer_a59b68616d6572fed705f41237cb57be9_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad0eb039dde5cc9ec8fedaa044d850db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0eb039dde5cc9ec8fedaa044d850db1">&#9670;&nbsp;</a></span>GetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Urho3D::Deserializer::GetPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return current position. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_deserializer_ad0eb039dde5cc9ec8fedaa044d850db1_icgraph.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a29f095da2db6cf9e4c7e76365341466e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f095da2db6cf9e4c7e76365341466e">&#9670;&nbsp;</a></span>GetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Urho3D::Deserializer::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return size. </p>
+
+</div>
+</div>
+<a id="a62d8b0e28fa886adfdde1c42c6913477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d8b0e28fa886adfdde1c42c6913477">&#9670;&nbsp;</a></span>IsEof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Urho3D::Deserializer::IsEof </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return whether the end of stream has been reached. </p>
+
+<p>Reimplemented in <a class="el" href="class_urho3_d_1_1_http_request.html#a5b83ae3fd9b78b1de195bd9cd9103173">Urho3D::HttpRequest</a>, and <a class="el" href="class_urho3_d_1_1_named_pipe.html#a5b8e31b41d82f568fd2eb2a0882c0976">Urho3D::NamedPipe</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_deserializer_a62d8b0e28fa886adfdde1c42c6913477_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Source/Urho3D/IO/Deserializer.h</li>
 <li>Source/Urho3D/IO/Deserializer.cpp</li>
 </ul>

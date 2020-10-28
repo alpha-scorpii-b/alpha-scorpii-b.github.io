@@ -66,13 +66,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a37ce22a7e0f84c8463c179c7eb4551b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b8f323c3876c64464624ef2737d462a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">FirstResult</a> ()</td></tr>
 <tr class="separator:a6b8f323c3876c64464624ef2737d462a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f919edced3d1627360b6dad7a62b34"><td class="memItemLeft" align="right" valign="top"><a id="ac9f919edced3d1627360b6dad7a62b34"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#ac9f919edced3d1627360b6dad7a62b34">Size</a> () const</td></tr>
-<tr class="memdesc:ac9f919edced3d1627360b6dad7a62b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size of result set. <br /></td></tr>
+<tr class="memitem:ac9f919edced3d1627360b6dad7a62b34"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#ac9f919edced3d1627360b6dad7a62b34">Size</a> () const</td></tr>
 <tr class="separator:ac9f919edced3d1627360b6dad7a62b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3726232a7e557327103cbd56e5643cab"><td class="memItemLeft" align="right" valign="top"><a id="a3726232a7e557327103cbd56e5643cab"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a3726232a7e557327103cbd56e5643cab">Empty</a> () const</td></tr>
-<tr class="memdesc:a3726232a7e557327103cbd56e5643cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether result set is empty. <br /></td></tr>
+<tr class="memitem:a3726232a7e557327103cbd56e5643cab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a3726232a7e557327103cbd56e5643cab">Empty</a> () const</td></tr>
 <tr class="separator:a3726232a7e557327103cbd56e5643cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0a7d4bf15520c2f7340dcc1d83e9ca"><td class="memItemLeft" align="right" valign="top"><a id="afb0a7d4bf15520c2f7340dcc1d83e9ca"></a>
 pugi::xpath_node_set *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#afb0a7d4bf15520c2f7340dcc1d83e9ca">GetXPathNodeSet</a> () const</td></tr>
@@ -93,6 +89,24 @@ pugi::xpath_node_set *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>XPath query result set. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3726232a7e557327103cbd56e5643cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3726232a7e557327103cbd56e5643cab">&#9670;&nbsp;</a></span>Empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Urho3D::XPathResultSet::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return whether result set is empty. </p>
+
+</div>
+</div>
 <a id="a6b8f323c3876c64464624ef2737d462a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b8f323c3876c64464624ef2737d462a">&#9670;&nbsp;</a></span>FirstResult()</h2>
 
@@ -107,7 +121,7 @@ pugi::xpath_node_set *&#160;</td><td class="memItemRight" valign="bottom"><a cla
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a37ce22a7e0f84c8463c179c7eb4551b8">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215" title="Return next XPath query result. Only valid when this instance of XMLElement is itself one of the quer...">XMLElement::NextResult()</a>. </p>
+<p>Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a37ce22a7e0f84c8463c179c7eb4551b8">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215">XMLElement::NextResult()</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -132,7 +146,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a37ce22a7e0f84c8463c179c7eb4551b8">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215" title="Return next XPath query result. Only valid when this instance of XMLElement is itself one of the quer...">XMLElement::NextResult()</a>. </p>
+<p>Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a37ce22a7e0f84c8463c179c7eb4551b8">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215">XMLElement::NextResult()</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -143,6 +157,30 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_x_path_result_set_a37ce22a7e0f84c8463c179c7eb4551b8_icgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac9f919edced3d1627360b6dad7a62b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f919edced3d1627360b6dad7a62b34">&#9670;&nbsp;</a></span>Size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Urho3D::XPathResultSet::Size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return size of result set. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_urho3_d_1_1_x_path_result_set_ac9f919edced3d1627360b6dad7a62b34_icgraph.svg" width="643" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
