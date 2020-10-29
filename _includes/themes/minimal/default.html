@@ -85,18 +85,13 @@ Copyright (c) 2014-2018 Yao Wei Tjong
       <footer role="contentinfo">
         <div class="row">
           <div class="col-xs-6 build-status">
-            <table>
-              {% for build_status in site.data.footer_info.appveyor.build_statuses %}
-              <tr>
-                <td><a href="https://ci.appveyor.com/project/urho3d/urho3d/branch/{{ build_status.branch }}" target="_blank">{% for icon in build_status.icons %}&nbsp;<i class="{{ icon }}"></i>{% endfor %}&nbsp;<img src="https://ci.appveyor.com/api/projects/status/{{ site.data.footer_info.appveyor.project_id }}/branch/{{ build_status.branch }}?svg=true" title="{{ build_status.platform }}" alt="{{ build_status.platform }}"/></a></td>
-              </tr>
-              {% endfor %}
-            </table>
-            <!--
-            <a href="https://scan.coverity.com/projects/{{ site.data.footer_info.coverity_scan.project_id }}" target="_blank">
-              <div><img src="https://scan.coverity.com/projects/{{ site.data.footer_info.coverity_scan.project_id }}/badge.svg?branch=Coverity-Scan" title="Coverity scan" alt="Coverity Scan"/></div>
+            <a class="pull-right" href="https://github.com/{{ site.organization.name }}/{{ site.organization.project }}/actions?query=workflow%3ACI%2FCD" target="_blank">
+              <table>
+                <tr>
+                  <td><img src="https://github.com/{{ site.organization.name }}/{{ site.organization.project }}/workflows/CI/CD/badge.svg" title="CI/CD" alt="CI/CD" /></td>
+                </tr>
+              </table>
             </a>
-            -->
             <div class="feed"><small>
               <a href="{{ BASE_PATH }}{{ site.JB.atom_path }}"><i class="fa fa-rss fa-lg"></i>ATOM</a>&nbsp;
               <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}"><i class="fa fa-rss fa-lg"></i>RSS</a>
@@ -106,18 +101,6 @@ Copyright (c) 2014-2018 Yao Wei Tjong
             </div>
             <div><small>Project by <a href="https://github.com/{{ site.organization.name }}">{{ site.organization.name }}</a></small></div>
             <div><small>Code is licensed under <a href="https://raw.githubusercontent.com/urho3d/Urho3D/master/LICENSE" target="_blank">MIT</a></small></div>
-          </div>
-          <div class="col-xs-6 build-status">
-            <a class="pull-right" href="https://travis-ci.org/{{ site.organization.name }}/{{ site.organization.project }}/builds" target="_blank">
-              <table>
-                {% for build_status in site.data.footer_info.travis.build_statuses %}
-                <tr>
-                  <td><img src="https://api.travis-ci.org/{{ site.organization.name }}/{{ site.organization.project }}.svg?branch={{ build_status.branch }}" title="{{ build_status.platform }}" alt="{{ build_status.platform }}" /></td>
-                  <td>{% for icon in build_status.icons %}&nbsp;<i class="{{ icon }}"></i>{% endfor %}</td>
-                </tr>
-                {% endfor %}
-              </table>
-            </a>
           </div>
         </div>
       </footer>
