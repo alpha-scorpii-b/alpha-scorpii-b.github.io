@@ -341,7 +341,7 @@
     }
   
    }
-   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176507, "audio": 0}, {"filename": "/Data.pak", "start": 176507, "end": 17556390, "audio": 0}], "remote_package_size": 17556390, "package_uuid": "5dd0c168-64d7-4406-b61a-3f41ac6496c1"});
+   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 176507, "audio": 0}, {"filename": "/Data.pak", "start": 176507, "end": 17556391, "audio": 0}], "remote_package_size": 17556391, "package_uuid": "4f4081f9-4eaa-4f47-8f7a-b38a65535bda"});
   
   })();
   
