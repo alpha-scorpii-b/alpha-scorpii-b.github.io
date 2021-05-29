@@ -5,6 +5,8 @@
   {% include JB/analytics-providers/google %}
 {% when "googleUA" %}
   {% include JB/analytics-providers/google-universal %}
+{% when "googleSiteTag" %}
+  {% include JB/analytics-providers/google-site-tag %}
 {% when "getclicky" %}
   {% include JB/analytics-providers/getclicky %}
 {% when "mixpanel" %}
