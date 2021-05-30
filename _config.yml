@@ -110,8 +110,10 @@ JB:
   #        
   analytics:
     provider: googleSiteTag
-    googleSiteTag:
+    googleUA:
       tracking_id: UA-67010169-1
+    googleSiteTag:
+      tracking_id: G-DQPCS0RPWS
     getclicky:
       site_id: 
     mixpanel:
