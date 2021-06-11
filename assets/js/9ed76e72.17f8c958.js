@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[546],{3121:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"retro","name":"retro","count":2,"permalink":"/news/tags/retro"}')}}]);

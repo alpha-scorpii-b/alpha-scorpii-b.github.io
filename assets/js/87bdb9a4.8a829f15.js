@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[489],{236:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"arcade","name":"arcade","count":1,"permalink":"/news/tags/arcade"}')}}]);

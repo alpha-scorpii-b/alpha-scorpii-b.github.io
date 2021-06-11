@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[660],{4621:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"psx","name":"psx","count":1,"permalink":"/news/tags/psx"}')}}]);
