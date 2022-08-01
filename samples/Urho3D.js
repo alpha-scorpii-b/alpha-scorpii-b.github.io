@@ -1,34 +1,44 @@
 
   var Module = typeof Module !== 'undefined' ? Module : {};
-  
+
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
   }
+
   Module.expectedDataFileDownloads++;
   (function() {
-   var loadPackage = function(metadata) {
-  
-      var PACKAGE_PATH;
+    // When running as a pthread, FS operations are proxied to the main thread, so we don't need to
+    // fetch the .data bundle on the worker
+    if (Module['ENVIRONMENT_IS_PTHREAD']) return;
+    var loadPackage = function(metadata) {
+
+      var PACKAGE_PATH = '';
       if (typeof window === 'object') {
         PACKAGE_PATH = window['encodeURIComponent'](window.location.pathname.toString().substring(0, window.location.pathname.toString().lastIndexOf('/')) + '/');
-      } else if (typeof location !== 'undefined') {
-        // worker
+      } else if (typeof process === 'undefined' && typeof location !== 'undefined') {
+        // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
-      } else {
-        throw 'using preloaded data can only be done on a web page or in a web worker';
       }
-      var PACKAGE_NAME = '/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data';
+      var PACKAGE_NAME = '/home/runner/work/Urho3D/Urho3D/engine_build/bin/Urho3D.js.data';
       var REMOTE_PACKAGE_BASE = 'Urho3D.js.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
         err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
       }
       var REMOTE_PACKAGE_NAME = Module['locateFile'] ? Module['locateFile'](REMOTE_PACKAGE_BASE, '') : REMOTE_PACKAGE_BASE;
-    
-      var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
-      var PACKAGE_UUID = metadata['package_uuid'];
-    
+var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
+
       function fetchRemotePackage(packageName, packageSize, callback, errback) {
+        if (typeof process === 'object' && typeof process.versions === 'object' && typeof process.versions.node === 'string') {
+          require('fs').readFile(packageName, function(err, contents) {
+            if (err) {
+              errback(err);
+            } else {
+              callback(contents.buffer);
+            }
+          });
+          return;
+        }
         var xhr = new XMLHttpRequest();
         xhr.open('GET', packageName, true);
         xhr.responseType = 'arraybuffer';
@@ -79,13 +89,13 @@
       function handleError(error) {
         console.error('package error:', error);
       };
-    
+
     function runWithFS() {
-  
+
       function assert(check, msg) {
         if (!check) throw msg + new Error().stack;
       }
-  
+
       /** @constructor */
       function DataRequest(start, end, audio) {
         this.start = start;
@@ -106,20 +116,19 @@
         },
         finish: function(byteArray) {
           var that = this;
-  
-          Module['FS_createDataFile'](this.name, null, byteArray, true, true, true); // canOwn this data in the filesystem, it is a slide into the heap that will never change
+          // canOwn this data in the filesystem, it is a slide into the heap that will never change
+          Module['FS_createDataFile'](this.name, null, byteArray, true, true, true);
           Module['removeRunDependency']('fp ' + that.name);
-  
           this.requests[this.name] = null;
         }
       };
-  
-          var files = metadata['files'];
-          for (var i = 0; i < files.length; ++i) {
-            new DataRequest(files[i]['start'], files[i]['end'], files[i]['audio']).open('GET', files[i]['filename']);
-          }
-  
-    
+
+      var files = metadata['files'];
+      for (var i = 0; i < files.length; ++i) {
+        new DataRequest(files[i]['start'], files[i]['end'], files[i]['audio'] || 0).open('GET', files[i]['filename']);
+      }
+
+        var PACKAGE_UUID = metadata['package_uuid'];
         var indexedDB;
         if (typeof window === 'object') {
           indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
@@ -142,20 +151,20 @@
             return errback(e);
           }
           openRequest.onupgradeneeded = function(event) {
-            var db = event.target.result;
+            var db = /** @type {IDBDatabase} */ (event.target.result);
 
-            if(db.objectStoreNames.contains(PACKAGE_STORE_NAME)) {
+            if (db.objectStoreNames.contains(PACKAGE_STORE_NAME)) {
               db.deleteObjectStore(PACKAGE_STORE_NAME);
             }
             var packages = db.createObjectStore(PACKAGE_STORE_NAME);
 
-            if(db.objectStoreNames.contains(METADATA_STORE_NAME)) {
+            if (db.objectStoreNames.contains(METADATA_STORE_NAME)) {
               db.deleteObjectStore(METADATA_STORE_NAME);
             }
             var metadata = db.createObjectStore(METADATA_STORE_NAME);
           };
           openRequest.onsuccess = function(event) {
-            var db = event.target.result;
+            var db = /** @type {IDBDatabase} */ (event.target.result);
             callback(db);
           };
           openRequest.onerror = function(error) {
@@ -280,27 +289,24 @@
             };
           }
         }
-      
+
       function processPackageData(arrayBuffer) {
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
         var curr;
-        
-          // Reuse the bytearray from the XHR as the source for file reads.
+        // Reuse the bytearray from the XHR as the source for file reads.
           DataRequest.prototype.byteArray = byteArray;
-    
-            var files = metadata['files'];
-            for (var i = 0; i < files.length; ++i) {
-              DataRequest.prototype.requests[files[i].filename].onload();
-            }
-                Module['removeRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data');
+          var files = metadata['files'];
+          for (var i = 0; i < files.length; ++i) {
+            DataRequest.prototype.requests[files[i].filename].onload();
+          }          Module['removeRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/engine_build/bin/Urho3D.js.data');
 
       };
-      Module['addRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/build/ci/bin/Urho3D.js.data');
-    
+      Module['addRunDependency']('datafile_/home/runner/work/Urho3D/Urho3D/engine_build/bin/Urho3D.js.data');
+
       if (!Module.preloadResults) Module.preloadResults = {};
-    
+
         function preloadFallback(error) {
           console.error(error);
           console.error('falling back to default preload behavior');
@@ -331,7 +337,7 @@
         , preloadFallback);
 
         if (Module['setStatus']) Module['setStatus']('Downloading...');
-      
+
     }
     if (Module['calledRun']) {
       runWithFS();
@@ -339,9 +345,8 @@
       if (!Module['preRun']) Module['preRun'] = [];
       Module["preRun"].push(runWithFS); // FS is not initialized yet, wait for it
     }
-  
-   }
-   loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 174013, "audio": 0}, {"filename": "/Data.pak", "start": 174013, "end": 17616911, "audio": 0}], "remote_package_size": 17616911, "package_uuid": "5063d642-b56b-43a9-b21c-3776ecf3ece8"});
-  
+
+    }
+    loadPackage({"files": [{"filename": "/CoreData.pak", "start": 0, "end": 174013}, {"filename": "/Data.pak", "start": 174013, "end": 17616911}], "remote_package_size": 17616911, "package_uuid": "sha256-90595dd37f7fcd341078b89568d4d1ffb303416efdb0ad09c4a90e8a2885a20e"});
+
   })();
-  
