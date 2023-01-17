@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[53],{3547:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/urho3d-www/news/tags","slug":"action-adventure","name":"action-adventure","count":1,"permalink":"/urho3d-www/news/tags/action-adventure"}')}}]);

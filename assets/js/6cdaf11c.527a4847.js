@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[311],{7560:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/urho3d-www/news/tags","slug":"shooter","name":"shooter","count":1,"permalink":"/urho3d-www/news/tags/shooter"}')}}]);

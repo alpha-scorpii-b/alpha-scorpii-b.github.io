@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[669],{4031:function(e){"use strict";e.exports=JSON.parse('{"permalink":"/urho3d-www/news/page/2","page":2,"postsPerPage":3,"totalPages":2,"totalCount":5,"previousPage":"/urho3d-www/news","nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

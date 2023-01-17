@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[184],{2915:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/urho3d-www/news/tags","slug":"retro","name":"retro","count":2,"permalink":"/urho3d-www/news/tags/retro"}')}}]);

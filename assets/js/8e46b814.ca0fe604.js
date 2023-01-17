@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[871],{9437:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/urho3d-www/news/tags","slug":"puzzle","name":"puzzle","count":2,"permalink":"/urho3d-www/news/tags/puzzle"}')}}]);
